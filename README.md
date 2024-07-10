@@ -1,8 +1,10 @@
-This code defines an Apache Airflow DAG (Directed Acyclic Graph) named "integration_template" that automates the deployment and execution of integrations for extracting data from Workday.
+# Workday Data Export
 
-**DAG Configuration:**
+This solution defines an Apache Airflow DAG (Directed Acyclic Graph) named "integration_template" that automates the deployment and execution of integrations for extracting data from Workday.
 
-This Airflow DAG orchestrates the automated deployment and execution of integrations for extracting data from Workday. It uses Google Cloud services, Bash scripts, and a command-line tool (`integrationcli`) to manage and execute the integrations for different Workday entities.
+## DAG Configuration:
+
+The Airflow DAG orchestrates the automated deployment and execution of integrations for extracting data from Workday. It uses Google Cloud services, Bash scripts, and a command-line tool (`integrationcli`) to manage and execute the integrations for different Workday entities.
 
 - `YESTERDAY`: Defines the start date for DAG runs as yesterday's date.
 - `default_args`: Sets default arguments for all tasks in the DAG, including owner, email notifications, retries, and start date.
@@ -15,7 +17,7 @@ This Airflow DAG orchestrates the automated deployment and execution of integrat
 - `integration_name`: The base name for the integration.
 - `ents`: A list of Workday entities to extract data from (e.g., "Disabilities", "Workers").
 
-**DAG Tasks:**
+### DAG Tasks:
 
 - **`get_access_token` (BashOperator):**
 - Retrieves a Google Cloud access token using `gcloud auth print-access-token`.
@@ -41,17 +43,17 @@ This Airflow DAG orchestrates the automated deployment and execution of integrat
 - Error handling is included to print error messages from the integration execution.
 - Each entity execution is handled by a BashOperator task named `exec_workday_export_parent_{entity}`.
 
-**DAG Task Dependencies:**
+### DAG Task Dependencies:
 
 - `get_access_token >> deploy_workday_export_parent() >> deploy_workday_export_page() >> exec_workday_parent()`: Defines the execution order of tasks. The access token is retrieved first, then parent integrations are deployed, followed by page integrations, and finally, parent integrations are executed.
 
-**Dependencies Integration:**
+### Dependencies:
 
 - `gcloud`: Used to authenticate and get an access token.
 - `integrationcli`: A command-line tool for managing integrations.
 - Google Cloud Storage: Used to store integration configuration files.
 
-**5. Application Integration JSON Definitions:**
+## Application Integration JSON Definitions:
 
 - The provided Application Integration JSON code snippets appear to define configuration for an event bus or workflow orchestration tool (it's not directly part of the Airflow DAG but is related). It includes:
 - Trigger configurations for starting workflows based on API calls.
