@@ -1,0 +1,45 @@
+{
+	"trigger_overrides":[
+    {
+      "triggerType": "API",
+      "triggerNumber": "1",
+      "apiPath": "workday-export-page-REPLACEWITHENTITY",
+	  "properties": {
+        "Trigger name": "workday-export-page-REPLACEWITHENTITY"
+      }
+    }
+  ],
+	"connection_overrides": [
+		{
+			"taskId": "5",
+			"task": "GenericConnectorTask",
+			"parameters": {
+				"connectionName": "embeddings-storage",
+				"connectionLocation": "us-west1"
+			}
+		},
+		{
+			"taskId": "1",
+			"task": "GenericConnectorTask",
+			"parameters": {
+				"connectionName": "workday-dev-soap",
+				"connectionLocation": "us-west1",
+				"entityType": {
+					"key": "entityType",
+					"value": {
+						"stringValue": "REPLACEWITHENTITY"
+					}
+				}
+			}
+		}
+	],
+	"integration_overrides": {},
+	"task_overrides": [],
+	"param_overrides": [{
+		"key": "folder_name",
+		"dataType": "STRING_VALUE",
+		"defaultValue": {
+			"stringValue": "REPLACEWITHENTITY"
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+  "trigger_overrides":[
+    {
+      "triggerType": "API",
+      "triggerNumber": "1",
+      "apiPath": "get-workday-entities-REPLACEWITHENTITY",
+      "properties": {
+        "Trigger name": "get-workday-entities-REPLACEWITHENTITY"
+      }
+    }
+  ],
+  "task_overrides":[
+    {
+      "taskId": "1",
+      "task": "SubWorkflowWhileLoopV2Task",
+      "parameters": {
+        "triggerId": {
+          "key": "triggerId",
+          "value": {
+            "stringValue": "api_trigger/workday-export-page-REPLACEWITHENTITY"
+          }
+        },
+        "workflowName": {
+          "key": "workflowName",
+          "value": {
+            "stringValue": "workday-export-page-REPLACEWITHENTITY"
+          }
+        }
+      }
+    }
+  ]
+}
