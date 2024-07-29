@@ -1,0 +1,157 @@
+{
+  "triggerConfigs": [
+    {
+      "label": "Get Workday Entities",
+      "startTasks": [
+        {
+          "taskId": "1"
+        }
+      ],
+      "apiPath": "get-workday-entities-{{ .Entity }}",
+      "properties": {
+        "Trigger name": "get-workday-entities-{{ .Entity }}"
+      },
+      "triggerType": "API",
+      "triggerNumber": "1",
+      "triggerId": "api_trigger/get-workday-entities",
+      "position": {
+        "x": 48,
+        "y": -272
+      }
+    }
+  ],
+  "taskConfigs": [
+    {
+      "task": "SubWorkflowWhileLoopV2Task",
+      "taskId": "1",
+      "parameters": {
+        "triggerId": {
+          "key": "triggerId",
+          "value": {
+            "stringValue": "api_trigger/workday-export-page-{{ .Entity }}"
+          }
+        },
+        "aggregatorParameterMapping": {
+          "key": "aggregatorParameterMapping"
+        },
+        "loopMetadata": {
+          "key": "loopMetadata",
+          "value": {
+            "stringArray": {
+              "stringValues": [
+                "$`Task_1_loopMetadata`$"
+              ]
+            }
+          }
+        },
+        "disableEucPropagation": {
+          "key": "disableEucPropagation",
+          "value": {
+            "booleanValue": false
+          }
+        },
+        "whileCondition": {
+          "key": "whileCondition",
+          "value": {
+            "stringValue": "$next_page_token$ !\u003d \"\""
+          }
+        },
+        "workflowName": {
+          "key": "workflowName",
+          "value": {
+            "stringValue": "workday-export-page-{{ .Entity }}"
+          }
+        },
+        "requestParameterMapping": {
+          "key": "requestParameterMapping",
+          "value": {
+            "jsonValue": "{\n  \"@type\": \"type.googleapis.com/enterprise.crm.eventbus.proto.ParameterMap\",\n  \"entries\": [{\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"next_page_token\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"`Task_1_listEntitiesPageToken`\"\n      }\n    }\n  }, {\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"filter_clause\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"`Task_1_filterClause`\"\n      }\n    }\n  }, {\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"page_size\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"`Task_1_listEntitiesPageSize`\"\n      }\n    }\n  }, {\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"folder_name\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"folder_name\"\n      }\n    }\n  }, {\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"sort_by\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"`Task_1_listEntitiesSortByColumns`\"\n      }\n    }\n  }]\n}"
+          }
+        },
+        "overrideParameterMapping": {
+          "key": "overrideParameterMapping",
+          "value": {
+            "jsonValue": "{\n  \"@type\": \"type.googleapis.com/enterprise.crm.eventbus.proto.ParameterMap\",\n  \"entries\": [{\n    \"key\": {\n      \"literalValue\": {\n        \"stringValue\": \"`Task_1_listEntitiesNextPageToken`\"\n      }\n    },\n    \"value\": {\n      \"literalValue\": {\n        \"stringValue\": \"next_page_token\"\n      }\n    }\n  }]\n}"
+          }
+        }
+      },
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "While next page",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": 48,
+        "y": -160
+      }
+    }
+  ],
+  "integrationParameters": [
+    {
+      "key": "`Task_1_loopMetadata`",
+      "dataType": "JSON_VALUE",
+      "displayName": "`Task_1_loopMetadata`",
+      "isTransient": true,
+      "producer": "1_1",
+      "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"sub_integration_execution_ids\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"current_iteration_count\": {\n      \"type\": \"number\"\n    },\n    \"failure_message\": {\n      \"type\": \"string\"\n    },\n    \"failure_location\": {\n      \"type\": \"string\"\n    },\n    \"current_element\": {\n      \"type\": [\"string\", \"number\", \"object\", \"array\"]\n    }\n  }\n}"
+    },
+    {
+      "key": "next_page_token",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": "first"
+      },
+      "displayName": "next_page_token"
+    },
+    {
+      "key": "page_size",
+      "dataType": "INT_VALUE",
+      "defaultValue": {
+        "intValue": "100"
+      },
+      "displayName": "page_size",
+      "inputOutputType": "IN"
+    },
+    {
+      "key": "filter_clause",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "filter_clause",
+      "inputOutputType": "IN"
+    },
+    {
+      "key": "select_columns",
+      "dataType": "STRING_ARRAY",
+      "defaultValue": {
+        "stringArray": {
+          "stringValues": []
+        }
+      },
+      "displayName": "select_columns",
+      "inputOutputType": "IN"
+    },
+    {
+      "key": "sort_by",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "sort_by",
+      "inputOutputType": "IN"
+    },
+    {
+      "key": "folder_name",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": "jobs"
+      },
+      "displayName": "folder_name",
+      "inputOutputType": "IN"
+    }
+  ],
+  "databasePersistencePolicy": "DATABASE_PERSISTENCE_ASYNC",
+  "cloudLoggingDetails": {
+    "cloudLoggingSeverity": "INFO",
+    "enableCloudLogging": true
+  }
+}

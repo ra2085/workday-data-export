@@ -1,0 +1,349 @@
+{
+  "triggerConfigs": [
+    {
+      "label": "Export page",
+      "startTasks": [
+        {
+          "taskId": "2"
+        }
+      ],
+      "apiPath": "workday-export-page-{{ .Entity }}",
+      "properties": {
+        "Trigger name": "workday-export-page-{{ .Entity }}"
+      },
+      "triggerType": "API",
+      "triggerNumber": "1",
+      "triggerId": "api_trigger/workday-export-page",
+      "position": {
+        "x": -336
+      }
+    }
+  ],
+  "taskConfigs": [
+    {
+      "task": "GenericConnectorTask",
+      "taskId": "1",
+      "parameters": {
+        "listEntitiesSortByColumns": {
+          "key": "listEntitiesSortByColumns",
+          "value": {
+            "stringValue": "$`Task_1_listEntitiesSortByColumns`$"
+          }
+        },
+        "filterClause": {
+          "key": "filterClause",
+          "value": {
+            "stringValue": "$`Task_1_filterClause`$"
+          }
+        },
+        "listEntitiesPageToken": {
+          "key": "listEntitiesPageToken",
+          "value": {
+            "stringValue": "$`Task_1_listEntitiesPageToken`$"
+          }
+        },
+        "entityType": {
+          "key": "entityType",
+          "value": {
+            "stringValue": "{{ .Entity }}"
+          }
+        },
+        "listEntitiesPageSize": {
+          "key": "listEntitiesPageSize",
+          "value": {
+            "stringValue": "$`Task_1_listEntitiesPageSize`$"
+          }
+        },
+        "listEntitiesNextPageToken": {
+          "key": "listEntitiesNextPageToken",
+          "value": {
+            "stringValue": "$`Task_1_listEntitiesNextPageToken`$"
+          }
+        },
+        "connectionName": {
+          "key": "connectionName",
+          "value": {
+            "stringValue": "projects/{{ .ProjectId }}/locations/{{ .WorkdayConnectionRegion }}/connections/{{ .WorkdayConnectionName }}"
+          }
+        },
+        "connectorOutputPayload": {
+          "key": "connectorOutputPayload",
+          "value": {
+            "stringValue": "$`Task_1_connectorOutputPayload`$"
+          }
+        },
+        "operation": {
+          "key": "operation",
+          "value": {
+            "stringValue": "LIST_ENTITIES"
+          }
+        },
+        "connectionVersion": {
+          "key": "connectionVersion",
+          "value": {
+            "stringValue": "projects/{{ .ProjectId }}/locations/global/providers/workday/connectors/workday/versions/1"
+          }
+        }
+      },
+      "nextTasks": [
+        {
+          "taskId": "6"
+        }
+      ],
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "Workday Request",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": -336,
+        "y": 252
+      }
+    },
+    {
+      "task": "FieldMappingTask",
+      "taskId": "2",
+      "parameters": {
+        "FieldMappingConfigTaskParameterKey": {
+          "key": "FieldMappingConfigTaskParameterKey",
+          "value": {
+            "jsonValue": "{\n  \"@type\": \"type.googleapis.com/enterprise.crm.eventbus.proto.FieldMappingConfig\",\n  \"mappedFields\": [{\n    \"inputField\": {\n      \"fieldType\": \"STRING_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"referenceValue\": \"$`Task_1_listEntitiesPageToken`$\"\n        },\n        \"transformationFunctions\": [{\n          \"functionType\": {\n            \"stringFunction\": {\n              \"functionName\": \"REPLACE_ALL\"\n            }\n          },\n          \"parameters\": [{\n            \"initialValue\": {\n              \"literalValue\": {\n                \"stringValue\": \"first\"\n              }\n            }\n          }, {\n            \"initialValue\": {\n              \"referenceValue\": \"$empty_string$\"\n            }\n          }]\n        }]\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_1_listEntitiesPageToken`$\",\n      \"fieldType\": \"STRING_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }]\n}"
+          }
+        }
+      },
+      "nextTasks": [
+        {
+          "taskId": "1"
+        }
+      ],
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "Prepare Entity Request",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": -210,
+        "y": 126
+      }
+    },
+    {
+      "task": "FieldMappingTask",
+      "taskId": "4",
+      "parameters": {
+        "FieldMappingConfigTaskParameterKey": {
+          "key": "FieldMappingConfigTaskParameterKey",
+          "value": {
+            "jsonValue": "{\n  \"@type\": \"type.googleapis.com/enterprise.crm.eventbus.proto.FieldMappingConfig\",\n  \"mappedFields\": [{\n    \"inputField\": {\n      \"fieldType\": \"STRING_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"literalValue\": {\n            \"stringValue\": \"{{ .GCSBucketName }}\"\n          }\n        }\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_5_connectorInputPayload`.Bucket$\",\n      \"fieldType\": \"STRING_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }, {\n    \"inputField\": {\n      \"fieldType\": \"BOOLEAN_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"literalValue\": {\n            \"booleanValue\": false\n          }\n        }\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_5_connectorInputPayload`.HasBytes$\",\n      \"fieldType\": \"JSON_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }, {\n    \"inputField\": {\n      \"fieldType\": \"STRING_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"referenceValue\": \"{{ .Entity }}\"\n        }\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_5_connectorInputPayload`.FolderPath$\",\n      \"fieldType\": \"JSON_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }, {\n    \"inputField\": {\n      \"fieldType\": \"STRING_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"baseFunction\": {\n            \"functionType\": {\n              \"baseFunction\": {\n                \"functionName\": \"GET_UUID\"\n              }\n            }\n          }\n        },\n        \"transformationFunctions\": [{\n          \"functionType\": {\n            \"stringFunction\": {\n              \"functionName\": \"CONCAT\"\n            }\n          },\n          \"parameters\": [{\n            \"initialValue\": {\n              \"literalValue\": {\n                \"stringValue\": \".csv\"\n              }\n            }\n          }]\n        }]\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_5_connectorInputPayload`.ObjectName$\",\n      \"fieldType\": \"JSON_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }, {\n    \"inputField\": {\n      \"fieldType\": \"STRING_VALUE\",\n      \"transformExpression\": {\n        \"initialValue\": {\n          \"referenceValue\": \"$WorkdayEntities$\"\n        }\n      }\n    },\n    \"outputField\": {\n      \"referenceKey\": \"$`Task_5_connectorInputPayload`.Content$\",\n      \"fieldType\": \"JSON_VALUE\",\n      \"cardinality\": \"OPTIONAL\"\n    }\n  }]\n}"
+          }
+        }
+      },
+      "synchronousCallFailurePolicy": {},
+      "nextTasks": [
+        {
+          "taskId": "5"
+        }
+      ],
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "Map to Output",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": -208,
+        "y": 512
+      }
+    },
+    {
+      "task": "GenericConnectorTask",
+      "taskId": "5",
+      "parameters": {
+        "connectorInputPayload": {
+          "key": "connectorInputPayload",
+          "value": {
+            "stringValue": "$`Task_5_connectorInputPayload`$"
+          }
+        },
+        "connectionName": {
+          "key": "connectionName",
+          "value": {
+            "stringValue": "projects/{{ .ProjectId }}/locations/{{ .GCSConnectionRegion }}/connections/{{ .GCSConnectionName }}"
+          }
+        },
+        "connectorOutputPayload": {
+          "key": "connectorOutputPayload",
+          "value": {
+            "stringValue": "$`Task_5_connectorOutputPayload`$"
+          }
+        },
+        "operation": {
+          "key": "operation",
+          "value": {
+            "stringValue": "EXECUTE_ACTION"
+          }
+        },
+        "connectionVersion": {
+          "key": "connectionVersion",
+          "value": {
+            "stringValue": "projects/{{ .ProjectId }}/locations/global/providers/gcp/connectors/gcs/versions/1"
+          }
+        },
+        "actionName": {
+          "key": "actionName",
+          "value": {
+            "stringValue": "UploadObject"
+          }
+        }
+      },
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "To GCS",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": -336,
+        "y": 672
+      }
+    },
+    {
+      "task": "JsonnetMapperTask",
+      "taskId": "6",
+      "parameters": {
+        "template": {
+          "key": "template",
+          "value": {
+            "stringValue": "local f = import \"functions\"; // Import additional functions\n\nlocal w_entities = f.extVar(\"`Task_1_connectorOutputPayload`\");\nlocal select = f.extVar(\"select_columns\");\n\nlocal to_filtered_entity(entity, select) = {\n    [column]: entity[column]\n    for column in select\n    if std.objectHas(entity, column)\n} + {\n    [field]: entity[field]\n    for field in std.objectFields(entity)\n    if std.length(select) < 1\n};\n\nlocal to_entity_array(entities, select) = [\n    to_filtered_entity(entity, select)\n    for entity in entities\n];\n\n{\n    WorkdayEntities: f.manifestCsv(to_entity_array(w_entities, select))\n}"
+          }
+        }
+      },
+      "nextTasks": [
+        {
+          "taskId": "4"
+        }
+      ],
+      "taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+      "displayName": "Filter Columns",
+      "externalTaskType": "NORMAL_TASK",
+      "position": {
+        "x": -210,
+        "y": 378
+      }
+    }
+  ],
+  "integrationParameters": [
+    {
+      "key": "`Task_5_connectorInputPayload`",
+      "dataType": "JSON_VALUE",
+      "displayName": "`Task_5_connectorInputPayload`",
+      "producer": "1_5",
+      "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"FolderPath\": {\n      \"type\": [\"string\", \"null\"],\n      \"description\": \"The path to the folder that will receive the data of the object.\"\n    },\n    \"Content\": {\n      \"type\": [\"string\", \"null\"],\n      \"description\": \"The Content to be uploaded in the bucket\"\n    },\n    \"ObjectName\": {\n      \"type\": [\"string\", \"null\"],\n      \"description\": \"The name of the uploaded object. It should be specified only when uploading the content as InputStream.\"\n    },\n    \"ContentBytes\": {\n      \"type\": [\"string\", \"null\"],\n      \"description\": \"Bytes content to upload as file.\"\n    },\n    \"ContentType\": {\n      \"type\": [\"string\", \"null\"],\n      \"description\": \"Content-Type of the object data.\",\n      \"default\": \"application/x-www-form-urlencoded\"\n    },\n    \"HasBytes\": {\n      \"type\": [\"boolean\", \"null\"],\n      \"description\": \"Whether to upload content as bytes.\",\n      \"default\": false\n    },\n    \"Bucket\": {\n      \"type\": \"string\",\n      \"description\": \"Bucket name where the object will be uploaded.\"\n    }\n  },\n  \"required\": [\"Bucket\"]\n}"
+    },
+    {
+      "key": "`Task_5_connectorOutputPayload`",
+      "dataType": "JSON_VALUE",
+      "displayName": "`Task_5_connectorOutputPayload`",
+      "isTransient": true,
+      "producer": "1_5",
+      "jsonSchema": "{\n  \"type\": \"array\",\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n    },\n    \"$schema\": \"http://json-schema.org/draft-07/schema#\"\n  }\n}"
+    },
+    {
+      "key": "`Task_1_listEntitiesPageSize`",
+      "dataType": "INT_VALUE",
+      "defaultValue": {
+        "intValue": "100"
+      },
+      "displayName": "`Task_1_listEntitiesPageSize`",
+      "inputOutputType": "IN",
+      "producer": "1_1"
+    },
+    {
+      "key": "`Task_1_filterClause`",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "`Task_1_filterClause`",
+      "inputOutputType": "IN",
+      "producer": "1_1"
+    },
+    {
+      "key": "`Task_1_listEntitiesPageToken`",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "`Task_1_listEntitiesPageToken`",
+      "inputOutputType": "IN",
+      "producer": "1_1"
+    },
+    {
+      "key": "`Task_1_listEntitiesNextPageToken`",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "`Task_1_listEntitiesNextPageToken`",
+      "inputOutputType": "OUT",
+      "isTransient": true,
+      "producer": "1_1"
+    },
+    {
+      "key": "empty_string",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "empty_string"
+    },
+    {
+      "key": "select_columns",
+      "dataType": "STRING_ARRAY",
+      "defaultValue": {
+        "stringArray": {
+          "stringValues": []
+        }
+      },
+      "displayName": "select_columns",
+      "inputOutputType": "IN"
+    },
+    {
+      "key": "WorkdayEntities",
+      "dataType": "STRING_VALUE",
+      "defaultValue": {
+        "stringValue": ""
+      },
+      "displayName": "WorkdayEntities"
+    },
+    {
+      "key": "`Task_1_connectorOutputPayload`",
+      "dataType": "JSON_VALUE",
+      "displayName": "`Task_1_connectorOutputPayload`",
+      "isTransient": true,
+      "producer": "1_1",
+      "masked": true
+    },
+    {
+      "key": "`Task_1_listEntitiesSortByColumns`",
+      "dataType": "STRING_ARRAY",
+      "displayName": "`Task_1_listEntitiesSortByColumns`",
+      "inputOutputType": "IN",
+      "producer": "1_1"
+    },
+    {
+      "key": "`Task_7_request`",
+      "dataType": "JSON_VALUE",
+      "defaultValue": {
+        "jsonValue": "{\n}"
+      },
+      "displayName": "`Task_7_request`",
+      "isTransient": true,
+      "producer": "1_7",
+      "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"additionalAuthenticatedDataCrc32c\": {\n      \"description\": \"Optional. An optional CRC32C checksum of the EncryptRequest.additional_authenticated_data. If specified, KeyManagementService will verify the integrity of the received EncryptRequest.additional_authenticated_data using this checksum. KeyManagementService will report an error if the checksum verification fails. If you receive a checksum error, your client should verify that CRC32C(EncryptRequest.additional_authenticated_data) is equal to EncryptRequest.additional_authenticated_data_crc32c, and if so, perform a limited number of retries. A persistent mismatch may indicate an issue in your computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type.\",\n      \"type\": \"string\",\n      \"format\": \"int64\"\n    },\n    \"additionalAuthenticatedData\": {\n      \"description\": \"Optional. Optional data that, if specified, must also be provided during decryption through DecryptRequest.additional_authenticated_data. The maximum size depends on the key version\\u0027s protection_level. For SOFTWARE, EXTERNAL, and EXTERNAL_VPC keys the AAD must be no larger than 64KiB. For HSM keys, the combined length of the plaintext and additional_authenticated_data fields must be no larger than 8KiB.\",\n      \"type\": \"string\",\n      \"format\": \"byte\"\n    },\n    \"plaintextCrc32c\": {\n      \"type\": \"string\",\n      \"description\": \"Optional. An optional CRC32C checksum of the EncryptRequest.plaintext. If specified, KeyManagementService will verify the integrity of the received EncryptRequest.plaintext using this checksum. KeyManagementService will report an error if the checksum verification fails. If you receive a checksum error, your client should verify that CRC32C(EncryptRequest.plaintext) is equal to EncryptRequest.plaintext_crc32c, and if so, perform a limited number of retries. A persistent mismatch may indicate an issue in your computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type.\",\n      \"format\": \"int64\"\n    },\n    \"plaintext\": {\n      \"format\": \"byte\",\n      \"description\": \"Required. The data to encrypt. Must be no larger than 64KiB. The maximum size depends on the key version\\u0027s protection_level. For SOFTWARE, EXTERNAL, and EXTERNAL_VPC keys, the plaintext must be no larger than 64KiB. For HSM keys, the combined length of the plaintext and additional_authenticated_data fields must be no larger than 8KiB.\",\n      \"type\": \"string\"\n    }\n  }\n}"
+    },
+    {
+      "key": "`Task_7_response`",
+      "dataType": "JSON_VALUE",
+      "displayName": "`Task_7_response`",
+      "isTransient": true,
+      "producer": "1_7",
+      "jsonSchema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"verifiedAdditionalAuthenticatedDataCrc32c\": {\n      \"type\": \"boolean\",\n      \"description\": \"Integrity verification field. A flag indicating whether EncryptRequest.additional_authenticated_data_crc32c was received by KeyManagementService and used for the integrity verification of the AAD. A false value of this field indicates either that EncryptRequest.additional_authenticated_data_crc32c was left unset or that it was not delivered to KeyManagementService. If you\\u0027ve set EncryptRequest.additional_authenticated_data_crc32c but this field is still false, discard the response and perform a limited number of retries.\"\n    },\n    \"name\": {\n      \"description\": \"The resource name of the CryptoKeyVersion used in encryption. Check this field to verify that the intended resource was used for encryption.\",\n      \"type\": \"string\"\n    },\n    \"ciphertextCrc32c\": {\n      \"description\": \"Integrity verification field. A CRC32C checksum of the returned EncryptResponse.ciphertext. An integrity check of EncryptResponse.ciphertext can be performed by computing the CRC32C checksum of EncryptResponse.ciphertext and comparing your results to this field. Discard the response in case of non-matching checksum values, and perform a limited number of retries. A persistent mismatch may indicate an issue in your computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type.\",\n      \"format\": \"int64\",\n      \"type\": \"string\"\n    },\n    \"ciphertext\": {\n      \"type\": \"string\",\n      \"description\": \"The encrypted data.\",\n      \"format\": \"byte\"\n    },\n    \"verifiedPlaintextCrc32c\": {\n      \"description\": \"Integrity verification field. A flag indicating whether EncryptRequest.plaintext_crc32c was received by KeyManagementService and used for the integrity verification of the plaintext. A false value of this field indicates either that EncryptRequest.plaintext_crc32c was left unset or that it was not delivered to KeyManagementService. If you\\u0027ve set EncryptRequest.plaintext_crc32c but this field is still false, discard the response and perform a limited number of retries.\",\n      \"type\": \"boolean\"\n    },\n    \"protectionLevel\": {\n      \"description\": \"The ProtectionLevel of the CryptoKeyVersion used in encryption.\",\n      \"enumDescriptions\": [\"Not specified.\", \"Crypto operations are performed in software.\", \"Crypto operations are performed in a Hardware Security Module.\", \"Crypto operations are performed by an external key manager.\", \"Crypto operations are performed in an EKM-over-VPC backend.\"],\n      \"enum\": [\"PROTECTION_LEVEL_UNSPECIFIED\", \"SOFTWARE\", \"HSM\", \"EXTERNAL\", \"EXTERNAL_VPC\"],\n      \"type\": \"string\"\n    }\n  }\n}"
+    }
+  ],
+  "enableVariableMasking": true,
+  "databasePersistencePolicy": "DATABASE_PERSISTENCE_ASYNC",
+  "cloudLoggingDetails": {
+    "cloudLoggingSeverity": "INFO",
+    "enableCloudLogging": true
+  }
+}
