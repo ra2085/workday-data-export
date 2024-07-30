@@ -120,6 +120,10 @@ func waitForIntegrationExecution(executionID string, ctx Context, logger *log.Lo
 		time.Sleep(10 * time.Second)
 	}
 
+	if state != "SUCCEEDED" {
+		return errors.Errorf("Integration exited with %s state", state)
+	}
+
 	return nil
 
 }
@@ -164,7 +168,6 @@ func createIntegration(integrationDir string, ctx Context, logger *log.Logger) e
 	popd := PushDir(tmpDir)
 	defer popd()
 	integrationCli := exec.Command("integrationcli", "integrations", "apply",
-		"-e", "dev",
 		"-f", integrationDir,
 		"-p", ctx.ProjectId,
 		"-r", ctx.Region,
