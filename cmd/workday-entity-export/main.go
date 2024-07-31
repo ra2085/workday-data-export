@@ -1,24 +1,22 @@
 package main
 
 import (
-	"bufio"
 	"bytes"
-	"context"
 	"fmt"
 	"github.com/go-errors/errors"
 	cp "github.com/otiai10/copy"
-	"golang.org/x/oauth2"
 	"google.golang.org/api/googleapi"
 	"google.golang.org/api/integrations/v1"
-	"google.golang.org/api/option"
 	"io/fs"
 	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"text/template"
 	"time"
+	"workday-data-export/pkg/util"
 )
 
 var showStack string = "true"
@@ -27,6 +25,7 @@ var ProjectId string = os.Getenv("PROJECT_ID")
 var Region string = os.Getenv("REGION")
 var Token = os.Getenv("TOKEN")
 var Entity = os.Getenv("ENTITY")
+var EntitiesPerPage = os.Getenv("ENTITIES_PER_PAGE")
 var GcsConnectionName = os.Getenv("GCS_CONNECTION_NAME")
 var GcsConnectionRegion = os.Getenv("GCS_CONNECTION_REGION")
 var GcsBucketName = os.Getenv("GCS_BUCKET_NAME")
@@ -42,21 +41,23 @@ type Context struct {
 	GCSBucketName           string
 	WorkdayConnectionName   string
 	WorkdayConnectionRegion string
+	EntitiesPerPage         string
 }
 
 func main() {
 	var err error
 	logger := log.New(os.Stdout, fmt.Sprintf("%s - ", "workday-export"), log.Flags())
 
-	RequireArg(ProjectId != "", "PROJECT_ID env var is required")
-	RequireArg(Region != "", "REGION env var is required")
-	RequireArg(Token != "", "TOKEN env var is required")
-	RequireArg(Entity != "", "ENTITY env var is required")
-	RequireArg(GcsConnectionName != "", "GCS_CONNECTION_NAME env var is required")
-	RequireArg(GcsConnectionRegion != "", "GCS_CONNECTION_REGION env var is required")
-	RequireArg(GcsBucketName != "", "GCS_BUCKET_NAME env var is required")
-	RequireArg(WorkdayConnectionName != "", "WORKDAY_CONNECTION_NAME env var is required")
-	RequireArg(WorkdayConnectionRegion != "", "WORKDAY_CONNECTION_REGION env var is required")
+	util.RequireArg(ProjectId != "", "PROJECT_ID env var is required")
+	util.RequireArg(Region != "", "REGION env var is required")
+	util.RequireArg(Token != "", "TOKEN env var is required")
+	util.RequireArg(Entity != "", "ENTITY env var is required")
+	util.RequireArg(EntitiesPerPage != "", "ENTITIES_PER_PAGE env var is required")
+	util.RequireArg(GcsConnectionName != "", "GCS_CONNECTION_NAME env var is required")
+	util.RequireArg(GcsConnectionRegion != "", "GCS_CONNECTION_REGION env var is required")
+	util.RequireArg(GcsBucketName != "", "GCS_BUCKET_NAME env var is required")
+	util.RequireArg(WorkdayConnectionName != "", "WORKDAY_CONNECTION_NAME env var is required")
+	util.RequireArg(WorkdayConnectionRegion != "", "WORKDAY_CONNECTION_REGION env var is required")
 
 	ctx := Context{
 		Entity:                  Entity,
@@ -67,6 +68,7 @@ func main() {
 		GCSBucketName:           GcsBucketName,
 		WorkdayConnectionName:   WorkdayConnectionName,
 		WorkdayConnectionRegion: WorkdayConnectionRegion,
+		EntitiesPerPage:         EntitiesPerPage,
 	}
 
 	if err = createIntegration("workday-export-parent", ctx, logger); err != nil {
@@ -93,7 +95,7 @@ func waitForIntegrationExecution(executionID string, ctx Context, logger *log.Lo
 
 	var svc *integrations.Service
 	var err error
-	if svc, err = getIntegrationsSvc(); err != nil {
+	if svc, err = util.GetIntegrationsSvc(Token); err != nil {
 		return err
 	}
 
@@ -165,7 +167,7 @@ func createIntegration(integrationDir string, ctx Context, logger *log.Logger) e
 	}
 
 	//use the integrationcli binary to create the integration
-	popd := PushDir(tmpDir)
+	popd := util.PushDir(tmpDir)
 	defer popd()
 	integrationCli := exec.Command("integrationcli", "integrations", "apply",
 		"-f", integrationDir,
@@ -173,7 +175,7 @@ func createIntegration(integrationDir string, ctx Context, logger *log.Logger) e
 		"-r", ctx.Region,
 		"-t", Token,
 	)
-	Run(integrationCli, logger)
+	util.Run(integrationCli, logger)
 
 	return nil
 }
@@ -194,7 +196,7 @@ func replaceAll(dir string, ctx Context) error {
 			return errors.New(err)
 		}
 
-		if err = WriteOutputText(path, renderedBytes.Bytes()); err != nil {
+		if err = util.WriteOutputText(path, renderedBytes.Bytes()); err != nil {
 			return errors.New(err)
 		}
 
@@ -207,96 +209,25 @@ func replaceAll(dir string, ctx Context) error {
 	return nil
 }
 
-func WriteOutputText(output string, outputText []byte) error {
-	var err error
-
-	if output == "-" || len(output) == 0 {
-		fmt.Printf("%s", string(outputText))
-		return nil
-	}
-
-	dir := filepath.Dir(output)
-	err = os.MkdirAll(dir, os.ModePerm)
-	if err != nil {
-		return errors.New(err)
-	}
-
-	err = os.WriteFile(output, outputText, os.ModePerm)
-	if err != nil {
-		return errors.New(err)
-	}
-	return nil
-}
-
-func PushDir(dir string) func() {
-	wd, err := os.Getwd()
-	if err != nil {
-		panic(err)
-	}
-
-	err = os.Chdir(dir)
-	if err != nil {
-		panic(err)
-	}
-
-	popDir := func() {
-		Must(os.Chdir(wd))
-	}
-
-	return popDir
-}
-
-func Must(err error) {
-	if err != nil {
-		panic(err)
-	}
-}
-
-func Run(cmd *exec.Cmd, logger *log.Logger) {
-	r, _ := cmd.StdoutPipe()
-	cmd.Stderr = cmd.Stdout
-	done := make(chan struct{})
-	scanner := bufio.NewScanner(r)
-	go func() {
-		for scanner.Scan() {
-			line := scanner.Text()
-			logger.Println(line)
-		}
-		done <- struct{}{}
-	}()
-
-	err := cmd.Start()
-	if err != nil {
-		panic(err)
-	}
-
-	<-done
-	err = cmd.Wait()
-	if err != nil {
-		panic(err)
-	}
-}
-
-func RequireArg(condition bool, message string) {
-	if !condition {
-		panic(message)
-	}
-}
-
 func scheduleIntegration(ctx Context, logger *log.Logger) (string, error) {
 	logger.Printf("**** Scheduling Integration for %s entity ***", ctx.Entity)
 
 	var svc *integrations.Service
 	var err error
-	if svc, err = getIntegrationsSvc(); err != nil {
+	if svc, err = util.GetIntegrationsSvc(Token); err != nil {
 		return "", err
+	}
+
+	var entitiesPerPage int
+	if entitiesPerPage, err = strconv.Atoi(ctx.EntitiesPerPage); err != nil {
+		return "", errors.New(err)
 	}
 
 	parent := fmt.Sprintf("projects/%s/locations/%s/integrations/workday-export-parent-v1-%s", ctx.ProjectId, ctx.Region, ctx.Entity)
 	scheduleCall := svc.Projects.Locations.Integrations.Schedule(parent, &integrations.GoogleCloudIntegrationsV1alphaScheduleIntegrationsRequest{
 		InputParameters: map[string]integrations.GoogleCloudIntegrationsV1alphaValueType{
 			"page_size": {
-				IntValue: 2,
+				IntValue: int64(entitiesPerPage),
 			},
 			"select_columns": {
 				StringArray: &integrations.GoogleCloudIntegrationsV1alphaStringParameterArray{
@@ -327,19 +258,4 @@ func scheduleIntegration(ctx Context, logger *log.Logger) (string, error) {
 	logger.Printf("Integration scheduled successfully - executionId: %s", executionId)
 
 	return executionId, nil
-}
-
-func getIntegrationsSvc() (*integrations.Service, error) {
-	var err error
-	bCtx := context.Background()
-
-	config := &oauth2.Config{}
-	t := new(oauth2.Token)
-	t.AccessToken = Token
-
-	var svc *integrations.Service
-	if svc, err = integrations.NewService(bCtx, option.WithTokenSource(config.TokenSource(bCtx, t))); err != nil {
-		return nil, errors.New(err)
-	}
-	return svc, nil
 }

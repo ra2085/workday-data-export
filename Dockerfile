@@ -22,4 +22,4 @@ COPY LICENSE /
 WORKDIR /
 COPY --from=integration /usr/local/bin/integrationcli /usr/local/bin
 COPY --from=builder /src/bin/* /usr/local/bin/
-ENTRYPOINT [ "workday-export" ]
+ENTRYPOINT [ "workday-entity-export" ]

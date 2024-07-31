@@ -7,5 +7,9 @@ LD_FLAGS="-X main.GitTag=${GIT_TAG} -X main.BuildTimestamp=${BUILD_TIMESTAMP} -X
 
 
 mkdir -p bin
-echo "Building tool ..."
-go build -buildvcs=true -ldflags "${LD_FLAGS}" -o bin/workday-export ./cmd/workday-export
+echo "Building workday-entity-export ..."
+go build -buildvcs=true -ldflags "${LD_FLAGS}" -o bin/workday-entity-export ./cmd/workday-entity-export
+
+
+echo "Building workday-schema-export ..."
+go build -buildvcs=true -ldflags "${LD_FLAGS}" -o bin/workday-schema-export ./cmd/workday-schema-export

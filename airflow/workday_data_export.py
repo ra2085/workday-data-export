@@ -41,6 +41,7 @@ with models.DAG(
         schedule_interval=datetime.timedelta(days=1),
         params={
             "ENTITIES": ["Disabilities", "Workers", "JobProfiles", "Genders"],
+            "ENTITIES_PER_PAGE": "100",
             "PROJECT_ID": f"{project_id}",
             "REGION": "us-west2",
             "WORKDAY_CONNECTION_NAME": "workday",
@@ -61,7 +62,7 @@ with models.DAG(
         for entity in entities:
             dag.log.info(f"Setting up pod for {entity} ...")
             pods.append({
-                "image": f'gcr.io/{project_id}/workday-export',
+                "image": f'gcr.io/{project_id}/workday-entity-export',
                 "name": entity.lower(),
                 "get_logs": True,
                 "env_vars": {
@@ -69,6 +70,7 @@ with models.DAG(
                     "PROJECT_ID": "{{ params.PROJECT_ID }}",
                     "REGION": "{{ params.REGION }}",
                     "ENTITY": entity,
+                    "ENTITIES_PER_PAGE": "{{ params.ENTITIES_PER_PAGE }}",
                     "WORKDAY_CONNECTION_NAME": "{{ params.WORKDAY_CONNECTION_NAME }}",
                     "WORKDAY_CONNECTION_REGION": "{{ params.WORKDAY_CONNECTION_REGION }}",
                     "GCS_BUCKET_NAME": "{{ params.GCS_BUCKET_NAME }}",

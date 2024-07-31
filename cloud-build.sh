@@ -12,4 +12,4 @@ gcloud services enable \
   cloudbuild.googleapis.com \
   artifactregistry.googleapis.com
 
-gcloud builds submit . --tag "gcr.io/${PROJECT_ID}/workday-export"
+gcloud builds submit . --tag "gcr.io/${PROJECT_ID}/workday-entity-export"
