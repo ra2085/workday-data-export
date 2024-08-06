@@ -10,9 +10,13 @@ import (
 	"google.golang.org/api/integrations/v1"
 	"google.golang.org/api/option"
 	"log"
+	"net"
+	"net/http"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sync"
+	"time"
 )
 
 func WriteOutputText(output string, outputText []byte) error {
@@ -33,6 +37,7 @@ func WriteOutputText(output string, outputText []byte) error {
 	if err != nil {
 		return errors.New(err)
 	}
+
 	return nil
 }
 
@@ -106,17 +111,41 @@ func GetIntegrationsSvc(token string) (*integrations.Service, error) {
 	return svc, nil
 }
 
+var GlobalRequestCount = 0
+
+type CustomTransport struct {
+	Transport http.RoundTripper
+	Token     string
+}
+
+var Mutex sync.Mutex
+
+func (t *CustomTransport) RoundTrip(req *http.Request) (*http.Response, error) {
+	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", t.Token))
+	res, err := t.Transport.RoundTrip(req)
+	return res, err
+}
+
 func GetConnectorsSvc(token string) (*connectors.Service, error) {
 	var err error
 	bCtx := context.Background()
 
-	config := &oauth2.Config{}
-	t := new(oauth2.Token)
-	t.AccessToken = token
-
 	var svc *connectors.Service
-	if svc, err = connectors.NewService(bCtx, option.WithTokenSource(config.TokenSource(bCtx, t))); err != nil {
+	transport := &http.Transport{
+		Dial: (&net.Dialer{
+			Timeout:   60 * time.Second,
+			KeepAlive: 30 * time.Second,
+		}).Dial,
+		TLSHandshakeTimeout: 60 * time.Second,
+	}
+
+	client := &http.Client{Transport: &CustomTransport{
+		Transport: transport, Token: token,
+	}}
+
+	if svc, err = connectors.NewService(bCtx, option.WithHTTPClient(client)); err != nil {
 		return nil, errors.New(err)
 	}
+
 	return svc, nil
 }
