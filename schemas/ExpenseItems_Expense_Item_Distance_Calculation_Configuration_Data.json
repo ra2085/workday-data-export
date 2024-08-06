@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExpenseItems_Expense_Item_Distance_Calculation_Configuration_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExpenseItem_Expense_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if distance calculation attributes are required on expense reports.",
+      "field": "Require_Distance_Calculation_Attributes_on_Expense_Reports",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if distance calculation attributes are required on spend authorizations.",
+      "field": "Require_Distance_Calculation_Attributes_on_Spend_Authorizations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_Expense_Item_Unit_of_Measure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The configuration data for the distance calculation attributes",
+      "field": "Distance_Calculation_Attribute_Configuration_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Distance_Calculation_Attribute_Configuration_Data": {
+        "description": "The configuration data for the distance calculation attributes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ExpenseItem_Expense_Item_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Require_Distance_Calculation_Attributes_on_Expense_Reports": {
+        "description": "True if distance calculation attributes are required on expense reports.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Require_Distance_Calculation_Attributes_on_Spend_Authorizations": {
+        "description": "True if distance calculation attributes are required on spend authorizations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_Expense_Item_Unit_of_Measure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

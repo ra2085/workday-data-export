@@ -1,0 +1,1420 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JobPostings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Reference_Job_Posting_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Job Posting.",
+      "field": "Job_Posting_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Job Posting Title for the Job Posting.",
+      "field": "Job_Posting_Job_Posting_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Site_Reference_Job_Posting_Site_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Site_Reference_Recruiting_Agency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Site_Reference_VPS_Site_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The External Site Path for the Job Posting.",
+      "field": "External_Job_Path",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "For external postings (custom and/or external career site), this is the link to the external career site job URL.",
+      "field": "External_Apply_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Job Requisition.",
+      "field": "Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Remote_Type_Remote_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Remote_Type_Remote_Type_Reference_Job_Requisition_Remote_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An alternate name for the remote type when the job details display on the Recruiting External Career Sites.",
+      "field": "Job_Posting_Remote_Type_External_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Location_Primary_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Location_Primary_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An alternate name for the primary location when the job details display on the Recruiting External Career Sites.",
+      "field": "Job_Posting_Location_External_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains References and the External Name value for a Job Posting's additional locations.",
+      "field": "Job_Posting_Additional_Location_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date of the Job Posting.",
+      "field": "Job_Posting_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End date of the Job Posting.",
+      "field": "Job_Posting_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Job posting is the default job posting used for social share and invite to apply referrals. Will return false until post job business process is complete.",
+      "field": "Primary_Posting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Forecasted Agency Payout on a Job Posting. Calculated at time of posting or updated later. The Currency for this value is stored separately on the Job Posting.",
+      "field": "Forecasted_Payout",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Forecasted_Payout_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Forecasted_Payout_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Forecasted_Payout_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Job Family for the Job Posting.",
+      "field": "Job_Family_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Time_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Posting_Time_Type_Reference_Position_Time_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Type_Reference_Contingent_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Type_Reference_Employee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The work-study student award sources for the job posting. Includes at least 1 job profile that requires or allows work-study from at least 1 of these student award sources.",
+      "field": "Student_Award_Source_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unions for the job posting. Includes at least 1 job profile that requires or allows membership in at least 1 of these unions.",
+      "field": "Union_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Similar Job(s) for the Job Posting.",
+      "field": "Similar_Jobs_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Recruiting Start Date for the Job Requisition.  Recruiting cannot be done for the position prior to this date.",
+      "field": "Recruiting_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Target Hire Date for the Job Requisition.",
+      "field": "Target_Hire_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Target End Date for the Job Requisition is required for fixed term employees and contingent worker sub-types that are specified as requiring cost information.",
+      "field": "Target_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Additional Job Profiles for the job requisition. Cannot contain the Primary Job Profile.",
+      "field": "Additional_Job_Profiles_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_Contingent_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_Employee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Remote_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Remote_Type_Reference_Job_Requisition_Remote_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Primary_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Primary_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Job_Posting_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Job_Posting_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Additional Location(s) for the Job Requisition.",
+      "field": "Additional_Locations_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The additional job posting locations for the job requisition.",
+      "field": "Additional_Job_Posting_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Time_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hiring_Requirement_Time_Type_Reference_Position_Time_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Contract_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Contract_Type_Reference_Employee_Contract_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Schedule Hours for the Job Requisition.",
+      "field": "Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_Work_Shift_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, indicates that this is a highlighted job requisition.",
+      "field": "Spotlight_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Referral_Payment_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Referral_Payment_Plan_Reference_One-Time_Payment_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Job Posting Title of the Job Requisition.",
+      "field": "Job_Requisition_Detail_Job_Posting_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of positions made available by the job requisition.  This number can only be greater than 1 for job requisitions created with the \"new position\" option.  A value of greater than 1 was only allowed starting in W16.  This element must be omitted for the Create Job Requisition and Edit Job Requisition operations.",
+      "field": "Positions_Allocated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of openings or positions available to fill for the job requisition.",
+      "field": "Positions_Available",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the Job Requisition is for a position that is academic tenure eligible.",
+      "field": "Academic_Tenure_Eligible",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The job description summary (plain text) for the job requisition.",
+      "field": "Job_Description_Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Justification for the Job Requisition.",
+      "field": "Justification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Instruction_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Instruction_Reference_Recruiting_Instruction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the Job Requisition will be sent to an external recruiting system.",
+      "field": "Do_Not_Send_To_Recruiting_System",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Recruiting Instruction",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if any of the job requisition's positions is available for recruiting.",
+      "field": "Available_for_Recruiting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If the job requisition exists with the purpose of replacing workers, specify the reference workers.",
+      "field": "Replacement_for_Worker_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the job requisition is confidential",
+      "field": "Confidential_Job_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Template_Reference_Job_Application_Template_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's competency information.",
+      "field": "Competency_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's certification information.",
+      "field": "Certification_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's education information.",
+      "field": "Education_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's language information.",
+      "field": "Language_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's responsibility information.",
+      "field": "Responsibility_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's training information.",
+      "field": "Training_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's work experience information.",
+      "field": "Work_Experience_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Position's Skill information.",
+      "field": "Skill_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for a single file attachment",
+      "field": "Job_Requisition_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Result of the evaluation of an External Field based on a contextual instance.",
+      "field": "Document_Field_Result_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date of the Job Posting.",
+      "field": "Job_Posting_Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date of the Job Posting.",
+      "field": "Job_Posting_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Job Posting Site. Specify the Job Posting Site by entering data here or in the Job Posting Site Reference.",
+      "field": "Job_Posting_Site_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+      "field": "Job_Posting_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+      "field": "Job_Posting_Site_Reference_Job_Posting_Site_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+      "field": "Job_Posting_Site_Reference_Recruiting_Agency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+      "field": "Job_Posting_Site_Reference_VPS_Site_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return Job Postings for a Supervisory Organization Reference.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return Job Postings for a Supervisory Organization Reference.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return Job Postings for a Job Requisition Reference.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return Job Postings for a Job Requisition Reference.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only return Job Postings with a future Job Posting End Date.",
+      "field": "Show_Only_Active_Job_Postings_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieves job postings that have been posted to an external career site.",
+      "field": "Show_Only_External_Job_Postings_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieves job postings with start dates on and before the current date.",
+      "field": "Exclude_Future_Job_Postings_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Tenure_Eligible": {
+        "description": "Indicates if the Job Requisition is for a position that is academic tenure eligible.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Additional_Job_Posting_Location_Reference": {
+        "description": "The additional job posting locations for the job requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Job_Profiles_Reference": {
+        "description": "Reference to Additional Job Profiles for the job requisition. Cannot contain the Primary Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Locations_Reference": {
+        "description": "The Additional Location(s) for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Available_for_Recruiting": {
+        "description": "Returns true if any of the job requisition's positions is available for recruiting.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Certification_Data": {
+        "description": "Contains the position's certification information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Data": {
+        "description": "Contains the position's competency information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Confidential_Job_Requisition": {
+        "description": "Indicates if the job requisition is confidential",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Do_Not_Send_To_Recruiting_System": {
+        "description": "Indicates the Job Requisition will be sent to an external recruiting system.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Document_Field_Result_Data": {
+        "description": "Result of the evaluation of an External Field based on a contextual instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Data": {
+        "description": "Contains the position's education information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Contract_Type_Reference_Employee_Contract_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Contract_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Future_Job_Postings_Prompt": {
+        "description": "Retrieves job postings with start dates on and before the current date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Apply_URL": {
+        "description": "For external postings (custom and/or external career site), this is the link to the external career site job URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Job_Path": {
+        "description": "The External Site Path for the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Forecasted_Payout": {
+        "description": "The Forecasted Agency Payout on a Job Posting. Calculated at time of posting or updated later. The Currency for this value is stored separately on the Job Posting.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Forecasted_Payout_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Forecasted_Payout_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Forecasted_Payout_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Primary_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Primary_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Remote_Type_Reference_Job_Requisition_Remote_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Remote_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Time_Type_Reference_Position_Time_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Requirement_Time_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Template_Reference_Job_Application_Template_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Description_Summary": {
+        "description": "The job description summary (plain text) for the job requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference": {
+        "description": "The Job Family for the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Additional_Location_Data": {
+        "description": "Contains References and the External Name value for a Job Posting's additional locations.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_End_Date": {
+        "description": "End date of the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_End_Date_Prompt": {
+        "description": "End Date of the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_ID": {
+        "description": "The ID of the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Job_Posting_Title": {
+        "description": "The Job Posting Title for the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Location_External_Name": {
+        "description": "An alternate name for the primary location when the job details display on the Recruiting External Career Sites.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Location_Primary_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Location_Primary_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Reference_Job_Posting_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Job_Posting_Remote_Type_External_Name": {
+        "description": "An alternate name for the remote type when the job details display on the Recruiting External Career Sites.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Remote_Type_Remote_Type_Reference_Job_Requisition_Remote_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Remote_Type_Remote_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Name_Prompt": {
+        "description": "Name of the Job Posting Site. Specify the Job Posting Site by entering data here or in the Job Posting Site Reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_Job_Posting_Site_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_Job_Posting_Site_ID_Prompt": {
+        "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_Recruiting_Agency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_Recruiting_Agency_ID_Prompt": {
+        "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_VPS_Site_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_VPS_Site_ID_Prompt": {
+        "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Site_Reference_WID_Prompt": {
+        "description": "Reference to the Job Posting Site. Specify the Job Posting Site by entering data here or entering the Job Posting Site Name.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Start_Date": {
+        "description": "Start Date of the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Start_Date_Prompt": {
+        "description": "Start Date of the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Time_Type_Reference_Position_Time_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Posting_Time_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Attachment_Data": {
+        "description": "Wrapper element for a single file attachment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Detail_Job_Posting_Title": {
+        "description": "The Job Posting Title of the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_ID": {
+        "description": "The ID of the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID_Prompt": {
+        "description": "Return Job Postings for a Job Requisition Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID_Prompt": {
+        "description": "Return Job Postings for a Job Requisition Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Type_Reference_Contingent_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Type_Reference_Employee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Justification": {
+        "description": "The Justification for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Language_Data": {
+        "description": "Contains the position's language information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Name of the Recruiting Instruction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_Contingent_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_Employee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Positions_Allocated": {
+        "description": "The number of positions made available by the job requisition.  This number can only be greater than 1 for job requisitions created with the \"new position\" option.  A value of greater than 1 was only allowed starting in W16.  This element must be omitted for the Create Job Requisition and Edit Job Requisition operations.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Positions_Available": {
+        "description": "The number of openings or positions available to fill for the job requisition.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Primary_Job_Posting_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Job_Posting_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Posting": {
+        "description": "Job posting is the default job posting used for social share and invite to apply referrals. Will return false until post job business process is complete.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Recruiting_Instruction_Reference_Recruiting_Instruction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Instruction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Start_Date": {
+        "description": "The Recruiting Start Date for the Job Requisition.  Recruiting cannot be done for the position prior to this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Referral_Payment_Plan_Reference_One-Time_Payment_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Referral_Payment_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replacement_for_Worker_Reference": {
+        "description": "If the job requisition exists with the purpose of replacing workers, specify the reference workers.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Responsibility_Data": {
+        "description": "Contains the position's responsibility information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scheduled_Weekly_Hours": {
+        "description": "The Schedule Hours for the Job Requisition.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Show_Only_Active_Job_Postings_Prompt": {
+        "description": "Only return Job Postings with a future Job Posting End Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Only_External_Job_Postings_Prompt": {
+        "description": "Retrieves job postings that have been posted to an external career site.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Similar_Jobs_Reference": {
+        "description": "The Similar Job(s) for the Job Posting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Data": {
+        "description": "Contains the Position's Skill information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spotlight_Job": {
+        "description": "If Y, indicates that this is a highlighted job requisition.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Award_Source_Reference": {
+        "description": "The work-study student award sources for the job posting. Includes at least 1 job profile that requires or allows work-study from at least 1 of these student award sources.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Return Job Postings for a Supervisory Organization Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "Return Job Postings for a Supervisory Organization Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_End_Date": {
+        "description": "The Target End Date for the Job Requisition is required for fixed term employees and contingent worker sub-types that are specified as requiring cost information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Hire_Date": {
+        "description": "The Target Hire Date for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Training_Data": {
+        "description": "Contains the position's training information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Union_Reference": {
+        "description": "The unions for the job posting. Includes at least 1 job profile that requires or allows membership in at least 1 of these unions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Experience_Data": {
+        "description": "Contains the position's work experience information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_Work_Shift_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

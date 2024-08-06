@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InterestandLateFeeCalculationOptions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interest_and_Late_Fee_Calculation_Option_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interest_and_Late_Fee_Calculation_Option_Reference_Interest_and_Late_Fee_Calculation_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for the Interest and Late Fee Calculation Rule.",
+      "field": "Interest_and_Late_Fee_Calculation_Rule_for_Tenant_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When Use On-Account Amount is set to true, any on-account amount a customer may have will be applied to their delinquent invoices before calculating any interest or late fees.",
+      "field": "Tenant_Use_On-Account_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set the Include Partial Month flag to yes to calculate a finance charge for the entire month even if the month has already started.",
+      "field": "Include_Partial_Month",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the minimum number of days for a past due invoice to generate a finance charge. As an example, the minimum days is defined as 15, an invoice eligible for finance charges is eligible for 1 full month of interest, however, an invoice generated on the 20th is not eligible.",
+      "field": "Minimum_Days_For_Partial_Month",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of days in a year to be used in finance charge calculations.",
+      "field": "Days_in_Year",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for the Interest and Late Fee Calculation Rule.",
+      "field": "Interest_and_Late_Fee_Calculation_Rule_for_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order in which this rule will be applied.  Rules take precedence in ascending order.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company the Interest and Late Fee Rule will apply to.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When Use On-Account Amount is set to true, any on-account amount a customer may have will be applied to their delinquent invoices before calculating any interest or late fees.",
+      "field": "Use_On-Account_Amount",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference": {
+        "description": "The Company the Interest and Late Fee Rule will apply to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Days_in_Year": {
+        "description": "The number of days in a year to be used in finance charge calculations.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Include_Partial_Month": {
+        "description": "Set the Include Partial Month flag to yes to calculate a finance charge for the entire month even if the month has already started.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Interest_and_Late_Fee_Calculation_Option_Reference_Interest_and_Late_Fee_Calculation_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interest_and_Late_Fee_Calculation_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Interest_and_Late_Fee_Calculation_Rule_for_Company_Reference_ID": {
+        "description": "Contains a unique identifier for the Interest and Late Fee Calculation Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interest_and_Late_Fee_Calculation_Rule_for_Tenant_Reference_ID": {
+        "description": "Contains a unique identifier for the Interest and Late Fee Calculation Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Days_For_Partial_Month": {
+        "description": "Enter the minimum number of days for a past due invoice to generate a finance charge. As an example, the minimum days is defined as 15, an invoice eligible for finance charges is eligible for 1 full month of interest, however, an invoice generated on the 20th is not eligible.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "The order in which this rule will be applied.  Rules take precedence in ascending order.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenant_Use_On-Account_Amount": {
+        "description": "When Use On-Account Amount is set to true, any on-account amount a customer may have will be applied to their delinquent invoices before calculating any interest or late fees.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_On-Account_Amount": {
+        "description": "When Use On-Account Amount is set to true, any on-account amount a customer may have will be applied to their delinquent invoices before calculating any interest or late fees.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

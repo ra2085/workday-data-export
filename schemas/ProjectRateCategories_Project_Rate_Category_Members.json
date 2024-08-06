@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectRateCategories_Project_Rate_Category_Members",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ProjectRateCategory_Project_Rate_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference Id for Project Rate Category Member",
+      "field": "Project_Rate_Category_Member_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Rate_Category_Member_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Rate_Category_Member_Reference_Project_Rate_Category_Member_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Rate Category Member Name",
+      "field": "Project_Rate_Category_Member_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "In Use flag",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "In_Use": {
+        "description": "In Use flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ProjectRateCategory_Project_Rate_Category_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Member_ID": {
+        "description": "Reference Id for Project Rate Category Member",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Member_Name": {
+        "description": "Project Rate Category Member Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Member_Reference_Project_Rate_Category_Member_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Member_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

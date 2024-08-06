@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "OneTimePaymentPlans_One-Time_Payment_Plan_Amount_Based_Profile_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "OneTimePaymentPlan_One-Time_Payment_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the target one-time payment amount. Workday uses this value if it can find no other target value for the employee. This can happen when employees are not eligible for any of the multiple plan targets, or are eligible for multiple plan profile targets.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the recommended minimum amount for this profile.",
+      "field": "Minimum_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the recommended maximum amount for this profile.",
+      "field": "Maximum_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The worktags associated with this one-time payment.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Reference_One-Time_Payment_Plan_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Clawback_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Clawback_Schedule_Reference_One-Time_Payment_Plan_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicator for whether or not charging this One-Time Payment to New Hire Organizations.",
+      "field": "Cost_to_New_Hire_Organizations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive One-Time Payment Plans.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "Enter the amount of the target one-time payment amount. Workday uses this value if it can find no other target value for the employee. This can happen when employees are not eligible for any of the multiple plan targets, or are eligible for multiple plan profile targets.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Clawback_Schedule_Reference_One-Time_Payment_Plan_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Clawback_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cost_to_New_Hire_Organizations": {
+        "description": "Indicator for whether or not charging this One-Time Payment to New Hire Organizations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive One-Time Payment Plans.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Amount": {
+        "description": "Enter the recommended maximum amount for this profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Amount": {
+        "description": "Enter the recommended minimum amount for this profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "OneTimePaymentPlan_One-Time_Payment_Plan_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Reference_One-Time_Payment_Plan_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "The worktags associated with this one-time payment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

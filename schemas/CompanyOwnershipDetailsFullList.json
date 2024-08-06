@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyOwnershipDetailsFullList",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Ownership_Details_Full_List_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Ownership_Details_Full_List_Reference_Ownership_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ownership detail ID.",
+      "field": "Ownership_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A snapshot of company ownership details.",
+      "field": "Company_Ownership_Snapshot_Detail_Full_List_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Companies_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_WID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Ownership_Details_Full_List_Reference_Ownership_Detail_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Ownership_Details_Full_List_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Company_Ownership_Snapshot_Detail_Full_List_Data": {
+        "description": "A snapshot of company ownership details.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ownership_Detail_ID": {
+        "description": "Ownership detail ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

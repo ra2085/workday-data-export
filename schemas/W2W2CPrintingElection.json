@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "W2W2CPrintingElection",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "XMLNAME__Worker__Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "XMLNAME__Worker__Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "XMLNAME__Worker__Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Document_Delivery_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Document_Delivery_Reference_Tax_Document_Delivery_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Last Date the W-2/W-2C Print Election was changed",
+      "field": "Last_Updated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Current Tax Document Election Print Status Statement of the W-2/W-2C Print Election",
+      "field": "Current_W-2_W-2C_Printing_Election",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Current_W-2_W-2C_Printing_Election": {
+        "description": "The Current Tax Document Election Print Status Statement of the W-2/W-2C Print Election",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated": {
+        "description": "The Last Date the W-2/W-2C Print Election was changed",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Document_Delivery_Reference_Tax_Document_Delivery_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Document_Delivery_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Worker must be specified to obtain W-2/W-2C Printing Election",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "XMLNAME__Worker__Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "XMLNAME__Worker__Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "XMLNAME__Worker__Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

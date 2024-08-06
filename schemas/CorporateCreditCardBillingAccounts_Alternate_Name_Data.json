@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CorporateCreditCardBillingAccounts_Alternate_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CorporateCreditCardAccount_Corporate_Credit_Card_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Alternate Name",
+      "field": "Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+      "field": "Alternate_Name_Usage_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Name": {
+        "description": "Business Entity Alternate Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Name_Usage_Reference": {
+        "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CorporateCreditCardAccount_Corporate_Credit_Card_Account_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

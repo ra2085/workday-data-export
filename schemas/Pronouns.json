@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Pronouns",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The pronoun ID.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The display order for the pronoun value.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The pronoun for a worker.",
+      "field": "Pronoun_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The pronoun code.",
+      "field": "Pronoun_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The pronoun description.",
+      "field": "Pronoun_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The inactive flag for pronoun.",
+      "field": "Pronoun_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The pronoun ID.",
+        "type": [
+          "string"
+        ]
+      },
+      "Order": {
+        "description": "The display order for the pronoun value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pronoun_Code": {
+        "description": "The pronoun code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pronoun_Description": {
+        "description": "The pronoun description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pronoun_Inactive": {
+        "description": "The inactive flag for pronoun.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Pronoun_Name": {
+        "description": "The pronoun for a worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

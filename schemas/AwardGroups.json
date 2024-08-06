@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Award_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Award_Group_Reference_Award_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Group Reference ID. This is the Award Group Unique Identifier.",
+      "field": "Award_Group_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Award Group",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Contracts belonging to this Award Group",
+      "field": "Award_Contracts_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True means this Award Group is no longer active.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of an existing Award Group",
+      "field": "Award_Group_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Award. Supports multiple values.",
+      "field": "Award_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Award. Supports multiple values.",
+      "field": "Award_Reference_Award_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive status of an existing Award Group",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Active status of an existing Award",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Prompt": {
+        "description": "Active status of an existing Award",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Contracts_Reference": {
+        "description": "Award Contracts belonging to this Award Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Group_Name_Prompt": {
+        "description": "Name of an existing Award Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Group_Reference_ID": {
+        "description": "Award Group Reference ID. This is the Award Group Unique Identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_Award_Reference_ID_Prompt": {
+        "description": "Reference to an existing Award. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_WID_Prompt": {
+        "description": "Reference to an existing Award. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Award_Group_Reference_Award_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Award_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Set to True means this Award Group is no longer active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "Inactive status of an existing Award Group",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of Award Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

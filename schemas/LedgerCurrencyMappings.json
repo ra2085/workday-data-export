@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LedgerCurrencyMappings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Currency_Mapping_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Currency_Mapping_Reference_Ledger_Currency_Mapping_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for an existing or new Ledger Currency Mapping.",
+      "field": "Ledger_Currency_Mapping_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Ledger Currency Mapping.",
+      "field": "Ledger_Currency_Mapping_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the Ledger Currency Mapping.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "All data for the Ledger Currency Mapping Line within Ledger Currency Mapping. You can specify at least one to many Ledger Currency Mapping Line within the Ledger Currency Mapping. Note: You can only add or update Ledger Currency Mapping.",
+      "field": "Ledger_Currency_Mapping_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The description of the Ledger Currency Mapping.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Currency_Mapping_ID": {
+        "description": "The Reference ID for an existing or new Ledger Currency Mapping.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Currency_Mapping_Line_Data": {
+        "description": "All data for the Ledger Currency Mapping Line within Ledger Currency Mapping. You can specify at least one to many Ledger Currency Mapping Line within the Ledger Currency Mapping. Note: You can only add or update Ledger Currency Mapping.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Currency_Mapping_Name": {
+        "description": "The name of the Ledger Currency Mapping.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Currency_Mapping_Reference_Ledger_Currency_Mapping_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Currency_Mapping_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

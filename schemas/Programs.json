@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Programs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program Reference ID. This is the Program unique identifier.",
+      "field": "Program_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program Name.",
+      "field": "Program_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Program ID in the Program Name.",
+      "field": "Include_Program_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true inactivates the Program.",
+      "field": "Program_is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Include_Program_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Program ID in the Program Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Program_ID": {
+        "description": "Program Reference ID. This is the Program unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Name": {
+        "description": "Program Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_is_Inactive": {
+        "description": "Boolean Flag which when set to true inactivates the Program.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

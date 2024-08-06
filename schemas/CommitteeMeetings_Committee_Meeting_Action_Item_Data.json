@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CommitteeMeetings_Committee_Meeting_Action_Item_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CommitteeMeeting_Committee_Meeting_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Action_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Action_Item_Reference_Committee_Meeting_Action_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Action Item",
+      "field": "Action_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Action Item title",
+      "field": "Item",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Assignee for the action item",
+      "field": "Assignee_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Action Item is completed if true",
+      "field": "Complete",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Action_Item_ID": {
+        "description": "Reference ID for Action Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Action_Item_Reference_Committee_Meeting_Action_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Action_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assignee_Reference": {
+        "description": "Assignee for the action item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CommitteeMeeting_Committee_Meeting_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Complete": {
+        "description": "Action Item is completed if true",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item": {
+        "description": "Action Item title",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FacilitiesandAdministrationRevenueAllocationProfiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID. This is the facilities and administration revenue allocation profile unique identifier.",
+      "field": "Facilities_and_Administration_Revenue_Allocation_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The facilities and administration revenue allocation profile name",
+      "field": "Facilities_and_Administration_Revenue_Allocation_Profile_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating if the profile is for generating facilities and administration cost share.",
+      "field": "Generate_Facilities_and_Administration_Cost_Share",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The element containing facilities and administration revenue distribution percent and worktag offset override data",
+      "field": "Facilities_and_Admin_Revenue_Distribution_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Facilities_and_Admin_Revenue_Distribution_Data": {
+        "description": "The element containing facilities and administration revenue distribution percent and worktag offset override data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Revenue_Allocation_Profile_ID": {
+        "description": "Reference ID. This is the facilities and administration revenue allocation profile unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Revenue_Allocation_Profile_Name": {
+        "description": "The facilities and administration revenue allocation profile name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Generate_Facilities_and_Administration_Cost_Share": {
+        "description": "A boolean flag indicating if the profile is for generating facilities and administration cost share.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

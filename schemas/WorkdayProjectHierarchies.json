@@ -1,0 +1,316 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkdayProjectHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A valid Project Hierarchy Reference Id is required.",
+      "field": "Project_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Hierarchy Name for Submit Workday Project Hierarchy Web Service Task.",
+      "field": "Project_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value indicating if the Project Hierarchy ID will be included in the display of the Project Hierarchy Name.",
+      "field": "Include_Project_Hierarchy_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate an optional project hierarchy.",
+      "field": "Enable_as_Optional_Hierarchy",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Hierarchy_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Hierarchy_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the project hierarchy is inactive.  A project hierarchy may also be inactivated by a parent project hierarchy as indicated by the 'Inactivated By Hierarchy Reference'.  In which case, the current project hierarchy is considered Inactive even though this Boolean returns False.  Changes to an inactive hierarchy are ignored.  Reactivating a project hierarchy can only be done on the hierarchy if it was explicitly marked 'Inactive' or by reactivating the hierarchy that made the current hierarchy inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inactivated_By_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inactivated_By_Hierarchy_Reference_Project_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_Project_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Resource_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Resource_Plan_Reference_Project_Resource_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "READ ONLY: The project scenario groups that are secured by this project hierarchy.",
+      "field": "Project_Scenario_Groups_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project hierarchy description.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Projects rolled up under project hierarchy.",
+      "field": "Included_Projects_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Projects rolled up under optional project hierarchy.",
+      "field": "Included_Projects_in_Optional_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Hierarchy Name for Submit Workday Project Hierarchy Web Service Task.",
+      "field": "Project_Hierarchy_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Project hierarchy description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_as_Optional_Hierarchy": {
+        "description": "Boolean to indicate an optional project hierarchy.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactivated_By_Hierarchy_Reference_Project_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivated_By_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates the project hierarchy is inactive.  A project hierarchy may also be inactivated by a parent project hierarchy as indicated by the 'Inactivated By Hierarchy Reference'.  In which case, the current project hierarchy is considered Inactive even though this Boolean returns False.  Changes to an inactive hierarchy are ignored.  Reactivating a project hierarchy can only be done on the hierarchy if it was explicitly marked 'Inactive' or by reactivating the hierarchy that made the current hierarchy inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Project_Hierarchy_ID_in_Name": {
+        "description": "Boolean value indicating if the Project Hierarchy ID will be included in the display of the Project Hierarchy Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Included_Projects_Reference": {
+        "description": "Projects rolled up under project hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Included_Projects_in_Optional_Hierarchy_Reference": {
+        "description": "Projects rolled up under optional project hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_Project_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_ID": {
+        "description": "A valid Project Hierarchy Reference Id is required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Name": {
+        "description": "Project Hierarchy Name for Submit Workday Project Hierarchy Web Service Task.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Name_Prompt": {
+        "description": "Project Hierarchy Name for Submit Workday Project Hierarchy Web Service Task.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Plan_Reference_Project_Resource_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Scenario_Groups_Reference": {
+        "description": "READ ONLY: The project scenario groups that are secured by this project hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

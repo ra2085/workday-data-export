@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CommitteeTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Committee_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Committee_Type_Reference_Committee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for the committee type. If not entered, one will be generated.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Committee Type Name. Required for add.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Search Committee",
+      "field": "Search_Committee",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag to set the committee type inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Committee_Type_Reference_Committee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Committee_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "Unique Identifier for the committee type. If not entered, one will be generated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "A boolean flag to set the committee type inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Committee Type Name. Required for add.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Search_Committee": {
+        "description": "Search Committee",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

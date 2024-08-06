@@ -1,0 +1,211 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecruitingSelfScheduleCalendars",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Self-Schedule_Calendar_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Self-Schedule_Calendar_Reference_Recruiting_Self_Schedule_Calendar_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier used to reference a Recruiting Self-Schedule Calendar.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique name for the Recruiting Self-Schedule Calendar.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter a name used by the External Calendar Name report field and displays in the My Scheduled Events section on Candidate Home.",
+      "field": "Recruiting_Self-Schedule_Calendar_External_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calendar_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calendar_Type_Reference_Recruiting_Self-Schedule_Calendar_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of minutes in a time slot within a time block. If you leave Time Slot Duration (minutes) 0, then there is only 1 time slot within the time block and the Time Slot Duration (minutes) equals the minutes of the time block. Example: If the time block is 2 hours and Time Slot Duration (minutes) is 60, then the time block is divided into 2 time slots. If the time block is 2 hours and the Time Slot Duration (minutes) is 0, then there is 1 time slot and the Time Slot Duration (minutes) still shows zero but is really 120 minutes.",
+      "field": "Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Workday adds this number of days to the current date to find the earliest date for available time slots.",
+      "field": "Earliest_Visibility",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Workday adds this number of days to the current date to find the latest date for available time slots.",
+      "field": "Latest_Visibility",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The minimum number of dates with available time slots displayed to candidates. Dates beyond the latest visibility date will be shown if there aren't enough available dates within the visibility range to meet the minimum requirement.",
+      "field": "Minimum_Number_of_Dates_to_Display",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of hours prior to the event that a candidate can reschedule.",
+      "field": "Reschedule_Lock_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating that the Recruiting Self-Schedule Calendar is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Section to add, update or delete Schedules for Recruiting Calendars.",
+      "field": "Schedules",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Section to add, update or delete Excluded Days for Recruiting Calendars.",
+      "field": "Excluded_Days",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calendar_Type_Reference_Recruiting_Self-Schedule_Calendar_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calendar_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Duration": {
+        "description": "The number of minutes in a time slot within a time block. If you leave Time Slot Duration (minutes) 0, then there is only 1 time slot within the time block and the Time Slot Duration (minutes) equals the minutes of the time block. Example: If the time block is 2 hours and Time Slot Duration (minutes) is 60, then the time block is divided into 2 time slots. If the time block is 2 hours and the Time Slot Duration (minutes) is 0, then there is 1 time slot and the Time Slot Duration (minutes) still shows zero but is really 120 minutes.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Earliest_Visibility": {
+        "description": "Workday adds this number of days to the current date to find the earliest date for available time slots.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Excluded_Days": {
+        "description": "Section to add, update or delete Excluded Days for Recruiting Calendars.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier used to reference a Recruiting Self-Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "A boolean flag indicating that the Recruiting Self-Schedule Calendar is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Latest_Visibility": {
+        "description": "Workday adds this number of days to the current date to find the latest date for available time slots.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Number_of_Dates_to_Display": {
+        "description": "The minimum number of dates with available time slots displayed to candidates. Dates beyond the latest visibility date will be shown if there aren't enough available dates within the visibility range to meet the minimum requirement.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The unique name for the Recruiting Self-Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Self-Schedule_Calendar_External_Name": {
+        "description": "Enter a name used by the External Calendar Name report field and displays in the My Scheduled Events section on Candidate Home.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Self-Schedule_Calendar_Reference_Recruiting_Self_Schedule_Calendar_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Self-Schedule_Calendar_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Reschedule_Lock_Hours": {
+        "description": "The number of hours prior to the event that a candidate can reschedule.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Schedules": {
+        "description": "Section to add, update or delete Schedules for Recruiting Calendars.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

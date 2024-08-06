@@ -1,0 +1,264 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "UnidentifiedSignons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The time that the unidentified Signon attempt occurred.",
+      "field": "Signon_DateTime",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The User Name used for the unidentified Signon.",
+      "field": "User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Proxy User Name for the attempted Signon if used.",
+      "field": "Proxy_User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The detail authentication failure message when available.",
+      "field": "Authentication_Failure_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The IP address where the Signon originated.",
+      "field": "Signon_IP_Address",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Authentication Type of the Signon (Normal, SAML, X509, etc.).",
+      "field": "Authentication_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Device_Type_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Device_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if there is a forgotten password reset request",
+      "field": "Forgotten_Password_Reset_Request",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Originator_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Originator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Browser used for Signon (Indicative)",
+      "field": "Browser_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Operating System used for Signon",
+      "field": "Operating_System",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location of Device from where Signon occurred.",
+      "field": "Location",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the TLS version",
+      "field": "TLS_Version",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the API Client ID",
+      "field": "API_Client_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Request Signon information from this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+      "field": "From_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Request Signon information to this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+      "field": "To_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional User Name regular expression used to match Unidentified Signon attempts.",
+      "field": "User_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "API_Client_ID": {
+        "description": "Returns the API Client ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Authentication_Failure_Message": {
+        "description": "The detail authentication failure message when available.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Authentication_Type": {
+        "description": "The Authentication Type of the Signon (Normal, SAML, X509, etc.).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Browser_Type": {
+        "description": "Browser used for Signon (Indicative)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Device_Type_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Device_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Forgotten_Password_Reset_Request": {
+        "description": "Returns true if there is a forgotten password reset request",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "From_DateTime_Prompt": {
+        "description": "Request Signon information from this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location": {
+        "description": "Location of Device from where Signon occurred.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Operating_System": {
+        "description": "Operating System used for Signon",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proxy_User_Name": {
+        "description": "The Proxy User Name for the attempted Signon if used.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Originator_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Originator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signon_DateTime": {
+        "description": "The time that the unidentified Signon attempt occurred.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signon_IP_Address": {
+        "description": "The IP address where the Signon originated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TLS_Version": {
+        "description": "Returns the TLS version",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_DateTime_Prompt": {
+        "description": "Request Signon information to this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Name": {
+        "description": "The User Name used for the unidentified Signon.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Name_Prompt": {
+        "description": "An optional User Name regular expression used to match Unidentified Signon attempts.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

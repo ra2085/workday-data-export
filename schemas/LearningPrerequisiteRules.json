@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningPrerequisiteRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique ID for the prerequisite rule.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The target prerequisite content instances.",
+      "field": "Target_Learning_Prerequisite_Contents_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Qualifier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Qualifier_Reference_Learning_Prerequisite_Rule_Qualifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to the prerequisite rule is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains information about prerequisite rule items.",
+      "field": "Learning_Prerequisite_Rule_Item_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Unique ID for the prerequisite rule.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether to the prerequisite rule is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Learning_Prerequisite_Rule_Item_Data": {
+        "description": "Contains information about prerequisite rule items.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Qualifier_Reference_Learning_Prerequisite_Rule_Qualifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Qualifier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Learning_Prerequisite_Contents_Reference": {
+        "description": "The target prerequisite content instances.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

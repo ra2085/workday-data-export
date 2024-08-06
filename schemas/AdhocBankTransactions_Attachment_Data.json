@@ -1,0 +1,212 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdhocBankTransactions_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+      "field": "AdhocBankTransaction_Ad_hoc_Bank_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or After Date",
+      "field": "Transaction_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or Before Date",
+      "field": "Transaction_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+      "field": "Ad_Hoc_Bank_Transaction_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Ad_Hoc_Bank_Transaction_Number_Prompt": {
+        "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "AdhocBankTransaction_Ad_hoc_Bank_Transaction_ID": {
+        "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_After_Prompt": {
+        "description": "Transaction On or After Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_Before_Prompt": {
+        "description": "Transaction On or Before Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectPortfolios_Project_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique identifier for Project Portfolio.",
+      "field": "ProjectPortfolio_Project_Portfolio_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_Project_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The funding amount allocated to the project in the currency of the parent project portfolio. This can only be updated by users with access to the project portfolio through the Manage: Project Portfolio Funding domain.",
+      "field": "Project_Funding_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Funding_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Funding_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique identifier for Project Portfolio.",
+      "field": "ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Project Portfolio Name. Project Portfolio Name must be unique.",
+      "field": "Project_Portfolio_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The parent of this project portfolio.",
+      "field": "Parent_Portfolio_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The parent of this project portfolio.",
+      "field": "Parent_Portfolio_Reference_Project_Portfolio_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID_Prompt": {
+        "description": "This is a unique identifier for Project Portfolio.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Portfolio_Reference_Project_Portfolio_ID_Prompt": {
+        "description": "The parent of this project portfolio.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Portfolio_Reference_WID_Prompt": {
+        "description": "The parent of this project portfolio.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ProjectPortfolio_Project_Portfolio_ID": {
+        "description": "This is a unique identifier for Project Portfolio.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Funding_Amount": {
+        "description": "The funding amount allocated to the project in the currency of the parent project portfolio. This can only be updated by users with access to the project portfolio through the Manage: Project Portfolio Funding domain.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Project_Funding_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Funding_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Portfolio_Name_Prompt": {
+        "description": "Free form text for a meaningful Project Portfolio Name. Project Portfolio Name must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_Project_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

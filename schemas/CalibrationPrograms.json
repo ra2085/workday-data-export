@@ -1,0 +1,328 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CalibrationPrograms",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the calibration program.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the calibration program.",
+      "field": "Calibration_Program_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the calibration program.",
+      "field": "Calibration_Program_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Determines when the calibration event should end.",
+      "field": "Program_Due_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether the calibration program is inactive or active.",
+      "field": "Program_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Initiate Population Unplotted.",
+      "field": "Initiate_Population_Unplotted",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true, you can perform potential assessment during calibration.",
+      "field": "Allow_update_of_Assess_Potential_during_Calibration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true, the calibration skips the first participant.",
+      "field": "Autocomplete_First_Participant",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Yes, users will receive a warning if any workers are unplotted based on the Restrict Organization Level View population size.",
+      "field": "Warning_on_Unplotted_Worker",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Yes, users will receive an error if any workers are unplotted based on the Restrict Organization Level View population size.",
+      "field": "Error_on_Unplotted_Worker",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Yes, users will receive a warning if any Target Percentages populations aren't met in each box based on the Restrict Organization Level View population size.",
+      "field": "Warning_on_Target_Percentage_Population",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If yes, users will receive an error if any Target Percentages populations aren't met in each box based on the Restrict Organization Level View population size.",
+      "field": "Error_on_Target_Percentage_Population",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "nBox_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "nBox_Reference_Custom_Report_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "nBox cell limit determines the maximum number of workers visible per cell in the calibration nBox. You can change the nBox cell limit to optimize performance.",
+      "field": "nBox_Cell_Limit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify Y to disable the nBox summary view.",
+      "field": "Hide_nBox_Summary_View",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Restricted_to_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Restricted_to_Rule_Reference_Calibration_Program_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Row_Default_Value_CRF_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Row_Default_Value_CRF_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Column_Default_Value_CRF_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Column_Default_Value_CRF_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains mapped values for the row and columns on the nbox report.",
+      "field": "Calibration_Value_Mapping",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the target percentage for each box cell.",
+      "field": "Cell_Target_Percentage_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_update_of_Assess_Potential_during_Calibration": {
+        "description": "When true, you can perform potential assessment during calibration.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Autocomplete_First_Participant": {
+        "description": "When true, the calibration skips the first participant.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Calibration_Program_Description": {
+        "description": "The description of the calibration program.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calibration_Program_Name": {
+        "description": "The name of the calibration program.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calibration_Value_Mapping": {
+        "description": "Contains mapped values for the row and columns on the nbox report.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cell_Target_Percentage_Data": {
+        "description": "Contains the target percentage for each box cell.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Column_Default_Value_CRF_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Column_Default_Value_CRF_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Error_on_Target_Percentage_Population": {
+        "description": "If yes, users will receive an error if any Target Percentages populations aren't met in each box based on the Restrict Organization Level View population size.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Error_on_Unplotted_Worker": {
+        "description": "If Yes, users will receive an error if any workers are unplotted based on the Restrict Organization Level View population size.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hide_nBox_Summary_View": {
+        "description": "Specify Y to disable the nBox summary view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID of the calibration program.",
+        "type": [
+          "string"
+        ]
+      },
+      "Initiate_Population_Unplotted": {
+        "description": "Initiate Population Unplotted.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Program_Due_Date": {
+        "description": "Determines when the calibration event should end.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Status": {
+        "description": "Determines whether the calibration program is inactive or active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Restricted_to_Rule_Reference_Calibration_Program_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_to_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Row_Default_Value_CRF_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Row_Default_Value_CRF_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Warning_on_Target_Percentage_Population": {
+        "description": "If Yes, users will receive a warning if any Target Percentages populations aren't met in each box based on the Restrict Organization Level View population size.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Warning_on_Unplotted_Worker": {
+        "description": "If Yes, users will receive a warning if any workers are unplotted based on the Restrict Organization Level View population size.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "nBox_Cell_Limit": {
+        "description": "nBox cell limit determines the maximum number of workers visible per cell in the calibration nBox. You can change the nBox cell limit to optimize performance.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "nBox_Reference_Custom_Report_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "nBox_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

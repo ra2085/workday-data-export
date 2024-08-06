@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "QuoteConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Quote Configuration",
+      "field": "Quote_Configuration_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote configuration name",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if quote configuration is inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing quote configuration snapshot data",
+      "field": "Quote_Configuration_Snapshot_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating if the inactive quote configurations are to be included",
+      "field": "Include_Inactive_Quote_Configurations_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "True if quote configuration is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Quote_Configurations_Prompt": {
+        "description": "Flag indicating if the inactive quote configurations are to be included",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Quote configuration name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Configuration_Reference_ID": {
+        "description": "ID for Quote Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Configuration_Snapshot_Data": {
+        "description": "Element containing quote configuration snapshot data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

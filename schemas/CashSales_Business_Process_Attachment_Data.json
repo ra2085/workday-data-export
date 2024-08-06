@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CashSales_Business_Process_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Cash Sale ID.  This is the Cash Sale unique identifier",
+      "field": "CashSale_Cash_Sale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename for the attachment.",
+      "field": "File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text comment about the attachment.",
+      "field": "Event_Attachment_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_Document_Category__Workday_Owned__ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_Document_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Binary file contents.",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Content Type of the Attachment.",
+      "field": "Content_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date can be any date within the Pay Period.  End Date is used to derive End Period.",
+      "field": "End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date",
+      "field": "Start_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CashSale_Cash_Sale_ID": {
+        "description": "Cash Sale ID.  This is the Cash Sale unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Content_Type": {
+        "description": "Text attribute identifying Content Type of the Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_Prompt": {
+        "description": "End Date can be any date within the Pay Period.  End Date is used to derive End Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_Document_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_Document_Category__Workday_Owned__ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Description": {
+        "description": "Free form text comment about the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "Binary file contents.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Name": {
+        "description": "Filename for the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_Prompt": {
+        "description": "Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

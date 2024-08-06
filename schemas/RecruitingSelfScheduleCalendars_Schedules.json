@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecruitingSelfScheduleCalendars_Schedules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "RecruitingSelfScheduleCalendar_Recruiting_Self-Schedule_Calendar_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Reference_Recruiting_Self_Service_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The first day for times on the schedule.",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The last day for times on the schedule.",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "For example, if the recurrence is 1, the times on the schedule apply every week starting from the start date. If the recurrence is 2, the times on the schedule apply every two weeks starting from the start date.",
+      "field": "Weekly_Recurrence",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The max number of candidates who can select an available time on this schedule.",
+      "field": "Max_Number_of_Participants",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_Time_Zone_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Section containing data for the Recruiting Calendar Schedule Role Assignments.",
+      "field": "Assign_Role_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Section to add, update or delete Time Blocks for the Recruiting Calendar Schedule.",
+      "field": "Time_Blocks",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assign_Role_Data": {
+        "description": "Section containing data for the Recruiting Calendar Schedule Role Assignments.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "The last day for times on the schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Max_Number_of_Participants": {
+        "description": "The max number of candidates who can select an available time on this schedule.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "RecruitingSelfScheduleCalendar_Recruiting_Self-Schedule_Calendar_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Reference_Recruiting_Self_Service_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "The first day for times on the schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Blocks": {
+        "description": "Section to add, update or delete Time Blocks for the Recruiting Calendar Schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_Time_Zone_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Recurrence": {
+        "description": "For example, if the recurrence is 1, the times on the schedule apply every week starting from the start date. If the recurrence is 2, the times on the schedule apply every two weeks starting from the start date.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

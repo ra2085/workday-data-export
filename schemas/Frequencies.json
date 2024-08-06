@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Frequencies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier for the frequency",
+      "field": "Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The functional name for the frequency",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of occurrences within a year for a frequency (e.g. Yearly = 1, Monthly = 12, etc...)",
+      "field": "Annualization_Factor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Behavior_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Behavior_Reference_Frequency_Behavior_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating whether a worker's weekly hours should be used instead of a normal conversion rate when converting to/from hourly-based rates in Workday Compensation.",
+      "field": "Use_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Identifies that the frequency is used in Payroll Interface",
+      "field": "Used_in_Payroll_Interface",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Annualization_Factor": {
+        "description": "The number of occurrences within a year for a frequency (e.g. Yearly = 1, Monthly = 12, etc...)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Frequency_Behavior_Reference_Frequency_Behavior_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Behavior_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_ID": {
+        "description": "The unique identifier for the frequency",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "The functional name for the frequency",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Weekly_Hours": {
+        "description": "A boolean flag indicating whether a worker's weekly hours should be used instead of a normal conversion rate when converting to/from hourly-based rates in Workday Compensation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_in_Payroll_Interface": {
+        "description": "Identifies that the frequency is used in Payroll Interface",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReviewQuestionCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the Review Question Category.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Question category name.",
+      "field": "Question_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The usage count of a Question Category.",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The Reference ID for the Review Question Category.",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "The usage count of a Question Category.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Question_Category_Name": {
+        "description": "Question category name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

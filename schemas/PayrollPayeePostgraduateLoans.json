@@ -1,0 +1,263 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollPayeePostgraduateLoans",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date for this record",
+      "field": "Effective_As_Of",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_Notification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_Notification_Type_Reference_Payroll_Constant_Text_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When was PGL2 Notification Received",
+      "field": "PGL2_Stop_Notification_Received_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Stop Date for this Postgraduate Loan",
+      "field": "Stop_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating Postgraduate  Loan stopped without a PGL2 notification",
+      "field": "Stopped_Without_PGL2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Payroll Payee Postgraduate Loan Request Effective Date",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Companies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of": {
+        "description": "Effective Date for this record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PGL2_Stop_Notification_Received_Date": {
+        "description": "When was PGL2 Notification Received",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Notification_Type_Reference_Payroll_Constant_Text_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Notification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stop_Date": {
+        "description": "The Stop Date for this Postgraduate Loan",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stopped_Without_PGL2": {
+        "description": "Boolean flag indicating Postgraduate  Loan stopped without a PGL2 notification",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Payroll Payee Postgraduate Loan Request Worker. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

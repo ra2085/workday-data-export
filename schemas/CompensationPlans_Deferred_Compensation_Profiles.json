@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationPlans_Deferred_Compensation_Profiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CompensationPlan_Compensation_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Eligibility Rule",
+      "field": "Eligibility_Rule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Reference_Deferred_Bonus_Calculation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Plan_Reference_Compensation_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+      "field": "Plan_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+      "field": "Plan_Type_Reference_Compensation_Plan_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculation_Reference_Deferred_Bonus_Calculation_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CompensationPlan_Compensation_Plan_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference": {
+        "description": "Eligibility Rule",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Plan_Type_Reference_Compensation_Plan_Type_ID_Prompt": {
+        "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan_Type_Reference_WID_Prompt": {
+        "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plan_Reference_Compensation_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

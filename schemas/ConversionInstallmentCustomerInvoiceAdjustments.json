@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ConversionInstallmentCustomerInvoiceAdjustments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The customer invoice adjustment reference ID.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to 1 for customer invoice adjustments that are excluded in the prepaid amount calculations.",
+      "field": "Conversion_Installment_Customer_Invoice_Adjustment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as true or 1 to retrieve adjustments to customer invoices that are excluded in the prepaid amount calculations.",
+      "field": "Conversion_Installment_Customer_Invoice_Adjustment_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify a reference to the adjustment reason associated with the adjustment.. Supports multiple values.",
+      "field": "Adjustment_Reason_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify a reference to the adjustment reason associated with the adjustment.. Supports multiple values.",
+      "field": "Adjustment_Reason_Reference_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Adjustment_Reason_Reference_Adjustment_Reason_ID_Prompt": {
+        "description": "Specify a reference to the adjustment reason associated with the adjustment.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reason_Reference_WID_Prompt": {
+        "description": "Specify a reference to the adjustment reason associated with the adjustment.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Conversion_Installment_Customer_Invoice_Adjustment": {
+        "description": "Set to 1 for customer invoice adjustments that are excluded in the prepaid amount calculations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Conversion_Installment_Customer_Invoice_Adjustment_Prompt": {
+        "description": "Specify as true or 1 to retrieve adjustments to customer invoices that are excluded in the prepaid amount calculations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The customer invoice adjustment reference ID.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

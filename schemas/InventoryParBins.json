@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryParBins",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bin Reference ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Par Location Bin Name",
+      "field": "Bin_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Location Reference",
+      "field": "Inventory_Par_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Location Reference",
+      "field": "Inventory_Par_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Bin Reference. Supports multiple values.",
+      "field": "Inventory_Par_Bin_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Bin Reference. Supports multiple values.",
+      "field": "Inventory_Par_Bin_Reference_Par_Bin_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Bin_Name": {
+        "description": "Par Location Bin Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Bin Reference ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Inventory_Par_Bin_Reference_Par_Bin_ID_Prompt": {
+        "description": "Inventory Par Bin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Bin_Reference_WID_Prompt": {
+        "description": "Inventory Par Bin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_Location_ID_Prompt": {
+        "description": "Inventory Par Location Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_WID_Prompt": {
+        "description": "Inventory Par Location Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

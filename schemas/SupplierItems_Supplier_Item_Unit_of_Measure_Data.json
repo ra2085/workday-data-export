@@ -1,0 +1,368 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierItems_Supplier_Item_Unit_of_Measure_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SupplierItem_Supplier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Unit Price.",
+      "field": "Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Conversion factor to the base UOM.",
+      "field": "Conversion_Factor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Lead time for the UOM of the supplier item.",
+      "field": "Lead_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether this Unit of Measure is the default UOM.",
+      "field": "Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the Unit Of Measure is applicable for Just In Time.",
+      "field": "Just_In_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Supplier requires this minimum quantity to be met when you order in this unit of measure to avoid penalties. If this is for a Just in Time unit of measure, no minimum quantity is allowed.",
+      "field": "Minimum_Order_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the Unit of Measure is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective date for this UOM.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Purchase Items. If empty, no restriction is applied. Supports multiple values.",
+      "field": "Purchase_Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Purchase Items. If empty, no restriction is applied. Supports multiple values.",
+      "field": "Purchase_Item_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Spend Categories. If empty, no restriction is applied. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Only retrieve supplier items specific to these Spend Categories. If empty, no restriction is applied. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only retrieve pricing information from the default unit of measure (bulk and just in time defaults). If empty or false, all pricing information is retrieved.",
+      "field": "Only_Default_UOM_and_Price_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+      "field": "Only_Active_Supplier_Items_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Return default units of measure when you enable Calculate Price based on Conversion Factor. When you don't enable Calculate Price based on Conversion Factor, we return all Ordering and Just in Time UOMs.",
+      "field": "Only_Default_UOMs_with_Calculate_Price_Enabled_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+      "field": "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Conversion_Factor": {
+        "description": "Conversion factor to the base UOM.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default": {
+        "description": "Indicates whether this Unit of Measure is the default UOM.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective date for this UOM.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt": {
+        "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether the Unit of Measure is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Just_In_Time": {
+        "description": "Indicates whether the Unit Of Measure is applicable for Just In Time.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Lead_Time": {
+        "description": "Lead time for the UOM of the supplier item.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Order_Quantity": {
+        "description": "Supplier requires this minimum quantity to be met when you order in this unit of measure to avoid penalties. If this is for a Just in Time unit of measure, no minimum quantity is allowed.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Only_Active_Supplier_Items_Prompt": {
+        "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Only_Default_UOM_and_Price_Prompt": {
+        "description": "Only retrieve pricing information from the default unit of measure (bulk and just in time defaults). If empty or false, all pricing information is retrieved.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Only_Default_UOMs_with_Calculate_Price_Enabled_Prompt": {
+        "description": "Return default units of measure when you enable Calculate Price based on Conversion Factor. When you don't enable Calculate Price based on Conversion Factor, we return all Ordering and Just in Time UOMs.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Purchase Items. If empty, no restriction is applied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_WID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Purchase Items. If empty, no restriction is applied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Spend Categories. If empty, no restriction is applied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Spend Categories. If empty, no restriction is applied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SupplierItem_Supplier_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID_Prompt": {
+        "description": "Only retrieve supplier items specific to these Supplier Contracts. Important:  For integration systems where we want to limit updates to only a single supplier contract, the Supplier Contract field should be singular and defaulted by the integration system to only be the exact supplier contract that the user has permission to get pricing information.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": " \n\nIf empty, no supplier restriction is applied. Suppliers in the list cannot be for a supplier that can be used as a basic worktag only. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Price": {
+        "description": "Unit Price.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

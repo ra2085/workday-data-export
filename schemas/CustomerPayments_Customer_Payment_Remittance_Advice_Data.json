@@ -1,0 +1,745 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerPayments_Customer_Payment_Remittance_Advice_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomerPayment_Customer_Payment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Customer Invoice that should be paid by the Customer Payment this Remittance Advice is for.",
+      "field": "Customer_Invoice_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Customer invoice amount to pay in payment currency. This information is for outbound purposes only and is not processed on inbound Workday Web Services requests.",
+      "field": "Amount_to_Pay_in_Invoice_Currency",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Suggested amount to pay in this remittance advice.",
+      "field": "Amount_to_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_Sponsor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_Sponsor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-to_Customer_Reference_Student_Financial_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Remittance Advice Details are any of the following chosen, along with free-form text for each: Customer Name, Customer ID, PO Number, Invoice Number and Other.",
+      "field": "Customer_Payment_Remittance_Advice_Details_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Ad_hoc_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Deduction_Recipient_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Investor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Student_Proxy_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Supplier_Connection_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+      "field": "Remit-from_Customer_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Payment Type. Supports multiple values.",
+      "field": "Payment_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Payment Type. Supports multiple values.",
+      "field": "Payment_Type_Reference_Payment_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Payment Date on Date or After",
+      "field": "Payment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Payment Date on Date or Before",
+      "field": "Payment_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Transaction Is Intercompany",
+      "field": "Tranaction_is_Intercompany_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount_to_Pay": {
+        "description": "Suggested amount to pay in this remittance advice.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Amount_to_Pay_in_Invoice_Currency": {
+        "description": "Customer invoice amount to pay in payment currency. This information is for outbound purposes only and is not processed on inbound Workday Web Services requests.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_Sponsor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_Sponsor_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_Student_Financial_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-to_Customer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomerPayment_Customer_Payment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference": {
+        "description": "Reference to a Customer Invoice that should be paid by the Customer Payment this Remittance Advice is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Payment_Remittance_Advice_Details_Replacement_Data": {
+        "description": "Remittance Advice Details are any of the following chosen, along with free-form text for each: Customer Name, Customer ID, PO Number, Invoice Number and Other.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Date_On_or_After_Prompt": {
+        "description": "Payment Date on Date or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Date_On_or_Before_Prompt": {
+        "description": "Payment Date on Date or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_Payment_Type_ID_Prompt": {
+        "description": "Reference to an existing Payment Type. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_WID_Prompt": {
+        "description": "Reference to an existing Payment Type. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Academic_Person_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Ad_hoc_Payee_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Applicant_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Candidate_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Company_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Customer_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Deduction_Recipient_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Employee_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_External_Sourceable_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Investor_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Organization_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Sponsor_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Student_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Student_Proxy_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Supplier_Connection_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Supplier_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Tax_Authority_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remit-from_Customer_Reference_WID_Prompt": {
+        "description": "This it the customer the paymetn is for. This is the reference id value of the customer.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tranaction_is_Intercompany_Prompt": {
+        "description": "Transaction Is Intercompany",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

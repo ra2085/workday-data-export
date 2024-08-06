@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AuditTags",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Audit_Tag_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Audit_Tag_Reference_Audit_Tag_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Audit Tag.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Audit Tag.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The option to set the Audit Tag to active or inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the Audit Tag Segments the user is allowed to add to the Audit Tag.",
+      "field": "Audit_Tag_Segment_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Audit_Tag_Reference_Audit_Tag_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Audit_Tag_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Audit_Tag_Segment_Reference": {
+        "description": "Specifies the Audit Tag Segments the user is allowed to add to the Audit Tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Audit Tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "The option to set the Audit Tag to active or inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the Audit Tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

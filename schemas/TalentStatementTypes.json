@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TalentStatementTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Talent Statement Type.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Talent Statement Type.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of the Talent Statement Type.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the Talent Statement Type should be displayed on the professional profile.",
+      "field": "Display_on_Professional_Profile",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the Talent Statement Type is currently active.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the Talent Statement Type is currently being used.",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "A description of the Talent Statement Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_on_Professional_Profile": {
+        "description": "Whether or not the Talent Statement Type should be displayed on the professional profile.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Talent Statement Type.",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "Whether or not the Talent Statement Type is currently being used.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Whether or not the Talent Statement Type is currently active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the Talent Statement Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

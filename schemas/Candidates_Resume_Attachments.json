@@ -1,0 +1,433 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Candidates_Resume_Attachments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Candidate_Candidate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying a unique ID for Attachment.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename for the attachment.",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mime_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mime_Type_Reference_Content_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The first name (given name) for the candidate.",
+      "field": "First_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The last name for the candidate.",
+      "field": "Last_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The public primary email address for the candidate.",
+      "field": "Candidate_Email_Address_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the pre-hire that is the candidate.. Supports multiple values.",
+      "field": "Pre-Hire_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the pre-hire that is the candidate.. Supports multiple values.",
+      "field": "Pre-Hire_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the job requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the job requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a recruiting stage.. Supports multiple values.",
+      "field": "Recruiting_Stage_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a recruiting stage.. Supports multiple values.",
+      "field": "Recruiting_Stage_Reference_Recruiting_Stage_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an applicant source.. Supports multiple values.",
+      "field": "Applicant_Source_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an applicant source.. Supports multiple values.",
+      "field": "Applicant_Source_Reference_Applicant_Source_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the candidate tags for the candidate.. Supports multiple values.",
+      "field": "Candidate_Tag_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the candidate tags for the candidate.. Supports multiple values.",
+      "field": "Candidate_Tag_Reference_Candidate_Tag_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Find Candidates who applied after this date.",
+      "field": "Applied_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Find Candidates who applied up to this date.",
+      "field": "Applied_Through_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Only Workers will only return internal candidates that are employees or contingent workers at the time of application.",
+      "field": "Internal_Workers_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Find Candidates created after this date and time.",
+      "field": "Created_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Find Candidates created up to this date and time.",
+      "field": "Created_Through_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Find Candidates that have these Score Categories.. Supports multiple values.",
+      "field": "Criteria_Match_Score_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Find Candidates that have these Score Categories.. Supports multiple values.",
+      "field": "Criteria_Match_Score_Category_Reference_Job_Application_Skills_Match_Score_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to static candidate pool that the candidate is in.",
+      "field": "Static_Candidate_Pool_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to static candidate pool that the candidate is in.",
+      "field": "Static_Candidate_Pool_Reference_Candidate_Pool_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Applicant_Source_Reference_Applicant_Source_ID_Prompt": {
+        "description": "Reference to an applicant source.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Applicant_Source_Reference_WID_Prompt": {
+        "description": "Reference to an applicant source.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Applied_From_Prompt": {
+        "description": "Find Candidates who applied after this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Applied_Through_Prompt": {
+        "description": "Find Candidates who applied up to this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Candidate_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Email_Address_Prompt": {
+        "description": "The public primary email address for the candidate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Tag_Reference_Candidate_Tag_ID_Prompt": {
+        "description": "Reference to the candidate tags for the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Tag_Reference_WID_Prompt": {
+        "description": "Reference to the candidate tags for the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_From_Prompt": {
+        "description": "Find Candidates created after this date and time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_Through_Prompt": {
+        "description": "Find Candidates created up to this date and time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Criteria_Match_Score_Category_Reference_Job_Application_Skills_Match_Score_Category_ID_Prompt": {
+        "description": "Find Candidates that have these Score Categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Criteria_Match_Score_Category_Reference_WID_Prompt": {
+        "description": "Find Candidates that have these Score Categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Filename for the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Name_Prompt": {
+        "description": "The first name (given name) for the candidate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Text attribute identifying a unique ID for Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Internal_Workers_Only_Prompt": {
+        "description": "Include Only Workers will only return internal candidates that are employees or contingent workers at the time of application.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID_Prompt": {
+        "description": "Reference to the job requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID_Prompt": {
+        "description": "Reference to the job requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Name_Prompt": {
+        "description": "The last name for the candidate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mime_Type_Reference_Content_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mime_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pre-Hire_Reference_Applicant_ID_Prompt": {
+        "description": "Reference to the pre-hire that is the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pre-Hire_Reference_WID_Prompt": {
+        "description": "Reference to the pre-hire that is the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Stage_Reference_Recruiting_Stage_ID_Prompt": {
+        "description": "Reference to a recruiting stage.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Stage_Reference_WID_Prompt": {
+        "description": "Reference to a recruiting stage.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Static_Candidate_Pool_Reference_Candidate_Pool_ID_Prompt": {
+        "description": "Reference to static candidate pool that the candidate is in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Static_Candidate_Pool_Reference_WID_Prompt": {
+        "description": "Reference to static candidate pool that the candidate is in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Reference to the worker that is the candidate.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ResourceCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Category Reference ID.  This is the Spend Category unique identifier",
+      "field": "Resource_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Spend Category Name",
+      "field": "Resource_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Category has a relationship to Spend Category Usage. The Spend Category usage can be Procurement, Expense or Ad Hoc Payment.",
+      "field": "Spend_Category_Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag that if checked will allow business assets with this spend category to be requested in the procurement process",
+      "field": "Procurement_Usage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag that if checked will allow business assets with this spend category to be included in an expense report.",
+      "field": "Expense_Usage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allocate Freight will allocate the Freight Charges to the lines.",
+      "field": "Allocate_Freight",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allocate Other Charges will add Supplier Invoice Other Charges to the lines.",
+      "field": "Allocate_Other_Charges",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag that if checked will enable custodial tracking of business assets with this spend category",
+      "field": "Track_Items",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag that if checked will enable Inventory tracking of purchase item with this spend category",
+      "field": "Stock_Items",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Accounting_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Accounting_Treatment_Reference_Accounting_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Identifier Types used for this Spend Category.",
+      "field": "Item_Identifier_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_Accounting_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_Depreciation_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "UNSPSC Code Range data.",
+      "field": "UNSPSC_Code_Range",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_Asset_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_Asset_Class_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Spend Category Intangible flag. Intangible field cannot be updated if Spend Category is not Trackable and Spend Category is in Use.",
+      "field": "Intangible_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag that if checked will enable lease tracking.",
+      "field": "Lease",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The commodity detail for the spend category. This field can be used as an alternative display name or code value to search for a spend category or spend category hierarchy in Workday.",
+      "field": "Commodity_Detail",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Display_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Display_Option_Reference_Spend_Category_or_Hierarchy_Display_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the Spend Category is Inactive.  False otherwise.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Fulfillment_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Fulfillment_Source_Reference_Requisition_Fulfillment_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_Classification_Type_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Revenue_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Revenue_Category_Reference_Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Spend (Resource) Category Change From Date",
+      "field": "Updated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Spend (Resource) Category Change To Date",
+      "field": "Updated_To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Treatment_Reference_Accounting_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocate_Freight": {
+        "description": "Allocate Freight will allocate the Freight Charges to the lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allocate_Other_Charges": {
+        "description": "Allocate Other Charges will add Supplier Invoice Other Charges to the lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_Asset_Class_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_Asset_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_Classification_Type_Name_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Detail": {
+        "description": "The commodity detail for the spend category. This field can be used as an alternative display name or code value to search for a spend category or spend category hierarchy in Workday.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_Depreciation_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Usage": {
+        "description": "Boolean flag that if checked will allow business assets with this spend category to be included in an expense report.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "True if the Spend Category is Inactive.  False otherwise.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Intangible_Reference": {
+        "description": "Spend Category Intangible flag. Intangible field cannot be updated if Spend Category is not Trackable and Spend Category is in Use.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inventory_Accounting_Treatment_Reference_Accounting_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Accounting_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier_Type_Reference": {
+        "description": "Alternate Identifier Types used for this Spend Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease": {
+        "description": "Boolean flag that if checked will enable lease tracking.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maps_to_Revenue_Category_Reference_Revenue_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maps_to_Revenue_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Usage": {
+        "description": "Boolean flag that if checked will allow business assets with this spend category to be requested in the procurement process",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Fulfillment_Source_Reference_Requisition_Fulfillment_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Fulfillment_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_ID": {
+        "description": "Spend Category Reference ID.  This is the Spend Category unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Name": {
+        "description": "Free form text field for a meaningful Spend Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Spend_Category_Display_Option_Reference_Spend_Category_or_Hierarchy_Display_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Display_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Usage_Reference": {
+        "description": "Spend Category has a relationship to Spend Category Usage. The Spend Category usage can be Procurement, Expense or Ad Hoc Payment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Items": {
+        "description": "Boolean flag that if checked will enable Inventory tracking of purchase item with this spend category",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Track_Items": {
+        "description": "Boolean flag that if checked will enable custodial tracking of business assets with this spend category",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "UNSPSC_Code_Range": {
+        "description": "UNSPSC Code Range data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_From_Date_Prompt": {
+        "description": "Spend (Resource) Category Change From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_To_Date_Prompt": {
+        "description": "Spend (Resource) Category Change To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Airlines",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Airline Reference ID. Uniquely identifies an Airline.",
+      "field": "Spend_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Airline Value. The text description (title) of an airline.",
+      "field": "Airline_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Merchant_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Merchant_Code_Reference_Merchant_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Names for Merchant are entered here.",
+      "field": "Alternate_Merchant_Name_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Airline_Value": {
+        "description": "Airline Value. The text description (title) of an airline.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Merchant_Name_Data": {
+        "description": "Alternate Names for Merchant are entered here.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Code_Reference_Merchant_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Data_ID": {
+        "description": "Airline Reference ID. Uniquely identifies an Airline.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

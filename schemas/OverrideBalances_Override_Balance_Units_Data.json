@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "OverrideBalances_Override_Balance_Units_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "OverrideBalance_Override_Balance_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Carryover Date",
+      "field": "Carryover_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Carryover Expiration Date",
+      "field": "Carryover_Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Carryover Override Balance Units",
+      "field": "Carryover_Override_Balance_Units",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Reference",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Reference",
+      "field": "Employee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Reference",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch Reference",
+      "field": "Batch_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch Reference",
+      "field": "Batch_Reference_Batch_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Batch_Reference_Batch_ID_Prompt": {
+        "description": "Batch Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Reference_WID_Prompt": {
+        "description": "Batch Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Carryover_Date": {
+        "description": "Carryover Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Carryover_Expiration_Date": {
+        "description": "Carryover Expiration Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Carryover_Override_Balance_Units": {
+        "description": "Carryover Override Balance Units",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Employee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Employee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Employee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OverrideBalance_Override_Balance_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

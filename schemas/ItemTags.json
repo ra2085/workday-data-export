@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ItemTags",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The alphanumeric identifier for the item tag.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the item tag.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the item tag.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_Item_Identifier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_Item_Identifier_Reference_Universal_Item_Identifier_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate Item Tag is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The description of the item tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The alphanumeric identifier for the item tag.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Flag to indicate Item Tag is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the item tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_Item_Identifier_Reference_Universal_Item_Identifier_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_Item_Identifier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

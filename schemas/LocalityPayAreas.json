@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LocalityPayAreas",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The integration ID used to reference the Locality Pay Area.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date of the Locality Pay Area",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Locality Pay Area Name",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Locality Pay Area Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Locality Pay Area Percentage",
+      "field": "Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location references associated to the locality pay area.",
+      "field": "Location",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Locality Pay Area Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date of the Locality Pay Area",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The integration ID used to reference the Locality Pay Area.",
+        "type": [
+          "string"
+        ]
+      },
+      "Location": {
+        "description": "Location references associated to the locality pay area.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Locality Pay Area Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percentage": {
+        "description": "Locality Pay Area Percentage",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

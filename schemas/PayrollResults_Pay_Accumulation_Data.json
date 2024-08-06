@@ -1,0 +1,420 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollResults_Pay_Accumulation_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PayrollResult_Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Accumulation Reference.",
+      "field": "Pay_Accumulation_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount for the Pay Accumulation Reference.  Sum of all Pay Components for the Pay Accumualtion Reference for the current Period.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "QTD Amount for Pay Accumulation Reference",
+      "field": "QTD_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "YTD Amount for Pay Accumulation Reference",
+      "field": "YTD_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date - Must be provided along with End Date to determine the date range to retrieve Payroll Results.",
+      "field": "Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date - Must be provided along with Start Date to determine the date range to retrieve Payroll Results.",
+      "field": "End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Selection Date Reference.  Indicates whether to use Period Start Date, Period End Date, or Payment Date within the Start Date and End Date.",
+      "field": "Period_Selection_Date_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Selection Date Reference.  Indicates whether to use Period Start Date, Period End Date, or Payment Date within the Start Date and End Date.",
+      "field": "Period_Selection_Date_Reference_Period_Date_Indicator_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Reference.  List of Workers to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Reference.  List of Workers to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Earning_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Earning_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Earning_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Deduction_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Deduction_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Deduction_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Pay_Accumulation_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Pay_Accumulation_Reference_Pay_Accumulation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+      "field": "Pay_Calculation_Criteria_Pay_Accumulation_Reference_Workday_Pay_Accumulation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Run Category Reference.  List of Run Categories to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Run_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Run Category Reference.  List of Run Categories to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Run_Category_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group Reference.  List of Pay Groups to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group Reference.  List of Pay Groups to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Reference.  List of Periods to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Reference.  List of Periods to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Settlement ID Reference.  List of Settlement IDs to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Settlement_ID_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Settlement ID Reference.  List of Settlement IDs to retrieve Payroll Results for.. Supports multiple values.",
+      "field": "Settlement_ID_Reference_Settlement_Run_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "Amount for the Pay Accumulation Reference.  Sum of all Pay Components for the Pay Accumualtion Reference for the current Period.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference.  List of Companies to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Worker Reference.  List of Workers to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Worker Reference.  List of Workers to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_Prompt": {
+        "description": "End Date - Must be provided along with Start Date to determine the date range to retrieve Payroll Results.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Accumulation_Reference": {
+        "description": "Pay Accumulation Reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Deduction_Reference_Deduction_Code_Prompt": {
+        "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Deduction_Reference_WID_Prompt": {
+        "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Deduction_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "Deduction Reference.  List of Deductions to retrieve Payroll Results for.  When specifying a Deduction Code for tenanted data, Deduction_Code needs to be used.  When specifying a Deduction Code for Workday Owned data, Workday_Deduction_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Earning_Reference_Earning_Code_Prompt": {
+        "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Earning_Reference_WID_Prompt": {
+        "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Earning_Reference_Workday_Earning_Code_Prompt": {
+        "description": "Earning Reference.  List of Earnings to retrieve Payroll Results for.  When specifying an Earning Code for tenanted data, Earning_Code needs to be used.  When specifying an Earning Code for Workday Owned data, Workday_Earning_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Pay_Accumulation_Reference_Pay_Accumulation_Code_Prompt": {
+        "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Pay_Accumulation_Reference_WID_Prompt": {
+        "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Calculation_Criteria_Pay_Accumulation_Reference_Workday_Pay_Accumulation_Code_Prompt": {
+        "description": "Pay Accumulation Code specified for calculating Payroll Balance for the specified Period.  When specifying a Pay Accumulation Code for tenanted data, Pay_Accumulation_Code needs to be used.  When specifying a Pay Accumulation Code for Workday Owned data, Workday_Pay_Accumulation_Code needs to be used.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Pay Group Reference.  List of Pay Groups to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "Pay Group Reference.  List of Pay Groups to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PayrollResult_Employee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID_Prompt": {
+        "description": "Period Reference.  List of Periods to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID_Prompt": {
+        "description": "Period Reference.  List of Periods to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Selection_Date_Reference_Period_Date_Indicator_Prompt": {
+        "description": "Period Selection Date Reference.  Indicates whether to use Period Start Date, Period End Date, or Payment Date within the Start Date and End Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Selection_Date_Reference_WID_Prompt": {
+        "description": "Period Selection Date Reference.  Indicates whether to use Period Start Date, Period End Date, or Payment Date within the Start Date and End Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "QTD_Amount": {
+        "description": "QTD Amount for Pay Accumulation Reference",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Run_Category_Reference_Run_Category_ID_Prompt": {
+        "description": "Run Category Reference.  List of Run Categories to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Run_Category_Reference_WID_Prompt": {
+        "description": "Run Category Reference.  List of Run Categories to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_ID_Reference_Settlement_Run_ID_Prompt": {
+        "description": "Settlement ID Reference.  List of Settlement IDs to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_ID_Reference_WID_Prompt": {
+        "description": "Settlement ID Reference.  List of Settlement IDs to retrieve Payroll Results for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_Prompt": {
+        "description": "Start Date - Must be provided along with End Date to determine the date range to retrieve Payroll Results.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "YTD_Amount": {
+        "description": "YTD Amount for Pay Accumulation Reference",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

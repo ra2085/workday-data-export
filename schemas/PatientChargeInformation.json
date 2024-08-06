@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PatientChargeInformation",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item ID.  This is the Purchase Item unique identifier",
+      "field": "Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item HCPCS Code",
+      "field": "HCPCS",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Patient_Chargeable_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Patient_Chargeable_Reference_Patient_Charge_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Patient Charge Information Data",
+      "field": "Patient_Charge_Information_Row_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "HCPCS": {
+        "description": "Purchase Item HCPCS Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_Charge_Information_Row_Data": {
+        "description": "Patient Charge Information Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_Chargeable_Reference_Patient_Charge_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_Chargeable_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_ID": {
+        "description": "Purchase Item ID.  This is the Purchase Item unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

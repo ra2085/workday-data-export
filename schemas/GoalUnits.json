@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GoalUnits",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for this Goal Unit.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of this Goal Unit.",
+      "field": "Goal_Unit_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This is the boolean for showing active/inactive for this Goal Unit.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter a Goal Unit Name that isn't already in use.",
+      "field": "Goal_Unit_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Goal_Unit_Name": {
+        "description": "The name of this Goal Unit.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Unit_Name_Prompt": {
+        "description": "Enter a Goal Unit Name that isn't already in use.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for this Goal Unit.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "This is the boolean for showing active/inactive for this Goal Unit.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ChargesforStudents_Adjust_Student_Charge_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The new amount that the charge should be adjusted to.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The new due date for the charge",
+      "field": "Due_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Charge_Adjustment_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Charge_Adjustment_Reason_Reference_Student_Charge_Adjustment_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The lock state of the charge",
+      "field": "Locked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Students for the Student Charges. Supports multiple values.",
+      "field": "Students_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Students for the Student Charges. Supports multiple values.",
+      "field": "Students_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Students for the Student Charges. Supports multiple values.",
+      "field": "Students_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Students for the Student Charges. Supports multiple values.",
+      "field": "Students_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Institution Reference. Supports multiple values.",
+      "field": "Institution_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Institution Reference. Supports multiple values.",
+      "field": "Institution_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Periods for the Student Charges. Supports multiple values.",
+      "field": "Academic_Periods_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Periods for the Student Charges. Supports multiple values.",
+      "field": "Academic_Periods_Reference_Academic_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Due Date On or After",
+      "field": "Due_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Due Date On or Before",
+      "field": "Due_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction Date On or After",
+      "field": "Transaction_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction Date On or Before",
+      "field": "Transaction_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, returns only Initial Charges.",
+      "field": "Initial_Charges_Only_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Periods_Reference_Academic_Period_ID_Prompt": {
+        "description": "Academic Periods for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Periods_Reference_WID_Prompt": {
+        "description": "Academic Periods for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount": {
+        "description": "The new amount that the charge should be adjusted to.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Due_Date": {
+        "description": "The new due date for the charge",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_After_Prompt": {
+        "description": "Due Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_Before_Prompt": {
+        "description": "Due Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Initial_Charges_Only_Prompt": {
+        "description": "If true, returns only Initial Charges.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Institution Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID_Prompt": {
+        "description": "Institution Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked": {
+        "description": "The lock state of the charge",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Charge_Adjustment_Reason_Reference_Student_Charge_Adjustment_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Charge_Adjustment_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Academic_Person_ID_Prompt": {
+        "description": "Students for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Student_ID_Prompt": {
+        "description": "Students for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Students for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_WID_Prompt": {
+        "description": "Students for the Student Charges. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date_On_or_After_Prompt": {
+        "description": "Transaction Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date_On_or_Before_Prompt": {
+        "description": "Transaction Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

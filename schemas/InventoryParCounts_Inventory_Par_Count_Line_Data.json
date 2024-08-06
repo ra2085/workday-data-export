@@ -1,0 +1,576 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryParCounts_Inventory_Par_Count_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Par Count",
+      "field": "InventoryParCount_Par_Count_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Count_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Count_Line_Reference_Inventory_Par_Count_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reference to an Inventory Par Count Line number",
+      "field": "Par_Count_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Catalog_Load_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Description",
+      "field": "Line_Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the Par Count Line is a Kanban Line.",
+      "field": "Kanban",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the Par Count Line is Consigned.",
+      "field": "Consigned",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Location_Bin_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Location_Bin_Reference_Par_Bin_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Indicates Reorder Point on the Par Count Line.",
+      "field": "Reorder_Point",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reference to the Count Quantity on the Inventory Par Count Line",
+      "field": "Count_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reference to the Request Order Quantity on the Inventory Par Count Line",
+      "field": "Request_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Zero On Hand indicates that the actual Count Quantiy is zero when Par Count Option is set to Count Quantity",
+      "field": "Zero_On_Hand",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Open pending On order Quantity from auto requisitions and stock requests created from par count for the Item, Bin and Unit of Measure",
+      "field": "On_Order_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Open pending Order Quantity from manually created requisitions and stock requests for a par location for the Item and unit of measure",
+      "field": "Manual_Order_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item Alternate Item Identifiers Data",
+      "field": "Alternate_Item_Identifiers_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.",
+      "field": "Item_Tag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Inventory Par Location",
+      "field": "Par_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Inventory Par Location",
+      "field": "Par_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Count Doucment ID",
+      "field": "Par_Count_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Inventory Par Count created on or after date",
+      "field": "Par_Count_Created_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Inventory Par Count created on or before date",
+      "field": "Par_Count_Created_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Valid Inventory Par Count statuses. Supports multiple values.",
+      "field": "Par_Count_Statuses_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Valid Inventory Par Count statuses. Supports multiple values.",
+      "field": "Par_Count_Statuses_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Inventory Par Counts that are Canceled",
+      "field": "Exclude_Canceled_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Inventory Par Counts that are Ad Hoc",
+      "field": "Exclude_Ad_Hoc_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Inventory Par Counts that are Kanban",
+      "field": "Exclude_Kanban_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Item_Identifiers_Data": {
+        "description": "Purchase Item Alternate Item Identifiers Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Consigned": {
+        "description": "Indicates if the Par Count Line is Consigned.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Count_Quantity": {
+        "description": "Reference to the Count Quantity on the Inventory Par Count Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_WID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Par Count was created by. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Ad_Hoc_Prompt": {
+        "description": "Exclude Inventory Par Counts that are Ad Hoc",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Canceled_Prompt": {
+        "description": "Exclude Inventory Par Counts that are Canceled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Kanban_Prompt": {
+        "description": "Exclude Inventory Par Counts that are Kanban",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "InventoryParCount_Par_Count_ID": {
+        "description": "Reference ID for Par Count",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Load_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference": {
+        "description": "Item tags for the Purchase Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Kanban": {
+        "description": "Indicates the Par Count Line is a Kanban Line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Line_Item_Description": {
+        "description": "Item Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manual_Order_Quantity": {
+        "description": "Open pending Order Quantity from manually created requisitions and stock requests for a par location for the Item and unit of measure",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "On_Order_Quantity": {
+        "description": "Open pending On order Quantity from auto requisitions and stock requests created from par count for the Item, Bin and Unit of Measure",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Par_Count_Created_On_or_After_Prompt": {
+        "description": "Inventory Par Count created on or after date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Created_On_or_Before_Prompt": {
+        "description": "Inventory Par Count created on or before date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Line_Number": {
+        "description": "Reference to an Inventory Par Count Line number",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Par_Count_Line_Reference_Inventory_Par_Count_Line_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Number_Prompt": {
+        "description": "Inventory Par Count Doucment ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Statuses_Reference_Document_Status_ID_Prompt": {
+        "description": "Valid Inventory Par Count statuses. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Count_Statuses_Reference_WID_Prompt": {
+        "description": "Valid Inventory Par Count statuses. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Bin_Reference_Par_Bin_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Bin_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Reference_Location_ID_Prompt": {
+        "description": "Reference to Inventory Par Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Location_Reference_WID_Prompt": {
+        "description": "Reference to Inventory Par Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reorder_Point": {
+        "description": "Indicates Reorder Point on the Par Count Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Request_Quantity": {
+        "description": "Reference to the Request Order Quantity on the Inventory Par Count Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Zero_On_Hand": {
+        "description": "Zero On Hand indicates that the actual Count Quantiy is zero when Par Count Option is set to Count Quantity",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FinancialInstitutions_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Financial Institution ID. This is a unique identifier for the Financial Institution",
+      "field": "FinancialInstitution_Financial_Institution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FinancialInstitution_Financial_Institution_ID": {
+        "description": "Financial Institution ID. This is a unique identifier for the Financial Institution",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

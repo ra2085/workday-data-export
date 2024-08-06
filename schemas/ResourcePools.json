@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ResourcePools",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool ID.",
+      "field": "Resource_Pool_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Name is Required.",
+      "field": "Resource_Pool_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value indicating if the Resource Pool ID will be included in the display of Resource Pool Name.",
+      "field": "Include_Resource_Pool_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the resource pool is inactive. A resource pool may also be inactivated.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Description.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchies that this current Resource Pool is inactivated by.",
+      "field": "Inactivated_By_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchy that this Resource Pool belongs to.",
+      "field": "Resource_Pool_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers included in this Resource Pool.",
+      "field": "Workers_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Name as Request Criteria for Get Resource Pool web service task.",
+      "field": "Resource_Pool_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Resource Pool Description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivated_By_Reference": {
+        "description": "Resource Pool Hierarchies that this current Resource Pool is inactivated by.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates the resource pool is inactive. A resource pool may also be inactivated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Resource_Pool_ID_in_Name": {
+        "description": "Boolean value indicating if the Resource Pool ID will be included in the display of Resource Pool Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Resource_Pool_Hierarchy_Reference": {
+        "description": "Resource Pool Hierarchy that this Resource Pool belongs to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_ID": {
+        "description": "Resource Pool ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_Name": {
+        "description": "Resource Pool Name is Required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_Name_Prompt": {
+        "description": "Resource Pool Name as Request Criteria for Get Resource Pool web service task.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Reference": {
+        "description": "Workers included in this Resource Pool.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

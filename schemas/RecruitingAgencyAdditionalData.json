@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecruitingAgencyAdditionalData",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Agency_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Agency_Reference_Job_Posting_Site_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Agency_Reference_Recruiting_Agency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Recruiting Agency data.",
+      "field": "Recruiting_Agency_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Job Posting Site",
+      "field": "Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Name_Prompt": {
+        "description": "Name of Job Posting Site",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Agency_Data": {
+        "description": "Recruiting Agency data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Agency_Reference_Job_Posting_Site_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Agency_Reference_Recruiting_Agency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Agency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

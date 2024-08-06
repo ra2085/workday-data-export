@@ -1,0 +1,952 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Locations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique location ID.  The organization, position and hire tabs will reference location ID.",
+      "field": "Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Specifies the Effective Date for updates to these fields only: Location Name, Inactive, and Location Hierarchy Reference. Blank means these field values will be effective as of the beginning of time. Must be blank for new locations.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Location.",
+      "field": "Location_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.)",
+      "field": "Location_Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location type associated with the location that ties to the usage that has been setup. If left blank, existing values will be removed.",
+      "field": "Location_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Location Attributes associated with this Location. If left blank, existing values will be removed.",
+      "field": "Location_Attribute_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicates if the Location is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Latitude for a Coordinate. If left blank, existing values will be removed.",
+      "field": "Latitude",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Longitude for a Coordinate. If left blank, existing values will be removed.",
+      "field": "Longitude",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Altitude for a Coordinate. If left blank, existing values will be removed.",
+      "field": "Altitude",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Profile_Reference_Time_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Locale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Locale_Reference_Locale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Display_Language_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Display_Language_Reference_User_Language_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_Time_Zone_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An alternate name for the primary location when the job details display on the Recruiting External Career Sites.",
+      "field": "External_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Job_Posting_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Job_Posting_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_Federal_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_Local_City_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_Local_County_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_Local_Other_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_Local_School_District_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Minimum_Wage_Authority_Reference_Payroll_State_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The division or subsidiary name of the establishment. If left blank, existing values will be removed.",
+      "field": "Trade_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique alpha/numeric identifier that identifies the business at this physical location. If left blank, existing values will be removed.",
+      "field": "Worksite_ID_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Global Location Number of the location.",
+      "field": "Global_Location_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location identifier of the location.",
+      "field": "Location_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Ship-To_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Ship-To_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deliver-To location that can be associated with a Location with Ship-to usage.",
+      "field": "Associate_Deliver-To_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Instructional_Site_Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Instructional_Site_Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Capacity",
+      "field": "Instructional_Site_Data_Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Off-site",
+      "field": "Off-Site",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Instructional Use Only",
+      "field": "Instructional_Use_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Housing_Assignment_Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Housing_Assignment_Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A URL link that directs you to the training room location such as a map or PDF.",
+      "field": "Link",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of people that the training room can accommodate.",
+      "field": "Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The directions to the training room location.",
+      "field": "Directions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The equipment available in the training room.",
+      "field": "Equipment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The details required to reserve the training room. Example: A contact person or information about a room booking system.",
+      "field": "Reservation_Details",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The video conferencing details such as the meeting ID, URL, and telephone numbers.",
+      "field": "Video_Conference_Details",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Additional details about the training room location.",
+      "field": "Additional_Details",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Information",
+      "field": "Phone_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Email Address Information",
+      "field": "Email_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instant Messenger Information",
+      "field": "Instant_Messenger_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web Address Information",
+      "field": "Web_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+      "field": "Integration_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Location Hierarchy the includes this Location. If left blank, location will be removed from all location hierarchies it is included in as of effective date specified.",
+      "field": "Location_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Result of the evaluation of an External Field based on a contextual instance.",
+      "field": "Integration_Field_Override_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location Name for the request criteria.",
+      "field": "Location_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+      "field": "Location_Usage_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+      "field": "Location_Usage_Reference_Location_Usage_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+      "field": "Location_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+      "field": "Location_Type_Reference_Location_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Excludes inactive locations from being returned in the response.",
+      "field": "Exclude_Inactive_Locations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Excludes active locations from being returned in the response.",
+      "field": "Exclude_Active_Locations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Details": {
+        "description": "Additional details about the training room location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Altitude": {
+        "description": "The Altitude for a Coordinate. If left blank, existing values will be removed.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Associate_Deliver-To_Location_Reference": {
+        "description": "Deliver-To location that can be associated with a Location with Ship-to usage.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Capacity": {
+        "description": "The number of people that the training room can accommodate.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Job_Posting_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Job_Posting_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Ship-To_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Ship-To_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Directions": {
+        "description": "The directions to the training room location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Language_Reference_User_Language_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Language_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Specifies the Effective Date for updates to these fields only: Location Name, Inactive, and Location Hierarchy Reference. Blank means these field values will be effective as of the beginning of time. Must be blank for new locations.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Address_Data": {
+        "description": "Email Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Equipment": {
+        "description": "The equipment available in the training room.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Active_Locations_Prompt": {
+        "description": "Excludes active locations from being returned in the response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Inactive_Locations_Prompt": {
+        "description": "Excludes inactive locations from being returned in the response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Name": {
+        "description": "An alternate name for the primary location when the job details display on the Recruiting External Career Sites.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Global_Location_Number": {
+        "description": "The Global Location Number of the location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean attribute indicates if the Location is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Instant_Messenger_Data": {
+        "description": "Instant Messenger Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instructional_Site_Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instructional_Site_Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instructional_Site_Data_Capacity": {
+        "description": "Capacity",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Instructional_Use_Only": {
+        "description": "Instructional Use Only",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_Field_Override_Data": {
+        "description": "Result of the evaluation of an External Field based on a contextual instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_ID_Data": {
+        "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Latitude": {
+        "description": "The Latitude for a Coordinate. If left blank, existing values will be removed.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Link": {
+        "description": "A URL link that directs you to the training room location such as a map or PDF.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_Federal_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_Local_City_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_Local_County_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_Local_Other_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_Local_School_District_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_Payroll_State_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Minimum_Wage_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locale_Reference_Locale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Attribute_Reference": {
+        "description": "The Location Attributes associated with this Location. If left blank, existing values will be removed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Hierarchy_Reference": {
+        "description": "Reference to a Location Hierarchy the includes this Location. If left blank, location will be removed from all location hierarchies it is included in as of effective date specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_ID": {
+        "description": "The unique location ID.  The organization, position and hire tabs will reference location ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Identifier": {
+        "description": "The location identifier of the location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Name": {
+        "description": "The name of the Location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Name_Prompt": {
+        "description": "Location Name for the request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Location_Type_Reference": {
+        "description": "The location type associated with the location that ties to the usage that has been setup. If left blank, existing values will be removed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Type_Reference_Location_Type_ID_Prompt": {
+        "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Type_Reference_WID_Prompt": {
+        "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Usage_Reference": {
+        "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Usage_Reference_Location_Usage_ID_Prompt": {
+        "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Usage_Reference_WID_Prompt": {
+        "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Longitude": {
+        "description": "The Longitude for a Coordinate. If left blank, existing values will be removed.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Off-Site": {
+        "description": "Off-site",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Phone_Data": {
+        "description": "Phone Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reservation_Details": {
+        "description": "The details required to reserve the training room. Example: A contact person or information about a room booking system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Housing_Assignment_Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Housing_Assignment_Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Profile_Reference_Time_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_Time_Zone_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Trade_Name": {
+        "description": "The division or subsidiary name of the establishment. If left blank, existing values will be removed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Video_Conference_Details": {
+        "description": "The video conferencing details such as the meeting ID, URL, and telephone numbers.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Data": {
+        "description": "Web Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worksite_ID_Code": {
+        "description": "A unique alpha/numeric identifier that identifies the business at this physical location. If left blank, existing values will be removed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

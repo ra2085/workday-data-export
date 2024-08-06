@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PaymentTerms_Payment_Term_Rules_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PaymentTerm_Payment_Term_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID instance.",
+      "field": "Payment_Term_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payment Terms Rule instance",
+      "field": "Payment_Term_Rule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order in which the rule is to be processed.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Rule_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Rule_Type_Reference_Payment_Terms_Rule_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The numeric value to select for a specific rule type.",
+      "field": "Rule_Modifier_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Apply the cut-off condition to the specific rule type.",
+      "field": "Apply_Cut-Off_Condition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Payment Terms Name. Can be a match of a partial string.",
+      "field": "Payment_Terms_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Apply_Cut-Off_Condition": {
+        "description": "Apply the cut-off condition to the specific rule type.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "The order in which the rule is to be processed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PaymentTerm_Payment_Term_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Rule_Type_Reference_Payment_Terms_Rule_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Rule_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Term_Rule_ID": {
+        "description": "The reference ID instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Term_Rule_Reference": {
+        "description": "Payment Terms Rule instance",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Name_Prompt": {
+        "description": "Search by Payment Terms Name. Can be a match of a partial string.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Modifier_Value": {
+        "description": "The numeric value to select for a specific rule type.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierContractLeaseAmendments_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SupplierContractLeaseAmendment_Supplier_Contract_Lease_Amendment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Attachment_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Attachment_Category_Reference_Attachment_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attachment_Category_Reference_Attachment_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_WID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SupplierContractLeaseAmendment_Supplier_Contract_Lease_Amendment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

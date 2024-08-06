@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicAppointee_Disability_Information_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AcademicAppointee_Academic_Appointee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for each disability status entry.",
+      "field": "Disability_Status_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Track Type Reference. Supports multiple values.",
+      "field": "By_Academic_Track_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Track Type Reference. Supports multiple values.",
+      "field": "By_Academic_Track_Type_Reference_Academic_Track_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Worker",
+      "field": "By_Worker_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Affiliate",
+      "field": "By_Affiliate_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Student",
+      "field": "By_Student_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Active appointees have current appointments",
+      "field": "By_Active_Role_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AcademicAppointee_Academic_Appointee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "By_Academic_Track_Type_Reference_Academic_Track_Type_ID_Prompt": {
+        "description": "Academic Track Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "By_Academic_Track_Type_Reference_WID_Prompt": {
+        "description": "Academic Track Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "By_Active_Role_Prompt": {
+        "description": "Active appointees have current appointments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Affiliate_Prompt": {
+        "description": "By Affiliate",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Student_Prompt": {
+        "description": "By Student",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Worker_Prompt": {
+        "description": "By Worker",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Disability_Status_Information_Data": {
+        "description": "Wrapper element for each disability status entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

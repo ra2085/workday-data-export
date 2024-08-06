@@ -1,0 +1,250 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RequestingEntities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requesting_Entity_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requesting_Entity_Reference_Requesting_Entity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for the Requesting Entity.",
+      "field": "Requesting_Entity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requesting Entity Name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate that the Requesting Entity is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Type_Reference_Requisition_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Workday automatically populates ship-to values based on the selected Company and Deliver-to Location. Select this flag to select a different ship-to value and override default ship-to values.",
+      "field": "Override_Ship-To",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deliver-To_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deliver-To_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Restricted Purchase Item Lists that are restricted by this Requesting Entity.",
+      "field": "Purchase_Item_List_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Items that are restricted by this Requesting Entity.",
+      "field": "Purchase_Item_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver-To_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver-To_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Flag to indicate that the Requesting Entity is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Requesting Entity Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Ship-To": {
+        "description": "Workday automatically populates ship-to values based on the selected Company and Deliver-to Location. Select this flag to select a different ship-to value and override default ship-to values.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Purchase_Item_List_Reference": {
+        "description": "Restricted Purchase Item Lists that are restricted by this Requesting Entity.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference": {
+        "description": "Purchase Items that are restricted by this Requesting Entity.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requesting_Entity_ID": {
+        "description": "Unique Identifier for the Requesting Entity.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requesting_Entity_Reference_Requesting_Entity_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requesting_Entity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Requisition_Type_Reference_Requisition_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_Address_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

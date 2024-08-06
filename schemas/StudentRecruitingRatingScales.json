@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentRecruitingRatingScales",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Student Recruiting Rating Scale.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for the Student Recruiting Rating Scale.",
+      "field": "Student_Recruiting_Rating_Scale_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+      "field": "Academic_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether a non-ranged or ranged Student Recruiting Rating Scale is made.",
+      "field": "Use_Score_Range",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is Student Recruiting Scale Inactive",
+      "field": "Student_Recruiting_Rating_Scale_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Student Recruiting Rating Data.",
+      "field": "Student_Recruiting_Rating_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student recruiting rating scale.. Supports multiple values.",
+      "field": "Academic_Units_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student recruiting rating scale.. Supports multiple values.",
+      "field": "Academic_Units_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Level_Reference": {
+        "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit of the student recruiting rating scale.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_WID_Prompt": {
+        "description": "The academic unit of the student recruiting rating scale.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The reference ID for the Student Recruiting Rating Scale.",
+        "type": [
+          "string"
+        ]
+      },
+      "Student_Recruiting_Rating_Data": {
+        "description": "Element Container for Student Recruiting Rating Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Scale_Inactive": {
+        "description": "Is Student Recruiting Scale Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Scale_Name": {
+        "description": "The name for the Student Recruiting Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Score_Range": {
+        "description": "Determines whether a non-ranged or ranged Student Recruiting Rating Scale is made.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

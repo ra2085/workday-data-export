@@ -1,0 +1,420 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CatalogLoads_Catalog_Load_Item_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CatalogLoad_Catalog_Load_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Catalog_Load_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Catalog_Load_Item_Reference_Catalog_Load_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Item Unique Identifier",
+      "field": "Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Item Identifier",
+      "field": "Item_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Used to inactivate an existing Catalog Item via the Catalog Load WWS request.  Please note that if this field is set, any updates to the Catalog Item included in the WWS request will not be carried over when the Catalog Load request is approved.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Item Name",
+      "field": "Item_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Item Description",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Item URL",
+      "field": "Item_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Catalog Item Lead Time",
+      "field": "Lead_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Commodity Code Instances associated with the Purchase or Catalog Item. Commodity code is a standard code that identifies the type of goods or service. Example of standard commodity code types are UNSPSC, NIGP etc.  The commodity code needs to be active and not a parent code to associate to the item.",
+      "field": "Commodity_Code_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Item Identifiers for Catalog Load items.",
+      "field": "Alternate_Item_Identifiers",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Tags for Catalog Item",
+      "field": "Item_Tag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of Image",
+      "field": "Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename of Image",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File associated with Image",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+      "field": "Alternative_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Additional Image for Item",
+      "field": "Additional_Image_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "UN CEFACT Common Code to denote Base UOM of Catalog Load Item.",
+      "field": "UN_CEFACT_Base_UOM_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Load Item Unit of Measure",
+      "field": "Catalog_Load_Item_Unit_of_Measure_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Catalog Load Item Packaging String.",
+      "field": "Packaging_String",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Image_Data": {
+        "description": "Additional Image for Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Item_Identifiers": {
+        "description": "Alternate Item Identifiers for Catalog Load items.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternative_Text": {
+        "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CatalogLoad_Catalog_Load_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Catalog_Item_ID": {
+        "description": "Catalog Item Unique Identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Catalog_Load_Item_Reference_Catalog_Load_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Catalog_Load_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Catalog_Load_Item_Unit_of_Measure_Data": {
+        "description": "Catalog Load Item Unit of Measure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Reference": {
+        "description": "Commodity Code Instances associated with the Purchase or Catalog Item. Commodity code is a standard code that identifies the type of goods or service. Example of standard commodity code types are UNSPSC, NIGP etc.  The commodity code needs to be active and not a parent code to associate to the item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "File associated with Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Filename of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_ID": {
+        "description": "Reference ID of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_Image_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Used to inactivate an existing Catalog Item via the Catalog Load WWS request.  Please note that if this field is set, any updates to the Catalog Item included in the WWS request will not be carried over when the Catalog Load request is approved.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "Catalog Item Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier": {
+        "description": "Catalog Item Identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Name": {
+        "description": "Catalog Item Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference": {
+        "description": "Item Tags for Catalog Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_URL": {
+        "description": "Catalog Item URL",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lead_Time": {
+        "description": "Catalog Item Lead Time",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Packaging_String": {
+        "description": "Catalog Load Item Packaging String.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "UN_CEFACT_Base_UOM_Code": {
+        "description": "UN CEFACT Common Code to denote Base UOM of Catalog Load Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

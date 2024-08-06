@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssignRecruitingSelfScheduleCalendars",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier to reference a Job Requisition.",
+      "field": "Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Recruiting Self-Schedule Calendar References.",
+      "field": "Recruiting_Self-Schedule_Calendar_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Job_Requisition_ID": {
+        "description": "A unique identifier to reference a Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Recruiting_Self-Schedule_Calendar_Reference": {
+        "description": "Recruiting Self-Schedule Calendar References.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

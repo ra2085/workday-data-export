@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Address_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+      "field": "Country_ISO_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Address Line data.",
+      "field": "Address_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Municipality",
+      "field": "Municipality",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Submunicipality data.",
+      "field": "Submunicipality",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Region (e.g. State, Province, etc.)",
+      "field": "Region",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Subregion data.",
+      "field": "Subregion",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Postal Code",
+      "field": "Postal_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Communication Usage Type.",
+      "field": "Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Communication Usage Behavior.",
+      "field": "Use_For_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the usage of the contact information.",
+      "field": "Comments",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_Line": {
+        "description": "Encapsulating element for all Address Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comments": {
+        "description": "Description of the usage of the contact information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_ISO_Code": {
+        "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Municipality": {
+        "description": "Municipality",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Postal_Code": {
+        "description": "Postal Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region": {
+        "description": "Region (e.g. State, Province, etc.)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submunicipality": {
+        "description": "Encapsulating element for all Submunicipality data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subregion": {
+        "description": "Encapsulating element for all Subregion data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference": {
+        "description": "Reference element representing a unique instance of Communication Usage Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_For_Reference": {
+        "description": "Reference element representing a unique instance of Communication Usage Behavior.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

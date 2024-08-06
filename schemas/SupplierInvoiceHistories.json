@@ -1,0 +1,588 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceHistories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_History_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_History_Reference_Supplier_Invoice_History_Reference_Id",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Invoice History ID.  This is the Supplier Invoice History unique identifier",
+      "field": "Supplier_Invoice_History_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for Supplier Reference Number.",
+      "field": "Suppliers_Invoice_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency amount for the Total Invoice Amount. This amount corresponds with the Currency in Supplier Invoice History Currency Reference.",
+      "field": "Total_Invoice_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value for the Supplier Invoice History date. Format is MM/DD/YYYY.",
+      "field": "Invoice_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for an External Purchase Order Number recorded on the Supplier Invoice History.",
+      "field": "External_PO_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for the Document Number of the Supplier Invoice History.",
+      "field": "Invoice_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value of the Source Integration System of the Supplier Invoice History.",
+      "field": "Source_Integration_System",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for Supplier Reference Number to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Supplier_Reference_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value to use to search for Supplier Invoice Histories with an Invoice Date matching this date.",
+      "field": "Invoice_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency amount for the Total Invoice Amount to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Total_Invoice_Amount_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Currency_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Currency_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Currency_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for an External PO Number to use as search criteria to find Supplier Invoice Histories.",
+      "field": "External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for an Invoice Number to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Invoice_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for a Source Integration System to use as search criteria to find Supplier Invoice Histories.",
+      "field": "Source_Integration_System_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "References to one or more Companies to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID_Prompt": {
+        "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID_Prompt": {
+        "description": "Reference to a Currency to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_PO_Number": {
+        "description": "Text value for an External Purchase Order Number recorded on the Supplier Invoice History.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_PO_Number_Prompt": {
+        "description": "Text value for an External PO Number to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Date": {
+        "description": "Date value for the Supplier Invoice History date. Format is MM/DD/YYYY.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Date_Prompt": {
+        "description": "Date value to use to search for Supplier Invoice Histories with an Invoice Date matching this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Number": {
+        "description": "Text value for the Document Number of the Supplier Invoice History.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Number_Prompt": {
+        "description": "Text value for an Invoice Number to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Integration_System": {
+        "description": "Text value of the Source Integration System of the Supplier Invoice History.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Integration_System_Prompt": {
+        "description": "Text value for a Source Integration System to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_History_ID": {
+        "description": "Supplier Invoice History ID.  This is the Supplier Invoice History unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_History_Reference_Supplier_Invoice_History_Reference_Id": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_History_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Number_Prompt": {
+        "description": "Text value for Supplier Reference Number to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "References to one or more Suppliers to use as search criteria to find Supplier Invoice Histories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Suppliers_Invoice_Number": {
+        "description": "Text value for Supplier Reference Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Invoice_Amount": {
+        "description": "Currency amount for the Total Invoice Amount. This amount corresponds with the Currency in Supplier Invoice History Currency Reference.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Invoice_Amount_Prompt": {
+        "description": "Currency amount for the Total Invoice Amount to use as search criteria to find Supplier Invoice Histories.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

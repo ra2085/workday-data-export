@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SkillProfiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Skill Profile",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Skill Profile",
+      "field": "Skill_Profile_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of the Skill Profile",
+      "field": "Skill_Profile_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the Skill Profile is currently active.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for this Skill Profile Category.",
+      "field": "Skill_Profile_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper Element for Skill Profile Skill Data",
+      "field": "Skill_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "A unique identifier for the Skill Profile",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Whether or not the Skill Profile is currently active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Skill_Data": {
+        "description": "Wrapper Element for Skill Profile Skill Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Profile_Category_Reference": {
+        "description": "A unique identifier for this Skill Profile Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Profile_Description": {
+        "description": "A description of the Skill Profile",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Profile_Name": {
+        "description": "The name of the Skill Profile",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

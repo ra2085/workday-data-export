@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerDateMilestones",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Date Milestone ID. This is a unique identifier.",
+      "field": "Customer_Milestone_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Sponsor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Sponsor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Student_Financial_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Date_Milestone_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Date_Milestone_Type_Reference_Milestone_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Date Milestone Name -- customers will define this name",
+      "field": "Customer_Milestone_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Customer date Milestone -- estimated completion date",
+      "field": "Estimated_Completion_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Customer Date Milestone Completion Flag",
+      "field": "Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Customer Date Milestone - Date Completed -- if Completion flag is true - then a Date Completed entry is required.",
+      "field": "Completed_On",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Date Milestone - General Comment section...",
+      "field": "Comments",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comments": {
+        "description": "Customer Date Milestone - General Comment section...",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Complete": {
+        "description": "Customer Date Milestone Completion Flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Completed_On": {
+        "description": "Customer Date Milestone - Date Completed -- if Completion flag is true - then a Date Completed entry is required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Date_Milestone_Type_Reference_Milestone_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Date_Milestone_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Milestone_ID": {
+        "description": "Customer Date Milestone ID. This is a unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Milestone_Name": {
+        "description": "Customer Date Milestone Name -- customers will define this name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Student_Financial_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Estimated_Completion_Date": {
+        "description": "Customer date Milestone -- estimated completion date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

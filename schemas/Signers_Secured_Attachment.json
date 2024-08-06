@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Signers_Secured_Attachment",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Signer_Signer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the resume.",
+      "field": "File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A comment about the resume.",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the resume.",
+      "field": "FileName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The resume that was attached for the applicant.",
+      "field": "Comments",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comments": {
+        "description": "The resume that was attached for the applicant.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "A comment about the resume.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FileName": {
+        "description": "The name of the resume.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_ID": {
+        "description": "The Reference ID for the resume.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signer_Signer_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

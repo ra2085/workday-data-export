@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SpecialConditionTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Special_Condition_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Special_Condition_Type_Reference_Special_Condition_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Special condition type Reference ID.",
+      "field": "Special_Condition_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Special condition type name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Special condition type is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Special condition type is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Special condition type name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Type_ID": {
+        "description": "Special condition type Reference ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Type_Reference_Special_Condition_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

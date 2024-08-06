@@ -1,0 +1,797 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceRequests_Supplier_Invoice_Request_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID",
+      "field": "SupplierInvoiceRequest_Supplier_Invoice_Request_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID",
+      "field": "Supplier_Invoice_Request_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+      "field": "Line_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Request_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Request_Line_Reference_Supplier_Invoice_Request_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Invoice Request Line Type. Either Goods line or Service line.",
+      "field": "Line_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Catalog_Load_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Description on the Supplier Invoice Request Line.",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Bank_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Customer_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Petty_Cash_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Receivable_Writeoff_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Supplier_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Tax_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Packaging String associated with the Item specified on the Line.",
+      "field": "Packaging_String",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Quantity on the Supplier Invoice Request Line",
+      "field": "Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Unit Cost on the Supplier Invoice Request Line",
+      "field": "Unit_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Extended Amount on the Supplier Invoice Request Line. If Unit Cost and Quantity are present on the line, Extended Amount is always equal to their product.",
+      "field": "Extended_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worktags entered on the Supplier Invoice Request Line.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo on the Supplier Invoice Request Line.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Internal Memo on the Supplier Invoice Request Line.",
+      "field": "Internal_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Billable Flag at Supplier Invoice Request Line Level",
+      "field": "Billable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional element that represents Split information for the Supplier Invoice Request Line.",
+      "field": "Supplier_Invoice_Request_Line_Splits_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Invoice Request Document Status. Examples of Document Status are Approved, Canceled and In Progress. Supports multiple values.",
+      "field": "Invoice_Request_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Invoice Request Document Status. Examples of Document Status are Approved, Canceled and In Progress. Supports multiple values.",
+      "field": "Invoice_Request_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Date On or After",
+      "field": "Invoice_Request_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Date On or Before",
+      "field": "Invoice_Request_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Due Date On or After",
+      "field": "Invoice_Request_Due_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Due Date On or Before",
+      "field": "Invoice_Request_Due_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+      "field": "Approved_by_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+      "field": "Approved_by_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+      "field": "Approved_by_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approved_by_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_by_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_by_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice request. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billable": {
+        "description": "Billable Flag at Supplier Invoice Request Line Level",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extended_Amount": {
+        "description": "Extended Amount on the Supplier Invoice Request Line. If Unit Cost and Quantity are present on the line, Extended Amount is always equal to their product.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Internal_Memo": {
+        "description": "Internal Memo on the Supplier Invoice Request Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Date_On_or_After_Prompt": {
+        "description": "Invoice Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Date_On_or_Before_Prompt": {
+        "description": "Invoice Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Due_Date_On_or_After_Prompt": {
+        "description": "Invoice Due Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Due_Date_On_or_Before_Prompt": {
+        "description": "Invoice Due Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to an existing Invoice Request Document Status. Examples of Document Status are Approved, Canceled and In Progress. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Request_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing Invoice Request Document Status. Examples of Document Status are Approved, Canceled and In Progress. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "Item Description on the Supplier Invoice Request Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Order": {
+        "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Type": {
+        "description": "Supplier Invoice Request Line Type. Either Goods line or Service line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo on the Supplier Invoice Request Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Packaging_String": {
+        "description": "Packaging String associated with the Item specified on the Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Catalog_Load_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quantity": {
+        "description": "Quantity on the Supplier Invoice Request Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Bank_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Customer_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Petty_Cash_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Receivable_Writeoff_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Revenue_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Supplier_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Tax_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SupplierInvoiceRequest_Supplier_Invoice_Request_ID": {
+        "description": "Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Request_Line_ID": {
+        "description": "Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Request_Line_Reference_Supplier_Invoice_Request_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Request_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Request_Line_Splits_Data": {
+        "description": "Optional element that represents Split information for the Supplier Invoice Request Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Cost": {
+        "description": "Unit Cost on the Supplier Invoice Request Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Worktags entered on the Supplier Invoice Request Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

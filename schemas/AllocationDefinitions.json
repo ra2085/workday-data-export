@@ -1,0 +1,1524 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AllocationDefinitions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Definition_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Definition_Reference_Allocation_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the Allocation Definition.",
+      "field": "Allocation_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Allocation Definition Name.",
+      "field": "Allocation_Definition_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Set_Reference_Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_Fiscal_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Organization(s) that can use this allocation definition.",
+      "field": "Used_by_Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When this flag is set to true, it creates a corresponding reversal journal for this allocation.",
+      "field": "Create_Reversal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Business_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Cost_Center_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Custom_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Fund_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Region_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Optional Anchor Balancing Worktag to balance the generated Journal per Optional Balancing Worktag.",
+      "field": "Optional_Balancing_Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag to determine if this Allocation Definition is active or not.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text that identifies any applicable reference information for this allocation definition",
+      "field": "Allocation_Reference_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates the attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Type_Reference_Source_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The percentage value used to allocate portion of the source funds.",
+      "field": "Source_Allocation_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount to be allocated",
+      "field": "Fixed_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_Budget_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_Ledger_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Book_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Book_Code_Reference_Book_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates the Allocation Source Data",
+      "field": "Allocation_Source_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Condition_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Condition_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_Budget_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_Ledger_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Allocation_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Allocation_Method_Reference_Allocation_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Type_Reference_Allocation_Basis_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Translation_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Translation_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Translation_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Translation_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Translation_Rule_Set_Reference_Account_Translation_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balance_or_Activity_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balance_or_Activity_Reference_Statistic_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statistic_Definition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statistic_Definition_Reference_Financial_Headcount_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statistic_Definition_Reference_Statistic_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Worktag Type used as dimension by which the basis is calculated - for example, we can allocate $1,000 based on the ledger balance for each cost center and region (where the dimensions were cost center and region). This gets populated if Allocation Basis Type is 'Ledger Accounts'",
+      "field": "Basis_Dimension_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Worktag Type used to group the basis. Example when allocating between Cost Centers within a Region. Group by will sum per Region and allocate the total sum per Region between the cost centers within the region.",
+      "field": "Basis_Group_By_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Book_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Book_Code_Reference_Book_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates the Allocation Definition Basis Criteria Data",
+      "field": "Basis_Filter_Conditions_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Condition_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Condition_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_Budget_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_Ledger_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Budget_Amendment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Budget_Amendment_Type_Reference_Business_Plan_Amendment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Company_Company_is_from_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Company_Company_is_from_Reference_Allocation_Dimension_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Company_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Company_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Company_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Account_Ledger_Account_is_from_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Account_Ledger_Account_is_from_Reference_Allocation_Dimension_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Account_Ledger_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Account_Ledger_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Account_Ledger_Account_Reference_Ledger_Account_Summary_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Book_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Book_Code_Reference_Book_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates Target Worktag Mapping Data",
+      "field": "Target_Worktag_Mapping_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Dimension_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Dimension_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Company_Company_is_from_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Company_Company_is_from_Reference_Allocation_Dimension_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Company_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Company_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Company_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Account_Ledger_Account_is_from_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Account_Ledger_Account_is_from_Reference_Allocation_Dimension_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Account_Ledger_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Account_Ledger_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Offset_Account_Ledger_Account_Reference_Ledger_Account_Summary_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates Offset Worktag Mapping Data",
+      "field": "Offset_Worktag_Mapping_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Allocation Definition",
+      "field": "Allocation_Definition_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The status of the Allocation Definition",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+      "field": "Used_by_Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_Budget_Structure_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Source_Reference_Ledger_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Source. Supports multiple values.",
+      "field": "Source_Book_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Source. Supports multiple values.",
+      "field": "Source_Book_Code_Reference_Book_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_Budget_Structure_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Basis_Reference_Ledger_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Basis. Supports multiple values.",
+      "field": "Basis_Book_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Basis. Supports multiple values.",
+      "field": "Basis_Book_Code_Reference_Book_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_Budget_Structure_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+      "field": "Ledger_or_Budget_Structure_for_Target_Reference_Ledger_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Target. Supports multiple values.",
+      "field": "Target_Book_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Book Code used by the Allocation Definition's Target. Supports multiple values.",
+      "field": "Target_Book_Code_Reference_Book_Code_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Set_Reference_Account_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Translation_Rule_Set_Reference_Account_Translation_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Translation_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Definition_ID": {
+        "description": "The ID for the Allocation Definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Definition_Name": {
+        "description": "Text attribute identifying Allocation Definition Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Definition_Name_Prompt": {
+        "description": "The name of the Allocation Definition",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Definition_Reference_Allocation_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Definition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Allocation_Dimension_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Dimension_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Reference_Text": {
+        "description": "Text that identifies any applicable reference information for this allocation definition",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Source_Data": {
+        "description": "Encapsulates the Allocation Source Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulates the attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balance_or_Activity_Reference_Statistic_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balance_or_Activity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Business_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Cost_Center_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Custom_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Fund_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Region_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Allocation_Method_Reference_Allocation_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Allocation_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Book_Code_Reference_Book_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Book_Code_Reference_Book_Code_ID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Basis. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Book_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Book_Code_Reference_WID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Basis. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Condition_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Condition_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Dimension_Reference": {
+        "description": "Reference to an existing Worktag Type used as dimension by which the basis is calculated - for example, we can allocate $1,000 based on the ledger balance for each cost center and region (where the dimensions were cost center and region). This gets populated if Allocation Basis Type is 'Ledger Accounts'",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Filter_Conditions_Data": {
+        "description": "Encapsulates the Allocation Definition Basis Criteria Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Group_By_Reference": {
+        "description": "Reference to an existing Worktag Type used to group the basis. Example when allocating between Cost Centers within a Region. Group by will sum per Region and allocate the total sum per Region between the cost centers within the region.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Type_Reference_Allocation_Basis_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Amendment_Type_Reference_Business_Plan_Amendment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Amendment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Reversal": {
+        "description": "When this flag is set to true, it creates a corresponding reversal journal for this allocation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_Currency_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_Fiscal_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fixed_Amount": {
+        "description": "Amount to be allocated",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "A flag to determine if this Allocation Definition is active or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "The status of the Allocation Definition",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_Budget_Structure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_Budget_Structure_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_Ledger_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_Ledger_Type_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Basis_Reference_WID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Basis. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_Budget_Structure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_Budget_Structure_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_Ledger_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_Ledger_Type_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Source_Reference_WID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Source. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_Budget_Structure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_Budget_Structure_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_Ledger_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_Ledger_Type_ID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_for_Target_Reference_WID_Prompt": {
+        "description": "Ledger or Budget Structure used by the Allocation Definition's Target. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Account_Ledger_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Account_Ledger_Account_Reference_Ledger_Account_Summary_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Account_Ledger_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Account_Ledger_Account_is_from_Reference_Allocation_Dimension_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Account_Ledger_Account_is_from_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Company_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Company_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Company_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Company_Company_is_from_Reference_Allocation_Dimension_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Company_Company_is_from_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Offset_Worktag_Mapping_Data": {
+        "description": "Encapsulates Offset Worktag Mapping Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Optional_Balancing_Worktag_Reference": {
+        "description": "Reference to an existing Optional Anchor Balancing Worktag to balance the generated Journal per Optional Balancing Worktag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Allocation_Percent": {
+        "description": "The percentage value used to allocate portion of the source funds.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Source_Book_Code_Reference_Book_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Book_Code_Reference_Book_Code_ID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Source. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Book_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Book_Code_Reference_WID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Source. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Condition_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Condition_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Type_Reference_Source_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statistic_Definition_Reference_Financial_Headcount_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statistic_Definition_Reference_Statistic_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statistic_Definition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Account_Ledger_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Account_Ledger_Account_Reference_Ledger_Account_Summary_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Account_Ledger_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Account_Ledger_Account_is_from_Reference_Allocation_Dimension_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Account_Ledger_Account_is_from_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Book_Code_Reference_Book_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Book_Code_Reference_Book_Code_ID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Target. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Book_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Book_Code_Reference_WID_Prompt": {
+        "description": "Book Code used by the Allocation Definition's Target. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Company_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Company_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Company_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Company_Company_is_from_Reference_Allocation_Dimension_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Company_Company_is_from_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Worktag_Mapping_Data": {
+        "description": "Encapsulates Target Worktag Mapping Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Translation_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Translation_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Translation_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference": {
+        "description": "Reference to an existing Organization(s) that can use this allocation definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Organization_Reference_WID_Prompt": {
+        "description": "Organization that uses a certain Allocation Definition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

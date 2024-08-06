@@ -1,0 +1,719 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdhocBankTransactions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+      "field": "Ad_hoc_Bank_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+      "field": "Ad_Hoc_Bank_Transaction_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Cancel Accounting Date",
+      "field": "Cancel_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Locked in Workday is a boolean flag controlling user ability to edit the transaction.  If the flag is set the user can't edit, cancel or change the transaction inside the Workday application, however the user can submit a draft transaction. The transaction can only be updated from the web service.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Ad hoc Bank Transaction Date",
+      "field": "Transaction_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field foran Ad hoc Bank Transaction memo",
+      "field": "Transaction_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_Bank_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Transaction to Bank Account Currency Conversion Rate",
+      "field": "Currency_Rate_Override_12_Decimal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Transaction Amount",
+      "field": "Transaction_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag indicates if the Ad hoc Bank Transaction is a deposit",
+      "field": "Deposit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag indicates if the Ad hoc Transaction is a withdrawal",
+      "field": "Withdrawal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_hoc_Bank_Transaction_Purpose_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_hoc_Bank_Transaction_Purpose_Reference_Ad_hoc_Bank_Transaction_Purpose_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free-form Text for any reference notes",
+      "field": "Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Reference for the Ad Hoc Bank Transaction",
+      "field": "External_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": " \n\nAs of w18, this functionality has been deprecated. Ad hoc Bank Transaction lines with a valid IRS 1099 Suppliers and a spend category mapped to a 1099 MISC category will automatically be included in 1099 MISC reporting.",
+      "field": "Include_in_IRS_1099",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Source_Reference_Journal_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When this attribute is yes, it excludes the Bank Account worktag on Offset journal entries",
+      "field": "Remove_Bank_Account_Worktag_on_Offset",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When this attribute is yes, the foreign exchange gain/loss is eliminated from the transaction",
+      "field": "Eliminate_FX_Gain_Loss",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad hoc Bank Transaction Transaction Lines",
+      "field": "Transaction_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Tax Details data",
+      "field": "Tax_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+      "field": "Auto_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+      "field": "Skip",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+      "field": "Discard_On_Exit_Validation_Error",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form comment regarding the business process.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element for the attachments pertaining to a Event entered through a web service.",
+      "field": "Business_Process_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or After Date",
+      "field": "Transaction_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or Before Date",
+      "field": "Transaction_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+      "field": "Ad_Hoc_Bank_Transaction_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Ad_Hoc_Bank_Transaction_Number": {
+        "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Bank_Transaction_Number_Prompt": {
+        "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_hoc_Bank_Transaction_ID": {
+        "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_hoc_Bank_Transaction_Purpose_Reference_Ad_hoc_Bank_Transaction_Purpose_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_hoc_Bank_Transaction_Purpose_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Auto_Complete": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Bank_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Attachment_Data": {
+        "description": "Element for the attachments pertaining to a Event entered through a web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cancel_Accounting_Date": {
+        "description": "Cancel Accounting Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Free form comment regarding the business process.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Override_12_Decimal": {
+        "description": "Transaction to Bank Account Currency Conversion Rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_Currency_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit": {
+        "description": "Boolean Flag indicates if the Ad hoc Bank Transaction is a deposit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Discard_On_Exit_Validation_Error": {
+        "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Eliminate_FX_Gain_Loss": {
+        "description": "When this attribute is yes, the foreign exchange gain/loss is eliminated from the transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Reference": {
+        "description": "External Reference for the Ad Hoc Bank Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_in_IRS_1099": {
+        "description": " \n\nAs of w18, this functionality has been deprecated. Ad hoc Bank Transaction lines with a valid IRS 1099 Suppliers and a spend category mapped to a 1099 MISC category will automatically be included in 1099 MISC reporting.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Journal_Source_Reference_Journal_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Locked in Workday is a boolean flag controlling user ability to edit the transaction.  If the flag is set the user can't edit, cancel or change the transaction inside the Workday application, however the user can submit a draft transaction. The transaction can only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Remove_Bank_Account_Worktag_on_Offset": {
+        "description": "When this attribute is yes, it excludes the Bank Account worktag on Offset journal entries",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skip": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Code_Data": {
+        "description": "Encapsulating element containing Tax Details data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Amount": {
+        "description": "Transaction Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transaction_Date": {
+        "description": "Ad hoc Bank Transaction Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_ID": {
+        "description": "Free-form Text for any reference notes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Line_Replacement_Data": {
+        "description": "Ad hoc Bank Transaction Transaction Lines",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Memo": {
+        "description": "Free form text field foran Ad hoc Bank Transaction memo",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_After_Prompt": {
+        "description": "Transaction On or After Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_Before_Prompt": {
+        "description": "Transaction On or Before Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withdrawal": {
+        "description": "Boolean Flag indicates if the Ad hoc Transaction is a withdrawal",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

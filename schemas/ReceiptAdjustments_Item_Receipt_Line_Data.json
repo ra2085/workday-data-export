@@ -1,0 +1,966 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReceiptAdjustments_Item_Receipt_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ReceiptAdjustment_Receipt_Adjustment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Adjustment_Line_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Adjustment_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Catalog_Load_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of the item.This field is outbound only; any data submitted will be ignored.",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_Purchase_Order_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Line_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Advanced_Shipment_Notice_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Advanced_Shipment_Notice_Line_Reference_Advanced_Ship_Notice_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Actual Quantity Received for this Line.",
+      "field": "Actual_Quantity_Received",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Original Quantity received on the Line. This field is outbound only; any data submitted will be ignored.",
+      "field": "Original_Quantity_Received",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_Of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_Of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_Of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Adjustment_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Adjustment_Reason_Reference_Reason_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Adjustment_Reason_Reference_Reason_Code_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the Receipt Adjustment Line.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Bank_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Customer_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Petty_Cash_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Receivable_Writeoff_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Supplier_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Tax_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Unit Cost for Receipt Adjustment Line. This field is outbound only; any data submitted will be ignored.",
+      "field": "Unit_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Extended Amount for the Receipt Adjustment line.  This amount is automatically calculated by multiplying the Actual Quantity to Receive by the Unit Cost in the currency specified on the Receipt.",
+      "field": "Extended_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Type_Reference_Delivery_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deliver-To_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deliver-To_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receipt Line Item Lot Quantity Data",
+      "field": "Receipt_Line_Lot_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Receipt Line Split Data",
+      "field": "Receipt_Line_Split_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags on the Receipt Line. This field is outbound only; any data submitted will be ignored.",
+      "field": "Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data and Attachment Category data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Company",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Company",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Company",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Purchase Order",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Purchase Order",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Purchase Order",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Purchase Order",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Supplier",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Receipt Adjusted",
+      "field": "Receipt_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Receipt Adjusted",
+      "field": "Receipt_Reference_Receipt_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Created by Person",
+      "field": "Created_by_Person_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter Receipt Adjustments by Created by Person",
+      "field": "Created_by_Person_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Receipt Adjustment Date On or After",
+      "field": "Receipt_Adjustment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Receipt Adjustment Date On or Before",
+      "field": "Receipt_Adjustment_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Actual_Quantity_Received": {
+        "description": "The Actual Quantity Received for this Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Advanced_Shipment_Notice_Line_Reference_Advanced_Ship_Notice_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Advanced_Shipment_Notice_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data and Attachment Category data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Filter Receipt Adjustments by Company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Person_Reference_IID_Prompt": {
+        "description": "Filter Receipt Adjustments by Created by Person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Person_Reference_WID_Prompt": {
+        "description": "Filter Receipt Adjustments by Created by Person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver-To_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver-To_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivery_Type_Reference_Delivery_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivery_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extended_Amount": {
+        "description": "The Extended Amount for the Receipt Adjustment line.  This amount is automatically calculated by multiplying the Actual Quantity to Receive by the Unit Cost in the currency specified on the Receipt.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "A description of the item.This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Load_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo for the Receipt Adjustment Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Original_Quantity_Received": {
+        "description": "The Original Quantity received on the Line. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_Line_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_Purchase_Order_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Filter Receipt Adjustments by Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Filter Receipt Adjustments by Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Filter Receipt Adjustments by Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ReceiptAdjustment_Receipt_Adjustment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Date_On_or_After_Prompt": {
+        "description": "Receipt Adjustment Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Date_On_or_Before_Prompt": {
+        "description": "Receipt Adjustment Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Line_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Reason_Reference_Reason_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Reason_Reference_Reason_Code_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Lot_Data": {
+        "description": "Receipt Line Item Lot Quantity Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Split_Data": {
+        "description": "Item Receipt Line Split Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Reference_Receipt_Number_Prompt": {
+        "description": "Filter Receipt Adjustments by Receipt Adjusted",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Reference_WID_Prompt": {
+        "description": "Filter Receipt Adjustments by Receipt Adjusted",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Bank_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Customer_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Petty_Cash_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Receivable_Writeoff_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Revenue_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Supplier_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Tax_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_Line_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "Filter Receipt Adjustments by Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Cost": {
+        "description": "Unit Cost for Receipt Adjustment Line. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unit_Of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference": {
+        "description": "Reference to existing worktags on the Receipt Line. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

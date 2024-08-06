@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectBillingRateSheetConfigurationLines",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Billing_Rate_Sheet_Configuration_Line_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Billing_Rate_Sheet_Configuration_Line_Reference_Project_Billing_Rate_Sheet_Configuration_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Billing Rate Sheet Configuration Line ID.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Billing Rate Sheet Configuration Line Order.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Billing Rate Sheet Configuration Line Accounting Worktag.",
+      "field": "Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Billing_Rate_Sheet_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Billing_Rate_Sheet_Reference_Project_Billing_Rate_Sheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Rate Categories are pre-defined and contain members.  Need to assign the members that define the rate for the project role.  This allows you to have multiple rates per project role based on the unique member combinations.",
+      "field": "Project_Rate_Category_Member_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Project Billing Rate Sheet Configuration Line ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Project Billing Rate Sheet Configuration Line Order.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Billing_Rate_Sheet_Configuration_Line_Reference_Project_Billing_Rate_Sheet_Configuration_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Billing_Rate_Sheet_Configuration_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Project_Billing_Rate_Sheet_Reference_Project_Billing_Rate_Sheet_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Billing_Rate_Sheet_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Member_Reference": {
+        "description": "Project Rate Categories are pre-defined and contain members.  Need to assign the members that define the rate for the project role.  This allows you to have multiple rates per project role based on the unique member combinations.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference": {
+        "description": "Project Billing Rate Sheet Configuration Line Accounting Worktag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

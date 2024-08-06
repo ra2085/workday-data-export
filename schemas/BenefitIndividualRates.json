@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BenefitIndividualRates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benefit_Individual_Rate_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benefit_Individual_Rate_Reference_Benefit_Individual_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benefit Individual Rate ID",
+      "field": "Benefit_Individual_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employee Cost PreTax",
+      "field": "Employee_Cost_PreTax",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employee PostTax Amount",
+      "field": "Employee_PostTax_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employer Cost NonTaxable",
+      "field": "Employer_Cost_NonTaxable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employer Cost Taxable",
+      "field": "Employer_Cost_Taxable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Benefit_Individual_Rate_ID": {
+        "description": "Benefit Individual Rate ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Individual_Rate_Reference_Benefit_Individual_Rate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Individual_Rate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Employee_Cost_PreTax": {
+        "description": "Employee Cost PreTax",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_PostTax_Amount": {
+        "description": "Employee PostTax Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employer_Cost_NonTaxable": {
+        "description": "Employer Cost NonTaxable",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employer_Cost_Taxable": {
+        "description": "Employer Cost Taxable",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Retrieve individual rate for the workers defined in this set.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

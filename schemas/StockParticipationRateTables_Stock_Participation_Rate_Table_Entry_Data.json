@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StockParticipationRateTables_Stock_Participation_Rate_Table_Entry_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for this Stock Participation Rate Table.",
+      "field": "StockParticipationRateTable_Stock_Participation_Rate_Table_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If True is entered, the Stock Participation Rate Table Entry will be deleted.",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sort order for the Stock Participation Rate Table Entry.",
+      "field": "Entry_Sort_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Management Level.",
+      "field": "Management_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Job Profile.",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Country.",
+      "field": "Country_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Compensation Grade.",
+      "field": "Compensation_Grade_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The stock participation percentage rate for the Stock Participation Rate Table Entry.",
+      "field": "Percentage_Rate",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Compensation_Grade_Reference": {
+        "description": "Reference element representing a unique instance of Compensation Grade.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference": {
+        "description": "Reference element representing a unique instance of Country.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "If True is entered, the Stock Participation Rate Table Entry will be deleted.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Entry_Sort_Order": {
+        "description": "The sort order for the Stock Participation Rate Table Entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "Reference element representing a unique instance of Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference": {
+        "description": "Reference element representing a unique instance of Management Level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percentage_Rate": {
+        "description": "The stock participation percentage rate for the Stock Participation Rate Table Entry.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "StockParticipationRateTable_Stock_Participation_Rate_Table_ID": {
+        "description": "Reference ID for this Stock Participation Rate Table.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

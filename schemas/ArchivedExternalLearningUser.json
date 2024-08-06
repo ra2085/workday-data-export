@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ArchivedExternalLearningUser",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Learning_User_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Learning_User_Reference_External_Learning_User_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for an External Learning User.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is the External Learning User Archived?",
+      "field": "Archived",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Archived": {
+        "description": "Is the External Learning User Archived?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Learning_User_Reference_External_Learning_User_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Learning_User_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for an External Learning User.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

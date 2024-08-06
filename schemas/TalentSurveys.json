@@ -1,0 +1,224 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TalentSurveys",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Talent_Survey_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Talent_Survey_Reference_Talent_Survey_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the survey. The ID is either a Workday ID or reference ID. Example reference ID: Survey_ID=12345",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the survey.",
+      "field": "Survey_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, a survey recipient can only respond to the survey once.",
+      "field": "Limited_to_One_Response",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The status of the survey. This is a read-only field.",
+      "field": "Survey_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the survey question data. You can't edit a question that's in use by another survey.",
+      "field": "Survey_Question_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of workers who can view, edit, copy, share, launch, close and re-open this survey.",
+      "field": "Roles_Valid_for_Edit_and_Manage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of workers who can view, launch, close, and re-open this survey. They can't edit, copy, nor delete the survey.",
+      "field": "Roles_Valid_for_Manage_Only_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The link to access the Survey. This read-only field only exists if the survey was sent with a link.",
+      "field": "Survey_Link",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the specified survey is sent with a link. This field only applies if the survey is in \"Draft\" state. Once set, this field cannot be reverted to false, and the specified survey cannot be sent to specific organizations or individuals.",
+      "field": "Send_Survey_Link",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the specified survey is immediately sent to the specified organizations and individuals. This field only applies if the survey is in “Draft” state. Once set, this field cannot be reverted to false, and the specified survey cannot be sent through a Survey Link or Schedule in Workday.",
+      "field": "Survey_Run_Now",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Workday ID or the reference ID of an organization to send the survey to.",
+      "field": "Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Workday ID of an individual to send the survey to.",
+      "field": "Individual_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the specified organizations will include all subordinate organizations. Once set, this field cannot be reverted to false.",
+      "field": "Include_Subordinate_Orgs",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the specified organization will include all contingent workers. Once set, this field cannot be reverted to false.",
+      "field": "Include_Contingent_Workers",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The ID of the survey. The ID is either a Workday ID or reference ID. Example reference ID: Survey_ID=12345",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Contingent_Workers": {
+        "description": "If true, the specified organization will include all contingent workers. Once set, this field cannot be reverted to false.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Subordinate_Orgs": {
+        "description": "If true, the specified organizations will include all subordinate organizations. Once set, this field cannot be reverted to false.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Individual_Reference": {
+        "description": "The Workday ID of an individual to send the survey to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Limited_to_One_Response": {
+        "description": "If true, a survey recipient can only respond to the survey once.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Reference": {
+        "description": "The Workday ID or the reference ID of an organization to send the survey to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Roles_Valid_for_Edit_and_Manage_Reference": {
+        "description": "The Reference ID of workers who can view, edit, copy, share, launch, close and re-open this survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Roles_Valid_for_Manage_Only_Reference": {
+        "description": "The Reference ID of workers who can view, launch, close, and re-open this survey. They can't edit, copy, nor delete the survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Send_Survey_Link": {
+        "description": "If true, the specified survey is sent with a link. This field only applies if the survey is in \"Draft\" state. Once set, this field cannot be reverted to false, and the specified survey cannot be sent to specific organizations or individuals.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Survey_Link": {
+        "description": "The link to access the Survey. This read-only field only exists if the survey was sent with a link.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Name": {
+        "description": "The name of the survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Question_Data": {
+        "description": "Contains the survey question data. You can't edit a question that's in use by another survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Run_Now": {
+        "description": "If true, the specified survey is immediately sent to the specified organizations and individuals. This field only applies if the survey is in “Draft” state. Once set, this field cannot be reverted to false, and the specified survey cannot be sent through a Survey Link or Schedule in Workday.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Survey_Status": {
+        "description": "The status of the survey. This is a read-only field.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Talent_Survey_Reference_Talent_Survey_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Talent_Survey_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

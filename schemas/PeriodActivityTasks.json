@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PeriodActivityTasks",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the period activity task.  This is the index for the period activity task and will be autopopulated if left blank.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Period Activity Task Code.",
+      "field": "Period_Activity_Task_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Period Activity Task Name.",
+      "field": "Period_Activity_Task_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of a Period Activity Task",
+      "field": "Period_Activity_Task_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Activity_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Activity_Unit_Reference_Period_Activity_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Period_Reference_Academic_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Default Unit Quantity used when assigning tasks.",
+      "field": "Default_Unit_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean value that indicates whether the Default Unit Quantity can be overridden or not on assignment.",
+      "field": "Allow_Unit_Quantity_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive status indicator for this Period Activity Task.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive period work tasks.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Period_Reference_Academic_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allow_Unit_Quantity_Override": {
+        "description": "A boolean value that indicates whether the Default Unit Quantity can be overridden or not on assignment.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Default_Unit_Quantity": {
+        "description": "The Default Unit Quantity used when assigning tasks.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID for the period activity task.  This is the index for the period activity task and will be autopopulated if left blank.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive status indicator for this Period Activity Task.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive period work tasks.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Period_Activity_Task_Code": {
+        "description": "The Period Activity Task Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Activity_Task_Description": {
+        "description": "The description of a Period Activity Task",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Activity_Task_Name": {
+        "description": "The Period Activity Task Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Activity_Unit_Reference_Period_Activity_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Activity_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

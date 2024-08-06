@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EducationalInstitutionGradingSchemes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the Educational Institution Grading Scheme",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution Grading Scheme Code",
+      "field": "Grading_Scheme_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution Grading Scheme Description",
+      "field": "Grading_Scheme_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Educational Institution Grading Scheme Component",
+      "field": "Educational_Institution_Grading_Scheme_Component_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Educational_Institution_Grading_Scheme_Component_Data": {
+        "description": "Element Container for Educational Institution Grading Scheme Component",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grading_Scheme_Code": {
+        "description": "Educational Institution Grading Scheme Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grading_Scheme_Description": {
+        "description": "Educational Institution Grading Scheme Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for the Educational Institution Grading Scheme",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

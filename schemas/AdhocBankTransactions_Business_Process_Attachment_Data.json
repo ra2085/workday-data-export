@@ -1,0 +1,277 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdhocBankTransactions_Business_Process_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+      "field": "AdhocBankTransaction_Ad_hoc_Bank_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename for the attachment.",
+      "field": "File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text comment about the attachment.",
+      "field": "Event_Attachment_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_Document_Category__Workday_Owned__ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Attachment_Category_Reference_Document_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Binary file contents.",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Content Type of the Attachment.",
+      "field": "Content_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Bank Accounts. Supports multiple values.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or After Date",
+      "field": "Transaction_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction On or Before Date",
+      "field": "Transaction_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+      "field": "Ad_Hoc_Bank_Transaction_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Ad_Hoc_Bank_Transaction_Number_Prompt": {
+        "description": "This is the unique identifier for the Ad Hoc Bank Transaction Number. You must set up sequence generation for Workday to generate and assign a number automatically. If not, the number remains blank.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "AdhocBankTransaction_Ad_hoc_Bank_Transaction_ID": {
+        "description": "This is the unique identifier for the Ad hoc Bank Transaction. If you do not specify an ID, Workday generates one automatically.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID_Prompt": {
+        "description": "Reference to existing Bank Accounts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company that the transaction is for. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Content_Type": {
+        "description": "Text attribute identifying Content Type of the Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_Document_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_Document_Category__Workday_Owned__ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Attachment_Description": {
+        "description": "Free form text comment about the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "Binary file contents.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Name": {
+        "description": "Filename for the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_After_Prompt": {
+        "description": "Transaction On or After Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_On_or_Before_Prompt": {
+        "description": "Transaction On or Before Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

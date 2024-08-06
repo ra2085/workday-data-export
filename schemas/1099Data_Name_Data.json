@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+      "field": "Country_ISO_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Defining the type of name. Typical uses include using to capture Preferred or Maiden names.",
+      "field": "Additional_Name_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Prefix Name data.",
+      "field": "Prefix",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Person first name.This field will only have a value if mapped to a name component for the country (identified by the ISO code above) within the workday application.",
+      "field": "First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Person middle name.This field will only have a value if mapped to a name component for the country (identified by the ISO code above) within the workday application.",
+      "field": "Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Last Name data.",
+      "field": "Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+      "field": "Local_Name_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Middle Name in local script for supporting Countries.",
+      "field": "Local_Name_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Local Last Name data, for countries supporting Last Name or Secondary Last Name in local script.",
+      "field": "Local_Name_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Suffix Name data.",
+      "field": "Suffix",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Name_Type": {
+        "description": "Defining the type of name. Typical uses include using to capture Preferred or Maiden names.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_ISO_Code": {
+        "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Name": {
+        "description": "Person first name.This field will only have a value if mapped to a name component for the country (identified by the ISO code above) within the workday application.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Name": {
+        "description": "Encapsulating element for all Last Name data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_First_Name": {
+        "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Last_Name": {
+        "description": "Encapsulating element for all Local Last Name data, for countries supporting Last Name or Secondary Last Name in local script.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Middle_Name": {
+        "description": "Contains Middle Name in local script for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Middle_Name": {
+        "description": "Person middle name.This field will only have a value if mapped to a name component for the country (identified by the ISO code above) within the workday application.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prefix": {
+        "description": "Encapsulating element for all Prefix Name data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Suffix": {
+        "description": "Encapsulating element for all Suffix Name data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

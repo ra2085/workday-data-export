@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProgramsofStudy_Declarative_Configuration_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ProgramofStudy_Program_of_Study_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Requires Declaration boolean",
+      "field": "Requires_Declaration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Declarative Configuration Student Eligibility Rules Reference",
+      "field": "Student_Eligibility_Rules_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Program of Study Code",
+      "field": "Program_of_Study_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Search by Program of Study Effective Date",
+      "field": "Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date_Prompt": {
+        "description": "Search by Program of Study Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Code_Prompt": {
+        "description": "Search by Program of Study Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ProgramofStudy_Program_of_Study_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requires_Declaration": {
+        "description": "Requires Declaration boolean",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Eligibility_Rules_Reference": {
+        "description": "Declarative Configuration Student Eligibility Rules Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Transmitter_Company_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the organization.",
+      "field": "Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID for the Company.",
+      "field": "Tax_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "TCC ID for the Company.",
+      "field": "TCC_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If the Company's address is non-USA.",
+      "field": "Foreign_Entity_Indicator",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address of the Company",
+      "field": "Primary_Fully_Composed_Address_without_Country",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone number.",
+      "field": "Phone_Number",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Foreign_Entity_Indicator": {
+        "description": "If the Company's address is non-USA.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Name": {
+        "description": "The name of the organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phone_Number": {
+        "description": "Phone number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Fully_Composed_Address_without_Country": {
+        "description": "Address of the Company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TCC_ID": {
+        "description": "TCC ID for the Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID": {
+        "description": "Tax ID for the Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

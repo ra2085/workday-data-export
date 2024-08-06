@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalTransactionSources",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the External Transaction Source.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the External Transaction Source.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The External Transaction Source activation status.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Transaction Source Usages",
+      "field": "External_Transaction_Source_Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Transaction Source Name for Request Criteria",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "External Transaction Source Inactive Status for Request Criteria",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Transaction Source Usages for Request Criteria. Supports multiple values.",
+      "field": "External_Transaction_Source_Usage_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Transaction Source Usages for Request Criteria. Supports multiple values.",
+      "field": "External_Transaction_Source_Usage_Reference_External_Transaction_Source_Usage_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The description of the External Transaction Source.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Transaction_Source_Usage_Reference": {
+        "description": "External Transaction Source Usages",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Transaction_Source_Usage_Reference_External_Transaction_Source_Usage_ID_Prompt": {
+        "description": "External Transaction Source Usages for Request Criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Transaction_Source_Usage_Reference_WID_Prompt": {
+        "description": "External Transaction Source Usages for Request Criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "The External Transaction Source activation status.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "External Transaction Source Inactive Status for Request Criteria",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the External Transaction Source.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "External Transaction Source Name for Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

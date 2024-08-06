@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollRetroAccountingOptions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for Payroll Retro Accounting Options.",
+      "field": "Payroll_Retro_Accounting_Options_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicates if retro costing is enabled or disabled.",
+      "field": "Enable_Retro_Costing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Set of Earnings to exclude from retro costing.",
+      "field": "Earnings_to_Exclude_from_Payroll_Retro_Accounting_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Earnings_to_Exclude_from_Payroll_Retro_Accounting_Reference": {
+        "description": "Set of Earnings to exclude from retro costing.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Retro_Costing": {
+        "description": "Boolean attribute indicates if retro costing is enabled or disabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payroll_Retro_Accounting_Options_ID": {
+        "description": "A unique identifier for Payroll Retro Accounting Options.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

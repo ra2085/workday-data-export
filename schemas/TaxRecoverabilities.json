@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxRecoverabilities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID",
+      "field": "Tax_Recoverability_Object_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Recoverability Name",
+      "field": "Tax_Recoverability_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Recoverability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Recoverability_Reference_Tax_Recoverability_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "If the Tax Recoverability is Partial, then enter the Percentage that is recoverable.",
+      "field": "Recoverable_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allocate Nonrecoverable Tax?",
+      "field": "Allocate_Nonrecoverable_Tax",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use Company Recovery Pro Rata Factor?",
+      "field": "Use_Company_Recovery_Pro_Rata_Factor",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allocate_Nonrecoverable_Tax": {
+        "description": "Allocate Nonrecoverable Tax?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Recoverable_Percentage": {
+        "description": "If the Tax Recoverability is Partial, then enter the Percentage that is recoverable.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Name": {
+        "description": "Tax Recoverability Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Object_ID": {
+        "description": "Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Reference_Tax_Recoverability_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Company_Recovery_Pro_Rata_Factor": {
+        "description": "Use Company Recovery Pro Rata Factor?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

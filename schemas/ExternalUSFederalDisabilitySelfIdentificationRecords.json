@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalUSFederalDisabilitySelfIdentificationRecords",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_US_Federal_Disability_Self-Identification_Record_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_US_Federal_Disability_Self-Identification_Record_Reference_External_US_Federal_Disability_Self-Identification_Record_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for the record",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "US Federal Disability Code for the record",
+      "field": "Disability_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invitation Date for Record",
+      "field": "Invitation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Response Date for Record",
+      "field": "Response_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Disability_Code": {
+        "description": "US Federal Disability Code for the record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_US_Federal_Disability_Self-Identification_Record_Reference_External_US_Federal_Disability_Self-Identification_Record_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_US_Federal_Disability_Self-Identification_Record_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "ID for the record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invitation_Date": {
+        "description": "Invitation Date for Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Response_Date": {
+        "description": "Response Date for Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

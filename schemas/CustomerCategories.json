@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Category ID.  This is the Customer Category unique identifier",
+      "field": "Customer_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for Customer Category Name",
+      "field": "Customer_Category_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Category_ID": {
+        "description": "Customer Category ID.  This is the Customer Category unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Category_Name": {
+        "description": "Free form text field for Customer Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

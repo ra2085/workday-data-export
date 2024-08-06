@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Airlines_Alternate_Merchant_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Airline Reference ID. Uniquely identifies an Airline.",
+      "field": "Airline_Spend_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Name Value",
+      "field": "Alternate_Name_Value",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Airline_Spend_Data_ID": {
+        "description": "Airline Reference ID. Uniquely identifies an Airline.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Name_Value": {
+        "description": "Alternate Name Value",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

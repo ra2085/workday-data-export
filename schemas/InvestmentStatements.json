@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvestmentStatements",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Statement_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Statement_Reference_Investment_Statement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Donor Contribution ID",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Save and Submit",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Cancel Accounting Date",
+      "field": "Cancel_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Profile_Reference_Investment_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Investment Statement covers activity starting on this date.",
+      "field": "Statement_Beginning_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Investment Statement covers activity until this date.",
+      "field": "Statement_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The net activity amount including the Investment Statement activity.",
+      "field": "Ending_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the Investment Statement",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing essential Investment Statement Line data",
+      "field": "Investment_Statement_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cancel_Accounting_Date": {
+        "description": "Cancel Accounting Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ending_Balance": {
+        "description": "The net activity amount including the Investment Statement activity.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Donor Contribution ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Profile_Reference_Investment_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Statement_Line_Data": {
+        "description": "Element containing essential Investment Statement Line data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Statement_Reference_Investment_Statement_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Statement_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Memo": {
+        "description": "Memo for the Investment Statement",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Beginning_Date": {
+        "description": "The Investment Statement covers activity starting on this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date": {
+        "description": "The Investment Statement covers activity until this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Save and Submit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

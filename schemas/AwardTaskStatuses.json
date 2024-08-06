@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardTaskStatuses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Order of Award Task Status in the list.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Task Status ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Task Status Name",
+      "field": "Status_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag Indicating if this Status is the default one.",
+      "field": "Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this Status indicates Task is completed.",
+      "field": "Indicates_Task_Is_Done",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean indicates that the business process has been completed",
+      "field": "Award_Task_Status_for_BP_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate that Award Task Status is inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Task Status Name",
+      "field": "Status_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Task_Status_for_BP_Complete": {
+        "description": "This boolean indicates that the business process has been completed",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Default": {
+        "description": "Flag Indicating if this Status is the default one.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Award Task Status ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to indicate that Award Task Status is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Indicates_Task_Is_Done": {
+        "description": "If this Status indicates Task is completed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "This is the Order of Award Task Status in the list.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Name": {
+        "description": "Award Task Status Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Name_Prompt": {
+        "description": "Award Task Status Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

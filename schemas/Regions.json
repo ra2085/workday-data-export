@@ -1,0 +1,367 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Regions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Region_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Region_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Region_Reference_Region_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+      "field": "Organization_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phonetic Name",
+      "field": "Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_Code_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+      "field": "Organization_Active",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+      "field": "Availability_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+      "field": "Integration_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Region_Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Region_Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container Organization Reference",
+      "field": "Region_Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; different from the Organization ID used for business purposes.",
+      "field": "Simple_Region_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Organization that appears on pages and reports.",
+      "field": "Simple_Region_Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Simple_Region_Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Simple_Region_Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container Organization Reference",
+      "field": "Simple_Region_Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Region Change From Date",
+      "field": "Update_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Region Change To Date",
+      "field": "Update_To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Availability_Date": {
+        "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_URL": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Organization_Code_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_ID_in_Name": {
+        "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_ID_Data": {
+        "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Active": {
+        "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Code": {
+        "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_ID": {
+        "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Organization_Name": {
+        "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phonetic_Name": {
+        "description": "Phonetic Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Organization_Container_Reference": {
+        "description": "Container Organization Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Reference_Region_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Simple_Region_ID": {
+        "description": "Integration Reference ID used for integration purposes; different from the Organization ID used for business purposes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Simple_Region_Organization_Container_Reference": {
+        "description": "Container Organization Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Simple_Region_Organization_Name": {
+        "description": "The name of the Organization that appears on pages and reports.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Simple_Region_Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Simple_Region_Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Update_From_Date_Prompt": {
+        "description": "Region Change From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Update_To_Date_Prompt": {
+        "description": "Region Change To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

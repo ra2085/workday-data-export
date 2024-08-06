@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvestmentPoolSales_Unit_Source_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InvestmentPoolSale_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Transaction_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Transaction_Reference_Investment_Pool_Adjustment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Transaction_Reference_Investment_Pool_Purchase_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Transaction_Reference_Investment_Pool_Sale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Transaction_Reference_Investment_Pool_Transfer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Donor_Contribution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Donor_Contribution_Reference_Donor_Contribution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Transaction Type",
+      "field": "Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction Date",
+      "field": "Transaction_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Units",
+      "field": "Units",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Unit Price",
+      "field": "Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount Withdrawn",
+      "field": "Amount_Withdrawn",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Amount_Withdrawn": {
+        "description": "Amount Withdrawn",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Donor_Contribution_Reference_Donor_Contribution_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Donor_Contribution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "InvestmentPoolSale_Status_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Transaction_Reference_Investment_Pool_Adjustment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Transaction_Reference_Investment_Pool_Purchase_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Transaction_Reference_Investment_Pool_Sale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Transaction_Reference_Investment_Pool_Transfer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Transaction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date": {
+        "description": "Transaction Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type": {
+        "description": "Transaction Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Price": {
+        "description": "Unit Price",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Units": {
+        "description": "Units",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationGradeHierarchy_Compensation_Grade_Level",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Level_Reference_Compensation_Grade_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Grade Level ID.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Rank",
+      "field": "Rank",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique grade level name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Grade reference",
+      "field": "Compensation_Grade_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Compensation_Grade_Level_Reference_Compensation_Grade_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference": {
+        "description": "Compensation Grade reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Compensation Grade Level ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The unique grade level name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rank": {
+        "description": "Rank",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

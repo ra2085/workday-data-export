@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SuccessionStrategies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Succession Strategy Name",
+      "field": "Succession_Strategy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Element Container for Succession Strategy Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Element Container for In Use",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Element Container for ID",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "Element Container for In Use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Element Container for Succession Strategy Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Succession_Strategy_Name": {
+        "description": "Element Container for Succession Strategy Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

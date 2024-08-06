@@ -1,0 +1,315 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AbsenceInputs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Absence_Input_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Absence_Input_Reference_Absence_Input_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Absence Input ID (Used as a Lookup ID to perform an update.  If not provided, the web service will add a new instance).",
+      "field": "Absence_Input_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch ID is the unique identifier.",
+      "field": "Batch_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Absence_Component_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Absence_Component_Reference_Accrual_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Absence_Component_Reference_Time_Off_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date of Start Period",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date of End Period",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": " \nReference Date is required for Time Off and Accrual.",
+      "field": "Reference_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Absence Hours",
+      "field": "Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Adjustment (1=True, 0=False)",
+      "field": "Adjustment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payee Reference",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payee Reference",
+      "field": "Employee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payee Reference",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch Reference",
+      "field": "Batch_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch Reference",
+      "field": "Batch_Reference_Batch_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Absence_Component_Reference_Accrual_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Absence_Component_Reference_Time_Off_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Absence_Component_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Absence_Input_ID": {
+        "description": "Absence Input ID (Used as a Lookup ID to perform an update.  If not provided, the web service will add a new instance).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Absence_Input_Reference_Absence_Input_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Absence_Input_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Adjustment": {
+        "description": "Adjustment (1=True, 0=False)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Batch_ID": {
+        "description": "Batch ID is the unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Reference_Batch_ID_Prompt": {
+        "description": "Batch Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Reference_WID_Prompt": {
+        "description": "Batch Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Payee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Payee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Payee Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "End Date of End Period",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours": {
+        "description": "Absence Hours",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reference_Date": {
+        "description": " \nReference Date is required for Time Off and Accrual.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "Start Date of Start Period",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

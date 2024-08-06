@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PeriodReportingCalendars",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of the Period Reporting Calendar",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Reporting Calendar Name",
+      "field": "Reporting_Calendar_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Academic Units the Period Reporting Calendar is restricted to",
+      "field": "Academic_Unit_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Period Reporting calendar is the default for the system or the academic unit",
+      "field": "Default_Calendar",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "if true, the Period Reporting Calendar is inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Data per Period of the Period Reporting Calendar",
+      "field": "Period_Reporting_Calendar_Row_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Unit_Reference": {
+        "description": "The Academic Units the Period Reporting Calendar is restricted to",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Calendar": {
+        "description": "If true, the Period Reporting calendar is the default for the system or the academic unit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID of the Period Reporting Calendar",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "if true, the Period Reporting Calendar is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Period_Reporting_Calendar_Row_Data": {
+        "description": "Data per Period of the Period Reporting Calendar",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Calendar_Name": {
+        "description": "Period Reporting Calendar Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

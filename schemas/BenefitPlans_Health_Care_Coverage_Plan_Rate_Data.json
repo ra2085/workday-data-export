@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BenefitPlans_Health_Care_Coverage_Plan_Rate_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "BenefitPlan_Benefit_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Health Care Plan Rate ID",
+      "field": "Health_Care_Plan_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true Plan Rate is Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Benefit Group Reference",
+      "field": "Benefit_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Banded_Rate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Banded_Rate_Reference_Benefit_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Coverage Cost Data",
+      "field": "Coverage_Cost_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Uses Benefit Coverage Type as a Request Criteria. Supports multiple values.",
+      "field": "Benefit_Coverage_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Uses Benefit Coverage Type as a Request Criteria. Supports multiple values.",
+      "field": "Benefit_Coverage_Type_Reference_Benefit_Coverage_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Banded_Rate_Reference_Benefit_Rate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Banded_Rate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "BenefitPlan_Benefit_Plan_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Coverage_Type_Reference_Benefit_Coverage_Type_ID_Prompt": {
+        "description": "Uses Benefit Coverage Type as a Request Criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Coverage_Type_Reference_WID_Prompt": {
+        "description": "Uses Benefit Coverage Type as a Request Criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Group_Reference": {
+        "description": "Contains Benefit Group Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Coverage_Cost_Data": {
+        "description": "Contains Coverage Cost Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Health_Care_Plan_Rate_ID": {
+        "description": "Contains Health Care Plan Rate ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "If true Plan Rate is Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

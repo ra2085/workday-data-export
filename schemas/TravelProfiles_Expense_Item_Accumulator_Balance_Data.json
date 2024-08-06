@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TravelProfiles_Expense_Item_Accumulator_Balance_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "TravelProfile_Travel_Profile_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Expense Item Accumulator Balance ID",
+      "field": "Expense_Item_Accumulator_Balance_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Accumulator_Balance_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Accumulator_Balance_Reference_Expense_Item_Accumulator_Balance_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Beginning Accumulator Balance",
+      "field": "Beginning_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Balance Application Date",
+      "field": "Balance_Application_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The end date that's calculated based on the Accumulator Application Date",
+      "field": "Applicable_Until_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Applicable_Until_Date": {
+        "description": "The end date that's calculated based on the Accumulator Application Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balance_Application_Date": {
+        "description": "Balance Application Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Beginning_Balance": {
+        "description": "Beginning Accumulator Balance",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Expense_Item_Accumulator_Balance_ID": {
+        "description": "Expense Item Accumulator Balance ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Accumulator_Balance_Reference_Expense_Item_Accumulator_Balance_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Accumulator_Balance_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TravelProfile_Travel_Profile_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

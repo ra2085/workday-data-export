@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JobClassificationGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Classification_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Classification_Group_Reference_Job_Classification_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Job Classification Group data.",
+      "field": "Job_Classification_Group_Name_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the detailed information about a Job Classification Group.",
+      "field": "Job_Classification_Group_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Job_Classification_Group_Data": {
+        "description": "Contains the detailed information about a Job Classification Group.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Group_Name_Data": {
+        "description": "Encapsulating element containing Job Classification Group data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Group_Reference_Job_Classification_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

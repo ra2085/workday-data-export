@@ -1,0 +1,302 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CurrencyConversionRates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Conversion_Rate_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Conversion_Rate_Reference_Currency_Conversion_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The Effective Date must be in a date format, example: 2011-01-01, or date and time format. Example: 2011-01-01T15:30:00. A time containing seconds is valid, however, seconds are dropped when saving the time-stamp as the Effective Date precision is in minutes.",
+      "field": "Effective_Timestamp",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "From_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "From_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "From_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Target_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric attribute specifying the Currency Rate",
+      "field": "Currency_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether the inverse rate of this rate should be derived from this rate.",
+      "field": "Calculate_Inverse_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Timestamp criteria for selected currency rates",
+      "field": "Effective_Timestamp_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+      "field": "Source_Currencies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+      "field": "Source_Currencies_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+      "field": "Source_Currencies_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+      "field": "Target_Currencies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+      "field": "Target_Currencies_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+      "field": "Target_Currencies_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The type of currency rate selected for the set of currency rates to return",
+      "field": "Currency_Rate_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The type of currency rate selected for the set of currency rates to return",
+      "field": "Currency_Rate_Type_Reference_Currency_Rate_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculate_Inverse_Rate": {
+        "description": "Specifies whether the inverse rate of this rate should be derived from this rate.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Conversion_Rate_Reference_Currency_Conversion_Rate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Conversion_Rate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Currency_Rate": {
+        "description": "Numeric attribute specifying the Currency Rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_Currency_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_Currency_Rate_Type_ID_Prompt": {
+        "description": "The type of currency rate selected for the set of currency rates to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_WID_Prompt": {
+        "description": "The type of currency rate selected for the set of currency rates to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Timestamp": {
+        "description": "The Effective Date must be in a date format, example: 2011-01-01, or date and time format. Example: 2011-01-01T15:30:00. A time containing seconds is valid, however, seconds are dropped when saving the time-stamp as the Effective Date precision is in minutes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Timestamp_Prompt": {
+        "description": "Timestamp criteria for selected currency rates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Currencies_Reference_Currency_ID_Prompt": {
+        "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Currencies_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Currencies_Reference_WID_Prompt": {
+        "description": "The set of \"From\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currencies_Reference_Currency_ID_Prompt": {
+        "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currencies_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currencies_Reference_WID_Prompt": {
+        "description": "The set of \"To\" currencies that will be checked. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

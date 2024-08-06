@@ -1,0 +1,303 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BadDebtWriteoffs_Invoice_Detail",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomerBadDebtWriteoff_Customer_Bad_Debt_Writeoff_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_or_Adjustment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_or_Adjustment_Reference_Customer_Invoice_Adjustment_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_or_Adjustment_Reference_Customer_Invoice_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Total Amount of the Invoice or Adjustment attached to this Writeoff.",
+      "field": "Total_Invoice_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Amount Due still remaining on the Invoice or Adjustment attached to the Writeoff.",
+      "field": "Amount_Due",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The line level write-off memo for a customer invoice or adjustment.",
+      "field": "Invoice_Write-Off_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains attachment files and related data for a customer invoice or adjustment write-off",
+      "field": "Invoice_Write-Off_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Containing Payable Writeoff Document data",
+      "field": "Writeoff_Detail",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Writeoff Date On or After",
+      "field": "Writeoff_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Writeoff Date On or Before",
+      "field": "Writeoff_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount_Due": {
+        "description": "The Amount Due still remaining on the Invoice or Adjustment attached to the Writeoff.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomerBadDebtWriteoff_Customer_Bad_Debt_Writeoff_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_WID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "This is the customer that the writeoff is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Write-Off_Attachment_Data": {
+        "description": "Contains attachment files and related data for a customer invoice or adjustment write-off",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Write-Off_Memo": {
+        "description": "The line level write-off memo for a customer invoice or adjustment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_or_Adjustment_Reference_Customer_Invoice_Adjustment_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_or_Adjustment_Reference_Customer_Invoice_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_or_Adjustment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Invoice_Amount": {
+        "description": "The Total Amount of the Invoice or Adjustment attached to this Writeoff.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Writeoff_Date_On_or_After_Prompt": {
+        "description": "Writeoff Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Writeoff_Date_On_or_Before_Prompt": {
+        "description": "Writeoff Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Writeoff_Detail": {
+        "description": "Element Containing Payable Writeoff Document data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

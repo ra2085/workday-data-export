@@ -1,0 +1,212 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RunPayCalculation_Run_Pay_Calculation_Technical_Details",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "RunPayCalculation_Run_Pay_Calculation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Integration Cloud Platform (ESB) Process IDs",
+      "field": "Workday_Integration_Cloud_Platform__ESB__Process_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Should only be used if no value provided for Payroll Run Pay Calculation Process",
+      "field": "Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Should only be used if no value provided for Payroll Run Pay Calculation Process",
+      "field": "Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+      "field": "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+      "field": "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+      "field": "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_Pay_Run_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Run Category",
+      "field": "Run_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Run Category",
+      "field": "Run_Category_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Pay Calculations with a status of Requires Recalculation",
+      "field": "Include_Requires_Recalculation_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Pay Calculations with a status of Error",
+      "field": "Include_Error_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Pay Calculations with a status of Not Yet Started",
+      "field": "Include_Not_Yet_Started_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Pay Calculations with a status of In Progress",
+      "field": "Include_In_Progress_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Accounting Only",
+      "field": "Accounting_Only_for_Calculation_Criteria_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Queued Processes",
+      "field": "Include_Queued_Proesses_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Only_for_Calculation_Criteria_Prompt": {
+        "description": "Accounting Only",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Error_Prompt": {
+        "description": "Include Pay Calculations with a status of Error",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_In_Progress_Prompt": {
+        "description": "Include Pay Calculations with a status of In Progress",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Not_Yet_Started_Prompt": {
+        "description": "Include Pay Calculations with a status of Not Yet Started",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Queued_Proesses_Prompt": {
+        "description": "Include Queued Processes",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Requires_Recalculation_Prompt": {
+        "description": "Include Pay Calculations with a status of Requires Recalculation",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_Pay_Run_Group_ID_Prompt": {
+        "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_or_Pay_Run_Groups_Selection_Reference_WID_Prompt": {
+        "description": "Pay Groups/Pay Run Groups. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID_Prompt": {
+        "description": "Should only be used if no value provided for Payroll Run Pay Calculation Process",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID_Prompt": {
+        "description": "Should only be used if no value provided for Payroll Run Pay Calculation Process",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RunPayCalculation_Run_Pay_Calculation_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Run_Category_Reference_Run_Category_ID_Prompt": {
+        "description": "Run Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Run_Category_Reference_WID_Prompt": {
+        "description": "Run Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Integration_Cloud_Platform__ESB__Process_ID": {
+        "description": "Workday Integration Cloud Platform (ESB) Process IDs",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,2565 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Projects_Project_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Project_Project_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the Project",
+      "field": "ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Name",
+      "field": "Project_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Project Hierarchy for which this Project belongs.",
+      "field": "Project_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Project Hierarchy for which this Project belongs.",
+      "field": "Project_Hierarchy_Reference_Project_Hierarchy_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project status or statuses (Approved, Canceled, Denied or In Progress). Supports multiple values.",
+      "field": "Project_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project status or statuses (Approved, Canceled, Denied or In Progress). Supports multiple values.",
+      "field": "Project_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker who owns the project",
+      "field": "Worker_who_owns_Project_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker who owns the project",
+      "field": "Worker_who_owns_Project_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worker who owns the project",
+      "field": "Worker_who_owns_Project_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date On or After must be earlier than Start Date On or Before",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date On or After must be earlier than Start Date On or Before",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date On or After must be earlier than End Date On or Before",
+      "field": "End_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date on or before, must be after End Date on or after.",
+      "field": "End_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the project is for.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the project is for.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company that the project is for.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Project Group that the project belongs.",
+      "field": "Project_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Project Group that the project belongs.",
+      "field": "Project_Group_Reference_Project_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Initiative Reference",
+      "field": "Initiative_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Initiative Reference",
+      "field": "Initiative_Reference_Initiative_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Ad_hoc_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Allocation_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Application_Grouping_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Appropriation_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Cash_Activity_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Grade_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_06_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_07_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_08_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_09_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_1_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_10_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_11_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_12_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_13_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_14_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_15_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_2_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_3_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_4_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_5_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Recipient_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Donor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Ethnicity_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Exemption_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Expense_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Fringe_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Fund_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Funding_Source_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Gender_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Gift_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Investor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Is_Manager_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Is_People_Manager_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Loan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Management_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_NI_Category_Letter_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Object_Class_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Opportunity_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Pay_Rate_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Income_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Position_Time_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Program_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Worker_Role_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Proposal_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Revenue_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Rubric_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Sales_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Award_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Charge_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_Section_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Waiver_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Applicability_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Third_Party_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Function_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Shift_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+      "field": "Worktags_Reference_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Success Rating reference for Project",
+      "field": "Success_Rating_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Success Rating reference for Project",
+      "field": "Success_Rating_Reference_Success_Rating_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker assigned to the Project",
+      "field": "Assigned_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker assigned to the Project",
+      "field": "Assigned_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker assigned to the Project",
+      "field": "Assigned_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve Billable Projects",
+      "field": "Billable_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve Non-Billable Projects only if true.",
+      "field": "Non-Billable_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve both Billable and Non-Billable projects",
+      "field": "Both_Billable_and_Non-Billable_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve Capital Projects",
+      "field": "Capital_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve Non-Capital Projects",
+      "field": "Non-Capital_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve both Capital and Non-Capital projects",
+      "field": "Both_Capital_and_Non-Capital_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assigned_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Worker assigned to the Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Worker assigned to the Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_Worker_Reference_WID_Prompt": {
+        "description": "Worker assigned to the Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billable_Prompt": {
+        "description": "Retrieve Billable Projects",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Both_Billable_and_Non-Billable_Prompt": {
+        "description": "Retrieve both Billable and Non-Billable projects",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Both_Capital_and_Non-Capital_Prompt": {
+        "description": "Retrieve both Capital and Non-Capital projects",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Capital_Prompt": {
+        "description": "Retrieve Capital Projects",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the project is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company that the project is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company that the project is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "Customer Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Customer Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "Customer Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_On_or_After_Prompt": {
+        "description": "End Date On or After must be earlier than End Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_On_or_Before_Prompt": {
+        "description": "End Date on or before, must be after End Date on or after.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Prompt": {
+        "description": "Reference ID for the Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Initiative_Reference_Initiative_Reference_ID_Prompt": {
+        "description": "Project Initiative Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Initiative_Reference_WID_Prompt": {
+        "description": "Project Initiative Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Non-Billable_Prompt": {
+        "description": "Retrieve Non-Billable Projects only if true.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Non-Capital_Prompt": {
+        "description": "Retrieve Non-Capital Projects",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Project_Group_Reference_Project_Group_ID_Prompt": {
+        "description": "Reference to an existing Project Group that the project belongs.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Group_Reference_WID_Prompt": {
+        "description": "Reference to an existing Project Group that the project belongs.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Reference_Project_Hierarchy_ID_Prompt": {
+        "description": "The Project Hierarchy for which this Project belongs.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Hierarchy_Reference_WID_Prompt": {
+        "description": "The Project Hierarchy for which this Project belongs.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Name_Prompt": {
+        "description": "Project Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Project_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Project status or statuses (Approved, Canceled, Denied or In Progress). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Status_Reference_WID_Prompt": {
+        "description": "Project status or statuses (Approved, Canceled, Denied or In Progress). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "Start Date On or After must be earlier than Start Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "Start Date On or After must be earlier than Start Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Success_Rating_Reference_Success_Rating_ID_Prompt": {
+        "description": "Success Rating reference for Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Success_Rating_Reference_WID_Prompt": {
+        "description": "Success Rating reference for Project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_who_owns_Project_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the worker who owns the project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_who_owns_Project_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the worker who owns the project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_who_owns_Project_Reference_WID_Prompt": {
+        "description": "Reference to the worker who owns the project",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Level_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Period_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Person_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ad_hoc_Payee_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Allocation_Pool_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Applicant_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Application_Grouping_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Appropriation_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Unit_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Candidate_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cash_Activity_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Catalog_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Basis_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Grade_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_06_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_07_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_08_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_09_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_10_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_11_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_12_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_13_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_14_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_15_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_1_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_2_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_3_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_4_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_5_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Recipient_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Donor_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Earning_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ethnicity_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Exemption_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Expense_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fringe_Basis_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fund_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Funding_Source_Name_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gender_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gift_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Grant_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Pool_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Profile_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investor_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_Manager_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_People_Manager_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Level_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Profile_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Requisition_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Loan_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Location_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Management_Level_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_NI_Category_Letter_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Object_Class_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Opportunity_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Pay_Rate_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Income_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_Time_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_of_Study_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Plan_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Worker_Role_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Proposal_Grant_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Revenue_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Rubric_Value_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Run_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sales_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Spend_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Award_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Charge_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_Section_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Event_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Waiver_Item_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Applicability_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Category_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Code_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Rate_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Third_Party_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_WID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Code_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Function_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Shift_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Earning_Code_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Worker_Type_ID_Prompt": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,1626 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FormerWorkers",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Former_Worker_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Former_Worker_Reference_Former_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for the former worker.  If not entered, one will be generated.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID used in the former system. You can use this as the ID as well if it will be unique.",
+      "field": "Former_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Last Termination Date for the former worker. Required on the initial Add.",
+      "field": "Last_Termination_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Most Recent Hire Date (prior to the termination) for the former worker.",
+      "field": "Most_Recent_Hire_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Original Hire Date for the former worker. This value will be brought forward on a re-hire.",
+      "field": "Original_Hire_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Continuous Service date for the former worker. This date will be brought forward on a re-hire.",
+      "field": "Continuous_Service_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Title_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Title_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the reference to the Title of a person.",
+      "field": "Legal_Name_Title_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Salutation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Salutation_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The First Name (Given Name) for a person.",
+      "field": "Legal_Name_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Middle Name for a person.",
+      "field": "Legal_Name_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Last Name (Family Name) for a person.",
+      "field": "Legal_Name_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Secondary Last Name (Secondary Family Name) for a person.",
+      "field": "Legal_Name_Secondary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Tertiary Last Name for a person.",
+      "field": "Legal_Name_Tertiary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+      "field": "Local_Name_Detail_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Middle Name in local script for supporting Countries.",
+      "field": "Local_Name_Detail_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Last Name in local script, which is generally configured as Family Name, for supporting Countries.",
+      "field": "Local_Name_Detail_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Secondary Last Name in local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+      "field": "Local_Name_Detail_Secondary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains First Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+      "field": "Legal_Name_First_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Middle Name in second local script for supporting Countries.",
+      "field": "Legal_Name_Middle_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Last Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+      "field": "Legal_Name_Last_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Secondary Last Name in second local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+      "field": "Legal_Name_Secondary_Last_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Social_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Social_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the description of Social Suffix for a person.",
+      "field": "Legal_Name_Social_Suffix_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Academic_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Academic_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Hereditary_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Hereditary_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Honorary_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Honorary_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Professional_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Professional_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Religious_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Religious_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Royal_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Name_Royal_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Full Person Name is used by Malaysia and Singapore. It is designed for (eliminate space between these two words) Workers in these countries to enter their Full Legal Name. It is an attribute of Global Person Name Class and is not a concatenation of First and Last Names.",
+      "field": "Legal_Name_Full_Name_for_Singapore_and_Malaysia",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Title_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Title_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the reference to the Title of a person.",
+      "field": "Preferred_Name_Title_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Salutation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Salutation_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The First Name (Given Name) for a person.",
+      "field": "Preferred_Name_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Middle Name for a person.",
+      "field": "Preferred_Name_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Last Name (Family Name) for a person.",
+      "field": "Preferred_Name_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Secondary Last Name (Secondary Family Name) for a person.",
+      "field": "Preferred_Name_Secondary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Tertiary Last Name for a person.",
+      "field": "Preferred_Name_Tertiary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+      "field": "Name_Detail_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Middle Name in local script for supporting Countries.",
+      "field": "Name_Detail_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Last Name in local script, which is generally configured as Family Name, for supporting Countries.",
+      "field": "Name_Detail_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Secondary Last Name in local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+      "field": "Name_Detail_Secondary_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains First Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+      "field": "Preferred_Name_First_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Middle Name in second local script for supporting Countries.",
+      "field": "Preferred_Name_Middle_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Last Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+      "field": "Preferred_Name_Last_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Secondary Last Name in second local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+      "field": "Preferred_Name_Secondary_Last_Name_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Social_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Social_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the description of Social Suffix for a person.",
+      "field": "Preferred_Name_Social_Suffix_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Academic_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Academic_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Hereditary_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Hereditary_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Honorary_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Honorary_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Professional_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Professional_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Religious_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Religious_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Royal_Suffix_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Name_Royal_Suffix_Reference_Predefined_Name_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Full Person Name is used by Malaysia and Singapore. It is designed for (eliminate space between these two words) Workers in these countries to enter their Full Legal Name. It is an attribute of Global Person Name Class and is not a concatenation of First and Last Names.",
+      "field": "Preferred_Name_Full_Name_for_Singapore_and_Malaysia",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the additional names for a person, other than their legal and preferred names.  Additional names are not valid for applicants.",
+      "field": "Additional_Name_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "A person's birth date.",
+      "field": "Birth_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Indicates the ethnicities that a person has.",
+      "field": "Ethnicity_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns a true if the person's ethnicity is Hispanic or Latino.",
+      "field": "Hispanic_or_Latino",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Information",
+      "field": "Phone_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Email Address Information",
+      "field": "Email_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instant Messenger Information",
+      "field": "Instant_Messenger_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web Address Information",
+      "field": "Web_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for all National Identifier Data.",
+      "field": "National_Identifier_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reason for the Last Termination.",
+      "field": "Last_Termination_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Last Manager of the former worker. Free-form text entry.",
+      "field": "Manager",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Cost Center for the former worker. Free-form text entry.",
+      "field": "Cost_Center",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Title for the former worker. Free-form text entry.",
+      "field": "Job_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Profile Code for the former worker. Free-form text entry.",
+      "field": "Job_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Profile Name for the former worker. Free-form text entry.",
+      "field": "Job_Profile_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Level for the former worker. Free-form text entry.",
+      "field": "Job_Level",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Time Type for the former worker. Free-form text entry. Example: Full Time or Part Time.",
+      "field": "Time_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location for the former worker. Free-form text entry.",
+      "field": "Location",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Last Base Pay for the former worker.",
+      "field": "Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Scheduled Weekly Hours for the former worker.",
+      "field": "Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligible_for_Rehire_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligible_for_Rehire_Reference_Yes_No_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Performance Rating for the former worker. Free-form text entry.",
+      "field": "Performance_Rating",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if the former worker has a completed Hire Employee or Contract Contingent Worker business process.",
+      "field": "Rehired",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Applicant_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Applicant_Reference_Applicant_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the workers for the former worker.",
+      "field": "Worker_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Defines the earliest moment (e.g. datetime) data was entered into the Workday system.",
+      "field": "Updated_From_Moment_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Defines the latest moment (e.g. datetime) data was entered into the Workday system.",
+      "field": "Update_To_Moment_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Defines the earliest termination date to return.",
+      "field": "Terminated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Defines the latest termination date to return.",
+      "field": "Terminated_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "National_ID_Criteria_Data_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Name_Data": {
+        "description": "Contains the additional names for a person, other than their legal and preferred names.  Additional names are not valid for applicants.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Applicant_Reference_Applicant_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Applicant_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Pay": {
+        "description": "Last Base Pay for the former worker.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Birth_Date": {
+        "description": "A person's birth date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Continuous_Service_Date": {
+        "description": "Continuous Service date for the former worker. This date will be brought forward on a re-hire.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cost_Center": {
+        "description": "Cost Center for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_for_Rehire_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_for_Rehire_Reference_Yes_No_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Address_Data": {
+        "description": "Email Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ethnicity_Reference": {
+        "description": "Indicates the ethnicities that a person has.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Former_Worker_ID": {
+        "description": "ID used in the former system. You can use this as the ID as well if it will be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Former_Worker_Reference_Former_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Former_Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hispanic_or_Latino": {
+        "description": "Returns a true if the person's ethnicity is Hispanic or Latino.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Unique Identifier for the former worker.  If not entered, one will be generated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instant_Messenger_Data": {
+        "description": "Instant Messenger Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Code": {
+        "description": "Job Profile Code for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Level": {
+        "description": "Job Level for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Text": {
+        "description": "Job Profile Name for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Title": {
+        "description": "Job Title for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Termination_Date": {
+        "description": "Last Termination Date for the former worker. Required on the initial Add.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Termination_Reason": {
+        "description": "Reason for the Last Termination.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Academic_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Academic_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_First_Name": {
+        "description": "The First Name (Given Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_First_Name_2": {
+        "description": "Contains First Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Full_Name_for_Singapore_and_Malaysia": {
+        "description": "Full Person Name is used by Malaysia and Singapore. It is designed for (eliminate space between these two words) Workers in these countries to enter their Full Legal Name. It is an attribute of Global Person Name Class and is not a concatenation of First and Last Names.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Hereditary_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Hereditary_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Honorary_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Honorary_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Last_Name": {
+        "description": "The Last Name (Family Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Last_Name_2": {
+        "description": "Contains Last Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Middle_Name": {
+        "description": "The Middle Name for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Middle_Name_2": {
+        "description": "Contains Middle Name in second local script for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Professional_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Professional_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Religious_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Religious_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Royal_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Royal_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Salutation_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Salutation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Secondary_Last_Name": {
+        "description": "The Secondary Last Name (Secondary Family Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Secondary_Last_Name_2": {
+        "description": "Contains Secondary Last Name in second local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Social_Suffix_Descriptor": {
+        "description": "A reference to the description of Social Suffix for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Social_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Social_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Tertiary_Last_Name": {
+        "description": "The Tertiary Last Name for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Title_Descriptor": {
+        "description": "The description of the reference to the Title of a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Title_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Title_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Detail_First_Name": {
+        "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Detail_Last_Name": {
+        "description": "Contains Last Name in local script, which is generally configured as Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Detail_Middle_Name": {
+        "description": "Contains Middle Name in local script for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Name_Detail_Secondary_Last_Name": {
+        "description": "Contains Secondary Last Name in local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location": {
+        "description": "Location for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manager": {
+        "description": "Last Manager of the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Most_Recent_Hire_Date": {
+        "description": "Most Recent Hire Date (prior to the termination) for the former worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Detail_First_Name": {
+        "description": "Contains First Name in local script, which is generally configured to as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Detail_Last_Name": {
+        "description": "Contains Last Name in local script, which is generally configured as Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Detail_Middle_Name": {
+        "description": "Contains Middle Name in local script for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Detail_Secondary_Last_Name": {
+        "description": "Contains Secondary Last Name in local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "National_ID_Criteria_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "National_Identifier_Data": {
+        "description": "Wrapper element for all National Identifier Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Original_Hire_Date": {
+        "description": "Original Hire Date for the former worker. This value will be brought forward on a re-hire.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Performance_Rating": {
+        "description": "Performance Rating for the former worker. Free-form text entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phone_Data": {
+        "description": "Phone Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Academic_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Academic_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_First_Name": {
+        "description": "The First Name (Given Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_First_Name_2": {
+        "description": "Contains First Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Full_Name_for_Singapore_and_Malaysia": {
+        "description": "Full Person Name is used by Malaysia and Singapore. It is designed for (eliminate space between these two words) Workers in these countries to enter their Full Legal Name. It is an attribute of Global Person Name Class and is not a concatenation of First and Last Names.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Hereditary_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Hereditary_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Honorary_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Honorary_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Last_Name": {
+        "description": "The Last Name (Family Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Last_Name_2": {
+        "description": "Contains Last Name in second local script, which is generally configured as Given Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Middle_Name": {
+        "description": "The Middle Name for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Middle_Name_2": {
+        "description": "Contains Middle Name in second local script for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Professional_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Professional_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Religious_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Religious_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Royal_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Royal_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Salutation_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Salutation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Secondary_Last_Name": {
+        "description": "The Secondary Last Name (Secondary Family Name) for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Secondary_Last_Name_2": {
+        "description": "Contains Secondary Last Name in second local script, which is generally configured as Maternal Family Name, for supporting Countries.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Social_Suffix_Descriptor": {
+        "description": "A reference to the description of Social Suffix for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Social_Suffix_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Social_Suffix_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Tertiary_Last_Name": {
+        "description": "The Tertiary Last Name for a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Title_Descriptor": {
+        "description": "The description of the reference to the Title of a person.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Title_Reference_Predefined_Name_Component_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Name_Title_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rehired": {
+        "description": "Returns true if the former worker has a completed Hire Employee or Contract Contingent Worker business process.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Scheduled_Weekly_Hours": {
+        "description": "Scheduled Weekly Hours for the former worker.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Terminated_From_Date_Prompt": {
+        "description": "Defines the earliest termination date to return.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Terminated_To_Date_Prompt": {
+        "description": "Defines the latest termination date to return.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Type": {
+        "description": "Time Type for the former worker. Free-form text entry. Example: Full Time or Part Time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Update_To_Moment_Prompt": {
+        "description": "Defines the latest moment (e.g. datetime) data was entered into the Workday system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_From_Moment_Prompt": {
+        "description": "Defines the earliest moment (e.g. datetime) data was entered into the Workday system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Data": {
+        "description": "Web Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference": {
+        "description": "Returns the workers for the former worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

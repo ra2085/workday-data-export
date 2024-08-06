@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExpenseItems_Expense_Item_Attribute_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExpenseItem_Expense_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Attribute_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Attribute_Type_Reference_Expense_Item_Attribute_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag, Display to User, that displays the expense Item tag on the expense report line.",
+      "field": "Display_to_User_on_Expense_Report",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag, Expense Item Attribute Required, that requires the user to enter a value for an expense Item tag on the expense report line.",
+      "field": "Required_on_Expense_Report",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag, Display to User on Spend Authorization, that displays the expense Item tag on the spend authorization line.",
+      "field": "Display_to_User_on_Spend_Authorization",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag, Expense Item Attribute Required on Spend Authorization, that requires the user to enter a value for an expense Item tag on the spend authorization line.",
+      "field": "Required_on_Spend_Authorization",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Display_to_User_on_Expense_Report": {
+        "description": "Boolean flag, Display to User, that displays the expense Item tag on the expense report line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Display_to_User_on_Spend_Authorization": {
+        "description": "Boolean flag, Display to User on Spend Authorization, that displays the expense Item tag on the spend authorization line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ExpenseItem_Expense_Item_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Attribute_Type_Reference_Expense_Item_Attribute_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Attribute_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Required_on_Expense_Report": {
+        "description": "Boolean flag, Expense Item Attribute Required, that requires the user to enter a value for an expense Item tag on the expense report line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Required_on_Spend_Authorization": {
+        "description": "Boolean flag, Expense Item Attribute Required on Spend Authorization, that requires the user to enter a value for an expense Item tag on the spend authorization line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

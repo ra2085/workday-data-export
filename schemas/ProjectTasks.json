@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectTasks",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the Project Task",
+      "field": "Task_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Task Name",
+      "field": "Task_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Task Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Restricted to Project Hierarchies",
+      "field": "Restricted_to_Project_Hierarchies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag to set the Project Task to Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Task Name",
+      "field": "Project_Task_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Project Task Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean flag to set the Project Task to Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Project_Task_Name_Prompt": {
+        "description": "Project Task Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_to_Project_Hierarchies_Reference": {
+        "description": "Restricted to Project Hierarchies",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Task_ID": {
+        "description": "Reference ID for the Project Task",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Task_Name": {
+        "description": "Project Task Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EvergreenRequisitions_Role_Assignment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "EvergreenJobRequisition_Evergreen_Job_Requisition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Role_Assignment_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Role_Assignment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Effective Date of the Assigned, Defaulted, or Inherited Role Assignment",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Role_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Role_Reference_Organization_Role_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The position assigned to this role assignment.",
+      "field": "Role_Assignee_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Transaction_Log_Criteria_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the status of the job requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the status of the job requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Status_Reference_Job_Requisition_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the organization.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the organization.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+      "field": "Primary_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+      "field": "Primary_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+      "field": "Additional_Locations_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+      "field": "Additional_Locations_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Locations_Reference_Location_ID_Prompt": {
+        "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Locations_Reference_WID_Prompt": {
+        "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The Effective Date of the Assigned, Defaulted, or Inherited Role Assignment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EvergreenJobRequisition_Evergreen_Job_Requisition_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Status_Reference_Job_Requisition_Status_ID_Prompt": {
+        "description": "A unique identifier for the status of the job requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Status_Reference_WID_Prompt": {
+        "description": "A unique identifier for the status of the job requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Location_Reference_Location_ID_Prompt": {
+        "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Location_Reference_WID_Prompt": {
+        "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Role_Assignee_Reference": {
+        "description": "The position assigned to this role assignment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Role_Assignment_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Role_Assignment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Role_Reference_Organization_Role_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Role_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "A unique identifier for the organization.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "A unique identifier for the organization.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Log_Criteria_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

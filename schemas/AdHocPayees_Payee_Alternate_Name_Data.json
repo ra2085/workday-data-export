@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdHocPayees_Payee_Alternate_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee ID",
+      "field": "AdHocPayee_Ad_Hoc_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Alternate Name",
+      "field": "Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+      "field": "Alternate_Name_Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee Name",
+      "field": "Ad_Hoc_Payee_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AdHocPayee_Ad_Hoc_Payee_ID": {
+        "description": "Ad Hoc Payee ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Payee_Name_Prompt": {
+        "description": "Ad Hoc Payee Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Name": {
+        "description": "Business Entity Alternate Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Name_Usage_Reference": {
+        "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

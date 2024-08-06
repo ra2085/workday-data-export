@@ -1,0 +1,341 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollTimesheetsTotalHours",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Timesheet_Total_Hours_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Timesheet_Total_Hours_Reference_Payroll_Timesheet_Total_Hours_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique ID for this Payroll Timesheet Total Hours.",
+      "field": "Payroll_Timesheet_Total_Hours_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable editing and canceling the timesheet inside the Workday application.   Timesheet can only be updated from the web service.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element encapsulates data for a Payroll Timesheet Line, which contains multiple days' worth of timesheet information. A Payroll Timesheet Line is for one Time Code, a Position, and a Cost Center, and can contain a memo.",
+      "field": "Payroll_Timesheet_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to find Timesheets with a Period that starts on or after the date specified.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to find Timesheets with a Period that starts on or before the date specified.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Timesheet_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Timesheet_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Locked_in_Workday": {
+        "description": "Set to True to disable editing and canceling the timesheet inside the Workday application.   Timesheet can only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payroll_Timesheet_Line_Replacement_Data": {
+        "description": "This element encapsulates data for a Payroll Timesheet Line, which contains multiple days' worth of timesheet information. A Payroll Timesheet Line is for one Time Code, a Position, and a Cost Center, and can contain a memo.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Timesheet_Total_Hours_ID": {
+        "description": "The unique ID for this Payroll Timesheet Total Hours.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Timesheet_Total_Hours_Reference_Payroll_Timesheet_Total_Hours_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Timesheet_Total_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Period_Reference_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "Date to find Timesheets with a Period that starts on or after the date specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "Date to find Timesheets with a Period that starts on or before the date specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Status_Reference_WID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

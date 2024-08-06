@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PostalCodeSets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the postal code set. This is required if creating a new set.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the postal code set. This is not required.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The list of postal codes to add to this postal code set. All postal codes will be verified to be valid codes before they are added to the set.",
+      "field": "Postal_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date for the Postal Code Set. This is not required.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Postal Code Set.",
+      "field": "ID",
+      "key": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Description of the postal code set. This is not required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date for the Postal Code Set. This is not required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The reference ID for the Postal Code Set.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "Name of the postal code set. This is required if creating a new set.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Postal_Code_Data": {
+        "description": "The list of postal codes to add to this postal code set. All postal codes will be verified to be valid codes before they are added to the set.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

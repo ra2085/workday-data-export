@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationScorecardResults",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique scorecard result identifier.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the scorecard was scored with this result.",
+      "field": "Evaluation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Scorecard_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Scorecard_Reference_Performance_Scorecard_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the set of goals and goal values for this result.",
+      "field": "Scorecard_Result_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a rule/profile delineated set of goals and goal values for this result.",
+      "field": "Profile_Scorecard_Result_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Compensation_Scorecard_Reference_Performance_Scorecard_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Scorecard_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Evaluation_Date": {
+        "description": "The date the scorecard was scored with this result.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique scorecard result identifier.",
+        "type": [
+          "string"
+        ]
+      },
+      "Profile_Scorecard_Result_Data": {
+        "description": "Contains a rule/profile delineated set of goals and goal values for this result.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Result_Data": {
+        "description": "Contains the set of goals and goal values for this result.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExtracurricularActivities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Extracurricular_Activity_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Extracurricular_Activity_Reference_Extracurricular_Activity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID attribute of the Extracurricular Activity",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Extracurricular Activity",
+      "field": "Extracurricular_Activity_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Unit and Level for Extracurricular Activity Data",
+      "field": "Academic_Unit_Shareable_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Extracurricular Activity Category of the Extracurricular Activity",
+      "field": "Extracurricular_Activity_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Extracurricular Activity Categories used as request criteria. Supports multiple values.",
+      "field": "Extracurricular_Activity_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Extracurricular Activity Categories used as request criteria. Supports multiple values.",
+      "field": "Extracurricular_Activity_Category_Reference_Extracurricular_Activity_Category_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Unit_Shareable_Data": {
+        "description": "Academic Unit and Level for Extracurricular Activity Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Category_Reference": {
+        "description": "The Extracurricular Activity Category of the Extracurricular Activity",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Category_Reference_Extracurricular_Activity_Category_ID_Prompt": {
+        "description": "Container for Extracurricular Activity Categories used as request criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Category_Reference_WID_Prompt": {
+        "description": "Container for Extracurricular Activity Categories used as request criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Name": {
+        "description": "The Name of the Extracurricular Activity",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Reference_Extracurricular_Activity_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extracurricular_Activity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "ID attribute of the Extracurricular Activity",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

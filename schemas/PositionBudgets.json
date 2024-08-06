@@ -1,0 +1,550 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PositionBudgets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Locked in Workday is a boolean flag controlling user ability to edit the transaction.  If the flag is set the user can't edit, cancel or change the transaction inside the Workday application, however the user can submit a draft transaction. The transaction can only be updated from the web service.",
+      "field": "Locked_in_Workday_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Plan_Structure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Plan_Structure_Reference_Budget_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "4 Digit numeric field that contains Fiscal Year Number (ie: 2008, 2009, etc).  The combination of the Fiscal Year Number and the Fiscal Schedule determine the Fiscal Year for a company.",
+      "field": "Fiscal_Year_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Time_Interval_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Time_Interval_Reference_Award_Posting_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Time_Interval_Reference_Fiscal_Posting_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Time_Interval_Reference_Fiscal_Summary_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Time_Interval_Reference_Fiscal_Summary_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Budget_Group_Load_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Compensation Amount.",
+      "field": "Compensation_Budget",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Fringe Benefit Amount.",
+      "field": "Fringe_Benefit_Budget",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Plan_Amendment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Plan_Amendment_Type_Reference_Business_Plan_Amendment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional memo for position budget.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for Position Budget Compensation and Fringe Lines. A position budget can have multiple compensation and fringe benefit information lines as long as the sum of compensation and fringe benefit lines are equal to the compensation amount  and fringe benefit amount totals.",
+      "field": "Position_Budget_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing business plan structure",
+      "field": "Business_Plan_Structure_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing business plan structure",
+      "field": "Business_Plan_Structure_Reference_Budget_Structure_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a fiscal year",
+      "field": "Fiscal_Year_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a fiscal year",
+      "field": "Fiscal_Year_Reference_Fiscal_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position. Supports multiple values.",
+      "field": "Position_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position. Supports multiple values.",
+      "field": "Position_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+      "field": "Version_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+      "field": "Version_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+      "field": "Position_Budget_Group_Load_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+      "field": "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Plan_Amendment_Type_Reference_Business_Plan_Amendment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Amendment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_Budget_Structure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_Budget_Structure_ID_Prompt": {
+        "description": "Reference to an existing business plan structure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_WID_Prompt": {
+        "description": "Reference to an existing business plan structure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Budget": {
+        "description": "Total Compensation Amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Time_Interval_Reference_Award_Posting_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Time_Interval_Reference_Fiscal_Posting_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Time_Interval_Reference_Fiscal_Summary_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Time_Interval_Reference_Fiscal_Summary_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Time_Interval_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_Number": {
+        "description": "4 Digit numeric field that contains Fiscal Year Number (ie: 2008, 2009, etc).  The combination of the Fiscal Year Number and the Fiscal Schedule determine the Fiscal Year for a company.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Fiscal_Year_Reference_Fiscal_Year_ID_Prompt": {
+        "description": "Reference to a fiscal year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_Reference_WID_Prompt": {
+        "description": "Reference to a fiscal year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Benefit_Budget": {
+        "description": "Total Fringe Benefit Amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Locked_in_Workday_Reference": {
+        "description": "Locked in Workday is a boolean flag controlling user ability to edit the transaction.  If the flag is set the user can't edit, cancel or change the transaction inside the Workday application, however the user can submit a draft transaction. The transaction can only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "An optional memo for position budget.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID_Prompt": {
+        "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_WID_Prompt": {
+        "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Line_Replacement_Data": {
+        "description": "Contains data for Position Budget Compensation and Fringe Lines. A position budget can have multiple compensation and fringe benefit information lines as long as the sum of compensation and fringe benefit lines are equal to the compensation amount  and fringe benefit amount totals.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID_Prompt": {
+        "description": "Reference to a Position. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID_Prompt": {
+        "description": "Reference to a Position. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Version_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Version_Status_Reference_WID_Prompt": {
+        "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollDeductionRecipients",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Deduction Recipient Name",
+      "field": "Payroll_Deduction_Recipient_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Alternate Deduction Recipient Name",
+      "field": "Payroll_Alternate_Deduction_Recipient_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Deduction Recipient Reference ID",
+      "field": "Payroll_Deduction_Recipient_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Name is the name for the business entity.  Business entities can not be duplicated across different business entity types, ie: a Customer can not have the same name as a Financial Institution unless they share the Business Entity.",
+      "field": "Business_Entity_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Furigana",
+      "field": "Business_Entity_Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Tax ID",
+      "field": "Business_Entity_Tax_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Entity ID.  The External Entity ID can be used as a non unique reference to the same Business Entity in an external system.",
+      "field": "External_Entity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Information",
+      "field": "Phone_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Email Address Information",
+      "field": "Email_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instant Messenger Information",
+      "field": "Instant_Messenger_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web Address Information",
+      "field": "Web_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Filename of the Attachment.",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "Image",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+      "field": "Settlement_Account_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Name": {
+        "description": "Business Entity Name is the name for the business entity.  Business entities can not be duplicated across different business entity types, ie: a Customer can not have the same name as a Financial Institution unless they share the Business Entity.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Phonetic_Name": {
+        "description": "Business Entity Furigana",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Tax_ID": {
+        "description": "Business Entity Tax ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Address_Data": {
+        "description": "Email Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Entity_ID": {
+        "description": "External Entity ID.  The External Entity ID can be used as a non unique reference to the same Business Entity in an external system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Text attribute identifying Filename of the Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instant_Messenger_Data": {
+        "description": "Instant Messenger Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Alternate_Deduction_Recipient_Name": {
+        "description": "Payroll Alternate Deduction Recipient Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Deduction_Recipient_ID": {
+        "description": "Payroll Deduction Recipient Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Deduction_Recipient_Name": {
+        "description": "Payroll Deduction Recipient Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phone_Data": {
+        "description": "Phone Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Account_Data": {
+        "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Data": {
+        "description": "Web Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

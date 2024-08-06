@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomBarcodeTypes_Custom_Barcode_Type_Data_Element",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomBarcodeType_Barcode_Symbology_ID_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Code",
+      "field": "Application_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Length",
+      "field": "Length",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Barcode_Data_Item_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Barcode_Data_Item_Type_Reference_Barcode_Data_Item_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Barcode Symbology ID. Supports multiple values.",
+      "field": "Barcode_Symbology_ID_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Barcode Symbology ID. Supports multiple values.",
+      "field": "Barcode_Symbology_ID_Reference_Barcode_Symbology_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Delimiter Character",
+      "field": "Delimiter_Character_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Barcode Identifier",
+      "field": "Custom_Barcode_Identifier_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Application_Identifier": {
+        "description": "Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Barcode_Data_Item_Type_Reference_Barcode_Data_Item_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Barcode_Data_Item_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Barcode_Symbology_ID_Reference_Barcode_Symbology_Reference_ID_Prompt": {
+        "description": "Barcode Symbology ID. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Barcode_Symbology_ID_Reference_WID_Prompt": {
+        "description": "Barcode Symbology ID. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomBarcodeType_Barcode_Symbology_ID_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Barcode_Identifier_Prompt": {
+        "description": "Custom Barcode Identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delimiter_Character_Prompt": {
+        "description": "Delimiter Character",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Length": {
+        "description": "Length",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

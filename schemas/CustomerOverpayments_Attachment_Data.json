@@ -1,0 +1,316 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerOverpayments_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomerOverpayment_Customer_Overpayment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference value for the overpayment reason.. Supports multiple values.",
+      "field": "Overpayment_Reason_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference value for the overpayment reason.. Supports multiple values.",
+      "field": "Overpayment_Reason_Reference_Customer_Overpayment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference value of the overpayment status.. Supports multiple values.",
+      "field": "Overpayment_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference value of the overpayment status.. Supports multiple values.",
+      "field": "Overpayment_Status_Reference_Payment_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Overpayment Date On or After.",
+      "field": "Overpayment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Overpayment Date On or Before.",
+      "field": "Overpayment_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomerOverpayment_Customer_Overpayment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_WID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "This is the reference value of the customer that the overpayment is for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Date_On_or_After_Prompt": {
+        "description": "Overpayment Date On or After.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Date_On_or_Before_Prompt": {
+        "description": "Overpayment Date On or Before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Reason_Reference_Customer_Overpayment_ID_Prompt": {
+        "description": "The Reference value for the overpayment reason.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Reason_Reference_WID_Prompt": {
+        "description": "The Reference value for the overpayment reason.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Status_Reference_Payment_Status_ID_Prompt": {
+        "description": "The Reference value of the overpayment status.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overpayment_Status_Reference_WID_Prompt": {
+        "description": "The Reference value of the overpayment status.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

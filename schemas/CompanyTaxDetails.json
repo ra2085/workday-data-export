@@ -1,0 +1,237 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyTaxDetails",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company ID",
+      "field": "Company_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID Data",
+      "field": "Tax_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Status Data element to specify 1 or more Tax Statuses for a company.",
+      "field": "Tax_Status_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Workday uses the Tax Recovery Pro Rata Factor Percentage to reduce the tax recoverability amount on transactions for this company. The value ranges from 0 to 1 with 3 decimal places of precision. Set to 1 in order to use the full amount (100%) of the calculated tax recoverability. There is no tax recoverability on transactions for this company if you don't specify a value or set it to 0.",
+      "field": "Company_Tax_Recovery_Pro_Rata_Factor_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "VAT on Payment, set to true for VAT on Payment option for Company, otherwise set to false.",
+      "field": "VAT_on_Payment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Third Party Tax Service Data",
+      "field": "Third_Party_Tax_Service_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enables Third Party Tax Service for Company.",
+      "field": "Use_Third_Party_Tax_Service",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Third Party Tax Service used by Company.",
+      "field": "Tax_Service_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "IRS 1099 Reporting Data",
+      "field": "IRS_1099_Reporting_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_ID": {
+        "description": "Company ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Company_Tax_Recovery_Pro_Rata_Factor_Percentage": {
+        "description": "Workday uses the Tax Recovery Pro Rata Factor Percentage to reduce the tax recoverability amount on transactions for this company. The value ranges from 0 to 1 with 3 decimal places of precision. Set to 1 in order to use the full amount (100%) of the calculated tax recoverability. There is no tax recoverability on transactions for this company if you don't specify a value or set it to 0.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default_Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Reporting_Data": {
+        "description": "IRS 1099 Reporting Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID_Data": {
+        "description": "Tax ID Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Service_Name": {
+        "description": "Name of Third Party Tax Service used by Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Status_Data": {
+        "description": "Tax Status Data element to specify 1 or more Tax Statuses for a company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Third_Party_Tax_Service_Data": {
+        "description": "Third Party Tax Service Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Third_Party_Tax_Service": {
+        "description": "Enables Third Party Tax Service for Company.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "VAT_on_Payment": {
+        "description": "VAT on Payment, set to true for VAT on Payment option for Company, otherwise set to false.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

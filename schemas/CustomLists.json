@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomLists",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_List_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_List_Reference_Custom_Field_Type_Alias",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_List_Reference_Custom_List_Web_Service_Alias",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom List Web Service Alias. This is used to  access an instance of a Custom List, or create a new Custom list. it must be present if the custom list reference is not present",
+      "field": "Web_Service_Alias",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom List Name Unique to all Custom Lists",
+      "field": "Custom_Field_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Custom List is Do Not Use",
+      "field": "Do_Not_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom List Value Data",
+      "field": "Custom_List_Value_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Custom List Name",
+      "field": "Custom_List_Alias_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Custom List Value",
+      "field": "Custom_List_Value_Alias_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Custom_Field_Type_Name": {
+        "description": "Custom List Name Unique to all Custom Lists",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Alias_Prompt": {
+        "description": "The Custom List Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Reference_Custom_Field_Type_Alias": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Reference_Custom_List_Web_Service_Alias": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Custom_List_Value_Alias_Prompt": {
+        "description": "The name of the Custom List Value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Value_Data": {
+        "description": "Custom List Value Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Do_Not_Use": {
+        "description": "Custom List is Do Not Use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Web_Service_Alias": {
+        "description": "Custom List Web Service Alias. This is used to  access an instance of a Custom List, or create a new Custom list. it must be present if the custom list reference is not present",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

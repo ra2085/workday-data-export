@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PeriodActivityRateMatrices",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the period activity rate matrix",
+      "field": "Period_Activity_Rate_Table_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date of the period activity rate matrix changes",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Associated condition rules",
+      "field": "Condition_Rule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the period activity rate matrix is inactive or not",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Activity Rate Matrix entry data for each row in the matrix",
+      "field": "Period_Activity_Rate_Matrix_Entry_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive period activity rate matrices.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Condition_Rule_Reference": {
+        "description": "Associated condition rules",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date of the period activity rate matrix changes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether the period activity rate matrix is inactive or not",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive period activity rate matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Period_Activity_Rate_Matrix_Entry_Data": {
+        "description": "Period Activity Rate Matrix entry data for each row in the matrix",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Activity_Rate_Table_Name": {
+        "description": "Name of the period activity rate matrix",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

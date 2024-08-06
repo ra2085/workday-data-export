@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BasicCustomers",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Customer_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Customer_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Customer_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer ID. This is a unique identifier for the Customer",
+      "field": "Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference ID. The Customer Reference ID can be used to uniquely identify a Customer.  Unlike Customer ID, Workday will not automatically generate a Customer Reference ID if one is not received.  The recommended use for Customer Reference ID is where Workday is not the source system of the Customer.",
+      "field": "Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Name",
+      "field": "Customer_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive Flag.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_ID": {
+        "description": "Customer ID. This is a unique identifier for the Customer",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Name": {
+        "description": "Customer Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_ID": {
+        "description": "Customer Reference ID. The Customer Reference ID can be used to uniquely identify a Customer.  Unlike Customer ID, Workday will not automatically generate a Customer Reference ID if one is not received.  The recommended use for Customer Reference ID is where Workday is not the source system of the Customer.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Customer_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Customer_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Customer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive Flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "VeteranStatuses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for the Veteran Status.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Order",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Veteran Status name.",
+      "field": "Veteran_Status_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Veteran Status description.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether Veteran Status is active/inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Global_Setup_Data_Mapping_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Global_Setup_Data_Mapping_Reference_Global_Setup_Data_Mapping_ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Veteran Status description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Global_Setup_Data_Mapping_Reference_Global_Setup_Data_Mapping_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Global_Setup_Data_Mapping_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Unique identifier for the Veteran Status.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether Veteran Status is active/inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Veteran_Status_Name": {
+        "description": "Veteran Status name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

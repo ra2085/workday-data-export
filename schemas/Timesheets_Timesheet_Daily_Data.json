@@ -1,0 +1,394 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Timesheets_Timesheet_Daily_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Timesheet_Timesheet_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date of the time card line for Get_Timesheet operation's response.",
+      "field": "Timesheet_Day_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Code_Reference_Time_Code_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount of hours worked for the time card line specified for Get_Timesheet operation's response.",
+      "field": "Hours_Worked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If the time card line is set to billable for Get_Timesheet operation's response.",
+      "field": "Billable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The comment field for the time card line for Get_Timesheet operation's response.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worktags associated with time card line for Get_Timesheet operation's response.  For Payroll Timesheet this is limited to Cost Center.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_Project_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Task_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Task_Reference_Project_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Position selected when entering the Payroll Timesheet.   Only applies if  the Tenant Setup is configured for Multiple Jobs.",
+      "field": "Position_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Proposed Percent complete from the Timesheet Line in decimal format (0.5 for 50%, 1 for 100%)",
+      "field": "Percent_Complete_Proposed_for_Timesheet_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Time In Time Out Data",
+      "field": "Time_In_Time_Out_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Last_Updated_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Last_Updated_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Will return all types of Payroll timesheets (including Time In Time Out).",
+      "field": "Payroll_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Project_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Time_In_Time_Out_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Multi-Worker_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Worker_Time_Card_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Billable": {
+        "description": "If the time card line is set to billable for Get_Timesheet operation's response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hours_Worked": {
+        "description": "The amount of hours worked for the time card line specified for Get_Timesheet operation's response.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Last_Updated_On_or_After_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated_On_or_Before_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "The comment field for the time card line for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi-Worker_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payroll_Timesheets_Only_Prompt": {
+        "description": "Will return all types of Payroll timesheets (including Time In Time Out).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Percent_Complete_Proposed_for_Timesheet_Day": {
+        "description": "Proposed Percent complete from the Timesheet Line in decimal format (0.5 for 50%, 1 for 100%)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Position_Reference": {
+        "description": "The Position selected when entering the Payroll Timesheet.   Only applies if  the Tenant Setup is configured for Multiple Jobs.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_Project_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Task_Reference_Project_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Task_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Code_Reference_Time_Code_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_In_Time_Out_Data": {
+        "description": "Time In Time Out Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_In_Time_Out_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Timesheet_Day_Date": {
+        "description": "The date of the time card line for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Timesheet_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Time_Card_Reference_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Worktags associated with time card line for Get_Timesheet operation's response.  For Payroll Timesheet this is limited to Cost Center.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

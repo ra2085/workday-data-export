@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectBudgetTemplates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Project Budget Template being processed",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter a unique Project Budget Template name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Plan_Structure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Plan_Structure_Reference_Budget_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to override the values in the template with project-related worktags when you create plan lines.",
+      "field": "Override_Template_with_Related_Worktags_from_Project",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to inactivate this Project Budget Template",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Budget Template Line Data Details",
+      "field": "Project_Budget_Template_Lines",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The Project Budget Template being processed",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Set to True to inactivate this Project Budget Template",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Enter a unique Project Budget Template name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Template_with_Related_Worktags_from_Project": {
+        "description": "Select to override the values in the template with project-related worktags when you create plan lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Plan_Structure_Reference_Budget_Structure_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan_Structure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Budget_Template_Lines": {
+        "description": "Project Budget Template Line Data Details",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

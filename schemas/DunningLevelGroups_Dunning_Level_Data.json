@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DunningLevelGroups_Dunning_Level_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "DunningLevelGroup_Dunning_Level_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dunning_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dunning_Level_Reference_Dunning_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique internal reference ID for the dunning level instance. If a Dunning Level ID is provided, Workday uses that ID. If no ID is provided, Workday generates a new Dunning Level ID.",
+      "field": "Dunning_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Dunning level name",
+      "field": "Dunning_Level_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Dunning level from days",
+      "field": "From_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Dunning level  to dates",
+      "field": "To_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Dunning level from risk score",
+      "field": "From_Risk_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Dunning level to risk score",
+      "field": "To_Risk_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Form_Layout_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing dunning level group name that the request criteria is for.",
+      "field": "Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Form_Layout_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "DunningLevelGroup_Dunning_Level_Group_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_ID": {
+        "description": "A unique internal reference ID for the dunning level instance. If a Dunning Level ID is provided, Workday uses that ID. If no ID is provided, Workday generates a new Dunning Level ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Name": {
+        "description": "Dunning level name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Reference_Dunning_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Days": {
+        "description": "Dunning level from days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "From_Risk_Score": {
+        "description": "Dunning level from risk score",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Reference to an existing dunning level group name that the request criteria is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_Days": {
+        "description": "Dunning level  to dates",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "To_Risk_Score": {
+        "description": "Dunning level to risk score",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

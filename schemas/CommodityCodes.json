@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CommodityCodes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Commodity_Code_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Commodity_Code_Type_Reference_Commodity_Code_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Commodity Code.  This has to be unique within a Commodity Code Type.",
+      "field": "Commodity_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description or Commodity Code Name.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Abbreviated version of the Commodity Name.  This is optional and will be defaulted from the Description, if not provided on the payload.",
+      "field": "Short_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing active Spend Category that is linked to Commodity Code.  If specified on the inbound request, Workday will replace Spend Categories that are linked to the Commodity Code.  If this is missing on the inbound request, Workday will retain the prior persisted Spend Categories on the Commodity Code.",
+      "field": "Spend_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether a Commodity Code is inactive or not.  Please note that this cannot be set when creating a new Commodity Code.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Commodity_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Commodity_Code_Reference_Commodity_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Commodity Codes.  When these are specified on the inbound request, Workday will retrieve all subordinates associated with the specified Commodity Codes.. Supports multiple values.",
+      "field": "Parent_Commodity_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Commodity Codes.  When these are specified on the inbound request, Workday will retrieve all subordinates associated with the specified Commodity Codes.. Supports multiple values.",
+      "field": "Parent_Commodity_Code_Reference_Commodity_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Spend Categories.  When these are included on the inbound request, Workday will retrieve all Commodity Codes associated with the specified Spend Categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Spend Categories.  When these are included on the inbound request, Workday will retrieve all Commodity Codes associated with the specified Spend Categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Commodity_Code": {
+        "description": "Commodity Code.  This has to be unique within a Commodity Code Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Type_Reference_Commodity_Code_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Description": {
+        "description": "Description or Commodity Code Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether a Commodity Code is inactive or not.  Please note that this cannot be set when creating a new Commodity Code.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Parent_Commodity_Code_Reference_Commodity_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Commodity_Code_Reference_Commodity_Code_ID_Prompt": {
+        "description": "Reference to existing Commodity Codes.  When these are specified on the inbound request, Workday will retrieve all subordinates associated with the specified Commodity Codes.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Commodity_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Commodity_Code_Reference_WID_Prompt": {
+        "description": "Reference to existing Commodity Codes.  When these are specified on the inbound request, Workday will retrieve all subordinates associated with the specified Commodity Codes.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Short_Description": {
+        "description": "Abbreviated version of the Commodity Name.  This is optional and will be defaulted from the Description, if not provided on the payload.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference": {
+        "description": "Reference to an existing active Spend Category that is linked to Commodity Code.  If specified on the inbound request, Workday will replace Spend Categories that are linked to the Commodity Code.  If this is missing on the inbound request, Workday will retain the prior persisted Spend Categories on the Commodity Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "Reference to existing Spend Categories.  When these are included on the inbound request, Workday will retrieve all Commodity Codes associated with the specified Spend Categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "Reference to existing Spend Categories.  When these are included on the inbound request, Workday will retrieve all Commodity Codes associated with the specified Spend Categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

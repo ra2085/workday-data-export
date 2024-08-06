@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProficiencyRatingScales",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Proficiency Rating Scale.",
+      "field": "Proficiency_Rating_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Rating Scale.",
+      "field": "Rating_Scale_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the Rating Scale.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to specify if the rating scale is active or inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element contains the data elements for a Proficiency Rating Scale.",
+      "field": "Proficiency_Rating_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Description of the Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to specify if the rating scale is active or inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Data": {
+        "description": "This element contains the data elements for a Proficiency Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Scale_ID": {
+        "description": "The ID of the Proficiency Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Scale_Name": {
+        "description": "Name of the Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

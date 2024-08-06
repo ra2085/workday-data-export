@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BudgetFringeRateTables_Fringe_Rate_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Table Reference ID. This is the Fringe Rate Table unique identifier.",
+      "field": "FringeRateTable_Fringe_Rate_Table_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ordering for Fringe Rate Lines. This orders the Fringe Rate Lines in the table.",
+      "field": "Fringe_Rate_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Line Description",
+      "field": "Fringe_Rate_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Fringe Rate",
+      "field": "Fringe_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Reference ID",
+      "field": "Fringe_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request a Fringe Rate Table by name",
+      "field": "Fringe_Rate_Table_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "FringeRateTable_Fringe_Rate_Table_ID": {
+        "description": "Fringe Rate Table Reference ID. This is the Fringe Rate Table unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate": {
+        "description": "Fringe Rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Description": {
+        "description": "Fringe Rate Line Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_ID": {
+        "description": "Fringe Rate Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Order": {
+        "description": "Ordering for Fringe Rate Lines. This orders the Fringe Rate Lines in the table.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Table_Name_Prompt": {
+        "description": "Request a Fringe Rate Table by name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

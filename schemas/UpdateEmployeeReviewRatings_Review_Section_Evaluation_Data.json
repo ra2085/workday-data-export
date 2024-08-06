@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "UpdateEmployeeReviewRatings_Review_Section_Evaluation_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "UpdateEmployeeReviewRating_Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of a Review Section.",
+      "field": "Section_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Manager_Section_Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Manager_Section_Rating_Reference_Proficiency_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Manager_Section_Rating_Reference_Review_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify whether to override the rating for the section. Value only applies if you enable the Rating with Overrides option.",
+      "field": "Override_Section_Rating",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The item evaluation data for an item within a section of an Employee Review.",
+      "field": "Review_Component_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Manager_Section_Rating_Reference_Proficiency_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manager_Section_Rating_Reference_Review_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manager_Section_Rating_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Section_Rating": {
+        "description": "Specify whether to override the rating for the section. Value only applies if you enable the Rating with Overrides option.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Review_Component_Data": {
+        "description": "The item evaluation data for an item within a section of an Employee Review.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Section_ID": {
+        "description": "The ID of a Review Section.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "UpdateEmployeeReviewRating_Rating_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

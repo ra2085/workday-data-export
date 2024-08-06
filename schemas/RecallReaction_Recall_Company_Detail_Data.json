@@ -1,0 +1,290 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecallReaction_Recall_Company_Detail_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "RecallReaction_Recall_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Company_Detail_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Company_Detail_Reference_Recall_Company_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify the inventory sites affected by the recall reaction.",
+      "field": "Inventory_Site",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify the inventory location affected by the recall reaction.",
+      "field": "Inventory_Location",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify any purchase order lines that appear on the recall reaction.",
+      "field": "Purchase_Order_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify the inventory issue line transactions affected by the recall reaction.",
+      "field": "Issue_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Create Responses",
+      "field": "Create_Responses",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as true when the recall reaction covers all action items that need to be performed.",
+      "field": "No_Action_Needed",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provide any descriptions or comments that you want to add to the recall reaction.",
+      "field": "Comments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify the details that appear on the recall reaction.",
+      "field": "Recall_Response_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify the recall reference number that initiated the reaction.. Supports multiple values.",
+      "field": "Recall_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify the recall reference number that initiated the reaction.. Supports multiple values.",
+      "field": "Recall_Reference_Recall_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Recall Reaction Status Reference. Supports multiple values.",
+      "field": "Recall_Reaction_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Recall Reaction Status Reference. Supports multiple values.",
+      "field": "Recall_Reaction_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comments": {
+        "description": "Provide any descriptions or comments that you want to add to the recall reaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Responses": {
+        "description": "Create Responses",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inventory_Location": {
+        "description": "Specify the inventory location affected by the recall reaction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Inventory_Site": {
+        "description": "Specify the inventory sites affected by the recall reaction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Issue_Line": {
+        "description": "Specify the inventory issue line transactions affected by the recall reaction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "No_Action_Needed": {
+        "description": "Specify as true when the recall reaction covers all action items that need to be performed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line": {
+        "description": "Specify any purchase order lines that appear on the recall reaction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "RecallReaction_Recall_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Company_Detail_Reference_Recall_Company_Detail_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Company_Detail_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reaction_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Recall Reaction Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reaction_Status_Reference_WID_Prompt": {
+        "description": "Recall Reaction Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_Recall_ID_Prompt": {
+        "description": "Specify the recall reference number that initiated the reaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_WID_Prompt": {
+        "description": "Specify the recall reference number that initiated the reaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Response_Data": {
+        "description": "Specify the details that appear on the recall reaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

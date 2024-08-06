@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EmployeeDefinedContributionElections",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the retirement savings elections take effect for the employee.",
+      "field": "Takes_Effect_On_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains election percent or amount and beneficiary allocation information.  If the Election Percentage and Election Amount are left blank, then an existing election is removed.  If there is no existing election for the benefit plan and the Election Percentage and Election Amount are left blank, then no election will be created.",
+      "field": "Defined_Contribution_Election_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Request References. Supports multiple values.",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Request References. Supports multiple values.",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Defined_Contribution_Election_Data": {
+        "description": "Contains election percent or amount and beneficiary allocation information.  If the Election Percentage and Election Amount are left blank, then an existing election is removed.  If there is no existing election for the benefit plan and the Election Percentage and Election Amount are left blank, then no election will be created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Employee Request References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Employee Request References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Takes_Effect_On_Date": {
+        "description": "The date the retirement savings elections take effect for the employee.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

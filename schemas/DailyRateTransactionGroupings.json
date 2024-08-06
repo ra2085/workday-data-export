@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DailyRateTransactionGroupings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Daily Rate Transaction Grouping ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Daily Rate Transaction Grouping Name",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Daily Rate Transaction Grouping Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Group by Project Plan Phase",
+      "field": "Group_by_Project_Plan_Phase",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Group by Project Plan Task",
+      "field": "Group_by_Project_Plan_Task",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worktag Types",
+      "field": "Worktag_Types_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Default",
+      "field": "Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "In Use",
+      "field": "In_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Default": {
+        "description": "Default",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Daily Rate Transaction Grouping Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_by_Project_Plan_Phase": {
+        "description": "Group by Project Plan Phase",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Group_by_Project_Plan_Task": {
+        "description": "Group by Project Plan Task",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Daily Rate Transaction Grouping ID",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "In Use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Daily Rate Transaction Grouping Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Types_Reference": {
+        "description": "Worktag Types",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

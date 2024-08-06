@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExpensePolicyGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Policy_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Policy_Group_Reference_Expense_Policy_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Expense Policy Group ID.  This is the Expense Policy Group unique identifier",
+      "field": "Expense_Policy_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Expense Policy Group Name",
+      "field": "Expense_Policy_Group_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Expense_Policy_Group_ID": {
+        "description": "Expense Policy Group ID.  This is the Expense Policy Group unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Policy_Group_Name": {
+        "description": "Free form text for a meaningful Expense Policy Group Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Policy_Group_Reference_Expense_Policy_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Policy_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

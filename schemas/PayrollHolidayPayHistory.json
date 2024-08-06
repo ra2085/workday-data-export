@@ -1,0 +1,315 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollHolidayPayHistory",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Holiday Pay History Element",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Payment Date of the Historical Holiday Pay payment.",
+      "field": "Payment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Amount of the Historical Holiday Pay payment.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earnings_Pay_Component_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earnings_Pay_Component_Group_Reference_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earnings_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Hours Worked of the Historical Holiday Pay payment.",
+      "field": "Hours_Worked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hours_Pay_Component_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hours_Pay_Component_Group_Reference_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hours_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether this Historical Holiday Pay payment is to be used in calculations.",
+      "field": "Use_in_Pay_Calculations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether this Historical Holiday Pay payment is to be excluded from calculations.",
+      "field": "Exclude_from_Pay_Calculations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Delete",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "UK Pay Group to retrieve UK Holiday Pay Historical Pay Data for.",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "UK Pay Group to retrieve UK Holiday Pay Historical Pay Data for.",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "The Amount of the Historical Holiday Pay payment.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "Delete",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Earnings_Pay_Component_Group_Reference_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earnings_Pay_Component_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earnings_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_from_Pay_Calculations": {
+        "description": "Specifies whether this Historical Holiday Pay payment is to be excluded from calculations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hours_Pay_Component_Group_Reference_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours_Pay_Component_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours_Worked": {
+        "description": "The Hours Worked of the Historical Holiday Pay payment.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Payroll Holiday Pay History Element",
+        "type": [
+          "string"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "UK Pay Group to retrieve UK Holiday Pay Historical Pay Data for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "UK Pay Group to retrieve UK Holiday Pay Historical Pay Data for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Date": {
+        "description": "The Payment Date of the Historical Holiday Pay payment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_in_Pay_Calculations": {
+        "description": "Specifies whether this Historical Holiday Pay payment is to be used in calculations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Workers to retrieve UK Holiday Pay Historical Data for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

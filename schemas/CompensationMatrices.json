@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationMatrices",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique ID of this Compensation Matrix.",
+      "field": "Compensation_Matrix_Matrix_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of this merit increase matrix.  If no date is provided, this will default to 1900-01-01.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of this Compensation Matrix. This will be displayed throughout the Workday system.",
+      "field": "Compensation_Matrix_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description, including purpose and application, of this Compensation Matrix.",
+      "field": "Compensation_Matrix_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rating_Scale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rating_Scale_Reference_Rating_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Data for this compensation matrix, if it is to be based on non-weighted percentages.",
+      "field": "Compensation_Matrix_Non-weighted_Percent_Based_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Data for this compensation matrix, if it is to be amount based.",
+      "field": "Compensation_Matrix_Amount_Based_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Data for this compensation matrix, if it is to be based on weighted percentages.",
+      "field": "Compensation_Matrix_for_Weighted_Percent_Based_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return the compensation matrix with the name specified by this parameter.",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all Amount based compensation matrices.",
+      "field": "Compensation_Matrix_Amount_Based_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all Non-weighted percent  Based compensation matrices.",
+      "field": "Compensation_Matrix_Non-weighted_Percent_Based_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all weighted percent based compensation matrices.",
+      "field": "Compensation_Matrix_Weighted_Percent_Based_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Compensation_Matrix_Amount_Based_Data": {
+        "description": "The Data for this compensation matrix, if it is to be amount based.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Amount_Based_Prompt": {
+        "description": "If true, return all Amount based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Description": {
+        "description": "The description, including purpose and application, of this Compensation Matrix.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Matrix_ID": {
+        "description": "The unique ID of this Compensation Matrix.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Name": {
+        "description": "The name of this Compensation Matrix. This will be displayed throughout the Workday system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Non-weighted_Percent_Based_Data": {
+        "description": "The Data for this compensation matrix, if it is to be based on non-weighted percentages.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Non-weighted_Percent_Based_Prompt": {
+        "description": "If true, return all Non-weighted percent  Based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Weighted_Percent_Based_Prompt": {
+        "description": "If true, return all weighted percent based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_for_Weighted_Percent_Based_Data": {
+        "description": "The Data for this compensation matrix, if it is to be based on weighted percentages.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The effective date of this merit increase matrix.  If no date is provided, this will default to 1900-01-01.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Return the compensation matrix with the name specified by this parameter.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Scale_Reference_Rating_Scale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Scale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BeginningBalanceJournals_Journal_Entry_Line_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Accounting Journal Reference ID.  This is the Accounting Journal unique identifier",
+      "field": "BeginningBalanceJournal_Accounting_Journal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+      "field": "Line_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Ledger_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Ledger_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Debit Amount",
+      "field": "Debit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Credit Amount",
+      "field": "Credit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency Rate for line",
+      "field": "Currency_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Ledger Debit Amount",
+      "field": "Ledger_Debit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Ledger Credit Amount",
+      "field": "Ledger_Credit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Quantity. To be used in conjunction with Unit of Measure.",
+      "field": "Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Quantity 2. To be used in conjunction with Unit of Measure 2.",
+      "field": "Quantity_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the line",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a freeform text reference that is used to associate this Journal with a record in a third party system",
+      "field": "External_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Budget Date for the Journal Line. It is required if the View Budget Date flag is set to true for the Ledger.",
+      "field": "Budget_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Business_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Cost_Center_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Custom_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Fund_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Affiliate_Reference_Region_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For expense report and supplier invoice transactions tied to a capital project worktag, Workday creates special accounting to appropriately debit the Work in Progress account, while also recording the amount as a debit into the Spend account.  This is necessary to reflect correct amounts for the purposes of Budget Checking/Reporting, and any other custom spend reports.",
+      "field": "Exclude_from_Spend_Report",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Tax Details data",
+      "field": "Tax_Detail_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number Workday automatically assigned to the journal line.",
+      "field": "Journal_Line_Number",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Ledger_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Ledger_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Business_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Cost_Center_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Custom_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Fund_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_Region_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Affiliate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "BeginningBalanceJournal_Accounting_Journal_ID": {
+        "description": "Accounting Journal Reference ID.  This is the Accounting Journal unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Date": {
+        "description": "Budget Date for the Journal Line. It is required if the View Budget Date flag is set to true for the Ledger.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Credit_Amount": {
+        "description": "Credit Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Rate": {
+        "description": "Currency Rate for line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Debit_Amount": {
+        "description": "Debit Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Exclude_from_Spend_Report": {
+        "description": "For expense report and supplier invoice transactions tied to a capital project worktag, Workday creates special accounting to appropriately debit the Work in Progress account, while also recording the amount as a debit into the Spend account.  This is necessary to reflect correct amounts for the purposes of Budget Checking/Reporting, and any other custom spend reports.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Reference_ID": {
+        "description": "This is a freeform text reference that is used to associate this Journal with a record in a third party system",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Line_Number": {
+        "description": "The number Workday automatically assigned to the journal line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Ledger_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Credit_Amount": {
+        "description": "Ledger Credit Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Ledger_Debit_Amount": {
+        "description": "Ledger Debit Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Line_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Order": {
+        "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo for the line",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quantity": {
+        "description": "Quantity. To be used in conjunction with Unit of Measure.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quantity_2": {
+        "description": "Quantity 2. To be used in conjunction with Unit of Measure 2.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tax_Detail_Data": {
+        "description": "Encapsulating element containing Tax Details data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

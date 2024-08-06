@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BasicSalesItems",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sales_Item_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sales_Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Sales Item ID.  This is the Sales Item unique identifier",
+      "field": "Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Sales Item Name",
+      "field": "Item_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate a Sales Item that is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Boolean to indicate a Sales Item that is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Name": {
+        "description": "Free form text for a meaningful Sales Item Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_ID": {
+        "description": "Sales Item ID.  This is the Sales Item unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

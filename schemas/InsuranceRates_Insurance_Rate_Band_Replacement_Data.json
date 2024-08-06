@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InsuranceRates_Insurance_Rate_Band_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InsuranceRate_Insurance_Rate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Benefit Rate Band Minimum",
+      "field": "Minimum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Benefit Rate Band Maximum",
+      "field": "Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gender_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gender_Reference_Gender_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tobacco_Use_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tobacco_Use_Reference_Benefit_Rate_Band_Tobacco_Use_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employee Cost",
+      "field": "Employee_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Employer Cost",
+      "field": "Employer_Cost",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Employee_Cost": {
+        "description": "Employee Cost",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employer_Cost": {
+        "description": "Employer Cost",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Gender_Reference_Gender_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gender_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "InsuranceRate_Insurance_Rate_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum": {
+        "description": "Benefit Rate Band Maximum",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum": {
+        "description": "Benefit Rate Band Minimum",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tobacco_Use_Reference_Benefit_Rate_Band_Tobacco_Use_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tobacco_Use_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

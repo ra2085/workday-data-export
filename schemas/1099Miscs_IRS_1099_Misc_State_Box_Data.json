@@ -1,0 +1,212 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Miscs_IRS_1099_Misc_State_Box_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "IRS1099Misc_Payee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_Country_Region_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Country-Region_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The state filing code on the 1099 state box element.",
+      "field": "State_Filing_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "1099 Run Category State Box Data.",
+      "field": "IRS_1099_State_Box_Data_By_Category",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "State Payer ID",
+      "field": "State_Payer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "State Income Amount",
+      "field": "State_Income_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "State Income Tax Withholding Amount",
+      "field": "State_Income_Tax_Withholding_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing 1099 Electronic Filing Run",
+      "field": "IRS_1099_Electronic_Filing_Run_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing 1099 Electronic Filing Run",
+      "field": "IRS_1099_Electronic_Filing_Run_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_Country_Region_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Country-Region_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS1099Misc_Payee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Electronic_Filing_Run_Reference_IID_Prompt": {
+        "description": "Reference to an existing 1099 Electronic Filing Run",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Electronic_Filing_Run_Reference_WID_Prompt": {
+        "description": "Reference to an existing 1099 Electronic Filing Run",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_State_Box_Data_By_Category": {
+        "description": "1099 Run Category State Box Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "State_Filing_Code": {
+        "description": "The state filing code on the 1099 state box element.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "State_Income_Amount": {
+        "description": "State Income Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "State_Income_Tax_Withholding_Amount": {
+        "description": "State Income Tax Withholding Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "State_Payer_ID": {
+        "description": "State Payer ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

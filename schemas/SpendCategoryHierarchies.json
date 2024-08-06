@@ -1,0 +1,224 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SpendCategoryHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Reference_Resource_Category_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Category Reference Hierarchy ID.  This is the Spend Category Hierarchy unique identifier",
+      "field": "Spend_Category_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Spend Category Hierarchy Name",
+      "field": "Spend_Category_Hierarchy_Names",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hierarchy_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hierarchy_Level_Reference_Hierarchy_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_Resource_Category_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the spend categories included in this spend category hierarchy will be exposed on the supplier registration external website. If false, they will not be exposed.",
+      "field": "Enable_for_External_Website",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Spend Categories that are included in this Spend Category Hierarchy.",
+      "field": "Included_Spend_Categories_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The commodity detail for the spend category. This field can be used as an alternative display name or code value to search for a spend category or spend category hierarchy in Workday.",
+      "field": "Commodity_Detail",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the Spend Category Hierarchy is Inactive.  False otherwise.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Display_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Display_Option_Reference_Spend_Category_or_Hierarchy_Display_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Category Hierarchy Name",
+      "field": "Spend_Category_Hierarchy_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Hierarchy Dependencies",
+      "field": "Exclude_Hierarchy_Dependencies_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Commodity_Detail": {
+        "description": "The commodity detail for the spend category. This field can be used as an alternative display name or code value to search for a spend category or spend category hierarchy in Workday.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_for_External_Website": {
+        "description": "If true, the spend categories included in this spend category hierarchy will be exposed on the supplier registration external website. If false, they will not be exposed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Hierarchy_Dependencies_Prompt": {
+        "description": "Exclude Hierarchy Dependencies",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hierarchy_Level_Reference_Hierarchy_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hierarchy_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "True if the Spend Category Hierarchy is Inactive.  False otherwise.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Included_Spend_Categories_Reference": {
+        "description": "Reference to the Spend Categories that are included in this Spend Category Hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_Resource_Category_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Display_Option_Reference_Spend_Category_or_Hierarchy_Display_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Display_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_ID": {
+        "description": "Spend Category Reference Hierarchy ID.  This is the Spend Category Hierarchy unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Name_Prompt": {
+        "description": "Spend Category Hierarchy Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Names": {
+        "description": "Free form text field for a meaningful Spend Category Hierarchy Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Reference_Resource_Category_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

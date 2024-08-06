@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "OrganizationReferenceIDs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization Reference ID",
+      "field": "Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization Name. This field is read-only and should not be post back in Put Organization ID Request.",
+      "field": "Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This option is only allowed for Supervisory Organization at the moment. When set to true, Supervisory Organizations will have Organization Reference ID suffixed to their names. A new effective-dated organization name is automatically created if value for this field is different as of current moment.",
+      "field": "Include_Organization_ID_in_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Include_Organization_ID_in_Name": {
+        "description": "This option is only allowed for Supervisory Organization at the moment. When set to true, Supervisory Organizations will have Organization Reference ID suffixed to their names. A new effective-dated organization name is automatically created if value for this field is different as of current moment.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Name": {
+        "description": "Organization Name. This field is read-only and should not be post back in Put Organization ID Request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_ID": {
+        "description": "Organization Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

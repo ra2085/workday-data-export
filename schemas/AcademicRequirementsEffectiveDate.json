@@ -1,0 +1,42 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicRequirementsEffectiveDate",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the Student Program of Study Record",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Requirements Effective Date for the Student Program of Study Record",
+      "field": "Requirements_Effective",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The Reference ID for the Student Program of Study Record",
+        "type": [
+          "string"
+        ]
+      },
+      "Requirements_Effective": {
+        "description": "The Requirements Effective Date for the Student Program of Study Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

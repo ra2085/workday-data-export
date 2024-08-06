@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MaintainNonCountryNationalities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for the Non-Country Nationality.",
+      "field": "Non_Country_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Countries allowed to use the Non-Country Nationality.",
+      "field": "Allow_for_Country_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_for_Country_Reference": {
+        "description": "The Countries allowed to use the Non-Country Nationality.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Integration ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Non_Country_Name": {
+        "description": "The name for the Non-Country Nationality.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

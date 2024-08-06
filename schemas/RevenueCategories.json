@@ -1,0 +1,198 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Category_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Category_Reference_Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Category Reference ID.  This is the Revenue Category unique identifier",
+      "field": "Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for meaningful Revenue Category Name",
+      "field": "Revenue_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_Classification_Type_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Attribute that determines whether the Revenue Category appears in prompts and is usable in new Customer Invoices, Contract Lines, etc.",
+      "field": "Revenue_Category_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Revenue Category Changed From Date",
+      "field": "Updated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Revenue Category Changes To Date",
+      "field": "Updated_To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Classification_Type_Reference_Classification_Type_Name_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maps_to_Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maps_to_Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_ID": {
+        "description": "Revenue Category Reference ID.  This is the Revenue Category unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Inactive": {
+        "description": "Attribute that determines whether the Revenue Category appears in prompts and is usable in new Customer Invoices, Contract Lines, etc.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Revenue_Category_Name": {
+        "description": "Free form text field for meaningful Revenue Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Reference_Revenue_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_From_Date_Prompt": {
+        "description": "Revenue Category Changed From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_To_Date_Prompt": {
+        "description": "Revenue Category Changes To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

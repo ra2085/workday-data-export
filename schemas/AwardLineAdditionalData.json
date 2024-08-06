@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardLineAdditionalData",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Line_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Line_Reference_Receivable_Contract_Line_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The award reference.. Supports multiple values.",
+      "field": "Award_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The award reference.. Supports multiple values.",
+      "field": "Award_Reference_Award_Contract_Amendment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The award reference.. Supports multiple values.",
+      "field": "Award_Reference_Award_Contract_Correction_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The award reference.. Supports multiple values.",
+      "field": "Award_Reference_Award_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Line_Reference_Receivable_Contract_Line_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Award_Reference_Award_Contract_Amendment_ID_Prompt": {
+        "description": "The award reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_Award_Contract_Correction_ID_Prompt": {
+        "description": "The award reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_Award_Reference_ID_Prompt": {
+        "description": "The award reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_WID_Prompt": {
+        "description": "The award reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LeaseContractBookCodeConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Lease Contract Book Code Configuration Reference ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Order",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Organization",
+      "field": "Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the detail information about the book code configuration for the selected organization",
+      "field": "Lease_Contract_Book_Code_Configuration_Details_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Lease Contract Book Code Configuration Reference ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Lease_Contract_Book_Code_Configuration_Details_Data": {
+        "description": "Contains the detail information about the book code configuration for the selected organization",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference": {
+        "description": "Reference to existing Organization",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

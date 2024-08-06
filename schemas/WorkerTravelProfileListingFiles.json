@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkerTravelProfileListingFiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Travel Profile Listing File Number. This is the Worker Travel Profile  Listing File unique identifier.",
+      "field": "Travel_Profile_Listing_File_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Travel Profile Listing File Name",
+      "field": "Travel_Profile_Listing_File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Worker Travel Profile Listing File Date",
+      "field": "Travel_Profile_Listing_File_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Worker Travel Profile records",
+      "field": "Travel_Profile_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Travel_Profile_Data": {
+        "description": "Container for Worker Travel Profile records",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Profile_Listing_File_Date": {
+        "description": "Worker Travel Profile Listing File Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Profile_Listing_File_Name": {
+        "description": "Worker Travel Profile Listing File Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Profile_Listing_File_Number": {
+        "description": "Worker Travel Profile Listing File Number. This is the Worker Travel Profile  Listing File unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

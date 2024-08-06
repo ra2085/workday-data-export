@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Questionnaires",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Questionnaire_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Questionnaire_Reference_Questionnaire_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The questionnaire ID.",
+      "field": "Questionnaire_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The questionnaire name.",
+      "field": "Questionnaire_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The questionnaire display name.",
+      "field": "Questionnaire_Display_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The questionnaire type.",
+      "field": "Questionnaire_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The business process type.",
+      "field": "Business_Process_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean determining if the questionnaire is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The questions on the questionnaire.",
+      "field": "Questions_for_Questionnaire_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Process_Type_Reference": {
+        "description": "The business process type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean determining if the questionnaire is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Questionnaire_Display_Name": {
+        "description": "The questionnaire display name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questionnaire_ID": {
+        "description": "The questionnaire ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questionnaire_Name": {
+        "description": "The questionnaire name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questionnaire_Reference_Questionnaire_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questionnaire_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Questionnaire_Type_Reference": {
+        "description": "The questionnaire type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questions_for_Questionnaire_Data": {
+        "description": "The questions on the questionnaire.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,796 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SalesItems",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sales_Item_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sales_Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Sales Item ID.  This is the Sales Item unique identifier",
+      "field": "Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Sales Item Name",
+      "field": "Item_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text to provide Alternate Name for Sales Item",
+      "field": "Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate a Sales Item that is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the sales item is only used as a worktag value. If set to true, the sales item will not be available as a selection in sales item fields on financial transactions like Customer Invoices.",
+      "field": "Worktag_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Category_Reference_Revenue_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text providing a detailed Item Description",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_Classification_Type_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for an Item Identifier. This is not a Workday Reference ID",
+      "field": "Item_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_2_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Bulk Pricing Flag.Possible Values Y/N.",
+      "field": "Enable_Bulk_Quantity_Pricing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Item Unit Cost",
+      "field": "Item_Unit_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Item Unit Price",
+      "field": "Item_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Bulk Quantity Divisor for Quantity",
+      "field": "UOM_Priced_at_Quantities_of",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Sales Item Group",
+      "field": "Sales_Item_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Template_Reference_Project_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Template_Reference_Billing_Schedule_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Treatment_Reference_Revenue_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Recognition_Schedule_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Recognition_Schedule_Template_Reference_Revenue_Recognition_Schedule_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Recognition_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Recognition_Method_Reference_Schedule_Distribution_Method_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount for VSOE Price for the Sales Item.",
+      "field": "VSOE_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount for Third Party Evidence for the Sales Item.",
+      "field": "Third_Party_Evidence",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount for Esitmated Selling Price for the Sales Item.",
+      "field": "Estimated_Selling_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Price_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Price_Type_Reference_Contract_Line_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Purchase_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_to_Purchase_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Sales Item Bundle Flag",
+      "field": "Is_a_Bundle",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Sales Item bundle",
+      "field": "Sales_Item_To_Include_In_Bundle_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bundled Sales Item",
+      "field": "Sales_Item_Bundle_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Fulfillment Required",
+      "field": "Fulfillment_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Sales Item Renewable",
+      "field": "Renewable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Sales Item Quotable",
+      "field": "Quotable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of Image",
+      "field": "Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename of Image",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File associated with Image",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+      "field": "Alternative_Text",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Name": {
+        "description": "Free form text to provide Alternate Name for Sales Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternative_Text": {
+        "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Template_Reference_Billing_Schedule_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_Classification_Type_Name_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Bulk_Quantity_Pricing": {
+        "description": "Enable Bulk Pricing Flag.Possible Values Y/N.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Estimated_Selling_Price": {
+        "description": "The amount for Esitmated Selling Price for the Sales Item.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "File associated with Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Filename of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fulfillment_Required": {
+        "description": "Fulfillment Required",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Image_ID": {
+        "description": "Reference ID of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_Image_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to indicate a Sales Item that is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Is_a_Bundle": {
+        "description": "Sales Item Bundle Flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "Free form text providing a detailed Item Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier": {
+        "description": "Free form text for an Item Identifier. This is not a Workday Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Name": {
+        "description": "Free form text for a meaningful Sales Item Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Unit_Cost": {
+        "description": "Item Unit Cost",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Item_Unit_Price": {
+        "description": "Item Unit Price",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maps_to_Purchase_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maps_to_Purchase_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Price_Type_Reference_Contract_Line_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Price_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Template_Reference_Project_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quotable": {
+        "description": "Sales Item Quotable",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Renewable": {
+        "description": "Sales Item Renewable",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Revenue_Category_Reference_Revenue_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Recognition_Method_Reference_Schedule_Distribution_Method_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Recognition_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Recognition_Schedule_Template_Reference_Revenue_Recognition_Schedule_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Recognition_Schedule_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Treatment_Reference_Revenue_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Bundle_Reference": {
+        "description": "Bundled Sales Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Group_Reference": {
+        "description": "Reference to an existing Sales Item Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_ID": {
+        "description": "Sales Item ID.  This is the Sales Item unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sales_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Sales_Item_To_Include_In_Bundle_Reference": {
+        "description": "Sales Item bundle",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Third_Party_Evidence": {
+        "description": "The amount for Third Party Evidence for the Sales Item.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "UOM_Priced_at_Quantities_of": {
+        "description": "Bulk Quantity Divisor for Quantity",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_2_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "VSOE_Price": {
+        "description": "The amount for VSOE Price for the Sales Item.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worktag_Only": {
+        "description": "Boolean to indicate if the sales item is only used as a worktag value. If set to true, the sales item will not be available as a selection in sales item fields on financial transactions like Customer Invoices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

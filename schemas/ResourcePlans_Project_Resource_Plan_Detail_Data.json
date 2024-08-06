@@ -1,0 +1,485 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ResourcePlans_Project_Resource_Plan_Detail_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ResourcePlan_Resource_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Detail ID. This is the project resource plan detail unique identifier.",
+      "field": "Project_Resource_Plan_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Reference_Project_Worker_Role_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Category_Reference_Project_Role_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Association",
+      "field": "isAssociation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A subset of the possible workers from the member resource considered to be members of the resource plan detail. This may be a subset of workers for the respective member resource. If no workers are defined in the Worker Reference, all workers who are members of the member resource are available for task assignment unless excluded in the Excluded Worker Reference",
+      "field": "Workers_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify the quantity of additional unnamed resources to create.",
+      "field": "Add_Additional_Unnamed_Resources",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing unnamed resource data.",
+      "field": "Unnamed_Resource_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "To Be Hired",
+      "field": "isToBeHired",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Percent Allocation",
+      "field": "Percent_Allocation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Estimated Hours",
+      "field": "Estimated_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Resource Plan Memo",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Booking_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Booking_Status_Reference_Project_Booking_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Cost_Center_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Project_Dynamic_Resource_Pool_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Project_Worker_Role_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Group_Reference_Talent_Pool_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A subset of the possible workers from the member resource considered to be members of the resource plan detail. This may be a subset of workers for the respective member resource. If no workers are defined in the Worker Reference, all workers who are members of the member resource are available for task assignment unless excluded in the Excluded Worker Reference.",
+      "field": "Excluded_Workers_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Standard Cost Rate",
+      "field": "Standard_Cost_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Standard_Cost_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Standard_Cost_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Standard_Cost_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Contract Billing Ratge",
+      "field": "Contract_Billing_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Contract_Billing_Rate_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Contract_Billing_Rate_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Contract_Billing_Rate_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Add_Additional_Unnamed_Resources": {
+        "description": "Specify the quantity of additional unnamed resources to create.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Contract_Billing_Rate": {
+        "description": "Contract Billing Ratge",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Contract_Billing_Rate_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Billing_Rate_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Billing_Rate_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Estimated_Hours": {
+        "description": "Estimated Hours",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Excluded_Workers_Reference": {
+        "description": "A subset of the possible workers from the member resource considered to be members of the resource plan detail. This may be a subset of workers for the respective member resource. If no workers are defined in the Worker Reference, all workers who are members of the member resource are available for task assignment unless excluded in the Excluded Worker Reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Project Resource Plan Memo",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percent_Allocation": {
+        "description": "Percent Allocation",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Project_Booking_Status_Reference_Project_Booking_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Booking_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Plan_Detail_ID": {
+        "description": "Detail ID. This is the project resource plan detail unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Reference_Project_Role_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Reference_Project_Worker_Role_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ResourcePlan_Resource_Plan_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Standard_Cost_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Standard_Cost_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Standard_Cost_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Standard_Cost_Rate": {
+        "description": "Standard Cost Rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unnamed_Resource_Data": {
+        "description": "Element containing unnamed resource data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Cost_Center_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Project_Dynamic_Resource_Pool_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Project_Worker_Role_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_Talent_Pool_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Reference": {
+        "description": "A subset of the possible workers from the member resource considered to be members of the resource plan detail. This may be a subset of workers for the respective member resource. If no workers are defined in the Worker Reference, all workers who are members of the member resource are available for task assignment unless excluded in the Excluded Worker Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "isAssociation": {
+        "description": "Association",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "isToBeHired": {
+        "description": "To Be Hired",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

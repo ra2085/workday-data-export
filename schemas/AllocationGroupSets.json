@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AllocationGroupSets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Group_Set_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Group_Set_Reference_Allocation_Group_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for Allocation Group Set",
+      "field": "Allocation_Group_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Allocation Group Set Name",
+      "field": "Allocation_Group_Set_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Allocation Group Set description",
+      "field": "Allocation_Group_Set_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A Reference to the Organization used by the Group Set",
+      "field": "Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Time_Frame_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Time_Frame_Reference_Allocation_Time_Frame_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Summary_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Summary_Schedule_Reference_Fiscal_Summary_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A Reference to the Ledger or Budget Structure used by the Group Set",
+      "field": "Ledger_or_Budget_Structure_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag to determine if this Allocation Group Set is active or not.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates the Allocation Group Data",
+      "field": "Allocation_Group_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allocation_Group_Data": {
+        "description": "Encapsulates the Allocation Group Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_Description": {
+        "description": "Text attribute identifying Allocation Group Set description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_ID": {
+        "description": "The ID for Allocation Group Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_Name": {
+        "description": "Text attribute identifying Allocation Group Set Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_Reference_Allocation_Group_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Allocation_Time_Frame_Reference_Allocation_Time_Frame_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Time_Frame_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Summary_Schedule_Reference_Fiscal_Summary_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Summary_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "A flag to determine if this Allocation Group Set is active or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ledger_or_Budget_Structure_Reference": {
+        "description": "A Reference to the Ledger or Budget Structure used by the Group Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference": {
+        "description": "A Reference to the Organization used by the Group Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

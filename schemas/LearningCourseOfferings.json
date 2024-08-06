@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningCourseOfferings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Course_Offering_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Course_Offering_Reference_Learning_Course_Offering_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data about the blended course for the course offering specified in the course offering reference.",
+      "field": "Learning_Course_Offering_Data_from_Course",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Mode_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Mode_Reference_Delivery_Mode_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data about the course offering, the blended course it is scheduled for, and the reference ID for the course offering.",
+      "field": "Learning_Course_Offering_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Delivery_Mode_Reference_Delivery_Mode_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivery_Mode_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Course_Offering_Data": {
+        "description": "Contains data about the course offering, the blended course it is scheduled for, and the reference ID for the course offering.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Course_Offering_Data_from_Course": {
+        "description": "Contains data about the blended course for the course offering specified in the course offering reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Course_Offering_Reference_Learning_Course_Offering_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Course_Offering_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

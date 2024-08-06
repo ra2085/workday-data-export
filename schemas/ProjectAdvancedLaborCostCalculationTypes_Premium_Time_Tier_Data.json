@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectAdvancedLaborCostCalculationTypes_Premium_Time_Tier_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Advanced Labor Cost Calculation Type Reference ID",
+      "field": "ProjectAdvancedLaborCostCalculationType_Cost_Calculation_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Delete",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Advanced Labor Costing Premium Time Tier Referenc",
+      "field": "Premium_Time_Tier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "For second tier and after, match the previous tier Hours To value to this value.",
+      "field": "Hours_From",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Hours To in Premium Time Tier",
+      "field": "Hours_To",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Percentage in Premium Time Tier",
+      "field": "Percent",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Delete": {
+        "description": "Delete",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hours_From": {
+        "description": "For second tier and after, match the previous tier Hours To value to this value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Hours_To": {
+        "description": "Hours To in Premium Time Tier",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Percent": {
+        "description": "Percentage in Premium Time Tier",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Premium_Time_Tier_ID": {
+        "description": "Project Advanced Labor Costing Premium Time Tier Referenc",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ProjectAdvancedLaborCostCalculationType_Cost_Calculation_Type_ID": {
+        "description": "Project Advanced Labor Cost Calculation Type Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

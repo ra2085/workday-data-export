@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "VehicleMakes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vehicle_Make_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vehicle_Make_Reference_Company_Vehicle_Make",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Vehicle Make",
+      "field": "Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Name": {
+        "description": "Name of Vehicle Make",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vehicle_Make_Reference_Company_Vehicle_Make": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vehicle_Make_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

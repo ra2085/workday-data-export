@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectTaskResources_Project_Task_Resource_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ProjectTaskResources_Project_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Task Resource Reference ID",
+      "field": "Project_Task_Resource_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Plan_Task_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Plan_Task_Reference_Project_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Resource_Plan_Detail_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Resource_Plan_Detail_Reference_Project_Resource_Plan_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker and Unnamed Resource reference for the Project Task Resource",
+      "field": "Project_Resource_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Resource Start Date for the Project Task Resource",
+      "field": "Resource_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Resource End Date for the Project Task Resource",
+      "field": "Resource_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "% Allocation for the Project Task Resource",
+      "field": "Percent_Allocation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Estimated Hours  for the Project Task Resource",
+      "field": "Estimated_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the Project Task Resource",
+      "field": "Memo",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Estimated_Hours": {
+        "description": "Estimated Hours  for the Project Task Resource",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo for the Project Task Resource",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percent_Allocation": {
+        "description": "% Allocation for the Project Task Resource",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ProjectTaskResources_Project_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Plan_Task_Reference_Project_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Plan_Task_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Plan_Detail_Reference_Project_Resource_Plan_Detail_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Plan_Detail_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Resource_Reference": {
+        "description": "Worker and Unnamed Resource reference for the Project Task Resource",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Task_Resource_ID": {
+        "description": "Project Task Resource Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_End_Date": {
+        "description": "Resource End Date for the Project Task Resource",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Start_Date": {
+        "description": "Resource Start Date for the Project Task Resource",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

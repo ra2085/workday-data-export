@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TransferPricingRateSheets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the transfer pricing rate sheet.",
+      "field": "Transfer_Pricing_Rate_Sheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique name of the transfer pricing rate sheet.",
+      "field": "Transfer_Pricing_Rate_Sheet_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rate_Sheet_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rate_Sheet_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rate_Sheet_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the snapshot of the transfer pricing rate sheet data.",
+      "field": "Transfer_Pricing_Rate_Sheet_Snapshot_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Rate_Sheet_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Sheet_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Sheet_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Sheet_ID": {
+        "description": "ID of the transfer pricing rate sheet.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Sheet_Name": {
+        "description": "The unique name of the transfer pricing rate sheet.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Sheet_Snapshot_Data": {
+        "description": "Contains the snapshot of the transfer pricing rate sheet data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

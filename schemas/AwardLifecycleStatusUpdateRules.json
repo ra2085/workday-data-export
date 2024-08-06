@@ -1,0 +1,264 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardLifecycleStatusUpdateRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Lifecycle Status Update Rule for update only purposes.",
+      "field": "Award_Lifecycle_Status_Update_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order the rule should  be evaluated.",
+      "field": "Evaluation_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating if the lifecycle status rule should apply to award header status or not.",
+      "field": "Applies_To_Header_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating if the lifecycle status rule should apply to award line status or not.",
+      "field": "Applies_To_Line_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Change_To_New_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Change_To_New_Status_Reference_Award_Lifecycle_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award header status or award line status will change to a new status specified in Change To New Status unless the current status equals to the one specified in this field.",
+      "field": "Unless_Current_Status_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating whether the update is based on dates or not.",
+      "field": "Based_On_Dates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean flag indicating whether the update is based on Award Tasks or not.",
+      "field": "Based_On_Award_Tasks",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Months",
+      "field": "Number_of_Months",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Days",
+      "field": "Number_of_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Occurs Before Anchor Date",
+      "field": "On_or_Before_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Occurs After Anchor Date",
+      "field": "On_or_After_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "End Date",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Start Date",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Relative to Award Life",
+      "field": "Relative_To_Award_Schedule_Life",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Relative to Award Contract Period",
+      "field": "Relative_To_Award_Contract_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Relative to Award Line Life",
+      "field": "Relative_To_Award_Line_Life",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Task Criteria Data for a single Lifecycle Status Update Rule Award Task Criteria",
+      "field": "Lifecycle_Status_Update_Rule_Award_Task_Criteria_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Applies_To_Header_Status": {
+        "description": "A boolean flag indicating if the lifecycle status rule should apply to award header status or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Applies_To_Line_Status": {
+        "description": "A boolean flag indicating if the lifecycle status rule should apply to award line status or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Update_Rule_ID": {
+        "description": "Reference to an existing Lifecycle Status Update Rule for update only purposes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Based_On_Award_Tasks": {
+        "description": "A boolean flag indicating whether the update is based on Award Tasks or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Based_On_Dates": {
+        "description": "A boolean flag indicating whether the update is based on dates or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Change_To_New_Status_Reference_Award_Lifecycle_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Change_To_New_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "End Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Evaluation_Order": {
+        "description": "The order the rule should  be evaluated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lifecycle_Status_Update_Rule_Award_Task_Criteria_Data": {
+        "description": "Award Task Criteria Data for a single Lifecycle Status Update Rule Award Task Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Days": {
+        "description": "Number of Days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Number_of_Months": {
+        "description": "Number of Months",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "On_or_After_Date": {
+        "description": "Occurs After Anchor Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "On_or_Before_Date": {
+        "description": "Occurs Before Anchor Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Relative_To_Award_Contract_Period": {
+        "description": "Relative to Award Contract Period",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Relative_To_Award_Line_Life": {
+        "description": "Relative to Award Line Life",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Relative_To_Award_Schedule_Life": {
+        "description": "Relative to Award Life",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "Start Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Unless_Current_Status_Reference": {
+        "description": "Award header status or award line status will change to a new status specified in Change To New Status unless the current status equals to the one specified in this field.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

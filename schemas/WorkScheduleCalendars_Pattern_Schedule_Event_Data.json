@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkScheduleCalendars_Pattern_Schedule_Event_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "WorkScheduleCalendar_Work_Schedule_Calendar_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Pattern Week Number for Pattern Schedule Event.",
+      "field": "Week_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Day(s) of the Week for Pattern Schedule Event.",
+      "field": "Day_of_the_Week_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Minute-precision Start Time for Pattern Schedule Event. Note: This is also referred to as the In time for the schedule pattern.",
+      "field": "Start_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Minute-precision End Time for Pattern Schedule Event. Note: This is also referred to as the Out time for the schedule pattern.",
+      "field": "End_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shift_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shift_Profile_Reference_Shift_Profile_Ordinal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value specifying whether the Pattern Schedule Event is a 24-Hour Shift.",
+      "field": "_24_Hour_Shift",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element containing meal times for the Work Schedule Calendar Event.",
+      "field": "Meal_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Day_of_the_Week_Reference": {
+        "description": "Day(s) of the Week for Pattern Schedule Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Time": {
+        "description": "Minute-precision End Time for Pattern Schedule Event. Note: This is also referred to as the Out time for the schedule pattern.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Meal_Data": {
+        "description": "Wrapper element containing meal times for the Work Schedule Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shift_Profile_Reference_Shift_Profile_Ordinal_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shift_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Time": {
+        "description": "Minute-precision Start Time for Pattern Schedule Event. Note: This is also referred to as the In time for the schedule pattern.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Week_Number": {
+        "description": "Numeric value for Pattern Week Number for Pattern Schedule Event.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "WorkScheduleCalendar_Work_Schedule_Calendar_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "_24_Hour_Shift": {
+        "description": "Boolean value specifying whether the Pattern Schedule Event is a 24-Hour Shift.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

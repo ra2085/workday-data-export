@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReceivableWriteoffCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receivable Writeoff Category Reference ID.  This is the Receivable Writeoff Category unique identifier",
+      "field": "Receivable_Writeoff_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for the Receivable Writeoff Category Name",
+      "field": "Receivable_Writeoff_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The functional area that can use the writeoff reason. You must specify a value. Possible value is Customer Accounts, or Student Financials.",
+      "field": "Receivable_Writeoff_Reason_Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag when set to true, inactivates the writeoff reason.  Set the flag to 1 for inactivating it. Set the flag to 0, or leave it blank to set the writeoff reason to active. When a writeoff is in progress, Workday completes even if you inactivate the flag",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "A flag when set to true, inactivates the writeoff reason.  Set the flag to 1 for inactivating it. Set the flag to 0, or leave it blank to set the writeoff reason to active. When a writeoff is in progress, Workday completes even if you inactivate the flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Receivable_Writeoff_Category_ID": {
+        "description": "Receivable Writeoff Category Reference ID.  This is the Receivable Writeoff Category unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receivable_Writeoff_Category_Name": {
+        "description": "Free form text field for the Receivable Writeoff Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receivable_Writeoff_Reason_Usage_Reference": {
+        "description": "The functional area that can use the writeoff reason. You must specify a value. Possible value is Customer Accounts, or Student Financials.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

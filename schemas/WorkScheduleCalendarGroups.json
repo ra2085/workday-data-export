@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkScheduleCalendarGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for reference ID for Work Schedule Calendar Group.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text name for Work Schedule Calendar Group.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value specifying whether the Work Schedule Calendar Group is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text comment for Work Schedule Calendar Group.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Work Schedule Calendars for the Work Schedule Calendar Group.",
+      "field": "Work_Schedule_Calendar_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Text comment for Work Schedule Calendar Group.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Text value for reference ID for Work Schedule Calendar Group.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean value specifying whether the Work Schedule Calendar Group is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Text name for Work Schedule Calendar Group.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Schedule_Calendar_Reference": {
+        "description": "Reference to the Work Schedule Calendars for the Work Schedule Calendar Group.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

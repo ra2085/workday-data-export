@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReviewTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of the Review Type.",
+      "field": "Review_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Review Type.",
+      "field": "Review_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Review_Type_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Review_Type_Category_Reference_Review_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether the review is initiated for the individual employee related to this review type.",
+      "field": "Review_Initiated_for_Employee",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether the review is initiated by the individual employee related to this review type.",
+      "field": "Review_Initiated_by_Employee",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The count employee review templates that this Review Type is associated with. This field is for Extracts only and not for loads.",
+      "field": "Used_by_Templates_Count",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Review_Initiated_by_Employee": {
+        "description": "Whether the review is initiated by the individual employee related to this review type.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Review_Initiated_for_Employee": {
+        "description": "Whether the review is initiated for the individual employee related to this review type.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Review_Type_Category_Reference_Review_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Review_Type_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Review_Type_ID": {
+        "description": "Reference ID of the Review Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Review_Type_Name": {
+        "description": "Name of the Review Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Templates_Count": {
+        "description": "The count employee review templates that this Review Type is associated with. This field is for Extracts only and not for loads.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

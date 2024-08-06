@@ -1,0 +1,419 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollLimitOverrides",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Limit_Override_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Limit_Override_Reference_Payroll_Limit_Override_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of Payroll Limit Override.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Limit Interface the Payroll Limit Override is for.",
+      "field": "Limit_Interface_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Period will be derived from the Period that the specified Start Date falls within (for the 'regular' run category for the Pay Group the employee is in as of today).",
+      "field": "Period_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Period will be derived from the Period that the specified End Date falls within (for the 'regular' run category for the Pay Group the employee is in as of today).",
+      "field": "Period_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "\"If specified, the system will use the limit override value.  If not specified, the system will ignore the limit completely.\"",
+      "field": "Use_Limit_Override_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Limit Override Value to be used instead of what is specified on the Pay Component.",
+      "field": "Limit_Override_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Absence_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Accrual_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Pay_Accumulation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Pay_Component_Related_Calculation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Time_Off_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Workday_Absence_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Workday_Pay_Accumulation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+      "field": "Pay_Component_Reference_Workday_Pay_Component_Related_Calculation_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "= End Period (Start Date) …. If End Period exists\"",
+      "field": "Period_Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "= Start Period (Start Date), AND End Date specified \u003e= End Period (Start Date) …. If End Period exists\"",
+      "field": "Period_End_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "ID of Payroll Limit Override.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Limit_Interface_Data": {
+        "description": "Limit Interface the Payroll Limit Override is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Limit_Override_Value": {
+        "description": "Limit Override Value to be used instead of what is specified on the Pay Component.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Absence_Plan_ID_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Accrual_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Deduction_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Earning_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Pay_Accumulation_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Pay_Component_Related_Calculation_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Time_Off_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_WID_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Workday_Absence_Plan_ID_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Workday_Earning_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Workday_Pay_Accumulation_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Reference_Workday_Pay_Component_Related_Calculation_Code_Prompt": {
+        "description": "If specified, only return the limit override for specified Pay Component References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Limit_Override_Reference_Payroll_Limit_Override_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Limit_Override_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Period_End_Date": {
+        "description": "End Period will be derived from the Period that the specified End Date falls within (for the 'regular' run category for the Pay Group the employee is in as of today).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_End_Date_Prompt": {
+        "description": "= Start Period (Start Date), AND End Date specified \u003e= End Period (Start Date) …. If End Period exists\"",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Start_Date": {
+        "description": "Start Period will be derived from the Period that the specified Start Date falls within (for the 'regular' run category for the Pay Group the employee is in as of today).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Start_Date_Prompt": {
+        "description": "= End Period (Start Date) …. If End Period exists\"",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Limit_Override_Value": {
+        "description": "\"If specified, the system will use the limit override value.  If not specified, the system will ignore the limit completely.\"",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "If specified, only return the limit override for specified Employees. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MessageTemplate_Email_Notification_Configuration_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for the message template.  If not entered, one will be generated.",
+      "field": "MessageTemplate_Message_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Display Name for Email Notification.",
+      "field": "Email_From_Display_Name_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reply To for Email Notification.",
+      "field": "Email_Reply_To_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Email_From_Display_Name_Reference": {
+        "description": "Display Name for Email Notification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Reply_To_Reference": {
+        "description": "Reply To for Email Notification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "MessageTemplate_Message_Template_ID": {
+        "description": "Unique identifier for the message template.  If not entered, one will be generated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

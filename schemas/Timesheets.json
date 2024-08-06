@@ -1,0 +1,432 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Timesheets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Timesheet_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Timesheet_Reference_Payroll_Timesheet_Time_In_Time_Out_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Timesheet_Reference_Payroll_Timesheet_Total_Hours_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Timesheet_Reference_Project_Timesheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID returned for each Timesheet (Worker Time Card) for Get_Timesheet operation's response.",
+      "field": "Worker_Time_Card_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Last Updated Date of Worker Time Card for Get_Timesheet operation's response.",
+      "field": "Last_Updated_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is this a Payroll Timesheet for Worker Time Card for Get_Timesheet operation's response.",
+      "field": "Is_Payroll_Timesheet",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Status for worker time card (timesheet) for Get_Timesheet operation's response.",
+      "field": "Worker_Time_Card_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The period start date for worker time card (timesheet) for Get_Timesheet operation.",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Period end date for worker time card (timesheet) for Get_Timesheet operation's response.",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_Time_Zone_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that contains Timesheet Day details for a Timesheet for a Get_Timesheet operation.",
+      "field": "Timesheet_Daily_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Last_Updated_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Last_Updated_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Will return all types of Payroll timesheets (including Time In Time Out).",
+      "field": "Payroll_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Project_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Time_In_Time_Out_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Multi-Worker_Timesheets_Only_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One criteria for the Get_Timesheet operation.",
+      "field": "Worker_Time_Card_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "End_Date": {
+        "description": "Period end date for worker time card (timesheet) for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Is_Payroll_Timesheet": {
+        "description": "Is this a Payroll Timesheet for Worker Time Card for Get_Timesheet operation's response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Last_Updated_Date": {
+        "description": "The Last Updated Date of Worker Time Card for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated_On_or_After_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated_On_or_Before_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi-Worker_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payroll_Timesheets_Only_Prompt": {
+        "description": "Will return all types of Payroll timesheets (including Time In Time Out).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "The period start date for worker time card (timesheet) for Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_In_Time_Out_Timesheets_Only_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_Time_Zone_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Daily_Data": {
+        "description": "Element that contains Timesheet Day details for a Timesheet for a Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Reference_Payroll_Timesheet_Time_In_Time_Out_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Reference_Payroll_Timesheet_Total_Hours_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Reference_Project_Timesheet_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Time_Card_ID": {
+        "description": "The ID returned for each Timesheet (Worker Time Card) for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Time_Card_Reference_ID_Prompt": {
+        "description": "One criteria for the Get_Timesheet operation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Time_Card_Status": {
+        "description": "Status for worker time card (timesheet) for Get_Timesheet operation's response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

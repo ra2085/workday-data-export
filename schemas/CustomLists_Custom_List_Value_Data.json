@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomLists_Custom_List_Value_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomList_Custom_List_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom List Value Data",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Value Name",
+      "field": "List_Value_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alias",
+      "field": "Web_Service_Alias",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Deprecated",
+      "field": "Deprecated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Custom List Name",
+      "field": "Custom_List_Alias_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Custom List Value",
+      "field": "Custom_List_Value_Alias_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CustomList_Custom_List_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Alias_Prompt": {
+        "description": "The Custom List Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_List_Value_Alias_Prompt": {
+        "description": "The name of the Custom List Value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deprecated": {
+        "description": "Deprecated",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "List_Value_Name": {
+        "description": "Value Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Custom List Value Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Service_Alias": {
+        "description": "Alias",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

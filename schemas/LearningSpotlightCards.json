@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningSpotlightCards",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Spotlight_Card_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Spotlight_Card_Reference_Learning_Spotlight_Card_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Spotlight_Card_Reference_Tenanted_Card_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of the Learning Spotlight Card.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Learning Spotlight Card.",
+      "field": "Save_As",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The title of the Learning Spotlight Card.",
+      "field": "Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The subtitle of the Learning Spotlight Card.",
+      "field": "Subtitle",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains detailed information about a Learning Spotlight Card Button.",
+      "field": "Button_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Button_Reference": {
+        "description": "Contains detailed information about a Learning Spotlight Card Button.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID of the Learning Spotlight Card.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Spotlight_Card_Reference_Learning_Spotlight_Card_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Spotlight_Card_Reference_Tenanted_Card_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Spotlight_Card_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Save_As": {
+        "description": "The name of the Learning Spotlight Card.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subtitle": {
+        "description": "The subtitle of the Learning Spotlight Card.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Title": {
+        "description": "The title of the Learning Spotlight Card.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

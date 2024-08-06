@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FinancialDataModel_Company",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Data Model ID",
+      "field": "FinancialDataModel_Reporting_Data_Model_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Level ID",
+      "field": "Reporting_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Top_Level_Company_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Top_Level_Company_Hierarchy_Reference_Custom_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Top_Level_Company_Hierarchy_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Company Hierarchy",
+      "field": "Alternate_Company_Hierarchy_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Company_Hierarchy_Reference": {
+        "description": "Alternate Company Hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FinancialDataModel_Reporting_Data_Model_ID": {
+        "description": "Reporting Data Model ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Level_ID": {
+        "description": "Reporting Level ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Top_Level_Company_Hierarchy_Reference_Custom_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Top_Level_Company_Hierarchy_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Top_Level_Company_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

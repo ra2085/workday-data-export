@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalSkillMapping",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for this External Skill.",
+      "field": "External_Skill_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Skill Vendor Name for this External Skill.",
+      "field": "External_Skill_Source_Vendor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Match Type for this External Skill.",
+      "field": "Match_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for this External Skill.",
+      "field": "External_Skill_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Creates a Maintained Skill for this External Skill.",
+      "field": "Create_Maintained_Skill",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Skips mapping for this External Skill.",
+      "field": "Skip",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Workday skill mapping data.",
+      "field": "Workday_Skill_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Create_Maintained_Skill": {
+        "description": "Creates a Maintained Skill for this External Skill.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Skill_ID": {
+        "description": "The Reference ID for this External Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Skill_Name": {
+        "description": "The name for this External Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Skill_Source_Vendor": {
+        "description": "The Skill Vendor Name for this External Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Match_Type": {
+        "description": "The Match Type for this External Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skip": {
+        "description": "Skips mapping for this External Skill.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Workday_Skill_Data": {
+        "description": "Contains Workday skill mapping data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

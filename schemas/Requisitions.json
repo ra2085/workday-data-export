@@ -1,0 +1,2772 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Requisitions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Reference_Requisition_ID_External",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Reference_Requisition_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Reference_Requisition_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all Requisition data. A Requisition may have multiple goods and deliverable Requisition lines. A Requisition also supports service lines v24.0 onwards.",
+      "field": "Requisition_data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Company_or_Company_Hierarchy_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Number",
+      "field": "Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requesting Worker for the Requisition",
+      "field": "Requester_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requesting Worker for the Requisition",
+      "field": "Requester_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requesting Worker for the Requisition",
+      "field": "Requester_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Type of the Requisition. Supports multiple values.",
+      "field": "Requisition_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Type of the Requisition. Supports multiple values.",
+      "field": "Requisition_Type_Reference_Requisition_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+      "field": "Requisition_Sourcing_Buyer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+      "field": "Requisition_Sourcing_Buyer_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+      "field": "Requisition_Sourcing_Buyer_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Currency of the Requisition.",
+      "field": "Requisition_Currency_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Currency of the Requisition.",
+      "field": "Requisition_Currency_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Currency of the Requisition.",
+      "field": "Requisition_Currency_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Requisition Date On or After",
+      "field": "Requisition_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Requisition Date On or Before",
+      "field": "Requisition_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use this to search for Requisitions with unsourced lines",
+      "field": "Has_Unsourced_Lines_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use this to search for fully sourced Requisitions",
+      "field": "Fully_Sourced_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+      "field": "Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+      "field": "Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+      "field": "Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Spend Category.  The Spend Category will default from the Purchase Item if the item is specified.  This Spend Category must match the Spend Category for the Purchase Item.. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Spend Category.  The Spend Category will default from the Purchase Item if the item is specified.  This Spend Category must match the Spend Category for the Purchase Item.. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+      "field": "Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+      "field": "Item_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+      "field": "Item_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+      "field": "Item_Reference_Supplier_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order. Supports multiple values.",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order. Supports multiple values.",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order. Supports multiple values.",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order. Supports multiple values.",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+      "field": "Approving_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Ad_hoc_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Allocation_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Application_Grouping_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Appropriation_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Cash_Activity_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Grade_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_06_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_07_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_08_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_09_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_1_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_10_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_11_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_12_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_13_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_14_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_15_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_2_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_3_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_4_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_5_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Recipient_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Donor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Ethnicity_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Exemption_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Expense_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Fringe_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Fund_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Funding_Source_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Gender_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Gift_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Investor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Is_Manager_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Is_People_Manager_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Loan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Management_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_NI_Category_Letter_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Object_Class_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Opportunity_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Pay_Rate_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Income_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Position_Time_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Program_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Project_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Worker_Role_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Proposal_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Revenue_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Rubric_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Sales_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Award_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Charge_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_Section_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Waiver_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Applicability_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Third_Party_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Function_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Shift_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+      "field": "Worktags_Reference_Worker_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approving_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_WID_Prompt": {
+        "description": "Reference to the Approving Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_or_Company_Hierarchy_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier Order Contract. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_WID_Prompt": {
+        "description": "Reference to the Creating Worker for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fully_Sourced_Prompt": {
+        "description": "Use this to search for fully sourced Requisitions",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Has_Unsourced_Lines_Prompt": {
+        "description": "Use this to search for Requisitions with unsourced lines",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Supplier_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID_Prompt": {
+        "description": "Reference of an Item on the Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Reference to an existing Purchase Order. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Order. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the Requesting Worker for the Requisition",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the Requesting Worker for the Requisition",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_WID_Prompt": {
+        "description": "Reference to the Requesting Worker for the Requisition",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_Currency_ID_Prompt": {
+        "description": "Reference to the Currency of the Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "Reference to the Currency of the Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_WID_Prompt": {
+        "description": "Reference to the Currency of the Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Date_On_or_After_Prompt": {
+        "description": "Requisition Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Date_On_or_Before_Prompt": {
+        "description": "Requisition Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_ID_Prompt": {
+        "description": "Requisition Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Reference_Requisition_ID_External": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Reference_Requisition_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Reference_Requisition_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Requisition_Sourcing_Buyer_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Sourcing_Buyer_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Sourcing_Buyer_Reference_WID_Prompt": {
+        "description": "Reference to the Requisition Sourcing Buyer for the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Type_Reference_Requisition_Type_Reference_ID_Prompt": {
+        "description": "Reference to the Requisition Type of the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Type_Reference_WID_Prompt": {
+        "description": "Reference to the Requisition Type of the Requisition. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_data": {
+        "description": "Element containing all Requisition data. A Requisition may have multiple goods and deliverable Requisition lines. A Requisition also supports service lines v24.0 onwards.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "Reference to the Spend Category.  The Spend Category will default from the Purchase Item if the item is specified.  This Spend Category must match the Spend Category for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "Reference to the Spend Category.  The Spend Category will default from the Purchase Item if the item is specified.  This Spend Category must match the Spend Category for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "References to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Level_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Period_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Person_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ad_hoc_Payee_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Allocation_Pool_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Applicant_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Application_Grouping_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Appropriation_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Unit_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Candidate_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cash_Activity_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Catalog_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Basis_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Grade_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_06_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_07_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_08_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_09_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_10_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_11_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_12_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_13_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_14_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_15_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_1_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_2_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_3_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_4_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_5_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Recipient_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Donor_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Earning_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ethnicity_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Exemption_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Expense_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fringe_Basis_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fund_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Funding_Source_Name_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gender_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gift_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Grant_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Pool_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Profile_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investor_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_Manager_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_People_Manager_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Level_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Profile_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Requisition_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Loan_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Location_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Management_Level_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_NI_Category_Letter_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Object_Class_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Opportunity_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Pay_Rate_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Income_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_Time_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_of_Study_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Plan_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Worker_Role_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Proposal_Grant_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Revenue_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Rubric_Value_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Run_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sales_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Spend_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Award_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Charge_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_Section_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Event_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Waiver_Item_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Applicability_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Category_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Code_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Rate_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Third_Party_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_WID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Code_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Function_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Shift_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Earning_Code_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Worker_Type_ID_Prompt": {
+        "description": "Reference to existing Worktags or Add new Worktags. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

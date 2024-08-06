@@ -1,0 +1,784 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SpendAuthorizations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Authorization ID.  This is the Spend Authorization unique identifier.",
+      "field": "Spend_Authorization_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Academic_Person_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Applicant_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Candidate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_External_Committee_Member_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Student_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Payee_Reference_Universal_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Authorization_Committee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Authorization_Committee_Reference_Committee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable editing and canceling the Spend Authorization inside the Workday application. A Spend Authorization will only be updated from the web service.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The document number that will be assigned to the Spend Authorization.  Leave it blank to have the number auto-assigned.",
+      "field": "Spend_Authorization_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Budget Check Status",
+      "field": "Budget_Check_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reimbursement_Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reimbursement_Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Spend Authorization Date",
+      "field": "Spend_Authorization_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Spend Authorization End Date",
+      "field": "Spend_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Purpose_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Purpose_Reference_Business_Purpose_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Authorization Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Spend Authorization Remaining Balance Amount",
+      "field": "Remaining_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Spend Authorization Estimated Amount",
+      "field": "Estimated_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Spend Authorization Cash Advance Requested Amount",
+      "field": "Cash_Advance_Requested_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Authorization Justification",
+      "field": "Justification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that encapsulates all data for one Spend Authorization Line (Expense Item, Quantity, Unit Cost, Billable flag, Worktags, and Memo).",
+      "field": "Spend_Authorization_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Expense Payee Type on the Spend Authorization - Employee, Contingent Worker, or External Committee Member.. Supports multiple values.",
+      "field": "Expense_Payee_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Expense Payee Type on the Spend Authorization - Employee, Contingent Worker, or External Committee Member.. Supports multiple values.",
+      "field": "Expense_Payee_Type_Reference_Payee_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Spend Authorization From Date",
+      "field": "Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Spend Authorization To Date",
+      "field": "End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Document Number",
+      "field": "Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created From Date",
+      "field": "Created_Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created To Date",
+      "field": "Created_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Approved From Date",
+      "field": "Approved_Start_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Approved To Date",
+      "field": "Approved_End_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approved_End_Date_Prompt": {
+        "description": "Approved To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_Start_Date_Prompt": {
+        "description": "Approved From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Check_Status": {
+        "description": "Budget Check Status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Purpose_Reference_Business_Purpose_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Purpose_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cash_Advance_Requested_Amount": {
+        "description": "Spend Authorization Cash Advance Requested Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_End_Date_Prompt": {
+        "description": "Created To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_Start_Date_Prompt": {
+        "description": "Created From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Spend Authorization Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Number_Prompt": {
+        "description": "Document Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_Prompt": {
+        "description": "Spend Authorization To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Estimated_Amount": {
+        "description": "Spend Authorization Estimated Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Academic_Person_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Academic_Person_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Applicant_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Applicant_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Candidate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Candidate_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Employee_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_External_Committee_Member_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Student_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Student_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Universal_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_WID_Prompt": {
+        "description": "Reference to an existing Expense Payee.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Type_Reference_Payee_Type_ID_Prompt": {
+        "description": "The Expense Payee Type on the Spend Authorization - Employee, Contingent Worker, or External Committee Member.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Type_Reference_WID_Prompt": {
+        "description": "The Expense Payee Type on the Spend Authorization - Employee, Contingent Worker, or External Committee Member.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Justification": {
+        "description": "Spend Authorization Justification",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Set to True to disable editing and canceling the Spend Authorization inside the Workday application. A Spend Authorization will only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reimbursement_Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reimbursement_Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remaining_Balance": {
+        "description": "Spend Authorization Remaining Balance Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Committee_Reference_Committee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Committee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Date": {
+        "description": "Spend Authorization Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_ID": {
+        "description": "Spend Authorization ID.  This is the Spend Authorization unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Line_Replacement_Data": {
+        "description": "Element that encapsulates all data for one Spend Authorization Line (Expense Item, Quantity, Unit Cost, Billable flag, Worktags, and Memo).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Number": {
+        "description": "The document number that will be assigned to the Spend Authorization.  Leave it blank to have the number auto-assigned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_End_Date": {
+        "description": "Spend Authorization End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_Prompt": {
+        "description": "Spend Authorization From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

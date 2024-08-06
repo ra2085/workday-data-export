@@ -1,0 +1,939 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EmployeeAwards",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Reference_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Reference_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+      "field": "Custom_Calculation_Merit_Currency",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+      "field": "Custom_Calculation_Merit_Numeric",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+      "field": "Custom_Calculation_Merit_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Calculation_Merit_List_Value_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Calculation_Merit_List_Value_Reference_Compensation_Review_Calculation_List_Entry_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Merit increase percent that will be applied in calculating a merit award amount",
+      "field": "Merit_Increase_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Merit factor that will be applied to the merit target in calculating a merit award amount",
+      "field": "Merit_Factor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Merit increase in a currency amount",
+      "field": "Merit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The new pay for an employee in a currency amount",
+      "field": "Merit_New_Pay_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Notes about a merit award",
+      "field": "Merit_Notes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Additional adjustment award in a currency amount",
+      "field": "Additional_Adjustment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Additional adjustment award in a percent",
+      "field": "Additional_Adjustment_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Additional Adjustment New Pay Amount",
+      "field": "Additional_Adjustment_New_Pay_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Additional Adjustment Notes",
+      "field": "Additional_Adjustment_Notes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Calculation_Promotion_List_Value_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Calculation_Promotion_List_Value_Reference_Compensation_Review_Calculation_List_Entry_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Benefits_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Change_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Drop_Course_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_End_Additional_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Event_Classification_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_General_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Leave_of_Absence_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Termination_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Undo_Move_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Promotion_Reason_Reference_Waive_Assignment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "New_Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "New_Position_Reference_Headcount_Restrictions_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "New_Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_new_from_Promotion_Adjustment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_new_from_Promotion_Adjustment_Reference_Compensation_Grade_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grade_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grade_Profile_Reference_Compensation_Grade_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Scheduled Weekly Hours",
+      "field": "Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Promotion Percent",
+      "field": "Promotion_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Promotion Amount",
+      "field": "Promotion_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "New Pay Amount",
+      "field": "New_Pay_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Promotion Notes",
+      "field": "Promotion_Notes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Award Bonus Data",
+      "field": "Employee_Award_Bonus_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Lump Sum Percent",
+      "field": "Lump_Sum_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Lump Sum Amount",
+      "field": "Lump_Sum_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Lump Sum Notes",
+      "field": "Lump_Sum_Notes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stock Unit Awarded",
+      "field": "Employee_Award_Stock_Unit_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stock Amount Awarded",
+      "field": "Employee_Award_Stock_Amount_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Award Commission Data",
+      "field": "Employee_Award_Commission_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Award Data",
+      "field": "Employee_Award_Allowance_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Performance_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Performance_Reference_Review_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Retention_Risk_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Retention_Risk_Reference_Retention_Risk_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Talent_Potential_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Talent_Potential_Reference_Potential_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Achievable_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Achievable_Level_Reference_Achievable_Level_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organizations with SubOrdinates",
+      "field": "Supervisory_Organization_and_Subordinates_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Achievable_Level_Reference_Achievable_Level_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Achievable_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Adjustment_Amount": {
+        "description": "Additional adjustment award in a currency amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Additional_Adjustment_New_Pay_Amount": {
+        "description": "Additional Adjustment New Pay Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Additional_Adjustment_Notes": {
+        "description": "Additional Adjustment Notes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Adjustment_Percent": {
+        "description": "Additional adjustment award in a percent",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Compensation_Grade_new_from_Promotion_Adjustment_Reference_Compensation_Grade_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_new_from_Promotion_Adjustment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Merit_Currency": {
+        "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Merit_List_Value_Reference_Compensation_Review_Calculation_List_Entry_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Merit_List_Value_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Merit_Numeric": {
+        "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Merit_Percent": {
+        "description": "Used for Custom Calculations in Compensation Review feature triggering any calculations on the Compensation Review Calculation Table",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Promotion_List_Value_Reference_Compensation_Review_Calculation_List_Entry_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Calculation_Promotion_List_Value_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Award_Allowance_Data": {
+        "description": "Employee Award Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Award_Bonus_Data": {
+        "description": "Employee Award Bonus Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Award_Commission_Data": {
+        "description": "Employee Award Commission Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Award_Stock_Amount_Data": {
+        "description": "Stock Amount Awarded",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Award_Stock_Unit_Data": {
+        "description": "Stock Unit Awarded",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Grade_Profile_Reference_Compensation_Grade_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grade_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lump_Sum_Amount": {
+        "description": "Lump Sum Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Lump_Sum_Notes": {
+        "description": "Lump Sum Notes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lump_Sum_Percent": {
+        "description": "Lump Sum Percent",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Merit_Amount": {
+        "description": "Merit increase in a currency amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Merit_Factor": {
+        "description": "Merit factor that will be applied to the merit target in calculating a merit award amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Merit_Increase_Percent": {
+        "description": "Merit increase percent that will be applied in calculating a merit award amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Merit_New_Pay_Amount": {
+        "description": "The new pay for an employee in a currency amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Merit_Notes": {
+        "description": "Notes about a merit award",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "New_Pay_Amount": {
+        "description": "New Pay Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "New_Position_Reference_Headcount_Restrictions_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "New_Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "New_Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Performance_Reference_Review_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Performance_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Amount": {
+        "description": "Promotion Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Promotion_Notes": {
+        "description": "Promotion Notes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Percent": {
+        "description": "Promotion Percent",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Benefits_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Change_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Drop_Course_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_End_Additional_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Event_Classification_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_General_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Leave_of_Absence_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Termination_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Undo_Move_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Promotion_Reason_Reference_Waive_Assignment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retention_Risk_Reference_Retention_Risk_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retention_Risk_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scheduled_Weekly_Hours": {
+        "description": "Scheduled Weekly Hours",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_and_Subordinates_Prompt": {
+        "description": "Supervisory Organizations with SubOrdinates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Talent_Potential_Reference_Potential_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Talent_Potential_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

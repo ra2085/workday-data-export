@@ -1,0 +1,263 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkerCostingAllocations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Restrictions_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Restrictions_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earning_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earning_Reference_Earning_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Earning_Reference_Workday_Earning_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Costing Allocation Data effective over a specified date range.",
+      "field": "Worker_Costing_Allocation_Interval_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+      "field": "Costing_Override_Criteria_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+      "field": "Costing_Override_Criteria_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+      "field": "Costing_Override_Criteria_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Restrictions Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+      "field": "Costing_Override_Criteria_Position_Restriction_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Restrictions Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+      "field": "Costing_Override_Criteria_Position_Restriction_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Instead of specifying individual selection criteria, this option returns all existing Worker-based Costing Allocation Overrides.",
+      "field": "Include_All_Worker_Costing_Allocations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Instead of specifying individual selection criteria, this option returns all existing Position Restrictions-based Costing Allocation Overrides.",
+      "field": "Include_All_Position_Restrictions_Costing_Allocations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Instructs the service to return only the single currently-effective Costing Override date range for each high-level costing criteria combination (Worker/Position/Earning).",
+      "field": "Include_Only_Current_Costing_Override_Interval_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Costing_Override_Criteria_Position_Restriction_Reference_Position_ID_Prompt": {
+        "description": "Position Restrictions Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Costing_Override_Criteria_Position_Restriction_Reference_WID_Prompt": {
+        "description": "Position Restrictions Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Costing_Override_Criteria_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Costing_Override_Criteria_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Costing_Override_Criteria_Worker_Reference_WID_Prompt": {
+        "description": "Worker Reference as primary criteria identifying individual Costing Allocation Override to be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earning_Reference_Earning_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earning_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earning_Reference_Workday_Earning_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_All_Position_Restrictions_Costing_Allocations_Prompt": {
+        "description": "Instead of specifying individual selection criteria, this option returns all existing Position Restrictions-based Costing Allocation Overrides.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_All_Worker_Costing_Allocations_Prompt": {
+        "description": "Instead of specifying individual selection criteria, this option returns all existing Worker-based Costing Allocation Overrides.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Only_Current_Costing_Override_Interval_Prompt": {
+        "description": "Instructs the service to return only the single currently-effective Costing Override date range for each high-level costing criteria combination (Worker/Position/Earning).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Restrictions_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Restrictions_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Costing_Allocation_Interval_Data": {
+        "description": "Costing Allocation Data effective over a specified date range.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

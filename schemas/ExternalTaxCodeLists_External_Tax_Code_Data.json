@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalTaxCodeLists_External_Tax_Code_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExternalTaxCodeList_External_Tax_Code_List_Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for External Tax Code",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Tax Code Name",
+      "field": "External_Tax_Code_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Tax Code Description",
+      "field": "External_Tax_Code_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Tax Code Subclassification Data",
+      "field": "External_Tax_Code_Subclassification_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The In Use field is read only.",
+      "field": "In_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ExternalTaxCodeList_External_Tax_Code_List_Country_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Tax_Code_Description": {
+        "description": "External Tax Code Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Tax_Code_Name": {
+        "description": "External Tax Code Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Tax_Code_Subclassification_Data": {
+        "description": "External Tax Code Subclassification Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is the unique identifier for External Tax Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "In_Use": {
+        "description": "The In Use field is read only.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WithholdingTaxItemGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Transaction Tax Items Group element content.",
+      "field": "Tax_Items_Group_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Item Group Name element content.",
+      "field": "Tax_Item_Group_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Items_Group_Type_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Items_Group_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Descriptor for Tax Items Group Data element content.",
+      "field": "Item_Descriptor_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Item_Descriptor_Reference": {
+        "description": "Item Descriptor for Tax Items Group Data element content.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Item_Group_Name": {
+        "description": "Tax Item Group Name element content.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Items_Group_Data_ID": {
+        "description": "ID for Transaction Tax Items Group element content.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Items_Group_Type_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Items_Group_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

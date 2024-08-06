@@ -1,0 +1,510 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Gifts",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID. This is a unique identifier for Gift.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate that Gift is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will Submit Gift.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name for a Gift. Must be unique.",
+      "field": "Gift_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date Gift Established, Optional",
+      "field": "Date_Gift_Established",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Gift ID in the Gift Name.",
+      "field": "Include_Gift_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternative Name, Optional",
+      "field": "Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Classification_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Classification_Reference_Gift_Classification_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Reference_Investment_Pool_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Gift Responsible Organization.",
+      "field": "Gift_Responsible_Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Type_Reference_Gift_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Gift Purpose.",
+      "field": "Gift_Purpose_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approval_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approval_Level_Reference_Approval_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Origination_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Origination_Reference_Origination_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true means the Administrative Free Applies to a Gift.",
+      "field": "Administrative_Fee_Applies",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Purchase Worktags.",
+      "field": "Purchase_Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Reinvestment Worktags.",
+      "field": "Reinvestment_Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Adjustment Worktags",
+      "field": "Adjustment_Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true indicates Mandatory Reinvestment.",
+      "field": "Mandatory_Reinvestment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": " Reinvest Balance",
+      "field": "Pay_Flat_Amount___Reinvest_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reinvestment Amount for a Gift.",
+      "field": "Reinvestment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reinvestment Percent for a Gift.",
+      "field": "Reinvestment_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reinvest Until Principal Amount for a Gift.",
+      "field": "Until_Principal_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Reinvest Until Reinvestment Date for a Gift.",
+      "field": "Until_Reinvestment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Income Distribution Amount Rule Data",
+      "field": "Flat_Amount_Rule_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Income Distribution Percent Rule Data",
+      "field": "Percent_Rule_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Gift Restriction Data including: Primary Purpose Reference, Gift Purpose Reference, Honorarium Type Reference, Release Level Reference, Matching Requirement, Allow Underwater Spending, Yield Only, Donor Restriction Excerpt, Restriction Description, Nature of Restriction, Restricted By Value Reference. Required Fields: None",
+      "field": "Gift_Restriction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The details of a resume (resume, name, comments).",
+      "field": "Secured_Attachment",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Adjustment_Worktag_Reference": {
+        "description": "Reference to Adjustment Worktags",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Administrative_Fee_Applies": {
+        "description": "Boolean Flag which when set to true means the Administrative Free Applies to a Gift.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Alternate_Name": {
+        "description": "Alternative Name, Optional",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approval_Level_Reference_Approval_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approval_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Gift_Established": {
+        "description": "Date Gift Established, Optional",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Flat_Amount_Rule_Data": {
+        "description": "Income Distribution Amount Rule Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Classification_Reference_Gift_Classification_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Classification_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Name": {
+        "description": "Name for a Gift. Must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Purpose_Reference": {
+        "description": "Reference to an existing Gift Purpose.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Responsible_Organization_Reference": {
+        "description": "Reference to an existing Gift Responsible Organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Restriction_Data": {
+        "description": "Gift Restriction Data including: Primary Purpose Reference, Gift Purpose Reference, Honorarium Type Reference, Release Level Reference, Matching Requirement, Allow Underwater Spending, Yield Only, Donor Restriction Excerpt, Restriction Description, Nature of Restriction, Restricted By Value Reference. Required Fields: None",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Type_Reference_Gift_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "ID. This is a unique identifier for Gift.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to indicate that Gift is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Gift_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Gift ID in the Gift Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Investment_Pool_Reference_Investment_Pool_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandatory_Reinvestment": {
+        "description": "Boolean Flag which when set to true indicates Mandatory Reinvestment.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Origination_Reference_Origination_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Origination_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Flat_Amount___Reinvest_Balance": {
+        "description": " Reinvest Balance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Percent_Rule_Data": {
+        "description": "Income Distribution Percent Rule Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Worktag_Reference": {
+        "description": "Reference to Purchase Worktags.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reinvestment_Amount": {
+        "description": "Reinvestment Amount for a Gift.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Reinvestment_Percent": {
+        "description": "Reinvestment Percent for a Gift.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Reinvestment_Worktag_Reference": {
+        "description": "Reference to Reinvestment Worktags.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Secured_Attachment": {
+        "description": "The details of a resume (resume, name, comments).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Boolean flag which when set to true will Submit Gift.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Until_Principal_Amount": {
+        "description": "Reinvest Until Principal Amount for a Gift.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Until_Reinvestment_Date": {
+        "description": "Reinvest Until Reinvestment Date for a Gift.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

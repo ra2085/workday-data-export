@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JournalInsightsFeedback_Journal_Line_Error_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "JournalInsightsFeedback_Journal_Insights_Feedback_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a journal line",
+      "field": "Journal_Line_Workday_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+      "field": "Journal_Insights_Feedback_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+      "field": "Journal_Insights_Feedback_Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Search for Journal Insights Feedback on or after this date.",
+      "field": "From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Search for Journal Insights Feedback on or before this date.",
+      "field": "To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Date_Prompt": {
+        "description": "Search for Journal Insights Feedback on or after this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "JournalInsightsFeedback_Journal_Insights_Feedback_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt": {
+        "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Event_Reference_WID_Prompt": {
+        "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Line_Workday_ID": {
+        "description": "Reference to a journal line",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_Date_Prompt": {
+        "description": "Search for Journal Insights Feedback on or before this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

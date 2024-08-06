@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdHocPayees",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee ID",
+      "field": "Ad_Hoc_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee Name",
+      "field": "Ad_Hoc_Payee_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee Phonetic Name",
+      "field": "Ad_Hoc_Payee_Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Ad Hoc Payee is Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Ad Hoc Payee is Single Use",
+      "field": "Single_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax form used by the appropriate taxing authority for the Payee.",
+      "field": "Tax_Authority_Form_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "TIN_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "TIN_Type_Reference_Taxpayer_ID_Number_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID for Ad Hoc Payee",
+      "field": "Tax_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "This is the date the Tax Document (e.g. W-9, etc) was received.",
+      "field": "Tax_Document_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+      "field": "Bank_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Alternate Name Data",
+      "field": "Payee_Alternate_Name_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Payee Name",
+      "field": "Ad_Hoc_Payee_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Ad_Hoc_Payee_ID": {
+        "description": "Ad Hoc Payee ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Payee_Name": {
+        "description": "Ad Hoc Payee Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Payee_Name_Prompt": {
+        "description": "Ad Hoc Payee Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Payee_Phonetic_Name": {
+        "description": "Ad Hoc Payee Phonetic Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Data": {
+        "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Ad Hoc Payee is Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payee_Alternate_Name_Data": {
+        "description": "Business Entity Alternate Name Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Single_Use": {
+        "description": "Ad Hoc Payee is Single Use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "TIN_Type_Reference_Taxpayer_ID_Number_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TIN_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Form_Type_Reference": {
+        "description": "Tax form used by the appropriate taxing authority for the Payee.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Document_Date": {
+        "description": "This is the date the Tax Document (e.g. W-9, etc) was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID": {
+        "description": "Tax ID for Ad Hoc Payee",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

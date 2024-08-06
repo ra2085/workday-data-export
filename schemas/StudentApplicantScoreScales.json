@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentApplicantScoreScales",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Student Applicant Score Scale.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name for the Student Applicant Score Scale.",
+      "field": "Student_Applicant_Score_Scale_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+      "field": "Academic_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is Student Applicant Score Scale Inactive",
+      "field": "Student_Applicant_Score_Scale_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Student Applicant Score Rating Data.",
+      "field": "Student_Applicant_Score_Rating_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Level_Reference": {
+        "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The reference ID for the Student Applicant Score Scale.",
+        "type": [
+          "string"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Rating_Data": {
+        "description": "Element Container for Student Applicant Score Rating Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Scale_Inactive": {
+        "description": "Is Student Applicant Score Scale Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Scale_Name": {
+        "description": "The Name for the Student Applicant Score Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

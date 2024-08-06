@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyAssetBookRestrictions_Company_Asset_Book_Restriction_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CompanyAssetBookRestriction_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating the referenced Company Asset Book Restriction should be deleted from the Company.",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique reference identifier to the set of Company Asset Book Restrictions.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Used to define the order of the rules (ascending).",
+      "field": "Company_Asset_Book_Restriction_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Spend Categories or Hierarchies for a Company Asset Book Restriction.",
+      "field": "Spend_Category_or_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Supplier Contract Types for a Company Asset Book Restriction.",
+      "field": "Supplier_Contract_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Lease Accounting Methods for a Company Asset Book Restriction.",
+      "field": "Lease_Accounting_Method_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the restricted books for a company asset book restriction",
+      "field": "Restrict_to_Asset_Book_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Asset_Book_Override_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Asset_Book_Override_Reference_Asset_Book_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company reference for company asset book restriction. Supports multiple values.",
+      "field": "Companies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company reference for company asset book restriction. Supports multiple values.",
+      "field": "Companies_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company reference for company asset book restriction. Supports multiple values.",
+      "field": "Companies_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Companies_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company reference for company asset book restriction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company reference for company asset book restriction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_WID_Prompt": {
+        "description": "Company reference for company asset book restriction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CompanyAssetBookRestriction_Company_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Asset_Book_Restriction_Order": {
+        "description": "Used to define the order of the rules (ascending).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "Flag indicating the referenced Company Asset Book Restriction should be deleted from the Company.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is a unique reference identifier to the set of Company Asset Book Restrictions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Accounting_Method_Reference": {
+        "description": "Reference to Lease Accounting Methods for a Company Asset Book Restriction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Asset_Book_Override_Reference_Asset_Book_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Asset_Book_Override_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restrict_to_Asset_Book_Reference": {
+        "description": "Reference to the restricted books for a company asset book restriction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_or_Hierarchy_Reference": {
+        "description": "Reference to Spend Categories or Hierarchies for a Company Asset Book Restriction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Type_Reference": {
+        "description": "Reference to Supplier Contract Types for a Company Asset Book Restriction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

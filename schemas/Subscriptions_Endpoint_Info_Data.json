@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Subscriptions_Endpoint_Info_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Subscription_Subscription_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Web_Service_API_Version_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Web_Service_API_Version_Reference_Version",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use the endpoint defined by the Integration",
+      "field": "Use_Deployed_Service_Endpoint",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Use this specific endpoint",
+      "field": "Subscriber_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying User Name.",
+      "field": "Subscription_User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Password.",
+      "field": "Subscription_Password",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use to disable sending notifications to the external system.",
+      "field": "Disable_Endpoint",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for an OMS Environment reference",
+      "field": "OMS_Environment_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration System Reference",
+      "field": "Integration_System_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration System Reference",
+      "field": "Integration_System_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Disable_Endpoint": {
+        "description": "Use to disable sending notifications to the external system.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Integration_System_ID_Prompt": {
+        "description": "Integration System Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_WID_Prompt": {
+        "description": "Integration System Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OMS_Environment_Reference": {
+        "description": "Unique identifier for an OMS Environment reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subscriber_URL": {
+        "description": "Use this specific endpoint",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subscription_Password": {
+        "description": "Text attribute identifying Password.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subscription_Subscription_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subscription_User_Name": {
+        "description": "Text attribute identifying User Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Deployed_Service_Endpoint": {
+        "description": "Use the endpoint defined by the Integration",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Web_Service_API_Version_Reference_Version": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Service_API_Version_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

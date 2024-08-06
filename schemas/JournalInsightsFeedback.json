@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JournalInsightsFeedback",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Insights_Feedback_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Insights_Feedback_Reference_Journal_Insights_Feedback_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on which feedback was submitted, for reporting",
+      "field": "Feedback_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Journal Line Error Data",
+      "field": "Journal_Line_Error_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+      "field": "Journal_Insights_Feedback_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+      "field": "Journal_Insights_Feedback_Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Search for Journal Insights Feedback on or after this date.",
+      "field": "From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Search for Journal Insights Feedback on or before this date.",
+      "field": "To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Feedback_Date": {
+        "description": "The date on which feedback was submitted, for reporting",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Date_Prompt": {
+        "description": "Search for Journal Insights Feedback on or after this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt": {
+        "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Event_Reference_WID_Prompt": {
+        "description": "References to Journal Insights Feedback Events to find Journal Insights Feedback by event.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Reference_Journal_Insights_Feedback_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Insights_Feedback_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Journal_Line_Error_Data": {
+        "description": "Journal Line Error Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "To_Date_Prompt": {
+        "description": "Search for Journal Insights Feedback on or before this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

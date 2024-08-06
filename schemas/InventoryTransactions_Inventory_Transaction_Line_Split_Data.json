@@ -1,0 +1,420 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryTransactions_Inventory_Transaction_Line_Split_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InventoryTransaction_Inventory_Transaction_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount for the Inventory Transaction Line Splits.",
+      "field": "Currency_Amount_for_Line_Split",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_for_Line_Split_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_for_Line_Split_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_for_Line_Split_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The memo for Inventory Transaction Split Lines.",
+      "field": "Line_Split_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The worktags for the Inventory Transaction Line Splits.",
+      "field": "Audited_Accounting_Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference associated to Inventory Transaction",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference associated to Inventory Transaction",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference associated to Inventory Transaction",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Inventory Site.  Assigns the Site for the transaction and derives the Company.",
+      "field": "Inventory_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Inventory Site.  Assigns the Site for the transaction and derives the Company.",
+      "field": "Inventory_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stocking Location",
+      "field": "Stocking_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stocking Location",
+      "field": "Stocking_Location_Reference_Inventory_Storage_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stocking Location",
+      "field": "Stocking_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Categories associated to Inventory Transaction. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Spend Categories associated to Inventory Transaction. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Transaction Type associated with the Inventory Transaction. Supports multiple values.",
+      "field": "Inventory_Transaction_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Transaction Type associated with the Inventory Transaction. Supports multiple values.",
+      "field": "Inventory_Transaction_Type_Reference_Inventory_Transaction_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Items associated with the Inventory Transaction",
+      "field": "Inventory_Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Items associated with the Inventory Transaction",
+      "field": "Inventory_Item_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Inventory Transaction Date On or After",
+      "field": "Transaction_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Inventory Transaction Date On or Before",
+      "field": "Transaction_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+      "field": "Issued_To_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+      "field": "Issued_To_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+      "field": "Issued_To_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+      "field": "Requester_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+      "field": "Requester_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+      "field": "Requester_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External ID uniquely identifying transactions.",
+      "field": "External_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that this receipt is for a shipment of goods issued from a third party warehouse.  Designating a receipt as a Third Party Warehouse Receipt enables you to supply a receipt unit cost to override the item cost on the order with the cost of goods in the third party warehouse.",
+      "field": "Third_Party_Warehouse_Receipt_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Audited_Accounting_Worktags_Reference": {
+        "description": "The worktags for the Inventory Transaction Line Splits.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference associated to Inventory Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference associated to Inventory Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference associated to Inventory Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Amount_for_Line_Split": {
+        "description": "The amount for the Inventory Transaction Line Splits.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_for_Line_Split_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_for_Line_Split_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_for_Line_Split_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_ID_Prompt": {
+        "description": "External ID uniquely identifying transactions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "InventoryTransaction_Inventory_Transaction_Type_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Item_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Inventory Items associated with the Inventory Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Item_Reference_WID_Prompt": {
+        "description": "Inventory Items associated with the Inventory Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID_Prompt": {
+        "description": "Reference to an existing Inventory Site.  Assigns the Site for the transaction and derives the Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID_Prompt": {
+        "description": "Reference to an existing Inventory Site.  Assigns the Site for the transaction and derives the Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Transaction_Type_Reference_Inventory_Transaction_Type_ID_Prompt": {
+        "description": "Inventory Transaction Type associated with the Inventory Transaction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Transaction_Type_Reference_WID_Prompt": {
+        "description": "Inventory Transaction Type associated with the Inventory Transaction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Reference_Employee_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Reference_WID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was issued to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Split_Memo": {
+        "description": "The memo for Inventory Transaction Split Lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Employee_ID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_WID_Prompt": {
+        "description": "Reference(s) to existing worker(s) that the Inventory Transaction was requested by.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "Spend Categories associated to Inventory Transaction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "Spend Categories associated to Inventory Transaction. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stocking_Location_Reference_Inventory_Storage_Location_ID_Prompt": {
+        "description": "Stocking Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stocking_Location_Reference_Location_ID_Prompt": {
+        "description": "Stocking Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stocking_Location_Reference_WID_Prompt": {
+        "description": "Stocking Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Third_Party_Warehouse_Receipt_Prompt": {
+        "description": "Indicates that this receipt is for a shipment of goods issued from a third party warehouse.  Designating a receipt as a Third Party Warehouse Receipt enables you to supply a receipt unit cost to override the item cost on the order with the cost of goods in the third party warehouse.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Transaction_Date_On_or_After_Prompt": {
+        "description": "Inventory Transaction Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date_On_or_Before_Prompt": {
+        "description": "Inventory Transaction Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

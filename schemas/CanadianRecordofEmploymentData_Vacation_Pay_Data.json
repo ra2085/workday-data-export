@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadianRecordofEmploymentData_Vacation_Pay_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CanadianRecordofEmploymentData_ROE_Data_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Vacation Pay Code",
+      "field": "Vacation_Pay_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Vacation Pay Start Date",
+      "field": "Vacation_Pay_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Vacation Pay End Date",
+      "field": "Vacation_Pay_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Vacation Pay Amount",
+      "field": "Vacation_Pay_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CanadianRecordofEmploymentData_ROE_Data_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vacation_Pay_Amount": {
+        "description": "Vacation Pay Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Vacation_Pay_Code": {
+        "description": "Vacation Pay Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vacation_Pay_End_Date": {
+        "description": "Vacation Pay End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vacation_Pay_Start_Date": {
+        "description": "Vacation Pay Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

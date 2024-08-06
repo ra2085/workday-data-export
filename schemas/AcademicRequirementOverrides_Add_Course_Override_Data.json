@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicRequirementOverrides_Add_Course_Override_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AcademicRequirementOverride_Academic_Requirement_Override_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The course(s) to be added.",
+      "field": "Course_To_Add_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference",
+      "field": "Student_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference",
+      "field": "Student_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference",
+      "field": "Student_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference",
+      "field": "Student_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AcademicRequirementOverride_Academic_Requirement_Override_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_To_Add_Reference": {
+        "description": "The course(s) to be added.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID_Prompt": {
+        "description": "Student Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID_Prompt": {
+        "description": "Student Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Student Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID_Prompt": {
+        "description": "Student Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

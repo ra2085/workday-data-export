@@ -1,0 +1,289 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyOrganizations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phonetic Name",
+      "field": "Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_Code_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+      "field": "Organization_Active",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+      "field": "Availability_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+      "field": "Integration_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Replace All Company Hierarchies assigned to target Company with these Hierarchies",
+      "field": "Organization_Container_To_Replace_All_Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify Company Hierarchies to add to the target company.",
+      "field": "Organization_Container_to_Add_Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify Company Hierarchies to remove from the target company.",
+      "field": "Organization_Container_To_Delete_Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Availability_Date": {
+        "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_URL": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Include_Organization_Code_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_ID_in_Name": {
+        "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_ID_Data": {
+        "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Active": {
+        "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Code": {
+        "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Container_To_Delete_Organization_Container_Reference": {
+        "description": "Specify Company Hierarchies to remove from the target company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Container_To_Replace_All_Organization_Container_Reference": {
+        "description": "Replace All Company Hierarchies assigned to target Company with these Hierarchies",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Container_to_Add_Organization_Container_Reference": {
+        "description": "Specify Company Hierarchies to add to the target company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name": {
+        "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phonetic_Name": {
+        "description": "Phonetic Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

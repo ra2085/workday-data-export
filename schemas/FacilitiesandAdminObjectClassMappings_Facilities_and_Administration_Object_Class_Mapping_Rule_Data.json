@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FacilitiesandAdminObjectClassMappings_Facilities_and_Administration_Object_Class_Mapping_Rule_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Facilities and Administration Object Class Mapping Unique Identifier",
+      "field": "FacilitiesandAdministrationObjectClassMapping_Facilities_and_Administration_Object_Class_Mapping_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Object_Class_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Object_Class_Reference_Object_Class_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating if the Facilities and Admin Object Class Mapping Rule is to be included in the response",
+      "field": "Default_Object_Class",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains all References and Attributes to represent a complete Facilities and Administration Object Class Mapping Rule Line",
+      "field": "Facilities_and_Administration_Object_Class_Mapping_Rule_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Default_Object_Class": {
+        "description": "Flag indicating if the Facilities and Admin Object Class Mapping Rule is to be included in the response",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Object_Class_Mapping_Rule_Line_Data": {
+        "description": "Contains all References and Attributes to represent a complete Facilities and Administration Object Class Mapping Rule Line",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FacilitiesandAdministrationObjectClassMapping_Facilities_and_Administration_Object_Class_Mapping_Reference_ID": {
+        "description": "This is the Facilities and Administration Object Class Mapping Unique Identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Object_Class_Reference_Object_Class_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Object_Class_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

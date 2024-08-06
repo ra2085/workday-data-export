@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LegalAuthorities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Authority_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Legal_Authority_Reference_Legal_Authority_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The user specified ID of the Legal Authority reference",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Legal Authority Code attribute for the Legal Authority Reference",
+      "field": "Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "OPM Explanation attribute for the Legal Authority Reference",
+      "field": "Explanation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "PAR Variable Data element",
+      "field": "Parameter_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Nature of Action (All) reference for the Legal Authority Reference",
+      "field": "Nature_of_Action_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive attribute for the Legal Authority Reference",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Code": {
+        "description": "Legal Authority Code attribute for the Legal Authority Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Explanation": {
+        "description": "OPM Explanation attribute for the Legal Authority Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The user specified ID of the Legal Authority reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive attribute for the Legal Authority Reference",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Legal_Authority_Reference_Legal_Authority_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Nature_of_Action_Reference": {
+        "description": "Nature of Action (All) reference for the Legal Authority Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parameter_Data": {
+        "description": "PAR Variable Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

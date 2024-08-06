@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceWorkQueueTagAssignmentRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for supplier invoice work queue tag assignment rule.",
+      "field": "Supplier_Invoice_Work_Queue_Tag_Assignment_Rule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ordering used for Supplier Invoice Work Queue Tag Assignment Rule. If this is empty, the Supplier Invoice Work Queue Tag Assignment Rule will be added to the top.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Work queue tags used for Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "Supplier_Invoice_Work_Queue_Tag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payment Terms used for supplier invoice work queue tag assignment rule.",
+      "field": "Payment_Terms_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier used for Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "Supplier_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant Supplier Categories for Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "Supplier_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant Supplier Group(s) for Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "Supplier_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Supplier Invoice Sources for the Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "External_Source_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if Supplier Invoice Work Queue Tag Assignment Rule pertains to purchase order invoices only.",
+      "field": "PO_Invoice",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if Supplier Invoice Work Queue Tag Assignment Rule pertains to non-purchase order invoices.",
+      "field": "Non_PO_Invoice",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Greater than amount for supplier invoice work queue tag assignment rule.",
+      "field": "Greater_Than_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant currencies pertaining to Supplier Invoice Work Queue Tag Assignment Rule.",
+      "field": "Currency_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Currency_Reference": {
+        "description": "Relevant currencies pertaining to Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Source_Reference": {
+        "description": "External Supplier Invoice Sources for the Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Greater_Than_Amount": {
+        "description": "Greater than amount for supplier invoice work queue tag assignment rule.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Non_PO_Invoice": {
+        "description": "True if Supplier Invoice Work Queue Tag Assignment Rule pertains to non-purchase order invoices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Ordering used for Supplier Invoice Work Queue Tag Assignment Rule. If this is empty, the Supplier Invoice Work Queue Tag Assignment Rule will be added to the top.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PO_Invoice": {
+        "description": "True if Supplier Invoice Work Queue Tag Assignment Rule pertains to purchase order invoices only.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference": {
+        "description": "Payment Terms used for supplier invoice work queue tag assignment rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Category_Reference": {
+        "description": "Relevant Supplier Categories for Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Group_Reference": {
+        "description": "Relevant Supplier Group(s) for Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Work_Queue_Tag_Assignment_Rule_Reference_ID": {
+        "description": "ID for supplier invoice work queue tag assignment rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Work_Queue_Tag_Reference": {
+        "description": "Work queue tags used for Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference": {
+        "description": "Supplier used for Supplier Invoice Work Queue Tag Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

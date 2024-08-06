@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardProposalLifecycleStatuses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Proposal Lifecycle Status Reference ID. This is the Award Proposal Lifecycle Status Unique Identifier.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Award Proposal Lifecycle Status Name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Proposal Lifecycle Status Inactive flag.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Award Proposal Lifecycle Status Reference ID. This is the Award Proposal Lifecycle Status Unique Identifier.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "The Award Proposal Lifecycle Status Inactive flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Award Proposal Lifecycle Status Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

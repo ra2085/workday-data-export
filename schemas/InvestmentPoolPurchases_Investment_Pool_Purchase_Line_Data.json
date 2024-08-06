@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvestmentPoolPurchases_Investment_Pool_Purchase_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InvestmentPoolPurchase_Investment_Pool_Purchase_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Donor_Contribution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Donor_Contribution_Reference_Donor_Contribution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Override Default Unit Price is set, the line Purchase Date and Unit Price overrides the default values from the header.",
+      "field": "Override_Default_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Purchase Date determines the unit price to use on the line by selecting the Investment Pool Valuation for that date.",
+      "field": "Purchase_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "If provided, the line Unit Price overrides the unit price selected by the line Purchase Date.",
+      "field": "Unit_Price",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Donor_Contribution_Reference_Donor_Contribution_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Donor_Contribution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "InvestmentPoolPurchase_Investment_Pool_Purchase_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Default_Unit_Price": {
+        "description": "If Override Default Unit Price is set, the line Purchase Date and Unit Price overrides the default values from the header.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Purchase_Date": {
+        "description": "Purchase Date determines the unit price to use on the line by selecting the Investment Pool Valuation for that date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Price": {
+        "description": "If provided, the line Unit Price overrides the unit price selected by the line Purchase Date.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

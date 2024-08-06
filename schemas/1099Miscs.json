@@ -1,0 +1,419 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Miscs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Ad_hoc_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Internal_Service_Provider_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Internal_Service_Provider_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Investor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Miscellaneous_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payee_Reference_Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payee Name",
+      "field": "Print_Formatted_IRS_1099_Payee_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Doing Business As Alternate Name for the Payee",
+      "field": "Doing_Business_As_Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Used in 1099 two-transaction correction. Set to True to print 0 amounts.",
+      "field": "Two_Transaction_Correction_With_Zeros",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates two-transaction correction for e-filing",
+      "field": "Efile_Two_Transaction_Correction_Row",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Reference to an existing Calendar Year",
+      "field": "Calendar_Year",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Corrected Return Type for 1099 Misc",
+      "field": "Corrected_Return_Type_for_1099_Misc",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID Reference.",
+      "field": "Tax_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Taxpayer Identification Number Type",
+      "field": "TIN_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If the Payee's address is non-USA.",
+      "field": "Foreign_Entity_Indicator",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For 1099 Reporting",
+      "field": "FATCA",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payee Account Number",
+      "field": "Account_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the non-state B record prints in the final 1099 output. Set this field to true only if the total of the state income amounts across all the 1099 categories equals the total of the federal income amounts across all the 1099 categories for the Payee.",
+      "field": "Exclude_Federal_B_Record",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Payee_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all 1099 Misc Box Data",
+      "field": "IRS_1099_Misc_Box_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all 1099 MISC State Box Data",
+      "field": "IRS_1099_Misc_State_Box_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all 1099 Misc Replace Data.",
+      "field": "IRS_1099_Misc_Replacement__Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing 1099 Electronic Filing Run",
+      "field": "IRS_1099_Electronic_Filing_Run_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing 1099 Electronic Filing Run",
+      "field": "IRS_1099_Electronic_Filing_Run_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Number": {
+        "description": "Payee Account Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calendar_Year": {
+        "description": "Reference to an existing Calendar Year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Corrected_Return_Type_for_1099_Misc": {
+        "description": "Corrected Return Type for 1099 Misc",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Doing_Business_As_Alternate_Name": {
+        "description": "Doing Business As Alternate Name for the Payee",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Efile_Two_Transaction_Correction_Row": {
+        "description": "Indicates two-transaction correction for e-filing",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Federal_B_Record": {
+        "description": "If true, the non-state B record prints in the final 1099 output. Set this field to true only if the total of the state income amounts across all the 1099 categories equals the total of the federal income amounts across all the 1099 categories for the Payee.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "FATCA": {
+        "description": "For 1099 Reporting",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Foreign_Entity_Indicator": {
+        "description": "If the Payee's address is non-USA.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "IRS_1099_Electronic_Filing_Run_Reference_IID_Prompt": {
+        "description": "Reference to an existing 1099 Electronic Filing Run",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Electronic_Filing_Run_Reference_WID_Prompt": {
+        "description": "Reference to an existing 1099 Electronic Filing Run",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Misc_Box_Data": {
+        "description": "Element containing all 1099 Misc Box Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Misc_Replacement__Data": {
+        "description": "Element containing all 1099 Misc Replace Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IRS_1099_Misc_State_Box_Data": {
+        "description": "Element containing all 1099 MISC State Box Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Ad_hoc_Payee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_External_Sourceable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Internal_Service_Provider_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Internal_Service_Provider_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Investor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Miscellaneous_Payee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Supplier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Supplier_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Print_Formatted_IRS_1099_Payee_Name": {
+        "description": "Payee Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TIN_Type": {
+        "description": "Taxpayer Identification Number Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID": {
+        "description": "Tax ID Reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Two_Transaction_Correction_With_Zeros": {
+        "description": "Used in 1099 two-transaction correction. Set to True to print 0 amounts.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

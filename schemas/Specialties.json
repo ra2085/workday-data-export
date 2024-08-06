@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Specialties",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of a Specialty.  The name combined with the code must be unique.",
+      "field": "Specialty_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the specialty",
+      "field": "Specialty_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An alphanumeric identifier for the Specialty.  The code combined with the name must be unique.",
+      "field": "Specialty_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID field (Specialty_ID)",
+      "field": "Specialty_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true, prevents the specialty from being used during ad-hoc certification creation.",
+      "field": "Restrict_Specialty_Usage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the Specialty is inactive.  If inactive, it cannot be added to a certification.",
+      "field": "Specialty_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A URL associated with the Specialty",
+      "field": "Specialty_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provides references to each Subspecialty associated with the Specialty.",
+      "field": "Subspecialty_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allows users to select Specialties based on Name.",
+      "field": "Specialty_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allows users to select Specialties based on Code.",
+      "field": "Specialty_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allows users to select Specialties based on Active/Inactive status.",
+      "field": "Specialty_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Restrict_Specialty_Usage": {
+        "description": "When true, prevents the specialty from being used during ad-hoc certification creation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Specialty_Code": {
+        "description": "An alphanumeric identifier for the Specialty.  The code combined with the name must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_Code_Prompt": {
+        "description": "Allows users to select Specialties based on Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_Description": {
+        "description": "The description of the specialty",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_ID": {
+        "description": "ID field (Specialty_ID)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_Inactive": {
+        "description": "Indicates if the Specialty is inactive.  If inactive, it cannot be added to a certification.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Specialty_Inactive_Prompt": {
+        "description": "Allows users to select Specialties based on Active/Inactive status.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Specialty_Name": {
+        "description": "The name of a Specialty.  The name combined with the code must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_Name_Prompt": {
+        "description": "Allows users to select Specialties based on Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_URL": {
+        "description": "A URL associated with the Specialty",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_Reference": {
+        "description": "Provides references to each Subspecialty associated with the Specialty.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

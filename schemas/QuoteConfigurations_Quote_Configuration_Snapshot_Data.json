@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "QuoteConfigurations_Quote_Configuration_Snapshot_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Quote Configuration",
+      "field": "QuoteConfiguration_Quote_Configuration_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Quote Configuration Snapshot",
+      "field": "Quote_Configuration_Snapshot_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Quote_Configuration_Snapshot_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Quote_Configuration_Snapshot_Reference_Quote_Configuration_Snapshot_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Companies or Company Hierarchies for Quote Configuration Snapshot",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Type_Reference_Customer_Quote_Service_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Snapshot Effective Moment is a read-only field.",
+      "field": "Effective_Moment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description for Quote Configuration Snapshot",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element holding data for Quote Document Template",
+      "field": "Quote_Document_Template_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating if the inactive quote configurations are to be included",
+      "field": "Include_Inactive_Quote_Configurations_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference": {
+        "description": "Companies or Company Hierarchies for Quote Configuration Snapshot",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Description for Quote Configuration Snapshot",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Moment": {
+        "description": "Snapshot Effective Moment is a read-only field.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Quote_Configuration_Snapshot_Reference_Quote_Configuration_Snapshot_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Quote_Configuration_Snapshot_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Quote_Configurations_Prompt": {
+        "description": "Flag indicating if the inactive quote configurations are to be included",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "QuoteConfiguration_Quote_Configuration_Reference_ID": {
+        "description": "ID for Quote Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Configuration_Snapshot_Reference_ID": {
+        "description": "Reference ID for Quote Configuration Snapshot",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Document_Template_Data": {
+        "description": "Element holding data for Quote Document Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Type_Reference_Customer_Quote_Service_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

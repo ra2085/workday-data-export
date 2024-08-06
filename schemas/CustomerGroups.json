@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Group_Reference_Customer_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Group ID.  This is the Customer Group unique identifier",
+      "field": "Customer_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Customer Group Name",
+      "field": "Customer_Group_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Group_ID": {
+        "description": "Customer Group ID.  This is the Customer Group unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Group_Name": {
+        "description": "Free form text for a meaningful Customer Group Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Group_Reference_Customer_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

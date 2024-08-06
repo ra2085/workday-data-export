@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BudgetPoolsDONOTUSE",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organization Allocation",
+      "field": "Budget_Pool",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organization Holdback",
+      "field": "Holdback",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organizations with SubOrdinates",
+      "field": "Supervisory_Organization_and_Subordinates_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_Award_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Type_Reference_Award_Type_ID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Type_Reference_WID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Pool": {
+        "description": "Supervisory Organization Allocation",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Holdback": {
+        "description": "Supervisory Organization Holdback",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Supervisory_Organization_and_Subordinates_Prompt": {
+        "description": "Supervisory Organizations with SubOrdinates",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

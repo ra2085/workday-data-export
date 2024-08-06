@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BudgetFringeRateTables",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Table Reference ID. This is the Fringe Rate Table unique identifier.",
+      "field": "Fringe_Rate_Table_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Table Name",
+      "field": "Fringe_Rate_Table_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fringe Rate Line Data. A Fringe Rate Table can contain multiple Fringe Rate Lines.",
+      "field": "Fringe_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request a Fringe Rate Table by name",
+      "field": "Fringe_Rate_Table_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Fringe_Rate_Data": {
+        "description": "Fringe Rate Line Data. A Fringe Rate Table can contain multiple Fringe Rate Lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Table_ID": {
+        "description": "Fringe Rate Table Reference ID. This is the Fringe Rate Table unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Table_Name": {
+        "description": "Fringe Rate Table Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Rate_Table_Name_Prompt": {
+        "description": "Request a Fringe Rate Table by name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

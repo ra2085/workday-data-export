@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxApplicabilities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique identifier for Tax Applicability",
+      "field": "Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Applicability Code. Description of the applicability, such as \"Non-Taxable Sales\"",
+      "field": "Tax_Applicability_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is it taxable?",
+      "field": "Taxable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Recoverability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Recoverability_Reference_Tax_Recoverability_Object_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Tax Applicability Code. Can be a match of a partial string.",
+      "field": "Tax_Applicability_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Search by Taxable boolean",
+      "field": "Taxable_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Search by Non-Taxable boolean. You can only enter a Non-Taxable boolean criteria or a Taxable boolean, but not both.",
+      "field": "Non-Taxable_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Tax Recoverability.",
+      "field": "Tax_Recoverability_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Tax Recoverability.",
+      "field": "Tax_Recoverability_Reference_Tax_Recoverability_Object_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Non-Taxable_Prompt": {
+        "description": "Search by Non-Taxable boolean. You can only enter a Non-Taxable boolean criteria or a Taxable boolean, but not both.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Code": {
+        "description": "Tax Applicability Code. Description of the applicability, such as \"Non-Taxable Sales\"",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Code_Prompt": {
+        "description": "Search by Tax Applicability Code. Can be a match of a partial string.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_ID": {
+        "description": "This is the unique identifier for Tax Applicability",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Tax_Recoverability_Reference_Tax_Recoverability_Object_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Reference_Tax_Recoverability_Object_ID_Prompt": {
+        "description": "Search by Tax Recoverability.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Recoverability_Reference_WID_Prompt": {
+        "description": "Search by Tax Recoverability.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Taxable": {
+        "description": "Is it taxable?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Taxable_Prompt": {
+        "description": "Search by Taxable boolean",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

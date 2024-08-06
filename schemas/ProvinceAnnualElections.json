@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProvinceAnnualElections",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for the Payroll Payee Province Annual.",
+      "field": "Payroll_Payee_Province_Annual_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of the Provincial Annual Election, should be the next payment date for the worker to allow the system to correctly annualize the election for the remainder of the year.",
+      "field": "Effective_As_Of",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_State_Authority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_State_Authority_Reference_Payroll_State_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The authorized amount for costs not deducted from salary, such as childcare, alimony, or maintenance payments.",
+      "field": "Annual_Deductions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The authorized amount for costs such as medical expenses and charitable donations.",
+      "field": "Annual_Tax_Credits",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total amount the worker paid to purchase approved shares of capital stock in a labour sponsored venture capital corporation. (Not Quebec)",
+      "field": "Labour-Sponsored_Funds",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Last updated by",
+      "field": "Last_Updated",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Annual_Deductions": {
+        "description": "The authorized amount for costs not deducted from salary, such as childcare, alimony, or maintenance payments.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annual_Tax_Credits": {
+        "description": "The authorized amount for costs such as medical expenses and charitable donations.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of": {
+        "description": "The effective date of the Provincial Annual Election, should be the next payment date for the worker to allow the system to correctly annualize the election for the remainder of the year.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Labour-Sponsored_Funds": {
+        "description": "Total amount the worker paid to purchase approved shares of capital stock in a labour sponsored venture capital corporation. (Not Quebec)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Last_Updated": {
+        "description": "Last updated by",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Payee_Province_Annual_ID": {
+        "description": "ID for the Payroll Payee Province Annual.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_Authority_Reference_Payroll_State_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

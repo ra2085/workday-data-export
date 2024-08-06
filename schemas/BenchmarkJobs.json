@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BenchmarkJobs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benchmark Job ID",
+      "field": "Benchmark_Job_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Use this field to effective date your composite market data.  If you \"age\" your survey data you will use this date to load in the new effective date with the updated amounts.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive status indicator for Benchmark Job.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the benchmark job.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": " \n\nFor example, you may load market data as of 1/1/2010 but the survey data is based on 11/1/2009.",
+      "field": "Survey_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "  \n\nThe system will present an error message when the spreadsheet is loaded if one or more Job Profiles is mapped to another Benchmark Job.",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benchmark Job Composite Data",
+      "field": "Benchmark_Job_Composite_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benchmark Job Profile Data",
+      "field": "Benchmark_Profile_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Benchmark Jobs.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Benchmark_Job_Composite_Replacement_Data": {
+        "description": "Benchmark Job Composite Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benchmark_Job_ID": {
+        "description": "Benchmark Job ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benchmark_Profile_Data": {
+        "description": "Benchmark Job Profile Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Use this field to effective date your composite market data.  If you \"age\" your survey data you will use this date to load in the new effective date with the updated amounts.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive status indicator for Benchmark Job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Benchmark Jobs.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "  \n\nThe system will present an error message when the spreadsheet is loaded if one or more Job Profiles is mapped to another Benchmark Job.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the benchmark job.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Date": {
+        "description": " \n\nFor example, you may load market data as of 1/1/2010 but the survey data is based on 11/1/2009.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

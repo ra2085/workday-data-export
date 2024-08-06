@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DocumentDeliveryTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Delivery_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Delivery_Type_Reference_Document_Delivery_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Document Delivery Type.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Workday requires you to set 1 document delivery type as default and you must specify all document types available for a given delivery method.",
+      "field": "Default_Delivery_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique name for the Document Delivery Type. This field is required and must have a value.",
+      "field": "Delivery_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delivery_Method_Reference_Delivery_Method_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the Document associated with the Document Delivery Type. The document can be a Customer Invoice, Customer Statement, or Dunning Letter. This field is required and must have a value.",
+      "field": "Document_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag when set to true, prevents you from adding an inactive delivery type to a customer profile. But you can update the delivery type.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Default_Delivery_Type": {
+        "description": "Workday requires you to set 1 document delivery type as default and you must specify all document types available for a given delivery method.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Delivery_Method_Reference_Delivery_Method_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivery_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivery_Type_Name": {
+        "description": "A unique name for the Document Delivery Type. This field is required and must have a value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Delivery_Type_Reference_Document_Delivery_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Delivery_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Document_Type_Reference": {
+        "description": "The reference to the Document associated with the Document Delivery Type. The document can be a Customer Invoice, Customer Statement, or Dunning Letter. This field is required and must have a value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Document Delivery Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "A flag when set to true, prevents you from adding an inactive delivery type to a customer profile. But you can update the delivery type.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

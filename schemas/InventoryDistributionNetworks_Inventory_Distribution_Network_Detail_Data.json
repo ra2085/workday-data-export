@@ -1,0 +1,238 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryDistributionNetworks_Inventory_Distribution_Network_Detail_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InventoryDistributionNetwork_Inventory_Distribution_Network_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Inventory Distribution Network Detail",
+      "field": "Inventory_Distribution_Network_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Priority Rank Number of the Inventory Distribution Network Detail",
+      "field": "Priority",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By default Workday compares against the availability of all available inventory at the base unit of measure (UOM). When you select the option to check availability against the requested UOM, Workday only compares against the inventory in the requested unit of measure.",
+      "field": "Restrict_Availability_Check_to_Requested_UOM",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Request_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Request_Type_Reference_Stock_Request_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of your distribution network.",
+      "field": "Inventory_Distribution_Network_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The configured companies for your inventory distribution network.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The configured companies for your inventory distribution network.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The configured companies for your inventory distribution network.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean option to check the inventory availability at the inventory sites in your distribution network.",
+      "field": "Check_Inventory_Availability_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Will source to purchase order if distribution network logic does not find any site that can fulfill the request based off your configurations.",
+      "field": "Source_to_Purchase_order_if_no_fulfillment_site_is_found_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Works set to filter your inventory sites by company for your distribution network.",
+      "field": "Default_Inventory_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Works set to filter your inventory sites by company for your distribution network.",
+      "field": "Default_Inventory_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean option to mark your distribution network as inactive.",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Check_Inventory_Availability_Prompt": {
+        "description": "Boolean option to check the inventory availability at the inventory sites in your distribution network.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "The configured companies for your inventory distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "The configured companies for your inventory distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "The configured companies for your inventory distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Inventory_Site_Reference_Location_ID_Prompt": {
+        "description": "Works set to filter your inventory sites by company for your distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Inventory_Site_Reference_WID_Prompt": {
+        "description": "Works set to filter your inventory sites by company for your distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "Boolean option to mark your distribution network as inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "InventoryDistributionNetwork_Inventory_Distribution_Network_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Distribution_Network_Detail_ID": {
+        "description": "ID for Inventory Distribution Network Detail",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Distribution_Network_Name_Prompt": {
+        "description": "The name of your distribution network.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Priority": {
+        "description": "Priority Rank Number of the Inventory Distribution Network Detail",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Restrict_Availability_Check_to_Requested_UOM": {
+        "description": "By default Workday compares against the availability of all available inventory at the base unit of measure (UOM). When you select the option to check availability against the requested UOM, Workday only compares against the inventory in the requested unit of measure.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_to_Purchase_order_if_no_fulfillment_site_is_found_Prompt": {
+        "description": "Will source to purchase order if distribution network logic does not find any site that can fulfill the request based off your configurations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Stock_Request_Type_Reference_Stock_Request_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Request_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

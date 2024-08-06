@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LedgerAccountSummary",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Summary_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Summary_Reference_Ledger_Account_Summary_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger Account Summaries-Ledger Account Summaries Data",
+      "field": "Ledger_Account_Summary_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger Account Summaries-All Ledger Account Data",
+      "field": "All_Ledger_Account_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "All_Ledger_Account_Data": {
+        "description": "Ledger Account Summaries-All Ledger Account Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Summary_Data": {
+        "description": "Ledger Account Summaries-Ledger Account Summaries Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Summary_Reference_Ledger_Account_Summary_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Summary_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

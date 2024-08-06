@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TalentTags",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Configure Talent Taggable.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Set_Up_Talent_Taggable_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Set_Up_Talent_Taggable_Reference_Set_Up_Talent_Taggable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Set Up Allowed Talent Tags for the referenced Configure Talent Taggable",
+      "field": "Set_Up_Allowed_Talent_Tag_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "A unique identifier for the Configure Talent Taggable.",
+        "type": [
+          "string"
+        ]
+      },
+      "Set_Up_Allowed_Talent_Tag_Reference": {
+        "description": "Set Up Allowed Talent Tags for the referenced Configure Talent Taggable",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Set_Up_Talent_Taggable_Reference_Set_Up_Talent_Taggable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Set_Up_Talent_Taggable_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

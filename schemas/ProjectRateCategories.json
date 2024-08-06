@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectRateCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Rate_Category_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Rate_Category_Reference_Project_Rate_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference Id for Project Rate Category",
+      "field": "Project_Rate_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Rate Category Name",
+      "field": "Project_Rate_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Category Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Rate Category Member Data",
+      "field": "Project_Rate_Category_Members",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Project Category Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_ID": {
+        "description": "Reference Id for Project Rate Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Members": {
+        "description": "Project Rate Category Member Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Name": {
+        "description": "Project Rate Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Reference_Project_Rate_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Rate_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

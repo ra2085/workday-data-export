@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyInventoryAccountingOptions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company ID",
+      "field": "Company_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Excess variance is written off",
+      "field": "Excess_variance_is_written_off",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Excess variance is applied to current on-hand quantity",
+      "field": "Excess_variance_is_applied_to_current_on-hand_quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Owned by shipping site",
+      "field": "Owned_by_shipping_site",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Owned by destination site",
+      "field": "Owned_by_destination_site",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow Intercompany Issue for Company",
+      "field": "Allow_Intercompany_Issue",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Count Adjustment Date",
+      "field": "Count_Adjustment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Count Begin Date",
+      "field": "Count_Begin_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Company Inventory Accounting Options Data Allow Override of Inventory Count Accounting Date",
+      "field": "Allow_Override_of_Inventory_Count_Accounting_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Intercompany_Issue": {
+        "description": "Allow Intercompany Issue for Company",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Override_of_Inventory_Count_Accounting_Date": {
+        "description": "Company Inventory Accounting Options Data Allow Override of Inventory Count Accounting Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Company_ID": {
+        "description": "Company ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Count_Adjustment_Date": {
+        "description": "Count Adjustment Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Count_Begin_Date": {
+        "description": "Company Inventory Accounting Options Data Count Begin Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Excess_variance_is_applied_to_current_on-hand_quantity": {
+        "description": "Company Inventory Accounting Options Data Excess variance is applied to current on-hand quantity",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Excess_variance_is_written_off": {
+        "description": "Company Inventory Accounting Options Data Excess variance is written off",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Owned_by_destination_site": {
+        "description": "Company Inventory Accounting Options Data Owned by destination site",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Owned_by_shipping_site": {
+        "description": "Company Inventory Accounting Options Data Owned by shipping site",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DeferredBonusCalculations_Deferred_Bonus_Calculation_Range_Definition",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for this Deferred Bonus Calculation.",
+      "field": "DeferredBonusCalculation_Deferred_Bonus_Calculation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deferred Bonus Calculation Range Name",
+      "field": "Range_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Deferred Bonus Calculation Range Deferred To Bonus Amount",
+      "field": "Deferred_Bonus_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Deferred Bonus Calculation Range Bonus Percent Deferred",
+      "field": "Deferred_Bonus_Percent",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "DeferredBonusCalculation_Deferred_Bonus_Calculation_ID": {
+        "description": "Reference ID for this Deferred Bonus Calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deferred_Bonus_Amount": {
+        "description": "Deferred Bonus Calculation Range Deferred To Bonus Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Deferred_Bonus_Percent": {
+        "description": "Deferred Bonus Calculation Range Bonus Percent Deferred",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Range_Name": {
+        "description": "Deferred Bonus Calculation Range Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DunningLevelGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dunning_Level_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dunning_Level_Group_Reference_Dunning_Level_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The internal reference ID of the dunning level group ID",
+      "field": "Dunning_Level_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Dunning level group name",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if dunning level is created by risk score.",
+      "field": "By_Risk_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "dunning levels",
+      "field": "Dunning_Level_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing dunning level group name that the request criteria is for.",
+      "field": "Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "By_Risk_Score": {
+        "description": "Returns true if dunning level is created by risk score.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Dunning_Level_Data": {
+        "description": "dunning levels",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Group_ID": {
+        "description": "The internal reference ID of the dunning level group ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Group_Reference_Dunning_Level_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dunning_Level_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "Dunning level group name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Reference to an existing dunning level group name that the request criteria is for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

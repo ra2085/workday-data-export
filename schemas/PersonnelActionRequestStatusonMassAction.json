@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PersonnelActionRequestStatusonMassAction",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Values in this column are delivered by Workday. Updates will not be saved.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Values in this column are delivered by Workday. Updates will not be saved.",
+      "field": "Mass_Action_Initiating_Task",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If True is entered, PAR will be enabled on PAR Mass Action.",
+      "field": "Select",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Values in this column are delivered by Workday. Updates will not be saved.",
+        "type": [
+          "string"
+        ]
+      },
+      "Mass_Action_Initiating_Task": {
+        "description": "Values in this column are delivered by Workday. Updates will not be saved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Select": {
+        "description": "If True is entered, PAR will be enabled on PAR Mass Action.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

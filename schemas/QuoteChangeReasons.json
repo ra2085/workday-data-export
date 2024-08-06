@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "QuoteChangeReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier for the quote change reason.",
+      "field": "Quote_Change_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag when set to true, deletes the quote change reason.",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to a change reason. It's a required value.",
+      "field": "Change_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When the quote change reason is inactive, set the flag to true.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This is a read-only field. True if quote change reason is in use",
+      "field": "In_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating if the inactive quote change reasons are to be included",
+      "field": "Include_Inactive_Quote_Change_Reasons_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Change_Reason": {
+        "description": "The reference to a change reason. It's a required value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "A flag when set to true, deletes the quote change reason.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "In_Use": {
+        "description": "This is a read-only field. True if quote change reason is in use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "When the quote change reason is inactive, set the flag to true.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Quote_Change_Reasons_Prompt": {
+        "description": "Flag indicating if the inactive quote change reasons are to be included",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Quote_Change_Reason_ID": {
+        "description": "The unique identifier for the quote change reason.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

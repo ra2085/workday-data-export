@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceCancelReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Cancel_Reason_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Cancel_Reason_Reference_Invoice_Cancel_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference ID value of the Supplier Invoice Cancel Reason",
+      "field": "Supplier_Invoice_Cancel_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text field to specify a Supplier invoice Cancel Reason",
+      "field": "Cancel_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Reference to Inactive Field on Invoice Cancel Reason",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Cancel_Reason": {
+        "description": "Text field to specify a Supplier invoice Cancel Reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Reference to Inactive Field on Invoice Cancel Reason",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Cancel_Reason_Reference_Invoice_Cancel_Reason": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Cancel_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Supplier_Invoice_Cancel_Reason_ID": {
+        "description": "This is the reference ID value of the Supplier Invoice Cancel Reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SkillProfileCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for this Skill Profile Category.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of this Skill Profile Category.",
+      "field": "Skill_Profile_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of this Skill Profile Category.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not this Skill Profile Category can be used.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not this Skill Profile Category is currently being used.",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "A description of this Skill Profile Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for this Skill Profile Category.",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "Whether or not this Skill Profile Category is currently being used.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Whether or not this Skill Profile Category can be used.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Skill_Profile_Category_Name": {
+        "description": "The name of this Skill Profile Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

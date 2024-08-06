@@ -1,0 +1,238 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollUSAStateandLocalTaxElections_Payroll_State_Authority_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PayrollStateandLocalTaxElection_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_State_Authority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_State_Authority_Reference_Payroll_State_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "State Income Tax Elections",
+      "field": "State_Income_Tax_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date of Tax Elections",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the worker is exempt from Unemployment Insurance for this State Tax Authority",
+      "field": "Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "State County Tax Election Data",
+      "field": "Payroll_State_County_Tax_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Local City Tax Election",
+      "field": "Payroll_State_City_Tax_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Local School District Tax Election Data",
+      "field": "Payroll_State_School_District_Tax_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Election for Other State Taxes",
+      "field": "Payroll_State_Other_Tax_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Return Tax Elections effective on the date provided.  Defaults to the current system date.",
+      "field": "Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "You must provide a Company Reference. Tax Elections will be retrieved for the workers of this company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date of Tax Elections",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date_Prompt": {
+        "description": "Return Tax Elections effective on the date provided.  Defaults to the current system date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exempt": {
+        "description": "Indicates if the worker is exempt from Unemployment Insurance for this State Tax Authority",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "PayrollStateandLocalTaxElection_Worker_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_Authority_Reference_Payroll_State_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_City_Tax_Data": {
+        "description": "Local City Tax Election",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_County_Tax_Data": {
+        "description": "State County Tax Election Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_Other_Tax_Data": {
+        "description": "Tax Election for Other State Taxes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_State_School_District_Tax_Data": {
+        "description": "Local School District Tax Election Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "State_Income_Tax_Data": {
+        "description": "State Income Tax Elections",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Optional.  Provide one or more Worker References. Tax Elections will be retrieved for these workers only.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

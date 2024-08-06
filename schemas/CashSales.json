@@ -1,0 +1,758 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CashSales",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Cash Sale ID.  This is the Cash Sale unique identifier",
+      "field": "Cash_Sale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Sequence number for cash sales. To sequence cash sales, set up the ID Generator for Cash Sale in the Edit Tenant Setup - Financials task. This field is ignored in a Submit Cash Sale request.",
+      "field": "Cash_Sale_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable editing and canceling the Cash Sale inside the Workday application.   Cash Sale can only be updated from the web service",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Sponsor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Sponsor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Reference_Student_Financial_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Cash Sale Date",
+      "field": "Cash_Sale_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Type_Reference_Customer_Invoice_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "  \n\nPlease note that 'From date' and 'To Date' in the invoice header are not used to validate any dates on the invoice lines.",
+      "field": "From_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "  \n\nPlease note that 'From date' and 'To Date' in the invoice header are not used to validate any dates on the invoice lines.",
+      "field": "To_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Check Number",
+      "field": "Check_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag for Record Deposit",
+      "field": "Record_Deposit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_Bank_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a Cash Sale Reference Number.",
+      "field": "Deposit_Reference_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sequence ID for customer deposits. This is an optional value and you can set it up using the ID Generator for Customer Deposits prompt in the Edit Tenant Setup - Financials task under the Business Document Sequence IDs section or in the Edit Company ID Definitions task on the Company Specific Settings tab.",
+      "field": "Deposit_ID_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Reference_Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency Conversion Rate Data",
+      "field": "Currency_Rate_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+      "field": "Payment_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "A value that's equal to the sum of all cash sale lines excluding taxes. This is an optional field.",
+      "field": "Control_Total_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Invoice Line Data.  A Customer Invoice may have multiple lines.",
+      "field": "Cash_Sale_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Tax Details data",
+      "field": "Tax_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+      "field": "Auto_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+      "field": "Skip",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+      "field": "Discard_On_Exit_Validation_Error",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form comment regarding the business process.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element for the attachments pertaining to a Event entered through a web service.",
+      "field": "Business_Process_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date can be any date within the Pay Period.  End Date is used to derive End Period.",
+      "field": "End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date",
+      "field": "Start_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Auto_Complete": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Bank_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Attachment_Data": {
+        "description": "Element for the attachments pertaining to a Event entered through a web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cash_Sale_Date": {
+        "description": "Cash Sale Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cash_Sale_ID": {
+        "description": "Cash Sale ID.  This is the Cash Sale unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cash_Sale_Line_Replacement_Data": {
+        "description": "Customer Invoice Line Data.  A Customer Invoice may have multiple lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cash_Sale_Number": {
+        "description": "Sequence number for cash sales. To sequence cash sales, set up the ID Generator for Cash Sale in the Edit Tenant Setup - Financials task. This field is ignored in a Submit Cash Sale request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Check_Number": {
+        "description": "Check Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Free form comment regarding the business process.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Control_Total_Amount": {
+        "description": "A value that's equal to the sum of all cash sale lines excluding taxes. This is an optional field.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Rate_Override": {
+        "description": "Currency Conversion Rate Data",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_Currency_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Type_Reference_Customer_Invoice_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Student_Financial_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_ID_Reference": {
+        "description": "The sequence ID for customer deposits. This is an optional value and you can set it up using the ID Generator for Customer Deposits prompt in the Edit Tenant Setup - Financials task under the Business Document Sequence IDs section or in the Edit Company ID Definitions task on the Company Specific Settings tab.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_Reference_Number": {
+        "description": "Free form text field for a Cash Sale Reference Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Discard_On_Exit_Validation_Error": {
+        "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "End_Date_Prompt": {
+        "description": "End Date can be any date within the Pay Period.  End Date is used to derive End Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Date": {
+        "description": "  \n\nPlease note that 'From date' and 'To Date' in the invoice header are not used to validate any dates on the invoice lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Set to True to disable editing and canceling the Cash Sale inside the Workday application.   Cash Sale can only be updated from the web service",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payment_Memo": {
+        "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Record_Deposit": {
+        "description": "Boolean flag for Record Deposit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Skip": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date_Prompt": {
+        "description": "Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Code_Data": {
+        "description": "Encapsulating element containing Tax Details data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_Date": {
+        "description": "  \n\nPlease note that 'From date' and 'To Date' in the invoice header are not used to validate any dates on the invoice lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

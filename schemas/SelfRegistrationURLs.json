@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SelfRegistrationURLs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Self-Registration_URL_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Self-Registration_URL_Reference_Self-Registration_URL_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains all the request data to add or update a Self-Registration URL.",
+      "field": "Self-Registration_URL_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "URL for Self-Registration URL.",
+      "field": "URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to return only inactive URLs",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to return only active URLs",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Prompt": {
+        "description": "Select to return only active URLs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "Select to return only inactive URLs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Self-Registration_URL_Data": {
+        "description": "Contains all the request data to add or update a Self-Registration URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Self-Registration_URL_Reference_Self-Registration_URL_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Self-Registration_URL_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "URL": {
+        "description": "URL for Self-Registration URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

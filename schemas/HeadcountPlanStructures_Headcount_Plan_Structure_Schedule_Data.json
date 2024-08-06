@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HeadcountPlanStructures_Headcount_Plan_Structure_Schedule_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a Headcount Plan Structure.",
+      "field": "HeadcountPlanStructure_Headcount_Plan_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_Fiscal_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Headcount Plans using this Headcount Plan Structure will be planned by Period.",
+      "field": "Plan_by_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Summary_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Summary_Schedule_Reference_Fiscal_Summary_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Headcount Plans using this Headcount Plan Structure will be planned by Fiscal Year Duration.",
+      "field": "Plan_by_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Headcount Plans using this Headcount Plan Structure will have the duration specified by the Start/End Year and Start/End Entry Period.",
+      "field": "Custom_Entry_Period",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Custom_Entry_Period": {
+        "description": "Headcount Plans using this Headcount Plan Structure will have the duration specified by the Start/End Year and Start/End Entry Period.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_Fiscal_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Summary_Schedule_Reference_Fiscal_Summary_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Summary_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "HeadcountPlanStructure_Headcount_Plan_Structure_ID": {
+        "description": "A unique identifier for a Headcount Plan Structure.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan_by_Duration": {
+        "description": "Headcount Plans using this Headcount Plan Structure will be planned by Fiscal Year Duration.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Plan_by_Period": {
+        "description": "Headcount Plans using this Headcount Plan Structure will be planned by Period.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

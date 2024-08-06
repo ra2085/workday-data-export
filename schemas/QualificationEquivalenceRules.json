@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "QualificationEquivalenceRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for reference ID value for Qualification Equivalence Rule.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for inactive or not.",
+      "field": "Qualification_Equivalence_Rule_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Job Profiles that are related to this Qualification Equivalence Rule.",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper containing data for Condition Rule.",
+      "field": "Condition_Rule_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Condition_Rule_Data": {
+        "description": "Wrapper containing data for Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Text value for reference ID value for Qualification Equivalence Rule.",
+        "type": [
+          "string"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "Reference to Job Profiles that are related to this Qualification Equivalence Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Qualification_Equivalence_Rule_Inactive": {
+        "description": "Boolean value for inactive or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

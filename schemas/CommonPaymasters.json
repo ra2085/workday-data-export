@@ -1,0 +1,211 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CommonPaymasters",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Common_Paymaster_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Common_Paymaster_Reference_Payroll_Intercompany_Relationship_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter an ID or Workday will generate one. You'll use this ID when editing this Common Paymaster.",
+      "field": "Common_Paymaster_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Tax_Year_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Tax_Year_Reference_Calendar_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inactive_as-of_Tax_Year_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inactive_as-of_Tax_Year_Reference_Calendar_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Common_Paymaster_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Common_Paymaster_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Common_Paymaster_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The related companies in the company relationship.",
+      "field": "Related_Companies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Relationship State Configuration",
+      "field": "Company_Relationship_State_Configuration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Periodic Combined Tax Filing",
+      "field": "Periodic_Combined_Tax_Filing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Quarterly Combined Tax Filing",
+      "field": "Quarterly_Combined_Tax_Filing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select 'y' to generate a separate year-end form for each company in the company relationship.",
+      "field": "Separate_Year_End_Forms",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Common_Paymaster_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Common_Paymaster_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Common_Paymaster_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Common_Paymaster_ID": {
+        "description": "Enter an ID or Workday will generate one. You'll use this ID when editing this Common Paymaster.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Common_Paymaster_Reference_Payroll_Intercompany_Relationship_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Common_Paymaster_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Company_Relationship_State_Configuration": {
+        "description": "Company Relationship State Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive_as-of_Tax_Year_Reference_Calendar_Year_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive_as-of_Tax_Year_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Periodic_Combined_Tax_Filing": {
+        "description": "Periodic Combined Tax Filing",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Quarterly_Combined_Tax_Filing": {
+        "description": "Quarterly Combined Tax Filing",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Companies_Reference": {
+        "description": "The related companies in the company relationship.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Tax_Year_Reference_Calendar_Year_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Tax_Year_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Separate_Year_End_Forms": {
+        "description": "Select 'y' to generate a separate year-end form for each company in the company relationship.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

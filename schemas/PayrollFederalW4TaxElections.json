@@ -1,0 +1,406 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollFederalW4TaxElections",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Payee_W-4_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Payee_W-4_Reference_Payroll_Payee_Tax_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of this W-4 Tax Election.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Effective date of the W-4",
+      "field": "Effective_as_of",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Marital_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Marital_Status_Reference_Payroll_Marital_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Number of Allowances on the W-4",
+      "field": "Number_of_Allowances",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Additional Amount on the W-4",
+      "field": "Additional_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies if Multiple Jobs or Spouse Works is selected for Federal.",
+      "field": "Multiple_Jobs_or_Spouse_Works",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specifies if Total Dependent Amount is selected for Federal.",
+      "field": "Total_Dependent_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specifies if Other Income is selected for Federal.",
+      "field": "Other_Income",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specifies if Deductions is selected for Federal.",
+      "field": "Deductions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exempt Indicator on the W-4",
+      "field": "Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Nonresident Alien Indicator on the W-4",
+      "field": "Nonresident_Alien",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "New attribute, Exempt from NRA Additional Amount, added in W19. If worker is a Nonresident Alien, use this attribute to indicate whether the worker is subject to NRA Additional Amount.",
+      "field": "Exempt_from_NRA_Additional_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Lock in Letter Indicator on the W-4",
+      "field": "Lock_In_Letter",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "No Wage/No Tax Indicator on the W-4",
+      "field": "No_Wage_No_Tax",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": " \nIf no Effective As Of date specified, all tax elections will be returned.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Amount": {
+        "description": "Additional Amount on the W-4",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "If specified, only Federal W-4 Tax Elections for this Company will be returned.  If not specified, elections for each Company (that exists) will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deductions": {
+        "description": "Specifies if Deductions is selected for Federal.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": " \nIf no Effective As Of date specified, all tax elections will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_as_of": {
+        "description": "The Effective date of the W-4",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exempt": {
+        "description": "Exempt Indicator on the W-4",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exempt_from_NRA_Additional_Amount": {
+        "description": "New attribute, Exempt from NRA Additional Amount, added in W19. If worker is a Nonresident Alien, use this attribute to indicate whether the worker is subject to NRA Additional Amount.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID of this W-4 Tax Election.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lock_In_Letter": {
+        "description": "Lock in Letter Indicator on the W-4",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Marital_Status_Reference_Payroll_Marital_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Marital_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multiple_Jobs_or_Spouse_Works": {
+        "description": "Specifies if Multiple Jobs or Spouse Works is selected for Federal.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "No_Wage_No_Tax": {
+        "description": "No Wage/No Tax Indicator on the W-4",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Nonresident_Alien": {
+        "description": "Nonresident Alien Indicator on the W-4",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Number_of_Allowances": {
+        "description": "The Number of Allowances on the W-4",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Other_Income": {
+        "description": "Specifies if Other Income is selected for Federal.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payroll_Payee_W-4_Reference_Payroll_Payee_Tax_Data_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Payee_W-4_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Total_Dependent_Amount": {
+        "description": "Specifies if Total Dependent Amount is selected for Federal.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "b) Or they could do a multi on worker and get data for multiple workers at once.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

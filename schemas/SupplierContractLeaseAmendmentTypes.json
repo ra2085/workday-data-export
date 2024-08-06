@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierContractLeaseAmendmentTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the Supplier Contract Lease Amendment Type",
+      "field": "Lease_Amendment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Supplier Contract Lease Amendment Type",
+      "field": "Lease_Amendment_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the Supplier Contract Lease Amendment Type",
+      "field": "Lease_Amendment_Type_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether this type enables an extension of the lease contract end date",
+      "field": "Lease_Extension",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether this type enables non-CPI payment changes to the contract",
+      "field": "Non-CPI_Payment_Change",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether this amendment type can be selected for new amendments",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Determines whether this amendment type can be selected for new amendments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Lease_Amendment_Type_Description": {
+        "description": "Description of the Supplier Contract Lease Amendment Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Amendment_Type_ID": {
+        "description": "Reference ID for the Supplier Contract Lease Amendment Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Amendment_Type_Name": {
+        "description": "Name of the Supplier Contract Lease Amendment Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Extension": {
+        "description": "Indicates whether this type enables an extension of the lease contract end date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Non-CPI_Payment_Change": {
+        "description": "Indicates whether this type enables non-CPI payment changes to the contract",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

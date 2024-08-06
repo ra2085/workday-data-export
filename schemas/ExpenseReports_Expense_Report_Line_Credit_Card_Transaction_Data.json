@@ -1,0 +1,758 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExpenseReports_Expense_Report_Line_Credit_Card_Transaction_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExpenseReport_Expense_Report_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the expense was incurred.",
+      "field": "Expense_Report_Line_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Transaction_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Transaction_Reference_Credit_Card_Transaction_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the expense was posted.",
+      "field": "Posted_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The transaction number.",
+      "field": "Transaction_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Reference_Expense_Credit_Card_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Reference_Expense_Credit_Card_Token",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Credit_Card_Reference_Invalid_Expense_Credit_Card_Token",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total amount in the transaction currency.",
+      "field": "Transaction_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total amount not marked as personal expense in the transaction currency.",
+      "field": "Non-Personal_Transaction_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transaction_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transaction_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transaction_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency exchange rate from the transaction currency to the billing currency",
+      "field": "Currency_Exchange_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total amount in the billing currency.",
+      "field": "Billing_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total amount not marked as personal expense in the billing currency.",
+      "field": "Non-Personal_Billing_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The market code for the credit card transaction for the expense.",
+      "field": "Market_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Corporate_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Corporate_Account_Reference_Corporate_Credit_Card_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+      "field": "Expense_Payee_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The type of Expense Payee for the expense report (Applicant, Contingent Worker, or Employee).. Supports multiple values.",
+      "field": "Expense_Payee_Type_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The type of Expense Payee for the expense report (Applicant, Contingent Worker, or Employee).. Supports multiple values.",
+      "field": "Expense_Payee_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Expense Report From Date",
+      "field": "Expense_Report_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Expense Report To Date",
+      "field": "Expense_Report_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Document Number",
+      "field": "Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the payment status of the expense report (paid or unpaid)",
+      "field": "Expense_Report_Payment_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the payment status of the expense report (paid or unpaid)",
+      "field": "Expense_Report_Payment_Status_Reference_Document_Payment_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created From Date",
+      "field": "Created_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created To Date",
+      "field": "Created_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Approved From Date",
+      "field": "Approved_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Approved To Date",
+      "field": "Approved_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Payment Updated From Date",
+      "field": "Payment_Updated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Payment Updated To Date",
+      "field": "Payment_Updated_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the payment update type (Expense Report Payment Paid or Expense Report Payment Canceled)",
+      "field": "Payment_Update_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the payment update type (Expense Report Payment Paid or Expense Report Payment Canceled)",
+      "field": "Payment_Update_Type_Reference_Event_Lite_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Market Code for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+      "field": "Market_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the corporate credit card account for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+      "field": "Corporate_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the corporate credit card account for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+      "field": "Corporate_Account_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approved_From_Date_Prompt": {
+        "description": "Approved From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_To_Date_Prompt": {
+        "description": "Approved To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Amount": {
+        "description": "Total amount in the billing currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Billing_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Corporate_Account_Reference_Corporate_Credit_Card_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Corporate_Account_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "Reference to the corporate credit card account for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Corporate_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Corporate_Account_Reference_WID_Prompt": {
+        "description": "Reference to the corporate credit card account for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_From_Date_Prompt": {
+        "description": "Created From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_To_Date_Prompt": {
+        "description": "Created To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Exchange_Rate": {
+        "description": "Currency exchange rate from the transaction currency to the billing currency",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Document_Number_Prompt": {
+        "description": "Document Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ExpenseReport_Expense_Report_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Reference_Expense_Credit_Card_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Reference_Expense_Credit_Card_Token": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Reference_Invalid_Expense_Credit_Card_Token": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Transaction_Reference_Credit_Card_Transaction_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Credit_Card_Transaction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Academic_Person_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Applicant_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Candidate_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Employee_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Student_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Reference_WID_Prompt": {
+        "description": "Reference to an existing Applicant, Contingent Worker, or Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Type_Reference_IID_Prompt": {
+        "description": "The type of Expense Payee for the expense report (Applicant, Contingent Worker, or Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Payee_Type_Reference_WID_Prompt": {
+        "description": "The type of Expense Payee for the expense report (Applicant, Contingent Worker, or Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_From_Date_Prompt": {
+        "description": "Expense Report From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Line_Date": {
+        "description": "The date the expense was incurred.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Payment_Status_Reference_Document_Payment_Status_ID_Prompt": {
+        "description": "Reference to the payment status of the expense report (paid or unpaid)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Payment_Status_Reference_WID_Prompt": {
+        "description": "Reference to the payment status of the expense report (paid or unpaid)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_To_Date_Prompt": {
+        "description": "Expense Report To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Market_Code": {
+        "description": "The market code for the credit card transaction for the expense.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Market_Code_Prompt": {
+        "description": "Market Code for an expense report line on the expense report with either a Credit Card or a Credit Card Transaction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Non-Personal_Billing_Amount": {
+        "description": "Total amount not marked as personal expense in the billing currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Non-Personal_Transaction_Amount": {
+        "description": "Total amount not marked as personal expense in the transaction currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Update_Type_Reference_Event_Lite_Type_ID_Prompt": {
+        "description": "Reference to the payment update type (Expense Report Payment Paid or Expense Report Payment Canceled)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Update_Type_Reference_WID_Prompt": {
+        "description": "Reference to the payment update type (Expense Report Payment Paid or Expense Report Payment Canceled)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Updated_From_Date_Prompt": {
+        "description": "Payment Updated From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Updated_To_Date_Prompt": {
+        "description": "Payment Updated To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Posted_Date": {
+        "description": "The date the expense was posted.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Amount": {
+        "description": "Total amount in the transaction currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transaction_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Number": {
+        "description": "The transaction number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

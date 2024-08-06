@@ -1,0 +1,420 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerDeposits_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomerDeposit_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customers_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customers_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+      "field": "Customers_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+      "field": "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+      "field": "Bank_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+      "field": "Bank_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+      "field": "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Payment Deposit Date On or After must be earlier than Payment Deposit Date On or Before.",
+      "field": "Payment_Deposit_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Payment Deposit Date On or After must be earlier than Payment Deposit Date On or Before.",
+      "field": "Payment_Deposit_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a Customer Deposit Reference Number",
+      "field": "Deposit_Reference_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the status of the requested Customer Deposit. Supports multiple values.",
+      "field": "Deposit_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the status of the requested Customer Deposit. Supports multiple values.",
+      "field": "Deposit_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Reconciliation Status of the Customer Deposit requested.. Supports multiple values.",
+      "field": "Reconciliation_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Reconciliation Status of the Customer Deposit requested.. Supports multiple values.",
+      "field": "Reconciliation_Status_Reference_Reconciliation_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Create by Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Create by Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Create by Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sequence ID for customer deposits. This is an optional value and you can set it up using the ID Generator for Customer Deposits prompt in the Edit Tenant Setup - Financials task under the Business Document Sequence IDs section or in the Edit Company ID Definitions task on the Company Specific Settings tab.",
+      "field": "Deposit_ID_Reference_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Bank_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID_Prompt": {
+        "description": "Reference to the Bank Account that the Customer Deposit will be in.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company which holds the asset. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomerDeposit_Company_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Hierarchy_Reference_WID_Prompt": {
+        "description": "Reference to an existing customer that has child customers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_Customer_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_Customer_Reference_ID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_WID_Prompt": {
+        "description": "This is the customer that the invoice is for. This is the reference id value of the customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_ID_Reference_Prompt": {
+        "description": "The sequence ID for customer deposits. This is an optional value and you can set it up using the ID Generator for Customer Deposits prompt in the Edit Tenant Setup - Financials task under the Business Document Sequence IDs section or in the Edit Company ID Definitions task on the Company Specific Settings tab.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_Reference_Number_Prompt": {
+        "description": "Free form text for a Customer Deposit Reference Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to the status of the requested Customer Deposit. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deposit_Status_Reference_WID_Prompt": {
+        "description": "Reference to the status of the requested Customer Deposit. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Deposit_Date_On_or_After_Prompt": {
+        "description": "Payment Deposit Date On or After must be earlier than Payment Deposit Date On or Before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Deposit_Date_On_or_Before_Prompt": {
+        "description": "Payment Deposit Date On or After must be earlier than Payment Deposit Date On or Before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reconciliation_Status_Reference_Reconciliation_Status_ID_Prompt": {
+        "description": "Reference to the Reconciliation Status of the Customer Deposit requested.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reconciliation_Status_Reference_WID_Prompt": {
+        "description": "Reference to the Reconciliation Status of the Customer Deposit requested.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Create by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Create by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Create by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

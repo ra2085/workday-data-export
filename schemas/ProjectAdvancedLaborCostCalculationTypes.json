@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectAdvancedLaborCostCalculationTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Delete",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Advanced Labor Cost Calculation Type Reference ID",
+      "field": "Cost_Calculation_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Cost Calculation Type Name",
+      "field": "Cost_Calculation_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Method_Reference_Project_Advanced_Labor_Cost_Calculation_Method_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Advanced Labor Cost Base Rate Type Reference",
+      "field": "Base_Cost_Rate_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, the calculated cost rate can't exceed the base cost rate from the standard cost rate sheets.",
+      "field": "Base_Cost_Rate_Is_Max",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Week_Start_Day_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Week_Start_Day_Reference_Day_of_the_Week_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When including Company Holiday, the Actual Hours Included recognizes holidays defined in the Holiday Calendar. When submitting time entries for holidays, then exclude Company Holiday and include Absence.",
+      "field": "Actual_Hours_Included_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, the scheduled weekly hours are based on the worker primary position.",
+      "field": "Total_Hours_Included_Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "If entered, the worker scheduled hours for the week override the worker primary position information.",
+      "field": "Total_Hours_Included_Specified_Scheduled_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If N, worker schedule hours decrease by the number of absence hours logged that week.",
+      "field": "Total_Hours_Included_Absence",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If N, worker schedule hours decrease by the number of holidays occurring that week.",
+      "field": "Total_Hours_Included_Company_Holiday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, Total Hours includes Non-Project Time",
+      "field": "Total_Hours_Included_Non-Project_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Advanced Labor Costing Premium Time Tier Data",
+      "field": "Premium_Time_Tier_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Actual_Hours_Included_Reference": {
+        "description": "When including Company Holiday, the Actual Hours Included recognizes holidays defined in the Holiday Calendar. When submitting time entries for holidays, then exclude Company Holiday and include Absence.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Cost_Rate_Is_Max": {
+        "description": "If Y, the calculated cost rate can't exceed the base cost rate from the standard cost rate sheets.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Base_Cost_Rate_Reference": {
+        "description": "Project Advanced Labor Cost Base Rate Type Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Method_Reference_Project_Advanced_Labor_Cost_Calculation_Method_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cost_Calculation_Type_ID": {
+        "description": "Project Advanced Labor Cost Calculation Type Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cost_Calculation_Type_Name": {
+        "description": "Cost Calculation Type Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "Delete",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Premium_Time_Tier_Data": {
+        "description": "Project Advanced Labor Costing Premium Time Tier Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Hours_Included_Absence": {
+        "description": "If N, worker schedule hours decrease by the number of absence hours logged that week.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Hours_Included_Company_Holiday": {
+        "description": "If N, worker schedule hours decrease by the number of holidays occurring that week.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Hours_Included_Non-Project_Time": {
+        "description": "If Y, Total Hours includes Non-Project Time",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Hours_Included_Scheduled_Weekly_Hours": {
+        "description": "If Y, the scheduled weekly hours are based on the worker primary position.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Hours_Included_Specified_Scheduled_Hours": {
+        "description": "If entered, the worker scheduled hours for the week override the worker primary position information.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Week_Start_Day_Reference_Day_of_the_Week_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Week_Start_Day_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

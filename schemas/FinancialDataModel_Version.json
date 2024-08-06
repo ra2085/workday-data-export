@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FinancialDataModel_Version",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Data Model ID",
+      "field": "FinancialDataModel_Reporting_Data_Model_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Version ID",
+      "field": "Reporting_Version_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Ledger_Creation_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Ledger_Creation_Type_Reference_Ledger_Creation_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element for Reporting Plan Structure",
+      "field": "Plan",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "FinancialDataModel_Reporting_Data_Model_ID": {
+        "description": "Reporting Data Model ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan": {
+        "description": "Element for Reporting Plan Structure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Ledger_Creation_Type_Reference_Ledger_Creation_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Ledger_Creation_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Version_ID": {
+        "description": "Reporting Version ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ElectronicInvoicingAcknowledgements",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for an Electronic Invoicing Acknowledgement instance.",
+      "field": "Electronic_Invoicing_Acknowledgement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Reference_Customer_Invoice_Adjustment_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Reference_Customer_Invoice_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The date and time when the electronic customer invoice was processed by the third party provider.",
+      "field": "Processed_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The status of an electronic invoice from the third party provider.",
+      "field": "Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A message or any other data regarding the electronic invoice from the third party provider.",
+      "field": "Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+      "field": "Customer_Invoice_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+      "field": "Customer_Invoice_Reference_Customer_Invoice_Adjustment_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+      "field": "Customer_Invoice_Reference_Customer_Invoice_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Electronic Invoicing Acknowledgement Date On or After",
+      "field": "Electronic_Invoicing_Acknowledgement_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Electronic Invoicing Acknowledgement Date On or Before",
+      "field": "Electronic_Invoicing_Acknowledgement_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Electronic Invoicing Acknowledgement Status",
+      "field": "Status_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Invoice_Reference_Customer_Invoice_Adjustment_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference_Customer_Invoice_Adjustment_Reference_ID_Prompt": {
+        "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference_Customer_Invoice_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference_Customer_Invoice_Reference_ID_Prompt": {
+        "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Reference_WID_Prompt": {
+        "description": "Reference to Customer Invoice or Adjustment for Electronic Invoicing Acknowledgement. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Electronic_Invoicing_Acknowledgement_Date_On_or_After_Prompt": {
+        "description": "Electronic Invoicing Acknowledgement Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Electronic_Invoicing_Acknowledgement_Date_On_or_Before_Prompt": {
+        "description": "Electronic Invoicing Acknowledgement Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Electronic_Invoicing_Acknowledgement_ID": {
+        "description": "A unique identifier for an Electronic Invoicing Acknowledgement instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Message": {
+        "description": "A message or any other data regarding the electronic invoice from the third party provider.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Processed_Date": {
+        "description": "The date and time when the electronic customer invoice was processed by the third party provider.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status": {
+        "description": "The status of an electronic invoice from the third party provider.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Prompt": {
+        "description": "Electronic Invoicing Acknowledgement Status",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

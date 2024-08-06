@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItemGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Group_Reference_Purchase_Item_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item Group ID.  This is the Purchase Item Group unique identifier",
+      "field": "Purchase_Item_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Purchase Item Group Name",
+      "field": "Purchase_Item_Group_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Purchase_Item_Group_ID": {
+        "description": "Purchase Item Group ID.  This is the Purchase Item Group unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Group_Name": {
+        "description": "Free form text field for a meaningful Purchase Item Group Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Group_Reference_Purchase_Item_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

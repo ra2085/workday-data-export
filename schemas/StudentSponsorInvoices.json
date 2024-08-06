@@ -1,0 +1,367 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentSponsorInvoices",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Sponsor_Invoice_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Sponsor_Invoice_Reference_Customer_Invoice_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Sponsor Invoice ID. This is the Student Sponsor Invoice unique identifier.",
+      "field": "Student_Sponsor_Invoice_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Invoice Number for the Student Sponsor Invoice",
+      "field": "Document_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "If this is left blank, Workday will populate invoice date with the current date.",
+      "field": "Transaction_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Shows a Student Sponsor Invoice's Due Amount, assuming it is not canceled.",
+      "field": "Amount_Due",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_Sponsor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_Sponsor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sponsor_Reference_Student_Financial_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Academic_Person_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Student_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Universal_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Sponsor_Contract_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Sponsor_Contract_Reference_Student_Sponsor_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student Sponsor Payments for the Student Sponsor Invoice if they exist.",
+      "field": "Student_Sponsor_Payment_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student Sponsor Contract. You can specify multiple Student Sponsor Contracts to filter for results specific to those Student Sponsor Contracts.. Supports multiple values.",
+      "field": "Student_Sponsor_Contracts_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student Sponsor Contract. You can specify multiple Student Sponsor Contracts to filter for results specific to those Student Sponsor Contracts.. Supports multiple values.",
+      "field": "Student_Sponsor_Contracts_Reference_Student_Sponsor_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Document Status for the Student Sponsor Invoices.. Supports multiple values.",
+      "field": "Document_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Document Status for the Student Sponsor Invoices.. Supports multiple values.",
+      "field": "Document_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+      "field": "Academic_Units_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+      "field": "Academic_Units_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Units_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_WID_Prompt": {
+        "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount_Due": {
+        "description": "Shows a Student Sponsor Invoice's Due Amount, assuming it is not canceled.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Document_Number": {
+        "description": "Invoice Number for the Student Sponsor Invoice",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "The Document Status for the Student Sponsor Invoices.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID_Prompt": {
+        "description": "The Document Status for the Student Sponsor Invoices.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Student_Financial_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Contract_Reference_Student_Sponsor_Contract_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Contract_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Contracts_Reference_Student_Sponsor_Contract_ID_Prompt": {
+        "description": "The Student Sponsor Contract. You can specify multiple Student Sponsor Contracts to filter for results specific to those Student Sponsor Contracts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Contracts_Reference_WID_Prompt": {
+        "description": "The Student Sponsor Contract. You can specify multiple Student Sponsor Contracts to filter for results specific to those Student Sponsor Contracts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Invoice_ID": {
+        "description": "Student Sponsor Invoice ID. This is the Student Sponsor Invoice unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Invoice_Reference_Customer_Invoice_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Sponsor_Invoice_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Student_Sponsor_Payment_Reference": {
+        "description": "The Student Sponsor Payments for the Student Sponsor Invoice if they exist.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date": {
+        "description": "If this is left blank, Workday will populate invoice date with the current date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

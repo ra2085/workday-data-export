@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Batches",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Batch_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Batch_Reference_Batch_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch ID is the unique identifier.",
+      "field": "Batch_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Application_Batch_Usage_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Application_Batch_Usage_Reference_Application_Batch_Usage_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Information on the summary of all Payroll Inputs associated with a Currency",
+      "field": "Batch_Totals_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Information on the summary of all Payroll Inputs associated with a Pay Component",
+      "field": "Batch_Pay_Component_Totals_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Batch ID",
+      "field": "Batch_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Source (e.g. Integration System)",
+      "field": "Source_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Source (e.g. Integration System)",
+      "field": "Source_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Application_Batch_Usage_Reference_Application_Batch_Usage_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Application_Batch_Usage_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_ID": {
+        "description": "Batch ID is the unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_ID_Prompt": {
+        "description": "Batch ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Pay_Component_Totals_Data": {
+        "description": "Information on the summary of all Payroll Inputs associated with a Pay Component",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Reference_Batch_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Batch_Totals_Data": {
+        "description": "Information on the summary of all Payroll Inputs associated with a Currency",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_Integration_System_ID_Prompt": {
+        "description": "Source (e.g. Integration System)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_WID_Prompt": {
+        "description": "Source (e.g. Integration System)",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

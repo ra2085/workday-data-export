@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CarRentalAgencies_Alternate_Merchant_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Car Rental Agency ID",
+      "field": "CarRentalAgency_Spend_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Name Value",
+      "field": "Alternate_Name_Value",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Name_Value": {
+        "description": "Alternate Name Value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CarRentalAgency_Spend_Data_ID": {
+        "description": "Car Rental Agency ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

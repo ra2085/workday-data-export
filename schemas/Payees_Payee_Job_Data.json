@@ -1,0 +1,2758 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Payees_Payee_Job_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Payee_Payee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Reference_Headcount_Restrictions_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Position ID.",
+      "field": "Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Position Title.",
+      "field": "Position_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business title for the position.",
+      "field": "Business_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Worker first started work in this Position.  Will be the same value as the Hire Date in the Worker Status Section for the Primary Position.",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Expected end of employment for this position. Will be the same value as the End Employment Date in the Worker Status Section for the Primary Position.",
+      "field": "End_Employment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Termination/End Additional Job Reason",
+      "field": "End_Employment_Reason_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_Contingent_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Type_Reference_Employee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Time_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Time_Type_Reference_Position_Time_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether Position is Exempt.",
+      "field": "Position_Job_Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Scheduled Weekly Hours for Position.",
+      "field": "Position_Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Standard Weekly Hours for Position.",
+      "field": "Default_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Working_Time_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Working_Time_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Working_Time_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Working_Time_Unit_Reference_Working_Time_Unit_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The numeric value of the Working Time Unit. Enable Working Time in the Maintain Localization Settings task.",
+      "field": "Working_Time_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Full Time Equivalent Percentage for Position.",
+      "field": "Full_Time_Equivalent_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if Paid FTE Percentage is specified on the position.",
+      "field": "Specify_Paid_FTE",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The paid full time equivalent percentage for the position, entered as a decimal value. This overrides the calculated full time equivalent.",
+      "field": "Paid_FTE",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if Working FTE Percentage is specified on the position.",
+      "field": "Specify_Working_FTE",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The working full time equivalent percentage for the position, entered as a decimal value. This overrides the calculated full time equivalent.",
+      "field": "Working_FTE",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, the position will be excluded from headcount reporting.",
+      "field": "Exclude_from_Headcount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Pay_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Pay_Rate_Type_Reference_Pay_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the job classifications from the job profile for the position and the additional job classifications specified for the position.",
+      "field": "Job_Classification_Summary_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a company insider type.",
+      "field": "Company_Insider_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_Work_Shift_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Hours_Profiles_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Hours_Profiles_Reference_Work_Hours_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The employee's company Federal Employer Identification Number.",
+      "field": "Federal_Withholding_FEIN",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The worker's compensation code for this position - based on the location and job profile.",
+      "field": "Worker_Compensation_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains each payroll reporting code for the position.",
+      "field": "Position_Payroll_Reporting_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean attribute that returns true if the job profile is exempt for this position. Exempt job profiles are typically for positions that are salaried and not eligible for overtime pay.",
+      "field": "Job_Profile_Summary_Job_Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Management_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Management_Level_Reference_Management_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Category_Reference_Job_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the job family.",
+      "field": "Job_Family_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the job profile.",
+      "field": "Job_Profile_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A boolean attribute that returns true if a work shift is required on the position where this job profile is used.",
+      "field": "Work_Shift_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating whether the job profile is considered a critical job.",
+      "field": "Critical_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the location.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The type(s) of a location.",
+      "field": "Location_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Local_Reference_Locale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Display_Language_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Display_Language_Reference_User_Language_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Profile_Reference_Time_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The scheduled weekly hours from the location's time profile.",
+      "field": "Business_Site_Summary_Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date for Payroll Interface Processing.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Interface_Processing_Pay_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Interface_Processing_Pay_Rate_Type_Reference_Pay_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Interface_Processing_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Interface_Processing_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Group_Reference_Ext_Pay_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Group_Reference_External_Pay_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Entity_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Entity_Reference_External_Payroll_Entity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Employee_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Employee_Type_Reference_EmployeeType",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Employee_Type_Reference_External_Payroll_Employee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The external payroll file number for the position.",
+      "field": "Payroll_File_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for number of equivalent regular paid hours for the work hours profile.",
+      "field": "Regular_Paid_Equivalent_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Worker Hours Profile Classification.",
+      "field": "Worker_Hours_Profile_Classification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "International_Assignment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "International_Assignment_Type_Reference_International_Assignment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Benefits_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Change_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Drop_Course_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_End_Additional_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Event_Classification_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_General_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Leave_of_Absence_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Termination_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Undo_Move_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_International_Assignment_Reason_Reference_Waive_Assignment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The End Date for the International Assignment. If empty, Workday will use the existing date. This field is informational only. The value is effective immediately on update.",
+      "field": "Expected_Assignment_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Host_Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Host_Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Host_Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Host_Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Home_Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Home_Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Home_Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Home_Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Space__Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Space__Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Work period percent of year from the annual work period assigned to position.",
+      "field": "Annual_Work_Period_Work_Percent_of_Year",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start date for annual work period assigned to the position based on the effective moment from the request.",
+      "field": "Annual_Work_Period_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End date for annual work period assigned to the position based on the effective moment from the request.",
+      "field": "Annual_Work_Period_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start date for disbursement plan period assigned to the position based on the effective moment from the request.",
+      "field": "Disbursement_Plan_Period_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End date for disbursement plan period assigned to the position based on the effective moment from the request.",
+      "field": "Disbursement_Plan_Period_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of the end employment business process",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The pay through date for the end of employment",
+      "field": "Pay_Through_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Collective Agreement data. Including Corrected data.",
+      "field": "Collective_Agreement_Summary_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Worker's Probation Period Data.",
+      "field": "Employee_Probation_Period_Detail_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return the worker's new manager(s) during the most recent manager change event detected by manager compare background process. The background process may detect manager changes at a later time then when the manager change actually occurred. This field only applies for the primary job of the worker.",
+      "field": "Manager_as_of_last_detected_manager_change_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date of Compensation.",
+      "field": "Compensation_Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Benefits_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Change_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Drop_Course_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_End_Additional_Job_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Event_Classification_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_General_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Leave_of_Absence_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Termination_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Undo_Move_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Waive_Assignment_Event_Subcategory_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Data element containing the compensation guidelines for a compensation change.",
+      "field": "Compensation_Guidelines_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Salary or Hourly Plan Compensation data.",
+      "field": "Salary_and_Hourly_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Unit Salary Plan Compensation data.",
+      "field": "Unit_Salary_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Allowance Plan Compensation data.",
+      "field": "Allowance_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Unit Allowance Plan Compensation data.",
+      "field": "Unit_Allowance_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Bonus Plan Compensation data.",
+      "field": "Bonus_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Merit Plan Compensation data.",
+      "field": "Merit_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Commission Plan Compensation data.",
+      "field": "Commission_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Stock Plan Compensation data.",
+      "field": "Stock_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Future payment plan assignment data submitted by the put future payment plan assignment request.",
+      "field": "Future_Payment_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Salary Plan Data",
+      "field": "Period_Salary_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Calculated Plan Compensation data.",
+      "field": "Calculated_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+      "field": "Employee_Compensation_Summary_Total_Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+      "field": "Employee_Compensation_Summary_Total_Salary_and_Allowances",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+      "field": "Employee_Compensation_Summary_Primary_Compensation_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Compensation_Summary_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Compensation_Summary_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Compensation_Summary_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Compensation_Summary_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Compensation_Summary_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+      "field": "Annualized_Summary_Total_Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+      "field": "Annualized_Summary_Total_Salary_and_Allowances",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+      "field": "Annualized_Summary_Primary_Compensation_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_Summary_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_Summary_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_Summary_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_Summary_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_Summary_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+      "field": "Summary_in_Pay_Group_Frequency_Total_Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+      "field": "Summary_in_Pay_Group_Frequency_Total_Salary_and_Allowances",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+      "field": "Summary_in_Pay_Group_Frequency_Primary_Compensation_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Pay_Group_Frequency_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Pay_Group_Frequency_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Pay_Group_Frequency_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Pay_Group_Frequency_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Pay_Group_Frequency_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Total_Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Total_Salary_and_Allowances",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Primary_Compensation_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Annualized_in_Reporting_Currency_Summary_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+      "field": "Summary_in_Hourly_Frequency_Total_Base_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Hourly_Frequency_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Hourly_Frequency_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Hourly_Frequency_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Hourly_Frequency_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_in_Hourly_Frequency_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the organization reference and details about an organization.",
+      "field": "Position_Organization_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provides additional information on Pay Group Assignment corrections or rescinds.  This element only reports Pay Group Assignment Rescind events.",
+      "field": "Pay_Group_Assignment_Correct_or_Rescind_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the organization reference and details about an organization.",
+      "field": "Position_Supervisory_Management_Chain_Management_Chain_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the organization reference and details about an organization.",
+      "field": "Position_Matrix_Management_Chain_Management_Chain_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containg all Leave Status data.",
+      "field": "Leave_Status_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Leave Requests that have corrected data.",
+      "field": "Leave_Requests_Corrected_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference a Pay Period.",
+      "field": "Pay_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference a Pay Period.",
+      "field": "Pay_Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether the response data for Benefit Plan Data (within Deduction Data) should include Benefit Elections as of the Period Payment Date instead of the Period End Date.",
+      "field": "Return_Benefits_as_of_Payment_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Employees who are currently Terminated, but were members of the Pay Group as of the Termination Date.",
+      "field": "Include_Terminated_Payees_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "As Of Entry DateTime used within the request for the last time this operation was submitted.  Used to determine the population of the Pay Group as of above Period for all data entered into the system prior to this Entry DateTime.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_As_Of_Entry_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+      "field": "Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+      "field": "Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+      "field": "Exclude_Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+      "field": "Exclude_Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Transaction_Log_Criteria_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Costing Allocation data for the employee.",
+      "field": "Include_Costing_Allocation_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Used to indicate that the Pay Period Start and End dates should be used for Time Off entry selection.",
+      "field": "Use_Pay_Period_for_Time_Off_Period_Start_Date_and_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The \"as of the effective date\" for the management chain, if different than the response filter \"as of effective date.\"  This can be useful when a manager change is not due a staffing change in the managed worker's history.",
+      "field": "As_of_Effective_Date_for_Management_Chain_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When enabled, this option will use the respective Pay Period for Payroll Input Start and End Dates. This replaces the current behavior of using the Begin Entry Moment specified in the Response Date Range Filter to derive the period.",
+      "field": "Use_Pay_Period_for_Payroll_Input_Start_and_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Employees who are Purged",
+      "field": "Include_Purged_Payees_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+      "field": "Universal_ID_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+      "field": "Universal_ID_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowance_Plan_Data": {
+        "description": "Encapsulating element containing all Allowance Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annual_Work_Period_End_Date": {
+        "description": "End date for annual work period assigned to the position based on the effective moment from the request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annual_Work_Period_Start_Date": {
+        "description": "Start date for annual work period assigned to the position based on the effective moment from the request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annual_Work_Period_Work_Percent_of_Year": {
+        "description": "Work period percent of year from the annual work period assigned to position.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Primary_Compensation_Basis": {
+        "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Total_Base_Pay": {
+        "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_Summary_Total_Salary_and_Allowances": {
+        "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Primary_Compensation_Basis": {
+        "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Total_Base_Pay": {
+        "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annualized_in_Reporting_Currency_Summary_Total_Salary_and_Allowances": {
+        "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "As_of_Effective_Date_for_Management_Chain_Prompt": {
+        "description": "The \"as of the effective date\" for the management chain, if different than the response filter \"as of effective date.\"  This can be useful when a manager change is not due a staffing change in the managed worker's history.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bonus_Plan_Data": {
+        "description": "Encapsulating element containing all Bonus Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Site_Summary_Scheduled_Weekly_Hours": {
+        "description": "The scheduled weekly hours from the location's time profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Business_Title": {
+        "description": "Business title for the position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculated_Plan_Data": {
+        "description": "Encapsulating element containing all Calculated Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Collective_Agreement_Summary_Data": {
+        "description": "Encapsulating element containing all Collective Agreement data. Including Corrected data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commission_Plan_Data": {
+        "description": "Encapsulating element containing all Commission Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Reference": {
+        "description": "Reference to a company insider type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Effective_Date": {
+        "description": "Effective Date of Compensation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Guidelines_Data": {
+        "description": "Data element containing the compensation guidelines for a compensation change.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Critical_Job": {
+        "description": "Boolean attribute indicating whether the job profile is considered a critical job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Default_Weekly_Hours": {
+        "description": "Standard Weekly Hours for Position.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disbursement_Plan_Period_End_Date": {
+        "description": "End date for disbursement plan period assigned to the position based on the effective moment from the request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disbursement_Plan_Period_Start_Date": {
+        "description": "Start date for disbursement plan period assigned to the position based on the effective moment from the request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Language_Reference_User_Language_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Language_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date for Payroll Interface Processing.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Primary_Compensation_Basis": {
+        "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Total_Base_Pay": {
+        "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_Compensation_Summary_Total_Salary_and_Allowances": {
+        "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_Probation_Period_Detail_Data": {
+        "description": "The Worker's Probation Period Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "The effective date of the end employment business process",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Employment_Date": {
+        "description": "Expected end of employment for this position. Will be the same value as the End Employment Date in the Worker Status Section for the Primary Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Employment_Reason_Reference": {
+        "description": "Termination/End Additional Job Reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Payee_Reference_Employee_ID_Prompt": {
+        "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Payee_Reference_WID_Prompt": {
+        "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_from_Headcount": {
+        "description": "If Y, the position will be excluded from headcount reporting.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Expected_Assignment_End_Date": {
+        "description": "The End Date for the International Assignment. If empty, Workday will use the existing date. This field is informational only. The value is effective immediately on update.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Employee_Type_Reference_EmployeeType": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Employee_Type_Reference_External_Payroll_Employee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Employee_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_Withholding_FEIN": {
+        "description": "The employee's company Federal Employer Identification Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Full_Time_Equivalent_Percentage": {
+        "description": "Full Time Equivalent Percentage for Position.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Future_Payment_Plan_Data": {
+        "description": "Future payment plan assignment data submitted by the put future payment plan assignment request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Reference_Headcount_Restrictions_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Home_Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Home_Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Home_Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Home_Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Host_Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Host_Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Host_Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Host_Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Costing_Allocation_Data_Prompt": {
+        "description": "Boolean attribute to signify whether to include Costing Allocation data for the employee.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Purged_Payees_Prompt": {
+        "description": "Boolean attribute to signify whether to include Employees who are Purged",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Terminated_Payees_Prompt": {
+        "description": "Boolean attribute to signify whether to include Employees who are currently Terminated, but were members of the Pay Group as of the Termination Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_As_Of_Entry_DateTime_Prompt": {
+        "description": "As Of Entry DateTime used within the request for the last time this operation was submitted.  Used to determine the population of the Pay Group as of above Period for all data entered into the system prior to this Entry DateTime.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_Period_ID_Prompt": {
+        "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_WID_Prompt": {
+        "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "International_Assignment_Type_Reference_International_Assignment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "International_Assignment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_Job_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Summary_Data": {
+        "description": "Contains the job classifications from the job profile for the position and the additional job classifications specified for the position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference": {
+        "description": "A unique identifier for the job family.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Name": {
+        "description": "The name of the job profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Summary_Job_Exempt": {
+        "description": "A boolean attribute that returns true if the job profile is exempt for this position. Exempt job profiles are typically for positions that are salaried and not eligible for overtime pay.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Leave_Requests_Corrected_Data": {
+        "description": "Encapsulating element containing all Leave Requests that have corrected data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Leave_Status_Data": {
+        "description": "Encapsulating element containg all Leave Status data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Reference_Locale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Local_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Type_Reference": {
+        "description": "The type(s) of a location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_Management_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manager_as_of_last_detected_manager_change_Reference": {
+        "description": "Return the worker's new manager(s) during the most recent manager change event detected by manager compare background process. The background process may detect manager changes at a later time then when the manager change actually occurred. This field only applies for the primary job of the worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merit_Plan_Data": {
+        "description": "Encapsulating element containing all Merit Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Paid_FTE": {
+        "description": "The paid full time equivalent percentage for the position, entered as a decimal value. This overrides the calculated full time equivalent.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_Group_Assignment_Correct_or_Rescind_Data": {
+        "description": "Provides additional information on Pay Group Assignment corrections or rescinds.  This element only reports Pay Group Assignment Rescind events.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Ext_Pay_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_External_Pay_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Reference_Period_ID_Prompt": {
+        "description": "Unique identifier used to reference a Pay Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference a Pay Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Through_Date": {
+        "description": "The pay through date for the end of employment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Payee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Employee_ID_Prompt": {
+        "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Entity_Reference_External_Payroll_Entity_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Entity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_File_Number": {
+        "description": "The external payroll file number for the position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Interface_Processing_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Interface_Processing_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Interface_Processing_Pay_Rate_Type_Reference_Pay_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Interface_Processing_Pay_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Salary_Plan_Data": {
+        "description": "Period Salary Plan Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_ID": {
+        "description": "Text attribute identifying Position ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Job_Exempt": {
+        "description": "Boolean attribute identifying whether Position is Exempt.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Position_Matrix_Management_Chain_Management_Chain_Data": {
+        "description": "Contains the organization reference and details about an organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Organization_Data": {
+        "description": "Contains the organization reference and details about an organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Pay_Rate_Type_Reference_Pay_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Pay_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Payroll_Reporting_Code_Data": {
+        "description": "Contains each payroll reporting code for the position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Scheduled_Weekly_Hours": {
+        "description": "Scheduled Weekly Hours for Position.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Position_Supervisory_Management_Chain_Management_Chain_Data": {
+        "description": "Contains the organization reference and details about an organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Time_Type_Reference_Position_Time_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Time_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Title": {
+        "description": "Text attribute identifying Position Title.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Benefits_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Change_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Drop_Course_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_End_Additional_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Event_Classification_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_General_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Leave_of_Absence_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Termination_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Undo_Move_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Waive_Assignment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Regular_Paid_Equivalent_Hours": {
+        "description": "Numeric value for number of equivalent regular paid hours for the work hours profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Return_Benefits_as_of_Payment_Date_Prompt": {
+        "description": "Boolean attribute to signify whether the response data for Benefit Plan Data (within Deduction Data) should include Benefit Elections as of the Period Payment Date instead of the Period End Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Salary_and_Hourly_Data": {
+        "description": "Encapsulating element containing all Salary or Hourly Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specify_Paid_FTE": {
+        "description": "True if Paid FTE Percentage is specified on the position.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Specify_Working_FTE": {
+        "description": "True if Working FTE Percentage is specified on the position.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "Date the Worker first started work in this Position.  Will be the same value as the Hire Date in the Worker Status Section for the Primary Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Benefits_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Cancel_Course_Offering_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Cancel_Enrollment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Change_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Drop_Course_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_End_Additional_Job_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Event_Classification_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_General_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Leave_of_Absence_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Termination_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Undo_Move_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_International_Assignment_Reason_Reference_Waive_Assignment_Event_Subcategory_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plan_Data": {
+        "description": "Encapsulating element containing all Stock Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Hourly_Frequency_Total_Base_Pay": {
+        "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Primary_Compensation_Basis": {
+        "description": "Amount representing the primary compensation basis for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Total_Base_Pay": {
+        "description": "Amount representing the total base pay for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Summary_in_Pay_Group_Frequency_Total_Salary_and_Allowances": {
+        "description": "Amount representing the total salary and allowances for the worker in the currency and frequency specified.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Time_Profile_Reference_Time_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Log_Criteria_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Allowance_Plan_Data": {
+        "description": "Encapsulating element containing all Unit Allowance Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Salary_Plan_Data": {
+        "description": "Encapsulating element containing all Unit Salary Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_WID_Prompt": {
+        "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Pay_Period_for_Payroll_Input_Start_and_End_Date_Prompt": {
+        "description": "When enabled, this option will use the respective Pay Period for Payroll Input Start and End Dates. This replaces the current behavior of using the Begin Entry Moment specified in the Response Date Range Filter to derive the period.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_Pay_Period_for_Time_Off_Period_Start_Date_and_End_Date_Prompt": {
+        "description": "Used to indicate that the Pay Period Start and End dates should be used for Time Off entry selection.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Work_Hours_Profiles_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Hours_Profiles_Reference_Work_Hours_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_Work_Shift_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Required": {
+        "description": "A boolean attribute that returns true if a work shift is required on the position where this job profile is used.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Work_Space__Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Space__Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Compensation_Code_Data": {
+        "description": "The worker's compensation code for this position - based on the location and job profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Hours_Profile_Classification": {
+        "description": "The Worker Hours Profile Classification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_Contingent_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_Employee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Working_FTE": {
+        "description": "The working full time equivalent percentage for the position, entered as a decimal value. This overrides the calculated full time equivalent.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Working_Time_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Working_Time_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Working_Time_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Working_Time_Unit_Reference_Working_Time_Unit_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Working_Time_Value": {
+        "description": "The numeric value of the Working Time Unit. Enable Working Time in the Maintain Localization Settings task.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

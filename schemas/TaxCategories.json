@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Category ID.  This is the Tax Category unique identifier.",
+      "field": "Tax_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Tax Category Name",
+      "field": "Tax_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "is it Subject to Recoverability?",
+      "field": "Subject_to_Recoverability",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is it part of WithHolding Tax ?",
+      "field": "Withholding_Tax",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use Third Party Tax Service",
+      "field": "Use_Third_Party_Tax_Service",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Subject_to_Recoverability": {
+        "description": "is it Subject to Recoverability?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Category_ID": {
+        "description": "Tax Category ID.  This is the Tax Category unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Name": {
+        "description": "Free form text field for a meaningful Tax Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Third_Party_Tax_Service": {
+        "description": "Use Third Party Tax Service",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Withholding_Tax": {
+        "description": "Is it part of WithHolding Tax ?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

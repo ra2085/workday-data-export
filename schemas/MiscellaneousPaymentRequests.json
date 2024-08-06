@@ -1,0 +1,1005 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MiscellaneousPaymentRequests",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique ID for Miscellaneous Payment Request. This is System generated ID. Any input to this ID will be ignored automatically.",
+      "field": "Miscellaneous_Payment_Request_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable editing and canceling the miscellaneous payment request inside the Workday application.   Document can only be updated from the web service.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If adding a new miscellaneous payment request, then make the Document Number the same value as Reference ID. If updating an existing miscellaneous payment request, then make it the same value as the Reference ID of that invoice. If you do not make the Document Number the same as Reference ID, then duplicate Document Numbers for different miscellaneous payment request may be created. The Reference ID is the only value checked as a unique identifier.",
+      "field": "Miscellaneous_Payment_Request_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Status_Reference_Document_Payment_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Budget Check Status",
+      "field": "Budget_Check_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requester_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requester_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requester_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "If this is left blank, Workday will populate date with the current date.",
+      "field": "Document_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Accounting Date for a Miscellaneous Payment Request. It is read only and will be ignored if entered.",
+      "field": "Miscellaneous_Payment_Request_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Cancel Accounting Date is only populated when Miscellaneous Payment Request is Cancelled. It is read only and will be ignored if entered.",
+      "field": "Cancel_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Miscellaneous_Payee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Miscellaneous_Payee_Reference_Miscellaneous_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element contains Miscellaneous Payee attributes.",
+      "field": "Miscellaneous_Payee_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Category_Reference_Miscellaneous_Payment_Request_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "It is an optional field",
+      "field": "Due_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Handling_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Handling_Code_Reference_Handling_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Payment Amount based on the lines Extended Amount. It is read only and will be ignored if entered. Workday will calculate this field based on Extended Amount",
+      "field": "Total_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the expected total including tax.  It is optional.",
+      "field": "Control_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+      "field": "Header_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for providing additional information",
+      "field": "External_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Express Pay",
+      "field": "Request_Express_Pay",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A Miscellaneous Payment Request may have multiple lines",
+      "field": "Miscellaneous_Payment_Request_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_1",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_3",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_4",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_5",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_6",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_7",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_8",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_9",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Text Field",
+      "field": "Miscellaneous_Field_10",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Miscellaneous Payee. Supports multiple values.",
+      "field": "Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Miscellaneous Payee. Supports multiple values.",
+      "field": "Payee_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is Miscellaneous Payee Active or In-Active",
+      "field": "Payee_Active_or_Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Payment Request ID",
+      "field": "Miscellaneous_Payment_Request_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Miscellaneous Payment Request category. Supports multiple values.",
+      "field": "Request_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Miscellaneous Payment Request category. Supports multiple values.",
+      "field": "Request_Category_Reference_Miscellaneous_Payment_Request_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Document Status. Supports multiple values.",
+      "field": "Document_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Document Status. Supports multiple values.",
+      "field": "Document_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Document Payment Status. Supports multiple values.",
+      "field": "Payment_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Document Payment Status. Supports multiple values.",
+      "field": "Payment_Status_Reference_Document_Payment_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "All or part of an External Reference Text",
+      "field": "External_Reference_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Document Date On or After",
+      "field": "Document_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Document Date On or Before",
+      "field": "Document_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Due Date On or After",
+      "field": "Due_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Due Date On or Before",
+      "field": "Due_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Created by Worker Reference. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Created by Worker Reference. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Created by Worker Reference. Supports multiple values.",
+      "field": "Created_by_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Approved By Worker Reference. Supports multiple values.",
+      "field": "Approved_By_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Approved By Worker Reference. Supports multiple values.",
+      "field": "Approved_By_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Approved By Worker Reference. Supports multiple values.",
+      "field": "Approved_By_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Express Pay",
+      "field": "Request_Express_Pay_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approved_By_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Approved By Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_By_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Approved By Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approved_By_Worker_Reference_WID_Prompt": {
+        "description": "Approved By Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Check_Status": {
+        "description": "Budget Check Status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cancel_Accounting_Date": {
+        "description": "Cancel Accounting Date is only populated when Miscellaneous Payment Request is Cancelled. It is read only and will be ignored if entered.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Control_Amount": {
+        "description": "This is the expected total including tax.  It is optional.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Created by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Created by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Worker_Reference_WID_Prompt": {
+        "description": "Created by Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Date": {
+        "description": "If this is left blank, Workday will populate date with the current date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Date_On_or_After_Prompt": {
+        "description": "Document Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Date_On_or_Before_Prompt": {
+        "description": "Document Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to an existing Document Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing Document Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date": {
+        "description": "It is an optional field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_After_Prompt": {
+        "description": "Due Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_Before_Prompt": {
+        "description": "Due Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Reference": {
+        "description": "Free form text field for providing additional information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Reference_Prompt": {
+        "description": "All or part of an External Reference Text",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Handling_Code_Reference_Handling_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Handling_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Header_Memo": {
+        "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Set to True to disable editing and canceling the miscellaneous payment request inside the Workday application.   Document can only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_1": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_10": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_2": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_3": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_4": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_5": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_6": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_7": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_8": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Field_9": {
+        "description": "Miscellaneous Text Field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payee_Data": {
+        "description": "This element contains Miscellaneous Payee attributes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payee_Reference_Miscellaneous_Payee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payment_Request_Accounting_Date": {
+        "description": "Accounting Date for a Miscellaneous Payment Request. It is read only and will be ignored if entered.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payment_Request_ID": {
+        "description": "This is the unique ID for Miscellaneous Payment Request. This is System generated ID. Any input to this ID will be ignored automatically.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payment_Request_Line_Data": {
+        "description": "A Miscellaneous Payment Request may have multiple lines",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payment_Request_Number": {
+        "description": "If adding a new miscellaneous payment request, then make the Document Number the same value as Reference ID. If updating an existing miscellaneous payment request, then make it the same value as the Reference ID of that invoice. If you do not make the Document Number the same as Reference ID, then duplicate Document Numbers for different miscellaneous payment request may be created. The Reference ID is the only value checked as a unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payment_Request_Number_Prompt": {
+        "description": "Miscellaneous Payment Request ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Active_or_Inactive_Prompt": {
+        "description": "Is Miscellaneous Payee Active or In-Active",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payee_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "Reference to an existing Miscellaneous Payee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_WID_Prompt": {
+        "description": "Reference to an existing Miscellaneous Payee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_Document_Payment_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_Document_Payment_Status_ID_Prompt": {
+        "description": "Reference to an existing Document Payment Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing Document Payment Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Category_Reference_Miscellaneous_Payment_Request_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Category_Reference_Miscellaneous_Payment_Request_Category_ID_Prompt": {
+        "description": "Reference to an existing Miscellaneous Payment Request category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Category_Reference_WID_Prompt": {
+        "description": "Reference to an existing Miscellaneous Payment Request category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Express_Pay": {
+        "description": "Request Express Pay",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Request_Express_Pay_Prompt": {
+        "description": "Request Express Pay",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Requester_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Amount": {
+        "description": "Total Payment Amount based on the lines Extended Amount. It is read only and will be ignored if entered. Workday will calculate this field based on Extended Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

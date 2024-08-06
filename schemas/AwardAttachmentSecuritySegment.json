@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardAttachmentSecuritySegment",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award attachment security segment reference ID.",
+      "field": "Award_Attachment_Security_Segment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award attachment security segment name.",
+      "field": "Award_Attachment_Security_Segment_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award attachment security segment award attachment categories.",
+      "field": "Award_Attachment_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the award attachment security segment to retrieve.",
+      "field": "Award_Attachment_Security_Segment_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award attachment categories on award attachment security segments to retrieve.. Supports multiple values.",
+      "field": "Award_Attachment_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award attachment categories on award attachment security segments to retrieve.. Supports multiple values.",
+      "field": "Award_Attachment_Category_Reference_Award_Attachment_Category_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Attachment_Category_Reference": {
+        "description": "Award attachment security segment award attachment categories.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Attachment_Category_Reference_Award_Attachment_Category_Reference_ID_Prompt": {
+        "description": "Award attachment categories on award attachment security segments to retrieve.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Attachment_Category_Reference_WID_Prompt": {
+        "description": "Award attachment categories on award attachment security segments to retrieve.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Attachment_Security_Segment_ID": {
+        "description": "Award attachment security segment reference ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Attachment_Security_Segment_Name": {
+        "description": "Award attachment security segment name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Attachment_Security_Segment_Name_Prompt": {
+        "description": "Name of the award attachment security segment to retrieve.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecruitingRegions_Integration_ID_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "RecruitingRegion_Recruiting_Region_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Student Recruiting Region based on Organization Name",
+      "field": "Organization_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies the Institution Academic Unit as a request criteria.",
+      "field": "Institution_Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies the Institution Academic Unit as a request criteria.",
+      "field": "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Contains a reference that identifies the Institution Academic Unit as a request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_WID_Prompt": {
+        "description": "Contains a reference that identifies the Institution Academic Unit as a request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name_Prompt": {
+        "description": "Request Student Recruiting Region based on Organization Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RecruitingRegion_Recruiting_Region_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

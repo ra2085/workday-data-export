@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentSponsorContracts_Student_Sponsor_Contract_Amount_Rule_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Student Sponsor Contract Amount Rule Line.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Charge_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Charge_Type_Reference_Charge_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Charge Item Reference",
+      "field": "Charge_Item_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Course_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Course_Reference_Student_Course_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Course Amount",
+      "field": "Course_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Charge Type Line Percentage",
+      "field": "Charge_Type_Line_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Charge Type Maximum Amount",
+      "field": "Charge_Type_Maximum_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+      "field": "Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID_Prompt": {
+        "description": "The academic unit. You can specify multiple academic units to filter for results specific to those units.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Charge_Item_Reference": {
+        "description": "Student Charge Item Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Charge_Type_Line_Percentage": {
+        "description": "Charge Type Line Percentage",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Charge_Type_Maximum_Amount": {
+        "description": "Charge Type Maximum Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Charge_Type_Reference_Charge_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Charge_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Amount": {
+        "description": "Course Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Course_Reference_Student_Course_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Student Sponsor Contract Amount Rule Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HeadcountPlansDoNotUse_Headcount_Plan_Dimension_Management_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "HeadcountPlanVersion_Headcount_Plan_Version_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dimension_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dimension_Reference_Accounting_Worktag_Aggregation_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dimension_Reference_Accounting_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dimension_Reference_Worktag_Aggregation_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dimension_Reference_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that contains information about a headcount plan dimension restriction row.",
+      "field": "Headcount_Plan_Dimension_Restriction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Filters Headcount Plans by Active Plan Versions.",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Prompt": {
+        "description": "Filters Headcount Plans by Active Plan Versions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Dimension_Reference_Accounting_Worktag_Aggregation_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dimension_Reference_Accounting_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dimension_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dimension_Reference_Worktag_Aggregation_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dimension_Reference_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "HeadcountPlanVersion_Headcount_Plan_Version_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Dimension_Restriction_Data": {
+        "description": "Element that contains information about a headcount plan dimension restriction row.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_WID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

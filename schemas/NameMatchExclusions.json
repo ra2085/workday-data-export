@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "NameMatchExclusions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Name_Match_Exclusion_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Name_Match_Exclusion_Reference_Excludable_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for an excludable name.",
+      "field": "Excludable_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Only Required Name Components",
+      "field": "Exclude_Only_Required_Components",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the components of a name, such as the First Name and Last Name.",
+      "field": "Name_Detail_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Excludable_Name_ID": {
+        "description": "Reference ID for an excludable name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Only_Required_Components": {
+        "description": "Exclude Only Required Name Components",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name_Detail_Data": {
+        "description": "Contains the components of a name, such as the First Name and Last Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Match_Exclusion_Reference_Excludable_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Match_Exclusion_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

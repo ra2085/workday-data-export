@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MaskedJobRequisitionDefaults",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Masking_Rule_Configuration_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Masking_Rule_Configuration_Reference_Job_Requisition_Masking_Defaults_Rule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier used to reference the representation of the Masked Job Requisition Defaults table.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the data for individual rows of the Masked Job Requisition Defaults table.",
+      "field": "Masked_Job_Requisition_Default_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "A unique identifier used to reference the representation of the Masked Job Requisition Defaults table.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Masking_Rule_Configuration_Reference_Job_Requisition_Masking_Defaults_Rule_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Masking_Rule_Configuration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Masked_Job_Requisition_Default_Data": {
+        "description": "Element containing the data for individual rows of the Masked Job Requisition Defaults table.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

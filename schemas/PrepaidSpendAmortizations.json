@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PrepaidSpendAmortizations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Accounting Date of the Prepaid Spend Amotization",
+      "field": "Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Invoice for the Prepaid Spend Amortization",
+      "field": "Supplier_Invoice_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Invoice for the Prepaid Spend Amortization",
+      "field": "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Date": {
+        "description": "Accounting Date of the Prepaid Spend Amotization",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier Invoice for the Prepaid Spend Amortization",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier Invoice for the Prepaid Spend Amortization",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

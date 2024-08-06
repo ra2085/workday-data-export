@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GuestListingFiles_Guest_Listing_File_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "GuestListingFile_Guest_Listing_File_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Guest Listing File Number",
+      "field": "Guest_Listing_File_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Guest Listing File Name",
+      "field": "Guest_Listing_File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Guest Listing File Date",
+      "field": "Guest_Listing_File_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element that includes guest instance and data",
+      "field": "Guest_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "GuestListingFile_Guest_Listing_File_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Guest_Data": {
+        "description": "Wrapper element that includes guest instance and data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Guest_Listing_File_Date": {
+        "description": "Guest Listing File Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Guest_Listing_File_Name": {
+        "description": "Guest Listing File Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Guest_Listing_File_Number": {
+        "description": "Guest Listing File Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

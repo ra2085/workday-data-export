@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GrantDrawComponent",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the company associated with the grant draw. It's a required field.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique name for the grant draw component.",
+      "field": "Grant_Draw_Component_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the grant draw component.",
+      "field": "Grant_Draw_Component_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag when set to true includes the Grant Draw Component ID along with the name.",
+      "field": "Include_Grant_Draw_Component_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Draw_Component_Type_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Draw_Component_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text field to specify a description for the grant draw component.",
+      "field": "Grant_Draw_Component_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the ledger account associated with the grant draw component.",
+      "field": "Ledger_Account_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag when set to true, excludes the grant draw component from the grant draw detail.",
+      "field": "Grant_Draw_Component_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference": {
+        "description": "The reference to the company associated with the grant draw. It's a required field.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_Description": {
+        "description": "Text field to specify a description for the grant draw component.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_ID": {
+        "description": "A unique identifier for the grant draw component.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_Inactive": {
+        "description": "A flag when set to true, excludes the grant draw component from the grant draw detail.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_Name": {
+        "description": "A unique name for the grant draw component.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_Type_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Draw_Component_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Grant_Draw_Component_ID_in_Name": {
+        "description": "A flag when set to true includes the Grant Draw Component ID along with the name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ledger_Account_Reference": {
+        "description": "The reference to the ledger account associated with the grant draw component.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentWaiverPayments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Student Waiver Payment",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Academic_Person_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Student_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Universal_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Institution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Institution_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Returns the date on which this Student Waiver Payment was created.",
+      "field": "Transaction_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns if this waiver payment was created as a result of the manual task Record Student Waiver or was adjusted manually by any of the Edit Student Waiver tasks. Data entered in this field will be ignored and set to True in processing.",
+      "field": "Is_Manual",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Year_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Year_Reference_Financial_Aid_Award_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Period_Reference_Academic_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Waiver_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Waiver_Item_Reference_Student_Waiver_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Waiver Payment Amount for Student Waiver Payment",
+      "field": "Transaction_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Precedence_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Precedence_Group_Reference_Student_Precedence_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for Student Waiver Payment",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+      "field": "Auto_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": " v12 operations will process with Run_Now = True for backwards compatibility but please review this setting in your environment for performance conditions.",
+      "field": "Run_Now",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+      "field": "Discard_On_Exit_Validation_Error",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form comment regarding the business process.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element for the attachments pertaining to a Event entered through a web service.",
+      "field": "Business_Process_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Student Waiver Payment Funding Lines",
+      "field": "Funding_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+      "field": "Institutions_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+      "field": "Institutions_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Period_Reference_Academic_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Auto_Complete": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Year_Reference_Financial_Aid_Award_Year_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Year_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Attachment_Data": {
+        "description": "Element for the attachments pertaining to a Event entered through a web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Free form comment regarding the business process.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Discard_On_Exit_Validation_Error": {
+        "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Funding_Line_Data": {
+        "description": "Container for Student Waiver Payment Funding Lines",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "ID for Student Waiver Payment",
+        "type": [
+          "string"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institutions_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institutions_Reference_WID_Prompt": {
+        "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Is_Manual": {
+        "description": "Returns if this waiver payment was created as a result of the manual task Record Student Waiver or was adjusted manually by any of the Edit Student Waiver tasks. Data entered in this field will be ignored and set to True in processing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo for Student Waiver Payment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Run_Now": {
+        "description": " v12 operations will process with Run_Now = True for backwards compatibility but please review this setting in your environment for performance conditions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Precedence_Group_Reference_Student_Precedence_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Precedence_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Waiver_Item_Reference_Student_Waiver_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Waiver_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Academic_Person_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Student_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_WID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Amount": {
+        "description": "Waiver Payment Amount for Student Waiver Payment",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transaction_Date": {
+        "description": "Returns the date on which this Student Waiver Payment was created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Grants",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Grant ID. This is the Grant unique identifier",
+      "field": "Grant_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Grant Name. Grant Name must be unique.",
+      "field": "Grant_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Grant ID in the Grant Name.",
+      "field": "Include_Grant_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate that Grant is inactive",
+      "field": "Grant_is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as True or 1 to exempt transactions for the grant from calculations on the Reprocess Award Costs task.",
+      "field": "Exempt_from_Reprocess_Award_Costs",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The budget date after which we include transactions in Reprocess Award Costs for the grant.",
+      "field": "Reprocess_Award_Costs_After_Budget_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Grant Hierarchy Reference",
+      "field": "Grant_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Salary_Cap_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Salary_Cap_Reference_Salary_Cap_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Salary_Cap_Override_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Grant_Salary_Cap_Override_Reference_Salary_Cap_Interval_ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Exempt_from_Reprocess_Award_Costs": {
+        "description": "Specify as True or 1 to exempt transactions for the grant from calculations on the Reprocess Award Costs task.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Grant_Hierarchy_Reference": {
+        "description": "Grant Hierarchy Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_ID": {
+        "description": "Grant ID. This is the Grant unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Name": {
+        "description": "Free form text for a meaningful Grant Name. Grant Name must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Salary_Cap_Override_Reference_Salary_Cap_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Salary_Cap_Override_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Salary_Cap_Reference_Salary_Cap_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Salary_Cap_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_is_Inactive": {
+        "description": "Boolean to indicate that Grant is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Grant_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Grant ID in the Grant Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reprocess_Award_Costs_After_Budget_Date": {
+        "description": "The budget date after which we include transactions in Reprocess Award Costs for the grant.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

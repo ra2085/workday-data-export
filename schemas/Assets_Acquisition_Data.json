@@ -1,0 +1,2721 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Assets_Acquisition_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Asset_Asset_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The initial cost when the asset was acquired.",
+      "field": "Acquisition_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the asset was acquired, or the transaction effective date of the acquisition.",
+      "field": "Acquisition_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Acquisition_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Acquisition_Method_Reference_Acquisition_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If this asset was created from a Purchase order, this is the PO Number for that Purchase Order.",
+      "field": "PO_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If this asset was created from a Receipt, this is the Receipt number the asset was created from.",
+      "field": "Receipt_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If this asset was created from a Supplier Invoice, this is the Supplier Invoice Number the asset was created from.",
+      "field": "Supplier_Invoice_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The residual value at the time of acquisition.",
+      "field": "Residual_Value_At_Acquisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If this asset was created from a Supplier Invoice, this is a reference to the corresponding Supplier Invoice Line.",
+      "field": "Supplier_Invoice_Line_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Line_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transfer_From_Business_Asset_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transfer_From_Business_Asset_Reference_Asset_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transfer_From_Business_Asset_Reference_Asset_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The worktags specified on the initial acquisition transaction.",
+      "field": "Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo from manual registration.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project number for the business asset.",
+      "field": "Project_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Contract Number from manual registration.",
+      "field": "External_Contract_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lease_Accounting_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lease_Accounting_Method_Reference_Accounting_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Type_Reference_Supplier_Contract_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "External Contract Start Date from manual registration.",
+      "field": "External_Contract_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "External Contract End Date from manual registration.",
+      "field": "External_Contract_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+      "field": "Issued_To_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+      "field": "Issued_To_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+      "field": "Issued_To_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Spend Categories to find assets belonging to those categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Spend Categories to find assets belonging to those categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Purchase Item references to find assets related to those items.. Supports multiple values.",
+      "field": "Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Purchase Item references to find assets related to those items.. Supports multiple values.",
+      "field": "Item_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Locations to find assets currently placed in those locations.. Supports multiple values.",
+      "field": "Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Locations to find assets currently placed in those locations.. Supports multiple values.",
+      "field": "Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An Asset Identifier value to be used to find any exsisting assets with the matching Asset Identifier value.",
+      "field": "Asset_Identifier_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A value to be used to find any existing assets with a matching Serial Number value",
+      "field": "Serial_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Academic_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Academic_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Ad_hoc_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Allocation_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Alternate_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Application_Grouping_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Appropriation_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Asset_Adjustment_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Asset_Impairment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Business_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Calculation_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Cash_Activity_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Compensation_Grade_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Contingent_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_06_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_07_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_08_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_09_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_1_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_10_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_11_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_12_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_13_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_14_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_15_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_2_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_3_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_4_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Custom_Worktag_5_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Customer_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Customer_Contract_Alternate_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Customer_Contract_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Deduction_Recipient_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Donor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Employee_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Ethnicity_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Exemption_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Expense_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Financial_Aid_Award_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Financial_Institution_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Financial_Institution_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Fringe_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Fund_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Funding_Source_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Gender_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Gift_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Investment_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Investment_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Investor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Is_Manager_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Is_People_Manager_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Job_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Job_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Job_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Lease_Expense_Recognition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Loan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Management_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_NI_Category_Letter_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Object_Class_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Opportunity_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Pay_Rate_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Contribution_Group_Key_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Federal_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Flat_Rate_Tax_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Income_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_Religious_Denomination_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Payroll_State_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Position_Time_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Program_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Project_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Project_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Project_Worker_Role_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Proposal_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Prospect_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Prospect_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Receivable_Writeoff_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Revenue_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Rubric_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Salary_Over_The_Cap_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Sales_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Application_Residency_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Award_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Charge_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Course_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Course_Section_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Recruiting_Campaign_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Recruiting_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Sponsor_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Student_Waiver_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Supplier_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Applicability_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Point_Date_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Tax_Recoverability_Object_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Third_Party_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Withholding_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Withholding_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Work_Function_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Work_Shift_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktag_Reference_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Status reference to use to find assets currently in those statuses.. Supports multiple values.",
+      "field": "Asset_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Status reference to use to find assets currently in those statuses.. Supports multiple values.",
+      "field": "Asset_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Acquisition Method references to use to find assets acquired using one of those methods.. Supports multiple values.",
+      "field": "Acquisition_Method_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Acquisition Method references to use to find assets acquired using one of those methods.. Supports multiple values.",
+      "field": "Acquisition_Method_Reference_Acquisition_Method_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Disposal Method references to find assets disposed of using those methods.. Supports multiple values.",
+      "field": "Disposal_Method_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Disposal Method references to find assets disposed of using those methods.. Supports multiple values.",
+      "field": "Disposal_Method_Reference_Resource_Disposal_Method_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to find assets by the date they were acquired. This is the From Date to find assets by acquisition date. This date is inclusive.",
+      "field": "Acquired_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to find assets by the date they were acquired. This is the To Date to find assets by acquisition date. This date is inclusive.",
+      "field": "Acquired_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Allows you to find assets by when they were updated. This is the From Date to use to find all types of asset activity within a date range (Acquisition, Cost Adjustment, Disposal, Reinstatement, Issue, Transfer). Assets with activity in this date range will be returned in the response.",
+      "field": "Updated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Allows you to find assets by when they were updated. This is the To Date to use to find all types of asset activity within a date range (Acquisition, Cost Adjustment, Disposal, Reinstatement, Issue, Transfer). Assets with activity in this date range will be returned in the response.",
+      "field": "Updated_To_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Acquired_From_Date_Prompt": {
+        "description": "Allows you to find assets by the date they were acquired. This is the From Date to find assets by acquisition date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquired_To_Date_Prompt": {
+        "description": "Allows you to find assets by the date they were acquired. This is the To Date to find assets by acquisition date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Cost": {
+        "description": "The initial cost when the asset was acquired.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Acquisition_Date": {
+        "description": "The date the asset was acquired, or the transaction effective date of the acquisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_Acquisition_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_Acquisition_Method_ID_Prompt": {
+        "description": "One or more Acquisition Method references to use to find assets acquired using one of those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_WID_Prompt": {
+        "description": "One or more Acquisition Method references to use to find assets acquired using one of those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Asset_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Identifier_Prompt": {
+        "description": "An Asset Identifier value to be used to find any exsisting assets with the matching Asset Identifier value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "One or more Asset Status reference to use to find assets currently in those statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Status_Reference_WID_Prompt": {
+        "description": "One or more Asset Status reference to use to find assets currently in those statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "One or more Company references to use to filter the assets returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disposal_Method_Reference_Resource_Disposal_Method_ID_Prompt": {
+        "description": "One or more Asset Disposal Method references to find assets disposed of using those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disposal_Method_Reference_WID_Prompt": {
+        "description": "One or more Asset Disposal Method references to find assets disposed of using those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Contract_End_Date": {
+        "description": "External Contract End Date from manual registration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Contract_Number": {
+        "description": "External Contract Number from manual registration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Contract_Start_Date": {
+        "description": "External Contract Start Date from manual registration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Worker_Reference_Employee_ID_Prompt": {
+        "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_To_Worker_Reference_WID_Prompt": {
+        "description": "One or more Worker references to use to find assets currently issues to those Workers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID_Prompt": {
+        "description": "One or more Purchase Item references to find assets related to those items.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID_Prompt": {
+        "description": "One or more Purchase Item references to find assets related to those items.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Accounting_Method_Reference_Accounting_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Accounting_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID_Prompt": {
+        "description": "One or more Locations to find assets currently placed in those locations.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID_Prompt": {
+        "description": "One or more Locations to find assets currently placed in those locations.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Memo from manual registration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PO_Number": {
+        "description": "If this asset was created from a Purchase order, this is the PO Number for that Purchase Order.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Number": {
+        "description": "Project number for the business asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Number": {
+        "description": "If this asset was created from a Receipt, this is the Receipt number the asset was created from.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Residual_Value_At_Acquisition": {
+        "description": "The residual value at the time of acquisition.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Serial_Number_Prompt": {
+        "description": "A value to be used to find any existing assets with a matching Serial Number value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "One or more Spend Categories to find assets belonging to those categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "One or more Spend Categories to find assets belonging to those categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Type_Reference_Supplier_Contract_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Line_Reference": {
+        "description": "If this asset was created from a Supplier Invoice, this is a reference to the corresponding Supplier Invoice Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Number": {
+        "description": "If this asset was created from a Supplier Invoice, this is the Supplier Invoice Number the asset was created from.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_From_Business_Asset_Reference_Asset_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_From_Business_Asset_Reference_Asset_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_From_Business_Asset_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_From_Date_Prompt": {
+        "description": "Allows you to find assets by when they were updated. This is the From Date to use to find all types of asset activity within a date range (Acquisition, Cost Adjustment, Disposal, Reinstatement, Issue, Transfer). Assets with activity in this date range will be returned in the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_To_Date_Prompt": {
+        "description": "Allows you to find assets by when they were updated. This is the To Date to use to find all types of asset activity within a date range (Acquisition, Cost Adjustment, Disposal, Reinstatement, Issue, Transfer). Assets with activity in this date range will be returned in the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference": {
+        "description": "The worktags specified on the initial acquisition transaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Academic_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Academic_Period_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Academic_Person_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Academic_Unit_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Ad_hoc_Payee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Allocation_Pool_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Alternate_Supplier_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Applicant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Application_Grouping_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Appropriation_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Asset_Adjustment_Type_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Asset_Impairment_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Bank_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Business_Unit_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Calculation_Compensation_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Candidate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Cash_Activity_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Catalog_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Company_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Compensation_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Compensation_Grade_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Contingent_Worker_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_06_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_07_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_08_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_09_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_10_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_11_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_12_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_13_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_14_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_15_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_1_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_2_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_3_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_4_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Custom_Worktag_5_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Customer_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Customer_Contract_Alternate_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Customer_Contract_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Customer_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Customer_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Deduction_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Deduction_Recipient_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Donor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Earning_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Employee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Employee_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Ethnicity_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Exemption_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Expense_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_External_Sourceable_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Financial_Aid_Award_Year_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Financial_Institution_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Financial_Institution_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Fringe_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Fund_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Funding_Source_Name_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Gender_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Gift_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Grant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Investment_Pool_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Investment_Profile_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Investor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Is_Manager_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Is_People_Manager_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Job_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Job_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Job_Profile_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Job_Requisition_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Lease_Expense_Recognition_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Loan_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Location_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Management_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_NI_Category_Letter_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Object_Class_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Opportunity_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Pay_Rate_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Contribution_Group_Key_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Federal_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Flat_Rate_Tax_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Income_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_Religious_Denomination_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Payroll_State_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Position_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Position_Time_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Program_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Program_of_Study_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Project_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Project_Plan_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Project_Worker_Role_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Proposal_Grant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Prospect_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Prospect_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Purchase_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Receivable_Writeoff_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Region_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Revenue_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Rubric_Value_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Run_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Salary_Over_The_Cap_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Sales_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Spend_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Sponsor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Application_Residency_Status_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Award_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Charge_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Course_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Course_Section_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Recruiting_Campaign_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Recruiting_Event_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Sponsor_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Student_Waiver_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Supplier_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Supplier_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Applicability_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Authority_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Code_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Point_Date_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Rate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Tax_Recoverability_Object_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Third_Party_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_WID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Withholding_Tax_Code_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Withholding_Tax_Rate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Work_Function_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Work_Shift_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Workday_Earning_Code_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference_Worker_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to find Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

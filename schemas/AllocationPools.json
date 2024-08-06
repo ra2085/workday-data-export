@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AllocationPools",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Allocation Pool.",
+      "field": "Allocation_Pool_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Allocation Pool.",
+      "field": "Allocation_Pool_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to append the Allocation Pool ID to the name of the Allocation Pool.",
+      "field": "Include_Allocation_Pool_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Date that the Allocation Pool was Inactivated.",
+      "field": "Inactivation_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allocation_Pool_Name": {
+        "description": "The Name of the Allocation Pool.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Pool_Reference_ID": {
+        "description": "The Reference ID of the Allocation Pool.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivation_Date": {
+        "description": "The Date that the Allocation Pool was Inactivated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Allocation_Pool_ID_in_Name": {
+        "description": "Indicates whether to append the Allocation Pool ID to the name of the Allocation Pool.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

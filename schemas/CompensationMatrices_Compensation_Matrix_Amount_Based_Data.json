@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationMatrices_Compensation_Matrix_Amount_Based_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique ID of this Compensation Matrix.",
+      "field": "CompensationMatrix_Compensation_Matrix_Matrix_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifying a target rule means that the merit increase matrix (MIM) only applies to employees that fall within that target rule.  Specifying two or more target rules results in multiple-target MIMs with target ranges applicable to those employees that fall within the target rule.  Leaving the Target Rule Reference empty will result in a single-target MIM that can be used for across the entire organization.",
+      "field": "Compensation_Matrix_Target_Rules_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Entry data for this amount based compensation matrix.",
+      "field": "Compensation_Matrix_Entry_Amount_Based_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Return the compensation matrix with the name specified by this parameter.",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all Amount based compensation matrices.",
+      "field": "Compensation_Matrix_Amount_Based_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all Non-weighted percent  Based compensation matrices.",
+      "field": "Compensation_Matrix_Non-weighted_Percent_Based_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, return all weighted percent based compensation matrices.",
+      "field": "Compensation_Matrix_Weighted_Percent_Based_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CompensationMatrix_Compensation_Matrix_Matrix_ID": {
+        "description": "The unique ID of this Compensation Matrix.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Amount_Based_Prompt": {
+        "description": "If true, return all Amount based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Entry_Amount_Based_Data": {
+        "description": "Entry data for this amount based compensation matrix.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Non-weighted_Percent_Based_Prompt": {
+        "description": "If true, return all Non-weighted percent  Based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Target_Rules_Reference": {
+        "description": "Specifying a target rule means that the merit increase matrix (MIM) only applies to employees that fall within that target rule.  Specifying two or more target rules results in multiple-target MIMs with target ranges applicable to those employees that fall within the target rule.  Leaving the Target Rule Reference empty will result in a single-target MIM that can be used for across the entire organization.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Matrix_Weighted_Percent_Based_Prompt": {
+        "description": "If true, return all weighted percent based compensation matrices.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Return the compensation matrix with the name specified by this parameter.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

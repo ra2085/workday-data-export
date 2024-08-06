@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "VaccinationStatus",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vaccination_Status_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vaccination_Status_Reference_Vaccination_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vaccination_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the worker's vaccination status.",
+      "field": "Vaccination_Status_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Vaccination Status and their associated data.",
+      "field": "Vaccine_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The custom text that workers view when they attest to their Vaccination Status.",
+      "field": "Attestation_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, displays a Vaccination Details section on the Add My Vaccination and Add Vaccination tasks. Enables workers to enter the manufacturer, vaccination event type, and date.",
+      "field": "Collect_Vaccine_Detail",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the worker is marked as Fully Vaccinated when they select this Vaccination Status.",
+      "field": "Fully_Vaccinated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the status is inactivated. You might have downstream impacts if there's existing vaccination data.",
+      "field": "Vaccination_Status_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attestation_Text": {
+        "description": "The custom text that workers view when they attest to their Vaccination Status.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Collect_Vaccine_Detail": {
+        "description": "If true, displays a Vaccination Details section on the Add My Vaccination and Add Vaccination tasks. Enables workers to enter the manufacturer, vaccination event type, and date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Fully_Vaccinated": {
+        "description": "If true, the worker is marked as Fully Vaccinated when they select this Vaccination Status.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Vaccination_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vaccination_Status_Inactive": {
+        "description": "If true, the status is inactivated. You might have downstream impacts if there's existing vaccination data.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Vaccination_Status_Name": {
+        "description": "The name of the worker's vaccination status.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vaccination_Status_Reference_Vaccination_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vaccination_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Vaccine_Type_Reference": {
+        "description": "Contains the Vaccination Status and their associated data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

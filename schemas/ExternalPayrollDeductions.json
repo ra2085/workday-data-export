@@ -1,0 +1,303 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalPayrollDeductions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the External Payroll Deduction.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Code of the External Payroll Deduction, which is also used as the unique identifier for the External Payroll Deduction for the reference ID type Deduction_Code.",
+      "field": "Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A non unique external payroll code. You can only specify this field if the Enable External Payroll Code check box is selected on the Edit Tenant Setup - HCM task.",
+      "field": "External_Payroll_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the External Payroll Deduction is position-based.",
+      "field": "Position_Based",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Calculation Category. The value is always Outbound Payroll Interface.",
+      "field": "Calculation_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Outbound_Pay_Component_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Outbound_Pay_Component_Group_Reference_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Outbound_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_Reference_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Third-Party Payroll Pay Group(s) for which the External Payroll Deduction is relevant. Specify either the WID or \"Organization_Reference_ID=12345\".",
+      "field": "Pay_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Allowed Payroll Input Type(s). Specify either the WID or \"Payroll_Input_Type_Id=12345\". Allowed Payroll Input Types include Adjustment, Goal Amount, Input, and Ongoing.",
+      "field": "Payroll_Input_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify Benefit Plans when the External Payroll Deduction applies to a benefit plan. Specify either the WID or the relevant Reference ID. Examples: Additional_Benefits_Plan_ID, Defined_Contribution_Plan_ID, Health_Care_Coverage_Plan_ID, Health_Savings_Account_Plan_ID, Insurance_Coverage_Plan_ID, Spending_Account_Plan_ID.",
+      "field": "Benefit_Plan_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify the Time Off instance when the External Payroll Deduction is for paid time off. Specify either the WID or \"Absence_Component_Related_Calculation_ID=12345\".",
+      "field": "Absence_Calculation_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order of the criteria used for scheduling.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the scheduling criteria calculation data.",
+      "field": "Scheduling_Calculation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the web service excludes the External Payroll Deduction from outbound Payroll Interface integrations.",
+      "field": "Inbound_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comments regarding the External Payroll Deduction.",
+      "field": "Comments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+      "field": "Pay_Groups_for_Payroll_Interface_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+      "field": "Pay_Groups_for_Payroll_Interface_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Absence_Calculation_Reference": {
+        "description": "Specify the Time Off instance when the External Payroll Deduction is for paid time off. Specify either the WID or \"Absence_Component_Related_Calculation_ID=12345\".",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Plan_Reference": {
+        "description": "Specify Benefit Plans when the External Payroll Deduction applies to a benefit plan. Specify either the WID or the relevant Reference ID. Examples: Additional_Benefits_Plan_ID, Defined_Contribution_Plan_ID, Health_Care_Coverage_Plan_ID, Health_Savings_Account_Plan_ID, Insurance_Coverage_Plan_ID, Spending_Account_Plan_ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Category_Reference": {
+        "description": "ID of the Calculation Category. The value is always Outbound Payroll Interface.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Code": {
+        "description": "Code of the External Payroll Deduction, which is also used as the unique identifier for the External Payroll Deduction for the reference ID type Deduction_Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comments": {
+        "description": "Comments regarding the External Payroll Deduction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Payroll_Code": {
+        "description": "A non unique external payroll code. You can only specify this field if the Enable External Payroll Code check box is selected on the Edit Tenant Setup - HCM task.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_Reference_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inbound_Only": {
+        "description": "If true, the web service excludes the External Payroll Deduction from outbound Payroll Interface integrations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of the External Payroll Deduction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "The order of the criteria used for scheduling.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outbound_Pay_Component_Group_Reference_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outbound_Pay_Component_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outbound_Pay_Component_Group_Reference_Workday_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference": {
+        "description": "ID of the Third-Party Payroll Pay Group(s) for which the External Payroll Deduction is relevant. Specify either the WID or \"Organization_Reference_ID=12345\".",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_for_Payroll_Interface_Reference_Organization_Reference_ID_Prompt": {
+        "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_for_Payroll_Interface_Reference_WID_Prompt": {
+        "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Input_Type_Reference": {
+        "description": "ID of the Allowed Payroll Input Type(s). Specify either the WID or \"Payroll_Input_Type_Id=12345\". Allowed Payroll Input Types include Adjustment, Goal Amount, Input, and Ongoing.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Based": {
+        "description": "If true, the External Payroll Deduction is position-based.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Scheduling_Calculation": {
+        "description": "Contains the scheduling criteria calculation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

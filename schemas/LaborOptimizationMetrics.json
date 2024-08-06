@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LaborOptimizationMetrics",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Labor Optimization Metric",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Labor Optimization Metric",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Sub-Metric of the Labor Optimization Metric",
+      "field": "Labor_Optimization_Sub_Metric_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The Reference ID of the Labor Optimization Metric",
+        "type": [
+          "string"
+        ]
+      },
+      "Labor_Optimization_Sub_Metric_Reference": {
+        "description": "The Sub-Metric of the Labor Optimization Metric",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Name of the Labor Optimization Metric",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

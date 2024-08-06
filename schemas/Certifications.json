@@ -1,0 +1,250 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Certifications",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Certification_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Certification_Reference_Certification_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID (Certification ID)",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name or type of the certification.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issuer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issuer_Reference_Certification_Issuer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The state or province in which the certification is issued.",
+      "field": "Restrict_to_Country_Region_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Any specialties which are recommended for this certification.",
+      "field": "Specialty_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When selected, the specialty prompt displayed to workers adding certifications to their worker profile will be restricted to the mapped specialties.",
+      "field": "Restrict_Specialty_to_Certification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is certification renewable?",
+      "field": "Renewable_Required_",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Renewable period for certification (in months)",
+      "field": "Renewable_In__months_",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not the worker holding this certification may have the exam date and score fields enabled.",
+      "field": "Track_Exam_Date_and_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not this certification is active in the system and is available for users to choose from prompts.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of records in the system that refers to this certification.",
+      "field": "Usage_Count",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Certification_Reference_Certification_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Certification_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID (Certification ID)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether or not this certification is active in the system and is available for users to choose from prompts.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Issuer_Reference_Certification_Issuer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issuer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name or type of the certification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Renewable_In__months_": {
+        "description": "Renewable period for certification (in months)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Renewable_Required_": {
+        "description": "Is certification renewable?",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Restrict_Specialty_to_Certification": {
+        "description": "When selected, the specialty prompt displayed to workers adding certifications to their worker profile will be restricted to the mapped specialties.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Restrict_to_Country_Region_Reference": {
+        "description": "The state or province in which the certification is issued.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Specialty_Reference": {
+        "description": "Any specialties which are recommended for this certification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Track_Exam_Date_and_Score": {
+        "description": "Indicates whether or not the worker holding this certification may have the exam date and score fields enabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Usage_Count": {
+        "description": "The number of records in the system that refers to this certification.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

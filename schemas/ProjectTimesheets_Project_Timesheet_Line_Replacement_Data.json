@@ -1,0 +1,407 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectTimesheets_Project_Timesheet_Line_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique ID for the Project Timesheet",
+      "field": "ProjectTimesheet_Project_Timesheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Code_Reference_Time_Code_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_Project_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_Project_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_Work_Assignment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_Work_Assignment_Version_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Activity_Reference_Work_Function_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+      "field": "Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Decimal value for Proposed Percent Complete of the Project Task selected.  This value can be set via the Timesheet under certain condition and is then copied to the Project Task on Approval of the Timesheet.",
+      "field": "Percent_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional memo for the Timesheet line.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Time allocation percent for a Project Worksheet Line.  Indicates the percentage of time an employee spent on an activity for the specific time period.   Applies to Project Worksheets only.",
+      "field": "Worksheet_Allocation_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "vThis element encapsulates data for a single Project Timesheet Day",
+      "field": "Project_Timesheet_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+      "field": "Supervisory_Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to find Timesheets with a Period that starts on or after the date specified.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to find Timesheets with a Period that starts on or before the date specified.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Document_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Document_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag to indicate to exclude Timesheet Types of Project Worksheets.  1 = Exclude Worksheets, 0 = Include Worksheets",
+      "field": "Exclude_Worksheets_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Activity_Reference_Project_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Activity_Reference_Project_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Activity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Activity_Reference_Work_Assignment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Activity_Reference_Work_Assignment_Version_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Activity_Reference_Work_Function_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Worksheets_Prompt": {
+        "description": "Boolean flag to indicate to exclude Timesheet Types of Project Worksheets.  1 = Exclude Worksheets, 0 = Include Worksheets",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "An optional memo for the Timesheet line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percent_Complete": {
+        "description": "Decimal value for Proposed Percent Complete of the Project Task selected.  This value can be set via the Timesheet under certain condition and is then copied to the Project Task on Approval of the Timesheet.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ProjectTimesheet_Project_Timesheet_ID": {
+        "description": "The unique ID for the Project Timesheet",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Timesheet_Day": {
+        "description": "vThis element encapsulates data for a single Project Timesheet Day",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "Date to find Timesheets with a Period that starts on or after the date specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "Date to find Timesheets with a Period that starts on or before the date specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Timesheets in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Code_Reference_Time_Code_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worksheet_Allocation_Percent": {
+        "description": "Time allocation percent for a Project Worksheet Line.  Indicates the percentage of time an employee spent on an activity for the specific time period.   Applies to Project Worksheets only.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worktag_Reference": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

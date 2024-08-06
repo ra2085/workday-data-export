@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TransferPricingRateSheets_Transfer_Pricing_Rate_Sheet_Snapshot_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the transfer pricing rate sheet.",
+      "field": "TransferPricingRateSheet_Transfer_Pricing_Rate_Sheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Retrieves or submits the default rate or percent of transfer pricing. If the transfer pricing rate basis is selected as custom rate, it is the default rate; otherwise, it is the default percent.",
+      "field": "Transfer_Pricing_Default_Rate_Or_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transfer_Pricing_Rate_Basis_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Transfer_Pricing_Rate_Basis_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the transfer pricing rate sheet details data.",
+      "field": "Transfer_Pricing_Rate_Sheet_Detail_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TransferPricingRateSheet_Transfer_Pricing_Rate_Sheet_ID": {
+        "description": "ID of the transfer pricing rate sheet.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Default_Rate_Or_Percent": {
+        "description": "Retrieves or submits the default rate or percent of transfer pricing. If the transfer pricing rate basis is selected as custom rate, it is the default rate; otherwise, it is the default percent.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Basis_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Basis_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_Pricing_Rate_Sheet_Detail_Data": {
+        "description": "Contains the transfer pricing rate sheet details data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

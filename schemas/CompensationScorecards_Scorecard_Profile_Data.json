@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationScorecards_Scorecard_Profile_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier",
+      "field": "Scorecard_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Scorecard_Profile_Target__Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Scorecard_Profile_Target__Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains set of goals and goal values that apply to the eligibility rule.",
+      "field": "Scorecard_Profile_Goal_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Scorecard_Profile_Goal_Data": {
+        "description": "Contains set of goals and goal values that apply to the eligibility rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Profile_ID": {
+        "description": "Unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Profile_Target__Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Profile_Target__Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Returns_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Return_Return_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Attachment_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Attachment_Category_Reference_Attachment_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Number",
+      "field": "Return_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Return Status. Examples of Document Status are Approved, Denied, Draft, In Progress. Supports multiple values.",
+      "field": "Return_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Return Status. Examples of Document Status are Approved, Denied, Draft, In Progress. Supports multiple values.",
+      "field": "Return_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Return Date On or After",
+      "field": "Return_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Return Date On or Before",
+      "field": "Return_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Return Reason. Supports multiple values.",
+      "field": "Return_Reason_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Return Reason. Supports multiple values.",
+      "field": "Return_Reason_Reference_Return_to_Supplier_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Contract",
+      "field": "Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Contract",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Contract",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Spend Category.. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Spend Category.. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Return. Supports multiple values.",
+      "field": "Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Return. Supports multiple values.",
+      "field": "Item_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Return. Supports multiple values.",
+      "field": "Item_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference of an Item on the Return. Supports multiple values.",
+      "field": "Item_Reference_Supplier_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier RMA on the Return",
+      "field": "Supplier_RMA_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Person who created the Return. Supports multiple values.",
+      "field": "Created_by_Person_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Person who created the Return. Supports multiple values.",
+      "field": "Created_by_Person_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+      "field": "Approving_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Approving_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who approved the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Category_Reference_Attachment_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Person_Reference_IID_Prompt": {
+        "description": "Reference to a Person who created the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_by_Person_Reference_WID_Prompt": {
+        "description": "Reference to a Person who created the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Catalog_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Supplier_Item_ID_Prompt": {
+        "description": "Reference of an Item on the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID_Prompt": {
+        "description": "Reference of an Item on the Return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Date_On_or_After_Prompt": {
+        "description": "Return Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Date_On_or_Before_Prompt": {
+        "description": "Return Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Number_Prompt": {
+        "description": "Requisition Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Reason_Reference_Return_to_Supplier_Reason_ID_Prompt": {
+        "description": "Reference to an existing Return Reason. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Reason_Reference_WID_Prompt": {
+        "description": "Reference to an existing Return Reason. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Return_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to an existing Return Status. Examples of Document Status are Approved, Denied, Draft, In Progress. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing Return Status. Examples of Document Status are Approved, Denied, Draft, In Progress. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "Reference to the Spend Category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "Reference to the Spend Category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Reference to an existing Supplier Contract",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Reference to an existing Supplier Contract",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier Contract",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_RMA_Prompt": {
+        "description": "Supplier RMA on the Return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

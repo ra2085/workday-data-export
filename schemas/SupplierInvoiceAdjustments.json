@@ -1,0 +1,2058 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceAdjustments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Invoice Adjustment ID.  This is the Supplier Invoice Adjustment unique identifier",
+      "field": "Supplier_Invoice_Adjustment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable editing and canceling the invoice inside the Workday application.   Invoice can only be updated from the web service.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If adding a new invoice, then make the Invoice Number the same value as Reference ID. If updating an existing invoice, then make it the same value as the Reference ID of that invoice. If you do not make the Invoice Number the same as Reference ID, then duplicate Invoice Numbers for different invoices may be created. The Reference ID is the only value checked as a unique identifier. Note that the name of the Reference ID is different for each invoice type: e.g. Supplier Invoice ID, Supplier Invoice Adjustment ID, Customer Invoice Adjustment ID, and Customer Invoice ID.",
+      "field": "Invoice_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Gapless Document Number On Supplier Invoice Adjustment",
+      "field": "Gapless_Document_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Supplier_Invoice_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Supplier_Invoice_Source_Reference_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Supplier_Invoice_Source_Reference_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Supplier_Invoice_Source_Reference_Workday_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_Supplier_Invoice_Source_Reference_Workday_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Document_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Cancel_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Cancel_Reason_Reference_Invoice_Cancel_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Cancel_Reason_Reference_Workday_Invoice_Cancel_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Payment Practice field to flag a Supplier Invoice for Payment Practices Reporting",
+      "field": "Payment_Practices",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Contingent_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Contingent_Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Connection_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Connection_Reference_Supplier_Connection_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this is set to 'TRUE' the default supplier connection will be derived.",
+      "field": "Use_Default_Supplier_Connection",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag for Increase Liability.  In most cases, adjustments are used to decrease the liability to the supplier, in which case they are called credit memos.  However, there are some circumstances where an adjustment is needed to increase the liability.  In this case, set this value.",
+      "field": "Increase_Liability",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Adjustment_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Adjustment_Reason_Reference_Adjustment_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Adjustment Date",
+      "field": "Adjustment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Field to store the Invoice Received Date value",
+      "field": "Adjustment_Received_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "If a date is provided, it will override the due date that Workday automatically determines  based on the invoice date and payment terms.",
+      "field": "Due_Date_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Override date for Accounting.",
+      "field": "Accounting_Date_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Accounting Date for a Supplier Invoice Adjustment.",
+      "field": "Invoice_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Cancel Accounting Date is populated only when a Supplier Invoice Adjustment is Cancelled.",
+      "field": "Cancel_Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Use this field to override the Budget Date on all supplier invoice lines and splits.",
+      "field": "Budget_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Option_Reference_Tax_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_ID_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Address_ID_Reference_Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the expected invoice total including tax.  It is optional. An invoice cannot be submittted for approval if it has a non-zero control total that does not equal the sum of the extended amount for all invoice lines plus tax.",
+      "field": "Control_Total_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Tax Amount",
+      "field": "Tax_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Withholding Tax Amount",
+      "field": "Withholding_Tax_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Freight Amount",
+      "field": "Freight_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Other Charges",
+      "field": "Other_Charges",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worktag_Split_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worktag_Split_Template_Reference_Worktag_Allocation_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Original_Invoice_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Original_Invoice_Reference_Supplier_Invoice_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "User can pass the Original Invoice Supplier Reference Number of a Supplier Invoice here to populate the Original Invoice Reference field with that Supplier Invoice.",
+      "field": "Original_Invoice_Supplier_Reference_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_Payment_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Additional_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Additional_Type_Reference_Additional_Reference_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference number that is encoded with key payment information on the invoice document.",
+      "field": "Additional_Reference_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Originating_Country_Payment_Purpose_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Originating_Country_Payment_Purpose_Code_Reference_Payment_Purpose_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receiving_Country_Payment_Purpose_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receiving_Country_Payment_Purpose_Code_Reference_Payment_Purpose_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Handling_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Handling_Code_Reference_Handling_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on which you must pay an invoice to receive the discount. This field is empty if there is no discount. This field is read-only.",
+      "field": "Discount_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The discount amount on this supplier invoice. This field is read-only.",
+      "field": "Discount_Taken",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The discount amount you lose when you don't take the discount by the discount date. The invoice is paid in full. If any discount is taken, or if there is no discount available, this field is blank. This field is read-only.",
+      "field": "Discounts_Not_Taken",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this is set to 'TRUE' the invoice will be put on hold.",
+      "field": "On_Hold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating if the Supplier Paper Document was received (possibly through mail or fax) . If this is set then a Supplier Reference is required that will provide information for locating that document.",
+      "field": "Supplier_Document_Received",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field to provide a Supplier's Invoice Number memo. The Supplier's Invoice Number is not a Workday Reference ID, but a text field for providing additional information about the Supplier Invoice.",
+      "field": "Suppliers_Invoice_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for providing addition information on the Purchase Order that the Supplier Invoice is for.  This is not a Workday Purchase Order Reference ID.",
+      "field": "External_PO_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Alternate_Supplier_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_Amendment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_History_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Reference_Supplier_Invoice_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Link to a scanned image of the paper invoice",
+      "field": "Document_Link",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statutory_Invoice_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statutory_Invoice_Type_Reference_Invoice_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Statutory_Invoice_Type_Reference_Spend_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+      "field": "Document_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approver_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approver_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approver_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing additional fields data",
+      "field": "Additional_Fields_Data_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Currency conversion rate data.",
+      "field": "Currency_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Attachment Data",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Supplier Invoice Line data.",
+      "field": "Invoice_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Data by Tax Authority and Tax Code.  For Customer Invoice Documents and Cash Sales tax data will always be calculated from the line data regardless of what is populated in Tax Rate Application Data.  For Purchase Orders, Supplier Invoice Documents and Ad hoc Payments, if data is in Tax Rate Application Data, then that will be the tax information that is saved.  Otherwise, the tax will be calculated from the lines.",
+      "field": "Tax_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Withholding Tax Data by Tax Authority and Withholding Tax Code.  For Customer Invoice Documents and Cash Sales tax data will always be calculated from the line data regardless of what is populated in Tax Rate Application Data. For Purchase Orders, Supplier Invoice Documents and Ad hoc Payments, if data is in Tax Rate Application Data, then that will be the tax information that is saved. Otherwise, the tax will be calculated from the lines.",
+      "field": "Withholding_Tax_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+      "field": "Auto_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+      "field": "Skip",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+      "field": "Discard_On_Exit_Validation_Error",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form comment regarding the business process.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element for the attachments pertaining to a Event entered through a web service.",
+      "field": "Business_Process_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Information Relating to Gapless Tax Certificate Numbers",
+      "field": "Tax_Certificate_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References all the information related to the Supplier Invoice Work Queue tab.",
+      "field": "Work_Queue_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Supplier_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+      "field": "Supplier_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Date On or After",
+      "field": "Invoice_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Date On or Before",
+      "field": "Invoice_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+      "field": "Supplier_Hierarchy_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+      "field": "Supplier_Hierarchy_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+      "field": "Supplier_Hierarchy_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+      "field": "Supplier_Hierarchy_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean that indicates that the invoice is on hold",
+      "field": "Invoice_On_Hold_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean that indicates that the invoice is an intercompany invoice",
+      "field": "Intercompany_Invoice_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Payment Status. Examples of Payment Status are Draft, In Progress, Approved. Supports multiple values.",
+      "field": "Payment_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Payment Status. Examples of Payment Status are Draft, In Progress, Approved. Supports multiple values.",
+      "field": "Payment_Status_Reference_Document_Payment_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Adjustment Reason. Supports multiple values.",
+      "field": "Adjustment_Reasons_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Adjustment Reason. Supports multiple values.",
+      "field": "Adjustment_Reasons_Reference_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Due Date On or After",
+      "field": "Invoice_Due_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice Due Date On or Before",
+      "field": "Invoice_Due_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+      "field": "Created_By_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+      "field": "Approving_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+      "field": "Approving_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "All or part of an External PO Number",
+      "field": "External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing invoice Document Status. Examples of Document Status are Approved, Canceled, Denied. Supports multiple values.",
+      "field": "Invoice_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing invoice Document Status. Examples of Document Status are Approved, Canceled, Denied. Supports multiple values.",
+      "field": "Invoice_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to External Invoice from third party system.",
+      "field": "External_Reference_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Date_Override": {
+        "description": "Override date for Accounting.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Fields_Data_Reference": {
+        "description": "Encapsulating element containing additional fields data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Reference_Number": {
+        "description": "The reference number that is encoded with key payment information on the invoice document.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Type_Reference_Additional_Reference_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Date": {
+        "description": "Invoice Adjustment Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reason_Reference_Adjustment_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reasons_Reference_Adjustment_Reason_ID_Prompt": {
+        "description": "Reference to an existing Adjustment Reason. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reasons_Reference_WID_Prompt": {
+        "description": "Reference to an existing Adjustment Reason. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Received_Date": {
+        "description": "Field to store the Invoice Received Date value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approver_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approver_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approver_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approving_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who approved the invoice. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Attachment Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Auto_Complete": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically processed. This means that all approvals will be automatically approved in the system, all reviews and to-do's will be automatically by-passed, and all notifications will be automatically suppressed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Budget_Date": {
+        "description": "Use this field to override the Budget Date on all supplier invoice lines and splits.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Attachment_Data": {
+        "description": "Element for the attachments pertaining to a Event entered through a web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cancel_Accounting_Date": {
+        "description": "Cancel Accounting Date is populated only when a Supplier Invoice Adjustment is Cancelled.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Free form comment regarding the business process.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contingent_Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contingent_Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Control_Total_Amount": {
+        "description": "This is the expected invoice total including tax.  It is optional. An invoice cannot be submittted for approval if it has a non-zero control total that does not equal the sum of the extended amount for all invoice lines plus tax.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Worker_Reference_WID_Prompt": {
+        "description": "Reference to a Worker who created the transaction.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Data": {
+        "description": "Currency conversion rate data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Option_Reference_Tax_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Discard_On_Exit_Validation_Error": {
+        "description": "Enforces all validation conditions defined on the initiation step. If any condition is true, the validation error blocks the step from exiting and a business process event isn't created. The attribute is currently not available for use. It will be generally available for all web services in a future release.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Discount_Date": {
+        "description": "The date on which you must pay an invoice to receive the discount. This field is empty if there is no discount. This field is read-only.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Discount_Taken": {
+        "description": "The discount amount on this supplier invoice. This field is read-only.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Discounts_Not_Taken": {
+        "description": "The discount amount you lose when you don't take the discount by the discount date. The invoice is paid in full. If any discount is taken, or if there is no discount available, this field is blank. This field is read-only.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Document_Link": {
+        "description": "Link to a scanned image of the paper invoice",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Memo": {
+        "description": "This transaction header memo will print on the delivered transaction. It is optional freeform text",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_Override": {
+        "description": "If a date is provided, it will override the due date that Workday automatically determines  based on the invoice date and payment terms.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_PO_Number": {
+        "description": "Free form text field for providing addition information on the Purchase Order that the Supplier Invoice is for.  This is not a Workday Purchase Order Reference ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_PO_Number_Prompt": {
+        "description": "All or part of an External PO Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Reference_Prompt": {
+        "description": "Reference to External Invoice from third party system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Supplier_Invoice_Source_Reference_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Supplier_Invoice_Source_Reference_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Supplier_Invoice_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Supplier_Invoice_Source_Reference_Workday_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Supplier_Invoice_Source_Reference_Workday_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Freight_Amount": {
+        "description": "Freight Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Gapless_Document_Number": {
+        "description": "Gapless Document Number On Supplier Invoice Adjustment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Handling_Code_Reference_Handling_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Handling_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Increase_Liability": {
+        "description": "Boolean flag for Increase Liability.  In most cases, adjustments are used to decrease the liability to the supplier, in which case they are called credit memos.  However, there are some circumstances where an adjustment is needed to increase the liability.  In this case, set this value.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Intercompany_Invoice_Prompt": {
+        "description": "Boolean that indicates that the invoice is an intercompany invoice",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Accounting_Date": {
+        "description": "Invoice Accounting Date for a Supplier Invoice Adjustment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Cancel_Reason_Reference_Invoice_Cancel_Reason": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Cancel_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Cancel_Reason_Reference_Workday_Invoice_Cancel_Reason": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Date_On_or_After_Prompt": {
+        "description": "Invoice Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Date_On_or_Before_Prompt": {
+        "description": "Invoice Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Document_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Document_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Due_Date_On_or_After_Prompt": {
+        "description": "Invoice Due Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Due_Date_On_or_Before_Prompt": {
+        "description": "Invoice Due Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Line_Replacement_Data": {
+        "description": "Encapsulating element containing Supplier Invoice Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Number": {
+        "description": "If adding a new invoice, then make the Invoice Number the same value as Reference ID. If updating an existing invoice, then make it the same value as the Reference ID of that invoice. If you do not make the Invoice Number the same as Reference ID, then duplicate Invoice Numbers for different invoices may be created. The Reference ID is the only value checked as a unique identifier. Note that the name of the Reference ID is different for each invoice type: e.g. Supplier Invoice ID, Supplier Invoice Adjustment ID, Customer Invoice Adjustment ID, and Customer Invoice ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_On_Hold_Prompt": {
+        "description": "Boolean that indicates that the invoice is on hold",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to an existing invoice Document Status. Examples of Document Status are Approved, Canceled, Denied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing invoice Document Status. Examples of Document Status are Approved, Canceled, Denied. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Set to True to disable editing and canceling the invoice inside the Workday application.   Invoice can only be updated from the web service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "On_Hold": {
+        "description": "If this is set to 'TRUE' the invoice will be put on hold.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Original_Invoice_Reference_Supplier_Invoice_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Original_Invoice_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Original_Invoice_Supplier_Reference_Number": {
+        "description": "User can pass the Original Invoice Supplier Reference Number of a Supplier Invoice here to populate the Original Invoice Reference field with that Supplier Invoice.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Originating_Country_Payment_Purpose_Code_Reference_Payment_Purpose_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Originating_Country_Payment_Purpose_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Other_Charges": {
+        "description": "Other Charges",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Override_Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Practices": {
+        "description": "Payment Practice field to flag a Supplier Invoice for Payment Practices Reporting",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_Document_Payment_Status_ID_Prompt": {
+        "description": "Reference to an existing Payment Status. Examples of Payment Status are Draft, In Progress, Approved. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing Payment Status. Examples of Payment Status are Draft, In Progress, Approved. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_Payment_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receiving_Country_Payment_Purpose_Code_Reference_Payment_Purpose_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receiving_Country_Payment_Purpose_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_ID_Reference_Address_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_ID_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skip": {
+        "description": "When set to \"true\" or \"1\", the business process is automatically skipped (if it is defined as \"skippable\" within the business process definition).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Statutory_Invoice_Type_Reference_Invoice_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statutory_Invoice_Type_Reference_Spend_Data_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statutory_Invoice_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Connection_Reference_Supplier_Connection_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Connection_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Alternate_Supplier_Contract_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_Amendment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_History_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Invoice_Contract_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Document_Received": {
+        "description": "Boolean attribute indicating if the Supplier Paper Document was received (possibly through mail or fax) . If this is set then a Supplier Reference is required that will provide information for locating that document.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Hierarchy_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Hierarchy_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Hierarchy_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Hierarchy_Reference_WID_Prompt": {
+        "description": "Reference to an existing supplier that has child suppliers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Adjustment_ID": {
+        "description": "Supplier Invoice Adjustment ID.  This is the Supplier Invoice Adjustment unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Status_Reference_WID_Prompt": {
+        "description": "Reference to an existing instance of Business Entity Status Value. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Suppliers_Invoice_Number": {
+        "description": "Free form text field to provide a Supplier's Invoice Number memo. The Supplier's Invoice Number is not a Workday Reference ID, but a text field for providing additional information about the Supplier Invoice.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Amount": {
+        "description": "Tax Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tax_Certificate_Number": {
+        "description": "Information Relating to Gapless Tax Certificate Numbers",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Data": {
+        "description": "Tax Data by Tax Authority and Tax Code.  For Customer Invoice Documents and Cash Sales tax data will always be calculated from the line data regardless of what is populated in Tax Rate Application Data.  For Purchase Orders, Supplier Invoice Documents and Ad hoc Payments, if data is in Tax Rate Application Data, then that will be the tax information that is saved.  Otherwise, the tax will be calculated from the lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Default_Supplier_Connection": {
+        "description": "If this is set to 'TRUE' the default supplier connection will be derived.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Amount": {
+        "description": "Withholding Tax Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Code_Data": {
+        "description": "Withholding Tax Data by Tax Authority and Withholding Tax Code.  For Customer Invoice Documents and Cash Sales tax data will always be calculated from the line data regardless of what is populated in Tax Rate Application Data. For Purchase Orders, Supplier Invoice Documents and Ad hoc Payments, if data is in Tax Rate Application Data, then that will be the tax information that is saved. Otherwise, the tax will be calculated from the lines.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Queue_Information_Data": {
+        "description": "References all the information related to the Supplier Invoice Work Queue tab.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Split_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Split_Template_Reference_Worktag_Allocation_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

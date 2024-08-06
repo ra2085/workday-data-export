@@ -1,0 +1,641 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadianRecordofEmploymentData",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "English or French depending on user preference",
+      "field": "Printing_Language",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Issue Type for this ROE, D (Draft) or S (Submit)",
+      "field": "Issue_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ROE_Data_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ROE_Data_Reference_Payroll_ROE_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Serial Number of ROE Amended or replaced",
+      "field": "ROE_Serial_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employer’s payroll reference number",
+      "field": "Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Canada Revenue Agency Business Number",
+      "field": "Employer_Payroll_Reference_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization Number for this ROE Configuration",
+      "field": "Organization_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Folder CD specified for ROE Configuration",
+      "field": "Folder_CD",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay period type",
+      "field": "Pay_Period_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Social Insurance Number of the employee for whom the ROE will be issued",
+      "field": "Social_Insurance_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Line 1 of the address of the employee for whom the ROE will be issued - Number and street name",
+      "field": "ROE_Address_Line_1",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Line 2 of the address of the employee for whom the ROE will be issued -  Place, City and Municipality",
+      "field": "ROE_Address_Line_2",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Line 3 of the address of the employee for whom the ROE will be issued -  Province, Country and Postal Code",
+      "field": "ROE_Address_Line_3",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Postal Code of the address of the employee for whole the ROE will be issued.",
+      "field": "Postal_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "First name of the employee for whom the ROE will be issued",
+      "field": "Legal_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Last name of the employee for whom the ROE will be issued",
+      "field": "Legal_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Middle name of the employee for whom the ROE will be issued",
+      "field": "Legal_Middle_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "First Day Worked",
+      "field": "First_Day_Worked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Last day for which paid",
+      "field": "Last_Day_For_Which_Paid",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Final Pay Period Ending Date",
+      "field": "Final_Pay_Period_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee Occupation",
+      "field": "Employee_Occupation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Expected recall code",
+      "field": "ROE_Expected_Recall_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Expected date of recall",
+      "field": "Expected_Date_of_Return",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total insurable hours",
+      "field": "Total_Insurable_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total insurable earnings",
+      "field": "Total_Insurable_Earnings",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Insurable Earnings by Period",
+      "field": "ROE_Insurable_Earnings_By_Period_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone area code for the ROE Issuer contact person",
+      "field": "ROE_Reason_Contact_Area_Code_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reason for issuing this ROE",
+      "field": "ROE_Reason_Code_for_ROE_Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Extension number for the contact person",
+      "field": "ROE_Reason_Phone_Extension_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "First name for the contact person",
+      "field": "ROE_Reason_Contact_First_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Last name for the contact person",
+      "field": "ROE_Reason_Contact_Last_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone number for the contact person",
+      "field": "ROE_Reason_Contact_Phone_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Vacation Pay amount",
+      "field": "Vacation_Pay_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Vacation Pay Data - b17a",
+      "field": "Vacation_Pay_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Canadian Record of Employment Data",
+      "field": "Statutory_Holiday_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Other Monies",
+      "field": "Other_Monies_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comments",
+      "field": "Comments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Special Payment Information",
+      "field": "Special_Payment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Communication Preferred In",
+      "field": "Preferred_User_Language",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company References for Approved ROEs.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker References for Approved ROEs.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comments": {
+        "description": "Comments",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_ID": {
+        "description": "Employer’s payroll reference number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Occupation": {
+        "description": "Employee Occupation",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employer_Payroll_Reference_Number": {
+        "description": "Canada Revenue Agency Business Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expected_Date_of_Return": {
+        "description": "Expected date of recall",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Final_Pay_Period_End_Date": {
+        "description": "Final Pay Period Ending Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Day_Worked": {
+        "description": "First Day Worked",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Folder_CD": {
+        "description": "Folder CD specified for ROE Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issue_Type": {
+        "description": "Issue Type for this ROE, D (Draft) or S (Submit)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Day_For_Which_Paid": {
+        "description": "Last day for which paid",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_First_Name": {
+        "description": "First name of the employee for whom the ROE will be issued",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Last_Name": {
+        "description": "Last name of the employee for whom the ROE will be issued",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Middle_Name": {
+        "description": "Middle name of the employee for whom the ROE will be issued",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Number": {
+        "description": "Organization Number for this ROE Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Other_Monies_Data": {
+        "description": "Other Monies",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "Pay Group References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Type": {
+        "description": "Pay period type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Postal_Code": {
+        "description": "Postal Code of the address of the employee for whole the ROE will be issued.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_User_Language": {
+        "description": "Communication Preferred In",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Printing_Language": {
+        "description": "English or French depending on user preference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Address_Line_1": {
+        "description": "Line 1 of the address of the employee for whom the ROE will be issued - Number and street name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Address_Line_2": {
+        "description": "Line 2 of the address of the employee for whom the ROE will be issued -  Place, City and Municipality",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Address_Line_3": {
+        "description": "Line 3 of the address of the employee for whom the ROE will be issued -  Province, Country and Postal Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Data_Reference_Payroll_ROE_Data_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Data_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Expected_Recall_Code": {
+        "description": "Expected recall code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Insurable_Earnings_By_Period_Data": {
+        "description": "Insurable Earnings by Period",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Code_for_ROE_Reason": {
+        "description": "Reason for issuing this ROE",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Contact_Area_Code_Number": {
+        "description": "Phone area code for the ROE Issuer contact person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Contact_First_Name": {
+        "description": "First name for the contact person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Contact_Last_Name": {
+        "description": "Last name for the contact person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Contact_Phone_Number": {
+        "description": "Phone number for the contact person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Reason_Phone_Extension_Number": {
+        "description": "Phone Extension number for the contact person",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ROE_Serial_Number": {
+        "description": "Serial Number of ROE Amended or replaced",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Social_Insurance_Number": {
+        "description": "Social Insurance Number of the employee for whom the ROE will be issued",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Payment_Data": {
+        "description": "Special Payment Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statutory_Holiday_Data": {
+        "description": "Canadian Record of Employment Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Insurable_Earnings": {
+        "description": "Total insurable earnings",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Insurable_Hours": {
+        "description": "Total insurable hours",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Vacation_Pay_Amount": {
+        "description": "Vacation Pay amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Vacation_Pay_Data": {
+        "description": "Vacation Pay Data - b17a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Worker References for Approved ROEs.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

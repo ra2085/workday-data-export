@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GrantHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Grant Hierarchy Reference ID.  This is the Grant Hierarchy unique identifier.",
+      "field": "Grant_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Grant Hierarchy Name",
+      "field": "Grant_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Grant Hierarchy ID in the Grant Hierarchy Name.",
+      "field": "Include_Grant_Hierarchy_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true inactivates the Grant Hierarchy",
+      "field": "Grant_Hierarchy_is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Grant_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Grant_Hierarchy_Reference_Grant_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Grants to add as the subordinates.",
+      "field": "Included_Grant_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Grant_Hierarchy_ID": {
+        "description": "Grant Hierarchy Reference ID.  This is the Grant Hierarchy unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Hierarchy_Name": {
+        "description": "Grant Hierarchy Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Hierarchy_is_Inactive": {
+        "description": "Boolean Flag which when set to true inactivates the Grant Hierarchy",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Grant_Hierarchy_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Grant Hierarchy ID in the Grant Hierarchy Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Included_Grant_Reference": {
+        "description": "Reference to existing Grants to add as the subordinates.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Grant_Hierarchy_Reference_Grant_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Grant_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryLocationAttributes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Location_Attributes_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Location_Attributes_Reference_Inventory_Storage_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Location_Attributes_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Location_Attributes_Instance_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Location_Attributes_Instance_Reference_Inventory_Location_Attributes_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Location Attributes Data payload",
+      "field": "Inventory_Location_Attributes_Detail_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company associated to the inventory location attribute. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company associated to the inventory location attribute. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company associated to the inventory location attribute. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating Inventory Site.",
+      "field": "Inventory_Site_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating Stocking Location.",
+      "field": "Stocking_Location_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Source Site used for Replenishment. Supports multiple values.",
+      "field": "Source_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Source Site used for Replenishment. Supports multiple values.",
+      "field": "Source_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location for Inventory Location Attributes. Supports multiple values.",
+      "field": "Inventory_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location for Inventory Location Attributes. Supports multiple values.",
+      "field": "Inventory_Location_Reference_Inventory_Storage_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location for Inventory Location Attributes. Supports multiple values.",
+      "field": "Inventory_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company associated to the inventory location attribute. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company associated to the inventory location attribute. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company associated to the inventory location attribute. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Detail_Data": {
+        "description": "Inventory Location Attributes Data payload",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Instance_Reference_Inventory_Location_Attributes_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Instance_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Reference_Inventory_Storage_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Attributes_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inventory_Location_Reference_Inventory_Storage_Location_ID_Prompt": {
+        "description": "Location for Inventory Location Attributes. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Reference_Location_ID_Prompt": {
+        "description": "Location for Inventory Location Attributes. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Location_Reference_WID_Prompt": {
+        "description": "Location for Inventory Location Attributes. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Prompt": {
+        "description": "Boolean flag indicating Inventory Site.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_Site_Reference_Location_ID_Prompt": {
+        "description": "Source Site used for Replenishment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Site_Reference_WID_Prompt": {
+        "description": "Source Site used for Replenishment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stocking_Location_Prompt": {
+        "description": "Boolean flag indicating Stocking Location.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentHoldAssignments_Student_Hold_Assignment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "StudentHoldAssignment_Student_Hold_Assignment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier of the Student Hold Assignment",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Academic_Person_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Student_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Reference_Universal_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_ID_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_ID_Reference_Universal_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Hold_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Hold_Reason_Reference_Student_Hold_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Hold Type Context",
+      "field": "Student_Hold_Type_and_Context_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set this to True if in order to remove this hold assignment.  This is for existing hold assignments only.",
+      "field": "Remove",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+      "field": "Student_Hold_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+      "field": "Student_Hold_Reference_Student_Hold_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_Student_Hold_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Unique identifier of the Student Hold Assignment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remove": {
+        "description": "Set this to True if in order to remove this hold assignment.  This is for existing hold assignments only.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "StudentHoldAssignment_Student_Hold_Assignment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Student_Hold_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Student_Hold_Reason_ID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reference_Student_Hold_ID_Prompt": {
+        "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Type_and_Context_Data": {
+        "description": "Reference to Hold Type Context",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_Universal_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

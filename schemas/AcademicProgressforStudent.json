@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicProgressforStudent",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Record_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Record_Reference_Student_Record_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program of Study Student Academic Progress Data",
+      "field": "Program_of_Study_Student_Academic_Progress_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Program_of_Study_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Program_of_Study_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program of Study Type Category. Supports multiple values.",
+      "field": "Program_of_Study_Type_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program of Study Type Category. Supports multiple values.",
+      "field": "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Program_of_Study_Reference_Program_of_Study_ID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Reference_WID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Student_Academic_Progress_Data": {
+        "description": "Program of Study Student Academic Progress Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID_Prompt": {
+        "description": "Program of Study Type Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_WID_Prompt": {
+        "description": "Program of Study Type Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Record_Reference_Student_Record_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Record_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

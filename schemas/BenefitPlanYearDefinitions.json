@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BenefitPlanYearDefinitions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benefit_Plan_Year_Definition_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benefit_Plan_Year_Definition_Reference_Benefit_Plan_Year_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns Benefit Plan Year ID",
+      "field": "Benefit_Plan_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns Benefit Plan Year Definition Name",
+      "field": "Benefit_Plan_Year_Definition_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Returns Benefit Plan Year Definition Plan Year",
+      "field": "Benefit_Plan_Year_Definition_Plan_Year",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Returns Plan Year Start Date",
+      "field": "Program_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Returns Plan Year End Date",
+      "field": "Program_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contain References for Benefit Plan Year Benefit Plan Data",
+      "field": "Benefit_Plan_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Benefit_Plan_Data": {
+        "description": "Contain References for Benefit Plan Year Benefit Plan Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Plan_Year_Definition_Name": {
+        "description": "Returns Benefit Plan Year Definition Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Plan_Year_Definition_Plan_Year": {
+        "description": "Returns Benefit Plan Year Definition Plan Year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Plan_Year_Definition_Reference_Benefit_Plan_Year_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benefit_Plan_Year_Definition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Benefit_Plan_Year_ID": {
+        "description": "Returns Benefit Plan Year ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_End_Date": {
+        "description": "Returns Plan Year End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Start_Date": {
+        "description": "Returns Plan Year Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryShipments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Shipment_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Shipment_Reference_Inventory_Ship_List_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Shipment Data Element",
+      "field": "Inventory_Shipment_Data_Element",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Inventory Site",
+      "field": "Inventory_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Inventory Site",
+      "field": "Inventory_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Shipment ID",
+      "field": "Inventory_Shipment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Picking List. Supports multiple values.",
+      "field": "Inventory_Picking_List_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Picking List. Supports multiple values.",
+      "field": "Inventory_Picking_List_Reference_Inventory_Pick_List_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Order Date of Stock Request for Inventory Shipment on or after",
+      "field": "Shipment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Order Date of Stock Request for Inventory Shipment on or before",
+      "field": "Shipment_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Targeted Inventory Stock Request Fulfillment Date On or After",
+      "field": "Targeted_Fulfillment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Targeted Fulfillment date for stock request on or before.",
+      "field": "Targeted_Fulfillment_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Ship List Status Reference. Supports multiple values.",
+      "field": "Inventory_Ship_List_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Ship List Status Reference. Supports multiple values.",
+      "field": "Inventory_Ship_List_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+      "field": "Order_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+      "field": "Order_Type_Reference_Stock_Request_Transaction_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Type_Reference_Stock_Request_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Location Reference. Supports multiple values.",
+      "field": "Inventory_Par_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Par Location Reference. Supports multiple values.",
+      "field": "Inventory_Par_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Site when the Stock Request Transaction Type is a Transfer. Supports multiple values.",
+      "field": "Transfer_to_Inventory_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Site when the Stock Request Transaction Type is a Transfer. Supports multiple values.",
+      "field": "Transfer_to_Inventory_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+      "field": "Requester__Worker__Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+      "field": "Requester__Worker__Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+      "field": "Requester__Worker__Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deliver To Location reference. Supports multiple values.",
+      "field": "Deliver_To_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deliver To Location reference. Supports multiple values.",
+      "field": "Deliver_To_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+      "field": "Assigned_to_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+      "field": "Assigned_to_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+      "field": "Assigned_to_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Origin_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Origin_Reference_Stock_Request_Origin_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assigned_to_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_to_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_to_Worker_Reference_WID_Prompt": {
+        "description": "Requester Worker for Inventory Shpment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver_To_Location_Reference_Location_ID_Prompt": {
+        "description": "Deliver To Location reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver_To_Location_Reference_WID_Prompt": {
+        "description": "Deliver To Location reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_Location_ID_Prompt": {
+        "description": "Inventory Par Location Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_WID_Prompt": {
+        "description": "Inventory Par Location Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Picking_List_Reference_Inventory_Pick_List_Reference_ID_Prompt": {
+        "description": "Inventory Picking List. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Picking_List_Reference_WID_Prompt": {
+        "description": "Inventory Picking List. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Ship_List_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Inventory Ship List Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Ship_List_Status_Reference_WID_Prompt": {
+        "description": "Inventory Ship List Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Shipment_Data_Element": {
+        "description": "Inventory Shipment Data Element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Shipment_ID_Prompt": {
+        "description": "Inventory Shipment ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Shipment_Reference_Inventory_Ship_List_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Shipment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID_Prompt": {
+        "description": "Reference to an existing Inventory Site",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID_Prompt": {
+        "description": "Reference to an existing Inventory Site",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Origin_Reference_Stock_Request_Origin_ID_Prompt": {
+        "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Origin_Reference_WID_Prompt": {
+        "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Type_Reference_Stock_Request_Type_ID_Prompt": {
+        "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Type_Reference_WID_Prompt": {
+        "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order_Type_Reference_Stock_Request_Transaction_Type_ID_Prompt": {
+        "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order_Type_Reference_WID_Prompt": {
+        "description": "Inventory Stock Request Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester__Worker__Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester__Worker__Reference_Employee_ID_Prompt": {
+        "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester__Worker__Reference_WID_Prompt": {
+        "description": "Requester Reference for Inventory Shipment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipment_Date_On_or_After_Prompt": {
+        "description": "Order Date of Stock Request for Inventory Shipment on or after",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipment_Date_On_or_Before_Prompt": {
+        "description": "Order Date of Stock Request for Inventory Shipment on or before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Targeted_Fulfillment_Date_On_or_After_Prompt": {
+        "description": "Targeted Inventory Stock Request Fulfillment Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Targeted_Fulfillment_Date_On_or_Before_Prompt": {
+        "description": "Targeted Fulfillment date for stock request on or before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_to_Inventory_Site_Reference_Location_ID_Prompt": {
+        "description": "Reference to the Transfer To Site when the Stock Request Transaction Type is a Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_to_Inventory_Site_Reference_WID_Prompt": {
+        "description": "Reference to the Transfer To Site when the Stock Request Transaction Type is a Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

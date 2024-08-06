@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EmployeeAwards_Employee_Award_Allowance_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allowance_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allowance_Plan_Reference_Compensation_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organizations with SubOrdinates",
+      "field": "Supervisory_Organization_and_Subordinates_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allowance_Plan_Reference_Compensation_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowance_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_and_Subordinates_Prompt": {
+        "description": "Supervisory Organizations with SubOrdinates",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

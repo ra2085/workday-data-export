@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MessageTemplate",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for the message template.  If not entered, one will be generated.",
+      "field": "Message_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name for Message Template.",
+      "field": "Message_Template_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Notification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Notification_Type_Reference_NOTIFICATION_CATEGORY",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for Email Message Template data.",
+      "field": "Email_Notification_Configuration_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for Push Message Template data.",
+      "field": "Push_Notification_Configuration_Replacement_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Email_Notification_Configuration_Replacement_Data": {
+        "description": "Wrapper element for Email Message Template data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Message_Template_ID": {
+        "description": "Unique identifier for the message template.  If not entered, one will be generated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Message_Template_Name": {
+        "description": "Name for Message Template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Notification_Type_Reference_NOTIFICATION_CATEGORY": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Notification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Push_Notification_Configuration_Replacement_Data": {
+        "description": "Wrapper element for Push Message Template data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HeadcountPlanStructures",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a Headcount Plan Structure.",
+      "field": "Headcount_Plan_Structure_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Headcount Plan Structure.",
+      "field": "Headcount_Plan_Structure_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select this box if you would like to link your headcount plan to a financial budget. This will require you to use the existing fiscal schedule used for your financial budget and to select Company as a dimension for your headcount plan.",
+      "field": "Link_to_Financial_Budget",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The statistic types that the Headcount Plan Structure is planned by - FTE and/or Headcount.",
+      "field": "Statistic_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Dimensions for the Headcount Plan Structure.",
+      "field": "Dimension_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the data for the Headcount Plan S",
+      "field": "Headcount_Plan_Structure_Schedule_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Dimension_Reference": {
+        "description": "Dimensions for the Headcount Plan Structure.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Structure_ID": {
+        "description": "A unique identifier for a Headcount Plan Structure.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Structure_Name": {
+        "description": "The Name of the Headcount Plan Structure.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Structure_Schedule_Data": {
+        "description": "Contains the data for the Headcount Plan S",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Link_to_Financial_Budget": {
+        "description": "Select this box if you would like to link your headcount plan to a financial budget. This will require you to use the existing fiscal schedule used for your financial budget and to select Company as a dimension for your headcount plan.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Statistic_Type_Reference": {
+        "description": "The statistic types that the Headcount Plan Structure is planned by - FTE and/or Headcount.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

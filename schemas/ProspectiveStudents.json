@@ -1,0 +1,277 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProspectiveStudents",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Engagement Opt Out",
+      "field": "Opt_Out",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Legal Name and Contact Information",
+      "field": "Student_Person_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Extracurricular Activities and External Affiliations associated with a Student Prospect.",
+      "field": "Student_Personal_Portfolio_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Personal Information data for a Student Applicant",
+      "field": "Student_Personal_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Institution and Institution Attendance information",
+      "field": "Student_School_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Recruitment, Academic Unit, Academic Period, Student Prospect Stage, Educational Interests, and Prospect Source information for a Student Prospect",
+      "field": "Student_Recruitment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Application, Academic Unit, Academic Period, Student Prospect Stage information about a Student Applicant",
+      "field": "Student_Application_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Education Test Result Subedit Data",
+      "field": "Education_Test_Result_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains all data related to a Student Transcript.",
+      "field": "Student_Transcript_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Student Proxy information for a Student Prospect",
+      "field": "Student_Proxy_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Student Data Purge settings, including Do Not Purge and Reasons.",
+      "field": "Student_Do_Not_Purge_Settings_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request criteria for Return Students with Recruitments",
+      "field": "Return_Students_with_Recruitments_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Applications",
+      "field": "Return_Students_with_Applications_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Education Tests",
+      "field": "Return_Students_with_Education_Tests_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Transcripts",
+      "field": "Return_Students_with_Transcripts_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_Student_Application_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+      "field": "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Units_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_WID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt": {
+        "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Test_Result_Data": {
+        "description": "Education Test Result Subedit Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Opt_Out": {
+        "description": "Engagement Opt Out",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Applications_Prompt": {
+        "description": "Request Criteria for Return Students with Applications",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Education_Tests_Prompt": {
+        "description": "Request Criteria for Return Students with Education Tests",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Recruitments_Prompt": {
+        "description": "Request criteria for Return Students with Recruitments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Transcripts_Prompt": {
+        "description": "Request Criteria for Return Students with Transcripts",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Application_Data": {
+        "description": "Contains Application, Academic Unit, Academic Period, Student Prospect Stage information about a Student Applicant",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_Student_Application_ID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_WID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Do_Not_Purge_Settings_Data": {
+        "description": "Container for Student Data Purge settings, including Do Not Purge and Reasons.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Person_Data": {
+        "description": "Contains Legal Name and Contact Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Personal_Information_Data": {
+        "description": "Personal Information data for a Student Applicant",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Personal_Portfolio_Data": {
+        "description": "Extracurricular Activities and External Affiliations associated with a Student Prospect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Proxy_Data": {
+        "description": "Contains Student Proxy information for a Student Prospect",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruitment_Data": {
+        "description": "Contains Recruitment, Academic Unit, Academic Period, Student Prospect Stage, Educational Interests, and Prospect Source information for a Student Prospect",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_School_Data": {
+        "description": "Contains Institution and Institution Attendance information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Transcript_Data": {
+        "description": "Contains all data related to a Student Transcript.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

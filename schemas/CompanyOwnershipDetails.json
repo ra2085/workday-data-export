@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyOwnershipDetails",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ownership detail ID.",
+      "field": "Ownership_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether the company has any owners.",
+      "field": "No_Owner_Companies",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Data related to creating an ownership entry.",
+      "field": "Ownership_Entry_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Companies_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_WID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "No_Owner_Companies": {
+        "description": "Specifies whether the company has any owners.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ownership_Detail_ID": {
+        "description": "Ownership detail ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ownership_Entry_Data": {
+        "description": "Data related to creating an ownership entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

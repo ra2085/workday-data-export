@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseOrderChangeOrders_Procedure_Information_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PurchaseOrderChangeOrder_Purchase_Order_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Procedure Date",
+      "field": "Procedure_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Procedure",
+      "field": "Procedure",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Procedure Number",
+      "field": "Procedure_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Patient Id",
+      "field": "Patient_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Medical Record Number",
+      "field": "Medical_Record_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Physician Id",
+      "field": "Physician_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Procedure Verified By",
+      "field": "Verified_By",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Representative",
+      "field": "Supplier_Representative",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Order References. Supports multiple values.",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Order References. Supports multiple values.",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Order References. Supports multiple values.",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Order References. Supports multiple values.",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Medical_Record_Number": {
+        "description": "Medical Record Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_ID": {
+        "description": "Patient Id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Physician_ID": {
+        "description": "Physician Id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procedure": {
+        "description": "Procedure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procedure_Date": {
+        "description": "Procedure Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procedure_Number": {
+        "description": "Procedure Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PurchaseOrderChangeOrder_Purchase_Order_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Purchase Order References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Purchase Order References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Purchase Order References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Purchase Order References. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Representative": {
+        "description": "Supplier Representative",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Verified_By": {
+        "description": "Procedure Verified By",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

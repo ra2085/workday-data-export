@@ -1,0 +1,2460 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Positions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_RestrictionType_Position_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_RestrictionType_Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date this position is effective.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for the Position",
+      "field": "Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Posting Title for the Position.",
+      "field": "Position_Definition_Job_Posting_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Value that represents if the position is eligible for academic tenure.",
+      "field": "Position_Definition_Academic_Tenure_Eligible",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Description Summary (plain text) for the Position.",
+      "field": "Position_Definition_Job_Description_Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The status history for the position. Doesn't respect the As of Effective Date filter. To filter by effective date, use the Get Worker Event History web service.",
+      "field": "Position_Status_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns a true if this is able to be filled by a worker.",
+      "field": "Available_For_Hire",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if this is available for recruiting.  If Enable Job Requisitons is turned off in the tenant, this is the same as Available for Hire.",
+      "field": "Available_for_Recruiting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether a Hiring Freeze is currently in affect.",
+      "field": "Hiring_Freeze",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if the position is restricted to only one job profile and that job profile requires a work shift.",
+      "field": "Work_Shift_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if the Position Restriction is available to be overlapped.",
+      "field": "Available_for_Overlap",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Returns the earliest date this Position Restriction can be filled with an overlapping worker. This will only have a value if the position restriction is available to be overlapped.",
+      "field": "Earliest_Overlap_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute which is set to yes if the Position Restriction is considered a critical job.",
+      "field": "Critical_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the opening is available.",
+      "field": "Availability_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Earliest date that a worker can be hired/contracted into this opening.",
+      "field": "Earliest_Hire_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the job families that a worker being hired/contracted using this opening can use.",
+      "field": "Job_Family_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) (and additional data) to the job profiles that a worker being hired/contracted using this opening can use.",
+      "field": "Job_Profile_Restriction_Summary_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use.",
+      "field": "Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Restrictions_Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Restrictions_Worker_Type_Reference_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Type_Reference_Position_Time_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the position worker types that the position is restricted by (e.g., Regular, Contractor, Temporary).",
+      "field": "Position_Worker_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The default weekly hours for the position restriction.",
+      "field": "Default_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The scheduled weekly hours for the position restriction.",
+      "field": "Scheduled_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Package_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Package_Reference_Compensation_Package_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_Compensation_Grade_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Profile_Reference_Compensation_Grade_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Step_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Step_Reference_Compensation_Step_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Salary or Hourly Plan Compensation data.",
+      "field": "Pay_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Unit Salary Plan Compensation data.",
+      "field": "Unit_Salary_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Allowance Plan Compensation data.",
+      "field": "Allowance_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Unit Allowance Plan Compensation data.",
+      "field": "Unit_Allowance_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Bonus Plan Compensation data.",
+      "field": "Bonus_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Merit Plan Compensation data.",
+      "field": "Merit_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Commission Plan Compensation data.",
+      "field": "Commission_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Stock Plan Compensation data.",
+      "field": "Stock_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Period Salary Plan Compensation data.",
+      "field": "Period_Salary_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Calculated Plan Compensation data.",
+      "field": "Calculated_Plan_Sub_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifiers for the default company assignments for the Position.",
+      "field": "Company_Assignments_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifiers for the default cost center assignments for the Position.",
+      "field": "Cost_Center_Assignments_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifiers for the default region assignments for the Position.",
+      "field": "Region_Assignments_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifiers for the default custom organization assignments for the Position.",
+      "field": "Custom_Organization_Assignments_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_For_Filled_Position_Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_For_Filled_Position_Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's competency information.",
+      "field": "Competency_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's certification information.",
+      "field": "Certification_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's education information.",
+      "field": "Education_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's language information.",
+      "field": "Language_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's responsibility information.",
+      "field": "Responsibility_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's training information.",
+      "field": "Training_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the position's work experience information.",
+      "field": "Work_Experience_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Position's Skill information.",
+      "field": "Skill_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position External Field Result Data",
+      "field": "Integration_Field_Override_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Job Requisition.",
+      "field": "Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Status_Reference_Job_Requisition_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Job Posting Title of the Job Requisition.",
+      "field": "Job_Requisition_Job_Posting_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Instruction_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recruiting_Instruction_Reference_Recruiting_Instruction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the Job Requisition will be sent to an external recruiting system.",
+      "field": "Do_Not_Send_To_Recruiting_System",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Recruiting Instruction",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the Job Requisition is for a position that is academic tenure eligible.",
+      "field": "Job_Requisition_Academic_Tenure_Eligible",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of positions made available by the job requisition.  This number can only be greater than 1 for job requisitions created with the \"new position\" option.  A value of greater than 1 was only allowed starting in W16.  This element must be omitted for the Create Job Requisition and Edit Job Requisition operations.",
+      "field": "Number_of_Openings",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The job description summary (plain text) for the job requisition.",
+      "field": "Job_Requisition_Job_Description_Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Justification for the Job Requisition.",
+      "field": "Justification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for a single file attachment",
+      "field": "Job_Requisition_Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Recruiting Start Date for the Job Requisition.  Recruiting cannot be done for the position prior to this date.",
+      "field": "Recruiting_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Target Hire Date for the Job Requisition.",
+      "field": "Target_Hire_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Target End Date for the Job Requisition is required for fixed term employees and contingent worker sub-types that are specified as requiring cost information.",
+      "field": "Target_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Worker_Type_Reference_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_Contingent_Worker_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Worker_Type_Reference_Employee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Additional Location(s) for the Job Requisition.",
+      "field": "Additional_Locations_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Time_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Time_Type_Reference_Position_Time_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Schedule Hours for the Job Requisition.",
+      "field": "Scheduled_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Shift_Reference_Work_Shift_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Y, indicates that this is a highlighted job requisition.",
+      "field": "Spotlight_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Responsibilities for the Job Profile will be replaced by the data in being submitted. If no data is submitted, then the existing Responsibilities are not changed.",
+      "field": "Responsibility_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Work Experiences for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Work Experiences are not changed.",
+      "field": "Work_Experience_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Education Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Education Qualifications are not changed.",
+      "field": "Education_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Replacement element containing Language Qualifications for the Job Profile. When updating a Job Profile, all Languages for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Languages are not changed.",
+      "field": "Language_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Competencies for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Competencies are not changed.",
+      "field": "Competency_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Certifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Certifications are not changed.",
+      "field": "Certification_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Training Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Training Qualifications are not changed.",
+      "field": "Training_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for Skill Qualifications. Allows all Skill Qualifications for a Job Profile or Position Restriction to be removed - or to replace all existing Skill Qualifications with those sent in the web service.",
+      "field": "Skill_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If the job requisition exists with the purpose of replacing workers, specify the reference workers.",
+      "field": "Replacement_for_Worker_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true of the position is closed.",
+      "field": "Closed",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Searches the transaction log for business processes and event lites to find specific events that occurred during a period of time.",
+      "field": "Transaction_Log_Criteria_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the organization.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the organization.. Supports multiple values.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique Identifier for a Job Requisition for a Position.  Identifies all positions connected to the Job Requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique Identifier for a Job Requisition for a Position.  Identifies all positions connected to the Job Requisition.. Supports multiple values.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if filled positions are to be returned in the response",
+      "field": "Exclude_Filled_Positions_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If set to true, indicates that non-recruitable positions are to be excluded in the response.  Non-recruitable positions include those with an open Job Requisition if the Recruiting Instruction is specified as \"Do Not Send To Recruiting System\".",
+      "field": "Exclude_Non-Recruitable_Positions_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "No data will be returned for positions that are available after the effective date of the request. The position information will remain in the request criteria and they will not cause an error.",
+      "field": "Ignore_Future_Positions_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if closed positions are to be included in the response",
+      "field": "Include_Closed_Positions_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if only closed positions are to be returned in the response",
+      "field": "Show_Only_Closed_Positions_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Absence_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Assign_Pay_Group_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Assignable_Payroll_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Background_Check_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Background_Process_Instance_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Backorder_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Benefits_Billing_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Budget_Amendment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Change_Base_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Change_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Change_Spend_Category_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Complete_Action_Item_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Customer_Request_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Customer_Request_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Eligibility_Override_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Employee_Review_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Employee_Severance_Worksheet_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_External_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Flexible_Payment_And_Deduction_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Goods_Delivery_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Goods_Delivery_Run_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Inventory_Par_Location_Change_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Invite_Committee_Candidate_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_IRS_1099_MISC_Adjustment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Mass_Change_Requisition_Requester_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Medicare_Information_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Par_Removal_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Payroll_Reporting_Code_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Position_Budget_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Procurement_Document_Mass_Action_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Procurement_Mass_ReOpen_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Procurement_Roll_Forward_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Proposed_New_Project_Resource_Plan_Detail_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Purchase_Item_Event_Id_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Purchase_Item_Maintenance_Event_Id_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Purchase_Item_Request_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Quick_Issue_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Recall_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Recall_Reaction_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Recall_Response_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Receipt_Adjustment_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Receipt_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Reorganization_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Request_Leave_of_Absence_Case_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Request_Leave_of_Absence_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Requisition_Sourcing_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Spend_Authorization_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Spend_Authorization_Mass_Close_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Dismissal_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Employment_Eligibility_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Hold_Assignment_Override_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Institutional_Withdrawal_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Leave_of_Absence_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Student_Onboarding_Event_Abstract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Supplier_Invoice_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Workday_Project_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_Worker_Time_Card_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+      "field": "Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+      "field": "Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+      "field": "Additional_Locations_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+      "field": "Additional_Locations_Reference_Location_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Locations_Reference": {
+        "description": "The Additional Location(s) for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Locations_Reference_Location_ID_Prompt": {
+        "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Locations_Reference_WID_Prompt": {
+        "description": "Reference to Additional Location(s) for the Job Requisition. This also applies to Positions that have Job Requisitions.  The results for this criteria are combined(union operation) with the results from the Location Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowance_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Allowance Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Availability_Date": {
+        "description": "Date the opening is available.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Available_For_Hire": {
+        "description": "Returns a true if this is able to be filled by a worker.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Available_for_Overlap": {
+        "description": "Returns true if the Position Restriction is available to be overlapped.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Available_for_Recruiting": {
+        "description": "Returns true if this is available for recruiting.  If Enable Job Requisitons is turned off in the tenant, this is the same as Available for Hire.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Bonus_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Bonus Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculated_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Calculated Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Certification_Data": {
+        "description": "Contains the position's certification information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Certification_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Certifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Certifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Closed": {
+        "description": "Returns true of the position is closed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Commission_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Commission Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Assignments_Reference": {
+        "description": "Unique identifiers for the default company assignments for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Profile_Reference_Compensation_Grade_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_Compensation_Grade_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Package_Reference_Compensation_Package_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Package_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Step_Reference_Compensation_Step_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Step_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Data": {
+        "description": "Contains the position's competency information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Competencies for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Competencies are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Cost_Center_Assignments_Reference": {
+        "description": "Unique identifiers for the default cost center assignments for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Critical_Job": {
+        "description": "Boolean attribute which is set to yes if the Position Restriction is considered a critical job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Custom_Organization_Assignments_Reference": {
+        "description": "Unique identifiers for the default custom organization assignments for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Hours": {
+        "description": "The default weekly hours for the position restriction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Do_Not_Send_To_Recruiting_System": {
+        "description": "Indicates the Job Requisition will be sent to an external recruiting system.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Earliest_Hire_Date": {
+        "description": "Earliest date that a worker can be hired/contracted into this opening.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Earliest_Overlap_Date": {
+        "description": "Returns the earliest date this Position Restriction can be filled with an overlapping worker. This will only have a value if the position restriction is available to be overlapped.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Data": {
+        "description": "Contains the position's education information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Education Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Education Qualifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Date this position is effective.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Absence_Case_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Assign_Pay_Group_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Assignable_Payroll_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Background_Check_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Background_Process_Instance_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Backorder_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Benefits_Billing_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Budget_Amendment_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Change_Base_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Change_Order_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Change_Spend_Category_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Complete_Action_Item_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Customer_Request_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Customer_Request_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Eligibility_Override_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Employee_Review_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Employee_Severance_Worksheet_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_External_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Flexible_Payment_And_Deduction_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Goods_Delivery_Group_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Goods_Delivery_Run_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_IRS_1099_MISC_Adjustment_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Inventory_Par_Location_Change_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Invite_Committee_Candidate_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Journal_Insights_Feedback_Event_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Mass_Change_Requisition_Requester_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Medicare_Information_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Par_Removal_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Payroll_Reporting_Code_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Position_Budget_Group_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Procurement_Document_Mass_Action_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Procurement_Mass_ReOpen_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Procurement_Roll_Forward_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Proposed_New_Project_Resource_Plan_Detail_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Purchase_Item_Event_Id_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Purchase_Item_Maintenance_Event_Id_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Purchase_Item_Request_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Quick_Issue_Reference_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Recall_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Recall_Reaction_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Recall_Response_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Receipt_Adjustment_Number_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Receipt_Number_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Reorganization_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Request_Leave_of_Absence_Case_Number_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Request_Leave_of_Absence_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Requisition_Sourcing_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Spend_Authorization_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Spend_Authorization_Mass_Close_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Dismissal_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Employment_Eligibility_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Hold_Assignment_Override_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Institutional_Withdrawal_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Leave_of_Absence_Event_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Student_Onboarding_Event_Abstract_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Supplier_Invoice_Contract_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_WID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Workday_Project_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_Worker_Time_Card_ID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Filled_Positions_Prompt": {
+        "description": "Indicates if filled positions are to be returned in the response",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Non-Recruitable_Positions_Prompt": {
+        "description": "If set to true, indicates that non-recruitable positions are to be excluded in the response.  Non-recruitable positions include those with an open Job Requisition if the Recruiting Instruction is specified as \"Do Not Send To Recruiting System\".",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hiring_Freeze": {
+        "description": "Boolean attribute identifying whether a Hiring Freeze is currently in affect.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ignore_Future_Positions_Prompt": {
+        "description": "No data will be returned for positions that are available after the effective date of the request. The position information will remain in the request criteria and they will not cause an error.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Closed_Positions_Prompt": {
+        "description": "Indicates if closed positions are to be included in the response",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_Field_Override_Data": {
+        "description": "Position External Field Result Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference": {
+        "description": "Reference(s) to the job families that a worker being hired/contracted using this opening can use.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Restriction_Summary_Data": {
+        "description": "Reference(s) (and additional data) to the job profiles that a worker being hired/contracted using this opening can use.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Academic_Tenure_Eligible": {
+        "description": "Indicates if the Job Requisition is for a position that is academic tenure eligible.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Requisition_Attachment_Data": {
+        "description": "Wrapper element for a single file attachment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_ID": {
+        "description": "The ID of the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Job_Description_Summary": {
+        "description": "The job description summary (plain text) for the job requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Job_Posting_Title": {
+        "description": "The Job Posting Title of the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID_Prompt": {
+        "description": "A unique Identifier for a Job Requisition for a Position.  Identifies all positions connected to the Job Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID_Prompt": {
+        "description": "A unique Identifier for a Job Requisition for a Position.  Identifies all positions connected to the Job Requisition.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Status_Reference_Job_Requisition_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Worker_Type_Reference_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Justification": {
+        "description": "The Justification for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Language_Data": {
+        "description": "Contains the position's language information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Language_Qualification_Replacement_Data": {
+        "description": "Replacement element containing Language Qualifications for the Job Profile. When updating a Job Profile, all Languages for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Languages are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference": {
+        "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID_Prompt": {
+        "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID_Prompt": {
+        "description": "Reference(s) to the location that a worker being hired/contracted using this opening can use. The results for this criteria are combined(union operation) with the results from the Additional Locations Reference criteria. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merit_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Merit Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Name of the Recruiting Instruction",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Openings": {
+        "description": "The number of positions made available by the job requisition.  This number can only be greater than 1 for job requisitions created with the \"new position\" option.  A value of greater than 1 was only allowed starting in W16.  This element must be omitted for the Create Job Requisition and Edit Job Requisition operations.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Salary or Hourly Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Salary_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Period Salary Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Definition_Academic_Tenure_Eligible": {
+        "description": "Value that represents if the position is eligible for academic tenure.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Position_Definition_Job_Description_Summary": {
+        "description": "Job Description Summary (plain text) for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Definition_Job_Posting_Title": {
+        "description": "Job Posting Title for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_ID": {
+        "description": "Unique identifier for the Position",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_RestrictionType_Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_RestrictionType_Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Position_Restrictions_Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Restrictions_Worker_Type_Reference_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Status_Reference": {
+        "description": "The status history for the position. Doesn't respect the As of Effective Date filter. To filter by effective date, use the Get Worker Event History web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Time_Type_Reference_Position_Time_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Time_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference": {
+        "description": "Reference(s) to the position worker types that the position is restricted by (e.g., Regular, Contractor, Temporary).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_Contingent_Worker_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_Employee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Worker_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Instruction_Reference_Recruiting_Instruction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Instruction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recruiting_Start_Date": {
+        "description": "The Recruiting Start Date for the Job Requisition.  Recruiting cannot be done for the position prior to this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Region_Assignments_Reference": {
+        "description": "Unique identifiers for the default region assignments for the Position.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replacement_for_Worker_Reference": {
+        "description": "If the job requisition exists with the purpose of replacing workers, specify the reference workers.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Responsibility_Data": {
+        "description": "Contains the position's responsibility information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Responsibility_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Responsibilities for the Job Profile will be replaced by the data in being submitted. If no data is submitted, then the existing Responsibilities are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scheduled_Hours": {
+        "description": "The scheduled weekly hours for the position restriction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Scheduled_Weekly_Hours": {
+        "description": "The Schedule Hours for the Job Requisition.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Show_Only_Closed_Positions_Prompt": {
+        "description": "Indicates if only closed positions are to be returned in the response",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Skill_Data": {
+        "description": "Contains the Position's Skill information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Qualification_Replacement_Data": {
+        "description": "Wrapper element for Skill Qualifications. Allows all Skill Qualifications for a Job Profile or Position Restriction to be removed - or to replace all existing Skill Qualifications with those sent in the web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spotlight_Job": {
+        "description": "If Y, indicates that this is a highlighted job requisition.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Stock_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Stock Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "A unique identifier for the organization.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "A unique identifier for the organization.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_End_Date": {
+        "description": "The Target End Date for the Job Requisition is required for fixed term employees and contingent worker sub-types that are specified as requiring cost information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Hire_Date": {
+        "description": "The Target Hire Date for the Job Requisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Type_Reference_Position_Time_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Training_Data": {
+        "description": "Contains the position's training information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Training_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Training Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Training Qualifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Log_Criteria_Data_Prompt": {
+        "description": "Searches the transaction log for business processes and event lites to find specific events that occurred during a period of time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Allowance_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Unit Allowance Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Salary_Plan_Sub_Data": {
+        "description": "Encapsulating element containing all Unit Salary Plan Compensation data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Experience_Data": {
+        "description": "Contains the position's work experience information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Experience_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Work Experiences for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Work Experiences are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Reference_Work_Shift_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Required": {
+        "description": "Returns true if the position is restricted to only one job profile and that job profile requires a work shift.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_For_Filled_Position_Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_For_Filled_Position_Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankFeeStatements",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Bank Fee Statement unique identifier.",
+      "field": "Bank_Fee_Statement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Statement_File_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Statement_File_Reference_Bank_Fee_Statement_File_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on which the Bank Fee Statement is entered.",
+      "field": "Statement_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The start date for the Bank Fee Statement period.",
+      "field": "Statement_Begin_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The end date for the Bank Fee Statement period.",
+      "field": "Statement_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Account Number.",
+      "field": "Customer_Account_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Settlement_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Settlement_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Settlement_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Tax Region name.",
+      "field": "Tax_Region",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies details related to currency exchange data.",
+      "field": "Bank_Fee_Statement_Currency_Conversion_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the compensation data, rate information.",
+      "field": "Bank_Fee_Statement_Compensation_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the Bank Fee Statement line data.",
+      "field": "Bank_Fee_Statement_Transaction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The beginning date range to filter the Statement date.",
+      "field": "Statement_Date_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending date range to filter the Statement date.",
+      "field": "Statement_Date_To_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Bank_Fee_Statement_Compensation_Data": {
+        "description": "Element containing the compensation data, rate information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Statement_Currency_Conversion_Rate_Data": {
+        "description": "Specifies details related to currency exchange data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Statement_File_Reference_Bank_Fee_Statement_File_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Statement_File_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Statement_ID": {
+        "description": "This is the Bank Fee Statement unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Statement_Transaction_Data": {
+        "description": "Element containing the Bank Fee Statement line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Account_Number": {
+        "description": "Customer Account Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_WID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Begin_Date": {
+        "description": "The start date for the Bank Fee Statement period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date": {
+        "description": "The date on which the Bank Fee Statement is entered.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date_From_Prompt": {
+        "description": "The beginning date range to filter the Statement date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date_To_Prompt": {
+        "description": "The ending date range to filter the Statement date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_End_Date": {
+        "description": "The end date for the Bank Fee Statement period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Region": {
+        "description": "The Tax Region name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

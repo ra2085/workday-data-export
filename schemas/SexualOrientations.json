@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SexualOrientations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sexual orientation ID.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The display order for the Sexual Orientation value.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sexual orientation for workers.",
+      "field": "Sexual_Orientation_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sexual orientation code.",
+      "field": "Sexual_Orientation_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The sexual orientation description.",
+      "field": "Sexual_Orientation_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The inactive flag for sexual orientation.",
+      "field": "Sexual_Orientation_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The sexual orientation ID.",
+        "type": [
+          "string"
+        ]
+      },
+      "Order": {
+        "description": "The display order for the Sexual Orientation value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sexual_Orientation_Code": {
+        "description": "The sexual orientation code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sexual_Orientation_Description": {
+        "description": "The sexual orientation description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sexual_Orientation_Inactive": {
+        "description": "The inactive flag for sexual orientation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Sexual_Orientation_Name": {
+        "description": "The sexual orientation for workers.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

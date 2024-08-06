@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ScheduleDailyNotes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Daily_Note_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Daily_Note_Reference_Schedule_Daily_Note_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Schedule Daily Note",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Scheduling Organizations for the Schedule Daily Note",
+      "field": "Scheduling_Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Start Date of the Schedule Daily Note",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The End Date of the Schedule Daily Note",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Title of the Schedule Daily Note",
+      "field": "Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Description of the Schedule Daily Note",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The Description of the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "The End Date of the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The Reference ID of the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Daily_Note_Reference_Schedule_Daily_Note_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Daily_Note_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Scheduling_Organization_Reference": {
+        "description": "The Scheduling Organizations for the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "The Start Date of the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Title": {
+        "description": "The Title of the Schedule Daily Note",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

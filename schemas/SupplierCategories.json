@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Category Reference ID.  This is the Supplier Category unique identifier",
+      "field": "Supplier_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Supplier Category Name",
+      "field": "Supplier_Category_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Supplier_Category_ID": {
+        "description": "Supplier Category Reference ID.  This is the Supplier Category unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Category_Name": {
+        "description": "Free form text field for a meaningful Supplier Category Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RateSchedules_Rate_Schedule_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Rate Schedule Line.",
+      "field": "RateSchedule_Rate_Schedule_Line_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Rate Schedule Line.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Start Period for the range of the Rate Schedule Line.",
+      "field": "From_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The End Period for the range of the Rate Schedule Line.",
+      "field": "To_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The depreciation percent for the range of the Rate Schedule Line.",
+      "field": "Rate_for_Range__Percent_",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "From_Period": {
+        "description": "The Start Period for the range of the Rate Schedule Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID of the Rate Schedule Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RateSchedule_Rate_Schedule_Line_Data_ID": {
+        "description": "The ID of the Rate Schedule Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_for_Range__Percent_": {
+        "description": "The depreciation percent for the range of the Rate Schedule Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "To_Period": {
+        "description": "The End Period for the range of the Rate Schedule Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

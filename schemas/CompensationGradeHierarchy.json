@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationGradeHierarchy",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date of the compensation grade hierarchy.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a wrapper for compensation grade level .",
+      "field": "Compensation_Grade_Level",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Compensation_Grade_Level": {
+        "description": "This is a wrapper for compensation grade level .",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date of the compensation grade hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

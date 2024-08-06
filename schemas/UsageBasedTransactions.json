@@ -1,0 +1,224 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "UsageBasedTransactions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Usage_Based_Transaction_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Usage_Based_Transaction_Reference_Usage_Based_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains all References and Attributes to represent a complete Usage Based Transaction.",
+      "field": "Usage_Based_Transaction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Amount to Bill for the Usage Based Transaction.",
+      "field": "Amount_To_Bill",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Status_Reference_Revenue_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contracts used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+      "field": "Contracts_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contracts used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+      "field": "Contracts_Reference_Customer_Contract_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+      "field": "Customers_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+      "field": "Customers_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+      "field": "Customers_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The start date used as criteria for selecting Usage Based Transactions.",
+      "field": "Start_Transaction_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The end date used as criteria for selecting Usage Based Transactions.",
+      "field": "End_Transaction_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount_To_Bill": {
+        "description": "The Amount to Bill for the Usage Based Transaction.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Contracts_Reference_Customer_Contract_Reference_ID_Prompt": {
+        "description": "Contracts used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contracts_Reference_WID_Prompt": {
+        "description": "Contracts used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_Customer_ID_Prompt": {
+        "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customers_Reference_WID_Prompt": {
+        "description": "Customers used as criteria for selecting Usage Based Transactions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Transaction_Date_Prompt": {
+        "description": "The end date used as criteria for selecting Usage Based Transactions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Status_Reference_Revenue_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Transaction_Date_Prompt": {
+        "description": "The start date used as criteria for selecting Usage Based Transactions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Based_Transaction_Data": {
+        "description": "Contains all References and Attributes to represent a complete Usage Based Transaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Based_Transaction_Reference_Usage_Based_Transaction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Based_Transaction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

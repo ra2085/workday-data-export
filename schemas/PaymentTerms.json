@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PaymentTerms",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Term_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Term_Reference_Payment_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier for the Payment Terms",
+      "field": "Payment_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payment Terms Name",
+      "field": "Payment_Terms_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Element for the Payment Term Rule Data used in the Put/Get WWS",
+      "field": "Payment_Term_Rules_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Day of the month to apply the cut-off.",
+      "field": "Cut-Off_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Payment Discount Days",
+      "field": "Payment_Discount_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Payment Discount Percent",
+      "field": "Payment_Discount_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Grace Days",
+      "field": "Grace_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search by Payment Terms Name. Can be a match of a partial string.",
+      "field": "Payment_Terms_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Cut-Off_Day": {
+        "description": "Day of the month to apply the cut-off.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Grace_Days": {
+        "description": "Grace Days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Discount_Days": {
+        "description": "Payment Discount Days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Discount_Percent": {
+        "description": "Payment Discount Percent",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Term_Reference_Payment_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Term_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Payment_Term_Rules_Data": {
+        "description": "The Element for the Payment Term Rule Data used in the Put/Get WWS",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_ID": {
+        "description": "The unique identifier for the Payment Terms",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Name": {
+        "description": "Payment Terms Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Name_Prompt": {
+        "description": "Search by Payment Terms Name. Can be a match of a partial string.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

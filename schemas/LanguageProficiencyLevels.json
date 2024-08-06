@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LanguageProficiencyLevels",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Language Proficiency Level.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Language Proficiency Level.",
+      "field": "Rating",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The rating value of the Language Proficiency Level.",
+      "field": "Rating_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the Language Proficiency Level.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not the language is active in the system, which allows users to select the language proficiency level from prompts.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The description of the Language Proficiency Level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The Reference ID of the Language Proficiency Level.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether or not the language is active in the system, which allows users to select the language proficiency level from prompts.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Rating": {
+        "description": "The name of the Language Proficiency Level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Value": {
+        "description": "The rating value of the Language Proficiency Level.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

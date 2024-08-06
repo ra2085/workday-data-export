@@ -1,0 +1,718 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TravelBookingRecords",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Booking_Record_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Booking_Record_Reference_Travel_Booking_Record_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Report_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Report_Reference_Expense_Report_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Status_Reference_Expense_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Travel Booking File Reference.",
+      "field": "Travel_Booking_File_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Travel Booking Record Data.",
+      "field": "Travel_Booking_Record_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The starting point of the range on the Load Date field, from which travel booking records are retrieved.",
+      "field": "Load_Date_Starting_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending point of the range on the Load Date field, from which travel booking records are retrieved.",
+      "field": "Load_Date_Ending_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the files used to load the travel booking records.. Supports multiple values.",
+      "field": "Travel_Booking_File_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the files used to load the travel booking records.. Supports multiple values.",
+      "field": "Travel_Booking_File_Reference_Travel_Booking_File_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The starting point of the range for the transaction date, from which travel booking records are retrieved.",
+      "field": "Transaction_Date_Starting_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending point of the range for the transaction date, from which travel booking records are retrieved.",
+      "field": "Transaction_Date_Ending_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The employee on the travel booking record.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The employee on the travel booking record.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The employee on the travel booking record.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company of the Employee on the Travel Booking Record",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company of the Employee on the Travel Booking Record",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company of the Employee on the Travel Booking Record",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Identifying name of the Travel management provider.",
+      "field": "Travel_Provider_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The starting point of the range for the travel start date, from which travel booking records are retrieved.",
+      "field": "Start_Date_Starting_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending point of the range for the travel start date, from which travel booking records are retrieved.",
+      "field": "Start_Date_Ending_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The starting point of the range for the travel end date, from which travel booking records are retrieved.",
+      "field": "End_Date_Starting_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending point of the range for the travel end date, from which travel booking records are retrieved.",
+      "field": "End_Date_Ending_Range_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Type of the Travel Booking Record.. Supports multiple values.",
+      "field": "Travel_Record_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Type of the Travel Booking Record.. Supports multiple values.",
+      "field": "Travel_Record_Type_Reference_Travel_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Purchase Status of Travel Booking Record.",
+      "field": "Purchased_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The expense status on the travel booking record.. Supports multiple values.",
+      "field": "Expense_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The expense status on the travel booking record.. Supports multiple values.",
+      "field": "Expense_Status_Reference_Expense_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Booking Status of Travel Booking Record.. Supports multiple values.",
+      "field": "Booking_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Booking Status of Travel Booking Record.. Supports multiple values.",
+      "field": "Booking_Status_Reference_Booking_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Airline_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Airport_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Car_Rental_Agency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Class_of_Service_Value_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Hotel_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Invoice_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Spend_Data_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+      "field": "Merchant_Reference_Travel_City_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant Code",
+      "field": "Merchant_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Merchant Name for Travel Booking.",
+      "field": "Merchant_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Airline_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Airport_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Car_Rental_Agency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Class_of_Service_Value_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Hotel_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Invoice_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Spend_Data_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+      "field": "Destination_Travel_City_Reference_Travel_City_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The expense reports that include lines linked to travel booking records.. Supports multiple values.",
+      "field": "Expense_Report_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The expense reports that include lines linked to travel booking records.. Supports multiple values.",
+      "field": "Expense_Report_Reference_Expense_Report_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Booking_Status_Reference_Booking_Status_ID_Prompt": {
+        "description": "Booking Status of Travel Booking Record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Booking_Status_Reference_WID_Prompt": {
+        "description": "Booking Status of Travel Booking Record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company of the Employee on the Travel Booking Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company of the Employee on the Travel Booking Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company of the Employee on the Travel Booking Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Airline_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Airport_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Car_Rental_Agency_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Class_of_Service_Value_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Hotel_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Invoice_Type_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Spend_Data_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_Travel_City_ID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Destination_Travel_City_Reference_WID_Prompt": {
+        "description": "Workday Destination City matching the destination city on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_Ending_Range_Prompt": {
+        "description": "The ending point of the range for the travel end date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_Starting_Range_Prompt": {
+        "description": "The starting point of the range for the travel end date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Reference_Expense_Report_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Reference_Expense_Report_Reference_ID_Prompt": {
+        "description": "The expense reports that include lines linked to travel booking records.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Report_Reference_WID_Prompt": {
+        "description": "The expense reports that include lines linked to travel booking records.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Status_Reference_Expense_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Status_Reference_Expense_Status_ID_Prompt": {
+        "description": "The expense status on the travel booking record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Status_Reference_WID_Prompt": {
+        "description": "The expense status on the travel booking record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Load_Date_Ending_Range_Prompt": {
+        "description": "The ending point of the range on the Load Date field, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Load_Date_Starting_Range_Prompt": {
+        "description": "The starting point of the range on the Load Date field, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Code_Prompt": {
+        "description": "Merchant Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Name_Prompt": {
+        "description": "Merchant Name for Travel Booking.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Airline_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Airport_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Car_Rental_Agency_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Class_of_Service_Value_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Hotel_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Invoice_Type_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Spend_Data_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_Travel_City_ID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Merchant_Reference_WID_Prompt": {
+        "description": "Merchant matching the merchant listed on the Travel Booking Record.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchased_Prompt": {
+        "description": "Purchase Status of Travel Booking Record.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date_Ending_Range_Prompt": {
+        "description": "The ending point of the range for the travel start date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_Starting_Range_Prompt": {
+        "description": "The starting point of the range for the travel start date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date_Ending_Range_Prompt": {
+        "description": "The ending point of the range for the transaction date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Date_Starting_Range_Prompt": {
+        "description": "The starting point of the range for the transaction date, from which travel booking records are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_File_Reference": {
+        "description": "Travel Booking File Reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_File_Reference_Travel_Booking_File_Reference_ID_Prompt": {
+        "description": "Reference to the files used to load the travel booking records.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_File_Reference_WID_Prompt": {
+        "description": "Reference to the files used to load the travel booking records.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_Record_Data": {
+        "description": "Travel Booking Record Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_Record_Reference_Travel_Booking_Record_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Booking_Record_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Travel_Provider_Prompt": {
+        "description": "Identifying name of the Travel management provider.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Record_Type_Reference_Travel_Type_ID_Prompt": {
+        "description": "Type of the Travel Booking Record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Record_Type_Reference_WID_Prompt": {
+        "description": "Type of the Travel Booking Record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "The employee on the travel booking record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "The employee on the travel booking record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "The employee on the travel booking record.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

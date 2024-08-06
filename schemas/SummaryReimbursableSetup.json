@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SummaryReimbursableSetup",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier for the Summary Reimbursable Setup.",
+      "field": "Summary_Reimbursable_Setup_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_for_Summary_Reimbursable_Setup_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_for_Summary_Reimbursable_Setup_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_for_Summary_Reimbursable_Setup_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A flag to set the Summary Reimbursable Setup to inactive. When the flag is set to inactive, you can no longer access this setup in your award cost processing.",
+      "field": "Inactive_Setup",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the ledger type associated with the Summary Reimbursable Setup. It's a required field",
+      "field": "Ledger_Types_for_Summary_Reimbursable_Setup_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Some ledger accounts in the ledger account summaries may be omitted in the calculation if the ledger accounts are retired, restricted to a different company, not part of an account set for the company you selected, or the types of ledger accounts that are ineligible for summary reimbursable calculation.",
+      "field": "Ledger_Accounts_and_Ledger_Account_Summaries_for_Summary_Reimbursable_Setup_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the journal source associated with the summary reimbursable setup.",
+      "field": "Accounting_Journal_Sources_for_Summary_Reimbursable_Setup_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When you don't enter a book code, only the Blank book code is eligible for summary reimbursable calculations.",
+      "field": "Book_Codes_for_Summary_Reimbursable_Setup_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Journal_Sources_for_Summary_Reimbursable_Setup_Reference": {
+        "description": "The reference to the journal source associated with the summary reimbursable setup.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Book_Codes_for_Summary_Reimbursable_Setup_Reference": {
+        "description": "When you don't enter a book code, only the Blank book code is eligible for summary reimbursable calculations.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_for_Summary_Reimbursable_Setup_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_for_Summary_Reimbursable_Setup_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_for_Summary_Reimbursable_Setup_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive_Setup": {
+        "description": "A flag to set the Summary Reimbursable Setup to inactive. When the flag is set to inactive, you can no longer access this setup in your award cost processing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ledger_Accounts_and_Ledger_Account_Summaries_for_Summary_Reimbursable_Setup_Reference": {
+        "description": "Some ledger accounts in the ledger account summaries may be omitted in the calculation if the ledger accounts are retired, restricted to a different company, not part of an account set for the company you selected, or the types of ledger accounts that are ineligible for summary reimbursable calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Types_for_Summary_Reimbursable_Setup_Reference": {
+        "description": "The reference to the ledger type associated with the Summary Reimbursable Setup. It's a required field",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Setup_ID": {
+        "description": "The unique identifier for the Summary Reimbursable Setup.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

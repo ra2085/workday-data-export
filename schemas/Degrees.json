@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Degrees",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Degree_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Degree_Reference_Degree_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Degree ID.  This is the unique identifier for a Degree.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the name of the Degree with more validation for Localized Degrees. Non-blank value allowed.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the rating value for the Degree.",
+      "field": "Rating_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the description of the Degree.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the degree is inactive.  If a degree is inactive, it will no longer be allowed to be selected when a worker adds an education.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Indicates that the degree is restricted by the country / countries",
+      "field": "Restricted_to_Countries_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Degree_Reference_Degree_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Degree_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Description": {
+        "description": "This is the description of the Degree.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Degree ID.  This is the unique identifier for a Degree.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates if the degree is inactive.  If a degree is inactive, it will no longer be allowed to be selected when a worker adds an education.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "This is the name of the Degree with more validation for Localized Degrees. Non-blank value allowed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Value": {
+        "description": "This is the rating value for the Degree.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Restricted_to_Countries_Reference": {
+        "description": "Indicates that the degree is restricted by the country / countries",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PrepaidSpendAmortizationSchedules_Prepaid_Spend_Amortization_Installment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference id of the prepaid spend amortization schedule.  If this is entered, then the Supplier Invoice ID cannot.",
+      "field": "PrepaidSpendAmortizationSchedule_Prepaid_Spend_Amortization_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Prepaid_Spend_Amortization_Installment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Prepaid_Spend_Amortization_Installment_Reference_Prepaid_Spend_Amortization_Installment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date that accounting will use.  This must match the start date.",
+      "field": "Accounting_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A set of lines that make up this installment",
+      "field": "Prepaid_Spend_Amortization_Installment_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Date": {
+        "description": "The date that accounting will use.  This must match the start date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PrepaidSpendAmortizationSchedule_Prepaid_Spend_Amortization_Schedule_ID": {
+        "description": "The reference id of the prepaid spend amortization schedule.  If this is entered, then the Supplier Invoice ID cannot.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prepaid_Spend_Amortization_Installment_Line_Data": {
+        "description": "A set of lines that make up this installment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prepaid_Spend_Amortization_Installment_Reference_Prepaid_Spend_Amortization_Installment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prepaid_Spend_Amortization_Installment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

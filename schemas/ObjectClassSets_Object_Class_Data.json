@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ObjectClassSets_Object_Class_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Object Class Set Reference ID.  This is the Object Class Set unique identifier",
+      "field": "ObjectClassSet_Object_Class_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Object Class Code.  This is the Object Class Set unique identifier",
+      "field": "Object_Class_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Object Class Name",
+      "field": "Object_Class_Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ObjectClassSet_Object_Class_Set_ID": {
+        "description": "Object Class Set Reference ID.  This is the Object Class Set unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Object_Class_Code": {
+        "description": "Object Class Code.  This is the Object Class Set unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Object_Class_Description": {
+        "description": "Object Class Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

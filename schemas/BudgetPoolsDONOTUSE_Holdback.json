@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BudgetPoolsDONOTUSE_Holdback",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SupervisoryOrganizationPoolData_Supervisory_Organization_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Award Type for the Holdback",
+      "field": "Award_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount Pool Holdback",
+      "field": "Holdback_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organizations with SubOrdinates",
+      "field": "Supervisory_Organization_and_Subordinates_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_Award_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Type": {
+        "description": "The name of the Award Type for the Holdback",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Type_Reference_Award_Type_ID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Type_Reference_WID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID_Prompt": {
+        "description": "Compensation Review Event",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Holdback_Amount": {
+        "description": "Amount Pool Holdback",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "SupervisoryOrganizationPoolData_Supervisory_Organization_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_and_Subordinates_Prompt": {
+        "description": "Supervisory Organizations with SubOrdinates",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkdayCompanies_Supplier_Accounts_Options",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Cost Processing Rule Reference ID used for Integration.",
+      "field": "Company_Award_Cost_Processing_Rule_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For a company, allows the supplier invoice to have a different supplier than on the purchase order",
+      "field": "Allow_Different_Invoicing_and_Purchasing_Supplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enables the company ability to create flagged Supplier Invoices for Payment Practices Reporting",
+      "field": "Enable_Payment_Practices_Reporting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Name",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Code_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Different_Invoicing_and_Purchasing_Supplier": {
+        "description": "For a company, allows the supplier invoice to have a different supplier than on the purchase order",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Code_Prompt": {
+        "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Award_Cost_Processing_Rule_Data_ID": {
+        "description": "Award Cost Processing Rule Reference ID used for Integration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Payment_Practices_Reporting": {
+        "description": "Enables the company ability to create flagged Supplier Invoices for Payment Practices Reporting",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Company Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

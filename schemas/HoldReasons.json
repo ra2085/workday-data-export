@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HoldReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Hold Reason",
+      "field": "Hold_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Hold Reason to be used as search criteria",
+      "field": "Hold_Reason_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description for Hold Reason",
+      "field": "Hold_Reason_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Hold Reason Inactive flag to denote this Hold Reason is inactive",
+      "field": "Hold_Reason_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Hold Reason to be used as search criteria",
+      "field": "Hold_Reason_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Hold_Reason_Description": {
+        "description": "Description for Hold Reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hold_Reason_ID": {
+        "description": "ID for Hold Reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hold_Reason_Inactive": {
+        "description": "Hold Reason Inactive flag to denote this Hold Reason is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hold_Reason_Name": {
+        "description": "Name of the Hold Reason to be used as search criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hold_Reason_Name_Prompt": {
+        "description": "Name of the Hold Reason to be used as search criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

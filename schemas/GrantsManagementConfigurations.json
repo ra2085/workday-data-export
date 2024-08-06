@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GrantsManagementConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Valid line types for Grants Management Configuration. You must specify 1 or more values. Possible value is: Prepaid, Fixed Amount, Cost Reimbursable, Summary Reimbursable.",
+      "field": "Valid_Line_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Line_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Line_Type_Reference_Contract_Line_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Grants Management configuration company data.",
+      "field": "Grants_Management_Configuration_Company_Override_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Default_Line_Type_Reference_Contract_Line_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Line_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grants_Management_Configuration_Company_Override_Data": {
+        "description": "Contains the Grants Management configuration company data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Valid_Line_Type_Reference": {
+        "description": "Valid line types for Grants Management Configuration. You must specify 1 or more values. Possible value is: Prepaid, Fixed Amount, Cost Reimbursable, Summary Reimbursable.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

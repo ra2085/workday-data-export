@@ -1,0 +1,367 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "NettingRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Netting_Rule_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Netting_Rule_Reference_Netting_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order in which Workday evaluates the netting rule.",
+      "field": "Rule_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Netting Rule. This is the Netting Rule Instance unique identifier.",
+      "field": "Netting_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique name of the netting rule.",
+      "field": "Rule_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The companies or company hierarchies that are part of the netting rule. You can specify multiple companies and company hierarchies in the same netting rule.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The customers included in the netting rule. You can specify multiple customers in the same netting rule.",
+      "field": "Customer_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The suppliers included in the netting rule. You can specify multiple suppliers in the same netting rule.",
+      "field": "Supplier_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Eligibility_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Eligibility_Rule_Reference_Invoice_Eligibility_Rule_for_Netting_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Business_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Cost_Center_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Custom_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Fund_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Balancing_Worktag_Reference_Region_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The optional balancing worktags associated with the netting rule. Includes only those worktag types that you specify as optional balancing worktags in the tenant. When optional worktag balancing is not enabled in the tenant, Workday ignores this value.",
+      "field": "Optional_Balancing_Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the netting rule is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The comments you specify for the netting rule.",
+      "field": "Comments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the rule name.",
+      "field": "Rule_Name_Reference_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Balancing_Worktag_Reference_Business_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Cost_Center_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Custom_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Fund_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_Region_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Balancing_Worktag_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Comments": {
+        "description": "The comments you specify for the netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference": {
+        "description": "The companies or company hierarchies that are part of the netting rule. You can specify multiple companies and company hierarchies in the same netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Contains additional criteria for identifying an existing company that holds the asset.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference": {
+        "description": "The customers included in the netting rule. You can specify multiple customers in the same netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "True if the netting rule is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_Reference_Invoice_Eligibility_Rule_for_Netting_Transaction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Netting_Rule_ID": {
+        "description": "Netting Rule. This is the Netting Rule Instance unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Netting_Rule_Reference_Netting_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Netting_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Optional_Balancing_Worktags_Reference": {
+        "description": "The optional balancing worktags associated with the netting rule. Includes only those worktag types that you specify as optional balancing worktags in the tenant. When optional worktag balancing is not enabled in the tenant, Workday ignores this value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Name": {
+        "description": "The unique name of the netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Name_Reference_Prompt": {
+        "description": "ID of the rule name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Order": {
+        "description": "The order in which Workday evaluates the netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference": {
+        "description": "The suppliers included in the netting rule. You can specify multiple suppliers in the same netting rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TalentPools",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Static_Talent_Pool_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Static_Talent_Pool_Reference_Talent_Pool_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Reference_ID of Talent Pool",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Talent Pool Name attribute value",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Talent Pool Description attribute value",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Holds Talent Pool Inactivate boolean value",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Restricted Pool is used to specify whether the talent pool is restricted or not.",
+      "field": "Restricted_View",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This Boolean value is used to specify if the succession/talent pool will be excluded from processing during the Remove Worker from Talent business process",
+      "field": "Exclude_from_Termination",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds element which contain Talent Pool Worker membership.",
+      "field": "Talent_Pool_Member",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Holds Talent Pool Description attribute value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_from_Termination": {
+        "description": "This Boolean value is used to specify if the succession/talent pool will be excluded from processing during the Remove Worker from Talent business process",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Holds Reference_ID of Talent Pool",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Holds Talent Pool Inactivate boolean value",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Holds Talent Pool Name attribute value",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_View": {
+        "description": "Restricted Pool is used to specify whether the talent pool is restricted or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Static_Talent_Pool_Reference_Talent_Pool_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Static_Talent_Pool_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Talent_Pool_Member": {
+        "description": "Holds element which contain Talent Pool Worker membership.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

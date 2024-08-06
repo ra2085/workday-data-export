@@ -1,0 +1,407 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PositionBudgets_Position_Budget_Line_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PositionBudget_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional line order. If specified, Position Budget detail lines will be sorted by this value when displayed.",
+      "field": "Line_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_On_Budget_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_On_Budget_Line_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_On_Budget_Line_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Budget_Line_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Budget_Line_Type_Reference_Budget_Line_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fringe_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fringe_Account_Reference_Ledger_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Compensation Amount for Position Budget Line",
+      "field": "Compensation_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Fringe Benefit Budget Amount for Position Budget Line",
+      "field": "Fringe_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  For Position Budgets, Worktag are limited to worktags whose types are specified on the Business Plan Structure and only one Worktag of each type is allowed for each Position Budget Line.",
+      "field": "Accounting_Worktag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing company",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing business plan structure",
+      "field": "Business_Plan_Structure_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing business plan structure",
+      "field": "Business_Plan_Structure_Reference_Budget_Structure_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a fiscal year",
+      "field": "Fiscal_Year_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a fiscal year",
+      "field": "Fiscal_Year_Reference_Fiscal_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position. Supports multiple values.",
+      "field": "Position_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position. Supports multiple values.",
+      "field": "Position_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Employee. Supports multiple values.",
+      "field": "Employee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+      "field": "Version_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+      "field": "Version_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+      "field": "Position_Budget_Group_Load_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+      "field": "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Worktag_Reference": {
+        "description": "Reference to existing Worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize.  For Position Budgets, Worktag are limited to worktags whose types are specified on the Business Plan Structure and only one Worktag of each type is allowed for each Position Budget Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Line_Type_Reference_Budget_Line_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Budget_Line_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_Budget_Structure_ID_Prompt": {
+        "description": "Reference to an existing business plan structure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Plan_Structure_Reference_WID_Prompt": {
+        "description": "Reference to an existing business plan structure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_On_Budget_Line_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_On_Budget_Line_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_On_Budget_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Reference to an existing company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Amount": {
+        "description": "Compensation Amount for Position Budget Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID_Prompt": {
+        "description": "Reference to an Employee. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_Reference_Fiscal_Year_ID_Prompt": {
+        "description": "Reference to a fiscal year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_Reference_WID_Prompt": {
+        "description": "Reference to a fiscal year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Account_Reference_Ledger_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fringe_Amount": {
+        "description": "Fringe Benefit Budget Amount for Position Budget Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Line_Order": {
+        "description": "Optional line order. If specified, Position Budget detail lines will be sorted by this value when displayed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PositionBudget_Company_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_Position_Budget_Group_ID_Prompt": {
+        "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Budget_Group_Load_Reference_WID_Prompt": {
+        "description": "Position Budget Group Load Reference for filtering by Position Budget Group Event for Position Budgets retrieval",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID_Prompt": {
+        "description": "Reference to a Position. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID_Prompt": {
+        "description": "Reference to a Position. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Version_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Version_Status_Reference_WID_Prompt": {
+        "description": "Reference to a Position Budget Version Status. Valid Statuses are Active, Amended, Canceled, Denied, Draft, In Progress and Original.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

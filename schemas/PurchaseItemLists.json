@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItemLists",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for the Restricted Purchase Item List.",
+      "field": "Purchase_Item_List_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Restricted Purchase Item List Name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate that the Restricted Purchase Item List is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Items for the Restricted Purchase Item List.",
+      "field": "Purchase_Items_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requesting Entities related to the Restricted Purchase Item List.",
+      "field": "Requesting_Entities_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Flag to indicate that the Restricted Purchase Item List is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Restricted Purchase Item List Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_List_ID": {
+        "description": "Unique Identifier for the Restricted Purchase Item List.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Items_Reference": {
+        "description": "Purchase Items for the Restricted Purchase Item List.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requesting_Entities_Reference": {
+        "description": "Requesting Entities related to the Restricted Purchase Item List.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

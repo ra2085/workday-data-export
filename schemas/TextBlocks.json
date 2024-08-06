@@ -1,0 +1,198 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TextBlocks",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the text block.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the text block.",
+      "field": "Text_Block_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_Business_Process_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_NOTIFICATION_CATEGORY",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Reference_Student_Engagement_Template_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Text_Block_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Text_Block_Category_Reference_Text_Block_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the text block data is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the text block is non-editable.",
+      "field": "Do_Not_Allow_Editing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Fields referenced in the Text Block Content",
+      "field": "External_Field_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the text block category.",
+      "field": "Text_Block_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference to the text block category.",
+      "field": "Text_Block_Category_Reference_Text_Block_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the text block.",
+      "field": "Text_Block_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Do_Not_Allow_Editing": {
+        "description": "Indicates if the text block is non-editable.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Field_Reference": {
+        "description": "External Fields referenced in the Text Block Content",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID for the text block.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates if the text block data is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_Reference_Business_Process_Type": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_NOTIFICATION_CATEGORY": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_Student_Engagement_Template_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Category_Reference_Text_Block_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Category_Reference_Text_Block_Category_ID_Prompt": {
+        "description": "The reference to the text block category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Category_Reference_WID_Prompt": {
+        "description": "The reference to the text block category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Name": {
+        "description": "The name of the text block.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_Block_Name_Prompt": {
+        "description": "The name of the text block.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

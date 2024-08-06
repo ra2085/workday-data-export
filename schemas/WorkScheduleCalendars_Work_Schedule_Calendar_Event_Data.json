@@ -1,0 +1,303 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkScheduleCalendars_Work_Schedule_Calendar_Event_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "WorkScheduleCalendar_Work_Schedule_Calendar_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for the name of the Work Schedule Calendar Event.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Display Name of the Work Schedule Calendar Event.",
+      "field": "Display_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for all day event for Calendar Event. If true, this event will occur all day. If false, this event will occur in the start to end date range.",
+      "field": "All_Day_Event",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value for the start time for Calendar Event.",
+      "field": "Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Time value for the start time for Calendar Event.",
+      "field": "Start_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value for the End Time for Calendar Event.",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Time value for the end time for Calendar Event.",
+      "field": "End_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element containing meal times for the Work Schedule Calendar Event.",
+      "field": "Meal_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Type_Reference_Schedule_Request_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Recurrence Interval Multiplier for Calendar Event.",
+      "field": "Recurrence_Interval_Multiplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, calendar event recurs every weekday.",
+      "field": "Recurs_Every_Weekday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for Day of the Week for Calendar Event.",
+      "field": "Day_of_the_Week_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "First_Day_of_the_Week_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "First_Day_of_the_Week_Reference_Day_of_the_Week_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for Month for Calendar Event.",
+      "field": "Month_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for Day of the Month for Calendar Event.",
+      "field": "Day_of_the_Month_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Week_of_the_Month_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Week_of_the_Month_Reference_Week_of_the_Month_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value for Trigger Start Date for Calendar Event.",
+      "field": "Recurrence_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value for Trigger End Date for Calendar Event.",
+      "field": "Recurrence_End_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "All_Day_Event": {
+        "description": "Boolean value for all day event for Calendar Event. If true, this event will occur all day. If false, this event will occur in the start to end date range.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Day_of_the_Month_Reference": {
+        "description": "Reference for Day of the Month for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_of_the_Week_Reference": {
+        "description": "Reference for Day of the Week for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Name": {
+        "description": "Display Name of the Work Schedule Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "Date value for the End Time for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Time": {
+        "description": "Time value for the end time for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Day_of_the_Week_Reference_Day_of_the_Week_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Day_of_the_Week_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Meal_Data": {
+        "description": "Wrapper element containing meal times for the Work Schedule Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Month_Reference": {
+        "description": "Reference for Month for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Text value for the name of the Work Schedule Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_End_Date": {
+        "description": "Date value for Trigger End Date for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Interval_Multiplier": {
+        "description": "Numeric value for Recurrence Interval Multiplier for Calendar Event.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Recurrence_Start_Date": {
+        "description": "Date value for Trigger Start Date for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Type_Reference_Schedule_Request_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurs_Every_Weekday": {
+        "description": "If true, calendar event recurs every weekday.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Start_Date": {
+        "description": "Date value for the start time for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Time": {
+        "description": "Time value for the start time for Calendar Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Week_of_the_Month_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Week_of_the_Month_Reference_Week_of_the_Month_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "WorkScheduleCalendar_Work_Schedule_Calendar_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

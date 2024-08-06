@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssetPoolingRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique reference identifier to the set of asset pooling rules.",
+      "field": "Asset_Pooling_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Used to define the order of the rules (ascending).",
+      "field": "Asset_Pooling_Rule_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies or company hierarchies to which the asset pooling rule applies.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing spend categories or spend category hierarchies to which the asset pooling rule applies.",
+      "field": "Spend_Category_or_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing item to which the asset pooling rule applies.",
+      "field": "Items_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The quantity above which the asset pooling rule applies. Quantity must be greater than zero.",
+      "field": "Quantity_Greater_Than",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount below which the asset pooling rule applies.",
+      "field": "Unit_Cost_Threshold",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Asset_Pooling_Rule_ID": {
+        "description": "This is a unique reference identifier to the set of asset pooling rules.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Pooling_Rule_Order": {
+        "description": "Used to define the order of the rules (ascending).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference": {
+        "description": "Reference to existing companies or company hierarchies to which the asset pooling rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Items_Reference": {
+        "description": "Reference to existing item to which the asset pooling rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quantity_Greater_Than": {
+        "description": "The quantity above which the asset pooling rule applies. Quantity must be greater than zero.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Spend_Category_or_Hierarchy_Reference": {
+        "description": "Reference to existing spend categories or spend category hierarchies to which the asset pooling rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_Cost_Threshold": {
+        "description": "The amount below which the asset pooling rule applies.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EquivalencyRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Equivalency_Rule_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Equivalency_Rule_Reference_Equivalency_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the equivalency rule.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Source content for the equivalency rule.",
+      "field": "Source_Equivalency_Content_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Target content for the equivalency rule.",
+      "field": "Target_Equivalency_Content_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Group content for the equivalency rule.",
+      "field": "Group_Equivalency_Content_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the equivalency rule is two-way or singular.",
+      "field": "Two-Way",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective from date for the equivalency rule.",
+      "field": "Effective_Date_From",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective to date for the equivalency rule.",
+      "field": "Effective_Date_To",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the equivalency rule is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Inactivation date for the equivalency rule.",
+      "field": "Inactivation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the equivalency records are to appear on Learning History.",
+      "field": "Display_Equivalency_Records_on_Learning_History",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the equivalency options are to appear on Learning Course.",
+      "field": "Display_Equivalency_Options_on_Course",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Display_Equivalency_Options_on_Course": {
+        "description": "Indicates whether the equivalency options are to appear on Learning Course.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Display_Equivalency_Records_on_Learning_History": {
+        "description": "Indicates whether the equivalency records are to appear on Learning History.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Effective_Date_From": {
+        "description": "Effective from date for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date_To": {
+        "description": "Effective to date for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Equivalency_Rule_Reference_Equivalency_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Equivalency_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Group_Equivalency_Content_Reference": {
+        "description": "Group content for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivation_Date": {
+        "description": "Inactivation date for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether the equivalency rule is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_Equivalency_Content_Reference": {
+        "description": "Source content for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Equivalency_Content_Reference": {
+        "description": "Target content for the equivalency rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Two-Way": {
+        "description": "Indicates whether the equivalency rule is two-way or singular.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

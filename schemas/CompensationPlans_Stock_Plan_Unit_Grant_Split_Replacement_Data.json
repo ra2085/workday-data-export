@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationPlans_Stock_Plan_Unit_Grant_Split_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CompensationPlan_Compensation_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Grant_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Grant_Type_Reference_Stock_Option_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Vesting_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Vesting_Schedule_Reference_Stock_Vesting_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Date_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Stock_Date_Rule_Reference_Stock_Expiration_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Fractional proportion of the Grant. Must sum up to 1.",
+      "field": "Grant_Split_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+      "field": "Plan_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+      "field": "Plan_Type_Reference_Compensation_Plan_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CompensationPlan_Compensation_Plan_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grant_Split_Percent": {
+        "description": "Fractional proportion of the Grant. Must sum up to 1.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Plan_Type_Reference_Compensation_Plan_Type_ID_Prompt": {
+        "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan_Type_Reference_WID_Prompt": {
+        "description": "Plan Type Reference elements are used to limit the compensation plans returned by a type.  The ID identifier attribute is \"Compensation_Plan_Type_ID\".  The supported type values are BONUS, FUTURE.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Date_Rule_Reference_Stock_Expiration_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Date_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Grant_Type_Reference_Stock_Option_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Grant_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Vesting_Schedule_Reference_Stock_Vesting_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Vesting_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

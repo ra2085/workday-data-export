@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HealthCareRates_Health_Care_Rate_Flat_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID For Health Care Rate Data",
+      "field": "HealthCareRate_Health_Care_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Health Care Rate Flat Data",
+      "field": "Benefit_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum Benefit Rate Band",
+      "field": "Minimum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum Benefit Rate Band",
+      "field": "Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum Salary for Benefit Rate Band",
+      "field": "Salary_Minimum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum Salary for Benefit Rate Band",
+      "field": "Salary_Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Health_Care_Coverage_Target_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Health_Care_Coverage_Target_Reference_Health_Care_Coverage_Target_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benefit Rate Flat Value Data",
+      "field": "Rate_Value_Flat_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tobacco_Use_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tobacco_Use_Reference_Benefit_Rate_Band_Tobacco_Use_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Health Care Rate Percent of Salary Data for Health Care Rate Percent Salary Data",
+      "field": "Enrollment_Code",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Benefit_Rate_ID": {
+        "description": "Reference ID for Health Care Rate Flat Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enrollment_Code": {
+        "description": "Health Care Rate Percent of Salary Data for Health Care Rate Percent Salary Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "HealthCareRate_Health_Care_Rate_ID": {
+        "description": "Reference ID For Health Care Rate Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Health_Care_Coverage_Target_Reference_Health_Care_Coverage_Target_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Health_Care_Coverage_Target_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum": {
+        "description": "Maximum Benefit Rate Band",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum": {
+        "description": "Minimum Benefit Rate Band",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Rate_Value_Flat_Data": {
+        "description": "Benefit Rate Flat Value Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Maximum": {
+        "description": "Maximum Salary for Benefit Rate Band",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Salary_Minimum": {
+        "description": "Minimum Salary for Benefit Rate Band",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tobacco_Use_Reference_Benefit_Rate_Band_Tobacco_Use_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tobacco_Use_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

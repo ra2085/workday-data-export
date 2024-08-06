@@ -1,0 +1,276 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvestmentPoolPurchases",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Purchase_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Purchase_Reference_Investment_Pool_Purchase_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Investment Pool Purchase ID",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Save and Submit",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Gift_Reference_Gift_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Transaction Date is the day the investment pool units were purchased.",
+      "field": "Transaction_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Purchase Date determines the default unit price for the purchase by selecting the Investment Pool Valuation for that date.",
+      "field": "Purchase_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize. Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Investment Pool Purchase Line Data",
+      "field": "Investment_Pool_Purchase_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Status of the Investment Pool Purchase Record",
+      "field": "Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Valuation_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Investment_Pool_Valuation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Default Unit Price is the unit price on the referenced Investment Pool Valuation.",
+      "field": "Default_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Units Purchased for the referenced Gift.",
+      "field": "Units_Purchased",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Amount Purchased for the referenced Gift.",
+      "field": "Total_Amount_Purchased",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that the units were purchased using distributed income when set",
+      "field": "Reinvestment",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Unit_Price": {
+        "description": "Default Unit Price is the unit price on the referenced Investment Pool Valuation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Gift_Reference_Gift_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gift_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Investment Pool Purchase ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Purchase_Line_Data": {
+        "description": "Investment Pool Purchase Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Purchase_Reference_Investment_Pool_Purchase_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Purchase_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Investment_Pool_Valuation_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investment_Pool_Valuation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Date": {
+        "description": "Purchase Date determines the default unit price for the purchase by selecting the Investment Pool Valuation for that date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reinvestment": {
+        "description": "Indicates that the units were purchased using distributed income when set",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Status": {
+        "description": "Status of the Investment Pool Purchase Record",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Save and Submit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Amount_Purchased": {
+        "description": "Total Amount Purchased for the referenced Gift.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transaction_Date": {
+        "description": "Transaction Date is the day the investment pool units were purchased.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Units_Purchased": {
+        "description": "Total Units Purchased for the referenced Gift.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Reference to existing worktags. Worktags are a way to mark tasks and business objects to make them easier to access and summarize. Each transaction can include one value for each worktag type and is subject to configurable validation when submitted for approval.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

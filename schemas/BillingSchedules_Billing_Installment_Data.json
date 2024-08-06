@@ -1,0 +1,667 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BillingSchedules_Billing_Installment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Billing Schedule Reference ID. This is the unique Billing Schedule identifier.",
+      "field": "BillingSchedule_Billing_Schedule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Billing Installment Reference ID. This is the Billing Installment unique identifier.",
+      "field": "Billing_Installment_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Billing_Installment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Billing_Installment_Reference_Billing_Installment_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate to delete the installment. When the flag is set to True, Workday deletes the installment and associated installment lines.",
+      "field": "Delete_Installment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Installment status",
+      "field": "Status_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Invoice date",
+      "field": "Installment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Installment Due date.  Due Date is read-only and the system derives it based on Payment Terms.",
+      "field": "Due_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Installment From date",
+      "field": "From_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Installment To date",
+      "field": "To_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Installment On Hold flag",
+      "field": "On_Hold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Installment Amount",
+      "field": "Total_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Milestone",
+      "field": "Milestone_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Override Invoice Header flag. This must be Yes if you supply installment values for Payment Terms or Type, PO Number, Invoice Type, or Invoice Memo.",
+      "field": "Override_Invoice_Header",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_Payment_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "PO Number.  This should only be supplied to override the same value on the installment's schedule and must be used in conjunction with Override Invoice Header.",
+      "field": "PO_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Type_Reference_Customer_Invoice_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Invoice Memo.  This should only be supplied to override the same value on the installment's schedule and must be used in conjunction with Override Invoice Header.",
+      "field": "Invoice_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Billing Installment Line Data",
+      "field": "Billing_Installment_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Company. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Customer. Supports multiple values.",
+      "field": "Customer_Reference_Student_Financial_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- ON HOLD. Supports multiple values.",
+      "field": "Schedule_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- ON HOLD. Supports multiple values.",
+      "field": "Schedule_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to the existing Active Schedule Types. Supports multiple values.",
+      "field": "Schedule_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to the existing Active Schedule Types. Supports multiple values.",
+      "field": "Schedule_Type_Reference_Schedule_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- EVEN. Supports multiple values.",
+      "field": "Schedule_Distribution_Method_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- EVEN. Supports multiple values.",
+      "field": "Schedule_Distribution_Method_Reference_Schedule_Distribution_Method_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- QUARTERLY. Supports multiple values.",
+      "field": "Frequency_Behavior_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- QUARTERLY. Supports multiple values.",
+      "field": "Frequency_Behavior_Reference_Frequency_Behavior_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- TRANSACTION_BILLING_TYPE. Supports multiple values.",
+      "field": "Billing_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "- TRANSACTION_BILLING_TYPE. Supports multiple values.",
+      "field": "Billing_Type_Reference_Billing_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Currency. Supports multiple values.",
+      "field": "Currency_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Currency. Supports multiple values.",
+      "field": "Currency_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more references to an existing Currency. Supports multiple values.",
+      "field": "Currency_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Gets the Billing Schedules Starting from the given date on or after",
+      "field": "Schedule_From_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Gets the Billing Schedules Starting from the given date on or before",
+      "field": "Schedule_From_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "BillingSchedule_Billing_Schedule_Reference_ID": {
+        "description": "Billing Schedule Reference ID. This is the unique Billing Schedule identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Installment_Line_Data": {
+        "description": "Billing Installment Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Installment_Reference_ID": {
+        "description": "The Billing Installment Reference ID. This is the Billing Installment unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Type_Reference_Billing_Type_ID_Prompt": {
+        "description": "- TRANSACTION_BILLING_TYPE. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Type_Reference_WID_Prompt": {
+        "description": "- TRANSACTION_BILLING_TYPE. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "One or more references to an existing Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID_Prompt": {
+        "description": "One or more references to an existing Currency. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "One or more references to an existing Currency. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID_Prompt": {
+        "description": "One or more references to an existing Currency. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_ID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Student_Financial_Account_ID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "One or more references to an existing Customer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete_Installment": {
+        "description": "Flag to indicate to delete the installment. When the flag is set to True, Workday deletes the installment and associated installment lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Due_Date": {
+        "description": "Installment Due date.  Due Date is read-only and the system derives it based on Payment Terms.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Behavior_Reference_Frequency_Behavior_ID_Prompt": {
+        "description": "- QUARTERLY. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Behavior_Reference_WID_Prompt": {
+        "description": "- QUARTERLY. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Date": {
+        "description": "Installment From date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Billing_Installment_Reference_Billing_Installment_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Billing_Installment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Installment_Date": {
+        "description": "Invoice date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Memo": {
+        "description": "Invoice Memo.  This should only be supplied to override the same value on the installment's schedule and must be used in conjunction with Override Invoice Header.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_Reference_Customer_Invoice_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Milestone_Reference": {
+        "description": "Reference element representing a unique instance of Milestone",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "On_Hold": {
+        "description": "Installment On Hold flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Override_Invoice_Header": {
+        "description": "Override Invoice Header flag. This must be Yes if you supply installment values for Payment Terms or Type, PO Number, Invoice Type, or Invoice Memo.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "PO_Number": {
+        "description": "PO Number.  This should only be supplied to override the same value on the installment's schedule and must be used in conjunction with Override Invoice Header.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_Payment_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Distribution_Method_Reference_Schedule_Distribution_Method_Reference_ID_Prompt": {
+        "description": "- EVEN. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Distribution_Method_Reference_WID_Prompt": {
+        "description": "- EVEN. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_From_Date_On_or_After_Prompt": {
+        "description": "Gets the Billing Schedules Starting from the given date on or after",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_From_Date_On_or_Before_Prompt": {
+        "description": "Gets the Billing Schedules Starting from the given date on or before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "- ON HOLD. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Status_Reference_WID_Prompt": {
+        "description": "- ON HOLD. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_Schedule_Category_ID_Prompt": {
+        "description": "One or more references to the existing Active Schedule Types. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_WID_Prompt": {
+        "description": "One or more references to the existing Active Schedule Types. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference": {
+        "description": "Installment status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_Date": {
+        "description": "Installment To date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Amount": {
+        "description": "Installment Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankFeeStatementFiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Fee Statement File Reference ID. This field is a unique identifier.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Sender Identification.",
+      "field": "Sender_Identification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receiver Identification.",
+      "field": "Receiver_Identification",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "File Creation Date.",
+      "field": "File_Creation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File Identification Number.",
+      "field": "File_Identification_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Skips duplicate file validation.",
+      "field": "Skip_Validations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "File Creation Date From.",
+      "field": "File_Creation_Date_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "File Creation Date To.",
+      "field": "File_Creation_Date_To_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "File_Creation_Date": {
+        "description": "File Creation Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Creation_Date_From_Prompt": {
+        "description": "File Creation Date From.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Creation_Date_To_Prompt": {
+        "description": "File Creation Date To.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Identification_Number": {
+        "description": "File Identification Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Bank Fee Statement File Reference ID. This field is a unique identifier.",
+        "type": [
+          "string"
+        ]
+      },
+      "Receiver_Identification": {
+        "description": "Receiver Identification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sender_Identification": {
+        "description": "Sender Identification.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skip_Validations": {
+        "description": "Skips duplicate file validation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

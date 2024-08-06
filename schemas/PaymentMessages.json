@@ -1,0 +1,277 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PaymentMessages",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for the Payment Message",
+      "field": "Payment_Message_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Date Payment Message was created",
+      "field": "Create_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Unique Identifier based for the given create date",
+      "field": "Create_Date_Sequence",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Payments within the Payment Message",
+      "field": "Payment_Count",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Sum of Payments within the Payment Message",
+      "field": "Payments_Sum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payment Message Group Data",
+      "field": "Payment_Message_Group_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization. Supports multiple values.",
+      "field": "Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account",
+      "field": "Bank_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account",
+      "field": "Bank_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Outsourced Payment Group Reference",
+      "field": "Outsourced_Payment_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Outsourced Payment Group Reference",
+      "field": "Outsourced_Payment_Group_Reference_Outsourced_Payment_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created Date on Or After",
+      "field": "Created_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Created Date on Or Before",
+      "field": "Created_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Bank_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "Bank Account",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Account_Reference_WID_Prompt": {
+        "description": "Bank Account",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Date": {
+        "description": "Date Payment Message was created",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Date_Sequence": {
+        "description": "Unique Identifier based for the given create date",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Created_After_Prompt": {
+        "description": "Created Date on Or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_Before_Prompt": {
+        "description": "Created Date on Or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_WID_Prompt": {
+        "description": "Organization. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outsourced_Payment_Group_Reference_Outsourced_Payment_Group_ID_Prompt": {
+        "description": "Outsourced Payment Group Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outsourced_Payment_Group_Reference_WID_Prompt": {
+        "description": "Outsourced Payment Group Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Count": {
+        "description": "Number of Payments within the Payment Message",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Message_Group_Data": {
+        "description": "Payment Message Group Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Message_ID": {
+        "description": "Unique Identifier for the Payment Message",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payments_Sum": {
+        "description": "Sum of Payments within the Payment Message",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

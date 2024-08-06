@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Custom_ID_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Custom ID.",
+      "field": "Custom_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique attribute name/description identifying a valid instance of Custom ID Type.",
+      "field": "Custom_ID_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Custom ID was issued.",
+      "field": "Issued_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Custom ID expires.",
+      "field": "Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Description of the Custom ID.",
+      "field": "Custom_Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Custom_Description": {
+        "description": "Custom Description of the Custom ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_ID": {
+        "description": "Text attribute identifying Custom ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_ID_Type_Name": {
+        "description": "Unique attribute name/description identifying a valid instance of Custom ID Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expiration_Date": {
+        "description": "Date the Custom ID expires.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_Date": {
+        "description": "Date the Custom ID was issued.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

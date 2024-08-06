@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationScorecards",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique scorecard identifier.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of the scorecard.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the scorecard.",
+      "field": "Scorecard_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the scorecard.",
+      "field": "Scorecard_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Performance criteria for scorecard.",
+      "field": "Scorecard_Goals_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a rule/profile delineated  set of goals.",
+      "field": "Scorecard_Profile_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "The effective date of the scorecard.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique scorecard identifier.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Scorecard_Description": {
+        "description": "Description of the scorecard.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Goals_Data": {
+        "description": "Performance criteria for scorecard.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Name": {
+        "description": "The name of the scorecard.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scorecard_Profile_Data": {
+        "description": "Contains a rule/profile delineated  set of goals.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

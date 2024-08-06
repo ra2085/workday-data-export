@@ -1,0 +1,211 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollSSPHistory",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Add Reference ID to data element",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Average Weekly Earnings",
+      "field": "Average_Weekly_Earnings",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "SSP Absence History",
+      "field": "SSP_Absence_History",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Last PIW Start Date",
+      "field": "Last_PIW_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Last PIW End Date",
+      "field": "Last_PIW_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Number of Waiting Days",
+      "field": "Total_Number_of_Waiting_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Number of Payment Days for SSP",
+      "field": "Total_Number_of_Payment_Days_for_SSP",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of SSP Weeks and Days Taken (Decimal Weeks)",
+      "field": "Number_of_SSP_Weeks_and_Days_Taken__Decimal_Weeks_",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "First Day of SSP",
+      "field": "First_Day_of_SSP",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Average_Weekly_Earnings": {
+        "description": "Average Weekly Earnings",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "First_Day_of_SSP": {
+        "description": "First Day of SSP",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Add Reference ID to data element",
+        "type": [
+          "string"
+        ]
+      },
+      "Last_PIW_End_Date": {
+        "description": "Last PIW End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_PIW_Start_Date": {
+        "description": "Last PIW Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_SSP_Weeks_and_Days_Taken__Decimal_Weeks_": {
+        "description": "Number of SSP Weeks and Days Taken (Decimal Weeks)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "SSP_Absence_History": {
+        "description": "SSP Absence History",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Total_Number_of_Payment_Days_for_SSP": {
+        "description": "Total Number of Payment Days for SSP",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Number_of_Waiting_Days": {
+        "description": "Total Number of Waiting Days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Payroll SSP History Worker Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

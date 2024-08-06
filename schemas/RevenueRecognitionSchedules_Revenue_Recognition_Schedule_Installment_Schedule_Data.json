@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueRecognitionSchedules_Revenue_Recognition_Schedule_Installment_Schedule_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+      "field": "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Reference_Customer_Invoice_Line_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Reference_Receivable_Contract_Line_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Line_Reference_Student_Sponsor_Contract_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount to distribute across regular installments.",
+      "field": "Regular_Installment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount to use for the first installment, to support proration.",
+      "field": "First_Installment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount to use for the last installment, to support proration.",
+      "field": "Last_Installment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Line_Reference_WID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "First_Installment_Amount": {
+        "description": "The amount to use for the first installment, to support proration.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Last_Installment_Amount": {
+        "description": "The amount to use for the last installment, to support proration.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Line_Reference_Customer_Invoice_Line_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Reference_Receivable_Contract_Line_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Reference_Student_Sponsor_Contract_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Regular_Installment_Amount": {
+        "description": "The amount to distribute across regular installments.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID": {
+        "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

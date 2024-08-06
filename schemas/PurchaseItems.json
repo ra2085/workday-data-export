@@ -1,0 +1,1121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItems",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item ID.  This is the Purchase Item unique identifier",
+      "field": "Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for meaningful Purchase Item Name",
+      "field": "Item_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Commodity Code Instances associated with the Purchase or Catalog Item. Commodity code is a standard code that identifies the type of goods or service. Example of standard commodity code types are UNSPSC, NIGP etc.  The commodity code needs to be active and not a parent code to associate to the item.",
+      "field": "Commodity_Code_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The exact moment in time this purchase item was last functionally updated - Cannot be updated",
+      "field": "Last_Updated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for Purchase Item Description",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form test for Item Identifier. This is not the Item Reference ID, but a non-unique field for providing addition Item identification data.",
+      "field": "Item_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item URL",
+      "field": "Item_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.",
+      "field": "Item_Tag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Classification_Type_Reference_Classification_Type_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Packaging String for the Purchase Item.",
+      "field": "Packaging_String",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency field for Item Unit Price",
+      "field": "Item_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_Accounting_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Create as a Service Request Line on the Requisition if adding the Purchase Item via Search Catalog or Add to Cart button.  If the flag is false, it will create as a Goods Request Line.",
+      "field": "Default_as_Service_Request",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.",
+      "field": "Purchase_Item_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether the purchase item is preferred in requisition search.",
+      "field": "Preferred_Item",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Set_Reference_Unit_of_Measure_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Base_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if a Purchase Item is Lot Control.",
+      "field": "Lot_Control",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Serial_Control_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Serial_Control_Method_Reference_Serial_Control_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if Manufacturer is required on the Lot for the Purchase Item",
+      "field": "Is_Manufacturer_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the Item Lot can have only Item Manufacturers.",
+      "field": "Use_Item_Manufacturers_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if Expiration Date is required for an item lot.",
+      "field": "Is_Expiration_Date_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric Field to define Tolerance Periods for Purchase Items on Inbound tasks.",
+      "field": "Inbound_Alert_Period_in_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric field to define alert period in days for purchase items on outbound tasks.",
+      "field": "Outbound_Alert_Period_in_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Fulfillment_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Fulfillment_Source_Reference_Requisition_Fulfillment_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item Alternate Item Identifiers Data",
+      "field": "Alternate_Item_Identifiers_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item Stocking Unit of Measures",
+      "field": "Purchase_Item_Unit_of_Measure_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Item Data",
+      "field": "Supplier_Item_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Added Patient Chargeable flag to Inventory Site Options",
+      "field": "Item_Inventory_Attributes_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date of Item Substitution for Ordering.",
+      "field": "Ordering_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date of Item Substitution for Ordering.",
+      "field": "Ordering_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Substitute details for the purchase item.",
+      "field": "Item_Substitute_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Image_Reference_Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of Image",
+      "field": "Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filename of Image",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File associated with Image",
+      "field": "File",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+      "field": "Alternative_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Additional Image for Item",
+      "field": "Additional_Image_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_To_Sales_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maps_To_Sales_Item_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Status_Reference_Spend_Item_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Active requesting entities for purchase item. Inactive requesting entities are allowed if requesting entities were inactivated after assigned to a purchase item.",
+      "field": "Requesting_Entity_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Active purchase item lists for purchase item. Inactive purchase item lists are allowed if purchase item lists were inactivated after assigned to a purchase item.",
+      "field": "Purchase_Item_List_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Comments for purchase item",
+      "field": "Item_Comments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Patient Charge Information Data",
+      "field": "Patient_Charge_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_Purchase_Item_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_Item_Tag_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+      "field": "Return_All_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+      "field": "Return_Active_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+      "field": "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited after this time.",
+      "field": "Item_Updated_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited before this time.",
+      "field": "Item_Updated_To_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_Spend_Item_Status_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Treatment_Reference_Accounting_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Additional_Image_Data": {
+        "description": "Additional Image for Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Item_Identifiers_Data": {
+        "description": "Purchase Item Alternate Item Identifiers Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternative_Text": {
+        "description": "Specify an image description in the Alternative Text field for workers that use assistive technology. Character limit: 60.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Base_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_Classification_Type_Name_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classification_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Reference": {
+        "description": "Commodity Code Instances associated with the Purchase or Catalog Item. Commodity code is a standard code that identifies the type of goods or service. Example of standard commodity code types are UNSPSC, NIGP etc.  The commodity code needs to be active and not a parent code to associate to the item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_as_Service_Request": {
+        "description": "Create as a Service Request Line on the Requisition if adding the Purchase Item via Search Catalog or Add to Cart button.  If the flag is false, it will create as a Goods Request Line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt": {
+        "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "File associated with Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Filename of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_ID": {
+        "description": "Reference ID of Image",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_Image_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inbound_Alert_Period_in_Days": {
+        "description": "Numeric Field to define Tolerance Periods for Purchase Items on Inbound tasks.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Is_Expiration_Date_Required": {
+        "description": "Boolean to indicate if Expiration Date is required for an item lot.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Is_Manufacturer_Required": {
+        "description": "Boolean to indicate if Manufacturer is required on the Lot for the Purchase Item",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Comments": {
+        "description": "Item Comments for purchase item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "Free form text for Purchase Item Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_Purchase_Item_Group_ID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier": {
+        "description": "Free form test for Item Identifier. This is not the Item Reference ID, but a non-unique field for providing addition Item identification data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Inventory_Attributes_Data": {
+        "description": "Added Patient Chargeable flag to Inventory Site Options",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Name": {
+        "description": "Free form text field for meaningful Purchase Item Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_Spend_Item_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_Spend_Item_Status_ID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_WID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Substitute_Data": {
+        "description": "Item Substitute details for the purchase item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference": {
+        "description": "Item tags for the Purchase Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_Item_Tag_ID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_WID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_URL": {
+        "description": "Purchase Item URL",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Unit_Price": {
+        "description": "Currency field for Item Unit Price",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Item_Updated_From_Prompt": {
+        "description": "Select a date to return purchase items edited after this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Updated_To_Prompt": {
+        "description": "Select a date to return purchase items edited before this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated": {
+        "description": "The exact moment in time this purchase item was last functionally updated - Cannot be updated",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lot_Control": {
+        "description": "Boolean to indicate if a Purchase Item is Lot Control.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maps_To_Sales_Item_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maps_To_Sales_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ordering_End_Date": {
+        "description": "End Date of Item Substitution for Ordering.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ordering_Start_Date": {
+        "description": "Start Date of Item Substitution for Ordering.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outbound_Alert_Period_in_Days": {
+        "description": "Numeric field to define alert period in days for purchase items on outbound tasks.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Packaging_String": {
+        "description": "Packaging String for the Purchase Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_Charge_Information_Data": {
+        "description": "Patient Charge Information Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Item": {
+        "description": "Controls whether the purchase item is preferred in requisition search.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Purchase_Item_Group_Reference": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_ID": {
+        "description": "Purchase Item ID.  This is the Purchase Item unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_List_Reference": {
+        "description": "Active purchase item lists for purchase item. Inactive purchase item lists are allowed if purchase item lists were inactivated after assigned to a purchase item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Purchase_Item_Unit_of_Measure_Data": {
+        "description": "Purchase Item Stocking Unit of Measures",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requesting_Entity_Reference": {
+        "description": "Active requesting entities for purchase item. Inactive requesting entities are allowed if requesting entities were inactivated after assigned to a purchase item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Fulfillment_Source_Reference_Requisition_Fulfillment_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Fulfillment_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Active_Advanced_Pricing_Prompt": {
+        "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_All_Advanced_Pricing_Prompt": {
+        "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Serial_Control_Method_Reference_Serial_Control_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Serial_Control_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Item_Data": {
+        "description": "Supplier Item Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Set_Reference_Unit_of_Measure_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Item_Manufacturers_Only": {
+        "description": "Boolean to indicate if the Item Lot can have only Item Manufacturers.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

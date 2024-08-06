@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MappedTaxDeclarationsEFilingResult_EFiling_Tax_Declaration_Lines",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result Line E-Filing Reference ID",
+      "field": "Efiling_Template_Details_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Tax Declaration Result Line Amount",
+      "field": "Tax_Declaration_Result_Line_Amount",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Efiling_Template_Details_Reference_ID": {
+        "description": "Tax Declaration Result Line E-Filing Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Declaration_Result_Line_Amount": {
+        "description": "Tax Declaration Result Line Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

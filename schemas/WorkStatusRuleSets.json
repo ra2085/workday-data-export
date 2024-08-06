@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkStatusRuleSets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Work Status Rule Set",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Work Status Rule Set",
+      "field": "Work_Status_Rule_Set_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Academic Unit that the Work Status Rule Set is restricted to",
+      "field": "Restricted_to_Academic_Unit_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether the Work Status Rule Set is defaulted to be used in other reports",
+      "field": "Default_Work_Status_Rule_Set",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This flag will inactivate the Work Status Rule Set.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Leave Types that are used in the Evaluation of certain Work Status Rules",
+      "field": "Applies_to_Leave_Types_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Active Periods Required for Eligibility of Leave",
+      "field": "Active_Periods_Required_for_Eligibility",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum Years Since Last Applicable Leave",
+      "field": "Minimum_Years_Since_Last_Applicable_Leave",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for all the Attributes and Relationships for each Work Status Rule Row",
+      "field": "Work_Status_Rule_Row_Subdata",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Periods_Required_for_Eligibility": {
+        "description": "Number of Active Periods Required for Eligibility of Leave",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Applies_to_Leave_Types_Reference": {
+        "description": "Leave Types that are used in the Evaluation of certain Work Status Rules",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Work_Status_Rule_Set": {
+        "description": "Determines whether the Work Status Rule Set is defaulted to be used in other reports",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Work Status Rule Set",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "This flag will inactivate the Work Status Rule Set.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Minimum_Years_Since_Last_Applicable_Leave": {
+        "description": "Minimum Years Since Last Applicable Leave",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Restricted_to_Academic_Unit_Reference": {
+        "description": "The Academic Unit that the Work Status Rule Set is restricted to",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Status_Rule_Row_Subdata": {
+        "description": "Element Container for all the Attributes and Relationships for each Work Status Rule Row",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Status_Rule_Set_Name": {
+        "description": "Name of Work Status Rule Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

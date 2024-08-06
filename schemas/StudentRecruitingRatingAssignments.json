@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentRecruitingRatingAssignments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Student Recruiting Rating Assignment",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruitment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruitment_Reference_Student_Prospect_Recruitment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Rating_Scale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Rating_Scale_Reference_Student_Recruiting_Rating_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Rating_Reference_Student_Recruiting_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Score from Rating for this assignment",
+      "field": "Assignment_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date this assignment was last updated.",
+      "field": "Last_Updated_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "User who last updated this rating assignment",
+      "field": "Last_Updated_By",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains references that identify the institution as a request criteria.",
+      "field": "Institution_Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains references that identify the institution as a request criteria.",
+      "field": "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assignment_Score": {
+        "description": "Score from Rating for this assignment",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The reference ID for the Student Recruiting Rating Assignment",
+        "type": [
+          "string"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Contains references that identify the institution as a request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_WID_Prompt": {
+        "description": "Contains references that identify the institution as a request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated_By": {
+        "description": "User who last updated this rating assignment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated_Date": {
+        "description": "Date this assignment was last updated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Reference_Student_Recruiting_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Scale_Reference_Student_Recruiting_Rating_Scale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Rating_Scale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruitment_Reference_Student_Prospect_Recruitment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruitment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankAccounts_Check_Sorting_Setup_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account ID. This is the bank account unique identifier.",
+      "field": "BankAccount_Bank_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Check Sorting Setup Line instance for updating.",
+      "field": "Check_Sorting_Setup_Line_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Order priority for sorting: specials \u003e numbers \u003e letters.",
+      "field": "Check_Sorting_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Check_Sorting_Value_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Check_Sorting_Value_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Flag for line to split batch on. At most 1 line may be set to y.",
+      "field": "Split_Batch",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "BankAccount_Bank_Account_ID": {
+        "description": "Bank Account ID. This is the bank account unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Check_Sorting_Order": {
+        "description": "Order priority for sorting: specials \u003e numbers \u003e letters.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Check_Sorting_Setup_Line_Reference": {
+        "description": "Reference to Check Sorting Setup Line instance for updating.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Check_Sorting_Value_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Check_Sorting_Value_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Split_Batch": {
+        "description": "Flag for line to split batch on. At most 1 line may be set to y.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

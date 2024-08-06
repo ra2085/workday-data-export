@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HeadcountPlansDoNotUse_Headcount_Plan_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "HeadcountPlanVersion_Headcount_Plan_Version_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for each of the Organizations in the Headcount Plan.",
+      "field": "Headcount_Plan_Organization_Get_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Filters Headcount Plans by Active Plan Versions.",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Prompt": {
+        "description": "Filters Headcount Plans by Active Plan Versions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "HeadcountPlanVersion_Headcount_Plan_Version_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Organization_Get_Data": {
+        "description": "Contains data for each of the Organizations in the Headcount Plan.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_WID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

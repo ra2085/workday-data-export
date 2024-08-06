@@ -1,0 +1,757 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadaIncomeWithholdingOrders",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Order_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Order_Type_Reference_Withholding_Order_Type_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Order_Case_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Order_Case_Reference_Withholding_Order_Case_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique Case Number listed on the withholding order issued by the government.",
+      "field": "Case_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An additional withholding order number.",
+      "field": "Withholding_Order_Additional_Order_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the withholding order was issued.",
+      "field": "Order_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Date the withholding order was received.",
+      "field": "Received_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the withholding order should begin.",
+      "field": "Begin_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the withholding order should end.",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the withholding order is terminated.",
+      "field": "Termination_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that the withholding order is inactive.",
+      "field": "Inactive_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Period_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Period_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total debt amount on the order.",
+      "field": "Total_Debt_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_Federal_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_Local_City_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_Local_County_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_Local_Other_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_Local_School_District_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Issued_In_Reference_Payroll_State_Authority_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deduction_Recipient_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deduction_Recipient_Reference_Deduction_Recipient_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The agency or court that issued the withholding order.",
+      "field": "Originating_Entity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of dependants to be used in the exemption calculation.",
+      "field": "Number_of_Dependents",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of child dependents for use when calculating exemptions.",
+      "field": "Number_of_Child_Dependents",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the employee supports a family for the purpose of determining the exemption amount.",
+      "field": "Supports_Family",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If set to True, Workday doesn't calculate exemptions for the withholding order and the full disposable earnings amount will be eligible for withholding.",
+      "field": "No_Exemption",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "When specified, the exemption amount to be used in the calculation of disposable earnings.",
+      "field": "Exemption_Amount_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Exemption_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Exemption_Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "When the exemption calculation includes a percentage, the percentage to be used in the calculation of disposable earnings.",
+      "field": "Exempt_Percent_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Override rate used in the maximum amount to withhold calculation for Quebec garnishment orders, Quebec federal tax levy, and Quebec province tax levy.",
+      "field": "Override_Subject_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Additional details.",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Non-family withholding order details.",
+      "field": "Non-Family_Withholding_Order_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Details for family maintenance orders.",
+      "field": "Family_Maintenance_Order_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Details of the withholding order fee.",
+      "field": "Withholding_Order_Fee_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The withholding order ID you defined.",
+      "field": "Withholding_Order_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_Withholding_Order_Type_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response includes any order with the exact withholding order case number.",
+      "field": "Case_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Begin_Date": {
+        "description": "Date the withholding order should begin.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Number": {
+        "description": "The unique Case Number listed on the withholding order issued by the government.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Number_Prompt": {
+        "description": "When specified, the response includes any order with the exact withholding order case number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deduction_Recipient_Reference_Deduction_Recipient_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deduction_Recipient_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "End_Date": {
+        "description": "Date the withholding order should end.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exempt_Percent_Override": {
+        "description": "When the exemption calculation includes a percentage, the percentage to be used in the calculation of disposable earnings.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Exemption_Amount_Override": {
+        "description": "When specified, the exemption amount to be used in the calculation of disposable earnings.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Exemption_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exemption_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Family_Maintenance_Order_Data": {
+        "description": "Details for family maintenance orders.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive_Order": {
+        "description": "Indicates that the withholding order is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_Federal_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_Local_City_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_Local_County_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_Local_Other_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_Local_School_District_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_Payroll_State_Authority_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_In_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "Additional details.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "No_Exemption": {
+        "description": "If set to True, Workday doesn't calculate exemptions for the withholding order and the full disposable earnings amount will be eligible for withholding.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Non-Family_Withholding_Order_Data": {
+        "description": "Non-family withholding order details.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Child_Dependents": {
+        "description": "The number of child dependents for use when calculating exemptions.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Number_of_Dependents": {
+        "description": "Number of dependants to be used in the exemption calculation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Order_Date": {
+        "description": "Date the withholding order was issued.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Originating_Entity": {
+        "description": "The agency or court that issued the withholding order.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Subject_Rate": {
+        "description": "Override rate used in the maximum amount to withhold calculation for Quebec garnishment orders, Quebec federal tax levy, and Quebec province tax levy.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_Period_Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Received_Date": {
+        "description": "Date the withholding order was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supports_Family": {
+        "description": "Indicates whether the employee supports a family for the purpose of determining the exemption amount.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Termination_Date": {
+        "description": "The date the withholding order is terminated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Debt_Amount": {
+        "description": "The total debt amount on the order.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Type_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference_Withholding_Order_Type_Code_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Additional_Order_Number": {
+        "description": "An additional withholding order number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Case_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Case_Reference_Withholding_Order_Case_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Fee_Data": {
+        "description": "Details of the withholding order fee.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_ID": {
+        "description": "The withholding order ID you defined.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_Type_Reference_Withholding_Order_Type_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

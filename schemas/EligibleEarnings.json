@@ -1,0 +1,393 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EligibleEarnings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligible_Earnings_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligible_Earnings_Reference_Eligible_Earnings_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The integration ID used to reference the Eligible Earnings Override.  If the ID for the Eligible Earnings Override is found, the web service will update the existing data.  Otherwise, a new Eligible Earnings Override will be created.",
+      "field": "Eligible_Earnings_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Employee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Reference_Eligible_Earnings_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Eligible Earnings Override applies to all Bonus Plans.",
+      "field": "Apply_to_All_Bonus_Plans",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Eligible Earnings Override is restricted to the specified Bonus Plans.",
+      "field": "Bonus_Plans_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Eligible Earnings Override applies to all Stock Plans.",
+      "field": "Apply_to_All_Stock_Plans",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Eligible Earnings Override is restricted to the specified Stock Plans.",
+      "field": "Stock_Plans_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount for the Eligible Earnings Override.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the worker.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the worker.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the worker.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee's current position.  Used in multiple-job scenarios.",
+      "field": "Position_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Employee's current position.  Used in multiple-job scenarios.",
+      "field": "Position_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Eligible Earnings Override Period.",
+      "field": "Eligible_Earnings_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Eligible Earnings Override Period.",
+      "field": "Eligible_Earnings_Period_Reference_Eligible_Earnings_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique bonus plan identifiers. Supports multiple values.",
+      "field": "Bonus_Plans_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique bonus plan identifiers. Supports multiple values.",
+      "field": "Bonus_Plans_Reference_Compensation_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique stock plan identifiers. Supports multiple values.",
+      "field": "Stock_Plans_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique stock plan identifiers. Supports multiple values.",
+      "field": "Stock_Plans_Reference_Compensation_Plan_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "Amount for the Eligible Earnings Override.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Apply_to_All_Bonus_Plans": {
+        "description": "Eligible Earnings Override applies to all Bonus Plans.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Apply_to_All_Stock_Plans": {
+        "description": "Eligible Earnings Override applies to all Stock Plans.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Bonus_Plans_Reference": {
+        "description": "Eligible Earnings Override is restricted to the specified Bonus Plans.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bonus_Plans_Reference_Compensation_Plan_ID_Prompt": {
+        "description": "Unique bonus plan identifiers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bonus_Plans_Reference_WID_Prompt": {
+        "description": "Unique bonus plan identifiers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_Earnings_ID": {
+        "description": "The integration ID used to reference the Eligible Earnings Override.  If the ID for the Eligible Earnings Override is found, the web service will update the existing data.  Otherwise, a new Eligible Earnings Override will be created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_Earnings_Period_Reference_Eligible_Earnings_Period_ID_Prompt": {
+        "description": "A unique identifier for the Eligible Earnings Override Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_Earnings_Period_Reference_WID_Prompt": {
+        "description": "A unique identifier for the Eligible Earnings Override Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_Earnings_Reference_Eligible_Earnings_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligible_Earnings_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Employee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Employee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Eligible_Earnings_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID_Prompt": {
+        "description": "Employee's current position.  Used in multiple-job scenarios.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID_Prompt": {
+        "description": "Employee's current position.  Used in multiple-job scenarios.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plans_Reference": {
+        "description": "Eligible Earnings Override is restricted to the specified Stock Plans.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plans_Reference_Compensation_Plan_ID_Prompt": {
+        "description": "Unique stock plan identifiers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Plans_Reference_WID_Prompt": {
+        "description": "Unique stock plan identifiers. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "A unique identifier for the worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "A unique identifier for the worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "A unique identifier for the worker.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

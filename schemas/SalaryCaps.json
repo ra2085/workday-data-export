@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SalaryCaps",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Cap_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Cap_Reference_Salary_Cap_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Salary Cap Reference ID",
+      "field": "Salary_Cap_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Limit Name",
+      "field": "Salary_Cap_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Limit Description",
+      "field": "Salary_Cap_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Over_The_Cap_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Over_The_Cap_Type_Reference_Salary_Over_The_Cap_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Component_Group_for_Salary_Cap_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Component_Group_for_Salary_Cap_Reference_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Component_Group_for_Salary_Cap_Reference_Workday_Pay_Component_Group_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Limit Snapshot Data",
+      "field": "Salary_Cap_Interval_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Pay_Component_Group_for_Salary_Cap_Reference_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Group_for_Salary_Cap_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Component_Group_for_Salary_Cap_Reference_Workday_Pay_Component_Group_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Description": {
+        "description": "Award Limit Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_ID": {
+        "description": "Award Salary Cap Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Interval_Data": {
+        "description": "Award Limit Snapshot Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Name": {
+        "description": "Award Limit Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Reference_Salary_Cap_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_Reference_Salary_Over_The_Cap_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

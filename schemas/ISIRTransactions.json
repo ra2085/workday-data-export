@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ISIRTransactions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ISIR_Transaction_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ISIR_Transaction_Reference_ISIR_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the ISIR Transaction Number, ISIR Transaction Financial Aid Award Year, ISIR Transaction Data Data element, and the ISIR Student Data element",
+      "field": "ISIR_Transaction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ISIR CAA Transaction Data",
+      "field": "ISIR_CAA_Transaction_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Financial Aid Award Year Reference for ISIR Transaction Request Criteria",
+      "field": "Financial_Aid_Award_Year_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Financial Aid Award Year Reference for ISIR Transaction Request Criteria",
+      "field": "Financial_Aid_Award_Year_Reference_Financial_Aid_Award_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Transaction Status Reference for ISIR Transaction Request Criteria",
+      "field": "Transaction_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Transaction Status Reference for ISIR Transaction Request Criteria",
+      "field": "Transaction_Status_Reference_ISIR_Transaction_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Federal School Code Rule Set",
+      "field": "Federal_School_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Federal School Code Rule Set",
+      "field": "Federal_School_Code_Reference_Federal_School_Code_Rule_Set_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search for an ISIR Transaction using a reference to an ISIR File.",
+      "field": "ISIR_File_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search for an ISIR Transaction using a reference to an ISIR File.",
+      "field": "ISIR_File_Reference_ISIR_File_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Federal_School_Code_Reference_Federal_School_Code_Rule_Set_ID_Prompt": {
+        "description": "Federal School Code Rule Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_School_Code_Reference_WID_Prompt": {
+        "description": "Federal School Code Rule Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Aid_Award_Year_Reference_Financial_Aid_Award_Year_ID_Prompt": {
+        "description": "Financial Aid Award Year Reference for ISIR Transaction Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Aid_Award_Year_Reference_WID_Prompt": {
+        "description": "Financial Aid Award Year Reference for ISIR Transaction Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_CAA_Transaction_Data": {
+        "description": "ISIR CAA Transaction Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_File_Reference_ISIR_File_ID_Prompt": {
+        "description": "Search for an ISIR Transaction using a reference to an ISIR File.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_File_Reference_WID_Prompt": {
+        "description": "Search for an ISIR Transaction using a reference to an ISIR File.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_Transaction_Data": {
+        "description": "Contains the ISIR Transaction Number, ISIR Transaction Financial Aid Award Year, ISIR Transaction Data Data element, and the ISIR Student Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_Transaction_Reference_ISIR_Transaction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ISIR_Transaction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Transaction_Status_Reference_ISIR_Transaction_Status_ID_Prompt": {
+        "description": "Transaction Status Reference for ISIR Transaction Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Status_Reference_WID_Prompt": {
+        "description": "Transaction Status Reference for ISIR Transaction Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

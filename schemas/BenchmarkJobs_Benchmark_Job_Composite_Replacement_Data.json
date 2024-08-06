@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BenchmarkJobs_Benchmark_Job_Composite_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benchmark Job ID",
+      "field": "BenchmarkJob_Benchmark_Job_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benchmark_Composite_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Benchmark_Composite_Category_Reference_Benchmark_Composite_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Competitive_Market_Target_Percentile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Competitive_Market_Target_Percentile_Reference_Benchmark_Percentile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": " \n\nFor example, the Competitive Market Target is defined as the 50th percentile and the base salary for the 50th is defined as 45,000. If the Target Spread is 10%, any employee whose base salary is between 42,750 - 47,250 will be considered At Market for this Benchmark Job.",
+      "field": "Target_Spread__",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Benchmark Amount Data",
+      "field": "Benchmark_Amount_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Benchmark Jobs.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "BenchmarkJob_Benchmark_Job_ID": {
+        "description": "Benchmark Job ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benchmark_Amount_Replacement_Data": {
+        "description": "Benchmark Amount Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benchmark_Composite_Category_Reference_Benchmark_Composite_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Benchmark_Composite_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competitive_Market_Target_Percentile_Reference_Benchmark_Percentile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competitive_Market_Target_Percentile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Benchmark Jobs.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Target_Spread__": {
+        "description": " \n\nFor example, the Competitive Market Target is defined as the 50th percentile and the base salary for the 50th is defined as 45,000. If the Target Spread is 10%, any employee whose base salary is between 42,750 - 47,250 will be considered At Market for this Benchmark Job.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

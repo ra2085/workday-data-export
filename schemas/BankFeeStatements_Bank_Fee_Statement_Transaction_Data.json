@@ -1,0 +1,342 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankFeeStatements_Bank_Fee_Statement_Transaction_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Bank Fee Statement unique identifier.",
+      "field": "BankFeeStatement_Bank_Fee_Statement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The standardized AFP code",
+      "field": "AFP_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description for the standardized AFP code",
+      "field": "AFP_Code_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Service_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Service_Code_Reference_Bank_Fee_Service_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Pricing_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Pricing_Type_Reference_Bank_Fee_Pricing_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Tier_Pricing_If_Tier_Selected_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bank_Fee_Tier_Pricing_If_Tier_Selected_Reference_TIER_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount charged for one transaction of the service",
+      "field": "Service_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of transactions of the service",
+      "field": "Service_Volume",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total service charge",
+      "field": "Service_Charge",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The taxed amount for one transaction",
+      "field": "Taxes_Per_Service",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total amount charged for the service",
+      "field": "Total_Charges",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Company_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+      "field": "Financial_Account_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The beginning date range to filter the Statement date.",
+      "field": "Statement_Date_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The ending date range to filter the Statement date.",
+      "field": "Statement_Date_To_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AFP_Code": {
+        "description": "The standardized AFP code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "AFP_Code_Description": {
+        "description": "The description for the standardized AFP code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "BankFeeStatement_Bank_Fee_Statement_ID": {
+        "description": "This is the Bank Fee Statement unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Pricing_Type_Reference_Bank_Fee_Pricing_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Pricing_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Service_Code_Reference_Bank_Fee_Service_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Service_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Tier_Pricing_If_Tier_Selected_Reference_TIER_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Tier_Pricing_If_Tier_Selected_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Region_Reference_ID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "The Company that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_Bank_Account_ID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Account_Reference_WID_Prompt": {
+        "description": "The Bank Account that the Bank Fee Statement is recorded for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Service_Charge": {
+        "description": "The total service charge",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Service_Unit_Price": {
+        "description": "The amount charged for one transaction of the service",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Service_Volume": {
+        "description": "The number of transactions of the service",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Statement_Date_From_Prompt": {
+        "description": "The beginning date range to filter the Statement date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date_To_Prompt": {
+        "description": "The ending date range to filter the Statement date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Taxes_Per_Service": {
+        "description": "The taxed amount for one transaction",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Charges": {
+        "description": "The total amount charged for the service",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

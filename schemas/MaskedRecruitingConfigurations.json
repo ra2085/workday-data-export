@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MaskedRecruitingConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of Masked Configuration",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Masked Configuration",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to Exclude Internal Candidates",
+      "field": "Exclude_Internal_Candidates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to Exclude Internal Candidates",
+      "field": "Exclude_Referral_Candidates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Masked Configuration Item Data",
+      "field": "Masked_Recruiting_Configuration_Item_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Exclude_Internal_Candidates": {
+        "description": "Boolean to Exclude Internal Candidates",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Referral_Candidates": {
+        "description": "Boolean to Exclude Internal Candidates",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "ID of Masked Configuration",
+        "type": [
+          "string"
+        ]
+      },
+      "Masked_Recruiting_Configuration_Item_Data": {
+        "description": "Masked Configuration Item Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of Masked Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

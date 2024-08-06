@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "NSLDSOverrideforFinancialAidPeriodRecords",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "NSLDS_Override_for_Financial_Aid_Period_Record_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "NSLDS_Override_for_Financial_Aid_Period_Record_Reference_Student_Period_Record_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean for whether has Overridden Aggregate Subsidized Balance",
+      "field": "Override_Aggregate_Subsidized_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Value of Overridden Aggregate Subsidized Balance",
+      "field": "Overridden_Aggregate_Subsidized_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean for whether has Overridden Aggregate Combined Balance",
+      "field": "Override_Aggregate_Combined_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Value of Overridden Aggregate Combined Balance",
+      "field": "Overridden_Aggregate_Combined_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean for whether has Overridden Pell LEU",
+      "field": "Override_Pell_LEU",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Value of Overridden Pell LEU",
+      "field": "Overridden_Pell_LEU",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Student_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Student_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Student_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Student_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "NSLDS_Override_for_Financial_Aid_Period_Record_Reference_Student_Period_Record_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "NSLDS_Override_for_Financial_Aid_Period_Record_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Overridden_Aggregate_Combined_Balance": {
+        "description": "Value of Overridden Aggregate Combined Balance",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Overridden_Aggregate_Subsidized_Balance": {
+        "description": "Value of Overridden Aggregate Subsidized Balance",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Overridden_Pell_LEU": {
+        "description": "Value of Overridden Pell LEU",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Override_Aggregate_Combined_Balance": {
+        "description": "Boolean for whether has Overridden Aggregate Combined Balance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Override_Aggregate_Subsidized_Balance": {
+        "description": "Boolean for whether has Overridden Aggregate Subsidized Balance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Override_Pell_LEU": {
+        "description": "Boolean for whether has Overridden Pell LEU",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

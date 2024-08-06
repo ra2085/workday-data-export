@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SchedulingSettings_Solver_Penalty_Weight_Setting",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Solver_Penalty_Weight_Setting_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Solver_Penalty_Weight_Setting_Type_Reference_Solver_Penalty_Weight_Setting_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numerical value between 0-100. Determines the default slider positions on the schedule.",
+      "field": "Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True when slider settings are locked so that schedulers can’t adjust them.",
+      "field": "Locked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Exclude_From_Score_Usage_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Exclude_From_Score_Usage_Reference_Scheduling_Score_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date that will be used to retrieve the settings.",
+      "field": "Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date_Prompt": {
+        "description": "The effective date that will be used to retrieve the settings.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_From_Score_Usage_Reference_Scheduling_Score_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_From_Score_Usage_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked": {
+        "description": "True when slider settings are locked so that schedulers can’t adjust them.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Percentage": {
+        "description": "Numerical value between 0-100. Determines the default slider positions on the schedule.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Solver_Penalty_Weight_Setting_Type_Reference_Solver_Penalty_Weight_Setting_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Solver_Penalty_Weight_Setting_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

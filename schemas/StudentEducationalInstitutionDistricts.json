@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentEducationalInstitutionDistricts",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution District Reference ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution District Name",
+      "field": "Educational_Institution_District_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution District NCES ID",
+      "field": "Educational_Institution_District_NCES_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Educational Institution District State ID",
+      "field": "Educational_Institution_District_State_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search for an Educational Institution District using the Name.",
+      "field": "Educational_Institution_District_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Educational_Institution_District_NCES_ID": {
+        "description": "Educational Institution District NCES ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Educational_Institution_District_Name": {
+        "description": "Educational Institution District Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Educational_Institution_District_Name_Prompt": {
+        "description": "Search for an Educational Institution District using the Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Educational_Institution_District_State_ID": {
+        "description": "Educational Institution District State ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Educational Institution District Reference ID",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

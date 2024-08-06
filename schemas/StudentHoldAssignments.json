@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentHoldAssignments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Hold_Assignment_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Hold_Assignment_Reference_Student_Hold_Assignment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all the data to describe a Student Hold Assignment",
+      "field": "Student_Hold_Assignment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for Hold Override Data",
+      "field": "Student_Hold_Assignment_Override_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+      "field": "Student_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+      "field": "Student_Hold_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+      "field": "Student_Hold_Reference_Student_Hold_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_Student_Hold_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+      "field": "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Student_Hold_Assignment_Data": {
+        "description": "Element containing all the data to describe a Student Hold Assignment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Assignment_Override_Data": {
+        "description": "Wrapper element for Hold Override Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Assignment_Reference_Student_Hold_Assignment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Assignment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Student_Hold_Reason_ID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_Tenanted_Student_Hold_Reason_ID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reason_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student Hold Reason, for which Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reference_Student_Hold_ID_Prompt": {
+        "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Hold_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student Hold, for which Student Hold Assignments to return. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Academic_Person_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Student_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Reference_WID_Prompt": {
+        "description": "Specific reference to the Student, for whose Student Hold Assignments to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

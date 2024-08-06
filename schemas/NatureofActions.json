@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "NatureofActions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_Action_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_Action_Reference_Nature_of_Action_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_ActionType_Nature_of_Action_Series_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_ActionType_Nature_of_Action_Series_Reference_Nature_of_Action_Series_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The user specified ID of the Nature of Action reference. If this field left blank, the system will generate a Nature of Action ID for a newly created Nature of Action. This field can be used in lieu of the Nature of Action reference to determine which Nature of Action to update.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_Action_Nature_of_Action_Series_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Nature_of_Action_Nature_of_Action_Series_Reference_Nature_of_Action_Series_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Code for the Nature of Action reference. This field is required when adding a new Nature of Action. When updating, the code must be compatible with the existing or passed in NOA Series reference.",
+      "field": "Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Explanation for the Nature of Action reference. This field is required when adding a new Nature of Action. When updating, the Explanation must be compatible with the Parameters' names and types.",
+      "field": "Explanation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "PAR Variable Data element",
+      "field": "Parameter_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Don't Require Legal Authority and Remark boolean for the Nature of Action reference",
+      "field": "Don_t_Require_Legal_Authority_and_Remark",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive boolean for the Nature of Action reference",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Code": {
+        "description": "Code for the Nature of Action reference. This field is required when adding a new Nature of Action. When updating, the code must be compatible with the existing or passed in NOA Series reference.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Don_t_Require_Legal_Authority_and_Remark": {
+        "description": "Don't Require Legal Authority and Remark boolean for the Nature of Action reference",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Explanation": {
+        "description": "Explanation for the Nature of Action reference. This field is required when adding a new Nature of Action. When updating, the Explanation must be compatible with the Parameters' names and types.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The user specified ID of the Nature of Action reference. If this field left blank, the system will generate a Nature of Action ID for a newly created Nature of Action. This field can be used in lieu of the Nature of Action reference to determine which Nature of Action to update.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive boolean for the Nature of Action reference",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Nature_of_ActionType_Nature_of_Action_Series_Reference_Nature_of_Action_Series_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Nature_of_ActionType_Nature_of_Action_Series_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Nature_of_Action_Nature_of_Action_Series_Reference_Nature_of_Action_Series_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Nature_of_Action_Nature_of_Action_Series_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Nature_of_Action_Reference_Nature_of_Action_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Nature_of_Action_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Parameter_Data": {
+        "description": "PAR Variable Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

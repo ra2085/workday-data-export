@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentTagCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student Tag Category ID can be used to uniquely identify a Student Tag Category.",
+      "field": "Student_Tag_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Tag Category Name.",
+      "field": "Student_Tag_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+      "field": "Academic_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Student Tag Category Active (true or false)",
+      "field": "Student_Tag_Category_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Tag Category instances for an institution or its subordinate academic units.",
+      "field": "Institution_Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Tag Category instances for an institution or its subordinate academic units.",
+      "field": "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Level_Reference": {
+        "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Tag Category instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Academic_Unit_Reference_WID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Tag Category instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Tag_Category_ID": {
+        "description": "The Student Tag Category ID can be used to uniquely identify a Student Tag Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Tag_Category_Inactive": {
+        "description": "Student Tag Category Active (true or false)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Tag_Category_Name": {
+        "description": "Student Tag Category Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

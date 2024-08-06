@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentRecruitingCycles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Cycle_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Recruiting_Cycle_Reference_Student_Recruiting_Cycle_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Student Recruiting Cycle Data",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Recruiting Cycle Name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for the Has Academic Unit Data which contains an Academic Unit and Academic Level",
+      "field": "Academic_Unit_Subedit_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Date_Range_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Date_Range_Reference_Academic_Date_Range_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Search for a Student Recruiting Cycle using the Name. The match could be an exact match or a partial match with a Student Recruiting Cycle Name that contains the Name specified.",
+      "field": "Student_Recruiting_Cycle_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter for student recruiting cycles by academic unit. Results include student recruiting cycles for subordinate academic units.",
+      "field": "Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filter for student recruiting cycles by academic unit. Results include student recruiting cycles for subordinate academic units.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Date_Range_Reference_Academic_Date_Range_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Date_Range_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Filter for student recruiting cycles by academic unit. Results include student recruiting cycles for subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID_Prompt": {
+        "description": "Filter for student recruiting cycles by academic unit. Results include student recruiting cycles for subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Subedit_Data": {
+        "description": "Wrapper element for the Has Academic Unit Data which contains an Academic Unit and Academic Level",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Student Recruiting Cycle Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Student Recruiting Cycle Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Cycle_Name_Prompt": {
+        "description": "Search for a Student Recruiting Cycle using the Name. The match could be an exact match or a partial match with a Student Recruiting Cycle Name that contains the Name specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Cycle_Reference_Student_Recruiting_Cycle_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Recruiting_Cycle_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

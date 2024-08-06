@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "IntegrationSystemUsers",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_UserType_Integration_System_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_UserType_Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_User_Integration_System_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_User_Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "User Name",
+      "field": "User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Password.",
+      "field": "Password",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The system should generate a random password for the user.",
+      "field": "Generate_Random_Password",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user will be required to change their password upon initial sign on.",
+      "field": "Require_New_Password_At_Next_Sign_In",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount of time after which an unused session will expire. Session Timeout Minutes defaults to the value configured in the Password Rules unless set to a non-zero value.",
+      "field": "Session_Timeout_Minutes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If the field is false, the integration system user will be able to sign in from both the UI and through web services.",
+      "field": "Do_Not_Allow_UI_Sessions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A valid instance of Web Service Security Configuration",
+      "field": "Web_Service_Security_Configuration_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Do_Not_Allow_UI_Sessions": {
+        "description": "If the field is false, the integration system user will be able to sign in from both the UI and through web services.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Generate_Random_Password": {
+        "description": "The system should generate a random password for the user.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_System_UserType_Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_UserType_Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Integration_System_User_Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_User_Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Password": {
+        "description": "Text attribute identifying Password.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Require_New_Password_At_Next_Sign_In": {
+        "description": "The user will be required to change their password upon initial sign on.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Session_Timeout_Minutes": {
+        "description": "The amount of time after which an unused session will expire. Session Timeout Minutes defaults to the value configured in the Password Rules unless set to a non-zero value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "User_Name": {
+        "description": "User Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Service_Security_Configuration_Data": {
+        "description": "A valid instance of Web Service Security Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

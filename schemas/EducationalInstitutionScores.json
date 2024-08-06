@@ -1,0 +1,42 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EducationalInstitutionScores",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Educational Institution",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Score for Educational Institution",
+      "field": "Educational_Institution_Score",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Educational_Institution_Score": {
+        "description": "Score for Educational Institution",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Educational Institution",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

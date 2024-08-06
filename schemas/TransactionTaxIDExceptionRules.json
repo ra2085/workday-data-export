@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TransactionTaxIDExceptionRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of an existing Transaction Tax ID Exception Rule. Specify either the WID or the reference ID of a Transaction Tax ID Exception Rule or Transaction Tax ID Exception Rule Line.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Rule_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Rule_Type_Reference_Tax_Item_Rule_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Transaction Tax ID Exception Rule Line data.",
+      "field": "Transaction_Tax_ID_Exception_Rule_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "ID of an existing Transaction Tax ID Exception Rule. Specify either the WID or the reference ID of a Transaction Tax ID Exception Rule or Transaction Tax ID Exception Rule Line.",
+        "type": [
+          "string"
+        ]
+      },
+      "Tax_Rule_Type_Reference_Tax_Item_Rule_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rule_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Tax_ID_Exception_Rule_Line_Data": {
+        "description": "Contains the Transaction Tax ID Exception Rule Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

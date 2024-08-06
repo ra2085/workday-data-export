@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProspectiveStudents_Student_Do_Not_Purge_Settings_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the student's data isn't eligible for purging.",
+      "field": "Do_Not_Purge",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reasons for not purging this student's data.",
+      "field": "Do_Not_Purge_Reason_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request criteria for Return Students with Recruitments",
+      "field": "Return_Students_with_Recruitments_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Applications",
+      "field": "Return_Students_with_Applications_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Education Tests",
+      "field": "Return_Students_with_Education_Tests_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Transcripts",
+      "field": "Return_Students_with_Transcripts_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_Student_Application_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+      "field": "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Units_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_WID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Do_Not_Purge": {
+        "description": "True if the student's data isn't eligible for purging.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Do_Not_Purge_Reason_Reference": {
+        "description": "The reasons for not purging this student's data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt": {
+        "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Students_with_Applications_Prompt": {
+        "description": "Request Criteria for Return Students with Applications",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Education_Tests_Prompt": {
+        "description": "Request Criteria for Return Students with Education Tests",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Recruitments_Prompt": {
+        "description": "Request criteria for Return Students with Recruitments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Transcripts_Prompt": {
+        "description": "Request Criteria for Return Students with Transcripts",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_Student_Application_ID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_WID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProposalGrants",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID. This is the Proposal Grant unique identifier",
+      "field": "Proposal_Grant_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique name of a Proposal Grant",
+      "field": "Proposal_Grant_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Proposal_Grant_Name": {
+        "description": "Unique name of a Proposal Grant",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proposal_Grant_Reference_ID": {
+        "description": "ID. This is the Proposal Grant unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

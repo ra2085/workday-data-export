@@ -1,0 +1,459 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BillingTemplates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of a Billing Template..",
+      "field": "Billing_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Billing Template.",
+      "field": "Billing_Template_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Type_Reference_Schedule_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of Billing Template.",
+      "field": "Schedule_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Type_Reference_Customer_Invoice_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The memo for the billing invoice.",
+      "field": "Billing_Invoice_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The day in the recurring invoice date.",
+      "field": "Recurring_Invoice_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Invoice automatically submits for approval.",
+      "field": "Auto-Submit_Invoices_for_Approval",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If  true, the schedule automatically submits for approval.",
+      "field": "Automatically_Submit_Schedule_for_Approval",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Method_Reference_Schedule_Distribution_Method_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Frequency_Reference_Frequency_Behavior_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The recurrence that determines the installment dates based on the billing frequency.",
+      "field": "Recurrence",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Billing_Period_Reference_Billing_Period_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The day of the month that’s used for the installment dates if Billing Frequency is Monthly.",
+      "field": "Day_of_the_Month",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_of_the_Week_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_of_the_Week_Reference_Day_of_the_Week_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the last installment date uses the To Date.",
+      "field": "Generate_Installment_with_To_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of installments.",
+      "field": "Number_of_Installments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Billing Schedule automatically generates the installments.",
+      "field": "Automatically_Generate_Installments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the first and last installments are prorated.",
+      "field": "Prorate_First_and_Last_Installment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Billing Schedule automatically regenerates installments.",
+      "field": "Automatically_Regenerate_Installments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Billing Schedule automatically submits.",
+      "field": "Automatically_Submit_Schedules",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Invoice_Summary_Definition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Invoice_Summary_Definition_Reference_PROJECT_INVOICE_SUMMARY_DEFINITION_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Billing Schedule transactions are automatically billable. Review is not required for billing.",
+      "field": "Review_Not_Required_to_Bill",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The types of attachments for expense report and supplier invoice on the billing template.",
+      "field": "Include_Attachments_on_Invoice_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Billing Template to be used as search criteria.",
+      "field": "Billing_Template_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The schedule type for the Billing Template.",
+      "field": "Schedule_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The schedule type for the Billing Template.",
+      "field": "Schedule_Type_Reference_Schedule_Category_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Auto-Submit_Invoices_for_Approval": {
+        "description": "If true, the Invoice automatically submits for approval.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Automatically_Generate_Installments": {
+        "description": "If true, the Billing Schedule automatically generates the installments.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Automatically_Regenerate_Installments": {
+        "description": "If true, the Billing Schedule automatically regenerates installments.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Automatically_Submit_Schedule_for_Approval": {
+        "description": "If  true, the schedule automatically submits for approval.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Automatically_Submit_Schedules": {
+        "description": "If true, the Billing Schedule automatically submits.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Billing_Frequency_Reference_Frequency_Behavior_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Invoice_Memo": {
+        "description": "The memo for the billing invoice.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Method_Reference_Schedule_Distribution_Method_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Period_Reference_Billing_Period_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Template_ID": {
+        "description": "Contains a unique identifier for an instance of a Billing Template..",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Template_Name": {
+        "description": "The name of the Billing Template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Billing_Template_Name_Prompt": {
+        "description": "The name of the Billing Template to be used as search criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_of_the_Month": {
+        "description": "The day of the month that’s used for the installment dates if Billing Frequency is Monthly.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Day_of_the_Week_Reference_Day_of_the_Week_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_of_the_Week_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Generate_Installment_with_To_Date": {
+        "description": "If true, the last installment date uses the To Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Attachments_on_Invoice_Reference": {
+        "description": "The types of attachments for expense report and supplier invoice on the billing template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_Reference_Customer_Invoice_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Installments": {
+        "description": "The number of installments.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Project_Invoice_Summary_Definition_Reference_PROJECT_INVOICE_SUMMARY_DEFINITION_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Invoice_Summary_Definition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prorate_First_and_Last_Installment": {
+        "description": "If true, the first and last installments are prorated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Recurrence": {
+        "description": "The recurrence that determines the installment dates based on the billing frequency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Recurring_Invoice_Day": {
+        "description": "The day in the recurring invoice date.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Review_Not_Required_to_Bill": {
+        "description": "If true, the Billing Schedule transactions are automatically billable. Review is not required for billing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Description": {
+        "description": "The description of Billing Template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_Schedule_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_Schedule_Category_ID_Prompt": {
+        "description": "The schedule type for the Billing Template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Type_Reference_WID_Prompt": {
+        "description": "The schedule type for the Billing Template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

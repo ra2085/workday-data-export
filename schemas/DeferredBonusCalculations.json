@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DeferredBonusCalculations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for this Deferred Bonus Calculation.",
+      "field": "Deferred_Bonus_Calculation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deferred Bonus Calculation Name",
+      "field": "Calculation_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deferred Bonus Calculation Reference Fields",
+      "field": "Reference_Field_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Deferred Bonus Calculation Progressive Calculation Flag",
+      "field": "Progressive_Calculation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Deferred Bonus Calculation Minimum Threshold",
+      "field": "Minimum_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deferred Bonus Calculation Range Definitions",
+      "field": "Deferred_Bonus_Calculation_Range_Definition",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculation_Name": {
+        "description": "Deferred Bonus Calculation Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deferred_Bonus_Calculation_ID": {
+        "description": "Reference ID for this Deferred Bonus Calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deferred_Bonus_Calculation_Range_Definition": {
+        "description": "Deferred Bonus Calculation Range Definitions",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Threshold": {
+        "description": "Deferred Bonus Calculation Minimum Threshold",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Progressive_Calculation": {
+        "description": "Deferred Bonus Calculation Progressive Calculation Flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Reference_Field_Reference": {
+        "description": "Deferred Bonus Calculation Reference Fields",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

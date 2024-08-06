@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkerRuleBillingRates_Worker_Billing_Rate_Snapshot_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Worker Rule Billing Rate instance",
+      "field": "WorkerRuleBillingRate_Worker_Rule_Billing_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Snapshot Effective Date",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Worker Billing Rate by Rule",
+      "field": "Worker_Billing_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Cost Rate Rule Reference in Request Criteria.",
+      "field": "Project_Cost_Rate_Rule_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Cost Rate Rule Reference in Request Criteria.",
+      "field": "Project_Cost_Rate_Rule_Reference_Project_Rate_Rule_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "Snapshot Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Cost_Rate_Rule_Reference_Project_Rate_Rule_ID_Prompt": {
+        "description": "Project Cost Rate Rule Reference in Request Criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Cost_Rate_Rule_Reference_WID_Prompt": {
+        "description": "Project Cost Rate Rule Reference in Request Criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "WorkerRuleBillingRate_Worker_Rule_Billing_Rate_ID": {
+        "description": "Reference ID for Worker Rule Billing Rate instance",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Billing_Rate": {
+        "description": "Worker Billing Rate by Rule",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

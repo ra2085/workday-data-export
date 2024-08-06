@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningSecurityCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the security category which acts as it's ID. This value must be unique.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Learner user groups who can access content that you secure to this segment.",
+      "field": "Learners_With_Access",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Learners_With_Access": {
+        "description": "Learner user groups who can access content that you secure to this segment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Name of the security category which acts as it's ID. This value must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

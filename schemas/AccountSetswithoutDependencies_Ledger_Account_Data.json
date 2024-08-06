@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AccountSetswithoutDependencies_Ledger_Account_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Account Set Reference ID.  This is the Account Set unique identifier",
+      "field": "AccountSet_Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger Account Identifier. The Ledger Account Identifier in combination with the Account Set create the unique identifier for a Ledger Account.",
+      "field": "Ledger_Account_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for the Ledger Account Name",
+      "field": "Ledger_Account_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ledger_Account_Type_Reference_Ledger_Account_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Ledger Account should be (for put) or has been (for get) retired.",
+      "field": "Retired",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of companies or company hierarchies to which this ledger account is restricted.  This ledger account may not be used by any company or hierarchy that is not in this set.",
+      "field": "Restricted_To_Company_or_Hierarchy_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AccountSet_Account_Set_ID": {
+        "description": "Account Set Reference ID.  This is the Account Set unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Identifier": {
+        "description": "Ledger Account Identifier. The Ledger Account Identifier in combination with the Account Set create the unique identifier for a Ledger Account.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Name": {
+        "description": "Free form text field for the Ledger Account Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Type_Reference_Ledger_Account_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ledger_Account_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_To_Company_or_Hierarchy_Reference": {
+        "description": "The set of companies or company hierarchies to which this ledger account is restricted.  This ledger account may not be used by any company or hierarchy that is not in this set.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retired": {
+        "description": "Boolean flag indicating if the Ledger Account should be (for put) or has been (for get) retired.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AccountSetswithoutDependencies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Account Set Reference ID.  This is the Account Set unique identifier",
+      "field": "Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Account Set Name",
+      "field": "Account_Set_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if this account set is the Chart of Accounts",
+      "field": "Chart_of_Accounts",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Account Set",
+      "field": "Account_Set_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ledger Account Data. An Account Set can contain multiple Ledger Accounts.",
+      "field": "Ledger_Account_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Set_ID": {
+        "description": "Account Set Reference ID.  This is the Account Set unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Set_Name": {
+        "description": "Account Set Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Set_Reference": {
+        "description": "Reference to an existing Account Set",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Chart_of_Accounts": {
+        "description": "Boolean flag indicating if this account set is the Chart of Accounts",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ledger_Account_Data": {
+        "description": "Ledger Account Data. An Account Set can contain multiple Ledger Accounts.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

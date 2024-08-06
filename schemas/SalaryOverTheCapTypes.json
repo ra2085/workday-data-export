@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SalaryOverTheCapTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Over_The_Cap_Type_Request_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Over_The_Cap_Type_Request_Reference_Salary_Over_The_Cap_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Salary Over The Cap Type ID.  This is the unique Salary Over The Cap Type identifier.",
+      "field": "Salary_Over_The_Cap_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text for a meaningful Salary Over The Cap Type name.  Name must be unique.",
+      "field": "Salary_Over_The_Cap_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate that this Salary Over The Cap Type is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Boolean to indicate that this Salary Over The Cap Type is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_ID": {
+        "description": "Salary Over The Cap Type ID.  This is the unique Salary Over The Cap Type identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_Name": {
+        "description": "Free form text for a meaningful Salary Over The Cap Type name.  Name must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_Request_Reference_Salary_Over_The_Cap_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Over_The_Cap_Type_Request_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

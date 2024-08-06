@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerPortalPaymentSession",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique identifier for the portal payment session.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The portal application sends this external merchant id to the payment provider to pay the associated merchant.",
+      "field": "External_Merchant_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the payment amount you are requesting the external payment provider to pay on your behalf. Note: This amount could be different from actual amount paid.",
+      "field": "Payment_Amount_Requested",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the actual amount the external payment provider pays. It can be different from the requested amount.",
+      "field": "Payment_Amount_Actual",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique ID for a payment associated with a payment provider.",
+      "field": "External_Payment_Record",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "This is the timeout timestamp for the customer portal payment session. After passing this timestamp, the payment session will be considered expired.",
+      "field": "Payment_Session_Timeout_Timestamp",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference to customer payments associated with the session. Workday won't process a Payment Session if recorded payments already exist for that session.",
+      "field": "Recorded_Customer_Payments_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An element containing all customer invoice data for this customer portal payment session.",
+      "field": "Customer_Invoice_data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_data": {
+        "description": "An element containing all customer invoice data for this customer portal payment session.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Merchant_ID": {
+        "description": "The portal application sends this external merchant id to the payment provider to pay the associated merchant.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Payment_Record": {
+        "description": "A unique ID for a payment associated with a payment provider.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is a unique identifier for the portal payment session.",
+        "type": [
+          "string"
+        ]
+      },
+      "Payment_Amount_Actual": {
+        "description": "This is the actual amount the external payment provider pays. It can be different from the requested amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Amount_Requested": {
+        "description": "This is the payment amount you are requesting the external payment provider to pay on your behalf. Note: This amount could be different from actual amount paid.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Session_Timeout_Timestamp": {
+        "description": "This is the timeout timestamp for the customer portal payment session. After passing this timestamp, the payment session will be considered expired.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recorded_Customer_Payments_Reference": {
+        "description": "This is the reference to customer payments associated with the session. Workday won't process a Payment Session if recorded payments already exist for that session.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

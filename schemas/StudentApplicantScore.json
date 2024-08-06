@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentApplicantScore",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for Student Applicant Score.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Application_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Application_Reference_Student_Application_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Applicant_Score_Scale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Applicant_Score_Scale_Reference_Student_Applicant_Score_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Applicant_Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Applicant_Rating_Reference_Student_Recruiting_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Applicant Score Value for Student Applicant Score Scale",
+      "field": "Student_Applicant_Score_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The Reference ID for Student Applicant Score.",
+        "type": [
+          "string"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Rating_Reference_Student_Recruiting_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Rating_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Scale_Reference_Student_Applicant_Score_Scale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Scale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Applicant_Score_Value": {
+        "description": "Applicant Score Value for Student Applicant Score Scale",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_Student_Application_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

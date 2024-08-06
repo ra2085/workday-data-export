@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EnhancedSeveranceMatrices_Compensation_Length_of_Service_Severance_Matrix_Entry_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Severance Matrix.",
+      "field": "EnhancedSeveranceMatrix_Enhanced_Severance_Matrix_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Indicates the minimum value of the compensation basis range to determine eligibility for this matrix band.",
+      "field": "Minimum_Compensation_Basis_Range",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Indicates the maximum value of the compensation basis range to determine eligibility for this matrix band.",
+      "field": "Maximum_Compensation_Basis_Range",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Eligibility_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This indicates the length of service factor for a Length of Service type entry only.",
+      "field": "Length_of_Service_Multiplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This indicates the minimum recommendation for the duration or length of service for the entry.",
+      "field": "Minimum_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This indicates the maximum recommendation for the duration/length of service for the entry.",
+      "field": "Maximum_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the Severance Matrix with the name specified by this parameter.",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filtering options to specify the type of matrix to be returned.",
+      "field": "Enhanced_Severance_Matrix_Filter_Options_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, inactive matrices will be included in the returned set. If false, inactive matrices will not be included.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Eligibility_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EnhancedSeveranceMatrix_Enhanced_Severance_Matrix_ID": {
+        "description": "The reference ID for the Severance Matrix.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enhanced_Severance_Matrix_Filter_Options_Prompt": {
+        "description": "Filtering options to specify the type of matrix to be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "If true, inactive matrices will be included in the returned set. If false, inactive matrices will not be included.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Length_of_Service_Multiplier": {
+        "description": "This indicates the length of service factor for a Length of Service type entry only.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Compensation_Basis_Range": {
+        "description": "Indicates the maximum value of the compensation basis range to determine eligibility for this matrix band.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Duration": {
+        "description": "This indicates the maximum recommendation for the duration/length of service for the entry.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Compensation_Basis_Range": {
+        "description": "Indicates the minimum value of the compensation basis range to determine eligibility for this matrix band.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Duration": {
+        "description": "This indicates the minimum recommendation for the duration or length of service for the entry.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Returns the Severance Matrix with the name specified by this parameter.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

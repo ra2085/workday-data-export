@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardSchedules_Award_Period_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Schedule Reference ID. This is the Award Schedule Unique Identifier.",
+      "field": "AwardSchedule_Award_Schedule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Period Reference ID. This is the Award Period unique identifier.",
+      "field": "Award_Period_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Period Name",
+      "field": "Award_Period_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Award Period Number",
+      "field": "Award_Period_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Interval Data Element",
+      "field": "Award_Interval_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Period End Date is Award Contract End Date.",
+      "field": "Is_Award_Contract_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Period Start Date is Award Contract Start Date.",
+      "field": "Is_Award_Contract_End_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AwardSchedule_Award_Schedule_Reference_ID": {
+        "description": "Award Schedule Reference ID. This is the Award Schedule Unique Identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Interval_Data": {
+        "description": "Award Interval Data Element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Period_Name": {
+        "description": "Award Period Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Period_Number": {
+        "description": "Award Period Number",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Award_Period_Reference_ID": {
+        "description": "Award Period Reference ID. This is the Award Period unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Is_Award_Contract_End_Date": {
+        "description": "The Award Period Start Date is Award Contract Start Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Is_Award_Contract_Start_Date": {
+        "description": "The Award Period End Date is Award Contract End Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

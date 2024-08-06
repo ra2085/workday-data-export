@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningDigitalCourses_Advanced_Expiration_Rules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique ID for the course.",
+      "field": "LearningDigitalCourse_Learning_Digital_Course_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Order in which the advanced expiration rules will be applied to the learners",
+      "field": "Learning_Expiration_Rule_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learner_Group_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learner_Group_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The recurrence frequency start date. This is the initial expiration date that the recurring expiry will be based on. Example: You specify a Recurrence Start Date of 2021-01-01. This is the initial expiration date and the recurrence cycle will start from this date.",
+      "field": "Current_Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The recurrence frequency unit value. A three digit numeric value.",
+      "field": "Recurrence_Format_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Format_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Format_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Format_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Format_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The duration unit value. A three digit numeric value.",
+      "field": "Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date upon which the course will expire, requiring the learner to take the course again.",
+      "field": "Expiration_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Current_Expiration_Date": {
+        "description": "The recurrence frequency start date. This is the initial expiration date that the recurring expiry will be based on. Example: You specify a Recurrence Start Date of 2021-01-01. This is the initial expiration date and the recurrence cycle will start from this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expiration_Date": {
+        "description": "Date upon which the course will expire, requiring the learner to take the course again.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Format_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Format_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learner_Group_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learner_Group_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "LearningDigitalCourse_Learning_Digital_Course_Data_ID": {
+        "description": "Unique ID for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Expiration_Rule_Order": {
+        "description": "Order in which the advanced expiration rules will be applied to the learners",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Value": {
+        "description": "The recurrence frequency unit value. A three digit numeric value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Value": {
+        "description": "The duration unit value. A three digit numeric value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

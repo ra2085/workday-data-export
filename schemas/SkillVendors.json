@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SkillVendors",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Skill Vendor. The ID is either a Workday ID or reference ID. Example reference ID: SKILL_VENDOR-15-ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Skill Vendor.",
+      "field": "Skill_Vendor_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Skill Vendor is in use.",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The ID of the Skill Vendor. The ID is either a Workday ID or reference ID. Example reference ID: SKILL_VENDOR-15-ID",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "If true, the Skill Vendor is in use.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Skill_Vendor_Name": {
+        "description": "The name of the Skill Vendor.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

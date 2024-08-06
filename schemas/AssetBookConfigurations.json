@@ -1,0 +1,3033 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssetBookConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Add Only Flag.  Indicates that the service is an add only, not an update.",
+      "field": "Add_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The primary ID of the asset of this asset depreciation schedule. The value of this field and the asset book reference represent a unique ID that can be used to identify this asset depreciation schedule instance",
+      "field": "Asset_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Reference_Asset_Book_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_Accounting_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_Depreciation_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Convention_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Convention_Reference_Depreciation_Convention_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Method_Reference_Depreciation_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing the depreciation percent for Declining Balance with Switch to Straight Line method. It is required when the depreciation method is declining balance. It left blank, it will be defaulted from the depreciation profile.",
+      "field": "Depreciation_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing the useful life (in periods) for the asset depreciation schedule. It is required if the accounting treatment is depreciable capital. If left blank it will be defaulted from the depreciation profile.",
+      "field": "Useful_Life__Periods_",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Depreciation Threshold. Enter only if method is declining balance.",
+      "field": "Depreciation_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Workday uses these dates to update External Contract Start and End date if you manually register the asset but updates the In service Start and End date for all other sources.",
+      "field": "Contract_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Workday uses these dates to update External Contract Start and End date if you manually register the asset but updates the In service Start and End date for all other sources.",
+      "field": "Contract_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date value representing the date this asset depreciation schedule is placed in service. It is required if the depreciation schedule has historical information. It cannot be after depreciation start date and prior to the asset acquisition date.",
+      "field": "Date_Placed_in_Service",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing bonus depreciation percent for this asset depreciation schedule. Value cannot be more than 100.",
+      "field": "Bonus_Depreciation_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing the maximum bonus depreciation basis. Workday would use the lesser of this field and asset cost that is applicable to bonus depreciation to calculated the bonus amount.",
+      "field": "Max_Bonus_Depreciable_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "For converted assets, the depreciation start date represents the date that depreciation starts in Workday. For converted assets with historical accumulated depreciation, the depreciation start date should be 1 day greater than the date up to which the historical accumulated depreciation is calculated. The date cannot be prior to the acquisition date. For converted assets with no historical accumulated depreciation, leave the depreciation start date blank so that Workday can determine the correct date.",
+      "field": "Depreciation_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for remaining depreciation periods if entering accumulated depreciation from a prior system and depreciation start date. Workday will generate depreciation entries for this schedule for the number of remaining periods.",
+      "field": "Remaining_Depreciation_Periods",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Unit Cost of Asset for the specified Book",
+      "field": "Original_Acquisition_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This field is for display only, any values updated will be ignored.",
+      "field": "Total_Asset_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Residual or salvage value for the specified Book",
+      "field": "Residual_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Fair Market Value for the specified book",
+      "field": "Fair_Market_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing historical accumulated depreciation as of a day prior to depreciation start date. This value cannot be greater than historical cost minus historical residual value. Workday uses this accumulated depreciation value to determine depreciable cost basis to generate the depreciation schedule for remaining useful life starting from depreciation start date.",
+      "field": "Accumulated_Depreciation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing year-to-date depreciation as of a day period to depreciation start date. This field is required if the asset depreciation schedule has historical information and the depreciation method is either declining balance or sum of years digits. The value of this field cannot be greater than historical accumulated depreciation.",
+      "field": "Year_to_Date_Depreciation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value representing historical bonus depreciation amount. This field  is required if the depreciation schedule has historical information and bonus depreciation percent is populated, else it should be left empty. The value of this field cannot be greater than accumulated depreciation.",
+      "field": "Historical_Bonus_Depreciation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Configuration_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Configuration_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "A numeric value that represents historical cost balance for depreciation schedule. Historical cost are those transactions with transaction effective date prior to depreciation start date.",
+      "field": "Historical_Cost_Balance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the asset.",
+      "field": "Asset_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_Asset_Class_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_Asset_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Acquisition_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Acquisition_Method_Reference_Acquisition_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the asset was acquired, or the transaction effective date of the acquisition.",
+      "field": "Date_Acquired",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the asset was first issued to a worker",
+      "field": "First_Issue_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An Asset Name value to be used to return asset depreciation schedules for an existing asset with the matching Asset Name value.",
+      "field": "Asset_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Books to return asset depreciation schedule for these books. Supports multiple values.",
+      "field": "Asset_Book_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Books to return asset depreciation schedule for these books. Supports multiple values.",
+      "field": "Asset_Book_Reference_Asset_Book_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Spend Category(s) of assets to return asset depreciation schedules for assets in those categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Spend Category(s) of assets to return asset depreciation schedules for assets in those categories.. Supports multiple values.",
+      "field": "Spend_Category_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Class(s) to return asset depreciation schedules for assets in those classes. Supports multiple values.",
+      "field": "Asset_Class_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Class(s) to return asset depreciation schedules for assets in those classes. Supports multiple values.",
+      "field": "Asset_Class_Reference_Asset_Class_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Type(s) to return asset depreciation schedules for assets in those types. Supports multiple values.",
+      "field": "Asset_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Asset Type(s) to return asset depreciation schedules for assets in those types. Supports multiple values.",
+      "field": "Asset_Type_Reference_Asset_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Locations to returns asset depreciation schedules for assets currently placed in those locations.. Supports multiple values.",
+      "field": "Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Locations to returns asset depreciation schedules for assets currently placed in those locations.. Supports multiple values.",
+      "field": "Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Ad_hoc_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Allocation_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Applicant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Application_Grouping_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Appropriation_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Bank_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Business_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Cash_Activity_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Catalog_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Compensation_Grade_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Contingent_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_06_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_07_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_08_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_09_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_1_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_10_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_11_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_12_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_13_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_14_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_15_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_2_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_3_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_4_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Custom_Worktag_5_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Contract_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Deduction_Recipient_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Donor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Employee_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Ethnicity_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Exemption_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Expense_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_External_Committee_Member_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Financial_Institution_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Fringe_Basis_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Fund_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Funding_Source_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Gender_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Gift_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Pool_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Investment_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Investor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Is_Manager_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Is_People_Manager_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Loan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Management_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Miscellaneous_Payee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_NI_Category_Letter_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Object_Class_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Opportunity_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Pay_Rate_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Income_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Petty_Cash_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Position_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Position_Time_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Program_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Plan_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Project_Worker_Role_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Proposal_Grant_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Prospect_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Purchase_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Revenue_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Rubric_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Run_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Sales_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Spend_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Award_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Charge_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Course_Section_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Recruiting_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Student_Waiver_Item_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Applicability_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Third_Party_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Code_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Function_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Work_Shift_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Deduction_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Workday_Earning_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+      "field": "Worktags_Reference_Worker_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to return asset depreciation schedule for assets by the date they were acquired. This is the From Date to find assets by acquisition date. This date is inclusive.",
+      "field": "Acquired_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to return asset depreciation schedules for assets by the date they were acquired. This is the To Date to find assets by acquisition date. This date is inclusive.",
+      "field": "Acquired_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to return asset depreciation schedules by the date they were placed in service. This is the From Date to find asset depreciation schedules by in service date. This date is inclusive.",
+      "field": "In_Service_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Allows you to return asset depreciation schedules by the date they were placed in service. This is the To Date to find asset depreciation schedules by in service date. This date is inclusive.",
+      "field": "In_Service_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter an Asset Depreciation Schedule Status reference to return schedules currently in that status. Valid values for depreciation schedule status is In Service, Registered and disposed. Don't enter a status reference to return schedules in any status.. Supports multiple values.",
+      "field": "Asset_Depreciation_Schedule_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter an Asset Depreciation Schedule Status reference to return schedules currently in that status. Valid values for depreciation schedule status is In Service, Registered and disposed. Don't enter a status reference to return schedules in any status.. Supports multiple values.",
+      "field": "Asset_Depreciation_Schedule_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Acquisition Method references to return asset depreciation schedules for assets acquired using one of those methods.. Supports multiple values.",
+      "field": "Acquisition_Method_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Acquisition Method references to return asset depreciation schedules for assets acquired using one of those methods.. Supports multiple values.",
+      "field": "Acquisition_Method_Reference_Acquisition_Method_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Accounting Treatment references to return asset depreciation schedules with those accounting treatments. A depreciation schedule can have accounting treatment of Expense, Depreciable, or Non-Depreciable.. Supports multiple values.",
+      "field": "Accounting_Treatment_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One or more Accounting Treatment references to return asset depreciation schedules with those accounting treatments. A depreciation schedule can have accounting treatment of Expense, Depreciable, or Non-Depreciable.. Supports multiple values.",
+      "field": "Accounting_Treatment_Reference_Accounting_Treatment_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allows you to return asset depreciation schedules with no historical information such as accumulated depreciation. Enter 1 to exclude asset depreciation schedules with historical information.",
+      "field": "Exclude_Schedules_with_Historical_Information_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Treatment_Reference_Accounting_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_Accounting_Treatment_ID_Prompt": {
+        "description": "One or more Accounting Treatment references to return asset depreciation schedules with those accounting treatments. A depreciation schedule can have accounting treatment of Expense, Depreciable, or Non-Depreciable.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_WID_Prompt": {
+        "description": "One or more Accounting Treatment references to return asset depreciation schedules with those accounting treatments. A depreciation schedule can have accounting treatment of Expense, Depreciable, or Non-Depreciable.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accumulated_Depreciation": {
+        "description": "Numeric value representing historical accumulated depreciation as of a day prior to depreciation start date. This value cannot be greater than historical cost minus historical residual value. Workday uses this accumulated depreciation value to determine depreciable cost basis to generate the depreciation schedule for remaining useful life starting from depreciation start date.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Acquired_From_Date_Prompt": {
+        "description": "Allows you to return asset depreciation schedule for assets by the date they were acquired. This is the From Date to find assets by acquisition date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquired_To_Date_Prompt": {
+        "description": "Allows you to return asset depreciation schedules for assets by the date they were acquired. This is the To Date to find assets by acquisition date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_Acquisition_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_Acquisition_Method_ID_Prompt": {
+        "description": "One or more Acquisition Method references to return asset depreciation schedules for assets acquired using one of those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acquisition_Method_Reference_WID_Prompt": {
+        "description": "One or more Acquisition Method references to return asset depreciation schedules for assets acquired using one of those methods.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Add_Only": {
+        "description": "Add Only Flag.  Indicates that the service is an add only, not an update.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Asset_Book_Configuration_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Configuration_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Reference_Asset_Book_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Reference_Asset_Book_ID_Prompt": {
+        "description": "One or more Asset Books to return asset depreciation schedule for these books. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Reference_WID_Prompt": {
+        "description": "One or more Asset Books to return asset depreciation schedule for these books. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_Asset_Class_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_Asset_Class_Reference_ID_Prompt": {
+        "description": "One or more Asset Class(s) to return asset depreciation schedules for assets in those classes. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_WID_Prompt": {
+        "description": "One or more Asset Class(s) to return asset depreciation schedules for assets in those classes. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Depreciation_Schedule_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Enter an Asset Depreciation Schedule Status reference to return schedules currently in that status. Valid values for depreciation schedule status is In Service, Registered and disposed. Don't enter a status reference to return schedules in any status.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Depreciation_Schedule_Status_Reference_WID_Prompt": {
+        "description": "Enter an Asset Depreciation Schedule Status reference to return schedules currently in that status. Valid values for depreciation schedule status is In Service, Registered and disposed. Don't enter a status reference to return schedules in any status.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_ID": {
+        "description": "The primary ID of the asset of this asset depreciation schedule. The value of this field and the asset book reference represent a unique ID that can be used to identify this asset depreciation schedule instance",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Name": {
+        "description": "The name of the asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Name_Prompt": {
+        "description": "An Asset Name value to be used to return asset depreciation schedules for an existing asset with the matching Asset Name value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_Asset_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_Asset_Type_Reference_ID_Prompt": {
+        "description": "One or more Asset Type(s) to return asset depreciation schedules for assets in those types. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_WID_Prompt": {
+        "description": "One or more Asset Type(s) to return asset depreciation schedules for assets in those types. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bonus_Depreciation_Percent": {
+        "description": "Numeric value representing bonus depreciation percent for this asset depreciation schedule. Value cannot be more than 100.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "One or more Company references to use to filter the asset depreciation schedules returned in the response.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_End_Date": {
+        "description": "Workday uses these dates to update External Contract Start and End date if you manually register the asset but updates the In service Start and End date for all other sources.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Start_Date": {
+        "description": "Workday uses these dates to update External Contract Start and End date if you manually register the asset but updates the In service Start and End date for all other sources.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Acquired": {
+        "description": "The date the asset was acquired, or the transaction effective date of the acquisition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Placed_in_Service": {
+        "description": "Date value representing the date this asset depreciation schedule is placed in service. It is required if the depreciation schedule has historical information. It cannot be after depreciation start date and prior to the asset acquisition date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Convention_Reference_Depreciation_Convention_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Convention_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Method_Reference_Depreciation_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Percent": {
+        "description": "Numeric value representing the depreciation percent for Declining Balance with Switch to Straight Line method. It is required when the depreciation method is declining balance. It left blank, it will be defaulted from the depreciation profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_Depreciation_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Start_Date": {
+        "description": "For converted assets, the depreciation start date represents the date that depreciation starts in Workday. For converted assets with historical accumulated depreciation, the depreciation start date should be 1 day greater than the date up to which the historical accumulated depreciation is calculated. The date cannot be prior to the acquisition date. For converted assets with no historical accumulated depreciation, leave the depreciation start date blank so that Workday can determine the correct date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Threshold": {
+        "description": "Depreciation Threshold. Enter only if method is declining balance.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Exclude_Schedules_with_Historical_Information_Prompt": {
+        "description": "Allows you to return asset depreciation schedules with no historical information such as accumulated depreciation. Enter 1 to exclude asset depreciation schedules with historical information.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Fair_Market_Value": {
+        "description": "Fair Market Value for the specified book",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "First_Issue_Date": {
+        "description": "The date the asset was first issued to a worker",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Historical_Bonus_Depreciation": {
+        "description": "Numeric value representing historical bonus depreciation amount. This field  is required if the depreciation schedule has historical information and bonus depreciation percent is populated, else it should be left empty. The value of this field cannot be greater than accumulated depreciation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Historical_Cost_Balance": {
+        "description": "A numeric value that represents historical cost balance for depreciation schedule. Historical cost are those transactions with transaction effective date prior to depreciation start date.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "In_Service_From_Date_Prompt": {
+        "description": "Allows you to return asset depreciation schedules by the date they were placed in service. This is the From Date to find asset depreciation schedules by in service date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "In_Service_To_Date_Prompt": {
+        "description": "Allows you to return asset depreciation schedules by the date they were placed in service. This is the To Date to find asset depreciation schedules by in service date. This date is inclusive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID_Prompt": {
+        "description": "One or more Locations to returns asset depreciation schedules for assets currently placed in those locations.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID_Prompt": {
+        "description": "One or more Locations to returns asset depreciation schedules for assets currently placed in those locations.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Max_Bonus_Depreciable_Basis": {
+        "description": "Numeric value representing the maximum bonus depreciation basis. Workday would use the lesser of this field and asset cost that is applicable to bonus depreciation to calculated the bonus amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Original_Acquisition_Cost": {
+        "description": "The Unit Cost of Asset for the specified Book",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Remaining_Depreciation_Periods": {
+        "description": "Numeric value for remaining depreciation periods if entering accumulated depreciation from a prior system and depreciation start date. Workday will generate depreciation entries for this schedule for the number of remaining periods.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Residual_Value": {
+        "description": "Residual or salvage value for the specified Book",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID_Prompt": {
+        "description": "One or more Spend Category(s) of assets to return asset depreciation schedules for assets in those categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID_Prompt": {
+        "description": "One or more Spend Category(s) of assets to return asset depreciation schedules for assets in those categories.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Asset_Cost": {
+        "description": "This field is for display only, any values updated will be ignored.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Useful_Life__Periods_": {
+        "description": "Numeric value representing the useful life (in periods) for the asset depreciation schedule. It is required if the accounting treatment is depreciable capital. If left blank it will be defaulted from the depreciation profile.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Period_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Person_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Academic_Unit_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ad_hoc_Payee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Allocation_Pool_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Alternate_Supplier_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Applicant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Application_Grouping_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Appropriation_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Reason_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Adjustment_Type_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Asset_Impairment_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Bank_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Asset_Cost_Adjustment_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Business_Unit_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Calculation_Compensation_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Candidate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cash_Activity_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Catalog_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Company_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Compensation_Grade_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Contingent_Worker_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Corporate_Credit_Card_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_06_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_07_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_08_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_09_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_10_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_11_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_12_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_13_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_14_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_15_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_1_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_2_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_3_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_4_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Custom_Worktag_5_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Alternate_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Contract_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Customer_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Deduction_Recipient_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Donor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Earning_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Employee_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Ethnicity_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Exemption_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Expense_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Committee_Member_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_External_Sourceable_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Aid_Award_Year_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Financial_Institution_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fringe_Basis_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Fund_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Funding_Source_Name_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gender_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Gift_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Grant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Pool_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investment_Profile_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Investor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_Manager_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Is_People_Manager_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Profile_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Job_Requisition_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Lease_Expense_Recognition_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Loan_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Location_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Management_Level_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Miscellaneous_Payee_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_NI_Category_Letter_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Object_Class_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Opportunity_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Organization_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Pay_Rate_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Contribution_Group_Key_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Federal_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Flat_Rate_Tax_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Income_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_City_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_County_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_Other_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Local_School_District_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Public_Health_Insurance_Company_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_Religious_Denomination_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Payroll_State_Authority_Tax_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Petty_Cash_Account_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Position_Time_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Program_of_Study_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Plan_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Project_Worker_Role_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Proposal_Grant_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Prospect_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Purchase_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Receivable_Writeoff_Reason_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Region_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Revenue_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Rubric_Value_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Run_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Salary_Over_The_Cap_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sales_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Spend_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Application_Residency_Status_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Award_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Charge_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Course_Section_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Campaign_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Recruiting_Event_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Sponsor_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Student_Waiver_Item_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Applicability_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Category_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Code_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Point_Date_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Rate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Tax_Recoverability_Object_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Third_Party_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_WID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Code_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Withholding_Tax_Rate_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Function_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Work_Shift_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Deduction_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Workday_Earning_Code_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktags_Reference_Worker_Type_ID_Prompt": {
+        "description": "One or more Worktag references to be used to return asset depreciation schedules for Assets currently assigned any of these worktags. To filter based on Location, use the Location Reference element.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Year_to_Date_Depreciation": {
+        "description": "Numeric value representing year-to-date depreciation as of a day period to depreciation start date. This field is required if the asset depreciation schedule has historical information and the depreciation method is either declining balance or sum of years digits. The value of this field cannot be greater than historical accumulated depreciation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

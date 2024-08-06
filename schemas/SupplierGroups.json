@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Group ID.  This is the Supplier Group unique identifier",
+      "field": "Supplier_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Supplier Group Name",
+      "field": "Supplier_Group_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Supplier_Group_ID": {
+        "description": "Supplier Group ID.  This is the Supplier Group unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Group_Name": {
+        "description": "Free form text field for a meaningful Supplier Group Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

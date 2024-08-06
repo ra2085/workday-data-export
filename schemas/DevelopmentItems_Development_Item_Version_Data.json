@@ -1,0 +1,212 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DevelopmentItems_Development_Item_Version_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "DevelopmentItem_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Development Item.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Title field of the referenced Development Item",
+      "field": "Development_Item",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Category field for the referenced Development Item",
+      "field": "Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date field for the referenced Development Item",
+      "field": "Development_Item_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Completion Date field for the referenced Development Item",
+      "field": "Development_Item_Completion_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_Development_Item_Status__Tenanted_",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Status Note field for the referenced Development Item",
+      "field": "Status_Note",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Updated_by_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Updated_by_Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Updated_by_Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tag Reference for Development Items based on Competency, Job Profile, and Work Experience Skill.",
+      "field": "Relates_To_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the Development Item requested.",
+      "field": "Development_Item_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the Development Item requested.",
+      "field": "Development_Item_Reference_Development_Item_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Category_Reference": {
+        "description": "Category field for the referenced Development Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "DevelopmentItem_Worker_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Development_Item": {
+        "description": "Title field of the referenced Development Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Development_Item_Completion_Date": {
+        "description": "Completion Date field for the referenced Development Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Development_Item_Reference_Development_Item_ID_Prompt": {
+        "description": "A reference to the Development Item requested.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Development_Item_Reference_WID_Prompt": {
+        "description": "A reference to the Development Item requested.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Development_Item_Start_Date": {
+        "description": "Start Date field for the referenced Development Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Development Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Relates_To_Reference": {
+        "description": "Tag Reference for Development Items based on Competency, Job Profile, and Work Experience Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Note": {
+        "description": "Status Note field for the referenced Development Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_Development_Item_Status__Tenanted_": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_by_Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_by_Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_by_Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

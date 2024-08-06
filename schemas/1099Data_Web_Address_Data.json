@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Web_Address_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web address (Example: URL).",
+      "field": "Web_Address",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Web_Address_Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Communication Usage Type.",
+      "field": "Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference element representing a unique instance of Communication Usage Behavior.",
+      "field": "Use_For_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the usage of the contact information.",
+      "field": "Comments",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comments": {
+        "description": "Description of the usage of the contact information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference": {
+        "description": "Reference element representing a unique instance of Communication Usage Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_For_Reference": {
+        "description": "Reference element representing a unique instance of Communication Usage Behavior.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address": {
+        "description": "Web address (Example: URL).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

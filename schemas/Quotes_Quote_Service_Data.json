@@ -1,0 +1,628 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Quotes_Quote_Service_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Quote_Quote_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Service ID. This is the Quote Service Instance unique identifier.",
+      "field": "Quote_Service_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the Quote Service.",
+      "field": "Quote_Service_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the quote service.",
+      "field": "Quote_Service_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total price for the Quote Service. This field is read-only and ignored on Submit operation.",
+      "field": "Quote_Service_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The start date for each service associated with this quote.",
+      "field": "Quote_Service_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The end date of the Quote Service. It's determined by the latest Quote Phase end date or the Duration end date. This field is read-only and ignored on Submit operation when the quote service has phases.",
+      "field": "Quote_Service_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total cost for the Quote Service. This field is read-only and ignored on Submit operation.",
+      "field": "Quote_Service_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Percent value of Quote Service Margin . This field is read-only and ignored on Submit operation.",
+      "field": "Quote_Service_Margin_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Percent value of Quote Service Discount. This field is read-only and ignored on Submit operation.",
+      "field": "Quote_Service_Discount_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Project_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Project_Hierarchy_Reference_Project_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Billing_Model_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Billing_Model_Reference_Billing_Model_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Rate_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Rate_Type_Reference_Unit_of_Time_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Project_Billing_Rate_Sheet_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Project_Billing_Rate_Sheet_Reference_Project_Billing_Rate_Sheet_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of hours in a day. We use this value to calculate FTE. When the Rate Type is not Days, this field becomes read-only.",
+      "field": "Hours_Per_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Sales_Item_Price_List_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Quote_Service_Sales_Item_Price_List_Reference_Abstract_Sales_Item_Price_List_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Phase data for the Quote Service.",
+      "field": "Quote_Phase_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Role Line data for the Quote Service.",
+      "field": "Quote_Role_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Item Line data for the Quote Service.",
+      "field": "Quote_Item_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Expense Line Data",
+      "field": "Quote_Expense_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Third Party Cost Line Data",
+      "field": "Quote_Third_Party_Cost_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote name.",
+      "field": "Quote_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Number.",
+      "field": "Quote_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date On or After.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date On or Before.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date On or After.",
+      "field": "End_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date On or Before.",
+      "field": "End_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference.. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Reference.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Reference.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Document Status Reference.. Supports multiple values.",
+      "field": "Document_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Document Status Reference.. Supports multiple values.",
+      "field": "Document_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Opportunity Reference.. Supports multiple values.",
+      "field": "Opportunity_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Opportunity Reference.. Supports multiple values.",
+      "field": "Opportunity_Reference_Opportunity_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Currency Reference.. Supports multiple values.",
+      "field": "Currency_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Currency Reference.. Supports multiple values.",
+      "field": "Currency_Reference_Currency_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Currency Reference.. Supports multiple values.",
+      "field": "Currency_Reference_Currency_Numeric_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Status Reference.. Supports multiple values.",
+      "field": "Quote_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Quote Status Reference.. Supports multiple values.",
+      "field": "Quote_Status_Reference_Quote_Status_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID_Prompt": {
+        "description": "Currency Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code_Prompt": {
+        "description": "Currency Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID_Prompt": {
+        "description": "Currency Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "Customer Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Customer Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "Customer Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Document Status Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID_Prompt": {
+        "description": "Document Status Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_On_or_After_Prompt": {
+        "description": "End Date On or After.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date_On_or_Before_Prompt": {
+        "description": "End Date On or Before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours_Per_Day": {
+        "description": "The number of hours in a day. We use this value to calculate FTE. When the Rate Type is not Days, this field becomes read-only.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Opportunity_Reference_Opportunity_Reference_ID_Prompt": {
+        "description": "Opportunity Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Opportunity_Reference_WID_Prompt": {
+        "description": "Opportunity Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Expense_Line_Data": {
+        "description": "Quote Expense Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Item_Line_Data": {
+        "description": "Quote Item Line data for the Quote Service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Name_Prompt": {
+        "description": "Quote name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Number_Prompt": {
+        "description": "Quote Number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Phase_Data": {
+        "description": "Quote Phase data for the Quote Service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Quote_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Role_Line_Data": {
+        "description": "Quote Role Line data for the Quote Service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Billing_Model_Reference_Billing_Model_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Billing_Model_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Cost": {
+        "description": "The total cost for the Quote Service. This field is read-only and ignored on Submit operation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quote_Service_Description": {
+        "description": "The description of the Quote Service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Discount_Percentage": {
+        "description": "Percent value of Quote Service Discount. This field is read-only and ignored on Submit operation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quote_Service_End_Date": {
+        "description": "The end date of the Quote Service. It's determined by the latest Quote Phase end date or the Duration end date. This field is read-only and ignored on Submit operation when the quote service has phases.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_ID": {
+        "description": "Quote Service ID. This is the Quote Service Instance unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Margin_Percentage": {
+        "description": "Percent value of Quote Service Margin . This field is read-only and ignored on Submit operation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quote_Service_Name": {
+        "description": "The name of the quote service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Price": {
+        "description": "The total price for the Quote Service. This field is read-only and ignored on Submit operation.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quote_Service_Project_Billing_Rate_Sheet_Reference_Project_Billing_Rate_Sheet_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Project_Billing_Rate_Sheet_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Project_Hierarchy_Reference_Project_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Project_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Rate_Type_Reference_Unit_of_Time_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Rate_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Sales_Item_Price_List_Reference_Abstract_Sales_Item_Price_List_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Sales_Item_Price_List_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Service_Start_Date": {
+        "description": "The start date for each service associated with this quote.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Status_Reference_Quote_Status_ID_Prompt": {
+        "description": "Quote Status Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Status_Reference_WID_Prompt": {
+        "description": "Quote Status Reference.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quote_Third_Party_Cost_Line_Data": {
+        "description": "Quote Third Party Cost Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "Start Date On or After.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "Start Date On or Before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

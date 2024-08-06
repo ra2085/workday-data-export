@@ -1,0 +1,368 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PettyCashAccounts",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Petty Cash Account ID. This is the Petty Cash Account unique identifier",
+      "field": "Petty_Cash_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Petty Cash Account Name",
+      "field": "Account_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_Cost_Center_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_Custom_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Party_Reference_Region_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Accepted Currencies Reference. When no accepted currencies are passed in the web service, the bank account will accept all currencies.",
+      "field": "Accepted_Currencies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If no payment type is specified, Workday will populate this with the customer's default payment type if one is defined.  Typically this is only populated when it is an electronic payment type whose collection  would be initiated by Workday.",
+      "field": "Payment_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Cash payments",
+      "field": "Used_by_Cash",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Customer payments",
+      "field": "Used_by_Customer_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Expense payments",
+      "field": "Used_by_Expense_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Payroll payments",
+      "field": "Used_by_Payroll",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Supplier payments",
+      "field": "Used_by_Supplier_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Intercompany payments",
+      "field": "Used_by_Intercompany_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Ad Hoc payments",
+      "field": "Used_by_Ad_hoc_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that the account can be used for Bank Account Transfer for Settlement",
+      "field": "Used_by_Bank_Account_Transfers_for_Settlement",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Off-Cycle Payroll payments",
+      "field": "Used_by_Off-Cycle_Payroll",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the petty cash account is usable for pay on-demand payments.",
+      "field": "Used_by_Pay_On_Demand",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Petty Cash Account is usable for Prenote payments",
+      "field": "Used_by_Prenote_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that the account can be used for Miscellaneous Payments",
+      "field": "Used_by_Miscellaneous_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean indicating if the bank account can be used for additional usages",
+      "field": "Allow_Additional_usage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the bank account security segment for the bank account. If segmented security is set up for bank accounts, these segments indicate the security for the bank account.",
+      "field": "Bank_Account_Security_Segment_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accepted_Currencies_Reference": {
+        "description": "Accepted Currencies Reference. When no accepted currencies are passed in the web service, the bank account will accept all currencies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Name": {
+        "description": "Petty Cash Account Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allow_Additional_usage": {
+        "description": "Boolean indicating if the bank account can be used for additional usages",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Bank_Account_Security_Segment_Reference": {
+        "description": "This is the bank account security segment for the bank account. If segmented security is set up for bank accounts, these segments indicate the security for the bank account.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_Cost_Center_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_Custom_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_Region_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Party_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Type_Reference": {
+        "description": "If no payment type is specified, Workday will populate this with the customer's default payment type if one is defined.  Typically this is only populated when it is an electronic payment type whose collection  would be initiated by Workday.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Petty_Cash_Account_ID": {
+        "description": "Petty Cash Account ID. This is the Petty Cash Account unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_by_Ad_hoc_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Ad Hoc payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Bank_Account_Transfers_for_Settlement": {
+        "description": "Indicates that the account can be used for Bank Account Transfer for Settlement",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Cash": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Cash payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Customer_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Customer payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Expense_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Expense payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Intercompany_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Intercompany payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Miscellaneous_Payments": {
+        "description": "Indicates that the account can be used for Miscellaneous Payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Off-Cycle_Payroll": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Off-Cycle Payroll payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Pay_On_Demand": {
+        "description": "Indicates whether the petty cash account is usable for pay on-demand payments.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Payroll": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Payroll payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Prenote_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Prenote payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_by_Supplier_Payments": {
+        "description": "Boolean flag indicating if the Petty Cash Account is usable for Supplier payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

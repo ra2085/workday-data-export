@@ -1,0 +1,93 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalStudentTranscripts_Student_External_Transcript_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Transcript_Attachment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Transcript_Attachment_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Attachment WWS Data",
+      "field": "Attachments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The data load to return",
+      "field": "External_Student_Transcript_Data_Load_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The data load to return",
+      "field": "External_Student_Transcript_Data_Load_Reference_Student_External_Transcript_Data_Load_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Student_and_Universal_ID_Data_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attachments": {
+        "description": "Attachment WWS Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Student_Transcript_Data_Load_Reference_Student_External_Transcript_Data_Load_ID_Prompt": {
+        "description": "The data load to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Student_Transcript_Data_Load_Reference_WID_Prompt": {
+        "description": "The data load to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Transcript_Attachment_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Transcript_Attachment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_and_Universal_ID_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

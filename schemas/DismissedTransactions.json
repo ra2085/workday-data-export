@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DismissedTransactions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The AC Transaction ID of a Dismissed Transaction.",
+      "field": "Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Source_Reference_Accounting_Source_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Source_Stage_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Source_Stage_Reference_Accounting_Source_Stage_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Center_Batch_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Center_Batch_Reference_Accounting_Center_Batch_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The Batch Date of the AC Batch the Dismissed Transaction belongs to.",
+      "field": "Batch_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The error types for a Dismissed Transaction.",
+      "field": "Accounting_Center_Error_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dismissed_Transaction_Resolution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Dismissed_Transaction_Resolution_Reference_Dismissed_Transaction_Resolution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Accounting Source to filter Dismissed Transactions on.. Supports multiple values.",
+      "field": "Accounting_Source_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an Accounting Source to filter Dismissed Transactions on.. Supports multiple values.",
+      "field": "Accounting_Source_Reference_Accounting_Source_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Center_Batch_Reference_Accounting_Center_Batch_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Center_Batch_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Center_Error_Type_Reference": {
+        "description": "The error types for a Dismissed Transaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Reference_Accounting_Source_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Reference_Accounting_Source_Reference_ID_Prompt": {
+        "description": "Reference to an Accounting Source to filter Dismissed Transactions on.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Reference_WID_Prompt": {
+        "description": "Reference to an Accounting Source to filter Dismissed Transactions on.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Stage_Reference_Accounting_Source_Stage_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Source_Stage_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Batch_Date": {
+        "description": "The Batch Date of the AC Batch the Dismissed Transaction belongs to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dismissed_Transaction_Resolution_Reference_Dismissed_Transaction_Resolution_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Dismissed_Transaction_Resolution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_ID": {
+        "description": "The AC Transaction ID of a Dismissed Transaction.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

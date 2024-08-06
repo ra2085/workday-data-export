@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProfessionalAffiliationRelationshipTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique ID for this Professional Affiliation Relationship Type.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name and title of the Professional Affiliation Relationship Type.",
+      "field": "Relationship_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of the Professional Affiliation Relationship Type.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that this Professional Affiliation Relationship Type is currently useable in the organization.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that this Professional Affiliation Relationship Type is currently in use.",
+      "field": "In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "A description of the Professional Affiliation Relationship Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The unique ID for this Professional Affiliation Relationship Type.",
+        "type": [
+          "string"
+        ]
+      },
+      "In_Use": {
+        "description": "Indicates that this Professional Affiliation Relationship Type is currently in use.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates that this Professional Affiliation Relationship Type is currently useable in the organization.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Relationship_Type": {
+        "description": "The name and title of the Professional Affiliation Relationship Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

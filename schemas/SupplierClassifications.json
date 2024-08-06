@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierClassifications",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the supplier classification unique identifier",
+      "field": "Supplier_Classification_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Classification_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Classification_Category_Reference_Custom_Supplier_Classification_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Classification_Category_Reference_Delivered_Supplier_Classification_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for the supplier classification",
+      "field": "Supplier_Classification_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier classification is to be used in the supplier external site",
+      "field": "External_Site",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier classification is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Classification Field Replacement Data",
+      "field": "Supplier_Classification_Field_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Supplier Classification Category (Workday Owned). Supports multiple values.",
+      "field": "Delivered_Custom_Supplier_Classification_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Supplier Classification Category (Workday Owned). Supports multiple values.",
+      "field": "Delivered_Custom_Supplier_Classification_Category_Reference_Delivered_Supplier_Classification_Category_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivered_Custom_Supplier_Classification_Category_Reference_Delivered_Supplier_Classification_Category_Name_Prompt": {
+        "description": "Custom Supplier Classification Category (Workday Owned). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delivered_Custom_Supplier_Classification_Category_Reference_WID_Prompt": {
+        "description": "Custom Supplier Classification Category (Workday Owned). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Site": {
+        "description": "Boolean to indicate if the supplier classification is to be used in the supplier external site",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to indicate if the supplier classification is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Category_Reference_Custom_Supplier_Classification_Category_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Category_Reference_Delivered_Supplier_Classification_Category_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Field_Replacement_Data": {
+        "description": "Supplier Classification Field Replacement Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_ID": {
+        "description": "This is the supplier classification unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Name": {
+        "description": "The name for the supplier classification",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

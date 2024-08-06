@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AuditTagAssignments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Audit Tag.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Audit Tag.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the primary instance to add to the audit tag.",
+      "field": "Primary_Instance_to_Add_Primary_Instance_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the primary instance to delete from the audit tag.",
+      "field": "Primary_Instance_to_Delete_Primary_Instance_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "A unique identifier for the Audit Tag.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "The name of the Audit Tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Instance_to_Add_Primary_Instance_Reference": {
+        "description": "Specifies the primary instance to add to the audit tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Instance_to_Delete_Primary_Instance_Reference": {
+        "description": "Specifies the primary instance to delete from the audit tag.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

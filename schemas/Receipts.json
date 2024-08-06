@@ -1,0 +1,966 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Receipts",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Document Number",
+      "field": "Receipt_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to True to disable both editing this Receipt and creating a Receipt Adjustment inside the Workday application.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bill of Lading recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+      "field": "Bill_of_Lading",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requester of Requisition received by the Receipt. This field is outbound only; any data submitted will be ignored.",
+      "field": "Requester_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+      "field": "Requisition_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tracking Number recorded on Receipt.",
+      "field": "Tracking_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Order Reference recorded on Receipt.This field is outbound only; any data submitted will be ignored.",
+      "field": "Supplier_Order_Ref",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Shipment date/time recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+      "field": "Shipment_Date_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Shipment Contact recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+      "field": "Shipment_Contact",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Bill of Lading Quantity recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+      "field": "Bill_of_Lading_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "License Plate recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+      "field": "License_Plate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Shipment Reference recorded for Receipt. This field is outbound only; any data submitted will be ignored.",
+      "field": "Shipment_Ref",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Reference_Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Document Date",
+      "field": "Document_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Date and Time that the Receipt was Last Updated.",
+      "field": "Last_Updated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_for_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_for_Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_for_Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Header level comment",
+      "field": "ReceiptType_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Receipt Adjustments that adjusts current Receipt.",
+      "field": "Receipt_Adjustment_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Requisition Type of Requisitions included in Receipt.",
+      "field": "Requisition_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Goods item receipt lines",
+      "field": "Item_Receipt_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Line_Reference_Purchase_Order_Line_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Start Date for the Period defined.",
+      "field": "Period_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "End Date for the Period defined.",
+      "field": "Period_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Hours Worked details.",
+      "field": "Hours_Worked_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Additional amount, if any, for the  Receipt Line which is not associated with Hours Worked.",
+      "field": "Additional_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Calculated Amount to Receive based on sum of Hours Worked Data plus Additional Amount (if any).  The Hours Worked Amount is calculated based on the Time Code Rate Multiplier and the Contract Pay Rate on the Purchase Order Line.",
+      "field": "Amount_to_Receive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the Receipt Line.",
+      "field": "Contingent_Worker_Receipt_Line_Replacement_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receipt Service Line Data",
+      "field": "Receipt_Service_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Attachments",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+      "field": "Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receipt Number. Allows for search for a partial sub-string match.",
+      "field": "Receipt_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Receipt Date On or After",
+      "field": "Receipt_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Receipt Date On or Before",
+      "field": "Receipt_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receipt Status. Examples of valid statuses are In Progress, Canceled, Approved, Denied",
+      "field": "Receipt_Status_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+      "field": "Creating_Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+      "field": "Creating_Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+      "field": "Creating_Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Document_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_External_PO_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Order",
+      "field": "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Invoice",
+      "field": "Supplier_Invoice_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Supplier Invoice",
+      "field": "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Search for Receipts Last Updated On or After this Date",
+      "field": "Receipt_Last_Updated_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Search for Receipts last updated On or Before this Date",
+      "field": "Receipt_Last_Updated_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Amount": {
+        "description": "Additional amount, if any, for the  Receipt Line which is not associated with Hours Worked.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Amount_to_Receive": {
+        "description": "Calculated Amount to Receive based on sum of Hours Worked Data plus Additional Amount (if any).  The Hours Worked Amount is calculated based on the Time Code Rate Multiplier and the Contract Pay Rate on the Purchase Order Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Attachments",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill_of_Lading": {
+        "description": "Bill of Lading recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill_of_Lading_Quantity": {
+        "description": "Bill of Lading Quantity recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contingent_Worker_Receipt_Line_Replacement_Memo": {
+        "description": "Memo for the Receipt Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_for_Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_for_Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_for_Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Creating_Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Creating_Worker_Reference_Employee_ID_Prompt": {
+        "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Creating_Worker_Reference_WID_Prompt": {
+        "description": "Reference to the Creating Worker for the Receipt. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Date": {
+        "description": "Document Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hours_Worked_Data": {
+        "description": "Hours Worked details.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Receipt_Line_Replacement_Data": {
+        "description": "Goods item receipt lines",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Updated": {
+        "description": "Date and Time that the Receipt was Last Updated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "License_Plate": {
+        "description": "License Plate recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "Set to True to disable both editing this Receipt and creating a Receipt Adjustment inside the Workday application.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_WID_Prompt": {
+        "description": "Reference to an existing Company or Company Hierarchy. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_End_Date": {
+        "description": "End Date for the Period defined.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Start_Date": {
+        "description": "Start Date for the Period defined.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_Line_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_Purchase_Order_Line_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Document_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_External_PO_Number_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_Purchase_Order_Reference_ID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ReceiptType_Memo": {
+        "description": "Header level comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Adjustment_Reference": {
+        "description": "Reference to Receipt Adjustments that adjusts current Receipt.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Date_On_or_After_Prompt": {
+        "description": "Receipt Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Date_On_or_Before_Prompt": {
+        "description": "Receipt Date On or Before",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Last_Updated_Date_On_or_After_Prompt": {
+        "description": "Search for Receipts Last Updated On or After this Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Last_Updated_Date_On_or_Before_Prompt": {
+        "description": "Search for Receipts last updated On or Before this Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Number": {
+        "description": "Document Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Number_Prompt": {
+        "description": "Receipt Number. Allows for search for a partial sub-string match.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Service_Line_Replacement_Data": {
+        "description": "Receipt Service Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Status_Prompt": {
+        "description": "Receipt Status. Examples of valid statuses are In Progress, Canceled, Approved, Denied",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference": {
+        "description": "Requester of Requisition received by the Receipt. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Reference": {
+        "description": "Requisition recorded on Receipt. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Type_Reference": {
+        "description": "Reference to the Requisition Type of Requisitions included in Receipt.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipment_Contact": {
+        "description": "Shipment Contact recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipment_Date_Time": {
+        "description": "Shipment date/time recorded on ASN which receipt was created from. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipment_Ref": {
+        "description": "Shipment Reference recorded for Receipt. This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the transaction is to be submitted or saved in draft mode. If this flag is set, the transaction will be submitted, otherwise the transaction is saved in draft.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_Supplier_Invoice_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier Invoice",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier Invoice",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Order_Ref": {
+        "description": "Supplier Order Reference recorded on Receipt.This field is outbound only; any data submitted will be ignored.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Internal_Service_Provider_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "Reference to an existing Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tracking_Number": {
+        "description": "Tracking Number recorded on Receipt.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

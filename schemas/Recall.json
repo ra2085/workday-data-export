@@ -1,0 +1,602 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Recall",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Workday generated recall identification number.",
+      "field": "Recall_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Reference_Number_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Reference_Number_Reference_Recall_Reference_Number_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Source_Reference_Recall_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Severity_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Severity_Reference_Recall_Severity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recall_Category_Reference_Recall_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reason for the recall.",
+      "field": "Reason_for_Recall",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional description of the recall.",
+      "field": "Recall_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the manufacturer that initiated the recall.",
+      "field": "Manufacturer_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The distributor for the recall.",
+      "field": "Distributor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the recall alert was received.",
+      "field": "Date_Received",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The FDA date for the recall if applicable.",
+      "field": "FDA_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the recall alert is due.",
+      "field": "Due_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The closed date for the recall.",
+      "field": "Recall_Date_Closed",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_By_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_By_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Created_By_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Document_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The memo on the recall header.",
+      "field": "Recall_Header_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all recall line data.",
+      "field": "Recall_Line_Outbound_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Reference Number field on recall requests.. Supports multiple values.",
+      "field": "Recall_Reference_Number_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Reference Number field on recall requests.. Supports multiple values.",
+      "field": "Recall_Reference_Number_Reference_Recall_Reference_Number_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Source field.. Supports multiple values.",
+      "field": "Recall_Source_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Source field.. Supports multiple values.",
+      "field": "Recall_Source_Reference_Recall_Source_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Severity field.. Supports multiple values.",
+      "field": "Recall_Severity_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Severity field.. Supports multiple values.",
+      "field": "Recall_Severity_Reference_Recall_Severity_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Category field.. Supports multiple values.",
+      "field": "Recall_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Recall Category field.. Supports multiple values.",
+      "field": "Recall_Category_Reference_Recall_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the manufacturer that initiated the recall.",
+      "field": "Manufacturer_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The distributor for the recall.",
+      "field": "Distributor_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The period before or, the date the recall is due for completion.",
+      "field": "Due_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date of, or the period of time after the recall is due for completion.",
+      "field": "Due_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on or the period before the recall was received.",
+      "field": "Date_Received_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on or the period after the recall was received.",
+      "field": "Date_Received_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on or the period before the FDA issued the recall alert.",
+      "field": "FDA_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on or the period after the FDA issued the recall alert.",
+      "field": "FDA_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+      "field": "Created_By_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+      "field": "Created_By_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+      "field": "Created_By_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The document status for the recall.. Supports multiple values.",
+      "field": "Recall_Document_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The document status for the recall.. Supports multiple values.",
+      "field": "Recall_Document_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Created_By_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Reference_Employee_ID_Prompt": {
+        "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_By_Reference_WID_Prompt": {
+        "description": "Reference for the Created By field on the recall.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Received": {
+        "description": "The date the recall alert was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Received_On_or_After_Prompt": {
+        "description": "The date on or the period after the recall was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Received_On_or_Before_Prompt": {
+        "description": "The date on or the period before the recall was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Distributor": {
+        "description": "The distributor for the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Distributor_Prompt": {
+        "description": "The distributor for the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date": {
+        "description": "The date the recall alert is due.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_After_Prompt": {
+        "description": "The date of, or the period of time after the recall is due for completion.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Due_Date_On_or_Before_Prompt": {
+        "description": "The period before or, the date the recall is due for completion.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FDA_Date": {
+        "description": "The FDA date for the recall if applicable.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FDA_Date_On_or_After_Prompt": {
+        "description": "The date on or the period after the FDA issued the recall alert.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FDA_Date_On_or_Before_Prompt": {
+        "description": "The date on or the period before the FDA issued the recall alert.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manufacturer_Name": {
+        "description": "The name of the manufacturer that initiated the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Manufacturer_Name_Prompt": {
+        "description": "The name of the manufacturer that initiated the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_for_Recall": {
+        "description": "The reason for the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Category_Reference_Recall_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Category_Reference_Recall_Category_ID_Prompt": {
+        "description": "Reference to the Recall Category field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Category_Reference_WID_Prompt": {
+        "description": "Reference to the Recall Category field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Date_Closed": {
+        "description": "The closed date for the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Description": {
+        "description": "Optional description of the recall.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Document_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "The document status for the recall.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Document_Status_Reference_WID_Prompt": {
+        "description": "The document status for the recall.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Header_Memo": {
+        "description": "The memo on the recall header.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_ID": {
+        "description": "The Workday generated recall identification number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Line_Outbound_Data": {
+        "description": "Element containing all recall line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_Number_Reference_Recall_Reference_Number_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_Number_Reference_Recall_Reference_Number_ID_Prompt": {
+        "description": "Reference to the Recall Reference Number field on recall requests.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_Number_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Reference_Number_Reference_WID_Prompt": {
+        "description": "Reference to the Recall Reference Number field on recall requests.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Severity_Reference_Recall_Severity_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Severity_Reference_Recall_Severity_ID_Prompt": {
+        "description": "Reference to the Recall Severity field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Severity_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Severity_Reference_WID_Prompt": {
+        "description": "Reference to the Recall Severity field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Source_Reference_Recall_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Source_Reference_Recall_Source_ID_Prompt": {
+        "description": "Reference to the Recall Source field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recall_Source_Reference_WID_Prompt": {
+        "description": "Reference to the Recall Source field.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

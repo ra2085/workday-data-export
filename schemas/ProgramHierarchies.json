@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProgramHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program Hierarchy Reference ID.  This is the Program Hierarchy unique identifier.",
+      "field": "Program_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program Hierarchy Name.",
+      "field": "Program_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Program Hierarchy ID in the Program Hierarchy Name.",
+      "field": "Include_Program_Hierarchy_ID_In_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true Inactivates the Program Hierarchy.",
+      "field": "Program_Hierarchy_is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Program_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Program_Hierarchy_Reference_Program_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Programs to add as the subordinates.",
+      "field": "Contains_Program_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Contains_Program_Reference": {
+        "description": "Reference to existing Programs to add as the subordinates.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Program_Hierarchy_ID_In_Name": {
+        "description": "Boolean flag which when set to true will include the Program Hierarchy ID in the Program Hierarchy Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Program_Hierarchy_Reference_Program_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Program_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Hierarchy_ID": {
+        "description": "Program Hierarchy Reference ID.  This is the Program Hierarchy unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Hierarchy_Name": {
+        "description": "Program Hierarchy Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_Hierarchy_is_Inactive": {
+        "description": "Boolean Flag which when set to true Inactivates the Program Hierarchy.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

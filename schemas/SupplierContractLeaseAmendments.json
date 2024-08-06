@@ -1,0 +1,406 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierContractLeaseAmendments",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Lease_Amendment_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Lease_Amendment_Reference_Supplier_Contract_Amendment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_To_Amend_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_To_Amend_Reference_Supplier_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_To_Amend_Reference_Supplier_Contract_ID_External",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Lease_Amendment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contract_Lease_Amendment_Type_Reference_Supplier_Contract_Lease_Amendment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Lease Contract.",
+      "field": "Contract_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Supplier Contract Amendment Signed Date",
+      "field": "Amendment_Signed_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Lease Liability Reassessment Date",
+      "field": "Lease_Liability_Reassessment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Amendment Payment Effective Date",
+      "field": "Payment_Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Contract End Date",
+      "field": "Contract_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Amendment Description",
+      "field": "Amendment_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Amendment Number",
+      "field": "Amendment_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Contract Amount",
+      "field": "Total_Contract_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When you select the Additional Payment checkbox, we include additional installment to the payment information grid",
+      "field": "Additional_Payment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Interest Rate (%)",
+      "field": "Interest_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Fixed Payment Amount",
+      "field": "Fixed_Payment_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Represents a single payment for the amount on the provided payment date. Only applies to Variable Payment lease contracts.",
+      "field": "Lease_Payment_Line_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Contract(s) Reference for Interest Rate Modification",
+      "field": "Alternate_Contract_Interest_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data and Attachment Category data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Additional_Payment": {
+        "description": "When you select the Additional Payment checkbox, we include additional installment to the payment information grid",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Alternate_Contract_Interest_Rate_Data": {
+        "description": "Alternate Contract(s) Reference for Interest Rate Modification",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amendment_Description": {
+        "description": "Supplier Contract Amendment Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amendment_Number": {
+        "description": "Supplier Contract Amendment Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amendment_Signed_Date": {
+        "description": "Supplier Contract Amendment Signed Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data and Attachment Category data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_End_Date": {
+        "description": "Contract End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Name": {
+        "description": "Name of the Lease Contract.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fixed_Payment_Amount": {
+        "description": "Fixed Payment Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Interest_Rate": {
+        "description": "Interest Rate (%)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Lease_Liability_Reassessment_Date": {
+        "description": "Lease Liability Reassessment Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Payment_Line_Replacement_Data": {
+        "description": "Represents a single payment for the amount on the provided payment date. Only applies to Variable Payment lease contracts.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_WID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Effective_Date": {
+        "description": "Amendment Payment Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Lease_Amendment_Reference_Supplier_Contract_Amendment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Lease_Amendment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Supplier_Contract_Lease_Amendment_Type_Reference_Supplier_Contract_Lease_Amendment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Lease_Amendment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_To_Amend_Reference_Supplier_Contract_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_To_Amend_Reference_Supplier_Contract_ID_External": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_To_Amend_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Contract_Amount": {
+        "description": "Total Contract Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

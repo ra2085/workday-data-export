@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "GenderIdentities",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The gender identity ID.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The display order for the Gender Identity value.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The gender identity for workers.",
+      "field": "Gender_Identity_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The gender identity code.",
+      "field": "Gender_Identity_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The gender identity description.",
+      "field": "Gender_Identity_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The inactive flag for gender identity.",
+      "field": "Gender_Identity_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Gender_Identity_Code": {
+        "description": "The gender identity code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gender_Identity_Description": {
+        "description": "The gender identity description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Gender_Identity_Inactive": {
+        "description": "The inactive flag for gender identity.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Gender_Identity_Name": {
+        "description": "The gender identity for workers.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The gender identity ID.",
+        "type": [
+          "string"
+        ]
+      },
+      "Order": {
+        "description": "The display order for the Gender Identity value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicProgressforStudent_Program_of_Study_Student_Academic_Progress_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "StudentAcademicProgress_Student_Record_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Program_of_Study_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Program_of_Study_Reference_Program_of_Study_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Program_of_Study_Type_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Requirements Effective Date for the Program of Study.",
+      "field": "Requirements_Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Conditional Inheritable Academic Progress Data Reference",
+      "field": "Requirement_Area_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Program_of_Study_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Reference. Supports multiple values.",
+      "field": "Program_of_Study_Reference_Program_of_Study_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program of Study Type Category. Supports multiple values.",
+      "field": "Program_of_Study_Type_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Program of Study Type Category. Supports multiple values.",
+      "field": "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Program_of_Study_Reference_Program_of_Study_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Reference_Program_of_Study_ID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Reference_WID_Prompt": {
+        "description": "Student Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_Program_of_Study_Type_Category_ID_Prompt": {
+        "description": "Program of Study Type Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Program_of_Study_Type_Category_Reference_WID_Prompt": {
+        "description": "Program of Study Type Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requirement_Area_Data": {
+        "description": "Student Conditional Inheritable Academic Progress Data Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requirements_Effective_Date": {
+        "description": "The Requirements Effective Date for the Program of Study.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "StudentAcademicProgress_Student_Record_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

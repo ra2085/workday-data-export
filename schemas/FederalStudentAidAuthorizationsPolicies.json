@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FederalStudentAidAuthorizationsPolicies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Federal_Student_Aid_Authorizations_Policy_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Federal_Student_Aid_Authorizations_Policy_Reference_Academic_Unit_Policy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Snapshot Effective Date",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Institution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Institution_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Federal_Student_Aid_Authorizations_Duration_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Federal_Student_Aid_Authorizations_Duration_Reference_Duration_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Lock Federal Student Aid Applications to Non-Institutional Charges: if this is true then Federal Student Aid Applications will not be un-applied during Student Auto-Application Job.",
+      "field": "Lock_Authorized_Payment_Applications_to_Non-Institutional_Charges",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true then true then student must un-check options to opt out.",
+      "field": "Opt_Out",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true then PLUS Loan can be utilized for non-Institutional charges",
+      "field": "Use_Direct_PLUS_Loan_Authorizations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Federal Student Aid Authorization to Pay for Non-Institutional Charges: if true then student will get option to authorize for FSA payments to pay non-institutional charges.",
+      "field": "Request_Federal_Student_Aid_Authorization_to_Pay_for_Non-Institutional_Charges",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "Snapshot Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_Student_Aid_Authorizations_Duration_Reference_Duration_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_Student_Aid_Authorizations_Duration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_Student_Aid_Authorizations_Policy_Reference_Academic_Unit_Policy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Federal_Student_Aid_Authorizations_Policy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lock_Authorized_Payment_Applications_to_Non-Institutional_Charges": {
+        "description": "Lock Federal Student Aid Applications to Non-Institutional Charges: if this is true then Federal Student Aid Applications will not be un-applied during Student Auto-Application Job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Opt_Out": {
+        "description": "If true then true then student must un-check options to opt out.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Request_Federal_Student_Aid_Authorization_to_Pay_for_Non-Institutional_Charges": {
+        "description": "Request Federal Student Aid Authorization to Pay for Non-Institutional Charges: if true then student will get option to authorize for FSA payments to pay non-institutional charges.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_Direct_PLUS_Loan_Authorizations": {
+        "description": "If true then PLUS Loan can be utilized for non-Institutional charges",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

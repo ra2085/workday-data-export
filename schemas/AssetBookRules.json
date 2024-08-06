@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssetBookRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Book_Reference_Asset_Book_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing asset book rule replacement data",
+      "field": "Asset_Book_Rule_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+      "field": "Asset_Books_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+      "field": "Asset_Books_Reference_Asset_Book_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Asset_Book_Reference_Asset_Book_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Asset_Book_Rule_Replacement_Data": {
+        "description": "Element containing asset book rule replacement data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Books_Reference_Asset_Book_ID_Prompt": {
+        "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Books_Reference_WID_Prompt": {
+        "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

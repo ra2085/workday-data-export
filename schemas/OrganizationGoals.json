@@ -1,0 +1,263 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "OrganizationGoals",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Goal_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Goal_Reference_Organization_Goal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of an Organization Goal",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Goal_Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Goal_Period_Reference_Goal_Plan_Period_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of an Organization Goal",
+      "field": "Goal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the percentage value in whole numbers to 2 decimal places (Example: for 42 percent enter .42).",
+      "field": "Percent_Complete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supports_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supports_Reference_Organization_Goal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References Initiatives that are supported by the Organization this Organization Goal is for",
+      "field": "Supporting_Initiatives_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Private boolean that signifies whether this Organization Goal can only be seen by members in this Organization chain or not",
+      "field": "Private",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean that signifies whether or not this Organization Goal is Archived.",
+      "field": "Organization_Goal_Archived",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether Organization Goal completion percentage is automatically calculated.",
+      "field": "Calculated",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+      "field": "Goal_Plan_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+      "field": "Goal_Plan_Period_Reference_Goal_Plan_Period_Definition_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculated": {
+        "description": "Specifies whether Organization Goal completion percentage is automatically calculated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Goal": {
+        "description": "The name of an Organization Goal",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Period_Reference_Goal_Plan_Period_Definition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Plan_Period_Reference_Goal_Plan_Period_Definition_ID_Prompt": {
+        "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Plan_Period_Reference_WID_Prompt": {
+        "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID of an Organization Goal",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Goal_Archived": {
+        "description": "Boolean that signifies whether or not this Organization Goal is Archived.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Goal_Reference_Organization_Goal_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Goal_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Organization_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Percent_Complete": {
+        "description": "Enter the percentage value in whole numbers to 2 decimal places (Example: for 42 percent enter .42).",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Private": {
+        "description": "Private boolean that signifies whether this Organization Goal can only be seen by members in this Organization chain or not",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "Element which contains the Supervisory Org and Goal Plan Period references that define the Organization Goal Request Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supporting_Initiatives_Reference": {
+        "description": "References Initiatives that are supported by the Organization this Organization Goal is for",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supports_Reference_Organization_Goal_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supports_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

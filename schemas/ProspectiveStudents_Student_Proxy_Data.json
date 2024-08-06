@@ -1,0 +1,238 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProspectiveStudents_Student_Proxy_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Proxy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Proxy_Reference_Student_Proxy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Relationship_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Relationship_Reference_Student_Proxy_Relationship_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the Student Proxy Type for the Student Prospect.",
+      "field": "Relationship_Types_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Student Proxy for the Student Prospect",
+      "field": "Legal_Name_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The contact information for the Student Proxy for the Student Prospect",
+      "field": "Contact_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Friends and Family Details information for the Friends and Family for the Student.",
+      "field": "Student_Friends_and_Family_Details_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The academic unit of the student prospect.. Supports multiple values.",
+      "field": "Academic_Units_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request criteria for Return Students with Recruitments",
+      "field": "Return_Students_with_Recruitments_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Applications",
+      "field": "Return_Students_with_Applications_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Education Tests",
+      "field": "Return_Students_with_Education_Tests_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Criteria for Return Students with Transcripts",
+      "field": "Return_Students_with_Transcripts_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+      "field": "Student_Application_Reference_Student_Application_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+      "field": "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Units_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Units_Reference_WID_Prompt": {
+        "description": "The academic unit of the student prospect.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contact_Information_Data": {
+        "description": "The contact information for the Student Proxy for the Student Prospect",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Test_Registration_Number_Criteria_Registration_Number_Prompt": {
+        "description": "The Education Test Result Registration Number of a Student's Education Test. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legal_Name_Data": {
+        "description": "The name of the Student Proxy for the Student Prospect",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Relationship_Reference_Student_Proxy_Relationship_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Relationship_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Relationship_Types_Reference": {
+        "description": "References the Student Proxy Type for the Student Prospect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Students_with_Applications_Prompt": {
+        "description": "Request Criteria for Return Students with Applications",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Education_Tests_Prompt": {
+        "description": "Request Criteria for Return Students with Education Tests",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Recruitments_Prompt": {
+        "description": "Request criteria for Return Students with Recruitments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_Students_with_Transcripts_Prompt": {
+        "description": "Request Criteria for Return Students with Transcripts",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_Student_Application_ID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_Reference_WID_Prompt": {
+        "description": "Reference to Student Application [Nonsingular] (Secured). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Friends_and_Family_Details_Data": {
+        "description": "Contains Friends and Family Details information for the Friends and Family for the Student.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Proxy_Reference_Student_Proxy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Proxy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

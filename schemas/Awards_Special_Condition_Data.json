@@ -1,0 +1,264 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Awards_Special_Condition_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Award_Award_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Special_Condition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Special_Condition_Reference_Special_Condition_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Special Condition Reference ID. This is the Special Condition unique identifier.",
+      "field": "Special_Condition_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Special_Condition_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Special_Condition_Type_Reference_Special_Condition_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Special Condition Comment for Special Condition.",
+      "field": "Special_Condition_Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Award to return",
+      "field": "Award_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Award to Return",
+      "field": "Award_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+      "field": "Award_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+      "field": "Award_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Awards with an Effective date on or after this date will be returned.",
+      "field": "Award_Effective_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Awards with an Effective Date on or before this date will be returned.",
+      "field": "Award_Effective_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Award_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Effective_Date_On_or_After_Prompt": {
+        "description": "Awards with an Effective date on or after this date will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Effective_Date_On_or_Before_Prompt": {
+        "description": "Awards with an Effective Date on or before this date will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Name_Prompt": {
+        "description": "Name of the Award to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_ID_Prompt": {
+        "description": "ID of the Award to Return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Status_Reference_WID_Prompt": {
+        "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Special_Condition_Reference_Special_Condition_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Special_Condition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Comment": {
+        "description": "Special Condition Comment for Special Condition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Reference_ID": {
+        "description": "The Special Condition Reference ID. This is the Special Condition unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Type_Reference_Special_Condition_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Special_Condition_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_ID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_WID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

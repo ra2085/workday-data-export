@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierContractLeaseAmendments_Lease_Payment_Line_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SupplierContractLeaseAmendment_Supplier_Contract_Lease_Amendment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date of the lease payment.",
+      "field": "Payment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The payment amount for this lease payment line.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+      "field": "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "The payment amount for this lease payment line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lease_Supplier_Contract_Reference_WID_Prompt": {
+        "description": "Supplier Contract Reference for Amendment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Date": {
+        "description": "The date of the lease payment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SupplierContractLeaseAmendment_Supplier_Contract_Lease_Amendment_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

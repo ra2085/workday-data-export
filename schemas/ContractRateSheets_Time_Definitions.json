@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ContractRateSheets_Time_Definitions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ContractRateSheet_Contract_Rate_Sheet_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Hours From for the Time Definition",
+      "field": "Hours_From",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Hours To for the Time Definition",
+      "field": "Hours_To",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Conversion Rate for the Time Definition",
+      "field": "Conversion_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Max Tier for the Time definition. There will be only one max tier.",
+      "field": "Max_Tier",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ContractRateSheet_Contract_Rate_Sheet_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Conversion_Rate": {
+        "description": "Conversion Rate for the Time Definition",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Hours_From": {
+        "description": "Hours From for the Time Definition",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Hours_To": {
+        "description": "Hours To for the Time Definition",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Max_Tier": {
+        "description": "Max Tier for the Time definition. There will be only one max tier.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

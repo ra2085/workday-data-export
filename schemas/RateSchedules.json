@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RateSchedules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Rate Schedule.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Rate Schedule.",
+      "field": "Rate_Schedule_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Rate Schedule Line data.",
+      "field": "Rate_Schedule_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The ID of the Rate Schedule.",
+        "type": [
+          "string"
+        ]
+      },
+      "Rate_Schedule_Line_Data": {
+        "description": "Contains the Rate Schedule Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Schedule_Name": {
+        "description": "The Name of the Rate Schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

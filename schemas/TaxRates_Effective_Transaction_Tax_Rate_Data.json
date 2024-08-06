@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxRates_Effective_Transaction_Tax_Rate_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "TaxRate_Tax_Rate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the snapshot comes into effect.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Tax Rate Percentage for the snapshot.",
+      "field": "Tax_Rate_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provided as criteria to search for tax rate names that contain the search string.",
+      "field": "Tax_Rate_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+      "field": "Tax_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+      "field": "Tax_Category_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to search for third party tax rates only. If true, return third party tax rates only. If false or not provided, return all tax rates.",
+      "field": "Third_Party_Tax_Rate_Only_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Country_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The date the snapshot comes into effect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TaxRate_Tax_Rate_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_ID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_WID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_Tax_Category_ID_Prompt": {
+        "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_WID_Prompt": {
+        "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Name_Prompt": {
+        "description": "Provided as criteria to search for tax rate names that contain the search string.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Percentage": {
+        "description": "The Tax Rate Percentage for the snapshot.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Third_Party_Tax_Rate_Only_Prompt": {
+        "description": "Indicates whether to search for third party tax rates only. If true, return third party tax rates only. If false or not provided, return all tax rates.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,3163 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkdayCompanies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "VAT on Payment, set to true for VAT on Payment option for Company, otherwise set to false.",
+      "field": "VAT_on_Payment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Generate Award Costs at Expenditure",
+      "field": "Generate_Award_Costs_at_Business_Process_Completion",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date to Generate Award Costs at Expenditure",
+      "field": "Begin_Effective_Date_To_Generate_Award_Costs",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Ignore award line dates when processing award costs",
+      "field": "Ignore_Award_Line_Dates_for_Award_Costs",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Cost_Processing_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Cost_Processing_Rule_Reference_Award_Cost_Processing_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Cost Processing Rule Reference ID used for Integration.",
+      "field": "Award_Cost_Processing_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Spend_Category_for_Facilities_and_Administration_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Spend_Category_for_Facilities_and_Administration_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Object_Class_for_Facilities_and_Administration_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Override_Object_Class_for_Facilities_and_Administration_Reference_Object_Class_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Workday uses the Tax Recovery Pro Rata Factor Percentage to reduce the tax recoverability amount on transactions for this company. The value ranges from 0 to 1 with 3 decimal places of precision. Set to 1 in order to use the full amount (100%) of the calculated tax recoverability. There is no tax recoverability on transactions for this company if you don't specify a value or set it to 0.",
+      "field": "Company_Tax_Recovery_Pro_Rata_Factor_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID element in where we specify 1 or more Tax ID's for a company.",
+      "field": "Tax_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Status Data element to specify 1 or more Tax Statuses for a company.",
+      "field": "Tax_Status_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Industry Code element where we specify 1 or more Industry Codes for the Company.",
+      "field": "Industry_Code_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workers_Compensation_Carrier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workers_Compensation_Carrier_Reference_Workers__Compensation_Carrier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+      "field": "Organization_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phonetic Name",
+      "field": "Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Organization_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Include_Organization_Code_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+      "field": "Organization_Active",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+      "field": "Availability_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Visibility_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "External_URL_Reference_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+      "field": "Integration_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference information for Organizations that include this Organization in their Organization hierarchy",
+      "field": "Organization_Container_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Information",
+      "field": "Phone_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Email Address Information",
+      "field": "Email_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instant Messenger Information",
+      "field": "Instant_Messenger_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web Address Information",
+      "field": "Web_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Override_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Rate_Type_Override_Reference_Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Schedule_Reference_Fiscal_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to any alternate Fiscal Schedules used by a company",
+      "field": "Alternate_Fiscal_Schedule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Set_Reference_Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Account_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Account_Set_Reference_Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Account_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Account_Set_Reference_Account_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Control_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Control_Rule_Set_Reference_Account_Control_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Posting_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Posting_Rule_Set_Reference_Account_Posting_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Translation_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Account_Translation_Rule_Set_Reference_Account_Translation_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Switch debits to credits when accounting transactions are reversed.",
+      "field": "Reverse_Debit_Credit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Reverse the sign when accounting transactions are revered.",
+      "field": "Keep_Debit_Credit_and_Reverse_Sign",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Reporting_Book_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Reporting_Book_Reference_Book_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Average_Daily_Balance_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Average_Daily_Balance_Rule_Reference_Average_Daily_Balance_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective date to begin average daily balance calculations",
+      "field": "Average_Daily_Balance_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Tax_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Tax_Option_Reference_Tax_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enables Third Party Tax Service for Company.",
+      "field": "Use_Third_Party_Tax_Service",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Third Party Tax Service used by Company.",
+      "field": "Tax_Service_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allows Customer Invoice Accounting in Arrears.",
+      "field": "Allow_Invoice_Accounting_in_Arrears",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Allow Accounting in Arrears Set for the company",
+      "field": "Allow_Accounting_in_Arrears_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Makes Accounting Date Required on Invoice Documents.  Can only be enabled if 'Allow Accounting in Arrears' is enabled.",
+      "field": "Accounting_Date_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Automatic Journal Line Numbering for this company",
+      "field": "Enable_Automatic_Journal_Line_Numbering",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Disallow Change to Operational Transactions",
+      "field": "Disallow_Change_to_Operational_Transactions_in_Closed_Periods",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Stores the Translation Currency for the current Company; can store a list as well. And Company Currency can't be a Translation Currency.",
+      "field": "Translation_Currency_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If set to True, this Company will be configured to use Advanced Customer Payment Auto-Application. If set to True, then a Customer Payment Application Rule Set is also required.",
+      "field": "Advanced",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Payment_Application_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Payment_Application_Rule_Set_Reference_Customer_Payment_Application_Rule_Set_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If set to True, this company will be configured to Not Apply Payments to Customer Invoices On Hold.",
+      "field": "Do_Not_Apply_Payment_to_Invoices_on_Hold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether Journals created by a company should have a sequence",
+      "field": "Enable_Journal_Sequencing",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sequence_Generator_Rule_Configuration_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Sequence_Generator_Rule_Configuration_Reference_Sequence_Generator_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Year_for_Ledger_Posting_Interval_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Year_for_Ledger_Posting_Interval_Reference_Fiscal_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Posting_Interval_for_Ledger_Posting_Interval_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fiscal_Posting_Interval_for_Ledger_Posting_Interval_Reference_Fiscal_Posting_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether the Rule Configuration will be used to create ID Generators whenever new Ledger Years are created",
+      "field": "Create_Sequence_ID_Generators_with_New_Ledger_Years",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Contains consolidation option of purchase orders for requisition",
+      "field": "Consolidate_Requisitions_on_Purchase_Orders",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Contains a value to include or exclude the ship-to address on requisition lines as a consolidation option when creating purchase orders.",
+      "field": "Exclude_Ship-To_Address_when_Consolidating_Requisition_Lines",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Commodity_Code_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Commodity_Code_Type_Reference_Commodity_Code_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Contains a  value to include or exclude the purchase items that are having catalog entries.",
+      "field": "Exclude_Purchase_Items_having_Catalog_or_Supplier_Item_Entries",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Used to return only priority one supplier/manufacturers for purchase items when using Search Catalog.",
+      "field": "Exclude_Catalog_and_Supplier_Items_from_Secondary_Suppliers_in_Catalog_Search",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to only show purchase items when purchase items don’t have any priority supplier items. When purchase item is added to cart, requisition sourcing rules still apply.",
+      "field": "Show_Purchase_Items_when_there_is_No_Priority_Supplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to display the Edit Requisition Defaults option on requisition tasks. This option enables users to mass update values, such as supplier or worktags, for applicable lines.",
+      "field": "Enable_Requisition_Line_Defaults",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Requisition Auto-Sourcing for Non-Catalog Lines",
+      "field": "Enable_Requisition_Auto-Sourcing_for_Non-Catalog_Lines",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This enables Transaction Tax on Requisition.",
+      "field": "Enable_Transaction_Tax_on_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable to default fulfillment sources and tax attributes, not already subject to sourcing and tax rules, from linked purchase item. Linked purchase items with matching inventory site sourcing rules will populate requisitions with resulting inventory site and/or fulfillment source from rule.",
+      "field": "Enable_Requisition_Line_Attributes_to_Default_from_Linked_Purchase_Item",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Root_Node_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Hierarchy_Root_Node_Reference_Resource_Category_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Replenishment_Requisition_Rounding_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Replenishment_Requisition_Rounding_Option_Reference_Rounding_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Replenishment_Requisition_Rounding_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Par_Replenishment_Requisition_Rounding_Option_Reference_Rounding_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "List of RFQ notifications to be sent.",
+      "field": "Request_for_Quote_Notification_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Contact_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-To_Contact_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-To_Contact_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Bill-To_Contact_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Method_Reference_Shipping_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Terms_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Terms_Reference_Shipping_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ship-To_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow change of UOM and Unit Cost of stockable purchase items on replenishment requisitions.",
+      "field": "Allow_Change_of_UOM_and_Unit_Cost_of_Stockable_Purchase_Item_on_Replenishment_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow change of UOM of stockable purchase items on non-replenishment requisitions.",
+      "field": "Allow_Change_of_UOM_of_Stockable_Purchase_Item_on_NonReplenishment_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow change of UOM and Unit Cost of non-stockable purchase items on non-replenishment requisitions.",
+      "field": "Allow_Change_of_UOM_and_Unit_Cost_of_NonStockable_Purchase_Item_on_NonReplenishment_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If enabled, this option allows users to change the unit of measure and unit cost of purchase items on bill only requisition types.",
+      "field": "Allow_Change_of_UOM_and_Unit_Cost_of_Purchase_Item_on_Bill_Only_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow change of UOM of catalog items on all requisition types.",
+      "field": "Enable_Unit_of_Measure_Change_for_Catalog_Items_on_Requisitions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to True disables Lot and Serial Capture on Receipts. Overrides values set in: Lot Capture Mandatory on Receipt and Serials Capture Mandatory on Receipt. Also overrides Item level Lot and Serial settings.",
+      "field": "Disable_Lot_and_Serials_Capture_on_Receipt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to True makes the capturing of Lots mandatory on Receipt for Lot Controlled Items. This field is always set to False If Disable Lot and Serials Capture on Receipt is set to True.",
+      "field": "Lot_Capture_Mandatory_on_Receipt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to True makes the capturing of Serials on Receipt mandatory for Serial Controlled Items.  This field is always set to False If Disable Lot and Serials Capture on Receipt is set to True.",
+      "field": "Serials_Capture_Mandatory_on_Receipt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lot_Expiration_Behavior_for_Lots_within_Alert_Period_on_Receipt_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lot_Expiration_Behavior_for_Lots_within_Alert_Period_on_Receipt_Reference_Lot_Expiration_Behavior_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lot_Expiration_Behavior_for_Expired_Lots_on_Receipt_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Lot_Expiration_Behavior_for_Expired_Lots_on_Receipt_Reference_Lot_Expiration_Behavior_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Exclude Draft Receipts on Received Quantities",
+      "field": "Exclude_received_quantities_from_Draft_and_In_Progress_Receipts",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Automatically Close Purchase Orders",
+      "field": "Automatically_Close_Purchase_Orders",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Disable Service Lines on Requisitions",
+      "field": "Disable_Service_Lines_on_Requisitions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Disable Project Based Service Lines on Requisitions",
+      "field": "Disable_Project_Based_Service_Lines_on_Requisitions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Freight and Other Charges on Requisition",
+      "field": "Enable_Freight_and_Other_Charges_on_Requisition",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Generate PDFs for all Purchase Orders",
+      "field": "Generate_PDFs_for_all_Purchase_Orders",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Disable Default Delivery Type for Stock Items",
+      "field": "Disable_Default_Delivery_Type_for_Stock_Items",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Excludes header-level revenue worktags when routing to related security groups on the Internal Service Delivery business process.",
+      "field": "Exclude_Header_Worktags_from_Business_Process",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The supplier accounts options for the company",
+      "field": "Supplier_Accounts_Options",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The supplier invoice attributes for the company.",
+      "field": "Supplier_Invoice_Attributes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Prevent changes to invoice after final print run for a company. If you enable this feature, you can't disable it once invoices are created.",
+      "field": "Prevent_Changes_to_Invoice_after_Final_Print_Run",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Override_Settings_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Override_Settings_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date that a company agrees to send electronic invoicing.",
+      "field": "Electronic_Invoicing_Agreement_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Accounting for Negative Reimbursable Expense Reports boolean is set to True if the user has enabled this feature in the task \"Edit Expenses Company Options\"",
+      "field": "Enable_Accounting_for_Negative_Reimbursable_Expense_Reports",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Intercompany Processing on Expense Report Lines boolean is set to True if the user has enabled this feature in the task \"Edit Expenses Company Options\"",
+      "field": "Enable_Intercompany_Processing_on_Expense_Report_Lines",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Contract_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Contract_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Pre-notification_Business_Form_Layout_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Pre-notification_Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Pre-notification_Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Contract_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Contract_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Proposal_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Proposal_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Credit_Adjustment_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Credit_Adjustment_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Debit_Adjustment_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Debit_Adjustment_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Rebill_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Invoice_Rebill_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Invoice_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Refund_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Refund_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Refund_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Customer_Refund_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Journal_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Netting_Transaction_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Netting_Transaction_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Acknowledgement_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Acknowledgement_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Advanced_Ship_Notice_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Advanced_Ship_Notice_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Authorization_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Authorization_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Reports_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Reports_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contracts_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Contracts_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Settlement_Run_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Settlement_Run_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Prenote_Run_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Prenote_Run_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Accrual_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Receipt_Accrual_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Outsourced_Payment_Group_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Outsourced_Payment_Group_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Card_Transaction_Verification_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Card_Transaction_Verification_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_Hoc_Bank_Transaction_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_Hoc_Bank_Transaction_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Business_Form_Layout_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Mandate_Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Stock_Requests_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Stock_Requests_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Pick_Lists_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Pick_Lists_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Ship_Lists_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Ship_Lists_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Returns_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Returns_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Count_Sheets_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Count_Sheets_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Par_Counts_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Par_Counts_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Goods_Deliveries_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Goods_Deliveries_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Goods_Delivery_Runs_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Goods_Delivery_Runs_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll EI Reference Number Criteria",
+      "field": "Payroll_EI_Reference_Number_Criteria_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Company Tax Reporting",
+      "field": "Company_Tax_Reporting_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll ROE Configuration",
+      "field": "Payroll_ROE_Configuration_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Company Country Payroll Configuration",
+      "field": "Company_Country_Payroll_Configuration_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll Year End Form Configuration",
+      "field": "Payroll_Year_End_Form_Configuration_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll Reference Number Address",
+      "field": "Payroll_Reference_Number_Address_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll EI Reduced Rates",
+      "field": "Payroll_EI_Reduced_Rates_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to ID Payroll Bonus Tax Method",
+      "field": "Payroll_Bonus_Tax_Method_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Indirect_Cost_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Indirect_Cost_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Indirect_Cost_Line_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Indirect_Cost_Line_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Revenue_Result_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Revenue_Result_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Revenue_Result_Line_Sequence_Generator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Summary_Reimbursable_Revenue_Result_Line_Sequence_Generator_Reference_Sequence_Generator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Name",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+      "field": "Code_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Control_Rule_Set_Reference_Account_Control_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Control_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Posting_Rule_Set_Reference_Account_Posting_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Posting_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Set_Reference_Account_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Translation_Rule_Set_Reference_Account_Translation_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Translation_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Date_Required": {
+        "description": "Makes Accounting Date Required on Invoice Documents.  Can only be enabled if 'Allow Accounting in Arrears' is enabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Bank_Transaction_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Bank_Transaction_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Advanced": {
+        "description": "If set to True, this Company will be configured to use Advanced Customer Payment Auto-Application. If set to True, then a Customer Payment Application Rule Set is also required.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Advanced_Ship_Notice_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Advanced_Ship_Notice_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allow_Accounting_in_Arrears_Reference": {
+        "description": "Reference to the Allow Accounting in Arrears Set for the company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allow_Change_of_UOM_and_Unit_Cost_of_NonStockable_Purchase_Item_on_NonReplenishment_Requisition": {
+        "description": "Allow change of UOM and Unit Cost of non-stockable purchase items on non-replenishment requisitions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Change_of_UOM_and_Unit_Cost_of_Purchase_Item_on_Bill_Only_Requisition": {
+        "description": "If enabled, this option allows users to change the unit of measure and unit cost of purchase items on bill only requisition types.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Change_of_UOM_and_Unit_Cost_of_Stockable_Purchase_Item_on_Replenishment_Requisition": {
+        "description": "Allow change of UOM and Unit Cost of stockable purchase items on replenishment requisitions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Change_of_UOM_of_Stockable_Purchase_Item_on_NonReplenishment_Requisition": {
+        "description": "Allow change of UOM of stockable purchase items on non-replenishment requisitions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Invoice_Accounting_in_Arrears": {
+        "description": "Allows Customer Invoice Accounting in Arrears.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Alternate_Account_Set_Reference_Account_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Account_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Fiscal_Schedule_Reference": {
+        "description": "Reference to any alternate Fiscal Schedules used by a company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Automatically_Close_Purchase_Orders": {
+        "description": "Automatically Close Purchase Orders",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Availability_Date": {
+        "description": "Date the Organization is available for staffing events. If availability date is specified, it must be earlier or equal to the existing availability date, otherwise it will be ignored. If availability date is not specified, the existing availability date will be retained. If availability date is not specified, and there is no existing availability date, the current effective moment will be set as the availability date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Average_Daily_Balance_Rule_Reference_Average_Daily_Balance_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Average_Daily_Balance_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Average_Daily_Balance_Start_Date": {
+        "description": "Effective date to begin average daily balance calculations",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Contract_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Contract_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Cost_Processing_Rule_ID": {
+        "description": "Award Cost Processing Rule Reference ID used for Integration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Cost_Processing_Rule_Reference_Award_Cost_Processing_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Cost_Processing_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Proposal_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Proposal_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Begin_Effective_Date_To_Generate_Award_Costs": {
+        "description": "Effective Date to Generate Award Costs at Expenditure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-To_Contact_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-To_Contact_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bill-To_Contact_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Code_Prompt": {
+        "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Country_Payroll_Configuration_Reference": {
+        "description": "Reference to ID Company Country Payroll Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Override_Settings_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Override_Settings_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Tax_Recovery_Pro_Rata_Factor_Percentage": {
+        "description": "Workday uses the Tax Recovery Pro Rata Factor Percentage to reduce the tax recoverability amount on transactions for this company. The value ranges from 0 to 1 with 3 decimal places of precision. Set to 1 in order to use the full amount (100%) of the calculated tax recoverability. There is no tax recoverability on transactions for this company if you don't specify a value or set it to 0.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Tax_Reporting_Reference": {
+        "description": "Reference to ID Company Tax Reporting",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Consolidate_Requisitions_on_Purchase_Orders": {
+        "description": "Contains consolidation option of purchase orders for requisition",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Create_Sequence_ID_Generators_with_New_Ledger_Years": {
+        "description": "Determines whether the Rule Configuration will be used to create ID Generators whenever new Ledger Years are created",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Override_Reference_Currency_Rate_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Override_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Credit_Adjustment_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Credit_Adjustment_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Debit_Adjustment_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Debit_Adjustment_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Rebill_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Rebill_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Invoice_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Payment_Application_Rule_Set_Reference_Customer_Payment_Application_Rule_Set_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Payment_Application_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Refund_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Refund_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Account_Set_Reference_Account_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Account_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Commodity_Code_Type_Reference_Commodity_Code_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Commodity_Code_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Reporting_Book_Reference_Book_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Reporting_Book_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disable_Default_Delivery_Type_for_Stock_Items": {
+        "description": "Disable Default Delivery Type for Stock Items",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Disable_Lot_and_Serials_Capture_on_Receipt": {
+        "description": "When set to True disables Lot and Serial Capture on Receipts. Overrides values set in: Lot Capture Mandatory on Receipt and Serials Capture Mandatory on Receipt. Also overrides Item level Lot and Serial settings.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Disable_Project_Based_Service_Lines_on_Requisitions": {
+        "description": "Disable Project Based Service Lines on Requisitions",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Disable_Service_Lines_on_Requisitions": {
+        "description": "Disable Service Lines on Requisitions",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Disallow_Change_to_Operational_Transactions_in_Closed_Periods": {
+        "description": "Disallow Change to Operational Transactions",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Do_Not_Apply_Payment_to_Invoices_on_Hold": {
+        "description": "If set to True, this company will be configured to Not Apply Payments to Customer Invoices On Hold.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Electronic_Invoicing_Agreement_Date": {
+        "description": "The date that a company agrees to send electronic invoicing.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Address_Data": {
+        "description": "Email Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Accounting_for_Negative_Reimbursable_Expense_Reports": {
+        "description": "Enable Accounting for Negative Reimbursable Expense Reports boolean is set to True if the user has enabled this feature in the task \"Edit Expenses Company Options\"",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Automatic_Journal_Line_Numbering": {
+        "description": "Enable Automatic Journal Line Numbering for this company",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Freight_and_Other_Charges_on_Requisition": {
+        "description": "Enable Freight and Other Charges on Requisition",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Intercompany_Processing_on_Expense_Report_Lines": {
+        "description": "Enable Intercompany Processing on Expense Report Lines boolean is set to True if the user has enabled this feature in the task \"Edit Expenses Company Options\"",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Journal_Sequencing": {
+        "description": "Determines whether Journals created by a company should have a sequence",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Requisition_Auto-Sourcing_for_Non-Catalog_Lines": {
+        "description": "Enable Requisition Auto-Sourcing for Non-Catalog Lines",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Requisition_Line_Attributes_to_Default_from_Linked_Purchase_Item": {
+        "description": "Enable to default fulfillment sources and tax attributes, not already subject to sourcing and tax rules, from linked purchase item. Linked purchase items with matching inventory site sourcing rules will populate requisitions with resulting inventory site and/or fulfillment source from rule.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Requisition_Line_Defaults": {
+        "description": "Select to display the Edit Requisition Defaults option on requisition tasks. This option enables users to mass update values, such as supplier or worktags, for applicable lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Transaction_Tax_on_Requisition": {
+        "description": "This enables Transaction Tax on Requisition.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Unit_of_Measure_Change_for_Catalog_Items_on_Requisitions": {
+        "description": "Allow change of UOM of catalog items on all requisition types.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Catalog_and_Supplier_Items_from_Secondary_Suppliers_in_Catalog_Search": {
+        "description": "Used to return only priority one supplier/manufacturers for purchase items when using Search Catalog.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Header_Worktags_from_Business_Process": {
+        "description": "Excludes header-level revenue worktags when routing to related security groups on the Internal Service Delivery business process.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Purchase_Items_having_Catalog_or_Supplier_Item_Entries": {
+        "description": "Contains a  value to include or exclude the purchase items that are having catalog entries.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Ship-To_Address_when_Consolidating_Requisition_Lines": {
+        "description": "Contains a value to include or exclude the ship-to address on requisition lines as a consolidation option when creating purchase orders.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_received_quantities_from_Draft_and_In_Progress_Receipts": {
+        "description": "Exclude Draft Receipts on Received Quantities",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Expense_Reports_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Reports_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_URL": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_URL_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Posting_Interval_for_Ledger_Posting_Interval_Reference_Fiscal_Posting_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Posting_Interval_for_Ledger_Posting_Interval_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_Fiscal_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_for_Ledger_Posting_Interval_Reference_Fiscal_Year_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fiscal_Year_for_Ledger_Posting_Interval_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Generate_Award_Costs_at_Business_Process_Completion": {
+        "description": "Generate Award Costs at Expenditure",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Generate_PDFs_for_all_Purchase_Orders": {
+        "description": "Generate PDFs for all Purchase Orders",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Ignore_Award_Line_Dates_for_Award_Costs": {
+        "description": "Ignore award line dates when processing award costs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_Code_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_ID_in_Name": {
+        "description": "If this option is turned on, Organization ID will be shown in Organization Name. This option is only activated for Supervisory Organizations for now. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Industry_Code_Data": {
+        "description": "Industry Code element where we specify 1 or more Industry Codes for the Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instant_Messenger_Data": {
+        "description": "Instant Messenger Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_ID_Data": {
+        "description": "Contains external system name and its corresponding ID that can be used to match data between systems during an integration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Count_Sheets_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Count_Sheets_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Goods_Deliveries_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Goods_Deliveries_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Goods_Delivery_Runs_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Goods_Delivery_Runs_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Counts_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Counts_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Pick_Lists_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Pick_Lists_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Replenishment_Requisition_Rounding_Option_Reference_Rounding_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Replenishment_Requisition_Rounding_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Returns_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Returns_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Ship_Lists_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Ship_Lists_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Requests_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Requests_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Keep_Debit_Credit_and_Reverse_Sign": {
+        "description": "Reverse the sign when accounting transactions are revered.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Lot_Capture_Mandatory_on_Receipt": {
+        "description": "When set to True makes the capturing of Lots mandatory on Receipt for Lot Controlled Items. This field is always set to False If Disable Lot and Serials Capture on Receipt is set to True.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Lot_Expiration_Behavior_for_Expired_Lots_on_Receipt_Reference_Lot_Expiration_Behavior_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lot_Expiration_Behavior_for_Expired_Lots_on_Receipt_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lot_Expiration_Behavior_for_Lots_within_Alert_Period_on_Receipt_Reference_Lot_Expiration_Behavior_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lot_Expiration_Behavior_for_Lots_within_Alert_Period_on_Receipt_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Business_Form_Layout_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Pre-notification_Business_Form_Layout_Reference_Custom_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Pre-notification_Business_Form_Layout_Reference_Delivered_Business_Form_Layout_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mandate_Pre-notification_Business_Form_Layout_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Company Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Netting_Transaction_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Netting_Transaction_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Active": {
+        "description": "Specify as true when you want the organization to be active. Workday inactivates the cost center if you specify false. Before you can specify false, you must first remove all associated members from the organization.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Code": {
+        "description": "Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Container_Reference": {
+        "description": "Reference information for Organizations that include this Organization in their Organization hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_ID": {
+        "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name": {
+        "description": "The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Visibility_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outsourced_Payment_Group_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Outsourced_Payment_Group_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Object_Class_for_Facilities_and_Administration_Reference_Object_Class_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Object_Class_for_Facilities_and_Administration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Spend_Category_for_Facilities_and_Administration_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Spend_Category_for_Facilities_and_Administration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Replenishment_Requisition_Rounding_Option_Reference_Rounding_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Par_Replenishment_Requisition_Rounding_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Bonus_Tax_Method_Reference": {
+        "description": "Reference to ID Payroll Bonus Tax Method",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_EI_Reduced_Rates_Reference": {
+        "description": "Reference to ID Payroll EI Reduced Rates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_EI_Reference_Number_Criteria_Reference": {
+        "description": "Reference to ID Payroll EI Reference Number Criteria",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_ROE_Configuration_Reference": {
+        "description": "Reference to ID Payroll ROE Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Reference_Number_Address_Reference": {
+        "description": "Reference to ID Payroll Reference Number Address",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Year_End_Form_Configuration_Reference": {
+        "description": "Reference to ID Payroll Year End Form Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phone_Data": {
+        "description": "Phone Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phonetic_Name": {
+        "description": "Phonetic Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prenote_Run_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prenote_Run_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prevent_Changes_to_Invoice_after_Final_Print_Run": {
+        "description": "Prevent changes to invoice after final print run for a company. If you enable this feature, you can't disable it once invoices are created.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Procurement_Card_Transaction_Verification_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Card_Transaction_Verification_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Tax_Option_Reference_Tax_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Tax_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Acknowledgement_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Acknowledgement_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Accrual_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Accrual_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Receipt_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_for_Quote_Notification_Type_Reference": {
+        "description": "List of RFQ notifications to be sent.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reverse_Debit_Credit": {
+        "description": "Switch debits to credits when accounting transactions are reversed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Sequence_Generator_Rule_Configuration_Reference_Sequence_Generator_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sequence_Generator_Rule_Configuration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Serials_Capture_Mandatory_on_Receipt": {
+        "description": "When set to True makes the capturing of Serials on Receipt mandatory for Serial Controlled Items.  This field is always set to False If Disable Lot and Serials Capture on Receipt is set to True.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Settlement_Run_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Run_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Contact_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ship-To_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Method_Reference_Shipping_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Terms_Reference_Shipping_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Terms_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Show_Purchase_Items_when_there_is_No_Priority_Supplier": {
+        "description": "Select to only show purchase items when purchase items don’t have any priority supplier items. When purchase item is added to cart, requisition sourcing rules still apply.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Authorization_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Root_Node_Reference_Resource_Category_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Hierarchy_Root_Node_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Indirect_Cost_Line_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Indirect_Cost_Line_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Indirect_Cost_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Indirect_Cost_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Revenue_Result_Line_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Revenue_Result_Line_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Revenue_Result_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary_Reimbursable_Revenue_Result_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Accounts_Options": {
+        "description": "The supplier accounts options for the company",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contracts_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contracts_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Attributes": {
+        "description": "The supplier invoice attributes for the company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Refund_Sequence_Generator_Reference_Sequence_Generator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Refund_Sequence_Generator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID_Data": {
+        "description": "Tax ID element in where we specify 1 or more Tax ID's for a company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Service_Name": {
+        "description": "Name of Third Party Tax Service used by Company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Status_Data": {
+        "description": "Tax Status Data element to specify 1 or more Tax Statuses for a company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Translation_Currency_Reference": {
+        "description": "Stores the Translation Currency for the current Company; can store a list as well. And Company Currency can't be a Translation Currency.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Third_Party_Tax_Service": {
+        "description": "Enables Third Party Tax Service for Company.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "VAT_on_Payment": {
+        "description": "VAT on Payment, set to true for VAT on Payment option for Company, otherwise set to false.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Web_Address_Data": {
+        "description": "Web Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Compensation_Carrier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Compensation_Carrier_Reference_Workers__Compensation_Carrier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueRecognitionSchedules_Multi_Period_Allocation_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+      "field": "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Multi Period Allocation ID.",
+      "field": "Multi_Period_Allocation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi_Period_Allocation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi_Period_Allocation_Reference_Multi_Period_Allocation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Multi Period Allocation Description.",
+      "field": "Multi_Period_Allocation_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Multi Period Allocation From Date.",
+      "field": "Multi_Period_Allocation_From_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Multi Period Allocation To Date.",
+      "field": "Multi_Period_Allocation_To_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Multi Period Allocation Percent.",
+      "field": "Multi_Period_Allocation_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Multi Period Allocation Amount.",
+      "field": "Multi_Period_Allocation_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Line_Reference_WID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_Amount": {
+        "description": "Multi Period Allocation Amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_Description": {
+        "description": "Multi Period Allocation Description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_From_Date": {
+        "description": "Multi Period Allocation From Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_ID": {
+        "description": "Multi Period Allocation ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_Percent": {
+        "description": "Multi Period Allocation Percent.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_Reference_Multi_Period_Allocation_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Period_Allocation_To_Date": {
+        "description": "Multi Period Allocation To Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID": {
+        "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

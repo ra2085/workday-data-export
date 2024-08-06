@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueRecognitionSchedules_Revenue_Recognition_Schedule_Alternate_Ledger_Currency_Rate_Override_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+      "field": "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Ledger_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Ledger_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Alternate_Ledger_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The override rate for the alternate ledger currency.",
+      "field": "Alternate_Ledger_Currency_Rate_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+      "field": "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Ledger_Currency_Rate_Override": {
+        "description": "The override rate for the alternate ledger currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Alternate_Ledger_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Ledger_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Ledger_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Line_Reference_Receivable_Contract_Line_Reference_ID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Line_Reference_WID_Prompt": {
+        "description": "One of more references to Customer Contract Lines. The operation will return current Revenue Recognition Schedules for the lines provided.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RevenueRecognitionSchedule_Revenue_Recognition_Schedule_Reference_ID": {
+        "description": "Revenue Recognition Schedule Reference ID. This is the unique Revenue Recognition Schedule identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

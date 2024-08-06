@@ -1,0 +1,381 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItems_Item_Substitute_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PurchaseItem_Purchase_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company/Company Hierarchy for Item Substitution",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location/Location Hierarchy for Item Substitution",
+      "field": "Deliver-To_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Ranking of Item Substitutes.",
+      "field": "Substitute_Priority",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Substitute_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Substitute_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A company that does not accept the substitute item.",
+      "field": "Exclude_Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A deliver-to location that does not accept the substitute item.",
+      "field": "Exclude_Deliver-To_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Usages of Purchase Item substitute.",
+      "field": "Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Item Substitute Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_Purchase_Item_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_Item_Tag_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+      "field": "Return_All_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+      "field": "Return_Active_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+      "field": "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited after this time.",
+      "field": "Item_Updated_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited before this time.",
+      "field": "Item_Updated_To_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_Spend_Item_Status_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference": {
+        "description": "Company/Company Hierarchy for Item Substitution",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver-To_Location_Reference": {
+        "description": "Location/Location Hierarchy for Item Substitution",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Company_Reference": {
+        "description": "A company that does not accept the substitute item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Deliver-To_Location_Reference": {
+        "description": "A deliver-to location that does not accept the substitute item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt": {
+        "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Item Substitute Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_Purchase_Item_Group_ID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_Spend_Item_Status_ID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_WID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Substitute_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Substitute_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_Item_Tag_ID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_WID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Updated_From_Prompt": {
+        "description": "Select a date to return purchase items edited after this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Updated_To_Prompt": {
+        "description": "Select a date to return purchase items edited before this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PurchaseItem_Purchase_Item_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Active_Advanced_Pricing_Prompt": {
+        "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_All_Advanced_Pricing_Prompt": {
+        "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Substitute_Priority": {
+        "description": "Ranking of Item Substitutes.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Reference": {
+        "description": "Usages of Purchase Item substitute.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

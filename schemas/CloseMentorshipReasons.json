@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CloseMentorshipReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Close Mentorship Reason.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Close Mentorship Reason.",
+      "field": "Close_Mentorship_Reason_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description of the Close Mentorship Reason.",
+      "field": "Close_Mentorship_Reason_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the Close Mentorship Reason is currently active.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Close_Mentorship_Reason_Description": {
+        "description": "A description of the Close Mentorship Reason.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Close_Mentorship_Reason_Name": {
+        "description": "The name of the Close Mentorship Reason.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Close Mentorship Reason.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Whether or not the Close Mentorship Reason is currently active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

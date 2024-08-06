@@ -1,0 +1,237 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItemRequestTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Request_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Item_Request_Type_Reference_Purchase_Item_Request_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Purchase Item Request Type ID",
+      "field": "Purchase_Item_Request_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Purchase Item Request Type name",
+      "field": "Purchase_Item_Request_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used for requesting new purchase items",
+      "field": "Request_New_Purchase_Items",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used when modifying existing purchase items for Mass Maintenance",
+      "field": "Select_From_Existing_Purchase_Items",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used with mass maintenance requests for new purchase items",
+      "field": "Generate_Empty_Workbook",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used for Calculating Recommended Reorder Point",
+      "field": "Calculate_Recommended_Reorder_Point",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used for Searching External Catalogs",
+      "field": "Search_External_Catalog",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Controls whether this Purchase Item Request Type can be used for Mass Searching External Catalogs",
+      "field": "Mass_External_ID_Search",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Questionnaire_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Questionnaire_Reference_Questionnaire_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Workbook_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Primary_Workbook_Template_Reference_Purchase_Item_Request_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The element containing the Purchase Item Request Type enrichment templates data",
+      "field": "Enrichment_Workbook_Templates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Denotes whether this Purchase item Request Type is currently in use by a Purchase Item Request or Mass Maintenance Purchase Item Request. This field is read-only and will be ignored.",
+      "field": "In_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Denotes whether this Purchase Item Request Type is currently active",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculate_Recommended_Reorder_Point": {
+        "description": "Controls whether this Purchase Item Request Type can be used for Calculating Recommended Reorder Point",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enrichment_Workbook_Templates": {
+        "description": "The element containing the Purchase Item Request Type enrichment templates data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Generate_Empty_Workbook": {
+        "description": "Controls whether this Purchase Item Request Type can be used with mass maintenance requests for new purchase items",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "In_Use": {
+        "description": "Denotes whether this Purchase item Request Type is currently in use by a Purchase Item Request or Mass Maintenance Purchase Item Request. This field is read-only and will be ignored.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Denotes whether this Purchase Item Request Type is currently active",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Mass_External_ID_Search": {
+        "description": "Controls whether this Purchase Item Request Type can be used for Mass Searching External Catalogs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Primary_Workbook_Template_Reference_Purchase_Item_Request_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Primary_Workbook_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Request_Name": {
+        "description": "This is the Purchase Item Request Type name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Request_Type_ID": {
+        "description": "This is the Purchase Item Request Type ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Request_Type_Reference_Purchase_Item_Request_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Item_Request_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Questionnaire_Reference_Questionnaire_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Questionnaire_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_New_Purchase_Items": {
+        "description": "Controls whether this Purchase Item Request Type can be used for requesting new purchase items",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Search_External_Catalog": {
+        "description": "Controls whether this Purchase Item Request Type can be used for Searching External Catalogs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Select_From_Existing_Purchase_Items": {
+        "description": "Controls whether this Purchase Item Request Type can be used when modifying existing purchase items for Mass Maintenance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

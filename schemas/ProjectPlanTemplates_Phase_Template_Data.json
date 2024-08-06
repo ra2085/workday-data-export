@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectPlanTemplates_Phase_Template_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of project plan template.",
+      "field": "ProjectPlanTemplate_Project_Plan_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of project plan phase.",
+      "field": "Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order of project plan phase on the project plan template.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phase Name ID.  This is the phase name unique identifier.",
+      "field": "Phase_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the unique name of the phase.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Phase_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Phase_Reference_Project_Phase_Name_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains project plan task template information, such as project task name, ID, offset dates, milestone flag, etc.",
+      "field": "Task_Template_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the project plan template.",
+      "field": "Project_Plan_Template_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Name": {
+        "description": "This is the unique name of the phase.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "The order of project plan phase on the project plan template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phase_Name_ID": {
+        "description": "Phase Name ID.  This is the phase name unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phase_Reference_Project_Phase_Name_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phase_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Plan_ID": {
+        "description": "Contains a unique identifier for an instance of project plan phase.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ProjectPlanTemplate_Project_Plan_Template_ID": {
+        "description": "Contains a unique identifier for an instance of project plan template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Plan_Template_Name_Prompt": {
+        "description": "The name of the project plan template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Task_Template_Data": {
+        "description": "Contains project plan task template information, such as project task name, ID, offset dates, milestone flag, etc.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

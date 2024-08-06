@@ -1,0 +1,263 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FinanceChargeRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Finance_Charge_Rule_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Finance_Charge_Rule_Reference_Interest_and_Late_Fee_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for the Finance Charge Rule.",
+      "field": "Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interest_and_Late_Fee_Rule_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interest_and_Late_Fee_Rule_Type_Reference_Interest_and_Late_Fee_Rule_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique name for the Finance Charge Rule. This field is required and must have a value.",
+      "field": "Rule_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description for this Finance Charge Rule.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Interest_and_Late_Fee_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Calculation_Method_Reference_Frequency_Behavior_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Retrieves or submits the Annual Percentage Rate charged for each Finance Charge Rule. This is a required field when the Rule Type is Interest Rate.",
+      "field": "Annual_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Retrieves or submits the Amount of fee to be charged. This is a required field when the Rule Type is Late Fee.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of days you allow from due date of an invoice before you begin to assess finance charges. A payment after the due date but during the grace period won't incur interest charges or late fees.",
+      "field": "Grace_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of days you allow before you begin to generate the interest or late fee document after the first processing run.",
+      "field": "Document_Generation_Grace_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When the flag is set to Inactive, you can no longer apply the rule to a company. Though, you can continue to retrieve or update the rule. You can also submit a request to set the Finance Charge Rule back to active.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount": {
+        "description": "Retrieves or submits the Amount of fee to be charged. This is a required field when the Rule Type is Late Fee.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Annual_Percentage": {
+        "description": "Retrieves or submits the Annual Percentage Rate charged for each Finance Charge Rule. This is a required field when the Rule Type is Interest Rate.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Calculation_Method_Reference_Frequency_Behavior_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "The description for this Finance Charge Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Generation_Grace_Period": {
+        "description": "Number of days you allow before you begin to generate the interest or late fee document after the first processing run.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Finance_Charge_Rule_Reference_Interest_and_Late_Fee_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Finance_Charge_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Frequency_Reference_Interest_and_Late_Fee_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grace_Period": {
+        "description": "Number of days you allow from due date of an invoice before you begin to assess finance charges. A payment after the due date but during the grace period won't incur interest charges or late fees.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "When the flag is set to Inactive, you can no longer apply the rule to a company. Though, you can continue to retrieve or update the rule. You can also submit a request to set the Finance Charge Rule back to active.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Interest_and_Late_Fee_Rule_Type_Reference_Interest_and_Late_Fee_Rule_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interest_and_Late_Fee_Rule_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reference_ID": {
+        "description": "Contains a unique identifier for the Finance Charge Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Name": {
+        "description": "Unique name for the Finance Charge Rule. This field is required and must have a value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

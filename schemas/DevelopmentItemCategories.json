@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DevelopmentItemCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Development Item Category Data.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name for Development Item Category Data.",
+      "field": "Development_Item_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive Flag for Development Item Category Data.",
+      "field": "Development_Item_Category_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Development_Item_Category_Inactive": {
+        "description": "Inactive Flag for Development Item Category Data.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Development_Item_Category_Name": {
+        "description": "Name for Development Item Category Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "ID for Development Item Category Data.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

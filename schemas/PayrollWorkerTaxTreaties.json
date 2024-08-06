@@ -1,0 +1,393 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollWorkerTaxTreaties",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worker Tax Treaty ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Year_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Year_Reference_Calendar_Year_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Indicates the date when treaty benefits start",
+      "field": "Treaty_Benefit_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Indicates the date when treaty benefits end",
+      "field": "Treaty_Benefit_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Indicates the maximum benefit amount covered by treaty",
+      "field": "Maximum_Benefit_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not there is a maximum benefit amount covered by treaty",
+      "field": "No_Treaty_Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Indicates the date when the Worker is first eligible for Benefits",
+      "field": "Treaty_Eligibility_Begin",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Indicates the date when the Worker is no longer eligible for Benefits",
+      "field": "Treaty_Eligibility_End",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Income_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Income_Code_Reference_Payroll_Income_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Income_Code_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Income_Code_Subtype_Reference_Subtype_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether earnings associated with the tax treaty are Eligible for Withholding Allowance",
+      "field": "Eligible_for_Withholding_Allowance",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Indicates the tax withholding percentage rate for earnings associated with the tax treaty",
+      "field": "Withholding_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Residency_Country_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Residency_Country_Code_Reference_Payroll_Country_Tax_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties for the specified Calendar Year",
+      "field": "Tax_Year_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties for the specified Calendar Year",
+      "field": "Tax_Year_Reference_Calendar_Year_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code",
+      "field": "Income_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code",
+      "field": "Income_Code_Reference_Payroll_Income_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code Subtype",
+      "field": "Income_Code_Subtype_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code Subtype",
+      "field": "Income_Code_Subtype_Reference_Subtype_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Eligible_for_Withholding_Allowance": {
+        "description": "Indicates whether earnings associated with the tax treaty are Eligible for Withholding Allowance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Worker Tax Treaty ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Income_Code_Reference_Payroll_Income_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Reference_Payroll_Income_Code_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Reference_WID_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Subtype_Reference_Subtype_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Subtype_Reference_Subtype_Name_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code Subtype",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Code_Subtype_Reference_WID_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties using the specified Payroll Income Code Subtype",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Benefit_Amount": {
+        "description": "Indicates the maximum benefit amount covered by treaty",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "No_Treaty_Maximum": {
+        "description": "Indicates whether or not there is a maximum benefit amount covered by treaty",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Residency_Country_Code_Reference_Payroll_Country_Tax_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Residency_Country_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Year_Reference_Calendar_Year_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Year_Reference_Calendar_Year_ID_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties for the specified Calendar Year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Year_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Year_Reference_WID_Prompt": {
+        "description": "If present, limits the response to Worker Tax Treaties for the specified Calendar Year",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Treaty_Benefit_End_Date": {
+        "description": "Indicates the date when treaty benefits end",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Treaty_Benefit_Start_Date": {
+        "description": "Indicates the date when treaty benefits start",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Treaty_Eligibility_Begin": {
+        "description": "Indicates the date when the Worker is first eligible for Benefits",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Treaty_Eligibility_End": {
+        "description": "Indicates the date when the Worker is no longer eligible for Benefits",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Rate": {
+        "description": "Indicates the tax withholding percentage rate for earnings associated with the tax treaty",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "Provide one or more Worker References to filter the Get Worker Tax Treaty Response by Worker.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

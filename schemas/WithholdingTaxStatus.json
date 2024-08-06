@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WithholdingTaxStatus",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Tax_Status_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Withholding_Tax_Status_Reference_Tax_Withholding_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Withholding Tax Status ID. This is the Withholding Tax Status unique identifier.",
+      "field": "Withholding_Tax_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Withholding Tax Status Name. Withholding Status Name must be unique",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a Withholding Tax Status Description",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Free form text field for a Withholding Tax Status Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Free form text field for a meaningful Withholding Tax Status Name. Withholding Status Name must be unique",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Status_ID": {
+        "description": "Withholding Tax Status ID. This is the Withholding Tax Status unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Status_Reference_Tax_Withholding_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

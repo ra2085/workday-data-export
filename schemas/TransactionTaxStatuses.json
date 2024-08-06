@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TransactionTaxStatuses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Transaction Tax Status ID.  This is the Transaction Tax Status unique identifier.",
+      "field": "Transaction_Tax_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Transaction Tax Status Name.  Transaction Status Name must be unique",
+      "field": "Transaction_Tax_Status_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a Transaction Tax Status Description",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Free form text field for a Transaction Tax Status Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Tax_Status_ID": {
+        "description": "Transaction Tax Status ID.  This is the Transaction Tax Status unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Tax_Status_Name": {
+        "description": "Free form text field for a meaningful Transaction Tax Status Name.  Transaction Status Name must be unique",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

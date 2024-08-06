@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ItemIdentifierTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique ID for the Item Identifier Type",
+      "field": "Item_Identifier_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item Identifier Type Name text Attribute",
+      "field": "Item_Identifier_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Item Identifier Type Length attribute",
+      "field": "Item_Identifier_Type_Length",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_Item_Identifier_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Universal_Item_Identifier_Type_Reference_Universal_Item_Identifier_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate whether the Item Identifier is UOM Specific. This is a derived value from its associated universal item identifier type, and the provided value will be ignored in put item identifier type operation.",
+      "field": "For_Item_UOM",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow Multiples Boolean flag",
+      "field": "Allow_Multiples",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate Item Identifier Type is Unique.",
+      "field": "Item_Identifier_is_Unique",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate Item Identifier Type is Supplier Catalog Item Mapping.",
+      "field": "Use_in_Supplier_Catalog_Mapping",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate Item Identifier Type is External.",
+      "field": "Item_Identifier_is_External",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate Item Identifier Type is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Multiples": {
+        "description": "Allow Multiples Boolean flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "For_Item_UOM": {
+        "description": "Indicate whether the Item Identifier is UOM Specific. This is a derived value from its associated universal item identifier type, and the provided value will be ignored in put item identifier type operation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Flag to indicate Item Identifier Type is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Identifier_Type_ID": {
+        "description": "Unique ID for the Item Identifier Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier_Type_Length": {
+        "description": "Item Identifier Type Length attribute",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Item_Identifier_Type_Name": {
+        "description": "Item Identifier Type Name text Attribute",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Identifier_is_External": {
+        "description": "Flag to indicate Item Identifier Type is External.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Identifier_is_Unique": {
+        "description": "Flag to indicate Item Identifier Type is Unique.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Universal_Item_Identifier_Type_Reference_Universal_Item_Identifier_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_Item_Identifier_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_in_Supplier_Catalog_Mapping": {
+        "description": "Flag to indicate Item Identifier Type is Supplier Catalog Item Mapping.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

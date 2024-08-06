@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalSkillMapping_Workday_Skill_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for this External Skill.",
+      "field": "ExternalSkillMapping_External_Skill_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for this skill.",
+      "field": "Workday_Skill_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Maps an External Skill to this skill.",
+      "field": "Map_To_Skill",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for this skill.",
+      "field": "Workday_Skill_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ExternalSkillMapping_External_Skill_ID": {
+        "description": "The Reference ID for this External Skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Map_To_Skill": {
+        "description": "Maps an External Skill to this skill.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Workday_Skill_Name": {
+        "description": "The name for this skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Skill_Reference": {
+        "description": "The Reference ID for this skill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

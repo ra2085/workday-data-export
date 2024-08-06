@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentHoldReasons_Has_Academic_Unit_With_Shareable_Subordinates_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+      "field": "Academic_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive Hold Option to Request Inactive Holds for the Get Hold Reason Task",
+      "field": "Inactive_Hold_Reference_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Hold Type to request Hold Reasons that are restricted by this Hold Type for the Get Hold Reasons Task. Supports multiple values.",
+      "field": "Hold_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Hold Type to request Hold Reasons that are restricted by this Hold Type for the Get Hold Reasons Task. Supports multiple values.",
+      "field": "Hold_Type_Reference_Student_Hold_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Request Student Hold Reasons by In Use Hold Reasons",
+      "field": "In_Use_Reference_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Get student hold reason by Academic Unit. Supports multiple values.",
+      "field": "Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Get student hold reason by Academic Unit. Supports multiple values.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Level_Reference": {
+        "description": "Academic Level for Has Academic Unit with Shareable Subordinates Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "Get student hold reason by Academic Unit. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID_Prompt": {
+        "description": "Get student hold reason by Academic Unit. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hold_Type_Reference_Student_Hold_ID_Prompt": {
+        "description": "Hold Type to request Hold Reasons that are restricted by this Hold Type for the Get Hold Reasons Task. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hold_Type_Reference_WID_Prompt": {
+        "description": "Hold Type to request Hold Reasons that are restricted by this Hold Type for the Get Hold Reasons Task. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "In_Use_Reference_Prompt": {
+        "description": "Request Student Hold Reasons by In Use Hold Reasons",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Hold_Reference_Prompt": {
+        "description": "Inactive Hold Option to Request Inactive Holds for the Get Hold Reason Task",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

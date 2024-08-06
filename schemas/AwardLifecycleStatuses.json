@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardLifecycleStatuses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Lifecycle Status Reference ID. This is the Award Lifecycle Status Unique Identifier.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Award Lifecycle Status Name.",
+      "field": "Award_Lifecycle_Status_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Lifecycle Status Valid for Header flag.",
+      "field": "Award_Lifecycle_Status_Valid_for_Award",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Lifecycle Status Valid for Award Line flag.",
+      "field": "Award_Lifecycle_Status_Valid_for_Award_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Lifecycle Status Default for Award flag.",
+      "field": "Award_Lifecycle_Status_Default_for_Award",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Lifecycle Status Default for Award Line flag.",
+      "field": "Award_Lifecycle_Status_Default_for_Award_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Award Lifecycle Status Inactive flag.",
+      "field": "Award_Lifecycle_Status_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Lifecycle_Status_Default_for_Award": {
+        "description": "The Award Lifecycle Status Default for Award flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Default_for_Award_Line": {
+        "description": "The Award Lifecycle Status Default for Award Line flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Inactive": {
+        "description": "The Award Lifecycle Status Inactive flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Name": {
+        "description": "The Award Lifecycle Status Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Valid_for_Award": {
+        "description": "The Award Lifecycle Status Valid for Header flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Lifecycle_Status_Valid_for_Award_Line": {
+        "description": "The Award Lifecycle Status Valid for Award Line flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Award Lifecycle Status Reference ID. This is the Award Lifecycle Status Unique Identifier.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

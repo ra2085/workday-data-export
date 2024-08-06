@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ContactTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID of this Contact Type.",
+      "field": "Contact_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of this Contact Type.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Business Entity Contact Type for this Contact Type.",
+      "field": "Business_Entity_Contact_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The flag that determines whether this Contact Type is active or inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filters according to an existing Business Entity Contact Type Usage.",
+      "field": "Business_Entity_Contact_Type_Usage_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Filters according to an existing Business Entity Contact Type Usage.",
+      "field": "Business_Entity_Contact_Type_Usage_Reference_WID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Entity_Contact_Type_Reference": {
+        "description": "Reference to the Business Entity Contact Type for this Contact Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Contact_Type_Usage_Reference_IID_Prompt": {
+        "description": "Filters according to an existing Business Entity Contact Type Usage.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Contact_Type_Usage_Reference_WID_Prompt": {
+        "description": "Filters according to an existing Business Entity Contact Type Usage.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contact_Type_ID": {
+        "description": "The reference ID of this Contact Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "The flag that determines whether this Contact Type is active or inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of this Contact Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

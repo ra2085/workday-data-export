@@ -1,0 +1,966 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PurchaseItems_Item_Inventory_Attributes_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PurchaseItem_Purchase_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Picking_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Picking_Location_Reference_Inventory_Storage_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Picking_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Status_for_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Status_for_Site_Reference_Spend_Item_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if Item-Site is using Just In Time replenishment.",
+      "field": "Just_In_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Item level Reservation Flag. Can only be changed if reservations are enabled for the site. Can be used to disable reservations for an item belonging to a site which uses reservations.",
+      "field": "Use_Reservations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Stocking_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Stocking_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Stocking_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References a list of valid issue units of measure",
+      "field": "Valid_Issue_Units_of_Measure_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Issue_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Issue_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Site_Default_Issue_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When Valid Stocking Location is empty, all stocking locations for the Item/Site combinations are valid.  When you assign a valid stocking location for the Item/Site combinations, Workday only considers those listed here as valid.",
+      "field": "Valid_Stocking_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Stocking_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Stocking_Location_Reference_Inventory_Storage_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Stocking_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Lead time for the Site/Item combination.",
+      "field": "Fulfillment_Lead_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Type_Reference_Replenishment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Inventory Average Daily Usage for item",
+      "field": "Average_Daily_Usage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Preferred Supplier Lead Time for the specified site for the purchase item.",
+      "field": "Preferred_Supplier_Lead_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Reorder point in base UOM.",
+      "field": "Reorder_Point_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum quantity in base UOM - only applicable if the replenishment policy is min-max.",
+      "field": "Maximum_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Safety Stock for Replenishment Optimization.",
+      "field": "Safety_Stock",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Target Days on Hand for Replenishment Optimization.",
+      "field": "Target_Days_on_Hand",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum Target Days on Hand for Replenishment Optimization.",
+      "field": "Maximum_Target_Days_on_Hand",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Economic Order Quantity value in the UOM specified by Replenishment Unit of Measure - only applicable if the replenishment policy is Fixed Reorder Quantity.",
+      "field": "Economic_Order_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fixed_Reorder_Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fixed_Reorder_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fixed_Reorder_Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_ABC_Classification_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_ABC_Classification_Reference_Inventory_ABC_Classification_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The option of including Count",
+      "field": "Include_in_Count",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Patient_Chargeable_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Patient_Chargeable_Reference_Patient_Charge_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Replenishment_Option_Reference_Replenishment_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Site_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Requisition_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Requisition_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Source_Requisition_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Consigned_Reorder_Option_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Consigned_Reorder_Option_Type_Reference_Consigned_Reorder_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Consigned_Stocking_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Consigned_Stocking_Location_Reference_Inventory_Storage_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Consigned_Stocking_Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+      "field": "Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+      "field": "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+      "field": "Item_Group_Reference_Purchase_Item_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.. Supports multiple values.",
+      "field": "Item_Tag_Reference_Item_Tag_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+      "field": "Return_All_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+      "field": "Return_Active_Advanced_Pricing_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+      "field": "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited after this time.",
+      "field": "Item_Updated_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Select a date to return purchase items edited before this time.",
+      "field": "Item_Updated_To_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+      "field": "Item_Status_Reference_Spend_Item_Status_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Average_Daily_Usage": {
+        "description": "Inventory Average Daily Usage for item",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Consigned_Reorder_Option_Type_Reference_Consigned_Reorder_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Consigned_Reorder_Option_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Consigned_Stocking_Location_Reference_Inventory_Storage_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Consigned_Stocking_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Consigned_Stocking_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Stocking_Location_Reference_Inventory_Storage_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Stocking_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Stocking_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Economic_Order_Quantity": {
+        "description": "Economic Order Quantity value in the UOM specified by Replenishment Unit of Measure - only applicable if the replenishment policy is Fixed Reorder Quantity.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Exclude_Pricing_Calculated_by_Conversion_Factor_Prompt": {
+        "description": "Select to exclude pricing that’s calculated based on the conversion factor. When you enable Calculate Price based on Conversion Factor, Workday only returns pricing that is not calculated based on the conversion factor and the also the default price. This enables you to quickly view and edit relevant pricing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Fixed_Reorder_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fixed_Reorder_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fixed_Reorder_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fulfillment_Lead_Time": {
+        "description": "Lead time for the Site/Item combination.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Include_in_Count": {
+        "description": "The option of including Count",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inventory_ABC_Classification_Reference_Inventory_ABC_Classification_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_ABC_Classification_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_Purchase_Item_Group_ID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Group_Reference_WID_Prompt": {
+        "description": "Reference to an existing Purchase Item Group.  Assign purchase items to item groups to make it easier to search for and select items. Purchase items can belong to multiple groups.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_Spend_Item_Status_ID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_Reference_WID_Prompt": {
+        "description": "Select one or more purchase item statuses to return purchase items with the specified statuses.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_for_Site_Reference_Spend_Item_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Status_for_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_Item_Tag_ID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference_WID_Prompt": {
+        "description": "Item tags for the Purchase Item.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Updated_From_Prompt": {
+        "description": "Select a date to return purchase items edited after this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Updated_To_Prompt": {
+        "description": "Select a date to return purchase items edited before this time.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Just_In_Time": {
+        "description": "Indicates if Item-Site is using Just In Time replenishment.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Quantity": {
+        "description": "Maximum quantity in base UOM - only applicable if the replenishment policy is min-max.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Target_Days_on_Hand": {
+        "description": "Maximum Target Days on Hand for Replenishment Optimization.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Patient_Chargeable_Reference_Patient_Charge_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Patient_Chargeable_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Picking_Location_Reference_Inventory_Storage_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Picking_Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Picking_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Supplier_Lead_Time": {
+        "description": "Preferred Supplier Lead Time for the specified site for the purchase item.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "PurchaseItem_Purchase_Item_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reorder_Point_Quantity": {
+        "description": "Reorder point in base UOM.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Replenishment_Option_Reference_Replenishment_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Type_Reference_Replenishment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Replenishment_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Active_Advanced_Pricing_Prompt": {
+        "description": "Only retrieve Supplier Items considered active (that have active unit of measure pricing information.)",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Return_All_Advanced_Pricing_Prompt": {
+        "description": "Select Yes to return all advance prices. When you don't select this and you don't enter an effective date, we return advance prices that are effective at the time this web service runs. When you don't select this and you enter an effective date, then we return prices that are active for the effective date entered.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Safety_Stock": {
+        "description": "Safety Stock for Replenishment Optimization.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Site_Default_Issue_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Site_Default_Issue_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Site_Default_Issue_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Site_Default_Stocking_Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Site_Default_Stocking_Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Site_Default_Stocking_Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Requisition_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Requisition_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Requisition_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Site_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Source_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_External_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_Supplier_Contract_ID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Contract_Reference_WID_Prompt": {
+        "description": "We return all purchase items that have the supplier contract defined as a Preferred Supplier Contract, or an attribute for Advanced Pricing. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_WID_Prompt": {
+        "description": "We return all purchase items associated with the supplier you enter. We also return all the information set up for the purchase item, including supplier information for all associated suppliers.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Target_Days_on_Hand": {
+        "description": "Target Days on Hand for Replenishment Optimization.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Use_Reservations": {
+        "description": "Item level Reservation Flag. Can only be changed if reservations are enabled for the site. Can be used to disable reservations for an item belonging to a site which uses reservations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Valid_Issue_Units_of_Measure_Reference": {
+        "description": "References a list of valid issue units of measure",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Valid_Stocking_Location_Reference": {
+        "description": "When Valid Stocking Location is empty, all stocking locations for the Item/Site combinations are valid.  When you assign a valid stocking location for the Item/Site combinations, Workday only considers those listed here as valid.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

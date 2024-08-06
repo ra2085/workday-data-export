@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentEmploymentEligibilityRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text value for reference ID for Condition Rule.",
+      "field": "Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text description of Condition Rule.",
+      "field": "Rule_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text comment for Condition Rule.",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Categories for Condition Rule.",
+      "field": "Condition_Rule_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Data for each Condition Rule",
+      "field": "Condition_Item_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Countries for Condition Rule",
+      "field": "Countries_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Text comment for Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Condition_Item_Data": {
+        "description": "Data for each Condition Rule",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Condition_Rule_Category_Reference": {
+        "description": "Categories for Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Condition_Rule_ID": {
+        "description": "Text value for reference ID for Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Countries_Reference": {
+        "description": "Countries for Condition Rule",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Description": {
+        "description": "Text description of Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

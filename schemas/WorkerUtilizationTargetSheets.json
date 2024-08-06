@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkerUtilizationTargetSheets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Utilization Target Sheet ID",
+      "field": "Worker_Utilization_Target_Sheet_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Utilization Target Sheet Name",
+      "field": "Worker_Utilization_Target_Sheet_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Utilization Target Sheet Inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Worker Utilization Target Snapshot Data",
+      "field": "Worker_Utilization_Target_Snapshot_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company. Supports multiple values.",
+      "field": "Worker_Utilization_Target_Sheet_Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company. Supports multiple values.",
+      "field": "Worker_Utilization_Target_Sheet_Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company. Supports multiple values.",
+      "field": "Worker_Utilization_Target_Sheet_Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date",
+      "field": "Worker_Utilization_Target_Sheet_Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Utilization Target Sheet Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Company_Reference_WID_Prompt": {
+        "description": "Company. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Effective_Date_Prompt": {
+        "description": "Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Name": {
+        "description": "Utilization Target Sheet Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Sheet_Reference_ID": {
+        "description": "Utilization Target Sheet ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Utilization_Target_Snapshot_Data": {
+        "description": "Element Container for Worker Utilization Target Snapshot Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

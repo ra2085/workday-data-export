@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankStatements_Bank_Statement_Summary_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Statement Reference ID. This is the Bank Statement Data unique identifier.",
+      "field": "BankStatement_Bank_Statement_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Statement Balance Type Code.",
+      "field": "Type_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Balance Amount.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Balance Item Count.",
+      "field": "Item_Count",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Funds Availability Data.",
+      "field": "Funds_Availability_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alternate Balance Type Code",
+      "field": "Alternate_Balance_Type_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the Credit/Debit status of the Summary or Balance entry.",
+      "field": "Debit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to Filter Bank Statement From",
+      "field": "Statement_Date_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date to Filter Bank Statement To",
+      "field": "Statement_Date_To_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Balance_Type_Code": {
+        "description": "Alternate Balance Type Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount": {
+        "description": "Balance Amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "BankStatement_Bank_Statement_Reference_ID": {
+        "description": "Bank Statement Reference ID. This is the Bank Statement Data unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Debit": {
+        "description": "Indicates the Credit/Debit status of the Summary or Balance entry.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Funds_Availability_Data": {
+        "description": "Funds Availability Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Count": {
+        "description": "Balance Item Count.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Statement_Date_From_Prompt": {
+        "description": "Date to Filter Bank Statement From",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Statement_Date_To_Prompt": {
+        "description": "Date to Filter Bank Statement To",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Code": {
+        "description": "Bank Statement Balance Type Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

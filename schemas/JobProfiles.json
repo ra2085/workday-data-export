@@ -1,0 +1,937 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JobProfiles",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Profile_Reference_Job_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Identifier for a Job Profile. Also known as Job Profile ID.",
+      "field": "Job_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "During implementation, we recommend using a date of 01-01-1900 for the initial entry.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicates if the Job Profile is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the job profile.",
+      "field": "Job_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether Job Code should be included in Name (Display ID within Workday).",
+      "field": "Include_Job_Code_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Private Job Profile Title. This field is the same as Job Title Default in the online page.",
+      "field": "Job_Profile_Private_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Job Profile Summary.",
+      "field": "Job_Profile_Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating whether a work shift is required for workers in this job profile.",
+      "field": "Work_Shift_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating whether the job profile is considered a public job.",
+      "field": "Public_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Management_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Management_Level_Reference_Management_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Category_Reference_Job_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Level_Reference_Job_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the Job Family data for a job profile.",
+      "field": "Job_Family_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the Company Insider Type data for a job profile.",
+      "field": "Company_Insider_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Referral_Payment_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Referral_Payment_Plan_Reference_One-Time_Payment_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating whether the job profile is considered a critical job.",
+      "field": "Critical_Job",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Restrict to Country Reference",
+      "field": "Restrict_to_Country_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing Job Classification data for a Job Profile.",
+      "field": "Job_Classification_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing Job Profile Pay Rate Data",
+      "field": "Job_Profile_Pay_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing the Job Profile Exempt data for a Job Profile.",
+      "field": "Job_Profile_Exempt_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing Worker's Compensation Code data for a Job Profile. This element does a complete replacement of data based on what is submitted. All Worker's Compensation Codes must be included for an update (unless none will be touched).",
+      "field": "Workers_Compensation_Code_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Responsibilities for the Job Profile will be replaced by the data in being submitted. If no data is submitted, then the existing Responsibilities are not changed.",
+      "field": "Responsibility_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Work Experiences for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Work Experiences are not changed.",
+      "field": "Work_Experience_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Education Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Education Qualifications are not changed.",
+      "field": "Education_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Replacement element containing Language Qualifications for the Job Profile. When updating a Job Profile, all Languages for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Languages are not changed.",
+      "field": "Language_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Competencies for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Competencies are not changed.",
+      "field": "Competency_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Certifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Certifications are not changed.",
+      "field": "Certification_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When updating a Job Profile, all Training Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Training Qualifications are not changed.",
+      "field": "Training_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element for Skill Qualifications. Allows all Skill Qualifications for a Job Profile or Position Restriction to be removed - or to replace all existing Skill Qualifications with those sent in the web service.",
+      "field": "Skill_Qualification_Replacement_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Result of the evaluation of an External Field based on a contextual instance.",
+      "field": "Integration_Field_Override_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_Compensation_Grade_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References active Compensation Grade Profiles which are directly associated with the Job Profile.  Workers with this Job Profile will be able to be assigned a Compensation Grade Profile from the associated list based on eligibility.",
+      "field": "Compensation_Grade_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unions_Requirement_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unions_Requirement_Option_Reference_Requirement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References an active Allowed Unions which is directly associated with the Job Profile.",
+      "field": "Union_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work-Study_Requirement_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work-Study_Requirement_Option_Reference_Requirement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References an allowed Student Award Sources which is directly associated with the Job Profile.",
+      "field": "Allowed_Student_Award_Sources_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Transaction_Log_Criteria_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The identifier of an existing Event.",
+      "field": "Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+      "field": "Job_Family_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+      "field": "Job_Family_Reference_Job_Family_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+      "field": "Job_Family_Reference_Job_Family_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the management level.. Supports multiple values.",
+      "field": "Management_Level_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the management level.. Supports multiple values.",
+      "field": "Management_Level_Reference_Management_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a job level.. Supports multiple values.",
+      "field": "Job_Level_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a job level.. Supports multiple values.",
+      "field": "Job_Level_Reference_Job_Level_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the job category.. Supports multiple values.",
+      "field": "Job_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the job category.. Supports multiple values.",
+      "field": "Job_Category_Reference_Job_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Insider Type ID. This is the unique identifier for a company insider type.. Supports multiple values.",
+      "field": "Company_Insider_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Insider Type ID. This is the unique identifier for a company insider type.. Supports multiple values.",
+      "field": "Company_Insider_Type_Reference_Company_Insider_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the job classification.. Supports multiple values.",
+      "field": "Job_Classification_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the job classification.. Supports multiple values.",
+      "field": "Job_Classification_Reference_Job_Classification_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a job classification group.. Supports multiple values.",
+      "field": "Job_Classification_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for a job classification group.. Supports multiple values.",
+      "field": "Job_Classification_Group_Reference_Job_Classification_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers' Compensation Code Reference ID. This is the unique identifier for a Workers' Compensation Code.. Supports multiple values.",
+      "field": "Workers_Compensation_Code_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Workers' Compensation Code Reference ID. This is the unique identifier for a Workers' Compensation Code.. Supports multiple values.",
+      "field": "Workers_Compensation_Code_Reference_Workers_Compensation_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier of a work hours profile.. Supports multiple values.",
+      "field": "Work_Hours_Profile_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier of a work hours profile.. Supports multiple values.",
+      "field": "Work_Hours_Profile_Reference_Work_Hours_Profile_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allowed_Student_Award_Sources_Reference": {
+        "description": "References an allowed Student Award Sources which is directly associated with the Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Certification_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Certifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Certifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Data": {
+        "description": "Element containing the Company Insider Type data for a job profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Type_Reference_Company_Insider_Type_ID_Prompt": {
+        "description": "Company Insider Type ID. This is the unique identifier for a company insider type.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Type_Reference_WID_Prompt": {
+        "description": "Company Insider Type ID. This is the unique identifier for a company insider type.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Profile_Reference": {
+        "description": "References active Compensation Grade Profiles which are directly associated with the Job Profile.  Workers with this Job Profile will be able to be assigned a Compensation Grade Profile from the associated list based on eligibility.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_Compensation_Grade_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Competencies for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Competencies are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Critical_Job": {
+        "description": "Boolean attribute indicating whether the job profile is considered a critical job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Education_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Education Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Education Qualifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "During implementation, we recommend using a date of 01-01-1900 for the initial entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_IID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_WID_Prompt": {
+        "description": "The identifier of an existing Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean attribute indicates if the Job Profile is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Job_Code_in_Name": {
+        "description": "Boolean attribute identifying whether Job Code should be included in Name (Display ID within Workday).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Integration_Field_Override_Data": {
+        "description": "Result of the evaluation of an External Field based on a contextual instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_Job_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_Job_Category_ID_Prompt": {
+        "description": "A unique identifier for the job category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Category_Reference_WID_Prompt": {
+        "description": "A unique identifier for the job category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Data": {
+        "description": "Element containing Job Classification data for a Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Group_Reference_Job_Classification_Group_ID_Prompt": {
+        "description": "A unique identifier for a job classification group.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Group_Reference_WID_Prompt": {
+        "description": "A unique identifier for a job classification group.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Reference_Job_Classification_Reference_ID_Prompt": {
+        "description": "A unique identifier for the job classification.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Classification_Reference_WID_Prompt": {
+        "description": "A unique identifier for the job classification.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Code": {
+        "description": "Unique Identifier for a Job Profile. Also known as Job Profile ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Data": {
+        "description": "Element containing the Job Family data for a job profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference_Job_Family_Group_ID_Prompt": {
+        "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference_Job_Family_ID_Prompt": {
+        "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Reference_WID_Prompt": {
+        "description": "The unique identifier of a Job Family or a Job Family Group.  If a Job Family Group is submitted, any Job Profile that has a Job Family that is part of that Job Family Group will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Level_Reference_Job_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Level_Reference_Job_Level_ID_Prompt": {
+        "description": "A unique identifier for a job level.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Level_Reference_WID_Prompt": {
+        "description": "A unique identifier for a job level.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Exempt_Data": {
+        "description": "Element containing the Job Profile Exempt data for a Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Pay_Rate_Data": {
+        "description": "Element containing Job Profile Pay Rate Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Private_Title": {
+        "description": "Private Job Profile Title. This field is the same as Job Title Default in the online page.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_Job_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Job_Profile_Summary": {
+        "description": "Text attribute identifying Job Profile Summary.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Title": {
+        "description": "The name of the job profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Language_Qualification_Replacement_Data": {
+        "description": "Replacement element containing Language Qualifications for the Job Profile. When updating a Job Profile, all Languages for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Languages are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_Management_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_Management_Level_ID_Prompt": {
+        "description": "A unique identifier for the management level.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Management_Level_Reference_WID_Prompt": {
+        "description": "A unique identifier for the management level.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Public_Job": {
+        "description": "Boolean attribute indicating whether the job profile is considered a public job.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Referral_Payment_Plan_Reference_One-Time_Payment_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Referral_Payment_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Responsibility_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Responsibilities for the Job Profile will be replaced by the data in being submitted. If no data is submitted, then the existing Responsibilities are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restrict_to_Country_Reference": {
+        "description": "Restrict to Country Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Qualification_Replacement_Data": {
+        "description": "Wrapper element for Skill Qualifications. Allows all Skill Qualifications for a Job Profile or Position Restriction to be removed - or to replace all existing Skill Qualifications with those sent in the web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Training_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Training Qualifications for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Training Qualifications are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Log_Criteria_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Union_Reference": {
+        "description": "References an active Allowed Unions which is directly associated with the Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unions_Requirement_Option_Reference_Requirement_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unions_Requirement_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work-Study_Requirement_Option_Reference_Requirement_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work-Study_Requirement_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Experience_Qualification_Replacement_Data": {
+        "description": "When updating a Job Profile, all Work Experiences for the Job Profile will be replaced by the submitted data. If no data is submitted, then the existing Work Experiences are not changed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Hours_Profile_Reference_WID_Prompt": {
+        "description": "A unique identifier of a work hours profile.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Hours_Profile_Reference_Work_Hours_Profile_ID_Prompt": {
+        "description": "A unique identifier of a work hours profile.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Shift_Required": {
+        "description": "Boolean attribute indicating whether a work shift is required for workers in this job profile.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Workers_Compensation_Code_Reference_WID_Prompt": {
+        "description": "Workers' Compensation Code Reference ID. This is the unique identifier for a Workers' Compensation Code.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Compensation_Code_Reference_Workers_Compensation_ID_Prompt": {
+        "description": "Workers' Compensation Code Reference ID. This is the unique identifier for a Workers' Compensation Code.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workers_Compensation_Code_Replacement_Data": {
+        "description": "Element containing Worker's Compensation Code data for a Job Profile. This element does a complete replacement of data based on what is submitted. All Worker's Compensation Codes must be included for an update (unless none will be touched).",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

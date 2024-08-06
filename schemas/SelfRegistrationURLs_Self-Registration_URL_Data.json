@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SelfRegistrationURLs_Self-Registration_URL_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SelfRegistrationURL_Self-Registration_URL_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Self-Registration URL.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Extended_Enterprise_Affiliation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Extended_Enterprise_Affiliation_Reference_Extended_Enterprise_Affiliation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Activation Date for Self-Registration URL.",
+      "field": "Activation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Expiration Date for Self-Registration URL.",
+      "field": "Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to inactivate the URL, regardless of activation and expiration dates.",
+      "field": "Inactivate_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to return only inactive URLs",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Select to return only active URLs",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Activation_Date": {
+        "description": "Activation Date for Self-Registration URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Active_Prompt": {
+        "description": "Select to return only active URLs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Expiration_Date": {
+        "description": "Expiration Date for Self-Registration URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extended_Enterprise_Affiliation_Reference_Extended_Enterprise_Affiliation_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Extended_Enterprise_Affiliation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Self-Registration URL.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivate_URL": {
+        "description": "Select to inactivate the URL, regardless of activation and expiration dates.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "Select to return only inactive URLs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "SelfRegistrationURL_Self-Registration_URL_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

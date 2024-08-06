@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "UpdateEmployeeReviewRatings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies a specific employee review instance.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rating_Reference_Review_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify whether to override the rating for the section. Value only applies if you enable the Rating with Overrides option.",
+      "field": "Override_Overall_Rating",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The overall rating assigned to the review (manual rating - decimal value)",
+      "field": "Manual_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The section evaluation data for a section within an Employee Review.",
+      "field": "Review_Section_Evaluation_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Contains a reference that identifies a specific employee review instance.",
+        "type": [
+          "string"
+        ]
+      },
+      "Manual_Override": {
+        "description": "The overall rating assigned to the review (manual rating - decimal value)",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Override_Overall_Rating": {
+        "description": "Specify whether to override the rating for the section. Value only applies if you enable the Rating with Overrides option.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Rating_Reference_Review_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Review_Section_Evaluation_Data": {
+        "description": "The section evaluation data for a section within an Employee Review.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

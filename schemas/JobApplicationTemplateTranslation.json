@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JobApplicationTemplateTranslation",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Job Application Template",
+      "field": "Job_Application_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_User_Language_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains base and translated values for all configurable sections",
+      "field": "Translated_Configurable_Field_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID or WID for translation language. Supports multiple values.",
+      "field": "User_Language_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID or WID for translation language. Supports multiple values.",
+      "field": "User_Language_Reference_User_Language_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Job_Application_Template_ID": {
+        "description": "Reference ID for Job Application Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Translated_Configurable_Field_Data": {
+        "description": "Contains base and translated values for all configurable sections",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_User_Language_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_User_Language_ID_Prompt": {
+        "description": "Reference ID or WID for translation language. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_WID_Prompt": {
+        "description": "Reference ID or WID for translation language. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

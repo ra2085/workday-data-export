@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FacilitiesandAdministrationRateAgreements",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Rate Agreement ID.",
+      "field": "Facilities_and_Administration_Rate_Agreement_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Cost Rate Agreement Name.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Cost Rate Agreement Date.",
+      "field": "Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rate_Agreement_Basis_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rate_Agreement_Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Cost Rate Agreement's Rate Types.",
+      "field": "Rate_Agreement_Cost_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Find Rate Agreement via its Name.",
+      "field": "Rate_Agreement_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Find Rate Agreement(s) via their Facilities and Admin Basis Type.",
+      "field": "Rate_Agreement_Basis_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Find Rate Agreement(s) via their Facilities and Admin Basis Type.",
+      "field": "Rate_Agreement_Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Find Rate Agreement(s) via Rate Agreement Date.",
+      "field": "Rate_Agreement_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date": {
+        "description": "The Cost Rate Agreement Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Rate_Agreement_ID": {
+        "description": "The Rate Agreement ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The Cost Rate Agreement Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID_Prompt": {
+        "description": "Find Rate Agreement(s) via their Facilities and Admin Basis Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Basis_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Basis_Type_Reference_WID_Prompt": {
+        "description": "Find Rate Agreement(s) via their Facilities and Admin Basis Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Cost_Rate_Data": {
+        "description": "The Cost Rate Agreement's Rate Types.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Date_Prompt": {
+        "description": "Find Rate Agreement(s) via Rate Agreement Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Agreement_Name_Prompt": {
+        "description": "Find Rate Agreement via its Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

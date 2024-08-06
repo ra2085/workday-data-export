@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TalentSurveys_Survey_Question_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "TalentSurvey_Talent_Survey_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the survey question. The ID is either a Workday ID or reference ID. Example reference ID: Survey_Question_ID=12345",
+      "field": "Survey_Question_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The order to display the survey question.",
+      "field": "Question_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The text of the question.",
+      "field": "Question_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Type_Reference_Question_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Display_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Display_Option_Reference_Question_Display_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, a survey recipient is required to answer this question.",
+      "field": "Question_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The maximum number of selections for a multi-select question. This field is required for multi-select questions. This integer must be greater than 1 and equal to or less than the number of the multiple choice answers.",
+      "field": "Maximum_Number_of_Answer_Selections",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the question multiple choice answer data. You can't edit a multiple choice answer that's in use by another survey.",
+      "field": "Question_Multiple_Choice_Answer_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Maximum_Number_of_Answer_Selections": {
+        "description": "The maximum number of selections for a multi-select question. This field is required for multi-select questions. This integer must be greater than 1 and equal to or less than the number of the multiple choice answers.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Question_Display_Option_Reference_Question_Display_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Display_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_Data": {
+        "description": "Contains the question multiple choice answer data. You can't edit a multiple choice answer that's in use by another survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Order": {
+        "description": "The order to display the survey question.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Required": {
+        "description": "If true, a survey recipient is required to answer this question.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Question_Text": {
+        "description": "The text of the question.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Type_Reference_Question_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Question_ID": {
+        "description": "The ID of the survey question. The ID is either a Workday ID or reference ID. Example reference ID: Survey_Question_ID=12345",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TalentSurvey_Talent_Survey_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

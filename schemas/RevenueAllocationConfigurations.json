@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueAllocationConfigurations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Allocation_Configuration_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Revenue_Allocation_Configuration_Reference_Revenue_Allocation_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Determines whether to Allocate in Summary.",
+      "field": "Allocate_Revenue_at_Summary_and_Prorate_at_Line",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Lower Range Percentage for Default Revenue Allocation Configuration Line Data",
+      "field": "Lower_Range_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Upper Range Percentage for Default Revenue Allocation Configuration Line Data.",
+      "field": "Upper_Range_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Basis_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Allocation_Basis_Reference_Revenue_Allocation_Calculation_Basis",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fair_Value_Price_List_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fair_Value_Price_List_Reference_Abstract_Sales_Item_Price_List_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When you select the Do Not Auto Allocate Revenue check box, you must manually recalculate the revenue allocation when running MEA.",
+      "field": "Do_Not_Auto_Allocate_Revenue",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Defines the Revenue Allocation Configuration Lines that will override the Default Revenue Allocation Configuration Line.",
+      "field": "Override_Revenue_Allocation_Configuration_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allocate_Revenue_at_Summary_and_Prorate_at_Line": {
+        "description": "Determines whether to Allocate in Summary.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allocation_Basis_Reference_Revenue_Allocation_Calculation_Basis": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Basis_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Do_Not_Auto_Allocate_Revenue": {
+        "description": "When you select the Do Not Auto Allocate Revenue check box, you must manually recalculate the revenue allocation when running MEA.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Fair_Value_Price_List_Reference_Abstract_Sales_Item_Price_List_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fair_Value_Price_List_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lower_Range_Percentage": {
+        "description": "Lower Range Percentage for Default Revenue Allocation Configuration Line Data",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Override_Revenue_Allocation_Configuration_Line_Data": {
+        "description": "Defines the Revenue Allocation Configuration Lines that will override the Default Revenue Allocation Configuration Line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Allocation_Configuration_Reference_Revenue_Allocation_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Allocation_Configuration_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Upper_Range_Percentage": {
+        "description": "Upper Range Percentage for Default Revenue Allocation Configuration Line Data.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

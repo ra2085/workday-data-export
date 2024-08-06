@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FundHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fund Hierarchy Reference ID.  This is the Fund Hierarchy unique identifier.",
+      "field": "Fund_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Fund Hierarchy Name.",
+      "field": "Fund_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Fund Hierarchy ID in the Fund Hierarchy Name.",
+      "field": "Include_Fund_Hierarchy_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true Inactivates the Fund Hierarchy.",
+      "field": "Fund_Hierarchy_is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Fund_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Fund_Hierarchy_Reference_Fund_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Funds to add as the subordinates.",
+      "field": "Contains_Funds_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Contains_Funds_Reference": {
+        "description": "Reference to existing Funds to add as the subordinates.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fund_Hierarchy_ID": {
+        "description": "Fund Hierarchy Reference ID.  This is the Fund Hierarchy unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fund_Hierarchy_Name": {
+        "description": "Fund Hierarchy Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fund_Hierarchy_is_Inactive": {
+        "description": "Boolean Flag which when set to true Inactivates the Fund Hierarchy.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Fund_Hierarchy_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Fund Hierarchy ID in the Fund Hierarchy Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Fund_Hierarchy_Reference_Fund_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Fund_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

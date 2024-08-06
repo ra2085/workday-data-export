@@ -1,0 +1,550 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AcademicAppointee_Appointment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AcademicAppointee_Academic_Appointee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Appointment_Track_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Appointment_Track_Reference_Academic_Appointment_Track_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for academic appointment track.",
+      "field": "Appointment_Track_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean indicating whether or not the appointment track is active",
+      "field": "Appointment_Track_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Track_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Track_Type_Reference_Academic_Track_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Appointment_Identifier_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Appointment_Identifier_Reference_Academic_Appointment_Identifier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Position_Reference_Position_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Percent of the academic appointee's total time on an academic appointment. Between 0.00 and 1.00. May be blank or zero for things like centers and institutes.",
+      "field": "Roster_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date when the appointment becomes effective or takes effect.",
+      "field": "Appointment_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date when the academic appointment is intended to end. To end academic appointments, you must complete an End Academic Appointment Track event.",
+      "field": "Appointment_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Override for academic appointment track start date.",
+      "field": "Track_Start_Date_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rank_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rank_Reference_Academic_Rank_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Named_Professorship_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Named_Professorship_Reference_Named_Professorship_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Appointment_Specialty_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Appointment_Specialty_Reference_Appointment_Specialty_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Do not enter, Constructed Title will be defaulted and used if all fields pertaining to rule set for track is supplied.",
+      "field": "Constructed_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Title for the academic appointment.",
+      "field": "Appointment_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date when the academic appointment title was designated.",
+      "field": "Adjusted_Title_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Manually maintained date that acts as a reminder to review the academic for promotion.  Only applies when the Appointment’s Track includes a Promotion program. On an update, the existing value will be retained if not sent.",
+      "field": "Academic_Review_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Related_Academic_Unit_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Related_Academic_Unit_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tenure_Home_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tenure_Home_Reference_Academic_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tenure_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tenure_Status_Reference_Academic_Tenure_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date when the tenure probationary period ends.",
+      "field": "Probationary_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date when the academic appointee was awarded tenure.",
+      "field": "Tenure_Award_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Track Type Reference. Supports multiple values.",
+      "field": "By_Academic_Track_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Track Type Reference. Supports multiple values.",
+      "field": "By_Academic_Track_Type_Reference_Academic_Track_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Worker",
+      "field": "By_Worker_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Affiliate",
+      "field": "By_Affiliate_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "By Student",
+      "field": "By_Student_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Active appointees have current appointments",
+      "field": "By_Active_Role_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AcademicAppointee_Academic_Appointee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Appointment_Track_Reference_Academic_Appointment_Track_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Appointment_Track_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Review_Date": {
+        "description": "Manually maintained date that acts as a reminder to review the academic for promotion.  Only applies when the Appointment’s Track includes a Promotion program. On an update, the existing value will be retained if not sent.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjusted_Title_Start_Date": {
+        "description": "Date when the academic appointment title was designated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_End_Date": {
+        "description": "Date when the academic appointment is intended to end. To end academic appointments, you must complete an End Academic Appointment Track event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Identifier_Reference_Academic_Appointment_Identifier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Identifier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Specialty_Reference_Appointment_Specialty_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Specialty_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Start_Date": {
+        "description": "Date when the appointment becomes effective or takes effect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Title": {
+        "description": "Title for the academic appointment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Track_ID": {
+        "description": "Unique identifier for academic appointment track.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appointment_Track_Inactive": {
+        "description": "Boolean indicating whether or not the appointment track is active",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Academic_Track_Type_Reference_Academic_Track_Type_ID_Prompt": {
+        "description": "Academic Track Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "By_Academic_Track_Type_Reference_WID_Prompt": {
+        "description": "Academic Track Type Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "By_Active_Role_Prompt": {
+        "description": "Active appointees have current appointments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Affiliate_Prompt": {
+        "description": "By Affiliate",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Student_Prompt": {
+        "description": "By Student",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "By_Worker_Prompt": {
+        "description": "By Worker",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Constructed_Title": {
+        "description": "Do not enter, Constructed Title will be defaulted and used if all fields pertaining to rule set for track is supplied.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Named_Professorship_Reference_Named_Professorship_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Named_Professorship_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_Position_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Position_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Probationary_End_Date": {
+        "description": "Date when the tenure probationary period ends.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rank_Reference_Academic_Rank_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rank_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Academic_Unit_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Academic_Unit_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Roster_Percent": {
+        "description": "Percent of the academic appointee's total time on an academic appointment. Between 0.00 and 1.00. May be blank or zero for things like centers and institutes.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tenure_Award_Date": {
+        "description": "Date when the academic appointee was awarded tenure.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenure_Home_Reference_Academic_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenure_Home_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenure_Status_Reference_Academic_Tenure_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenure_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Track_Start_Date_Override": {
+        "description": "Override for academic appointment track start date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Track_Type_Reference_Academic_Track_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Track_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

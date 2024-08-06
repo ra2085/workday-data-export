@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FinancialDataModel_Effective_Date",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Data Model ID",
+      "field": "FinancialDataModel_Reporting_Data_Model_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reporting Time Option Reference ID",
+      "field": "Reporting_Effective_Date_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Reporting Time Option",
+      "field": "Reporting_Time_Option_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Time_Option_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reporting_Time_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date",
+      "field": "Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is True If Reporting Time Option is one of the static options",
+      "field": "Is_Static",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is True this is the Default Option",
+      "field": "Is_Default",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date": {
+        "description": "Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FinancialDataModel_Reporting_Data_Model_ID": {
+        "description": "Reporting Data Model ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Is_Default": {
+        "description": "Is True this is the Default Option",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Is_Static": {
+        "description": "Is True If Reporting Time Option is one of the static options",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Reporting_Effective_Date_ID": {
+        "description": "Reporting Time Option Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Time_Option_Name": {
+        "description": "Name of Reporting Time Option",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Time_Option_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reporting_Time_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

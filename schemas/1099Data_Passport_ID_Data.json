@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "1099Data_Passport_ID_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Passport ID.",
+      "field": "Passport_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique attribute name/description identifying a valid instance of Passport ID Type (Identifier Type).",
+      "field": "Passport_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+      "field": "Country_ISO_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Passport ID was issued.",
+      "field": "Issued_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Passport ID expires.",
+      "field": "Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the Passport ID was verified.",
+      "field": "Verification_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Country_ISO_Code": {
+        "description": "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ElectronicFiling1099RunData_Electronic_Filing_1099_Run_Reference_IID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expiration_Date": {
+        "description": "Date the Passport ID expires.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Issued_Date": {
+        "description": "Date the Passport ID was issued.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Passport_Number": {
+        "description": "Text attribute identifying Passport ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Passport_Type_Name": {
+        "description": "Unique attribute name/description identifying a valid instance of Passport ID Type (Identifier Type).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Verification_Date": {
+        "description": "Date the Passport ID was verified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

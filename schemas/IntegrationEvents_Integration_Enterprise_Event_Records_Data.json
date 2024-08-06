@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "IntegrationEvents_Integration_Enterprise_Event_Records_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "IntegrationEvent_Integration_Event_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Records",
+      "field": "Total_Records",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Records Uploaded",
+      "field": "Total_Records_Uploaded",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total Failed Records",
+      "field": "Total_Failed_Records",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration System Reference",
+      "field": "Integration_System_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration System Reference",
+      "field": "Integration_System_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration System Reference",
+      "field": "Integration_System_Reference_Workday_Integration_System_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Event Status Reference (e.g. Completed, Failed, etc.). Supports multiple values.",
+      "field": "Integration_Event_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Event Status Reference (e.g. Completed, Failed, etc.). Supports multiple values.",
+      "field": "Integration_Event_Status_Reference_Background_Process_Instance_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Sent After (DateTime)",
+      "field": "Sent_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Sent Before (DateTime)",
+      "field": "Sent_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "IntegrationEvent_Integration_Event_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_Event_Status_Reference_Background_Process_Instance_Status_ID_Prompt": {
+        "description": "Integration Event Status Reference (e.g. Completed, Failed, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_Event_Status_Reference_WID_Prompt": {
+        "description": "Integration Event Status Reference (e.g. Completed, Failed, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Integration_System_ID_Prompt": {
+        "description": "Integration System Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_WID_Prompt": {
+        "description": "Integration System Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Workday_Integration_System_ID_Prompt": {
+        "description": "Integration System Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sent_After_Prompt": {
+        "description": "Sent After (DateTime)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sent_Before_Prompt": {
+        "description": "Sent Before (DateTime)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Failed_Records": {
+        "description": "Total Failed Records",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Records": {
+        "description": "Total Records",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Records_Uploaded": {
+        "description": "Total Records Uploaded",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

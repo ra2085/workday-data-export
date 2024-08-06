@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BusinessUnits",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Unit Reference ID. This is the Business Unit unique identifier.",
+      "field": "Business_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Unit Name.",
+      "field": "Business_Unit_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag which when set to true will include the Business Unit ID in the Business Unit Name.",
+      "field": "Include_Business_Unit_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean Flag which when set to true inactivates the Business Unit.",
+      "field": "Business_Unit_is_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Unit_ID": {
+        "description": "Business Unit Reference ID. This is the Business Unit unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Unit_Name": {
+        "description": "Business Unit Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Unit_is_Inactive": {
+        "description": "Boolean Flag which when set to true inactivates the Business Unit.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Business_Unit_ID_in_Name": {
+        "description": "Boolean flag which when set to true will include the Business Unit ID in the Business Unit Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

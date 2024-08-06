@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ImportCompensationReviewBudgetPools",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Review_Event_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Always set to Y (for now).",
+      "field": "Update_All_Organizations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Organization Pool Data",
+      "field": "Organization_Pool_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event for which pools are to be retrieved.",
+      "field": "Compensation_Review_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Review Event for which pools are to be retrieved.",
+      "field": "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supervisory Organizations with SubOrdinates",
+      "field": "Organization_and_Subordinates_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Type",
+      "field": "Award_Type_Reference_Award_Type_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Type_Reference_Award_Type_ID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Type_Reference_WID_Prompt": {
+        "description": "Award Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_Compensation_Review_Event_ID_Prompt": {
+        "description": "Compensation Review Event for which pools are to be retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Compensation_Review_Event_Reference_WID_Prompt": {
+        "description": "Compensation Review Event for which pools are to be retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Pool_Data": {
+        "description": "Organization Pool Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_and_Subordinates_Prompt": {
+        "description": "Supervisory Organizations with SubOrdinates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Update_All_Organizations": {
+        "description": "Always set to Y (for now).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

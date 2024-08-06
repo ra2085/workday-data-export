@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectRoleCategories",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Category_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Role_Category_Reference_Project_Role_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique ID for Project Role Category",
+      "field": "Project_Role_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique Name for Project Role Category",
+      "field": "Project_Role_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description for Project Role Category",
+      "field": "Project_Role_Category_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag to set the Project Role Categories to Inactive.",
+      "field": "Inactive_Project_Role_Category",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive_Project_Role_Category": {
+        "description": "Boolean flag to set the Project Role Categories to Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Description": {
+        "description": "Description for Project Role Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_ID": {
+        "description": "Unique ID for Project Role Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Name": {
+        "description": "Unique Name for Project Role Category",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Reference_Project_Role_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Role_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

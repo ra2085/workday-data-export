@@ -1,0 +1,1979 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SchedulingSettings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the Scheduling Organization.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of the Scheduling Settings. Enter an existing date to override existing settings or a new date to create settings.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comments for the Scheduling Settings",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_Day_of_Week_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Start_Day_of_Week_Reference_Day_of_the_Week_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Demand_Period_Length_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Demand_Period_Length_Reference_Scheduling_Organization_Configuration_Demand_Length_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Meal_and_Break_Rule_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Meal_and_Break_Rule_Set_Reference_Meal_Break_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Predictive_Scheduling_Rule_Set_for_Scheduling_Organization_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Predictive_Scheduling_Rule_Set_for_Scheduling_Organization_Reference_Predictive_Scheduling_Rule_Set_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include leader for the settings.",
+      "field": "Include_Leader_as_part_of_the_Schedule",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include members of subordinate organizations for the settings.",
+      "field": "Include_Members_of_Subordinate_Organization",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Subgroup_Organization_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Subgroup_Organization_Type_Reference_Accounting_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Subgroup_Organization_Type_Reference_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Subgroup organizations for the settings.",
+      "field": "Subgroup_Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Use the time zone of the subgroup organization.",
+      "field": "Use_Subgroup_Organization_Time_Zone",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Apply daily overtime",
+      "field": "Apply_Daily_Overtime",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Daily overtime threshold value",
+      "field": "Scheduling_Overtime_Configuration_Overview_Reference_Daily_Overtime_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Apply weekly overtime",
+      "field": "Apply_Weekly_Overtime",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Weekly overtime threshold",
+      "field": "Scheduling_Overtime_Configuration_Overview_Reference_Weekly_Overtime_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Overtime rate",
+      "field": "Overtime_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum shift length value",
+      "field": "Minimum_Shift_Length",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Shift_Length_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Shift_Length_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Minimum_Shift_Length_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Shift_Length_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Shift_Length_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum shift length value",
+      "field": "Maximum_Shift_Length",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Shift_Length_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Shift_Length_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Maximum_Shift_Length_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Shift_Length_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Shift_Length_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Minimum_Rest_Between_Shifts_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum rest period value",
+      "field": "Minimum_Rest_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Rest_Between_Shifts_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Rest_Between_Shifts_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Minimum_Rest_Between_Shifts_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Rest_Between_Shifts_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Rest_Between_Shifts_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Minimum_Weekly_Hours_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum weekly scheduled hours value",
+      "field": "Minimum_Weekly_Scheduled_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Min_Weekly_Additional_Working_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Min_Weekly_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Weekly_Hours_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Weekly_Hours_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Minimum_Weekly_Hours_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Weekly_Hours_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Weekly_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Maximum_Weekly_Hours_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum weekly scheduled hours value",
+      "field": "Maximum_Weekly_Scheduled_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Max_Weekly_Additional_Working_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Max_Weekly_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Weekly_Hours_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Weekly_Hours_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Maximum_Weekly_Hours_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Weekly_Hours_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Weekly_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Maximum_Working_Days_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum working days value",
+      "field": "Maximum_Working_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Additional_Working_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Maximum_Working_Days_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Working_Days_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Weekly_Overtime_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Weekly Overtime Threshold Value",
+      "field": "Weekly_Overtime_Weekly_Overtime_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Additional_Working_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Weekly_Overtime_Scheduling_Validation_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Weekly_Overtime_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Daily_Overtime_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Daily overtime threshold value",
+      "field": "Daily_Overtime_Daily_Overtime_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Daily_Overtime_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Daily_Overtime_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Daily_Overtime_Scheduling_Validation_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Daily_Overtime_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Daily_Overtime_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Validation enabled",
+      "field": "Maximum_Daily_Hours_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum Daily Hours Value",
+      "field": "Maximum_Daily_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Additional_Working_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Severity_Level_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Severity_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Error message for the validation.",
+      "field": "Maximum_Daily_Hours_Error_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Validation_Usage_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Maximum_Daily_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type enabled",
+      "field": "Schedule_Tag_Type_1_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type inherit",
+      "field": "Schedule_Tag_Type_1_Inherit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule tag type name",
+      "field": "Schedule_Tag_Type_1_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule Tag Value Add or Reference",
+      "field": "Schedule_Tag_Type_1_Schedule_Tag_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type enabled",
+      "field": "Schedule_Tag_Type_2_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type inherit",
+      "field": "Schedule_Tag_Type_2_Inherit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule tag type name",
+      "field": "Schedule_Tag_Type_2_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule Tag Value Add or Reference",
+      "field": "Schedule_Tag_Type_2_Schedule_Tag_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type enabled",
+      "field": "Schedule_Tag_Type_3_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule tag type inherit",
+      "field": "Schedule_Tag_Type_3_Inherit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule tag type name",
+      "field": "Schedule_Tag_Type_3_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Schedule Tag Value Add or Reference",
+      "field": "Schedule_Tag_Type_3_Schedule_Tag_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The values you select for each of the Scheduling Engine settings to meet schedule objectives.",
+      "field": "Solver_Penalty_Weight_Setting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Consistency look back cycle",
+      "field": "Consistency_Look_Back_Cycle",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable exceed maximum weekly hours",
+      "field": "Enable_Exceed_Maximum_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Allow to exceed maximum weekly hours",
+      "field": "Allow_to_Exceed_Maximum_Weekly_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable fewer than minimum rest days",
+      "field": "Enable_Fewer_than_Minimum_Rest_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Allow fewer than minimum rest days",
+      "field": "Allow_Fewer_than_Minimum_Rest_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Generation_Strategy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Schedule_Generation_Strategy_Reference_Schedule_Generation_Strategy",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify True to enable managers to manually create schedules when generating a schedule that has no labor demand populated.",
+      "field": "Allow_Create_Schedule_Manually",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify True to allow managers to copy a schedule from a prior week into the current week. Copies all shifts, assignments, and details.",
+      "field": "Allow_Copy_Schedule_from_a_Prior_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show sales and productivity modal icon.",
+      "field": "Show_Sales_and_Productivity_Modal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show sales forecast on the labor demand page.",
+      "field": "Show_Sales_Forecast",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show labor budget on the labor demand page.",
+      "field": "Show_Labor_Budget",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show gaps in coverage on the default weekly view.",
+      "field": "Show_Gaps_in_Coverage_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show hours variance on the default weekly view.",
+      "field": "Show_Hours_Variance_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show shift notes on the default weekly view.",
+      "field": "Show_Shift_Notes_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show meals on the default weekly view.",
+      "field": "Show_Meals_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show breaks on the default weekly view.",
+      "field": "Show_Breaks_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show shift duration on the default weekly view.",
+      "field": "Show_Shift_Duration_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show duration of meals and breaks on the default weekly view.",
+      "field": "Show_Duration_for_Meals_and_Breaks_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show unscheduled workers on the default weekly view.",
+      "field": "Show_Unscheduled_Workers_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show worker total hours on the default weekly view.",
+      "field": "Show_Worker_Total_Hours_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show worker availability on the default weekly view.",
+      "field": "Show_Worker_Availability_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show total daily hours on the default weekly view.",
+      "field": "Show_Total_Daily_Hours_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_By_Default_Week_View_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_By_Default_Week_View_Reference_Group_By_Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show gaps in coverage on the default daily view.",
+      "field": "Show_Gaps_in_Coverage_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show shift notes on the default daily view.",
+      "field": "Show_Shift_Notes_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show meals on the default daily view.",
+      "field": "Show_Meals_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show breaks on the default daily view.",
+      "field": "Show_Breaks_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show shift duration on the default daily view.",
+      "field": "Show_Shift_Duration_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show duration of meals and breaks on the default daily view.",
+      "field": "Show_Duration_for_Meals_and_Breaks_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show unscheduled workers on the default daily view.",
+      "field": "Show_Unscheduled_Workers_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify true to show worker total hours on the default daily view.",
+      "field": "Show_Worker_Total_Hours_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Specify the default start time for the daily view.",
+      "field": "Default_Start_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_By_Default_Day_View_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Group_By_Default_Day_View_Reference_Group_By_Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allow Workers to Cover Overlapping Shifts",
+      "field": "Allow_Workers_to_Cover_or_Swap_Overlapping_Shifts",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specify True to enable workers to view the published schedules of other workers in their scheduling organizations.",
+      "field": "Enable_View_My_Teams_Schedule",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specify the number of days in the past for which a worker can view their team's schedule. Example: The worker can't view their team's schedules that are more than 7 days in the past.",
+      "field": "View_My_Teams_Schedule_Day_Limit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Show Duration for Meals and Breaks",
+      "field": "Show_Duration_for_Meals_and_Breaks",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Days Before Shift to Lock Worker Actions",
+      "field": "Days_Before_Shift_to_Lock_Worker_Actions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date that will be used to retrieve the settings.",
+      "field": "Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Copy_Schedule_from_a_Prior_Week": {
+        "description": "Specify True to allow managers to copy a schedule from a prior week into the current week. Copies all shifts, assignments, and details.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Create_Schedule_Manually": {
+        "description": "Specify True to enable managers to manually create schedules when generating a schedule that has no labor demand populated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Fewer_than_Minimum_Rest_Days": {
+        "description": "Allow fewer than minimum rest days",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Allow_Workers_to_Cover_or_Swap_Overlapping_Shifts": {
+        "description": "Allow Workers to Cover Overlapping Shifts",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_to_Exceed_Maximum_Weekly_Hours": {
+        "description": "Allow to exceed maximum weekly hours",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Apply_Daily_Overtime": {
+        "description": "Apply daily overtime",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Apply_Weekly_Overtime": {
+        "description": "Apply weekly overtime",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Comment": {
+        "description": "Comments for the Scheduling Settings",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Consistency_Look_Back_Cycle": {
+        "description": "Consistency look back cycle",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Daily_Overtime_Threshold": {
+        "description": "Daily overtime threshold value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Scheduling_Validation_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Daily_Overtime_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Days_Before_Shift_to_Lock_Worker_Actions": {
+        "description": "Days Before Shift to Lock Worker Actions",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default_Start_Time": {
+        "description": "Specify the default start time for the daily view.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Demand_Period_Length_Reference_Scheduling_Organization_Configuration_Demand_Length_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Demand_Period_Length_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The effective date of the Scheduling Settings. Enter an existing date to override existing settings or a new date to create settings.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date_Prompt": {
+        "description": "The effective date that will be used to retrieve the settings.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Exceed_Maximum_Weekly_Hours": {
+        "description": "Enable exceed maximum weekly hours",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Fewer_than_Minimum_Rest_Days": {
+        "description": "Enable fewer than minimum rest days",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_View_My_Teams_Schedule": {
+        "description": "Specify True to enable workers to view the published schedules of other workers in their scheduling organizations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Group_By_Default_Day_View_Reference_Group_By_Default": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_By_Default_Day_View_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_By_Default_Week_View_Reference_Group_By_Default": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Group_By_Default_Week_View_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The Reference ID for the Scheduling Organization.",
+        "type": [
+          "string"
+        ]
+      },
+      "Include_Leader_as_part_of_the_Schedule": {
+        "description": "Include leader for the settings.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Members_of_Subordinate_Organization": {
+        "description": "Include members of subordinate organizations for the settings.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Max_Weekly_Additional_Working_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Max_Weekly_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours": {
+        "description": "Maximum Daily Hours Value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Additional_Working_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Hours_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length": {
+        "description": "Maximum shift length value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Shift_Length_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Hours_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Weekly_Scheduled_Hours": {
+        "description": "Maximum weekly scheduled hours value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days": {
+        "description": "Maximum working days value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Additional_Working_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Working_Days_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Meal_and_Break_Rule_Set_Reference_Meal_Break_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Meal_and_Break_Rule_Set_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Min_Weekly_Additional_Working_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Min_Weekly_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Between_Shifts_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Rest_Period": {
+        "description": "Minimum rest period value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length": {
+        "description": "Minimum shift length value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Shift_Length_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Hours_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Weekly_Scheduled_Hours": {
+        "description": "Minimum weekly scheduled hours value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Overtime_Rate": {
+        "description": "Overtime rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Predictive_Scheduling_Rule_Set_for_Scheduling_Organization_Reference_Predictive_Scheduling_Rule_Set_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Predictive_Scheduling_Rule_Set_for_Scheduling_Organization_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Generation_Strategy_Reference_Schedule_Generation_Strategy": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Generation_Strategy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_1_Enabled": {
+        "description": "Schedule tag type enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_1_Inherit": {
+        "description": "Schedule tag type inherit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_1_Name": {
+        "description": "Schedule tag type name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_1_Schedule_Tag_Value": {
+        "description": "Schedule Tag Value Add or Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_2_Enabled": {
+        "description": "Schedule tag type enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_2_Inherit": {
+        "description": "Schedule tag type inherit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_2_Name": {
+        "description": "Schedule tag type name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_2_Schedule_Tag_Value": {
+        "description": "Schedule Tag Value Add or Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_3_Enabled": {
+        "description": "Schedule tag type enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_3_Inherit": {
+        "description": "Schedule tag type inherit",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_3_Name": {
+        "description": "Schedule tag type name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Tag_Type_3_Schedule_Tag_Value": {
+        "description": "Schedule Tag Value Add or Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scheduling_Overtime_Configuration_Overview_Reference_Daily_Overtime_Threshold": {
+        "description": "Daily overtime threshold value",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Scheduling_Overtime_Configuration_Overview_Reference_Weekly_Overtime_Threshold": {
+        "description": "Weekly overtime threshold",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Show_Breaks_Day": {
+        "description": "Specify true to show breaks on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Breaks_Week": {
+        "description": "Specify true to show breaks on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Duration_for_Meals_and_Breaks": {
+        "description": "Show Duration for Meals and Breaks",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Duration_for_Meals_and_Breaks_Day": {
+        "description": "Specify true to show duration of meals and breaks on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Duration_for_Meals_and_Breaks_Week": {
+        "description": "Specify true to show duration of meals and breaks on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Gaps_in_Coverage_Day": {
+        "description": "Specify true to show gaps in coverage on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Gaps_in_Coverage_Week": {
+        "description": "Specify true to show gaps in coverage on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Hours_Variance_Week": {
+        "description": "Specify true to show hours variance on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Labor_Budget": {
+        "description": "Specify true to show labor budget on the labor demand page.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Meals_Day": {
+        "description": "Specify true to show meals on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Meals_Week": {
+        "description": "Specify true to show meals on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Sales_Forecast": {
+        "description": "Specify true to show sales forecast on the labor demand page.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Sales_and_Productivity_Modal": {
+        "description": "Specify true to show sales and productivity modal icon.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Shift_Duration_Day": {
+        "description": "Specify true to show shift duration on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Shift_Duration_Week": {
+        "description": "Specify true to show shift duration on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Shift_Notes_Day": {
+        "description": "Specify true to show shift notes on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Shift_Notes_Week": {
+        "description": "Specify true to show shift notes on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Total_Daily_Hours_Week": {
+        "description": "Specify true to show total daily hours on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Unscheduled_Workers_Day": {
+        "description": "Specify true to show unscheduled workers on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Unscheduled_Workers_Week": {
+        "description": "Specify true to show unscheduled workers on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Worker_Availability_Week": {
+        "description": "Specify true to show worker availability on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Worker_Total_Hours_Day": {
+        "description": "Specify true to show worker total hours on the default daily view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Show_Worker_Total_Hours_Week": {
+        "description": "Specify true to show worker total hours on the default weekly view.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Solver_Penalty_Weight_Setting": {
+        "description": "The values you select for each of the Scheduling Engine settings to meet schedule objectives.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Day_of_Week_Reference_Day_of_the_Week_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Day_of_Week_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subgroup_Organization_Reference": {
+        "description": "Subgroup organizations for the settings.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subgroup_Organization_Type_Reference_Accounting_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subgroup_Organization_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subgroup_Organization_Type_Reference_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Subgroup_Organization_Time_Zone": {
+        "description": "Use the time zone of the subgroup organization.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "View_My_Teams_Schedule_Day_Limit": {
+        "description": "Specify the number of days in the past for which a worker can view their team's schedule. Example: The worker can't view their team's schedules that are more than 7 days in the past.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Additional_Working_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Additional_Working_Hours_Reference_Working_Hours_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Enabled": {
+        "description": "Validation enabled",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Scheduling_Validation_Error_Message": {
+        "description": "Error message for the validation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Severity_Level_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Severity_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Validation_Usage_Type_Reference_Scheduling_Validation_Usage_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Validation_Usage_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Weekly_Overtime_Weekly_Overtime_Threshold": {
+        "description": "Weekly Overtime Threshold Value",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

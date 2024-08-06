@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CatalogofFederalDomesticAssistance",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "CFDA Number",
+      "field": "CFDA_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "CFDA Description",
+      "field": "CFDA_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "CFDA Inactive",
+      "field": "CFDA_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "CFDA ID",
+      "field": "CFDA_Reference_ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CFDA_Description": {
+        "description": "CFDA Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CFDA_Inactive": {
+        "description": "CFDA Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "CFDA_Number": {
+        "description": "CFDA Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CFDA_Reference_ID": {
+        "description": "CFDA ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

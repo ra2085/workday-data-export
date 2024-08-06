@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvoiceTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Invoice Type ID. This is the Invoice Type unique identifier.",
+      "field": "Invoice_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Invoice Type",
+      "field": "Invoice_Type_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the Invoice Type. This is not required.",
+      "field": "Invoice_Type_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The usage location of the Invoice Type. If this is left blank, the Invoice Type will not be available anywhere. Only in the chosen usage locations will the Invoice Type be available for selection.",
+      "field": "Usage_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean attribute activates or deactivates the Invoice Type. If an Invoice Type in inactive, it will no longer show up in its usage locations.",
+      "field": "Invoice_Type_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This field identifies if the invoice type is in use within Workday. The field is only for informational purposes and is ignored by Workday if it's used to submit data.",
+      "field": "Invoice_Type_In_Use",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_Description": {
+        "description": "The description of the Invoice Type. This is not required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_ID": {
+        "description": "Invoice Type ID. This is the Invoice Type unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Type_In_Use": {
+        "description": "This field identifies if the invoice type is in use within Workday. The field is only for informational purposes and is ignored by Workday if it's used to submit data.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Type_Inactive": {
+        "description": "This boolean attribute activates or deactivates the Invoice Type. If an Invoice Type in inactive, it will no longer show up in its usage locations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Type_Value": {
+        "description": "The name of the Invoice Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Location_Reference": {
+        "description": "The usage location of the Invoice Type. If this is left blank, the Invoice Type will not be available anywhere. Only in the chosen usage locations will the Invoice Type be available for selection.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

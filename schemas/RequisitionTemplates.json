@@ -1,0 +1,419 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RequisitionTemplates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Template_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Template_Reference_Requisition_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the requistion Template to update",
+      "field": "Requisition_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Shared Template Name is used to provide a human friendly option for searching and finding Requisition Templates",
+      "field": "Requisition_Template_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owned_By_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owned_By_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owned_By_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the Shared Requisition Document was created.",
+      "field": "Document_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Requisition_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to New Hire Template for Job Profile",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One of Four options for Sharing a Requisition Template. If this option is set to True then access level is Public.",
+      "field": "Public",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Security_Group_for_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Security_Group_for_Template_Reference_Share_Security_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Security_Group_for_Template_Reference_Tenant_Security_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Security_Group_for_Template_Reference_Workday_Security_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "One of Four options for sharing a Requisition Template. This option allows you to select Specific Users that should be allowed to use the Template when creating Requisitions.",
+      "field": "User_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "One of Four options for sharing a Requisition Template. This option restricts access to the Requisition Template when creating Requisitions to everyone except the Owner of the Requisition Template.",
+      "field": "Not_Shared",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Requisition Template Goods Line data.",
+      "field": "Requisition_Template_Goods_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing Supplier Invoice Line data.",
+      "field": "Requisition_Template_Service_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Template Name. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Template_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Owned_by_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Owned_by_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+      "field": "Owned_by_Reference_Employee_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company for Requisition Template. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Document_Date": {
+        "description": "The date the Shared Requisition Document was created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "Reference to New Hire Template for Job Profile",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Not_Shared": {
+        "description": "One of Four options for sharing a Requisition Template. This option restricts access to the Requisition Template when creating Requisitions to everyone except the Owner of the Requisition Template.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Owned_By_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owned_By_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owned_By_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owned_by_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owned_by_Reference_Employee_ID_Prompt": {
+        "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owned_by_Reference_WID_Prompt": {
+        "description": "Requisition Template Owned By. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Public": {
+        "description": "One of Four options for Sharing a Requisition Template. If this option is set to True then access level is Public.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Template_Goods_Line_Data": {
+        "description": "Encapsulating element containing Requisition Template Goods Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Template_ID": {
+        "description": "The ID for the requistion Template to update",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Template_Name": {
+        "description": "Shared Template Name is used to provide a human friendly option for searching and finding Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Template_Reference_Requisition_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requisition_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Requisition_Template_Service_Line_Data": {
+        "description": "Encapsulating element containing Supplier Invoice Line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Security_Group_for_Template_Reference_Share_Security_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Security_Group_for_Template_Reference_Tenant_Security_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Security_Group_for_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Security_Group_for_Template_Reference_Workday_Security_Group_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Template_Name_Prompt": {
+        "description": "Requisition Template Name. This value will be used as a filter criteria for Requisition Templates",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Reference": {
+        "description": "One of Four options for sharing a Requisition Template. This option allows you to select Specific Users that should be allowed to use the Template when creating Requisitions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

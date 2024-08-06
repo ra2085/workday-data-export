@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AwardCreditDefinitions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the award credit definition ID.",
+      "field": "Award_Credit_Definition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the award credit definition name.",
+      "field": "Award_Credit_Definition_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the award credit definition description.",
+      "field": "Award_Credit_Definition_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the required worktag types for the award credit definition.",
+      "field": "Required_Worktag_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the optional worktag types for the award credit definition.",
+      "field": "Optional_Worktag_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter the managing company for the award credit definition.",
+      "field": "Managing_Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the award credit definition is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if multiple organization worktags on award credit lines enable reporting access to the award line information.",
+      "field": "Multiple_Organization_Reporting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the award credit definition to return",
+      "field": "Award_Credit_Definition_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Credit_Definition_Description": {
+        "description": "Enter the award credit definition description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Credit_Definition_ID": {
+        "description": "Enter the award credit definition ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Credit_Definition_Name": {
+        "description": "Enter the award credit definition name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Credit_Definition_Name_Prompt": {
+        "description": "Name of the award credit definition to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "True if the award credit definition is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Managing_Company_Reference": {
+        "description": "Enter the managing company for the award credit definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multiple_Organization_Reporting": {
+        "description": "True if multiple organization worktags on award credit lines enable reporting access to the award line information.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Optional_Worktag_Type_Reference": {
+        "description": "Enter the optional worktag types for the award credit definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Required_Worktag_Type_Reference": {
+        "description": "Enter the required worktag types for the award credit definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxRates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Rate_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Rate_Reference_Tax_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Rate_Reference_Withholding_Tax_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Rate ID.  This is the Tax Rate unique identifier",
+      "field": "Tax_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Tax Rate Name",
+      "field": "Tax_Rate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Authority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Authority_Reference_Tax_Authority_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Authority_Reference_Tax_Authority_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Category_Reference_Tax_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Data to effective date the Tax Rate.",
+      "field": "Effective_Transaction_Tax_Rate_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Provided as criteria to search for tax rate names that contain the search string.",
+      "field": "Tax_Rate_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_Tax_Authority_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+      "field": "Tax_Authority_Reference_Tax_Authority_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+      "field": "Tax_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+      "field": "Tax_Category_Reference_Tax_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to search for third party tax rates only. If true, return third party tax rates only. If false or not provided, return all tax rates.",
+      "field": "Third_Party_Tax_Rate_Only_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-2_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID_Prompt": {
+        "description": "Refers to a specific country. Provided as criteria to search for tax rates with matching country.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Transaction_Tax_Rate_Data": {
+        "description": "Data to effective date the Tax Rate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_ID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_Tax_Authority_Reference_ID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Reference_WID_Prompt": {
+        "description": "Refers to a specific tax authority. Provided as criteria to search for tax rates with matching tax authority.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_Tax_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_Tax_Category_ID_Prompt": {
+        "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Category_Reference_WID_Prompt": {
+        "description": "Refers to a specific tax category. Provided as criteria to search for tax rates with matching tax category.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_ID": {
+        "description": "Tax Rate ID.  This is the Tax Rate unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Name": {
+        "description": "Free form text field for a meaningful Tax Rate Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Name_Prompt": {
+        "description": "Provided as criteria to search for tax rate names that contain the search string.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Reference_Tax_Rate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Rate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Tax_Rate_Reference_Withholding_Tax_Rate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Third_Party_Tax_Rate_Only_Prompt": {
+        "description": "Indicates whether to search for third party tax rates only. If true, return third party tax rates only. If false or not provided, return all tax rates.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

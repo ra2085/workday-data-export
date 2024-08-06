@@ -1,0 +1,172 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "HeadcountPlansDoNotUse",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Plan_Version_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Plan_Version_Reference_Headcount_Plan_Version_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Plan_Template_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date used to determine the organizations to plan for that are effective as of the date selected.",
+      "field": "Organizations_Effective_As_Of_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that contains the Organization Management data information.",
+      "field": "Organization_Management_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that contains the organizations to exclude data.",
+      "field": "Organizations_to_Exclude_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that contains dimension management information.",
+      "field": "Headcount_Plan_Dimension_Management_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for the Headcount Plan.",
+      "field": "Headcount_Plan_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+      "field": "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Filters Headcount Plans by Active Plan Versions.",
+      "field": "Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Active_Prompt": {
+        "description": "Filters Headcount Plans by Active Plan Versions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Data": {
+        "description": "Contains data for the Headcount Plan.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Dimension_Management_Data": {
+        "description": "Element that contains dimension management information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_Headcount_Plan_Template_ID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Template_Reference_WID_Prompt": {
+        "description": "A unique identifier for the Headcount Plan Template.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Version_Reference_Headcount_Plan_Version_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Headcount_Plan_Version_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Organization_Management_Data": {
+        "description": "Element that contains the Organization Management data information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organizations_Effective_As_Of_Date": {
+        "description": "Date used to determine the organizations to plan for that are effective as of the date selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organizations_to_Exclude_Data": {
+        "description": "Element that contains the organizations to exclude data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

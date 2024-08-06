@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BackgroundCheckPackages",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Background_Check_Package_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Background_Check_Package_Reference_Background_Check_Package_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Background Check Package.",
+      "field": "Background_Check_Package",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of the Background Check Package.",
+      "field": "Package_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the Background Check Package.",
+      "field": "Background_Check_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the Background Check Package is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Information about the Background Check Package Test.",
+      "field": "Background_Check_Test",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Background_Check_Description": {
+        "description": "Description of the Background Check Package.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Background_Check_Package": {
+        "description": "Name of the Background Check Package.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Background_Check_Package_Reference_Background_Check_Package_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Background_Check_Package_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Background_Check_Test": {
+        "description": "Information about the Background Check Package Test.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates if the Background Check Package is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Package_Reference_ID": {
+        "description": "Reference ID of the Background Check Package.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

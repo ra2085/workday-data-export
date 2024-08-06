@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkdayBenchmarkingJobProfileMappings",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Job_Profile_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Job_Profile_Reference_Job_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for Workday Job Profile",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the tenanted Job Profile for the Workday Job Profile.",
+      "field": "Mapped_Job_Profile_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If Workday Job Profile Not Applicable is set to true, the Workday Job Profile won't map to tenanted Job Profiles.",
+      "field": "Workday_Job_Profile_Not_Applicable",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "ID for Workday Job Profile",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Mapped_Job_Profile_Data": {
+        "description": "Contains the tenanted Job Profile for the Workday Job Profile.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Job_Profile_Not_Applicable": {
+        "description": "If Workday Job Profile Not Applicable is set to true, the Workday Job Profile won't map to tenanted Job Profiles.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Workday_Job_Profile_Reference_Job_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Job_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

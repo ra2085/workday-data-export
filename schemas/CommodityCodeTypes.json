@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CommodityCodeTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Commodity_Code_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Commodity_Code_Type_Reference_Commodity_Code_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Commodity Code Type.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is name of the Commodity Code Type and needs to be unique.",
+      "field": "Commodity_Code_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of characters allowed in the commodity code.  This should be the same as the sum of Level Length.",
+      "field": "Length",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Commodity Code Type Level",
+      "field": "Commodity_Code_Type_Level",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Commodity_Code_Type_Level": {
+        "description": "Commodity Code Type Level",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Type_Name": {
+        "description": "This is name of the Commodity Code Type and needs to be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Type_Reference_Commodity_Code_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Commodity_Code_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Commodity Code Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Length": {
+        "description": "Number of characters allowed in the commodity code.  This should be the same as the sum of Level Length.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

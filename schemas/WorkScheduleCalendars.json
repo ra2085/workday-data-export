@@ -1,0 +1,549 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkScheduleCalendars",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Schedule_Calendar_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Schedule_Calendar_Reference_Work_Schedule_Calendar_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text name for Work Schedule Calendar.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A short description of the work schedule calendar or its restrictions to display to workers when they edit their work schedules.",
+      "field": "Schedule_Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text description of Work Schedule Calendar.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Condition_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Condition_Rule_Reference_Condition_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Work Schedule Calendar Group for the Work Schedule Calendar.",
+      "field": "Work_Schedule_Calendar_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_Breaker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_Breaker_Reference_Twenty_Four_Hour_Time_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_Breaker_Divides_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Day_Breaker_Divides_Reference_Day_Breaker_Divider_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Week_Start_Day_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Work_Week_Start_Day_Reference_Day_of_the_Week_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Reference to Biweekly Calculation Start Date for Work Schedule Calendar.",
+      "field": "Biweekly_Calculation_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Configurable_Calculation_Period_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Configurable_Calculation_Period_Reference_Period_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value to specify if this Work Schedule Calendar is opted into Static Scheduling for Workday Scheduling.",
+      "field": "Enable_for_Static_Scheduling",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date on which the patterns begin cycling, if using Pattern Schedule Events. This setting does not affect the week start day of the My Schedule report.",
+      "field": "Pattern_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Weeks for Work Schedule Calendar, if using Pattern Schedule Events.",
+      "field": "Number_of_Weeks",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Work Schedule Calendar Event data.",
+      "field": "Work_Schedule_Calendar_Event_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for enabling Worker Editing Options.",
+      "field": "Enable_Worker_Editing_Options",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for allowing Worker to Change Scheduled and Non-Scheduled Days for schedule pattern.",
+      "field": "Change_Scheduled_and_Non_Scheduled_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for allowing Worker to Change Number of Scheduled Days for schedule pattern.",
+      "field": "Change_Number_of_Scheduled_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value to enable Minimum/Maximum Number of Hours per Day and Minimum/Maximum Number of Hours per Week for schedule pattern.",
+      "field": "Enable_Hours_Restrictions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Minimum Number of Hours per Day for schedule pattern.",
+      "field": "Minimum_Number_of_Hours_per_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Maximum Number of Hours per Day for schedule pattern.",
+      "field": "Maximum_Number_of_Hours_per_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Minimum Number of Hours per Week for schedule pattern.",
+      "field": "Minimum_Number_of_Hours_per_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Maximum Number of Hours per Week for schedule pattern.",
+      "field": "Maximum_Number_of_Hours_per_Week",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for allowing Worker to Change Daily Start and End Times for schedule pattern.",
+      "field": "Change_Daily_Start_and_End_Times",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for enforcing Uniform Start and End Times for schedule pattern.",
+      "field": "Uniform_Start_and_End_Times",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Minute-precision Time value for Flexible Start Time for schedule pattern.",
+      "field": "Flexible_Start_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIME",
+      "description": "Minute-precision Time value for Flexible End Time for schedule pattern.",
+      "field": "Flexible_End_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for allowing Worker to have Meals for schedule pattern.",
+      "field": "Allow_Meals",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value for allowing Worker to Change Meal Start and End Times for schedule pattern.",
+      "field": "Change_Meal_Start_and_End_Times",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Minimum Meal Duration in minutes for schedule pattern.",
+      "field": "Minimum_Meal_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value for Maximum Meal Duration in minutes for schedule pattern.",
+      "field": "Maximum_Meal_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instance data for Schedule Pattern. This schedule pattern may be linked to schedule changes that a manager made. If you update this schedule pattern, you will also be deleting the manager's changes.",
+      "field": "Pattern_Schedule_Event_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instance data for Flextime Bands. Flextime Bands can be used alone, with calendar events, or with patterns.",
+      "field": "Flextime_Band_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Once a Work Schedule Calendar has been marked as inactive, it can't be edited or made active again.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Work Schedule Calendar inactivation date. Do not set directly; the value will be ignored. Instead use the \"inactivate\" field to inactivate a Calendar.",
+      "field": "Inactive_Date",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Meals": {
+        "description": "Boolean value for allowing Worker to have Meals for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Biweekly_Calculation_Start_Date": {
+        "description": "Reference to Biweekly Calculation Start Date for Work Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Change_Daily_Start_and_End_Times": {
+        "description": "Boolean value for allowing Worker to Change Daily Start and End Times for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Change_Meal_Start_and_End_Times": {
+        "description": "Boolean value for allowing Worker to Change Meal Start and End Times for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Change_Number_of_Scheduled_Days": {
+        "description": "Boolean value for allowing Worker to Change Number of Scheduled Days for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Change_Scheduled_and_Non_Scheduled_Days": {
+        "description": "Boolean value for allowing Worker to Change Scheduled and Non-Scheduled Days for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Condition_Rule_Reference_Condition_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Condition_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Configurable_Calculation_Period_Reference_Period_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Configurable_Calculation_Period_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_Breaker_Divides_Reference_Day_Breaker_Divider_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_Breaker_Divides_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_Breaker_Reference_Twenty_Four_Hour_Time_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Day_Breaker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Text description of Work Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Hours_Restrictions": {
+        "description": "Boolean value to enable Minimum/Maximum Number of Hours per Day and Minimum/Maximum Number of Hours per Week for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Worker_Editing_Options": {
+        "description": "Boolean value for enabling Worker Editing Options.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_for_Static_Scheduling": {
+        "description": "Boolean value to specify if this Work Schedule Calendar is opted into Static Scheduling for Workday Scheduling.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Flexible_End_Time": {
+        "description": "Minute-precision Time value for Flexible End Time for schedule pattern.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Flexible_Start_Time": {
+        "description": "Minute-precision Time value for Flexible Start Time for schedule pattern.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Flextime_Band_Data": {
+        "description": "Instance data for Flextime Bands. Flextime Bands can be used alone, with calendar events, or with patterns.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Once a Work Schedule Calendar has been marked as inactive, it can't be edited or made active again.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Date": {
+        "description": "Work Schedule Calendar inactivation date. Do not set directly; the value will be ignored. Instead use the \"inactivate\" field to inactivate a Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Meal_Duration": {
+        "description": "Numeric value for Maximum Meal Duration in minutes for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Number_of_Hours_per_Day": {
+        "description": "Numeric value for Maximum Number of Hours per Day for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Maximum_Number_of_Hours_per_Week": {
+        "description": "Numeric value for Maximum Number of Hours per Week for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Meal_Duration": {
+        "description": "Numeric value for Minimum Meal Duration in minutes for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Number_of_Hours_per_Day": {
+        "description": "Numeric value for Minimum Number of Hours per Day for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Number_of_Hours_per_Week": {
+        "description": "Numeric value for Minimum Number of Hours per Week for schedule pattern.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Text name for Work Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Weeks": {
+        "description": "Number of Weeks for Work Schedule Calendar, if using Pattern Schedule Events.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pattern_Schedule_Event_Data": {
+        "description": "Instance data for Schedule Pattern. This schedule pattern may be linked to schedule changes that a manager made. If you update this schedule pattern, you will also be deleting the manager's changes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pattern_Start_Date": {
+        "description": "The date on which the patterns begin cycling, if using Pattern Schedule Events. This setting does not affect the week start day of the My Schedule report.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Schedule_Summary": {
+        "description": "A short description of the work schedule calendar or its restrictions to display to workers when they edit their work schedules.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Uniform_Start_and_End_Times": {
+        "description": "Boolean value for enforcing Uniform Start and End Times for schedule pattern.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Work_Schedule_Calendar_Event_Data": {
+        "description": "Work Schedule Calendar Event data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Schedule_Calendar_Group_Reference": {
+        "description": "Reference to the Work Schedule Calendar Group for the Work Schedule Calendar.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Schedule_Calendar_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Work_Schedule_Calendar_Reference_Work_Schedule_Calendar_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Week_Start_Day_Reference_Day_of_the_Week_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Work_Week_Start_Day_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

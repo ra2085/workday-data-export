@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompetencySnapshots",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Competency_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Competency_Reference_Competency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This contains the most recent Default Snapshot for the Competency. This is set on the Configure Competency page in the UI, and is not tied to any specific Band.",
+      "field": "Competency_Snapshot_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This contains the information about each specific Competency Band. Each one is tied to a specific management level or compensation grade.",
+      "field": "Competency_Band_Snapshot_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Competency_Band_Snapshot_Data": {
+        "description": "This contains the information about each specific Competency Band. Each one is tied to a specific management level or compensation grade.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Reference_Competency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Competency_Snapshot_Data": {
+        "description": "This contains the most recent Default Snapshot for the Competency. This is set on the Configure Competency page in the UI, and is not tied to any specific Band.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

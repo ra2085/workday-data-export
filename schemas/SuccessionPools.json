@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SuccessionPools",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Reference_ID of Job Profile Succession Plan.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Succession Plan Name attribute value.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Succession Plan Description attribute value.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Holds Succession Plan Inactivate boolean value.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Restricted Succession pool holds a boolean value. This Boolean value is used to specify if the succession plan is restricted or not.",
+      "field": "Restricted_View",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This Boolean value is used to specify if the Succession/Talent pool will be excluded from processing during the Remove Worker from Talent business process",
+      "field": "Exclude_from_Termination",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Job Profile reference for this succession plan.",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Holds Reference to Succession Pool Candidate instance.",
+      "field": "Succession_Pool_Candidate",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Holds Succession Plan Description attribute value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_from_Termination": {
+        "description": "This Boolean value is used to specify if the Succession/Talent pool will be excluded from processing during the Remove Worker from Talent business process",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Holds Reference_ID of Job Profile Succession Plan.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Holds Succession Plan Inactivate boolean value.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "Holds Job Profile reference for this succession plan.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Holds Succession Plan Name attribute value.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_View": {
+        "description": "Restricted Succession pool holds a boolean value. This Boolean value is used to specify if the succession plan is restricted or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Succession_Pool_Candidate": {
+        "description": "Holds Reference to Succession Pool Candidate instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

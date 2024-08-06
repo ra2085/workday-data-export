@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EmailMatchExclusions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Email_Match_Exclusion_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Email_Match_Exclusion_Reference_Excludable_Email",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for an excludable email address.",
+      "field": "Excludable_Email_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The email address.",
+      "field": "Email_Address",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Email_Address": {
+        "description": "The email address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Match_Exclusion_Reference_Excludable_Email": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Email_Match_Exclusion_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Excludable_Email_ID": {
+        "description": "Reference ID for an excludable email address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

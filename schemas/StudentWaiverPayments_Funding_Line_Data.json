@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentWaiverPayments_Funding_Line_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "StudentWaiverPayment_Student_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Number for Student Waiver Payment Funding Line",
+      "field": "Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount for Student Waiver Payment Funding Line",
+      "field": "Transaction_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worktags for Student Waiver Payment Funding Line",
+      "field": "Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for Student Waiver Payment Funding Line",
+      "field": "Line_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Academic_Person_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Student_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+      "field": "Students_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+      "field": "Institutions_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+      "field": "Institutions_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Institutions_Reference_Academic_Unit_ID_Prompt": {
+        "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institutions_Reference_WID_Prompt": {
+        "description": "The institution. You can specify multiple institutions to filter for results specific to those institutions.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Memo": {
+        "description": "Memo for Student Waiver Payment Funding Line",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Number": {
+        "description": "Number for Student Waiver Payment Funding Line",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "StudentWaiverPayment_Student_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Academic_Person_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Student_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Students_Reference_WID_Prompt": {
+        "description": "The Student. You can specify multiple students to filter for results specific to those students.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Amount": {
+        "description": "Amount for Student Waiver Payment Funding Line",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worktags_Reference": {
+        "description": "Worktags for Student Waiver Payment Funding Line",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

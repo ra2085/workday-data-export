@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SubrecipientRiskRecords_Attachment_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SubrecipientRiskRecord_Subrecipient_Risk_Record_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "File_Content",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Comment",
+      "field": "Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Subrecipient for the Risk Records.",
+      "field": "Subrecipient_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Subrecipient for the Risk Records.",
+      "field": "Subrecipient_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Subrecipient for the Risk Records.",
+      "field": "Subrecipient_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Subrecipient for the Risk Records.",
+      "field": "Subrecipient_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Comment": {
+        "description": "Comment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Content": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SubrecipientRiskRecord_Subrecipient_Risk_Record_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subrecipient_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Subrecipient for the Risk Records.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subrecipient_Reference_Supplier_ID_Prompt": {
+        "description": "Subrecipient for the Risk Records.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subrecipient_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Subrecipient for the Risk Records.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subrecipient_Reference_WID_Prompt": {
+        "description": "Subrecipient for the Risk Records.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

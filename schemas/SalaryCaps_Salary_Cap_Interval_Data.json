@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SalaryCaps_Salary_Cap_Interval_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "SalaryCap_Salary_Cap_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Cap_Interval_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Cap_Interval_Reference_Salary_Cap_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payroll Limit Snapshot Reference ID",
+      "field": "Salary_Cap_Interval_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date From",
+      "field": "Date_From",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date To",
+      "field": "Date_To",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Award Limit Amount",
+      "field": "Salary_Cap_Amount",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date_From": {
+        "description": "Date From",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_To": {
+        "description": "Date To",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SalaryCap_Salary_Cap_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Amount": {
+        "description": "Award Limit Amount",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Salary_Cap_Interval_ID": {
+        "description": "Payroll Limit Snapshot Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Interval_Reference_Salary_Cap_Interval_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Cap_Interval_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

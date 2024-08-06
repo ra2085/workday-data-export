@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DifficultytoFill",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+      "field": "Difficulty_to_Fill_Sort_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the difficulty level.",
+      "field": "Difficulty_to_Fill_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the difficulty to fill.",
+      "field": "Difficulty_to_Fill_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of the difficulty level.",
+      "field": "Difficulty_to_Fill_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not the difficulty is inactive or not.",
+      "field": "Difficulty_to_Fill_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Difficulty_to_Fill_Code": {
+        "description": "A unique identifier for the difficulty to fill.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Description": {
+        "description": "Description of the difficulty level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Inactive": {
+        "description": "Whether or not the difficulty is inactive or not.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Name": {
+        "description": "Name of the difficulty level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_Difficulty_to_Fill_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Difficulty_to_Fill_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Difficulty_to_Fill_Sort_Order": {
+        "description": "Optional line order. If specified, lines will be sorted by this value when displayed and when invoice is printed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

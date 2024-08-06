@@ -1,0 +1,199 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationGrades_Alternative_Pay_Range",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CompensationGrade_Compensation_Grade_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If True is entered, the Alternative Pay Range will be removed from the Compensation Grade or Grade Profile.",
+      "field": "Delete",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Basis_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Basis_Reference_Compensation_Basis_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The minimum of the salary range.",
+      "field": "Minimum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The midpoint of the salary range.",
+      "field": "Midpoint",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The maximum of the salary range.",
+      "field": "Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The spread from the range minimum to range maximum.",
+      "field": "Spread",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 1.",
+      "field": "Segment_1_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 2.",
+      "field": "Segment_2_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 3.",
+      "field": "Segment_3_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 4.",
+      "field": "Segment_4_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 5.",
+      "field": "Segment_5_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CompensationGrade_Compensation_Grade_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Basis_Reference_Compensation_Basis_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Basis_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete": {
+        "description": "If True is entered, the Alternative Pay Range will be removed from the Compensation Grade or Grade Profile.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum": {
+        "description": "The maximum of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Midpoint": {
+        "description": "The midpoint of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum": {
+        "description": "The minimum of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_1_Top": {
+        "description": "The top value for Segment 1.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_2_Top": {
+        "description": "The top value for Segment 2.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_3_Top": {
+        "description": "The top value for Segment 3.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_4_Top": {
+        "description": "The top value for Segment 4.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_5_Top": {
+        "description": "The top value for Segment 5.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Spread": {
+        "description": "The spread from the range minimum to range maximum.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

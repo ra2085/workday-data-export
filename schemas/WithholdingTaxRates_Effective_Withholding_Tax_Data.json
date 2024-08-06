@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WithholdingTaxRates_Effective_Withholding_Tax_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID",
+      "field": "WithholdingTaxRate_Tax_Rate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the snapshot comes into effect.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric value of the Tax Rate",
+      "field": "Tax_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Document Threshold Amount in Tax Currency",
+      "field": "Transaction_Threshold_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Threshold_Combination_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Threshold_Combination_Reference_Logical_Operator_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Line Threshold Amount in Tax Currency",
+      "field": "Rate_Threshold_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Accumulated Rate Amount in Tax Currency",
+      "field": "Accumulated_Rate_Amount_in_Tax_Currency",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Container for Withholding Tax Progressive Rate Tier Rule Data",
+      "field": "Withholding_Tax_Progressive_Rate_Tier_Rule_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accumulated_Rate_Amount_in_Tax_Currency": {
+        "description": "Accumulated Rate Amount in Tax Currency",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The date the snapshot comes into effect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rate_Threshold_Amount": {
+        "description": "Line Threshold Amount in Tax Currency",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Tax_Rate": {
+        "description": "Numeric value of the Tax Rate",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Threshold_Combination_Reference_Logical_Operator_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Threshold_Combination_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Threshold_Amount": {
+        "description": "Document Threshold Amount in Tax Currency",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "WithholdingTaxRate_Tax_Rate_ID": {
+        "description": "Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Tax_Progressive_Rate_Tier_Rule_Data": {
+        "description": "Container for Withholding Tax Progressive Rate Tier Rule Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

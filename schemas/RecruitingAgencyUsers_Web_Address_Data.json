@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RecruitingAgencyUsers_Web_Address_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "RecruitingAgencyUser_Recruiting_Agency_User_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web address (Example: URL).",
+      "field": "Web_Address",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web address comment.",
+      "field": "Web_Address_Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Communication Method Usage data.",
+      "field": "Usage_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Web_Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Web_Address_Reference_Web_Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "New ID value used in web address updates. The ID cannot already be in use by another web address.",
+      "field": "ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "New ID value used in web address updates. The ID cannot already be in use by another web address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "RecruitingAgencyUser_Recruiting_Agency_User_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Data": {
+        "description": "Encapsulating element for all Communication Method Usage data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address": {
+        "description": "Web address (Example: URL).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Comment": {
+        "description": "Web address comment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Web_Address_Reference_Web_Address_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalPayrollDeductions_Scheduling_Calculation",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExternalPayrollDeduction_Calculation_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the calculation type.",
+      "field": "Calculation_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Calculation is Workday-delivered.",
+      "field": "Workday_Owned",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Calculation.",
+      "field": "Calculation_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Reference ID Type and Reference ID of the Calculation.",
+      "field": "Calculation_Reference_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "WID of the Workday-delivered Calculation.",
+      "field": "WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+      "field": "Pay_Groups_for_Payroll_Interface_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+      "field": "Pay_Groups_for_Payroll_Interface_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calculation_Name": {
+        "description": "Name of the Calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Reference_Data": {
+        "description": "Contains the Reference ID Type and Reference ID of the Calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calculation_Type": {
+        "description": "Name of the calculation type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ExternalPayrollDeduction_Calculation_Category_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_for_Payroll_Interface_Reference_Organization_Reference_ID_Prompt": {
+        "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Groups_for_Payroll_Interface_Reference_WID_Prompt": {
+        "description": "ID of the Third-Party Payroll Pay Group. Specify either the WID or \"Organization_Reference_ID=12345\".. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "WID": {
+        "description": "WID of the Workday-delivered Calculation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Owned": {
+        "description": "If true, the Calculation is Workday-delivered.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

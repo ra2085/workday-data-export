@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MiscellaneousPayees_Settlement_Instruction_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Payee ID",
+      "field": "MiscellaneousPayee_Miscellaneous_Payee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element contains Settlement Bank Account attributes.",
+      "field": "Settlement_Account_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element contains Settlement Digital Account attributes.",
+      "field": "Digital_Account_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Miscellaneous Payee Name",
+      "field": "Miscellaneous_Payee_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Digital_Account_Data": {
+        "description": "This element contains Settlement Digital Account attributes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "MiscellaneousPayee_Miscellaneous_Payee_ID": {
+        "description": "Miscellaneous Payee ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Miscellaneous_Payee_Name_Prompt": {
+        "description": "Miscellaneous Payee Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Account_Data": {
+        "description": "This element contains Settlement Bank Account attributes.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

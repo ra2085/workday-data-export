@@ -1,0 +1,407 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryCountSheets",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count Sheet Number",
+      "field": "Count_Sheet",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Name",
+      "field": "Request_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Count Sheet created on date/time",
+      "field": "Created_On",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Site_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assigned_To_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assigned_To_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assigned_To_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Adjustment_Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Adjustment_Reason_Reference_Inventory_Adjustment_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Sets Inventory Accounting Date for the Count Sheet.",
+      "field": "Inventory_Accounting_Date_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "memo",
+      "field": "Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet line specific data",
+      "field": "Inventory_Count_Sheet_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Sites to find count sheets. This field is required.. Supports multiple values.",
+      "field": "Inventory_Sites_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Sites to find count sheets. This field is required.. Supports multiple values.",
+      "field": "Inventory_Sites_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet document number.",
+      "field": "Count_Sheet_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Name",
+      "field": "Request_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Count sheet created on or after date.",
+      "field": "Count_Sheet_Created_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Count sheet created on or before date.",
+      "field": "Count_Sheet_Created_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Inventory accounting date on or after.",
+      "field": "Inventory_Accounting_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Inventory accounting date on or before.",
+      "field": "Inventory_Accounting_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet statuses to include.. Supports multiple values.",
+      "field": "Count_Sheet_Statuses_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet statuses to include.. Supports multiple values.",
+      "field": "Count_Sheet_Statuses_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet assigned to person.. Supports multiple values.",
+      "field": "Assigned_To_Workers_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet assigned to person.. Supports multiple values.",
+      "field": "Assigned_To_Workers_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Count sheet assigned to person.. Supports multiple values.",
+      "field": "Assigned_To_Workers_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not to exclude cancelled count sheets.",
+      "field": "Exclude_Cancelled_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not to exclude closed count sheets.",
+      "field": "Exclude_Closed_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Adjustment_Reason_Reference_Inventory_Adjustment_Reason_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Adjustment_Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Workers_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Count sheet assigned to person.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Workers_Reference_Employee_ID_Prompt": {
+        "description": "Count sheet assigned to person.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Workers_Reference_WID_Prompt": {
+        "description": "Count sheet assigned to person.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet": {
+        "description": "Count Sheet Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet_Created_On_or_After_Prompt": {
+        "description": "Count sheet created on or after date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet_Created_On_or_Before_Prompt": {
+        "description": "Count sheet created on or before date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet_Number_Prompt": {
+        "description": "Count sheet document number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet_Statuses_Reference_Document_Status_ID_Prompt": {
+        "description": "Count sheet statuses to include.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Count_Sheet_Statuses_Reference_WID_Prompt": {
+        "description": "Count sheet statuses to include.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Created_On": {
+        "description": "Count Sheet created on date/time",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Cancelled_Prompt": {
+        "description": "Whether or not to exclude cancelled count sheets.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Closed_Prompt": {
+        "description": "Whether or not to exclude closed count sheets.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inventory_Accounting_Date_On_or_After_Prompt": {
+        "description": "Inventory accounting date on or after.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Accounting_Date_On_or_Before_Prompt": {
+        "description": "Inventory accounting date on or before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Accounting_Date_Reference": {
+        "description": "Sets Inventory Accounting Date for the Count Sheet.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Count_Sheet_Line_Data": {
+        "description": "Count sheet line specific data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Sites_Reference_Location_ID_Prompt": {
+        "description": "Inventory Sites to find count sheets. This field is required.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Sites_Reference_WID_Prompt": {
+        "description": "Inventory Sites to find count sheets. This field is required.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Memo": {
+        "description": "memo",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Name": {
+        "description": "Request Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Name_Prompt": {
+        "description": "Request Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

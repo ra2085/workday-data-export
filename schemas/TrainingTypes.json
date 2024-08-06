@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TrainingTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID (Training_Type_ID)",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Training Type.",
+      "field": "Training_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the training type is inactive.  If a training type is inactive, it will no longer be allowed to be selected when a user enters or updates their training.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Reference ID (Training_Type_ID)",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates if the training type is inactive.  If a training type is inactive, it will no longer be allowed to be selected when a user enters or updates their training.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Training_Type_Name": {
+        "description": "The name of the Training Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

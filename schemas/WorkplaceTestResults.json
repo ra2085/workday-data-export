@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkplaceTestResults",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workplace_Test_Result_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workplace_Test_Result_Reference_Workplace_Test_Result",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workplace_Test_Result_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the result of the Workplace Test.",
+      "field": "Workplace_Test_Result_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the test result is inactivated. You might have downstream impacts if there's existing workplace test data.",
+      "field": "Workplace_Test_Result_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom text that workers view when they attest to their workplace test results.",
+      "field": "Workplace_Test_Attestation_Text",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Workplace_Test_Attestation_Text": {
+        "description": "Custom text that workers view when they attest to their workplace test results.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workplace_Test_Result_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workplace_Test_Result_Inactive": {
+        "description": "If true, the test result is inactivated. You might have downstream impacts if there's existing workplace test data.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Workplace_Test_Result_Name": {
+        "description": "The name of the result of the Workplace Test.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workplace_Test_Result_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Workplace_Test_Result_Reference_Workplace_Test_Result": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

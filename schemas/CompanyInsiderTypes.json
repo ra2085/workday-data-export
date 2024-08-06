@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyInsiderTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Insider Type ID. This is the unique identifier for a company insider type.",
+      "field": "Company_Insider_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Insider Type Name.",
+      "field": "Company_Insider_Type_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Insider Type description.",
+      "field": "Company_Insider_Type_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean that indicates if a Company Insider Type is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Company_Insider_Type_Description": {
+        "description": "Company Insider Type description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Type_ID": {
+        "description": "Company Insider Type ID. This is the unique identifier for a company insider type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Insider_Type_Name": {
+        "description": "Company Insider Type Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean that indicates if a Company Insider Type is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

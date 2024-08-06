@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectPhases",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phase ID.  This is the phase unique identifier.",
+      "field": "Phase_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Project Phase Name",
+      "field": "Phase_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains Project Phase Description",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag to set the Project Phase to Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Phase Name",
+      "field": "Project_Phase_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Contains Project Phase Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean flag to set the Project Phase to Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Phase_ID": {
+        "description": "Phase ID.  This is the phase unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phase_Name": {
+        "description": "Contains Project Phase Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Phase_Name_Prompt": {
+        "description": "Project Phase Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

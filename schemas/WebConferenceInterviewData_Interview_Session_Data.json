@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WebConferenceInterviewData_Interview_Session_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interview_Session_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Interview_Session_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Start time of the interview session.",
+      "field": "Interview_Session_Start_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "End time of the interview session.",
+      "field": "Interview_Session_End_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for the interviewer.",
+      "field": "Interviewer_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for the interview room.",
+      "field": "Interview_Room_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Interview_Room_Data": {
+        "description": "Contains data for the interview room.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interview_Session_End_Time": {
+        "description": "End time of the interview session.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interview_Session_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interview_Session_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interview_Session_Start_Time": {
+        "description": "Start time of the interview session.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Interviewer_Data": {
+        "description": "Contains data for the interviewer.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

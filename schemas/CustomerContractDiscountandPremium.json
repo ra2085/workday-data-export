@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerContractDiscountandPremium",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Discount and Premium ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Discount and Premium Type",
+      "field": "Contract_Discount_and_Premium_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Contract Discount and Premium Percentage",
+      "field": "Contract_Discount_and_Premium_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Contract Discount and Premium Start Date",
+      "field": "Contract_Discount_and_Premium_Start_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Contract Discount and Premium End Date",
+      "field": "Contract_Discount_and_Premium_End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "In Use",
+      "field": "in_Use",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Is Inactive",
+      "field": "is_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Discount/Premium Notes",
+      "field": "Contract_Discount_and_Premium_Notes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Discount and Premium",
+      "field": "Discount_and_Premium_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date where Premium and Discount is Valid",
+      "field": "Valid_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Contract_Discount_and_Premium_End_Date": {
+        "description": "Contract Discount and Premium End Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Discount_and_Premium_Notes": {
+        "description": "Discount/Premium Notes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Discount_and_Premium_Percentage": {
+        "description": "Contract Discount and Premium Percentage",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Contract_Discount_and_Premium_Start_Date": {
+        "description": "Contract Discount and Premium Start Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Discount_and_Premium_Type": {
+        "description": "Contract Discount and Premium Type",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Discount_and_Premium_Name_Prompt": {
+        "description": "Name of Discount and Premium",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Contract Discount and Premium ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Valid_Date_Prompt": {
+        "description": "Date where Premium and Discount is Valid",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "in_Use": {
+        "description": "In Use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "is_Inactive": {
+        "description": "Is Inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

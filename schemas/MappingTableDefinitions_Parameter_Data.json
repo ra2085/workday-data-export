@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MappingTableDefinitions_Parameter_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "MappingTableDefinition_Mapping_Table_Definition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the Order of the Parameter for the Mapping Table Definition.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the Name of the Mapping Table Definition.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether to enable Wildcard functionality for the Mapping Table Definition Parameter.",
+      "field": "Allow_Wildcard",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether Range Field is enabled for the Mapping Table Definition Parameter.",
+      "field": "Range_Field",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Wildcard": {
+        "description": "Specifies whether to enable Wildcard functionality for the Mapping Table Definition Parameter.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "MappingTableDefinition_Mapping_Table_Definition_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Specifies the Name of the Mapping Table Definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Specifies the Order of the Parameter for the Mapping Table Definition.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Range_Field": {
+        "description": "Specifies whether Range Field is enabled for the Mapping Table Definition Parameter.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

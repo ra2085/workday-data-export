@@ -1,0 +1,81 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AccountingAdjustmentChangeReasonCodes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Adjustment_Change_Reason_Code_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Adjustment_Change_Reason_Code_Reference_Accounting_Adjustment_Change_Reason_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID of the Accounting Adjustment Change Reason Code.",
+      "field": "Accounting_Adjustment_Change_Reason_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Accounting Adjustment Change Reason Code.",
+      "field": "Change_Reason_Code_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the Accounting Adjustment Change Reason Code is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Adjustment_Change_Reason_Code_ID": {
+        "description": "The reference ID of the Accounting Adjustment Change Reason Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Adjustment_Change_Reason_Code_Reference_Accounting_Adjustment_Change_Reason_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Adjustment_Change_Reason_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Change_Reason_Code_Name": {
+        "description": "The name of the Accounting Adjustment Change Reason Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "If true, the Accounting Adjustment Change Reason Code is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadaIncomeWithholdingOrders_Non-Family_Withholding_Order_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CanadaIncomeWithholdingOrder_Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Amount_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Amount_Type_Reference_Withholding_Order_Amount_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Applies only to Alberta garnishment withholding orders. Overrides the system maximum exemption limit.",
+      "field": "Max_Additional_Exemption_Amount_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_Withholding_Order_Type_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response includes any order with the exact withholding order case number.",
+      "field": "Case_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amount_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount_Type_Reference_Withholding_Order_Amount_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CanadaIncomeWithholdingOrder_Employee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Number_Prompt": {
+        "description": "When specified, the response includes any order with the exact withholding order case number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Max_Additional_Exemption_Amount_Override": {
+        "description": "Applies only to Alberta garnishment withholding orders. Overrides the system maximum exemption limit.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Type_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference_Withholding_Order_Type_Code_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

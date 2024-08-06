@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Surveys",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Effort Certification Survey Reference ID",
+      "field": "Effort_Certification_Survey_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Survey_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Survey_Type_Reference_Effort_Certification_Survey_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Survey Name",
+      "field": "Survey_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to all of the questions for a Survey.",
+      "field": "Survey_Question_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effort_Certification_Survey_ID": {
+        "description": "Effort Certification Survey Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Name": {
+        "description": "Survey Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Question_Reference": {
+        "description": "Reference to all of the questions for a Survey.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Type_Reference_Effort_Certification_Survey_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Survey_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

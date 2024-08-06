@@ -1,0 +1,471 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationGrades",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Compensation_Grade_Reference_Compensation_Grade_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the compensation grade.  This is the index for the compensation grade and will be autopopulated if left blank.",
+      "field": "Compensation_Grade_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of this salary grade.  We recommend using a date of 1900-01-01.  If not date is supplied, today's date will be used.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique salary grade name. Salary grades provide the guidelines for employee's base compensation.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of this salary grade.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The compensation elements that define base bay for this compensation grade.",
+      "field": "Compensation_Element_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The compensation eligibility rules associated with this compensation grade.",
+      "field": "Eligibility_Rule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Number of Pay Range Segments can be specified as 3,4, or 5.",
+      "field": "Number_of_Segments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The minimum of the salary range.",
+      "field": "Minimum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The midpoint of the salary range.",
+      "field": "Midpoint",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The maximum of the salary range.",
+      "field": "Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The spread from the range minimum to range maximum.",
+      "field": "Spread",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 1.",
+      "field": "Segment_1_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 2.",
+      "field": "Segment_2_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 3.",
+      "field": "Segment_3_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 4.",
+      "field": "Segment_4_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The top value for Segment 5.",
+      "field": "Segment_5_Top",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Plan_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Salary_Plan_Reference_Compensation_Plan_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies if the amount in the compensation steps can be overriden when assigned to an employee.",
+      "field": "Allow_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Compensation Step",
+      "field": "Compensation_Step",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a wrapper for the Compensation Grade Profiles",
+      "field": "Compensation_Grade_Profile",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Setup Security Segment the Compensation Grade is assigned to.",
+      "field": "Setup_Security_Segment_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When compensation steps are included in the Grade or Grade Profile, this indicator will be used to assign the first step to an employee when proposing compensation.",
+      "field": "Assign_First_Step_During_Compensation_Proposal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Pay_Level_Reference_Pay_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive status indicator for Compensation Plans and Guideline components.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a wrapper for the Alternative Pay Range Data",
+      "field": "Alternative_Pay_Range",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Override": {
+        "description": "Specifies if the amount in the compensation steps can be overriden when assigned to an employee.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Alternative_Pay_Range": {
+        "description": "This is a wrapper for the Alternative Pay Range Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assign_First_Step_During_Compensation_Proposal": {
+        "description": "When compensation steps are included in the Grade or Grade Profile, this indicator will be used to assign the first step to an employee when proposing compensation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Compensation_Element_Reference": {
+        "description": "The compensation elements that define base bay for this compensation grade.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_ID": {
+        "description": "The ID for the compensation grade.  This is the index for the compensation grade and will be autopopulated if left blank.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Profile": {
+        "description": "This is a wrapper for the Compensation Grade Profiles",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_Compensation_Grade_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Compensation_Grade_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Compensation_Step": {
+        "description": "Compensation Step",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "The description of this salary grade.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "The effective date of this salary grade.  We recommend using a date of 1900-01-01.  If not date is supplied, today's date will be used.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Eligibility_Rule_Reference": {
+        "description": "The compensation eligibility rules associated with this compensation grade.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive status indicator for Compensation Plans and Guideline components.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Include Inactive indicates the response will also include inactive Compensation Plans and Guideline components.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum": {
+        "description": "The maximum of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Midpoint": {
+        "description": "The midpoint of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum": {
+        "description": "The minimum of the salary range.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The unique salary grade name. Salary grades provide the guidelines for employee's base compensation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Segments": {
+        "description": "Number of Pay Range Segments can be specified as 3,4, or 5.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_Level_Reference_Pay_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Plan_Reference_Compensation_Plan_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_Plan_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Segment_1_Top": {
+        "description": "The top value for Segment 1.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_2_Top": {
+        "description": "The top value for Segment 2.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_3_Top": {
+        "description": "The top value for Segment 3.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_4_Top": {
+        "description": "The top value for Segment 4.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Segment_5_Top": {
+        "description": "The top value for Segment 5.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Setup_Security_Segment_Reference": {
+        "description": "The Setup Security Segment the Compensation Grade is assigned to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spread": {
+        "description": "The spread from the range minimum to range maximum.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

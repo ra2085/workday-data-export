@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AccountingSourceSnapshots_Accounting_Source_Snapshot_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AccountingSourceSnapshots_Accounting_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date. Accounting Source configuration beginning with this Effective Date.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing Tenanted Accounting Profile Group",
+      "field": "Tenanted_Accounting_Profile_Group_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Rules deriving Journal Header information.",
+      "field": "Journal_Header_Rules_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Rules deriving Journals Lines for Debit and Credit information.",
+      "field": "Journal_Line_Rule_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Rules to determine how Journals are Summarized.",
+      "field": "Summarization_Rules_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AccountingSourceSnapshots_Accounting_Source_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Effective Date. Accounting Source configuration beginning with this Effective Date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Header_Rules_Data": {
+        "description": "Rules deriving Journal Header information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Line_Rule_Data": {
+        "description": "Rules deriving Journals Lines for Debit and Credit information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summarization_Rules_Data": {
+        "description": "Rules to determine how Journals are Summarized.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenanted_Accounting_Profile_Group_Data": {
+        "description": "Element containing Tenanted Accounting Profile Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,940 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkdayAccountSignons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The time that the Signon occurred.",
+      "field": "Signon_DateTime",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The User Name used to signon.",
+      "field": "User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the Signon was successful.",
+      "field": "Successful",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "An invalid password was supplied for the Signon attempt.",
+      "field": "Failed_Signon",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not a sign on failed due to the user providing invalid credentials. This could be an invalid password, invalid one-time passcode, invalid SAML, etc. This would not apply to other failure reasons, such as locked and disabled accounts.",
+      "field": "Invalid_Credentials",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The password was changed after the Signon.",
+      "field": "Password_Changed",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A request was made to reset the password in the Signon attempt.",
+      "field": "Forgotten_Password_Reset_Request",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The detail authentication failure message when available.",
+      "field": "Authentication_Failure_Message",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The IP address where the Signon originated.",
+      "field": "Signon_IP_Address",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The signoff time associated with the Signon.",
+      "field": "Signoff_DateTime",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Authentication Channel of the Signon (UI, Web Services, etc).",
+      "field": "Authentication_Channel",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Authentication Type of the Signon (Normal, SAML, X509, etc.).",
+      "field": "Authentication_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_LearningUserName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_Notification_System_Account_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_Proxy_Account_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_RecruitingUserName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_StudentUserName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_SupplierUserName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_System_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_System_User_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_System_User_OpenID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_System_User_OpenID_Connect_Internal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_System_User_OpenID_Internal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workday_Account_Reference_WorkdayUserName",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "System_Account_Signon_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "System_Account_Signon_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Device_Type_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Device_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Originator_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Request_Originator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Invalid for Authentication Channel",
+      "field": "Invalid_for_Authentication_Channel",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Invalid for Authentication Policy",
+      "field": "Invalid_for_Authentication_Policy",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if password change is required.",
+      "field": "Required_Password_Change",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if account is disabled or expired",
+      "field": "Account_Disabled_or_Expired",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if MFA is required",
+      "field": "Requires_MFA",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if MFA authentication is exempted",
+      "field": "MFA_Authentication_Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if MFA has a grace period",
+      "field": "Has_Grace_Period_for_MFA",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "SAML_Identity_Provider_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "SAML_Identity_Provider_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Browser used for Signon (Indicative)",
+      "field": "Browser_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Operating System used for Signon",
+      "field": "Operating_System",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location of Device from where Signon occurred.",
+      "field": "Location",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Access_Restriction_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Access_Restriction_Reference_Access_Restriction_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if user is enrolled in MFA",
+      "field": "MFA_Enrollment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi_Factor_Authentication_Type_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi_Factor_Authentication_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Duo_Authentication_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Duo_Authentication_Type_Reference_Duo_Authentication_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for correlated signon events",
+      "field": "Short_Session_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if signon is from a trusted device",
+      "field": "Device_is_Trusted",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the API Client ID",
+      "field": "API_Client_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the TLS version",
+      "field": "TLS_Version",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Returns true if Read only Access is enabled for a signon",
+      "field": "Tenant_Access_Read_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Request Signon information from this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+      "field": "From_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Request Signon information to this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+      "field": "To_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional User Name regular expression used to match Workday Accounts.  Only Signons for the matched accounts are included in the response.",
+      "field": "User_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_LearningUserName_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_Notification_System_Account_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_Proxy_Account_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_RecruitingUserName_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_StudentUserName_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_SupplierUserName_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_System_Account_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_System_User_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_System_User_OpenID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_System_User_OpenID_Connect_Internal_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_System_User_OpenID_Internal_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+      "field": "Workday_Account_Reference_WorkdayUserName_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "API_Client_ID": {
+        "description": "Returns the API Client ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Access_Restriction_Reference_Access_Restriction_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Access_Restriction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Disabled_or_Expired": {
+        "description": "Returns true if account is disabled or expired",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Authentication_Channel": {
+        "description": "The Authentication Channel of the Signon (UI, Web Services, etc).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Authentication_Failure_Message": {
+        "description": "The detail authentication failure message when available.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Authentication_Type": {
+        "description": "The Authentication Type of the Signon (Normal, SAML, X509, etc.).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Browser_Type": {
+        "description": "Browser used for Signon (Indicative)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Device_Type_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Device_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Device_is_Trusted": {
+        "description": "Returns true if signon is from a trusted device",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Duo_Authentication_Type_Reference_Duo_Authentication_Type": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Duo_Authentication_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Failed_Signon": {
+        "description": "An invalid password was supplied for the Signon attempt.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Forgotten_Password_Reset_Request": {
+        "description": "A request was made to reset the password in the Signon attempt.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "From_DateTime_Prompt": {
+        "description": "Request Signon information from this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Has_Grace_Period_for_MFA": {
+        "description": "Returns true if MFA has a grace period",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invalid_Credentials": {
+        "description": "Indicates whether or not a sign on failed due to the user providing invalid credentials. This could be an invalid password, invalid one-time passcode, invalid SAML, etc. This would not apply to other failure reasons, such as locked and disabled accounts.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invalid_for_Authentication_Channel": {
+        "description": "Invalid for Authentication Channel",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invalid_for_Authentication_Policy": {
+        "description": "Invalid for Authentication Policy",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Location": {
+        "description": "Location of Device from where Signon occurred.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "MFA_Authentication_Exempt": {
+        "description": "Returns true if MFA authentication is exempted",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "MFA_Enrollment": {
+        "description": "Returns true if user is enrolled in MFA",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Multi_Factor_Authentication_Type_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi_Factor_Authentication_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Operating_System": {
+        "description": "Operating System used for Signon",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Password_Changed": {
+        "description": "The password was changed after the Signon.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Request_Originator_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Request_Originator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Required_Password_Change": {
+        "description": "Returns true if password change is required.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Requires_MFA": {
+        "description": "Returns true if MFA is required",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "SAML_Identity_Provider_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SAML_Identity_Provider_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Short_Session_ID": {
+        "description": "ID for correlated signon events",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signoff_DateTime": {
+        "description": "The signoff time associated with the Signon.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signon_DateTime": {
+        "description": "The time that the Signon occurred.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signon_IP_Address": {
+        "description": "The IP address where the Signon originated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Successful": {
+        "description": "True if the Signon was successful.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "System_Account_Signon_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "System_Account_Signon_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "TLS_Version": {
+        "description": "Returns the TLS version",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tenant_Access_Read_Only": {
+        "description": "Returns true if Read only Access is enabled for a signon",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "To_DateTime_Prompt": {
+        "description": "Request Signon information to this time.  The time range between the From_DateTime and To_DateTime must be less than 24 hours.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Name": {
+        "description": "The User Name used to signon.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Name_Prompt": {
+        "description": "An optional User Name regular expression used to match Workday Accounts.  Only Signons for the matched accounts are included in the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_LearningUserName": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_LearningUserName_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_Notification_System_Account_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_Notification_System_Account_Reference_ID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_Proxy_Account_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_Proxy_Account_Reference_ID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_RecruitingUserName": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_RecruitingUserName_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_StudentUserName": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_StudentUserName_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_SupplierUserName": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_SupplierUserName_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_Account_ID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_ID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID_Connect_Internal": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID_Connect_Internal_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID_Internal": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID_Internal_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_System_User_OpenID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_WID_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_WorkdayUserName": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workday_Account_Reference_WorkdayUserName_Prompt": {
+        "description": "Request Signon information for specified Workday Accounts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

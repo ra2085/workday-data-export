@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyOwnershipDetails_Ownership_Entry_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ownership detail ID.",
+      "field": "OwnershipDetail_Ownership_Detail_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Company_Reference_Third_Party_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specifies what percentage the owner company owns.",
+      "field": "Ownership_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Specifies the percentage of income attributions.",
+      "field": "Income_Percentage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies.. Supports multiple values.",
+      "field": "Companies_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Companies_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference_WID_Prompt": {
+        "description": "Reference to existing companies.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Income_Percentage": {
+        "description": "Specifies the percentage of income attributions.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Owner_Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Company_Reference_Third_Party_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OwnershipDetail_Ownership_Detail_ID": {
+        "description": "Ownership detail ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ownership_Percentage": {
+        "description": "Specifies what percentage the owner company owns.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

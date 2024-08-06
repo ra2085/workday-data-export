@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JournalSources",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Journal Source ID",
+      "field": "Journal_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Journal Source Name",
+      "field": "Journal_Source_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Source for Accounting Journal",
+      "field": "Source_For_Accounting_Journal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Process Award Costs",
+      "field": "Process_Award_Costs",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Source For Ad Hoc Bank Transaction",
+      "field": "Source_For_Ad_Hoc_Bank_Transaction",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Suspense Processing for Web Service",
+      "field": "Enable_Suspense_Processing_for_Web_Service",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Suspense Threshold Percent",
+      "field": "Suspense_Threshold_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Source For Workday Operational Journal",
+      "field": "Source_For_Workday_Operational_Journal",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Enable_Suspense_Processing_for_Web_Service": {
+        "description": "Enable Suspense Processing for Web Service",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Journal_Source_ID": {
+        "description": "Journal Source ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Journal_Source_Name": {
+        "description": "Journal Source Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Process_Award_Costs": {
+        "description": "Process Award Costs",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_For_Accounting_Journal": {
+        "description": "Source for Accounting Journal",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_For_Ad_Hoc_Bank_Transaction": {
+        "description": "Source For Ad Hoc Bank Transaction",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Source_For_Workday_Operational_Journal": {
+        "description": "Source For Workday Operational Journal",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Suspense_Threshold_Percent": {
+        "description": "Suspense Threshold Percent",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

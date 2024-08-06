@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Competencies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Competency.",
+      "field": "Competency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Competency Name of the Competency.  When adding a new Competency, duplicate names are not allowed.",
+      "field": "Competency_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The Description of the Competency will be the same everywhere.  If Applies to All Levels is not marked True, Descriptions can be modified for each Management Level or Compensation Grade",
+      "field": "Description_Applies_to_All_Levels",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Competency Category for the Competency.",
+      "field": "Competency_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Defines a Proficiency Rating used in a Competency.",
+      "field": "Proficiency_Rating_Behavior_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean which indicates if the Competency is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "During implementation, we recommend using a date of 01-01-1900 for the initial entry.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Proficiency_Rating_Scale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Proficiency_Rating_Scale_Reference_Rating_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to specify if competency behaviors apply to all levels.",
+      "field": "Behaviors_Apply_to_All_Levels",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Check this box if you would like to use this Competency as the horizontal axis when setting up nBox reports for the Talent Matrix.",
+      "field": "Used_For_Talent_Matrix",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Behaviors_Apply_to_All_Levels": {
+        "description": "Boolean to specify if competency behaviors apply to all levels.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Competency_Category_Reference": {
+        "description": "The Competency Category for the Competency.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_ID": {
+        "description": "The ID of the Competency.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Name": {
+        "description": "The Competency Name of the Competency.  When adding a new Competency, duplicate names are not allowed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description_Applies_to_All_Levels": {
+        "description": "The Description of the Competency will be the same everywhere.  If Applies to All Levels is not marked True, Descriptions can be modified for each Management Level or Compensation Grade",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "During implementation, we recommend using a date of 01-01-1900 for the initial entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean which indicates if the Competency is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Behavior_Data": {
+        "description": "Defines a Proficiency Rating used in a Competency.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Scale_Reference_Rating_Scale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Scale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_For_Talent_Matrix": {
+        "description": "Check this box if you would like to use this Competency as the horizontal axis when setting up nBox reports for the Talent Matrix.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

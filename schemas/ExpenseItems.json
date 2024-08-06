@@ -1,0 +1,666 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExpenseItems",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Expense Item ID.  This is the Expense Item unique identifier",
+      "field": "Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for meaningful Expense Item Name",
+      "field": "Item_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field to provide detailed description of the Expense Item",
+      "field": "Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Synonyms and Key words which are similar to the Expense Item name. These will allow an infrequent user to type in something reasonable and find the correct expense item.",
+      "field": "Synonyms_and_Keywords",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item is a Per Diem Expense.  Used for reporting purposes only.",
+      "field": "Per_Diem_Expense",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Currency field for Item Unit Price",
+      "field": "Item_Unit_Price",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Policy Group. Assigning expense item to policy groups is done to make it easier for an administrator to search for and select items for segmented security setup.",
+      "field": "Expense_Policy_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Expense Item Group. Assigning expense items to item groups is done to make it easier to search for and select items. Expense items can belong to multiple groups.",
+      "field": "Expense_Item_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Job Profile.  Workers in this Job Profile can use this Expense Item.",
+      "field": "Job_Profile_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Applicability_Reference_Tax_Applicability_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean will enable travel journal entry on the expense report line.",
+      "field": "Travel_Journal",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Journal_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Journal_Item_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Journal_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Travel_Journal_Type_Reference_Travel_Journal_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rounding_Option_for_Hours_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Rounding_Option_for_Hours_Reference_Rounding_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean will make the Number of Hours not enterable on the Travel Journal lines.",
+      "field": "Non_Editable_Number_of_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean will make the Amount and Quantity not enterable on the expense report line.",
+      "field": "Quantity_and_Per_Unit_Amount_Not_Enterable",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item is Inactive. Set for expense items that should no longer be selected on Expense Report Lines",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item is a Fixed Expense.  Set for expenses that are always the same amount, for example, a fixed rate for mileage.",
+      "field": "Fixed_Expense",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item has a Maximum Expense.  Set for expenses where you want to establish a maximum amount that can't be exceeded, such as the maximum amount for one night at a hotel.",
+      "field": "Maximum_Line_Expense",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item has a Maximum Daily Expense. Set for expenses where you want to establish a maximum daily amount that can't be exceeded, such as the maximum daily amount per meal.",
+      "field": "Maximum_Daily_Expense",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if a Maximum Expense Item will allow overages. Set for expenses where you want to give the user a warning that they have surpassed the maximum amount allowed for the expense item rather than giving the user an error.",
+      "field": "Allow_Overage",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if the Expense Item is based on an Allowance Plan.  Set for expenses that would have a Tuition Allowance Plan for example.",
+      "field": "Based_on_Allowance_Plan",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag indicating if a Memo is Required by the user when entering the expense item.",
+      "field": "Memo_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Display Arrival Date before Departure Date",
+      "field": "Display_Arrival_Date_before_Departure_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This boolean will make the Number of Days not enterable on the expense report lines.",
+      "field": "Non_Editable_Number_of_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "List of Expense Item Attributes",
+      "field": "Expense_Item_Attribute_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Accumulator_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Accumulator_Reference_Expense_Accumulator_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Rate_Table_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Expense_Rate_Table_Reference_Expense_Rate_Table_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean flag, Enable Rate Tables on Spend Authorizations, that allows rate tables to be enforced on the spend authorization line using the expense item. This boolean will force all expense item attributes required by the related rate table to be displayed on required on spend authorizations. This boolean will only be available when a base rate table exists on the expense item.",
+      "field": "Enable_Rate_Tables_for_Spend_Authorizations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Multiply Per Diem by Number of Days on Spend Authorization is selectable only if Per Diem and Enable Rate Tables for Spend Authorizations are also selected. Workday sets the field to false, irrespective of the value set on it, if either of the other 2 fields are set to false.",
+      "field": "Multiply_Per_Diem_by_Number_of_Days_on_Spend_Authorization",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing all Expense Adjustment Calculation Method data",
+      "field": "Expense_Adjustment_Calculation_Method_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Hotel Itemization Mapping table for Expense Item.",
+      "field": "Hotel_Itemization_Mapping_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The configuration data for the distance calculation of expense items.",
+      "field": "Expense_Item_Distance_Calculation_Configuration_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the existing Allowed or Default Related Worktags.",
+      "field": "Related_Worktags_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Overage": {
+        "description": "Boolean flag indicating if a Maximum Expense Item will allow overages. Set for expenses where you want to give the user a warning that they have surpassed the maximum amount allowed for the expense item rather than giving the user an error.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Based_on_Allowance_Plan": {
+        "description": "Boolean flag indicating if the Expense Item is based on an Allowance Plan.  Set for expenses that would have a Tuition Allowance Plan for example.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_Arrival_Date_before_Departure_Date": {
+        "description": "Display Arrival Date before Departure Date",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Rate_Tables_for_Spend_Authorizations": {
+        "description": "Boolean flag, Enable Rate Tables on Spend Authorizations, that allows rate tables to be enforced on the spend authorization line using the expense item. This boolean will force all expense item attributes required by the related rate table to be displayed on required on spend authorizations. This boolean will only be available when a base rate table exists on the expense item.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Expense_Accumulator_Reference_Expense_Accumulator_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Accumulator_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Adjustment_Calculation_Method_Data": {
+        "description": "Element containing all Expense Adjustment Calculation Method data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Attribute_Data": {
+        "description": "List of Expense Item Attributes",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Distance_Calculation_Configuration_Data": {
+        "description": "The configuration data for the distance calculation of expense items.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Group_Reference": {
+        "description": "Reference to an existing Expense Item Group. Assigning expense items to item groups is done to make it easier to search for and select items. Expense items can belong to multiple groups.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_ID": {
+        "description": "Expense Item ID.  This is the Expense Item unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Expense_Policy_Group_Reference": {
+        "description": "Reference to an existing Expense Policy Group. Assigning expense item to policy groups is done to make it easier for an administrator to search for and select items for segmented security setup.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Rate_Table_Reference_Expense_Rate_Table_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Expense_Rate_Table_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fixed_Expense": {
+        "description": "Boolean flag indicating if the Expense Item is a Fixed Expense.  Set for expenses that are always the same amount, for example, a fixed rate for mileage.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hotel_Itemization_Mapping_Data": {
+        "description": "Hotel Itemization Mapping table for Expense Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean flag indicating if the Expense Item is Inactive. Set for expense items that should no longer be selected on Expense Report Lines",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Item_Description": {
+        "description": "Free form text field to provide detailed description of the Expense Item",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Name": {
+        "description": "Free form text field for meaningful Expense Item Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Unit_Price": {
+        "description": "Currency field for Item Unit Price",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Job_Profile_Reference": {
+        "description": "Reference to an existing Job Profile.  Workers in this Job Profile can use this Expense Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Maximum_Daily_Expense": {
+        "description": "Boolean flag indicating if the Expense Item has a Maximum Daily Expense. Set for expenses where you want to establish a maximum daily amount that can't be exceeded, such as the maximum daily amount per meal.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Line_Expense": {
+        "description": "Boolean flag indicating if the Expense Item has a Maximum Expense.  Set for expenses where you want to establish a maximum amount that can't be exceeded, such as the maximum amount for one night at a hotel.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Memo_Required": {
+        "description": "Boolean flag indicating if a Memo is Required by the user when entering the expense item.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Multiply_Per_Diem_by_Number_of_Days_on_Spend_Authorization": {
+        "description": "Multiply Per Diem by Number of Days on Spend Authorization is selectable only if Per Diem and Enable Rate Tables for Spend Authorizations are also selected. Workday sets the field to false, irrespective of the value set on it, if either of the other 2 fields are set to false.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Non_Editable_Number_of_Days": {
+        "description": "This boolean will make the Number of Days not enterable on the expense report lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Non_Editable_Number_of_Hours": {
+        "description": "This boolean will make the Number of Hours not enterable on the Travel Journal lines.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Per_Diem_Expense": {
+        "description": "Boolean flag indicating if the Expense Item is a Per Diem Expense.  Used for reporting purposes only.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Quantity_and_Per_Unit_Amount_Not_Enterable": {
+        "description": "This boolean will make the Amount and Quantity not enterable on the expense report line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_Data": {
+        "description": "Reference to the existing Allowed or Default Related Worktags.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rounding_Option_for_Hours_Reference_Rounding_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rounding_Option_for_Hours_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Synonyms_and_Keywords": {
+        "description": "Synonyms and Key words which are similar to the Expense Item name. These will allow an infrequent user to type in something reasonable and find the correct expense item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_Tax_Applicability_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Applicability_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Journal": {
+        "description": "This boolean will enable travel journal entry on the expense report line.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Travel_Journal_Item_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Journal_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Journal_Type_Reference_Travel_Journal_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Travel_Journal_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

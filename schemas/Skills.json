@@ -1,0 +1,68 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Skills",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the Skill Item Category associated with the Skill Item.",
+      "field": "Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the skill item.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true, this Skill Item will not be shown to candidates.",
+      "field": "Hide_from_Candidates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When True, the maintained skill will be excluded as a synonym when Workday converts skill synonyms to Skills Cloud skills.",
+      "field": "Exclude_From_Synonym_Management",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Category_Reference": {
+        "description": "A reference to the Skill Item Category associated with the Skill Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_From_Synonym_Management": {
+        "description": "When True, the maintained skill will be excluded as a synonym when Workday converts skill synonyms to Skills Cloud skills.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Hide_from_Candidates": {
+        "description": "When true, this Skill Item will not be shown to candidates.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The ID of the skill item.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

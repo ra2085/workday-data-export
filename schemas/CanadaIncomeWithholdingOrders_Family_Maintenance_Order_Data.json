@@ -1,0 +1,329 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadaIncomeWithholdingOrders_Family_Maintenance_Order_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CanadaIncomeWithholdingOrder_Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+      "field": "Original_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+      "field": "Amended_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+      "field": "Termination_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Monthly target deduction amount.  If a non-zero value is specified, the calculation will attempt to recover any uncollected amounts during subsequent payrolls with payments dates in the same month up to this monthly amount.",
+      "field": "Monthly_Limit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The total debt amount that is past due for the withholding order.",
+      "field": "Past_Due_Total_Debt_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Applies only to Ontario withholding orders. The maximum arrears amount that may be recovered in a single payroll.",
+      "field": "Past_Due_Pay_Period_Maximum",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Enforcement_Legislation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Enforcement_Legislation_Reference_IWO_Enforcement_Legislation_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the custodian for family maintenance orders.",
+      "field": "Custodial_Party_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Remittance ID Override for family maintenance orders.",
+      "field": "Remittance_ID_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_of_Form_Details_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_of_Form_Details_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Family maintenance order details.",
+      "field": "Family_Maintenance_Order_Detail_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Dependents on the family maintenance order.",
+      "field": "Family_Maintenance_Dependant_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_Withholding_Order_Type_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response includes any order with the exact withholding order case number.",
+      "field": "Case_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Amended_Order": {
+        "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "CanadaIncomeWithholdingOrder_Employee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Number_Prompt": {
+        "description": "When specified, the response includes any order with the exact withholding order case number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custodial_Party_Name": {
+        "description": "The name of the custodian for family maintenance orders.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enforcement_Legislation_Reference_IWO_Enforcement_Legislation_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enforcement_Legislation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Family_Maintenance_Dependant_Data": {
+        "description": "Dependents on the family maintenance order.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Family_Maintenance_Order_Detail_Data": {
+        "description": "Family maintenance order details.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_of_Form_Details_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_of_Form_Details_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Monthly_Limit": {
+        "description": "Monthly target deduction amount.  If a non-zero value is specified, the calculation will attempt to recover any uncollected amounts during subsequent payrolls with payments dates in the same month up to this monthly amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Original_Order": {
+        "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Past_Due_Pay_Period_Maximum": {
+        "description": "Applies only to Ontario withholding orders. The maximum arrears amount that may be recovered in a single payroll.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Past_Due_Total_Debt_Amount": {
+        "description": "The total debt amount that is past due for the withholding order.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Remittance_ID_Override": {
+        "description": "The Remittance ID Override for family maintenance orders.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Termination_Order": {
+        "description": "Applies only to Support Orders. You must select Original, Amended, or Terminated.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Type_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference_Withholding_Order_Type_Code_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MappedTaxDeclarationsEFilingResult",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result Reference ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Tax Declaration Result E-Filing VAT Registration Number",
+      "field": "EFiling_VAT_Registration_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result E-Filing Period Key",
+      "field": "EFiling_Period_Key",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result Lines With E-Filing Mappings",
+      "field": "EFiling_Tax_Declaration_Lines",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Tax Declaration Result E-Filing Submission Date",
+      "field": "EFiling_Submission_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Tax Declaration Result Tax Filing Date",
+      "field": "Filing_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result E-Filing Error Code",
+      "field": "EFiling_Error_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Declaration Result Tax Authority Response",
+      "field": "Tax_Authority_Response",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "EFiling_Error_Code": {
+        "description": "Tax Declaration Result E-Filing Error Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EFiling_Period_Key": {
+        "description": "Tax Declaration Result E-Filing Period Key",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EFiling_Submission_Date": {
+        "description": "Tax Declaration Result E-Filing Submission Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EFiling_Tax_Declaration_Lines": {
+        "description": "Tax Declaration Result Lines With E-Filing Mappings",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EFiling_VAT_Registration_Number": {
+        "description": "Tax Declaration Result E-Filing VAT Registration Number",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Filing_Date": {
+        "description": "Tax Declaration Result Tax Filing Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Tax Declaration Result Reference ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Tax_Authority_Response": {
+        "description": "Tax Declaration Result Tax Authority Response",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollTimesheetsTimeInTimeOut_Payroll_Timesheet_Day_Time_In_Time_Out_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PayrollTimesheetTimeInTimeOut_Payroll_Timesheet_Time_In_Time_Out_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date for this day being tracked on the timesheet.",
+      "field": "Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element that encapsulates one interval of time worked within a day on a Time In Time Out timesheet, including the Time In, Time Out, Time Code, and Memo.",
+      "field": "Payroll_Timesheet_Day_Time_In_Time_Out_Hours",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+      "field": "Supervisory_Organization_Reference_Region_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Workers to find timesheets for.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date which specifies to find timesheets that start on or after this date.",
+      "field": "Start_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date which specifies to find timesheets that start on or before this date.",
+      "field": "Start_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Timesheet_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to status to find timesheets for.. Supports multiple values.",
+      "field": "Timesheet_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Periods to find timesheets for.",
+      "field": "Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date": {
+        "description": "The date for this day being tracked on the timesheet.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PayrollTimesheetTimeInTimeOut_Payroll_Timesheet_Time_In_Time_Out_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Timesheet_Day_Time_In_Time_Out_Hours": {
+        "description": "Element that encapsulates one interval of time worked within a day on a Time In Time Out timesheet, including the Time In, Time Out, Time Code, and Memo.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_Period_ID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Reference_WID_Prompt": {
+        "description": "References to Periods to find timesheets for.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_After_Prompt": {
+        "description": "Date which specifies to find timesheets that start on or after this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Start_Date_On_or_Before_Prompt": {
+        "description": "Date which specifies to find timesheets that start on or before this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Company_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Cost_Center_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Custom_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_Region_Reference_ID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supervisory_Organization_Reference_WID_Prompt": {
+        "description": "Reference to the Supervisory Organization to search for Payroll Timesheets Total Hours in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Timesheet_Status_Reference_WID_Prompt": {
+        "description": "References to status to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "References to Workers to find timesheets for.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

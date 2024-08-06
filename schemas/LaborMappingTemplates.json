@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LaborMappingTemplates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Labor_Mapping_Template_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Labor_Mapping_Template_Reference_Labor_Mapping_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Labor Mapping Template",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Labor Mapping Template",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Description of the Labor Mapping Template",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Scheduling Organizations for the Labor Mapping Template",
+      "field": "Scheduling_Organization_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Labor Mapping Rule Assignment Data",
+      "field": "Labor_Mapping_Rule_Assignment_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The Description of the Labor Mapping Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The Reference ID of the Labor Mapping Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Labor_Mapping_Rule_Assignment_Data": {
+        "description": "Labor Mapping Rule Assignment Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Labor_Mapping_Template_Reference_Labor_Mapping_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Labor_Mapping_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "The Name of the Labor Mapping Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Scheduling_Organization_Reference": {
+        "description": "The Scheduling Organizations for the Labor Mapping Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

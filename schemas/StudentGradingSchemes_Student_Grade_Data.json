@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentGradingSchemes_Student_Grade_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "StudentGradingScheme_Institution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Grade Order",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Grade ID",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Grade_Element_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Student_Grade_Element_Reference_Student_Grade_Element_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Student Grade Grade Points",
+      "field": "Grade_Points",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether this Grade Earns Credits",
+      "field": "Earn_Credits",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether this Grade is Included in GPA",
+      "field": "Include_in_GPA",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether this Grade can be Repeated for Grade Improvement",
+      "field": "Repeated_for_Grade_Improvement",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Grade Category Type Reference",
+      "field": "Student_Grade_Category_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Grade Name",
+      "field": "Grade_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not this Grade has required Grade Notes",
+      "field": "Grade_Note_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether or not this Grade has required Last Date of Attendance",
+      "field": "Last_Date_of_Attendance_Required",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Whether this Grade has Display Grades Notes to Student",
+      "field": "Display_Grade_Notes_to_Student",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Student Name to Filter on",
+      "field": "Grading_Scheme_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective As of Date",
+      "field": "Effective_As_Of_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Display_Grade_Notes_to_Student": {
+        "description": "Whether this Grade has Display Grades Notes to Student",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Earn_Credits": {
+        "description": "Whether this Grade Earns Credits",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Date_Prompt": {
+        "description": "Effective As of Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grade_Name": {
+        "description": "Student Grade Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Grade_Note_Required": {
+        "description": "Whether or not this Grade has required Grade Notes",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Grade_Points": {
+        "description": "Student Grade Grade Points",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Grading_Scheme_Name_Prompt": {
+        "description": "Student Name to Filter on",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Student Grade ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_in_GPA": {
+        "description": "Whether this Grade is Included in GPA",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Last_Date_of_Attendance_Required": {
+        "description": "Whether or not this Grade has required Last Date of Attendance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Student Grade Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Repeated_for_Grade_Improvement": {
+        "description": "Whether this Grade can be Repeated for Grade Improvement",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "StudentGradingScheme_Institution_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Grade_Category_Type_Reference": {
+        "description": "Student Grade Category Type Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Grade_Element_Reference_Student_Grade_Element_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Grade_Element_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

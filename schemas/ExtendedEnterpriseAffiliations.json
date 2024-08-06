@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExtendedEnterpriseAffiliations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for Extended Enterprise Affiliation.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Extended Enterprise Affiliation.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Affiliation Inactive boolean inactivates the extended enterprise affiliation when true.",
+      "field": "Extended_Enterprise_Affiliation_Inactive_Status",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Location_Reference_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Extended_Enterprise_Affiliation_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Extended_Enterprise_Affiliation_Reference_Extended_Enterprise_Affiliation_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Extended Enterprise Affiliation Image.",
+      "field": "File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File Data for the Extended Enterprise Affiliation Image.",
+      "field": "File",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Extended_Enterprise_Affiliation_Inactive_Status": {
+        "description": "The Affiliation Inactive boolean inactivates the extended enterprise affiliation when true.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File": {
+        "description": "File Data for the Extended Enterprise Affiliation Image.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Name": {
+        "description": "Name of the Extended Enterprise Affiliation Image.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID for Extended Enterprise Affiliation.",
+        "type": [
+          "string"
+        ]
+      },
+      "Location_Reference_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of the Extended Enterprise Affiliation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Extended_Enterprise_Affiliation_Reference_Extended_Enterprise_Affiliation_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Extended_Enterprise_Affiliation_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

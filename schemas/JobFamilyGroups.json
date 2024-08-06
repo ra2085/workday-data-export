@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "JobFamilyGroups",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Family_Group_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Family_Group_Reference_Job_Family_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the reference id of the Job Family Group (Job_Family_Group_ID).",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective date of Job Family Group",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Job Family Group Name.  This can be used for compensation and benefits eligibility rules.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Job Family Group Summary.",
+      "field": "Summary",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating if a Job Family/Job Family Group is Inactive or not.  Inactive Job Families/Groups will not appear in prompts.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Job Family Data.  Contains the references to Job Families contained in the group.  Optionally contains other data about the contained families, however this extra data is for information only and cannot be updated here.",
+      "field": "Job_Family_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "Effective date of Job Family Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is the reference id of the Job Family Group (Job_Family_Group_ID).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean attribute indicating if a Job Family/Job Family Group is Inactive or not.  Inactive Job Families/Groups will not appear in prompts.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Family_Data": {
+        "description": "Job Family Data.  Contains the references to Job Families contained in the group.  Optionally contains other data about the contained families, however this extra data is for information only and cannot be updated here.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Group_Reference_Job_Family_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Family_Group_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Name": {
+        "description": "Text attribute identifying Job Family Group Name.  This can be used for compensation and benefits eligibility rules.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Summary": {
+        "description": "Text attribute identifying Job Family Group Summary.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

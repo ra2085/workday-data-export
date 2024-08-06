@@ -1,0 +1,110 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RelatedPersonRelationships",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Relationship_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Related_Person_Relationship_Behavior_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Related_Person_Relationship_Behavior_Reference_Related_Person_Relationship_Behavior_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Sort_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Related_Person_Relationship_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "field": "Include_Relationship_for_Wellness",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Creates or updates related person relationships for a specified country.",
+      "field": "Restricted_to_Countries_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "type": [
+          "string"
+        ]
+      },
+      "Include_Relationship_for_Wellness": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Person_Relationship_Behavior_Reference_Related_Person_Relationship_Behavior_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Person_Relationship_Behavior_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Person_Relationship_Type_Reference": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Relationship_Name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_to_Countries_Reference": {
+        "description": "Creates or updates related person relationships for a specified country.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sort_Order": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

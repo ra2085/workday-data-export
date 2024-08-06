@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceWorkQueueTags",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The supplier invoice work queue tag unique identifier",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for the supplier invoice work queue tag",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description for the supplier invoice work queue tag",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier invoice work queue tag should appear at the top of the supplier invoice work queue",
+      "field": "Urgent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier invoice work queue tag is going to be retained",
+      "field": "Retain_Tag",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier invoice work queue tag is inactive",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name for the supplier invoice work queue tag",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier invoice work queue tag should appear at the top of the supplier invoice work queue",
+      "field": "Urgent_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if the supplier invoice work queue tag is inactive",
+      "field": "Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "The description for the supplier invoice work queue tag",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The supplier invoice work queue tag unique identifier",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Boolean to indicate if the supplier invoice work queue tag is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Prompt": {
+        "description": "Boolean to indicate if the supplier invoice work queue tag is inactive",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name for the supplier invoice work queue tag",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "The name for the supplier invoice work queue tag",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retain_Tag": {
+        "description": "Boolean to indicate if the supplier invoice work queue tag is going to be retained",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Urgent": {
+        "description": "Boolean to indicate if the supplier invoice work queue tag should appear at the top of the supplier invoice work queue",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Urgent_Prompt": {
+        "description": "Boolean to indicate if the supplier invoice work queue tag should appear at the top of the supplier invoice work queue",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,848 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "LearningBlendedCourses",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Blended_Course_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Blended_Course_Reference_Learning_Course",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Blended_Course_Reference_Learning_Course_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique ID for the course.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date the course version takes effect.",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alphanumeric version label for the course.",
+      "field": "Version_Label",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the course is inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique title for the course.",
+      "field": "Course_Title",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Skill_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Skill_Level_Reference_Learning_Skill_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Alphanumeric number for the course.",
+      "field": "Course_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the topics for the course.",
+      "field": "Topic_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the languages for the content.",
+      "field": "Language_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the Security Categories this course is to be included in.",
+      "field": "Security_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Registrable_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Registrable_Status_Reference_Learning_Registerable_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the course requires enrollment. Only required for digital courses.",
+      "field": "On_Demand",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Minimum number of enrollments allowed for the course.",
+      "field": "Minimum_Enrollment_Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Maximum number of enrollments allowed for the course. Required to enable users to enroll.",
+      "field": "Maximum_Enrollment_Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of spaces on the waitlist. Specify a number greater than zero to configure a waitlist for the blended course.",
+      "field": "Waitlist_Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the course has unlimited capacity.",
+      "field": "Unlimited_Capacity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the course expires. Thats is, the date a learner is certified until after successfully completing the course.",
+      "field": "Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Format_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Format_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The duration unit value. A three digit numeric value.",
+      "field": "Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The recurrence frequency start date. This is the initial expiration date that the recurring expiry will be based on. Example: You specify a Recurrence Start Date of 2021-01-01. This is the initial expiration date and the recurrence cycle will start from this date.",
+      "field": "Current_Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The recurrence frequency unit value. A three digit numeric value.",
+      "field": "Recurrence_Format_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Format_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Recurrence_Format_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The Retrain Window unit value. A three digit numeric value.",
+      "field": "Retrain_Window_Unit_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Retrain_Window_Format_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Retrain_Window_Format_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains an advanced expiration rule that will apply a custom expiration date/duration to specific learning enrollment",
+      "field": "Advanced_Expiration_Rules",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains data for Other Unit Type values for the course.",
+      "field": "Learning_Other_Unit_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The alphanumeric reference ID value of a sales item for the learning course. Use the Get_Sales_Items web service to find the sales item and its reference ID.",
+      "field": "Sales_Item_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The alphanumeric reference ID value of a competency for the learning course. Use the Get_Competencies web service to find the competency and its reference ID.",
+      "field": "Competency_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Upon activation, users who view this course  / offering will now see any configured pricing. On deactivation, users who view this course / offering will no longer see any configured pricing.",
+      "field": "Pricing_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Price in Training Credits for this Learning Content.",
+      "field": "Price_in_Training_Credits",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Advanced Pricing Rule Data used to set pricing rules for both workers and extended enterprise learners",
+      "field": "Advanced_Pricing_Rules",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References Skills related to a Digital Course from Skills Cloud",
+      "field": "Skill_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the contact persons for the course.",
+      "field": "Contact_Person_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Value_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Value_Reference_Learning_Time_Unit_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Numeric time duration for the time value reference for the course.",
+      "field": "Total_Course_Duration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to automatically enroll learners from the waitlist when space in a course offering becomes available. Ensure that you also set the Waitlist Capacity field.",
+      "field": "Enable_Auto_Enrollment_from_Waitlist",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Image_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Image_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Learning_Image_Reference_Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying a unique ID for Attachment.",
+      "field": "Image_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute that identifies the filename of the attachment.",
+      "field": "File_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Content Type of the Attachment.",
+      "field": "Content_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "Image",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workdrive_Document_Content_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workdrive_Document_Content_Reference_File_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workdrive_Document_Content_Reference_Migrateable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Workdrive_Document_Content_Reference_Workdrive_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates if the course is a legacy course.",
+      "field": "Legacy_Course",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the active learning instructors who can teach the lesson.",
+      "field": "Allowed_Instructor_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed Assessors",
+      "field": "Allowed_Assessors_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References the active business site locations where you can schedule the lesson.",
+      "field": "Allowed_Location_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to exclude the course from learning recommendations.",
+      "field": "Exclude_from_Recommendations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, hide learning content from search results.",
+      "field": "Exclude_from_Search_and_Browse",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether Disable Express Interest is activated on the learning content.",
+      "field": "Disable_Express_Interest",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains information about the lessons on the course.",
+      "field": "Course_Lesson_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Advanced_Expiration_Rules": {
+        "description": "Contains an advanced expiration rule that will apply a custom expiration date/duration to specific learning enrollment",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Advanced_Pricing_Rules": {
+        "description": "Advanced Pricing Rule Data used to set pricing rules for both workers and extended enterprise learners",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowed_Assessors_Reference": {
+        "description": "Allowed Assessors",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowed_Instructor_Reference": {
+        "description": "References the active learning instructors who can teach the lesson.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allowed_Location_Reference": {
+        "description": "References the active business site locations where you can schedule the lesson.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Competency_Reference": {
+        "description": "The alphanumeric reference ID value of a competency for the learning course. Use the Get_Competencies web service to find the competency and its reference ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contact_Person_Reference": {
+        "description": "References the contact persons for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Content_Type": {
+        "description": "Text attribute identifying Content Type of the Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Lesson_Data": {
+        "description": "Contains information about the lessons on the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Number": {
+        "description": "Alphanumeric number for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Title": {
+        "description": "Unique title for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Current_Expiration_Date": {
+        "description": "The recurrence frequency start date. This is the initial expiration date that the recurring expiry will be based on. Example: You specify a Recurrence Start Date of 2021-01-01. This is the initial expiration date and the recurrence cycle will start from this date.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disable_Express_Interest": {
+        "description": "Indicates whether Disable Express Interest is activated on the learning content.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Effective_Date": {
+        "description": "Date the course version takes effect.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Auto_Enrollment_from_Waitlist": {
+        "description": "Indicates whether to automatically enroll learners from the waitlist when space in a course offering becomes available. Ensure that you also set the Waitlist Capacity field.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_from_Recommendations": {
+        "description": "Indicates whether to exclude the course from learning recommendations.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_from_Search_and_Browse": {
+        "description": "If true, hide learning content from search results.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Expiration_Date": {
+        "description": "The date the course expires. Thats is, the date a learner is certified until after successfully completing the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "File_Name": {
+        "description": "Text attribute that identifies the filename of the attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Format_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Format_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Unique ID for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Image_ID": {
+        "description": "Text attribute identifying a unique ID for Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates whether the course is inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Language_Reference": {
+        "description": "References the languages for the content.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Blended_Course_Reference_Learning_Course": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Blended_Course_Reference_Learning_Course_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Blended_Course_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Learning_Image_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Image_Reference_Image_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Image_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Learning_Other_Unit_Type_Data": {
+        "description": "Contains data for Other Unit Type values for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Legacy_Course": {
+        "description": "Indicates if the course is a legacy course.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Maximum_Enrollment_Capacity": {
+        "description": "Maximum number of enrollments allowed for the course. Required to enable users to enroll.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Minimum_Enrollment_Capacity": {
+        "description": "Minimum number of enrollments allowed for the course.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "On_Demand": {
+        "description": "Indicates whether the course requires enrollment. Only required for digital courses.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Price_in_Training_Credits": {
+        "description": "Price in Training Credits for this Learning Content.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pricing_Enabled": {
+        "description": "Upon activation, users who view this course  / offering will now see any configured pricing. On deactivation, users who view this course / offering will no longer see any configured pricing.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Recurrence_Format_Value": {
+        "description": "The recurrence frequency unit value. A three digit numeric value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Registrable_Status_Reference_Learning_Registerable_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Registrable_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retrain_Window_Format_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retrain_Window_Format_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Retrain_Window_Unit_Value": {
+        "description": "The Retrain Window unit value. A three digit numeric value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Sales_Item_Reference": {
+        "description": "The alphanumeric reference ID value of a sales item for the learning course. Use the Get_Sales_Items web service to find the sales item and its reference ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Security_Category_Reference": {
+        "description": "References the Security Categories this course is to be included in.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Level_Reference_Learning_Skill_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Reference": {
+        "description": "References Skills related to a Digital Course from Skills Cloud",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Value_Reference_Learning_Time_Unit_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Value_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Topic_Reference": {
+        "description": "References the topics for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Course_Duration": {
+        "description": "Numeric time duration for the time value reference for the course.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Unlimited_Capacity": {
+        "description": "Indicates whether the course has unlimited capacity.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Value": {
+        "description": "The duration unit value. A three digit numeric value.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Version_Label": {
+        "description": "Alphanumeric version label for the course.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Waitlist_Capacity": {
+        "description": "The number of spaces on the waitlist. Specify a number greater than zero to configure a waitlist for the blended course.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Workdrive_Document_Content_Reference_File_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workdrive_Document_Content_Reference_Migrateable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workdrive_Document_Content_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Workdrive_Document_Content_Reference_Workdrive_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

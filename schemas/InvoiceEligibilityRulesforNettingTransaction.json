@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InvoiceEligibilityRulesforNettingTransaction",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Eligibility_Rule_for_Netting_Transaction_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Eligibility_Rule_for_Netting_Transaction_Reference_Invoice_Eligibility_Rule_for_Netting_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the invoice eligibility rule Instance unique identifier.",
+      "field": "Invoice_Eligibility_Rule_for_Netting_Transaction_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique name of the invoice eligibility rule.",
+      "field": "Invoice_Eligibility_Rule_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true,  Workday includes customer invoice adjustments in the invoice eligibility rule.",
+      "field": "Include_Customer_Invoice_Adjustments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When true,  Workday includes supplier invoice adjustments in the invoice eligibility rule.",
+      "field": "Include_Supplier_Invoice_Adjustments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The types of customer invoices associated with the invoice eligibility rule. When the value is blank, the eligibility rule retrieves all customer invoice types.",
+      "field": "Customer_Invoice_Types_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of days invoices must be open for Workday to include them in the netting process.",
+      "field": "Number_of_Days_Invoices_are_Open_before_Netting",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Netting_Priority_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Invoice_Netting_Priority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique name of the invoice eligibility rule.",
+      "field": "Invoice_Eligibility_Rule_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Customer_Invoice_Types_Reference": {
+        "description": "The types of customer invoices associated with the invoice eligibility rule. When the value is blank, the eligibility rule retrieves all customer invoice types.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Customer_Invoice_Adjustments": {
+        "description": "When true,  Workday includes customer invoice adjustments in the invoice eligibility rule.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Supplier_Invoice_Adjustments": {
+        "description": "When true,  Workday includes supplier invoice adjustments in the invoice eligibility rule.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_Name": {
+        "description": "The unique name of the invoice eligibility rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_Name_Prompt": {
+        "description": "The unique name of the invoice eligibility rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_for_Netting_Transaction_ID": {
+        "description": "This is the invoice eligibility rule Instance unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_for_Netting_Transaction_Reference_Invoice_Eligibility_Rule_for_Netting_Transaction_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Eligibility_Rule_for_Netting_Transaction_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Invoice_Netting_Priority_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Netting_Priority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Days_Invoices_are_Open_before_Netting": {
+        "description": "The number of days invoices must be open for Workday to include them in the netting process.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

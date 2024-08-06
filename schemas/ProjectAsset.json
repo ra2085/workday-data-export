@@ -1,0 +1,289 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProjectAsset",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Asset_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Asset_Reference_Project_Asset_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specify the rule evaluation order for the project asset.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the project asset",
+      "field": "Project_Asset_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Reference_Project_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Project Asset Name  - this is required for creating a project asset.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field containing the description of the project asset.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Asset_Assignment_Rule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Project_Asset_Assignment_Rule_Reference_Capital_Project_Asset_Assignment_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of business assets that will be generated when the project asset is capitalized.",
+      "field": "Project_Asset_Quantity",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "READ ONLY: Total cost associated with the project asset that has not been capitalized. Amount returned in the associated project's currency.",
+      "field": "Uncapitalized_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "READ ONLY: Total capitalized cost of project asset returned in the associated project's currency.",
+      "field": "Capitalized_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "READ ONLY: Total cost associated with the project asset returned in the associated project's currency.",
+      "field": "Project_Asset_Cost",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Capitalization date for the project asset",
+      "field": "Capitalization_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "READ ONLY: Business assets for the project asset.",
+      "field": "Business_Assets_Detail",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "READ ONLY: Acquisition date for the project asset",
+      "field": "Acquisition_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Project that contains the Asset.",
+      "field": "Project_Containing_Project_Asset_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Project that contains the Asset.",
+      "field": "Project_Containing_Project_Asset_Reference_Project_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Acquisition_Date": {
+        "description": "READ ONLY: Acquisition date for the project asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Assets_Detail": {
+        "description": "READ ONLY: Business assets for the project asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Capitalization_Date": {
+        "description": "Capitalization date for the project asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Capitalized_Cost": {
+        "description": "READ ONLY: Total capitalized cost of project asset returned in the associated project's currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Free form text field containing the description of the project asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Free form text field for a meaningful Project Asset Name  - this is required for creating a project asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Specify the rule evaluation order for the project asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Asset_Assignment_Rule_Reference_Capital_Project_Asset_Assignment_Rule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Asset_Assignment_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Asset_Cost": {
+        "description": "READ ONLY: Total cost associated with the project asset returned in the associated project's currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Project_Asset_ID": {
+        "description": "Reference ID for the project asset",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Asset_Quantity": {
+        "description": "The number of business assets that will be generated when the project asset is capitalized.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Project_Asset_Reference_Project_Asset_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Asset_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Project_Containing_Project_Asset_Reference_Project_ID_Prompt": {
+        "description": "Reference to the Project that contains the Asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Containing_Project_Asset_Reference_WID_Prompt": {
+        "description": "Reference to the Project that contains the Asset.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_Project_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Project_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Uncapitalized_Cost": {
+        "description": "READ ONLY: Total cost associated with the project asset that has not been capitalized. Amount returned in the associated project's currency.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

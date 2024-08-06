@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueCategoryHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Category Hierarchy ID",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Category Hierarchy Name",
+      "field": "Revenue_Category_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hierarchy_Level_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Hierarchy_Level_Reference_Hierarchy_Level_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Revenue_Category_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Revenue_Category_Hierarchy_Reference_Revenue_Category_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Categories Included in this Revenue Category Hierarchy",
+      "field": "Revenue_Categories_Included_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Category Hierarchy Name to match against",
+      "field": "Revenue_Category_Hierarchy_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Hierarchy_Level_Reference_Hierarchy_Level_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Hierarchy_Level_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Revenue Category Hierarchy ID",
+        "type": [
+          "string"
+        ]
+      },
+      "Parent_Revenue_Category_Hierarchy_Reference_Revenue_Category_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Revenue_Category_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Categories_Included_Reference": {
+        "description": "Revenue Categories Included in this Revenue Category Hierarchy",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Hierarchy_Name": {
+        "description": "Revenue Category Hierarchy Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Category_Hierarchy_Name_Prompt": {
+        "description": "Revenue Category Hierarchy Name to match against",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

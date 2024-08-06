@@ -1,0 +1,433 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssessCandidate",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Event_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Reference_Job_Application_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Candidate_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Candidate_Reference_Candidate_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Requisition_Reference_Job_Requisition_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Event_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Job_Application_Event_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier for a candidate assessment.  Should no other references be provided this identifier is used to find an existing Candidate Assessment.  Otherwise, this identifier will be saved as part of the Candidate Assessment.",
+      "field": "Assess_Candidate_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assessed_By_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assessed_By_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assessed_By_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date upon which the Candidate Assessment was or will be performed.",
+      "field": "Assessed_On_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assessment_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assessment_Status_Reference_Assessment_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An overall comment on the Candidate Assessment.",
+      "field": "Overall_Assessment_Comment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "This assessment is for an inline assessment test.",
+      "field": "Is_Inline_Assessment",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "URL for the candidate assessment test.",
+      "field": "Assessment_Test_URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Information on a set of Assessment Test Results used in concert with the Candidate Assessment.",
+      "field": "Assess_Candidate_Test_Result_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application.",
+      "field": "Job_Application_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application.",
+      "field": "Job_Application_Reference_Job_Application_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the Candidate.",
+      "field": "Candidate_Criteria_Data_Candidate_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to the Candidate.",
+      "field": "Candidate_Criteria_Data_Candidate_Reference_Candidate_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to a Job Requisition that combined with the Candidate reference should result in precisely one Job Application with an in progress Candidate Assessment Event.",
+      "field": "Candidate_Criteria_Data_Job_Requisition_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to a Job Requisition that combined with the Candidate reference should result in precisely one Job Application with an in progress Candidate Assessment Event.",
+      "field": "Candidate_Criteria_Data_Job_Requisition_Reference_Job_Requisition_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application Event.",
+      "field": "Job_Application_Event_Reference_IID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application Event.",
+      "field": "Job_Application_Event_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Also include inline assessment tests.",
+      "field": "Include_Inline_Assessments_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Only assessments created on or after this moment will be retrieved.",
+      "field": "From_Moment_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Only assessments prior to this moment will be retrieved.",
+      "field": "To_Moment_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assess_Candidate_Reference": {
+        "description": "The unique identifier for a candidate assessment.  Should no other references be provided this identifier is used to find an existing Candidate Assessment.  Otherwise, this identifier will be saved as part of the Candidate Assessment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assess_Candidate_Test_Result_Data": {
+        "description": "Information on a set of Assessment Test Results used in concert with the Candidate Assessment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessed_By_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessed_By_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessed_By_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessed_On_Date": {
+        "description": "The date upon which the Candidate Assessment was or will be performed.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessment_Status_Reference_Assessment_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessment_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assessment_Test_URL": {
+        "description": "URL for the candidate assessment test.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Criteria_Data_Candidate_Reference_Candidate_ID_Prompt": {
+        "description": "A reference to the Candidate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Criteria_Data_Candidate_Reference_WID_Prompt": {
+        "description": "A reference to the Candidate.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Criteria_Data_Job_Requisition_Reference_Job_Requisition_ID_Prompt": {
+        "description": "A reference to a Job Requisition that combined with the Candidate reference should result in precisely one Job Application with an in progress Candidate Assessment Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Criteria_Data_Job_Requisition_Reference_WID_Prompt": {
+        "description": "A reference to a Job Requisition that combined with the Candidate reference should result in precisely one Job Application with an in progress Candidate Assessment Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Reference_Candidate_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Candidate_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Event_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "From_Moment_Prompt": {
+        "description": "Only assessments created on or after this moment will be retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inline_Assessments_Prompt": {
+        "description": "Also include inline assessment tests.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Is_Inline_Assessment": {
+        "description": "This assessment is for an inline assessment test.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Job_Application_Event_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Event_Reference_IID_Prompt": {
+        "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Event_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Event_Reference_WID_Prompt": {
+        "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application Event.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Reference_Job_Application_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Reference_Job_Application_ID_Prompt": {
+        "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Application_Reference_WID_Prompt": {
+        "description": "The Candidate Assessments retrieved will be those associated with the referenced Job Application.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_Job_Requisition_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Job_Requisition_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overall_Assessment_Comment": {
+        "description": "An overall comment on the Candidate Assessment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "To_Moment_Prompt": {
+        "description": "Only assessments prior to this moment will be retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

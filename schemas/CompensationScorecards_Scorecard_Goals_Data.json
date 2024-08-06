@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompensationScorecards_Scorecard_Goals_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier",
+      "field": "Goal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of criteria.",
+      "field": "Goal_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description of criteria.",
+      "field": "Goal_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Weight of criieria.",
+      "field": "Goal_Weight",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Goal_Description": {
+        "description": "Description of criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_ID": {
+        "description": "Unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Name": {
+        "description": "Name of criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Goal_Weight": {
+        "description": "Weight of criieria.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

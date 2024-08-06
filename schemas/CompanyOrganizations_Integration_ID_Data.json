@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CompanyOrganizations_Integration_ID_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+      "field": "CompanyOrganization_Organization_Data_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+      "field": "ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CompanyOrganization_Organization_Data_ID": {
+        "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "External ID that uniquely identifies the integratable object within the context of the integration system identified by the System ID attribute.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

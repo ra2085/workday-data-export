@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "VaccineManufacturers",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Vaccine_Manufacturer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Vaccine Manufacturer.",
+      "field": "Vaccine_Manufacturer_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, the vaccination event type is inactivated. You might have downstream impacts if there's existing vaccination data.",
+      "field": "Vaccine_Manufacturer_Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Vaccine_Manufacturer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Vaccine_Manufacturer_Inactive": {
+        "description": "If true, the vaccination event type is inactivated. You might have downstream impacts if there's existing vaccination data.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Vaccine_Manufacturer_Name": {
+        "description": "The name of the Vaccine Manufacturer.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

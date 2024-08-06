@@ -1,0 +1,186 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "OrganizationsNames",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Effective Date",
+      "field": "Effective_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+      "field": "Organization_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Name.",
+      "field": "Organization_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phonetic Name",
+      "field": "Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Organization ID within the name (Display ID within Workday).",
+      "field": "Include_Organization_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Organization Code.",
+      "field": "Organization_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday).",
+      "field": "Include_Organization_Code_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute identifying whether to include the Manager/Leader Name within the name (Display ID in Workday).",
+      "field": "Include_Manager_Leader_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The start date of a date range. If Org Name In Effect From and Org Name In Effect To are both empty, organization name as of the current date is retrieved. If both dates are filled, all the organization names in effect within the date range are retrieved. If From date is filled and To date is empty, all organization names in effect as of and including the From date are retrieved. If From date is empty and To date is filled, all organization names in effect up to and including the To date are retrieved.",
+      "field": "Organization_Name_in_Effect_From_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The end date of a date range. Refer to field description for \"Org Name In Effect From\" for how these two dates work together.",
+      "field": "Organization_Name_in_Effect_To_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element allows you to filter the organizations retrieved by type. This is an optional parameter. Ignored if an organization is specified.. Supports multiple values.",
+      "field": "Organization_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This element allows you to filter the organizations retrieved by type. This is an optional parameter. Ignored if an organization is specified.. Supports multiple values.",
+      "field": "Organization_Type_Reference_Organization_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set this attribute to true to include Inactive Organizations in your results. Default is to not include. This is an optional parameter. Ignored if an organization is specified.",
+      "field": "Include_Inactive_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Effective_Date": {
+        "description": "Effective Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Inactive_Prompt": {
+        "description": "Set this attribute to true to include Inactive Organizations in your results. Default is to not include. This is an optional parameter. Ignored if an organization is specified.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Manager_Leader_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Manager/Leader Name within the name (Display ID in Workday).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_Code_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Organization_ID_in_Name": {
+        "description": "Boolean attribute identifying whether to include the Organization ID within the name (Display ID within Workday).",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Code": {
+        "description": "Text attribute identifying Organization Code.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_ID": {
+        "description": "Integration Reference ID used for integration purposes; This is also the Organization ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name": {
+        "description": "Text attribute identifying Organization Name.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name_in_Effect_From_Prompt": {
+        "description": "The start date of a date range. If Org Name In Effect From and Org Name In Effect To are both empty, organization name as of the current date is retrieved. If both dates are filled, all the organization names in effect within the date range are retrieved. If From date is filled and To date is empty, all organization names in effect as of and including the From date are retrieved. If From date is empty and To date is filled, all organization names in effect up to and including the To date are retrieved.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Name_in_Effect_To_Prompt": {
+        "description": "The end date of a date range. Refer to field description for \"Org Name In Effect From\" for how these two dates work together.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Type_Reference_Organization_Type_ID_Prompt": {
+        "description": "This element allows you to filter the organizations retrieved by type. This is an optional parameter. Ignored if an organization is specified.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Type_Reference_WID_Prompt": {
+        "description": "This element allows you to filter the organizations retrieved by type. This is an optional parameter. Ignored if an organization is specified.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phonetic_Name": {
+        "description": "Phonetic Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

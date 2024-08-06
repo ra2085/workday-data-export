@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FunctionalityforStaffingTransactions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies a specific Functionality for Staffing Transactions configuration.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Process_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Business_Process_Type_Reference_Business_Process_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Functionality_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Functionality_Reference_Functionality",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies if a Functionality for a Business Process Type is enabled for all Security Groups.",
+      "field": "Enabled_for_all_Security_Groups",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains references that identifies specific Security Groups allowed for a given Functionality for Staffing Transactions configuration.",
+      "field": "Security_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies a Business Process Type on a Functionality for Staffing Transactions configuration.. Supports multiple values.",
+      "field": "Business_Process_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies a Business Process Type on a Functionality for Staffing Transactions configuration.. Supports multiple values.",
+      "field": "Business_Process_Type_Reference_Business_Process_Type_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies the Functionality that's enables for a Business Process Type.. Supports multiple values.",
+      "field": "Functionality_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a reference that identifies the Functionality that's enables for a Business Process Type.. Supports multiple values.",
+      "field": "Functionality_Reference_Functionality_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Business_Process_Type_Reference_Business_Process_Type": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Type_Reference_Business_Process_Type_Prompt": {
+        "description": "Contains a reference that identifies a Business Process Type on a Functionality for Staffing Transactions configuration.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Process_Type_Reference_WID_Prompt": {
+        "description": "Contains a reference that identifies a Business Process Type on a Functionality for Staffing Transactions configuration.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enabled_for_all_Security_Groups": {
+        "description": "Specifies if a Functionality for a Business Process Type is enabled for all Security Groups.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Functionality_Reference_Functionality": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Functionality_Reference_Functionality_Prompt": {
+        "description": "Contains a reference that identifies the Functionality that's enables for a Business Process Type.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Functionality_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Functionality_Reference_WID_Prompt": {
+        "description": "Contains a reference that identifies the Functionality that's enables for a Business Process Type.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Contains a reference that identifies a specific Functionality for Staffing Transactions configuration.",
+        "type": [
+          "string"
+        ]
+      },
+      "Security_Group_Reference": {
+        "description": "Contains references that identifies specific Security Groups allowed for a given Functionality for Staffing Transactions configuration.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

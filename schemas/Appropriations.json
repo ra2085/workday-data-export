@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Appropriations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of the Appropriation",
+      "field": "Appropriation_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Appropriation",
+      "field": "Appropriation_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether to append the Appropriation ID to its Name",
+      "field": "Include_Appropriation_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Appropriation Hierarchies that the Appropriation is included in",
+      "field": "Appropriation_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Date that the Appropriation was Inactivated",
+      "field": "Inactivation_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element Container for Appropriation Snapshot Data",
+      "field": "Appropriation_Snapshot_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The Date that the Appropriation Snapshot takes effect",
+      "field": "Appropriation_Effective_Date_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Appropriation_Effective_Date_Prompt": {
+        "description": "The Date that the Appropriation Snapshot takes effect",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Hierarchy_Reference": {
+        "description": "Appropriation Hierarchies that the Appropriation is included in",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Name": {
+        "description": "The Name of the Appropriation",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Reference_ID": {
+        "description": "The Reference ID of the Appropriation",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Snapshot_Data": {
+        "description": "Element Container for Appropriation Snapshot Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivation_Date": {
+        "description": "The Date that the Appropriation was Inactivated",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Appropriation_ID_in_Name": {
+        "description": "Indicates whether to append the Appropriation ID to its Name",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

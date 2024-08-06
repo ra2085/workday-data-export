@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Investors_Alternate_Name_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID for the Investor object",
+      "field": "Investor_Investor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Alternate Name",
+      "field": "Alternate_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+      "field": "Alternate_Name_Usage_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Name": {
+        "description": "Business Entity Alternate Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Name_Usage_Reference": {
+        "description": "Reference to an existing Business Entity Alternate Name Usage. The Usages are supplied by Workday.  Valid values for Supplier are: IRS_1099_RECIPIENT, REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE. Valid values for Customer are: REMIT_TO_ADDRESSEE_1. REMIT_TO_ADDRESSEE_2, REMIT_TO_ADVICE_NAME, REMIT_TO_PAYEE, BILL_TO_ADDRESSEE_1, BILL_TO_ADDRESSEE_2",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Investor_Investor_Reference_ID": {
+        "description": "Reference ID for the Investor object",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

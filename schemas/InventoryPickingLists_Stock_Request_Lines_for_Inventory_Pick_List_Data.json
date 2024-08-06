@@ -1,0 +1,732 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "InventoryPickingLists_Stock_Request_Lines_for_Inventory_Pick_List_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "InventoryPickingList_Document_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Stock_Request_Line_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Inventory_Stock_Request_Line_Reference_Stock_Request_Line_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Fulfillment Date",
+      "field": "Fulfillment_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Catalog_Load_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Expense_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Sales_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Item_Descriptor_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Line Item Description",
+      "field": "Line_Item_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Unit_of_Measure_Reference_UOM_EDI_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Requested Quantity for the Inventory Stock Request Line.",
+      "field": "Quantity_Requested",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Quantity shipped",
+      "field": "Quantity_Shipped",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Total quantity picked",
+      "field": "Total_Quantity_Picked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Memo for the line.",
+      "field": "Line_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Purchase Item Alternate Item Identifiers Data",
+      "field": "Alternate_Item_Identifiers_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Item tags for the Purchase Item.",
+      "field": "Item_Tag_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location data associated with pick list lines for the stock request.",
+      "field": "Pick_Inventory_Locations_Lines",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Associated Fulfillment Document Lines",
+      "field": "Business_Document_Lines_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Site Reference",
+      "field": "Inventory_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Site Reference",
+      "field": "Inventory_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Pick List ID",
+      "field": "Inventory_Pick_List_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Requests needing Fulfillment. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Requests needing Fulfillment. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Reference_Inventory_Stock_Request_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Order date for stock request for pick list on or after",
+      "field": "Picking_List_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Picking list document created on or before date",
+      "field": "Picking_List_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Targeted Inventory Stock Request Fulfillment Date On or After",
+      "field": "Targeted_Fulfillment_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Targeted Fulfillment date for stock request on or before.",
+      "field": "Targeted_Fulfillment_Date_On_or_Before_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Pick List Status Reference. Supports multiple values.",
+      "field": "Inventory_Pick_List_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Pick List Status Reference. Supports multiple values.",
+      "field": "Inventory_Pick_List_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+      "field": "Order_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+      "field": "Order_Type_Reference_Stock_Request_Transaction_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+      "field": "Transfer_to_Site_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+      "field": "Transfer_to_Site_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Inventory Stock Request Type. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Inventory Stock Request Type. Supports multiple values.",
+      "field": "Inventory_Stock_Request_Type_Reference_Stock_Request_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Inventory Par Location when the Inventory Stock Request Type is type of Par Issue. Supports multiple values.",
+      "field": "Inventory_Par_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the Inventory Par Location when the Inventory Stock Request Type is type of Par Issue. Supports multiple values.",
+      "field": "Inventory_Par_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Active worker for inventory issue.. Supports multiple values.",
+      "field": "Requester_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Active worker for inventory issue.. Supports multiple values.",
+      "field": "Requester_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Active worker for inventory issue.. Supports multiple values.",
+      "field": "Requester_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deliver To Location reference. Supports multiple values.",
+      "field": "Deliver_To_Location_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Deliver To Location reference. Supports multiple values.",
+      "field": "Deliver_To_Location_Reference_Location_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+      "field": "Assigned_To_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+      "field": "Assigned_To_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+      "field": "Assigned_To_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+      "field": "Stock_Request_Origin_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+      "field": "Stock_Request_Origin_Reference_Stock_Request_Origin_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Include only the Inventory Stock Request(s) with High Priority",
+      "field": "Include_High_Priority_Only_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Alternate_Item_Identifiers_Data": {
+        "description": "Purchase Item Alternate Item Identifiers Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_Employee_ID_Prompt": {
+        "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assigned_To_Reference_WID_Prompt": {
+        "description": "The 'Assigned To' is the person who is assigned to do the picking.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Document_Lines_Reference": {
+        "description": "Associated Fulfillment Document Lines",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver_To_Location_Reference_Location_ID_Prompt": {
+        "description": "Deliver To Location reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deliver_To_Location_Reference_WID_Prompt": {
+        "description": "Deliver To Location reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fulfillment_Date": {
+        "description": "Fulfillment Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_High_Priority_Only_Prompt": {
+        "description": "Include only the Inventory Stock Request(s) with High Priority",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "InventoryPickingList_Document_Status_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_Location_ID_Prompt": {
+        "description": "Reference to the Inventory Par Location when the Inventory Stock Request Type is type of Par Issue. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Par_Location_Reference_WID_Prompt": {
+        "description": "Reference to the Inventory Par Location when the Inventory Stock Request Type is type of Par Issue. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Pick_List_ID_Prompt": {
+        "description": "Inventory Pick List ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Pick_List_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Inventory Pick List Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Pick_List_Status_Reference_WID_Prompt": {
+        "description": "Inventory Pick List Status Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_Location_ID_Prompt": {
+        "description": "Inventory Site Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Site_Reference_WID_Prompt": {
+        "description": "Inventory Site Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Line_Reference_Stock_Request_Line_Number": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Line_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Reference_Inventory_Stock_Request_Reference_ID_Prompt": {
+        "description": "Inventory Stock Requests needing Fulfillment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Reference_WID_Prompt": {
+        "description": "Inventory Stock Requests needing Fulfillment. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Type_Reference_Stock_Request_Type_ID_Prompt": {
+        "description": "Reference to the Inventory Stock Request Type. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inventory_Stock_Request_Type_Reference_WID_Prompt": {
+        "description": "Reference to the Inventory Stock Request Type. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Catalog_Load_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Expense_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Sales_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Descriptor_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Item_Tag_Reference": {
+        "description": "Item tags for the Purchase Item.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Item_Description": {
+        "description": "Line Item Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Line_Memo": {
+        "description": "Memo for the line.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order_Type_Reference_Stock_Request_Transaction_Type_ID_Prompt": {
+        "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order_Type_Reference_WID_Prompt": {
+        "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pick_Inventory_Locations_Lines": {
+        "description": "Location data associated with pick list lines for the stock request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Picking_List_Date_On_or_After_Prompt": {
+        "description": "Order date for stock request for pick list on or after",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Picking_List_Date_On_or_Before_Prompt": {
+        "description": "Picking list document created on or before date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Quantity_Requested": {
+        "description": "Requested Quantity for the Inventory Stock Request Line.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Quantity_Shipped": {
+        "description": "Quantity shipped",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Requester_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "Active worker for inventory issue.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_Employee_ID_Prompt": {
+        "description": "Active worker for inventory issue.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Requester_Reference_WID_Prompt": {
+        "description": "Active worker for inventory issue.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Request_Origin_Reference_Stock_Request_Origin_ID_Prompt": {
+        "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Stock_Request_Origin_Reference_WID_Prompt": {
+        "description": "Inventory Stock Request Origin Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Targeted_Fulfillment_Date_On_or_After_Prompt": {
+        "description": "Targeted Inventory Stock Request Fulfillment Date On or After",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Targeted_Fulfillment_Date_On_or_Before_Prompt": {
+        "description": "Targeted Fulfillment date for stock request on or before.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Total_Quantity_Picked": {
+        "description": "Total quantity picked",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Transfer_to_Site_Reference_Location_ID_Prompt": {
+        "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transfer_to_Site_Reference_WID_Prompt": {
+        "description": "Reference to the Transfer To Inventory Site when the Inventory Stock Request Type is Transfer. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_UOM_EDI_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unit_of_Measure_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

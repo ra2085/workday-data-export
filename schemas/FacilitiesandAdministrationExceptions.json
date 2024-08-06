@@ -1,0 +1,173 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FacilitiesandAdministrationExceptions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A Exception.",
+      "field": "Facilities_and_Administration_Exception_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "A Exception inside the Workday application.",
+      "field": "Locked_in_Workday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A Exception.",
+      "field": "Exception_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Facilities_and_Admin_Exception_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Facilities_and_Admin_Exception_Type_Reference_Facilities_and_Admin_Exception_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Rate as percent entered in decimal format, ex: enter 1 for 100%, .5 for 50%, etc",
+      "field": "Primary_Rate_Override",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Rate as percent entered in decimal format, ex: enter 1 for 100%, .5 for 50%, etc",
+      "field": "Primary_Waive_Rate",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Facilities_and_Administration_Waived_Expense_Allocation_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Facilities_and_Administration_Waived_Expense_Allocation_Profile_Reference_Facilities_and_Adminstration_Waived_Expense_Allocation_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper element containing exception rates by object class.",
+      "field": "Exception_Detail_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Basis_Type_Reference_Facilities_and_Administration_Basis_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Basis_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exception_Detail_Data": {
+        "description": "Wrapper element containing exception rates by object class.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exception_Name": {
+        "description": "A Exception.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Admin_Exception_Type_Reference_Facilities_and_Admin_Exception_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Admin_Exception_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Exception_ID": {
+        "description": "A Exception.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Waived_Expense_Allocation_Profile_Reference_Facilities_and_Adminstration_Waived_Expense_Allocation_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Facilities_and_Administration_Waived_Expense_Allocation_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locked_in_Workday": {
+        "description": "A Exception inside the Workday application.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Primary_Rate_Override": {
+        "description": "Rate as percent entered in decimal format, ex: enter 1 for 100%, .5 for 50%, etc",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Primary_Waive_Rate": {
+        "description": "Rate as percent entered in decimal format, ex: enter 1 for 100%, .5 for 50%, etc",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

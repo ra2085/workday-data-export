@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ExternalPayGroups_Last_Extract_Created_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ExternalPayGroup_External_Pay_Group_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Date Time stamp when Payroll Interface Extract was last created.",
+      "field": "Date_Time",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Date Time stamp  for when Payroll Interface Additional Extract was last created.",
+      "field": "Date_Time_for_Additional_Run",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Period Reference to specify periods processed within the last extract. Used only for Integration Systems configured with integration attribute \"Additional Primary Integration\" set to True.",
+      "field": "Processed_Period_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date_Time": {
+        "description": "Date Time stamp when Payroll Interface Extract was last created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Time_for_Additional_Run": {
+        "description": "Date Time stamp  for when Payroll Interface Additional Extract was last created.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ExternalPayGroup_External_Pay_Group_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Processed_Period_Reference": {
+        "description": "Pay Period Reference to specify periods processed within the last extract. Used only for Integration Systems configured with integration attribute \"Additional Primary Integration\" set to True.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

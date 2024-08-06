@@ -1,0 +1,340 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Payees_Payee_Transaction_Log_Entry_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Payee_Payee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing the transaction log entry.",
+      "field": "Transaction_Log_Entry",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+      "field": "Pay_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+      "field": "Pay_Group_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference a Pay Period.",
+      "field": "Pay_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference a Pay Period.",
+      "field": "Pay_Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether the response data for Benefit Plan Data (within Deduction Data) should include Benefit Elections as of the Period Payment Date instead of the Period End Date.",
+      "field": "Return_Benefits_as_of_Payment_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Employees who are currently Terminated, but were members of the Pay Group as of the Termination Date.",
+      "field": "Include_Terminated_Payees_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_Period_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "As Of Entry DateTime used within the request for the last time this operation was submitted.  Used to determine the population of the Pay Group as of above Period for all data entered into the system prior to this Entry DateTime.",
+      "field": "Include_Transfers_Out_Of_Pay_Group_Prior_As_Of_Entry_DateTime_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+      "field": "Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+      "field": "Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+      "field": "Exclude_Payee_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+      "field": "Exclude_Payee_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "field": "Transaction_Log_Criteria_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Costing Allocation data for the employee.",
+      "field": "Include_Costing_Allocation_Data_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Used to indicate that the Pay Period Start and End dates should be used for Time Off entry selection.",
+      "field": "Use_Pay_Period_for_Time_Off_Period_Start_Date_and_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The \"as of the effective date\" for the management chain, if different than the response filter \"as of effective date.\"  This can be useful when a manager change is not due a staffing change in the managed worker's history.",
+      "field": "As_of_Effective_Date_for_Management_Chain_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When enabled, this option will use the respective Pay Period for Payroll Input Start and End Dates. This replaces the current behavior of using the Begin Entry Moment specified in the Response Date Range Filter to derive the period.",
+      "field": "Use_Pay_Period_for_Payroll_Input_Start_and_End_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute to signify whether to include Employees who are Purged",
+      "field": "Include_Purged_Payees_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+      "field": "Universal_ID_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+      "field": "Universal_ID_Reference_Universal_Identifier_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "As_of_Effective_Date_for_Management_Chain_Prompt": {
+        "description": "The \"as of the effective date\" for the management chain, if different than the response filter \"as of effective date.\"  This can be useful when a manager change is not due a staffing change in the managed worker's history.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Payee_Reference_Employee_ID_Prompt": {
+        "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Payee_Reference_WID_Prompt": {
+        "description": "Unique identifier used to exclude Payee(s) from the extract (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Integration_System_ID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_WID_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Costing_Allocation_Data_Prompt": {
+        "description": "Boolean attribute to signify whether to include Costing Allocation data for the employee.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Purged_Payees_Prompt": {
+        "description": "Boolean attribute to signify whether to include Employees who are Purged",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Terminated_Payees_Prompt": {
+        "description": "Boolean attribute to signify whether to include Employees who are currently Terminated, but were members of the Pay Group as of the Termination Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_As_Of_Entry_DateTime_Prompt": {
+        "description": "As Of Entry DateTime used within the request for the last time this operation was submitted.  Used to determine the population of the Pay Group as of above Period for all data entered into the system prior to this Entry DateTime.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_Period_ID_Prompt": {
+        "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Include_Transfers_Out_Of_Pay_Group_Prior_Pay_Period_Reference_WID_Prompt": {
+        "description": "Pay Period Reference representing the last time the web service operation was requested.  This period will be used to determine the members of the Pay Group as of the period.  For those that are no longer members, they will be included within the response.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Group_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference an External Pay Group (e.g. a Pay Group marked as \"Used in Payroll Interface\")",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Reference_Period_ID_Prompt": {
+        "description": "Unique identifier used to reference a Pay Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_Period_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference a Pay Period.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Payee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_Employee_ID_Prompt": {
+        "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payee_Reference_WID_Prompt": {
+        "description": "Unique identifier used to reference an Payee (e.g. Employee).. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Return_Benefits_as_of_Payment_Date_Prompt": {
+        "description": "Boolean attribute to signify whether the response data for Benefit Plan Data (within Deduction Data) should include Benefit Elections as of the Period Payment Date instead of the Period End Date.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Transaction_Log_Criteria_Data_Prompt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Transaction_Log_Entry": {
+        "description": "Encapsulating element containing the transaction log entry.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_Universal_Identifier_ID_Prompt": {
+        "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Universal_ID_Reference_WID_Prompt": {
+        "description": "The universal identifier of the payees.  All payee roles will be returned for a given universal identifier.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Pay_Period_for_Payroll_Input_Start_and_End_Date_Prompt": {
+        "description": "When enabled, this option will use the respective Pay Period for Payroll Input Start and End Dates. This replaces the current behavior of using the Begin Entry Moment specified in the Response Date Range Filter to derive the period.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_Pay_Period_for_Time_Off_Period_Start_Date_and_End_Date_Prompt": {
+        "description": "Used to indicate that the Pay Period Start and End dates should be used for Time Off entry selection.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

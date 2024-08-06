@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FeedbackQuestions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Feedback_Question_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Feedback_Question_Reference_Feedback_Question_Setup_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the feedback question. Specify either the WID or \"Feedback_Question_Setup_ID=12345\".",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Question.",
+      "field": "Question_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Question_Type_Reference_Question_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains multiple choice answer with score data.",
+      "field": "Question_Multiple_Choice_Answer_With_Score_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the question tag. Specify either the WID or \"Question_Tag_ID=12345\". You can specify multiple question tags.",
+      "field": "Question_Tags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of feedback template(s) that this question is used in.",
+      "field": "Used_In_Templates_Count",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether or not the feedback question is used in a requested feedback event or included in a feedback template.",
+      "field": "Used_In_Feedback",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Feedback_Question_Reference_Feedback_Question_Setup_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Feedback_Question_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "ID": {
+        "description": "ID of the feedback question. Specify either the WID or \"Feedback_Question_Setup_ID=12345\".",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_With_Score_Data": {
+        "description": "Contains multiple choice answer with score data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Name": {
+        "description": "The name of the Question.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Tags_Reference": {
+        "description": "ID of the question tag. Specify either the WID or \"Question_Tag_ID=12345\". You can specify multiple question tags.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Type_Reference_Question_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_In_Feedback": {
+        "description": "Indicates whether or not the feedback question is used in a requested feedback event or included in a feedback template.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Used_In_Templates_Count": {
+        "description": "The number of feedback template(s) that this question is used in.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

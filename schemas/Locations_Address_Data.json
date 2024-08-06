@@ -1,0 +1,446 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Locations_Address_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Location_Location_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The moment when the address was last modified.",
+      "field": "Last_Modified",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The address line for the address. This typically contains Street name, street number, apartment, suite number.",
+      "field": "Address_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "City part of the address.",
+      "field": "Municipality",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_Country_Subregion_Code_In_Country",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_Country_Subregion_Internal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The submunicipality of the address.",
+      "field": "Submunicipality_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_Country_Region_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Country-Region_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The region part of the address. Typically this contains the state/province information.",
+      "field": "Country_Region_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The subregion part of the address.",
+      "field": "Subregion_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The postal code part of the address.",
+      "field": "Postal_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Communication Method Usage data.",
+      "field": "Usage_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Tracks the number of days an employee works from home per week.",
+      "field": "Number_of_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "City in local script part of the address.",
+      "field": "Municipality_Local",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Address_Reference_Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "New ID value used in address updates. The ID cannot already be in use by another address.",
+      "field": "Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Location Name for the request criteria.",
+      "field": "Location_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+      "field": "Location_Usage_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+      "field": "Location_Usage_Reference_Location_Usage_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+      "field": "Location_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+      "field": "Location_Type_Reference_Location_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Excludes inactive locations from being returned in the response.",
+      "field": "Exclude_Inactive_Locations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Excludes active locations from being returned in the response.",
+      "field": "Exclude_Active_Locations_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+      "field": "Field_And_Parameter_Criteria_Data_Provider_Reference_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_ID": {
+        "description": "New ID value used in address updates. The ID cannot already be in use by another address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Line_Data": {
+        "description": "The address line for the address. This typically contains Street name, street number, apartment, suite number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Reference_Address_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_Country_Subregion_Code_In_Country": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_Country_Subregion_Internal_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Descriptor": {
+        "description": "The region part of the address. Typically this contains the state/province information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_Country_Region_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Country-Region_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_Active_Locations_Prompt": {
+        "description": "Excludes active locations from being returned in the response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Inactive_Locations_Prompt": {
+        "description": "Excludes inactive locations from being returned in the response.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Field_And_Parameter_Criteria_Data_Provider_Reference_Prompt": {
+        "description": "Field And Parameter Initialization Provider Reference. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Modified": {
+        "description": "The moment when the address was last modified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Location_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Name_Prompt": {
+        "description": "Location Name for the request criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Type_Reference_Location_Type_ID_Prompt": {
+        "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Type_Reference_WID_Prompt": {
+        "description": "The location type associated with the location that ties to the usage that has been setup.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Usage_Reference_Location_Usage_ID_Prompt": {
+        "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Location_Usage_Reference_WID_Prompt": {
+        "description": "Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.). Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Municipality": {
+        "description": "City part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Municipality_Local": {
+        "description": "City in local script part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Days": {
+        "description": "Tracks the number of days an employee works from home per week.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Postal_Code": {
+        "description": "The postal code part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submunicipality_Data": {
+        "description": "The submunicipality of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subregion_Data": {
+        "description": "The subregion part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Data": {
+        "description": "Encapsulating element for all Communication Method Usage data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

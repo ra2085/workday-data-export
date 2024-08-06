@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PrepaidSpendAmortizationSchedules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference id of the prepaid spend amortization schedule.  If this is entered, then the Supplier Invoice ID cannot.",
+      "field": "Prepaid_Spend_Amortization_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference id of the supplier invoice this schedule is connected to.  If this is entered than the Schedule ID cannot.",
+      "field": "Supplier_Invoice_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The set of installments that make up this schedule.",
+      "field": "Prepaid_Spend_Amortization_Installment_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Prepaid_Spend_Amortization_Installment_Data": {
+        "description": "The set of installments that make up this schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Prepaid_Spend_Amortization_Schedule_ID": {
+        "description": "The reference id of the prepaid spend amortization schedule.  If this is entered, then the Supplier Invoice ID cannot.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_ID": {
+        "description": "The reference id of the supplier invoice this schedule is connected to.  If this is entered than the Schedule ID cannot.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

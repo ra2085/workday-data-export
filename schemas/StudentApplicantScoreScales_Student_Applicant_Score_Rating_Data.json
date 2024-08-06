@@ -1,0 +1,108 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentApplicantScoreScales_Student_Applicant_Score_Rating_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Student Rating.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The alphanumeric order in which the Student Rating is displayed relative to any other Student Ratings associated with a given Student Rating Scale.",
+      "field": "Student_Rating_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The value for the Student Rating.",
+      "field": "Student_Rating_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The minimum score for the Student Rating.",
+      "field": "Student_Rating_Minimum_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The maximum score for the Student Rating.",
+      "field": "Student_Rating_Maximum_Score",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The reference ID for the Student Rating.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Applicant Score Scale instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Rating_Maximum_Score": {
+        "description": "The maximum score for the Student Rating.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Student_Rating_Minimum_Score": {
+        "description": "The minimum score for the Student Rating.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Student_Rating_Order": {
+        "description": "The alphanumeric order in which the Student Rating is displayed relative to any other Student Ratings associated with a given Student Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Rating_Value": {
+        "description": "The value for the Student Rating.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

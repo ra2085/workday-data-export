@@ -1,0 +1,251 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CanadaIncomeWithholdingOrders_Withholding_Order_Fee_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CanadaIncomeWithholdingOrder_Employee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount of the fee.",
+      "field": "Fee_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fee_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Fee_Type_Reference_Withholding_Order_Fee_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deduction_Recipient_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Deduction_Recipient_Reference_Deduction_Recipient_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Schedule for the override fee.",
+      "field": "Override_Fee_Schedule",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the Fee Override begins.",
+      "field": "Begin_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The date the Fee Override ends.",
+      "field": "End_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+      "field": "Type_Reference_Withholding_Order_Type_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+      "field": "Case_Reference_Withholding_Order_Case_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response includes any order with the exact withholding order case number.",
+      "field": "Case_Number_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Begin_Date": {
+        "description": "The date the Fee Override begins.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CanadaIncomeWithholdingOrder_Employee_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Number_Prompt": {
+        "description": "When specified, the response includes any order with the exact withholding order case number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Case_Reference_Withholding_Order_Case_ID_Prompt": {
+        "description": "When specified, the response will only include the withholding orders with the case numbers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deduction_Recipient_Reference_Deduction_Recipient_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Deduction_Recipient_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "When specified, the response will only include withholding orders that are in effect as of the date selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "End_Date": {
+        "description": "The date the Fee Override ends.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fee_Amount": {
+        "description": "The amount of the fee.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Fee_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Fee_Type_Reference_Withholding_Order_Fee_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Override_Fee_Schedule": {
+        "description": "Schedule for the override fee.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Type_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Type_Reference_Withholding_Order_Type_Code_Prompt": {
+        "description": "When specified, the response will only include withholding order types selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

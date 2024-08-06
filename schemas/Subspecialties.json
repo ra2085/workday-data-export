@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Subspecialties",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Subspecialty.  This is a required field.  The Subspecialty Name combined with the Subspecialty Code must be unique.",
+      "field": "Subspecialty_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A description for the subspecialty.",
+      "field": "Subspecialty_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An alphanumeric code for the subspecialty.  This is a required field.  The combination of the Specialty Code and the Specialty name must be unique.",
+      "field": "Subspecialty_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID Field (Subspecialty_ID)",
+      "field": "Subspecialty_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A URL for the Subspecialty.",
+      "field": "URL",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates whether the subspecialty is inactive or not.  Inactive subspecialties cannot be added to certification achievements by workers.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Retrieve a Subspecialty based on whether their name contains this search name.  Case insensitive.",
+      "field": "Subspecialty_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Retrieve a Subspecialty based on whether their code contains this search code.  Case insensitive.",
+      "field": "Subspecialty_Code_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Retrieve Subspecialties based on whether they have the same inactive/active flag.",
+      "field": "Subspecialty_Active_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Inactive": {
+        "description": "Indicates whether the subspecialty is inactive or not.  Inactive subspecialties cannot be added to certification achievements by workers.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Subspecialty_Active_Prompt": {
+        "description": "Retrieve Subspecialties based on whether they have the same inactive/active flag.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Subspecialty_Code": {
+        "description": "An alphanumeric code for the subspecialty.  This is a required field.  The combination of the Specialty Code and the Specialty name must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_Code_Prompt": {
+        "description": "Retrieve a Subspecialty based on whether their code contains this search code.  Case insensitive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_Description": {
+        "description": "A description for the subspecialty.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_ID": {
+        "description": "ID Field (Subspecialty_ID)",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_Name": {
+        "description": "The name of the Subspecialty.  This is a required field.  The Subspecialty Name combined with the Subspecialty Code must be unique.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subspecialty_Name_Prompt": {
+        "description": "Retrieve a Subspecialty based on whether their name contains this search name.  Case insensitive.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "URL": {
+        "description": "A URL for the Subspecialty.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

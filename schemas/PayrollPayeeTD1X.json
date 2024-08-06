@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollPayeeTD1X",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for the Payroll Payee TD1X.",
+      "field": "Payroll_Payee_TD1X_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Company_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Company_Reference_Organization_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Worker_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The effective date of the TD1X election.",
+      "field": "Effective_As_Of",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate if the TD1X election is now inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the gross commissions for the year.",
+      "field": "Commission",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the salary or wages for the year.",
+      "field": "Salary_or_Wages",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the total remuneration for the year.",
+      "field": "Total_Remuneration",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the expenses related to the commission earnings for the year.",
+      "field": "Commission_Expenses",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the gross commissions less the expenses related to commission earnings for the year.",
+      "field": "Estimated_Annual_Net_Commission_Income",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter the amount of the estimated annual pension/retirement deductions for the year.",
+      "field": "Estimated_Annual_Pension_Retirement_Deduction",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Last updated by",
+      "field": "Last_Updated",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Commission": {
+        "description": "Enter the amount of the gross commissions for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Commission_Expenses": {
+        "description": "Enter the amount of the expenses related to the commission earnings for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of": {
+        "description": "The effective date of the TD1X election.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Estimated_Annual_Net_Commission_Income": {
+        "description": "Enter the amount of the gross commissions less the expenses related to commission earnings for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Estimated_Annual_Pension_Retirement_Deduction": {
+        "description": "Enter the amount of the estimated annual pension/retirement deductions for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicate if the TD1X election is now inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Last_Updated": {
+        "description": "Last updated by",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Payee_TD1X_ID": {
+        "description": "ID for the Payroll Payee TD1X.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Salary_or_Wages": {
+        "description": "Enter the amount of the salary or wages for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Total_Remuneration": {
+        "description": "Enter the amount of the total remuneration for the year.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

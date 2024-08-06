@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MessageTemplateTranslation",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_User_Language_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Returns the name of the sender in the target language you selected.",
+      "field": "From_Display_Name_in_Target_Language",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "From_Display_Name_in_Target_Language": {
+        "description": "Returns the name of the sender in the target language you selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_User_Language_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

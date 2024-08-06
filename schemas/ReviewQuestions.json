@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReviewQuestions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the Question.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The category that this question belongs to.",
+      "field": "Review_Question_Category_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of employee review template(s) that this Question is used in.",
+      "field": "Used_In_Templates_Count",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "The ID for the Question.",
+        "type": [
+          "string"
+        ]
+      },
+      "Review_Question_Category_Reference": {
+        "description": "The category that this question belongs to.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Used_In_Templates_Count": {
+        "description": "The number of employee review template(s) that this Question is used in.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

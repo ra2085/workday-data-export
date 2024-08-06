@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AllocationGroupSets_Allocation_Group_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AllocationGroupSet_Allocation_Group_Set_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID for the Allocation Group",
+      "field": "Allocation_Group_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text Attribute identifying Allocation Group Set Order",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text Attribute identifying Allocation Group Name",
+      "field": "Allocation_Group_Set_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text Attribute Identifying Allocation Group Dependency ID",
+      "field": "Allocation_Group_Dependency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulates the Allocation Group Set Line Data",
+      "field": "Allocation_Group_Line_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AllocationGroupSet_Allocation_Group_Set_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Dependency_ID": {
+        "description": "Text Attribute Identifying Allocation Group Dependency ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_ID": {
+        "description": "The ID for the Allocation Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Line_Data": {
+        "description": "Encapsulates the Allocation Group Set Line Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Allocation_Group_Set_Name": {
+        "description": "Text Attribute identifying Allocation Group Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Text Attribute identifying Allocation Group Set Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

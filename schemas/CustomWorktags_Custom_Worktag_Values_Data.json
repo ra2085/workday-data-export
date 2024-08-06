@@ -1,0 +1,95 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomWorktags_Custom_Worktag_Values_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Worktag Configuration ID",
+      "field": "CustomWorktag_Custom_Worktag_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Custom Worktag ID.  This is the Custom Worktag unique identifier within the Worktag Configuration",
+      "field": "Custom_Worktag_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Worktag Value. The name the instance of a Custom Worktag instance.",
+      "field": "Worktag_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive Custom Worktag. Mark an instance of Custom Worktag as inactive.",
+      "field": "Inactive_Custom_Worktag",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When set to TRUE, the custom worktag value will be deleted if it isn't in use or hasn't been used previously.",
+      "field": "Delete_Custom_Worktag",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "CustomWorktag_Custom_Worktag_Configuration_ID": {
+        "description": "Custom Worktag Configuration ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Worktag_ID": {
+        "description": "Custom Worktag ID.  This is the Custom Worktag unique identifier within the Worktag Configuration",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delete_Custom_Worktag": {
+        "description": "When set to TRUE, the custom worktag value will be deleted if it isn't in use or hasn't been used previously.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Inactive_Custom_Worktag": {
+        "description": "Inactive Custom Worktag. Mark an instance of Custom Worktag as inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Value": {
+        "description": "Worktag Value. The name the instance of a Custom Worktag instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProcurementConditionalRulesWithoutDependencies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Label for Class of this Instance",
+      "field": "Label_for_the_Procurement_Conditional_Rule_Context",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Wrapper containing data for Condition Rule.",
+      "field": "Condition_Rule_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Procurement Condition Rule Description",
+      "field": "Rule_Description_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Condition_Rule_Data": {
+        "description": "Wrapper containing data for Condition Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Label_for_the_Procurement_Conditional_Rule_Context": {
+        "description": "Label for Class of this Instance",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rule_Description_Prompt": {
+        "description": "Procurement Condition Rule Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

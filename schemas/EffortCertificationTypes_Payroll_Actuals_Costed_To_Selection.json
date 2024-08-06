@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "EffortCertificationTypes_Payroll_Actuals_Costed_To_Selection",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Effort Certification Type Reference ID",
+      "field": "EffortCertificationType_Effort_Certification_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Worktag_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Worktag_Type_Reference_Accounting_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Worktag_Type_Reference_Worktag_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Worktags. Worktags selected must match the worktag type selected previously. They have to be active and cannot be hierarchical. The Run Effort Certification task will then collect employees with payroll lines tagged with the worktags specified.",
+      "field": "Worktag_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Worktag_Type_Reference_Accounting_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Worktag_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Worktag_Type_Reference_Worktag_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EffortCertificationType_Effort_Certification_Type_ID": {
+        "description": "Effort Certification Type Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Reference": {
+        "description": "Reference to existing Worktags. Worktags selected must match the worktag type selected previously. They have to be active and cannot be hierarchical. The Run Effort Certification task will then collect employees with payroll lines tagged with the worktags specified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

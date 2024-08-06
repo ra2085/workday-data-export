@@ -1,0 +1,264 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssetBookRules_Asset_Book_Rule_Replacement_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AssetBookRule_Asset_Book_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique reference identifier to the set of asset book rules.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Used to define the order of the rules (ascending).",
+      "field": "Asset_Book_Rule_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing spend categories or spend category hierarchies to which the asset book rule applies.",
+      "field": "Spend_Category_or_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing asset classes to which the asset book rule applies.",
+      "field": "Asset_Class_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing asset types to which the asset book rule applies.",
+      "field": "Asset_Type_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing companies or company hierarchies to which the asset book rule applies.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount above which the asset book rule applies.",
+      "field": "Amount_Threshold",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Amount_Basis_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Amount_Basis_Reference_Asset_Amount_Basis_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Accounting_Treatment_Reference_Accounting_Treatment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Depreciation_Profile_Reference_Depreciation_Profile_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+      "field": "Asset_Books_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+      "field": "Asset_Books_Reference_Asset_Book_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Accounting_Treatment_Reference_Accounting_Treatment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Accounting_Treatment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount_Basis_Reference_Asset_Amount_Basis_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount_Basis_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount_Threshold": {
+        "description": "The amount above which the asset book rule applies.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "AssetBookRule_Asset_Book_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Book_Rule_Order": {
+        "description": "Used to define the order of the rules (ascending).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Books_Reference_Asset_Book_ID_Prompt": {
+        "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Books_Reference_WID_Prompt": {
+        "description": "Reference to an existing asset book to which the asset book rule data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference": {
+        "description": "Reference to existing asset classes to which the asset book rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference": {
+        "description": "Reference to existing asset types to which the asset book rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference": {
+        "description": "Reference to existing companies or company hierarchies to which the asset book rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_Depreciation_Profile_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Depreciation_Profile_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is a unique reference identifier to the set of asset book rules.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_or_Hierarchy_Reference": {
+        "description": "Reference to existing spend categories or spend category hierarchies to which the asset book rule applies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

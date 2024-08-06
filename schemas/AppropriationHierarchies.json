@@ -1,0 +1,134 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AppropriationHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Name of this Appropriation Hierarchy.",
+      "field": "Appropriation_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID of the Appropriation Hierarchy.",
+      "field": "Appropriation_Hierarchy_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether to Include the Appropriation Hierarchy ID in the display Name.",
+      "field": "Include_Appropriation_Hierarchy_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether the Appropriation is Inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Organization_Subtype_Reference_Organization_Subtype_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Appropriation_Hierarchy_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Superior_Appropriation_Hierarchy_Reference_Appropriation_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Appropriations included in this Appropriation Hierarchy.",
+      "field": "Appropriation_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Appropriation_Hierarchy_Name": {
+        "description": "The Name of this Appropriation Hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Hierarchy_Reference_ID": {
+        "description": "The Reference ID of the Appropriation Hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Appropriation_Reference": {
+        "description": "The Appropriations included in this Appropriation Hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Specifies whether the Appropriation is Inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Appropriation_Hierarchy_ID_in_Name": {
+        "description": "Specifies whether to Include the Appropriation Hierarchy ID in the display Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_Organization_Subtype_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Organization_Subtype_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Appropriation_Hierarchy_Reference_Appropriation_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Superior_Appropriation_Hierarchy_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

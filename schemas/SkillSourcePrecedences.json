@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SkillSourcePrecedences",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Skill Source Precedence Reference ID",
+      "field": "Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Precedence Order",
+      "field": "Precedence_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Skill Source Category for the Skill Source Precedence",
+      "field": "Skill_Source_Category_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Precedence_Order": {
+        "description": "Precedence Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reference_ID": {
+        "description": "Skill Source Precedence Reference ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Skill_Source_Category_Reference": {
+        "description": "Skill Source Category for the Skill Source Precedence",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

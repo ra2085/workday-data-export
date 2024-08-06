@@ -1,0 +1,212 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PreviousSystemCompensationHistory_Previous_System_Job_History",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "PreviousSystemCompensationHistory_Worker_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Previous_System_Compensation_History_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Previous_System_Compensation_History_Reference_Previous_System_Compensation_History_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for a Previous System Compensation History entry. This can be entered here on an add to set the reference id to a customer determined value or left blank and a default value will be saved.  If you are updating an existing entry, entering a value here will change the reference id.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name to identify the Previous System Compensation History. This does not have to be unique.  During an update, if no value is sent then the existing value will be kept. Required on an Add.",
+      "field": "Worker_History_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date of the Previous System Compensation entry. During an update, if no value is sent, then the existing date will be kept. Required on an Add.",
+      "field": "Action_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reason for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept. Required on an Add.",
+      "field": "Reason",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount of the Compensation for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept.",
+      "field": "Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Amount of the compensation change for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept.",
+      "field": "Amount_Change",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free Form Description for the Previous System Compensation Entry. During an update, if no valie is sent then the existing value will be kept.",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Action_Date": {
+        "description": "Date of the Previous System Compensation entry. During an update, if no value is sent, then the existing date will be kept. Required on an Add.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Amount": {
+        "description": "Amount of the Compensation for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Amount_Change": {
+        "description": "Amount of the compensation change for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Free Form Description for the Previous System Compensation Entry. During an update, if no valie is sent then the existing value will be kept.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Unique identifier for a Previous System Compensation History entry. This can be entered here on an add to set the reference id to a customer determined value or left blank and a default value will be saved.  If you are updating an existing entry, entering a value here will change the reference id.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "PreviousSystemCompensationHistory_Worker_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Previous_System_Compensation_History_Reference_Previous_System_Compensation_History_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Previous_System_Compensation_History_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason": {
+        "description": "Reason for the Previous System Compensation Entry. During an update, if no value is sent then the existing value will be kept. Required on an Add.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_History_Name": {
+        "description": "Name to identify the Previous System Compensation History. This does not have to be unique.  During an update, if no value is sent then the existing value will be kept. Required on an Add.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

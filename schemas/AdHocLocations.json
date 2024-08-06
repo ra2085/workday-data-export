@@ -1,0 +1,133 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AdHocLocations",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_Hoc_Location_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Ad_Hoc_Location_Reference_Student_Recruiting_Event_Ad_Hoc_Location_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier of the Ad Hoc Location.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Ad Hoc Location",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Unit Data with Shareable with Subordinates Data",
+      "field": "Academic_Unit_Shareable_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "All of the person's contact data (address, phone, email, instant messenger, web address).",
+      "field": "Contact_Information_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ad Hoc Location Name to filter results on.",
+      "field": "Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an academic unit. If provided, the request returns only Ad Hoc Location instances for the academic unit, including its subordinate academic units.",
+      "field": "Academic_Unit_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an academic unit. If provided, the request returns only Ad Hoc Location instances for the academic unit, including its subordinate academic units.",
+      "field": "Academic_Unit_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Unit_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an academic unit. If provided, the request returns only Ad Hoc Location instances for the academic unit, including its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Reference_WID_Prompt": {
+        "description": "A reference to an academic unit. If provided, the request returns only Ad Hoc Location instances for the academic unit, including its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Shareable_Data": {
+        "description": "Academic Unit Data with Shareable with Subordinates Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Location_Reference_Student_Recruiting_Event_Ad_Hoc_Location_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Ad_Hoc_Location_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Contact_Information_Data": {
+        "description": "All of the person's contact data (address, phone, email, instant messenger, web address).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Unique identifier of the Ad Hoc Location.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "Name of the Ad Hoc Location",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name_Prompt": {
+        "description": "Ad Hoc Location Name to filter results on.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

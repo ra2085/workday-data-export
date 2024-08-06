@@ -1,0 +1,107 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "MatchRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Match_Rule_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Match_Rule_Reference_Match_Rule_Configuration_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the match rule.",
+      "field": "Match_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether the match rule for finding duplicate records is enabled.",
+      "field": "Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The criteria used by the match rule to identify duplicate records.",
+      "field": "Match_Criteria_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Specifies whether the match rule will automatically merge records if a match is found.",
+      "field": "Automatic_Merge_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the match rule.",
+      "field": "Rule_Name",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Automatic_Merge_Enabled": {
+        "description": "Specifies whether the match rule will automatically merge records if a match is found.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enabled": {
+        "description": "Specifies whether the match rule for finding duplicate records is enabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Match_Criteria_Reference": {
+        "description": "The criteria used by the match rule to identify duplicate records.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Match_Rule_ID": {
+        "description": "The Reference ID for the match rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Match_Rule_Reference_Match_Rule_Configuration_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Match_Rule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Rule_Name": {
+        "description": "The name of the match rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

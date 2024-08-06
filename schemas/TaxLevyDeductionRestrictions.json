@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "TaxLevyDeductionRestrictions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer defined ID to identify a Withholding Order",
+      "field": "Withholding_Order_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, blocks tax elections changes for the worker from employee self-service.",
+      "field": "Lock_Tax_Elections",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Levy Deduction for Baseline Data",
+      "field": "Baseline_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Levy Deduction for Override Data",
+      "field": "Override_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Contingent_Worker_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+      "field": "Worker_Reference_Employee_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "When specified, the response will only include withholding orders for workers selected.",
+      "field": "Effective_As_Of_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Baseline_Data": {
+        "description": "Tax Levy Deduction for Baseline Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "An optional list of Company References. Response will limit the Withholding Orders to the Companies specified in this list.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Effective_As_Of_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Lock_Tax_Elections": {
+        "description": "If true, blocks tax elections changes for the worker from employee self-service.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Override_Data": {
+        "description": "Tax Levy Deduction for Override Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Withholding_Order_ID": {
+        "description": "Customer defined ID to identify a Withholding Order",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Contingent_Worker_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_Employee_ID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worker_Reference_WID_Prompt": {
+        "description": "When specified, the response will only include withholding orders for workers selected.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

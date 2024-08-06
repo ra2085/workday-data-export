@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AboriginalIndigenousIdentificationDetails_Aboriginal_Indigenous_Category_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "AboriginalIndigenousIdentificationDetails_Location_Context_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Reference ID for the Aboriginal/Indigenous Category.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Aboriginal/Indigenous Category.",
+      "field": "Aboriginal_Indigenous_Identification_Category_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag indicating that the Aboriginal/Indigenous Category is no longer used.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Aboriginal/Indigenous Details data for an Aboriginal/Indigenous Category.",
+      "field": "Aboriginal_Indigenous_Details",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "AboriginalIndigenousIdentificationDetails_Location_Context_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Aboriginal_Indigenous_Details": {
+        "description": "Encapsulating element containing all Aboriginal/Indigenous Details data for an Aboriginal/Indigenous Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Aboriginal_Indigenous_Identification_Category_Name": {
+        "description": "The name of the Aboriginal/Indigenous Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The Reference ID for the Aboriginal/Indigenous Category.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Flag indicating that the Aboriginal/Indigenous Category is no longer used.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

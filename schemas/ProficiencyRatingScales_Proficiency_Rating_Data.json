@@ -1,0 +1,160 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ProficiencyRatingScales_Proficiency_Rating_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The ID of the Proficiency Rating Scale.",
+      "field": "ProficiencyRatingScale_Proficiency_Rating_Scale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Proficiency_Rating_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Proficiency_Rating_Reference_Proficiency_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID to a Proficiency Rating. Can be specified to update an existing one or as a custom ID for a new one. If nothing is specified, then a reference ID will get automatically generated.",
+      "field": "Proficiency_Rating_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Rating Order of the Competency Rating Level",
+      "field": "Rating_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Competency Level.",
+      "field": "Rating",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If selected then an item with this rating will be excluded from the rating calculation.",
+      "field": "Exclude_From_Calculations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "This is the Rating Value for the competency level.",
+      "field": "Rating_Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Begin range of the rating value for the competency level.",
+      "field": "Range_Begin",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "End range of the rating value for the competency level.",
+      "field": "Range_End",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Behavior for proficiency rating .",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Behavior for proficiency rating .",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Exclude_From_Calculations": {
+        "description": "If selected then an item with this rating will be excluded from the rating calculation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ProficiencyRatingScale_Proficiency_Rating_Scale_ID": {
+        "description": "The ID of the Proficiency Rating Scale.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_ID": {
+        "description": "Reference ID to a Proficiency Rating. Can be specified to update an existing one or as a custom ID for a new one. If nothing is specified, then a reference ID will get automatically generated.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Reference_Proficiency_Rating_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Proficiency_Rating_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Range_Begin": {
+        "description": "Begin range of the rating value for the competency level.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Range_End": {
+        "description": "End range of the rating value for the competency level.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Rating": {
+        "description": "Name of the Competency Level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Order": {
+        "description": "Rating Order of the Competency Rating Level",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Rating_Value": {
+        "description": "This is the Rating Value for the competency level.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

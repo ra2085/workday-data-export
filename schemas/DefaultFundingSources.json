@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "DefaultFundingSources",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Funding Source Name",
+      "field": "Funding_Source_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Funding Source Description",
+      "field": "Funding_Source_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Default Funding Source Not Available for Selection",
+      "field": "Funding_Source_Not_Available_for_Selection",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Funding Source Taggable Data",
+      "field": "Funding_Source_Taggable_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Funding_Source_Description": {
+        "description": "Funding Source Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Funding_Source_Name": {
+        "description": "Funding Source Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Funding_Source_Not_Available_for_Selection": {
+        "description": "Default Funding Source Not Available for Selection",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Funding_Source_Taggable_Data": {
+        "description": "Funding Source Taggable Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

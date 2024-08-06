@@ -1,0 +1,225 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SupplierInvoiceAssignmentRules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID for supplier invoice assignment rule.",
+      "field": "Supplier_Invoice_Assignment_Rule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Ordering used for Supplier Invoice Assignment Rule. If this is empty, the Supplier Invoice Assignment Rule will be added to the bottom.",
+      "field": "Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant Supplier Group(s) for Supplier Invoice Assignment Rule.",
+      "field": "Supplier_Groups_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant Supplier Categories for Supplier Invoice Assignment Rule.",
+      "field": "Supplier_Categories_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier(s) used for the Supplier Invoice Assignment Rule.",
+      "field": "Suppliers_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Companies or Company Hierarchies for the Supplier Invoice Assignment Rule.",
+      "field": "Companies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Invoice Work Queue Tags for the Supplier Invoice Assignment Rule.",
+      "field": "Supplier_Invoice_Work_Queue_Tags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Supplier Invoice Sources for the Supplier Invoice Assignment Rule.",
+      "field": "External_Source_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Greater than amount for Supplier Invoice Assignment Rule.",
+      "field": "Greater_Than_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Relevant currencies pertaining to Supplier Invoice Assignment Rule.",
+      "field": "Currencies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assignee_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assignee_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Assignee_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if the supplier invoice will be assigned to the creator of the invoice.",
+      "field": "Assign_To_Creator",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter Name Range Start for Supplier",
+      "field": "Supplier_Name_Range_Start",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enter Name Range End for Supplier",
+      "field": "Supplier_Name_Range_End",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Assign_To_Creator": {
+        "description": "True if the supplier invoice will be assigned to the creator of the invoice.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Assignee_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assignee_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Assignee_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Companies_Reference": {
+        "description": "Companies or Company Hierarchies for the Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currencies_Reference": {
+        "description": "Relevant currencies pertaining to Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Source_Reference": {
+        "description": "External Supplier Invoice Sources for the Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Greater_Than_Amount": {
+        "description": "Greater than amount for Supplier Invoice Assignment Rule.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Order": {
+        "description": "Ordering used for Supplier Invoice Assignment Rule. If this is empty, the Supplier Invoice Assignment Rule will be added to the bottom.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Categories_Reference": {
+        "description": "Relevant Supplier Categories for Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Groups_Reference": {
+        "description": "Relevant Supplier Group(s) for Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Assignment_Rule_ID": {
+        "description": "ID for supplier invoice assignment rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Invoice_Work_Queue_Tags_Reference": {
+        "description": "Supplier Invoice Work Queue Tags for the Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Name_Range_End": {
+        "description": "Enter Name Range End for Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Name_Range_Start": {
+        "description": "Enter Name Range Start for Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Suppliers_Reference": {
+        "description": "Supplier(s) used for the Supplier Invoice Assignment Rule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

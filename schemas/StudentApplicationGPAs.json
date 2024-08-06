@@ -1,0 +1,146 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "StudentApplicationGPAs",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Index ID for Student Application GPA",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name for Student Application GPA",
+      "field": "Student_Application_GPA_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Custom GPA Calculator Only boolean for Student Application GPA",
+      "field": "Custom_GPA_Calculator_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive Boolean for Student Application GPA",
+      "field": "Student_Application_GPA_Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Academic Unit Data",
+      "field": "Academic_Unit_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Academic Area",
+      "field": "Academic_Area_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Student External Transcript Course Record Level.",
+      "field": "Student_External_Transcript_Course_Record_Level_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "References to Course Designation.",
+      "field": "Course_Designation_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Application GPA instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A reference to an institution. If provided, the request returns only Student Application GPA instances for an institution or its subordinate academic units.",
+      "field": "Institution_Reference_Academic_Unit_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Academic_Area_Reference": {
+        "description": "References to Academic Area",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Academic_Unit_Data": {
+        "description": "Academic Unit Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Course_Designation_Reference": {
+        "description": "References to Course Designation.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_GPA_Calculator_Only": {
+        "description": "Custom GPA Calculator Only boolean for Student Application GPA",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Index ID for Student Application GPA",
+        "type": [
+          "string"
+        ]
+      },
+      "Institution_Reference_Academic_Unit_ID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Application GPA instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Institution_Reference_WID_Prompt": {
+        "description": "A reference to an institution. If provided, the request returns only Student Application GPA instances for an institution or its subordinate academic units.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_Application_GPA_Inactive": {
+        "description": "Inactive Boolean for Student Application GPA",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Student_Application_GPA_Name": {
+        "description": "Name for Student Application GPA",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Student_External_Transcript_Course_Record_Level_Reference": {
+        "description": "References to Student External Transcript Course Record Level.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

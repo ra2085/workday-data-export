@@ -1,0 +1,55 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ReceivablesOverpaymentReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field that provides the name of the Receivable Overpayment Reason.",
+      "field": "Receivables_Overpayment_Reason_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive status of the Receivable Overpayment Reason.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Receivable Overpayment Reason Reference ID. This is a unique identifier for the Receivable Overpayment Reason.",
+      "field": "ID",
+      "key": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ID": {
+        "description": "Receivable Overpayment Reason Reference ID. This is a unique identifier for the Receivable Overpayment Reason.",
+        "type": [
+          "string"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive status of the Receivable Overpayment Reason.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Receivables_Overpayment_Reason_Name": {
+        "description": "Free form text field that provides the name of the Receivable Overpayment Reason.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

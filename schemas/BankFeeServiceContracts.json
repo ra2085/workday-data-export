@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "BankFeeServiceContracts",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The reference ID for the Bank Fee Service Contract.",
+      "field": "Bank_Fee_Service_Contract_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Institution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Institution_Reference_Financial_Institution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Financial_Institution_Reference_Financial_Institution_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The bank accounts associated with the service contract.",
+      "field": "Bank_Accounts_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The service contract description.",
+      "field": "Service_Contract_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The element container of the bank fee service contract line data.",
+      "field": "Bank_Fee_Service_Contract_Lines_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Accounts_Reference": {
+        "description": "The bank accounts associated with the service contract.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Service_Contract_ID": {
+        "description": "The reference ID for the Bank Fee Service Contract.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Bank_Fee_Service_Contract_Lines_Data": {
+        "description": "The element container of the bank fee service contract line data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Institution_Reference_Financial_Institution_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Institution_Reference_Financial_Institution_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Financial_Institution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Service_Contract_Description": {
+        "description": "The service contract description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

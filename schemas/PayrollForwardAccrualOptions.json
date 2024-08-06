@@ -1,0 +1,43 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PayrollForwardAccrualOptions",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Unique identifier for Payroll Forward Accrual Options Data",
+      "field": "Payroll_Forward_Accrual_Options_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Set of Employer Paid Expenses to Exclude from Forward Accrual processing",
+      "field": "Employer_Paid_Expenses_to_Exclude_from_Forward_Accruals_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Employer_Paid_Expenses_to_Exclude_from_Forward_Accruals_Reference": {
+        "description": "Set of Employer Paid Expenses to Exclude from Forward Accrual processing",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Forward_Accrual_Options_ID": {
+        "description": "Unique identifier for Payroll Forward Accrual Options Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

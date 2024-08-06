@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "WorkerPayrollTaxFilingOverrides",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference ID of this Worker Payroll Tax Filing Override instance.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Worker for this Worker Payroll Tax Filing Override instance.",
+      "field": "Worker_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Company for this Worker Payroll Tax Filing Override instance.",
+      "field": "Company_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Calendar for this Worker Payroll Tax Filing Override instance.",
+      "field": "Calendar_Quarter_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Payroll Tax Filing Override type for this Worker Payroll Tax Filing Override instance, for example: Weeks Worked, 29869$1.",
+      "field": "Field_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The numeric value for this Worker Payroll Tax Filing Override instance.",
+      "field": "Value",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Worker Payroll Tax Filing Overrides for this Calendar Quarter will be returned.",
+      "field": "Calendar_Quarter_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "If specified, only Worker Payroll Tax Filing Overrides for this Calendar Quarter will be returned.",
+      "field": "Calendar_Quarter_Reference_Calendar_Quarter_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Calendar_Quarter_Reference": {
+        "description": "The Calendar for this Worker Payroll Tax Filing Override instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calendar_Quarter_Reference_Calendar_Quarter_Prompt": {
+        "description": "If specified, only Worker Payroll Tax Filing Overrides for this Calendar Quarter will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Calendar_Quarter_Reference_WID_Prompt": {
+        "description": "If specified, only Worker Payroll Tax Filing Overrides for this Calendar Quarter will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference": {
+        "description": "The Company for this Worker Payroll Tax Filing Override instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "If specified, only Worker Payroll Tax Filing Overrides for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Field_Reference": {
+        "description": "The Payroll Tax Filing Override type for this Worker Payroll Tax Filing Override instance, for example: Weeks Worked, 29869$1.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "Reference ID of this Worker Payroll Tax Filing Override instance.",
+        "type": [
+          "string"
+        ]
+      },
+      "Value": {
+        "description": "The numeric value for this Worker Payroll Tax Filing Override instance.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Worker_Reference": {
+        "description": "The Worker for this Worker Payroll Tax Filing Override instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

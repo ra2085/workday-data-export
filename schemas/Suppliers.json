@@ -1,0 +1,2213 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Suppliers",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Supplier_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Supplier_Reference_External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Supplier_Reference_Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Supplier_Reference_Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier ID",
+      "field": "Supplier_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Reference ID. The Supplier Reference ID can be used to uniquely identify a Supplier  Unlike Supplier ID, Workday will not automatically generate a Supplier Reference ID if one is not received.  The recommended use for Supplier Reference ID is where the Workday is not the source system of the Supplier",
+      "field": "Supplier_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier ID when object is coming from external source",
+      "field": "External_Sourceable_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Name",
+      "field": "Supplier_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean to indicate if supplier is used as a worktag only and not a complete supplier instance",
+      "field": "Worktag_Only",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Restrict To Companies",
+      "field": "Restricted_To_Companies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approval_Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Approval_Status_Reference_Document_Status_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Submit for Approval is a boolean flag indicating if the Supplier is to be submitted or saved in draft mode. If this flag is set, the Supplier will be submitted, otherwise the Supplier is saved in draft. Default to 1 if the Submit flag does not exist in the request.",
+      "field": "Submit",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_Customer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_Customer_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_Sponsor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_Sponsor_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Customer_Reference_Student_Financial_Account_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Financial_Institution_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Financial_Institution_Reference_Financial_Institution_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Financial_Institution_Reference_Financial_Institution_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Tax_Authority_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Tax_Authority_Reference_Tax_Authority_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Tax_Authority_Reference_Tax_Authority_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Investor_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Create_Supplier_from_Investor_Reference_Investor_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Authority_Form_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Tax_Authority_Form_Type_Reference_Tax_Authority_Form_Type",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Supplier is 1099",
+      "field": "IRS_1099_Supplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Supplier 1099 derived from parent",
+      "field": "Report_1099_with_Parent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax ID Data",
+      "field": "Tax_ID_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Tax Status Data WWS element to specify 1 or more Tax Statuses for a company.",
+      "field": "Tax_Status_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Category_Reference_Supplier_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Group Reference is a reference to a specific Supplier Group",
+      "field": "Supplier_Group_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Document Link URL entered does not comply with URL restrictions set for this Field.",
+      "field": "Document_Link",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "This is the date the Tax Document (e.g. W-9, etc) was received.",
+      "field": "Tax_Document_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Withholding_Tax_Code_Reference_Withholding_Tax_Code_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Source_Reference_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Source_Reference_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Source_Reference_Workday_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Source_Reference_Workday_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Change_Source_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Change_Source_Reference_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Change_Source_Reference_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Change_Source_Reference_Workday_External_Supplier_Invoice_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Change_Source_Reference_Workday_External_Transaction_Source_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For 1099-MISC Reporting",
+      "field": "FATCA",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Date field for Certificate of Insurance Date",
+      "field": "Certificate_of_Insurance_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for Customer Account Number. This is not a Workday Customer Account or ID number, but a free form text for a Supplier to enter their own Customer Number",
+      "field": "Customer_Account_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "DUNS Number that uniquely identifies the Supplier.",
+      "field": "DUNS_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains the Unique Entity Identifier (UEI) assigned to the supplier by the US federal government.",
+      "field": "Unique_Entity_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates that the supplier can create invoices for any other supplier",
+      "field": "Invoice_Any_Supplier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable your supplier contacts to enter or change the tax information on supplier invoices created from a purchase order.",
+      "field": "Edit_Portal_Taxes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Enables Invoice Requests on the Supplier Portal for these companies.",
+      "field": "Restricted_Companies_for_Supplier_Contacts_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Supplier enabled for GLN use",
+      "field": "Enable_Global_Location_Number",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "When Disable Change Order is True, a Change Order cannot be created from any Purchase Order for this Supplier",
+      "field": "Disable_Change_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Issue_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Purchase_Order_Issue_Option_Reference_Purchase_Order_Issue_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Change_Order_Issue_Option_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Change_Order_Issue_Option_Reference_Purchase_Order_Issue_Option_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Default PO Issue Email Data allows the user to select or delete emails specified on Supplier Contact Information to be used as the default Issue Email address on all Purchase Orders.",
+      "field": "Default_PO_Issue_Email_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi-Supplier_Supplier_Link_for_PO_Issue_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Multi-Supplier_Supplier_Link_for_PO_Issue_Reference_Supplier_Link_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Terms_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Terms_Reference_Shipping_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Method_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Shipping_Method_Reference_Shipping_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Acknowledgement expected for this supplier",
+      "field": "Acknowledgement_Expected",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enable Supplier to send Supplier Minimum Order Amount.",
+      "field": "Supplier_Minimum_Order_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Order_Amount_Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Order_Amount_Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Minimum_Order_Amount_Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Enable Supplier to send ASN",
+      "field": "Enable_ASN",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of days the ASN is due.",
+      "field": "ASN_Due_In_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True if you select to override the settings at the supplier level and tenant level.",
+      "field": "Overrides_Tenant_Setup_for_Supplier_Invoice_Discount_Exclusion",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to true to indicate that you want to exclude Freight Amount from the supplier invoice discount calculation.",
+      "field": "Exclude_Freight_Amount_from_Supplier_Invoice_Discount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to true to indicate that you want to exclude Other Charges from the supplier invoice discount calculation.",
+      "field": "Exclude_Other_Charges_from_Supplier_Invoice_Discount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Set to true to indicate that you want to exclude Tax Amount from the supplier invoice discount calculation.",
+      "field": "Exclude_Tax_Amount_from_Supplier_Invoice_Discount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payment_Terms_Reference_Payment_Terms_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Payment Types Accepted Reference is a reference to the accepted Payment Types by the Supplier.",
+      "field": "Payment_Types_Accepted_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Payment_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Payment_Type_Reference_Payment_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Additional_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Additional_Type_Reference_Additional_Reference_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Credit_Card_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Credit_Card_Reference_Expense_Credit_Card_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Procurement_Credit_Card_Reference_Expense_Credit_Card_Token",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Suppliers to be added as children.  A child Supplier can only belong to one parent and a parent can not be self-referencing.",
+      "field": "Included_Children_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to existing Suppliers proposed Children of this supplier. if this field does not exist in the request, Included Children field will be used as the proposed ones.",
+      "field": "Proposed_Children_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Name is the name for the business entity.  Business entities can not be duplicated across different business entity types, ie: a Customer can not have the same name as a Financial Institution unless they share the Business Entity.",
+      "field": "Business_Entity_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Furigana",
+      "field": "Business_Entity_Phonetic_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Tax ID",
+      "field": "Business_Entity_Tax_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "External Entity ID.  The External Entity ID can be used as a non unique reference to the same Business Entity in an external system.",
+      "field": "External_Entity_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Address information",
+      "field": "Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Phone Information",
+      "field": "Phone_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Email Address Information",
+      "field": "Email_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Instant Messenger Information",
+      "field": "Instant_Messenger_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Web Address Information",
+      "field": "Web_Address_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Text attribute identifying Filename of the Attachment.",
+      "field": "Filename",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "File content in binary format.",
+      "field": "Image",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+      "field": "Settlement_Account_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Flag to indicate not to pay while Settlement Bank Account changes are in progress. Exclude Supplier Invoices from Settlement.",
+      "field": "Do_not_pay_during_Bank_Account_updates",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Element containing Supplier Status data",
+      "field": "Supplier_Status_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Status_Reference_Business_Entity_Status_Value_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Reason_Reference_Reason_for_Supplier_Status_Change_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Status Change Reason Description",
+      "field": "Reason_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Always Separate Payments",
+      "field": "Always_Separate_Payments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "For Supplier Payments from this Supplier, use the Default Text",
+      "field": "Text_for_Default_Supplier_Payment_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For Supplier Payments from this Supplier, use the Supplier Reference",
+      "field": "Use_Supplier_Reference_as_Default_Supplier_Payment_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For Supplier Payments from this Supplier, use the Supplier Invoice Memo",
+      "field": "Use_Invoice_Memo_as_Default_Supplier_Payment_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For Supplier Payments from this Supplier, use the Supplier Connection Memo",
+      "field": "Use_Supplier_Connection_Memo",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Currency_Reference_Currency_Numeric_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Accepted Currencies Reference. When no accepted currencies are passed in the web service, the bank account will accept all currencies.",
+      "field": "Accepted_Currencies_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Classification Interface WWS Data element to configure one or more Supplier Classifications for a Supplier",
+      "field": "Supplier_Classification_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "If true, do not reimburse contingent worker expense reports for contingent workers supplied by the supplier.",
+      "field": "Do_Not_Reimburse_Contingent_Worker_Expense_Reports",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Security_Segment_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Supplier_Security_Segment_Reference_Supplier_Security_Segment_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "The follow-up date for the latest supplier note.",
+      "field": "Supplier_Note_Follow-Up_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Business Entity Alternate Name Data.",
+      "field": "Business_Entity_Alternate_Name_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element containing all Business Document Attachment data.",
+      "field": "Attachment_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Includes Notes that have been made for a business object. On a Get operation, all existing Notes will be populated. On a Put or Submit operation, any note information on the request will be added as new notes. Existing notes cannot be updated on a Put or Submit request.",
+      "field": "Note_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Suppliers can be classified by a Spend Category or Hierarchy.  This only represents the categories of goods and services they provide.",
+      "field": "Spend_Category_or_Hierarchy_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Procurement_Item_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Procurement_Item_Reference_Catalog_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Procurement_Item_Reference_Purchase_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Procurement_Item_Reference_Supplier_Item_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Spend_Category_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Spend_Category_Reference_Spend_Category_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+      "field": "Related_Worktags_by_Type_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Supplier and Tax Details",
+      "field": "Supplier_and_Tax_Details",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Payment Details",
+      "field": "Payment_Details",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Supplier Hierarchy",
+      "field": "Supplier_Hierarchy",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Contact Information",
+      "field": "Contact_Information",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Settlement Bank Account",
+      "field": "Settlement_Bank_Account",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Alternate Names",
+      "field": "Alternate_Names",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Procurement Options",
+      "field": "Procurement_Options",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Classifications",
+      "field": "Classifications",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Contingent Worker Options",
+      "field": "Contingent__Worker__Options",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Attachments",
+      "field": "Attachments",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicate there are changes in Supplier Related Worktags",
+      "field": "Related_Worktags",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Supplier Change From Date",
+      "field": "Updated_From_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "Supplier Change To Date",
+      "field": "Updated_To_Date_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Status. Supports multiple values.",
+      "field": "Supplier_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Status. Supports multiple values.",
+      "field": "Supplier_Status_Reference_Business_Entity_Status_Value_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Category. Supports multiple values.",
+      "field": "Supplier_Category_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Category. Supports multiple values.",
+      "field": "Supplier_Category_Reference_Supplier_Category_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Group. Supports multiple values.",
+      "field": "Supplier_Group_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Supplier Group. Supports multiple values.",
+      "field": "Supplier_Group_Reference_Supplier_Group_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Account Number",
+      "field": "Customer_Account_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "DUNS Number",
+      "field": "DUNS_Number_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Parent Supplier. Supports multiple values.",
+      "field": "Parent_Supplier_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Parent Supplier. Supports multiple values.",
+      "field": "Parent_Supplier_Reference_External_Sourceable_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Parent Supplier. Supports multiple values.",
+      "field": "Parent_Supplier_Reference_Supplier_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Parent Supplier. Supports multiple values.",
+      "field": "Parent_Supplier_Reference_Supplier_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "ASN_Due_In_Days": {
+        "description": "The number of days the ASN is due.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Accepted_Currencies_Reference": {
+        "description": "Accepted Currencies Reference. When no accepted currencies are passed in the web service, the bank account will accept all currencies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Acknowledgement_Expected": {
+        "description": "Acknowledgement expected for this supplier",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Address_Data": {
+        "description": "Address information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Alternate_Names": {
+        "description": "Indicate there are changes in Alternate Names",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Always_Separate_Payments": {
+        "description": "Always Separate Payments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Approval_Status_Reference_Document_Status_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Approval_Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachment_Data": {
+        "description": "Encapsulating element containing all Business Document Attachment data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Attachments": {
+        "description": "Indicate there are changes in Attachments",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Business_Entity_Alternate_Name_Data": {
+        "description": "Business Entity Alternate Name Data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Name": {
+        "description": "Business Entity Name is the name for the business entity.  Business entities can not be duplicated across different business entity types, ie: a Customer can not have the same name as a Financial Institution unless they share the Business Entity.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Phonetic_Name": {
+        "description": "Business Entity Furigana",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Entity_Tax_ID": {
+        "description": "Business Entity Tax ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Certificate_of_Insurance_Date": {
+        "description": "Date field for Certificate of Insurance Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Change_Order_Issue_Option_Reference_Purchase_Order_Issue_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Change_Order_Issue_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Classifications": {
+        "description": "Indicate there are changes in Classifications",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Contact_Information": {
+        "description": "Indicate there are changes in Contact Information",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Contingent__Worker__Options": {
+        "description": "Indicate there are changes in Contingent Worker Options",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_Customer_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_Customer_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_Sponsor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_Sponsor_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_Student_Financial_Account_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Customer_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Financial_Institution_Reference_Financial_Institution_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Financial_Institution_Reference_Financial_Institution_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Financial_Institution_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Investor_Reference_Investor_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Investor_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Tax_Authority_Reference_Tax_Authority_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Tax_Authority_Reference_Tax_Authority_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Create_Supplier_from_Tax_Authority_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Account_Number": {
+        "description": "Free form text field for Customer Account Number. This is not a Workday Customer Account or ID number, but a free form text for a Supplier to enter their own Customer Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Account_Number_Prompt": {
+        "description": "Account Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "DUNS_Number": {
+        "description": "DUNS Number that uniquely identifies the Supplier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "DUNS_Number_Prompt": {
+        "description": "DUNS Number",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Additional_Type_Reference_Additional_Reference_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Additional_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_PO_Issue_Email_Data": {
+        "description": "Default PO Issue Email Data allows the user to select or delete emails specified on Supplier Contact Information to be used as the default Issue Email address on all Purchase Orders.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Payment_Type_Reference_Payment_Type_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Payment_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Procurement_Item_Reference_Catalog_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Procurement_Item_Reference_Purchase_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Procurement_Item_Reference_Supplier_Item_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Procurement_Item_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Spend_Category_Reference_Spend_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Spend_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Withholding_Tax_Code_Reference_Withholding_Tax_Code_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Disable_Change_Order": {
+        "description": "When Disable Change Order is True, a Change Order cannot be created from any Purchase Order for this Supplier",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Do_Not_Reimburse_Contingent_Worker_Expense_Reports": {
+        "description": "If true, do not reimburse contingent worker expense reports for contingent workers supplied by the supplier.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Do_not_pay_during_Bank_Account_updates": {
+        "description": "Flag to indicate not to pay while Settlement Bank Account changes are in progress. Exclude Supplier Invoices from Settlement.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Document_Link": {
+        "description": "The Document Link URL entered does not comply with URL restrictions set for this Field.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Edit_Portal_Taxes": {
+        "description": "Enable your supplier contacts to enter or change the tax information on supplier invoices created from a purchase order.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Email_Address_Data": {
+        "description": "Email Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_ASN": {
+        "description": "Enable Supplier to send ASN",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Global_Location_Number": {
+        "description": "Supplier enabled for GLN use",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Freight_Amount_from_Supplier_Invoice_Discount": {
+        "description": "Set to true to indicate that you want to exclude Freight Amount from the supplier invoice discount calculation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Other_Charges_from_Supplier_Invoice_Discount": {
+        "description": "Set to true to indicate that you want to exclude Other Charges from the supplier invoice discount calculation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exclude_Tax_Amount_from_Supplier_Invoice_Discount": {
+        "description": "Set to true to indicate that you want to exclude Tax Amount from the supplier invoice discount calculation.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "External_Entity_ID": {
+        "description": "External Entity ID.  The External Entity ID can be used as a non unique reference to the same Business Entity in an external system.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "External_Sourceable_ID": {
+        "description": "Supplier ID when object is coming from external source",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "FATCA": {
+        "description": "For 1099-MISC Reporting",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Filename": {
+        "description": "Text attribute identifying Filename of the Attachment.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Supplier_Reference_External_Sourceable_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Supplier_Reference_Supplier_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Supplier_Reference_Supplier_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Supplier_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "IRS_1099_Supplier": {
+        "description": "Supplier is 1099",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Image": {
+        "description": "File content in binary format.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Included_Children_Reference": {
+        "description": "Reference to existing Suppliers to be added as children.  A child Supplier can only belong to one parent and a parent can not be self-referencing.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Instant_Messenger_Data": {
+        "description": "Instant Messenger Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Invoice_Any_Supplier": {
+        "description": "Indicates that the supplier can create invoices for any other supplier",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Minimum_Order_Amount_Currency_Reference_Currency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Order_Amount_Currency_Reference_Currency_Numeric_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Minimum_Order_Amount_Currency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi-Supplier_Supplier_Link_for_PO_Issue_Reference_Supplier_Link_Name": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Multi-Supplier_Supplier_Link_for_PO_Issue_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Note_Data": {
+        "description": "Includes Notes that have been made for a business object. On a Get operation, all existing Notes will be populated. On a Put or Submit operation, any note information on the request will be added as new notes. Existing notes cannot be updated on a Put or Submit request.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Overrides_Tenant_Setup_for_Supplier_Invoice_Discount_Exclusion": {
+        "description": "True if you select to override the settings at the supplier level and tenant level.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Parent_Supplier_Reference_External_Sourceable_ID_Prompt": {
+        "description": "Parent Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Supplier_Reference_Supplier_ID_Prompt": {
+        "description": "Parent Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Supplier_Reference_Supplier_Reference_ID_Prompt": {
+        "description": "Parent Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Supplier_Reference_WID_Prompt": {
+        "description": "Parent Supplier. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Details": {
+        "description": "Indicate there are changes in Payment Details",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_Payment_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Terms_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payment_Types_Accepted_Reference": {
+        "description": "Payment Types Accepted Reference is a reference to the accepted Payment Types by the Supplier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Phone_Data": {
+        "description": "Phone Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Credit_Card_Reference_Expense_Credit_Card_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Credit_Card_Reference_Expense_Credit_Card_Token": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Credit_Card_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Procurement_Options": {
+        "description": "Indicate there are changes in Procurement Options",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Proposed_Children_Reference": {
+        "description": "Reference to existing Suppliers proposed Children of this supplier. if this field does not exist in the request, Included Children field will be used as the proposed ones.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Issue_Option_Reference_Purchase_Order_Issue_Option_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Purchase_Order_Issue_Option_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Description": {
+        "description": "Status Change Reason Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_Reason_for_Supplier_Status_Change_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Related_Worktags": {
+        "description": "Indicate there are changes in Supplier Related Worktags",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Related_Worktags_by_Type_Data": {
+        "description": "Allowed and Default Related Worktags Data by Worktag Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Report_1099_with_Parent": {
+        "description": "Supplier 1099 derived from parent",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Restricted_Companies_for_Supplier_Contacts_Reference": {
+        "description": "Enables Invoice Requests on the Supplier Portal for these companies.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Restricted_To_Companies_Reference": {
+        "description": "Restrict To Companies",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Account_Data": {
+        "description": "Bank Account Type becomes required when using v30.1 of the web service.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Settlement_Bank_Account": {
+        "description": "Indicate there are changes in Settlement Bank Account",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Shipping_Method_Reference_Shipping_Method_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Method_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Terms_Reference_Shipping_Terms_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Shipping_Terms_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Spend_Category_or_Hierarchy_Reference": {
+        "description": "Suppliers can be classified by a Spend Category or Hierarchy.  This only represents the categories of goods and services they provide.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_Business_Entity_Status_Value_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Status_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submit": {
+        "description": "Submit for Approval is a boolean flag indicating if the Supplier is to be submitted or saved in draft mode. If this flag is set, the Supplier will be submitted, otherwise the Supplier is saved in draft. Default to 1 if the Submit flag does not exist in the request.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_Category_Reference_Supplier_Category_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Category_Reference_Supplier_Category_ID_Prompt": {
+        "description": "Supplier Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Category_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Category_Reference_WID_Prompt": {
+        "description": "Supplier Category. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Change_Source_Reference_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Change_Source_Reference_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Change_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Change_Source_Reference_Workday_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Change_Source_Reference_Workday_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Classification_Data": {
+        "description": "Supplier Classification Interface WWS Data element to configure one or more Supplier Classifications for a Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Group_Reference": {
+        "description": "Supplier Group Reference is a reference to a specific Supplier Group",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Group_Reference_Supplier_Group_ID_Prompt": {
+        "description": "Supplier Group. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Group_Reference_WID_Prompt": {
+        "description": "Supplier Group. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Hierarchy": {
+        "description": "Indicate there are changes in Supplier Hierarchy",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Supplier_ID": {
+        "description": "Supplier ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Minimum_Order_Amount": {
+        "description": "Enable Supplier to send Supplier Minimum Order Amount.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Supplier_Name": {
+        "description": "Supplier Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Note_Follow-Up_Date": {
+        "description": "The follow-up date for the latest supplier note.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Reference_ID": {
+        "description": "Supplier Reference ID. The Supplier Reference ID can be used to uniquely identify a Supplier  Unlike Supplier ID, Workday will not automatically generate a Supplier Reference ID if one is not received.  The recommended use for Supplier Reference ID is where the Workday is not the source system of the Supplier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Security_Segment_Reference_Supplier_Security_Segment_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Security_Segment_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Source_Reference_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Source_Reference_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Source_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Source_Reference_Workday_External_Supplier_Invoice_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Source_Reference_Workday_External_Transaction_Source_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Status_Data": {
+        "description": "Element containing Supplier Status data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Status_Reference_Business_Entity_Status_Value_ID_Prompt": {
+        "description": "Supplier Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_Status_Reference_WID_Prompt": {
+        "description": "Supplier Status. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Supplier_and_Tax_Details": {
+        "description": "Indicate there are changes in Supplier and Tax Details",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Tax_Authority_Form_Type_Reference_Tax_Authority_Form_Type": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Authority_Form_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Document_Date": {
+        "description": "This is the date the Tax Document (e.g. W-9, etc) was received.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_ID_Data": {
+        "description": "Tax ID Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Tax_Status_Data": {
+        "description": "Tax Status Data WWS element to specify 1 or more Tax Statuses for a company.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Text_for_Default_Supplier_Payment_Memo": {
+        "description": "For Supplier Payments from this Supplier, use the Default Text",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Unique_Entity_Identifier": {
+        "description": "Contains the Unique Entity Identifier (UEI) assigned to the supplier by the US federal government.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_From_Date_Prompt": {
+        "description": "Supplier Change From Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Updated_To_Date_Prompt": {
+        "description": "Supplier Change To Date",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Invoice_Memo_as_Default_Supplier_Payment_Memo": {
+        "description": "For Supplier Payments from this Supplier, use the Supplier Invoice Memo",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_Supplier_Connection_Memo": {
+        "description": "For Supplier Payments from this Supplier, use the Supplier Connection Memo",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Use_Supplier_Reference_as_Default_Supplier_Payment_Memo": {
+        "description": "For Supplier Payments from this Supplier, use the Supplier Reference",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Web_Address_Data": {
+        "description": "Web Address Information",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Worktag_Only": {
+        "description": "Boolean to indicate if supplier is used as a worktag only and not a complete supplier instance",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "AssetShares",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is a unique reference identifier to the asset share.",
+      "field": "ID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The percent of the asset share.",
+      "field": "Share_Percent",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The amount of the asset share.",
+      "field": "Asset_Share_Amount",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Class_Reference_Asset_Class_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Asset_Type_Reference_Asset_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to the worktags that the asset is shared by",
+      "field": "Asset_Worktags_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+      "field": "Business_Assets_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+      "field": "Business_Assets_Reference_Asset_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+      "field": "Business_Assets_Reference_Asset_Reference_ID_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Asset_Class_Reference_Asset_Class_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Class_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Share_Amount": {
+        "description": "The amount of the asset share.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_Asset_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Asset_Worktags_Reference": {
+        "description": "Reference to the worktags that the asset is shared by",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Assets_Reference_Asset_ID_Prompt": {
+        "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Assets_Reference_Asset_Reference_ID_Prompt": {
+        "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Business_Assets_Reference_WID_Prompt": {
+        "description": "Reference to an existing shared business asset to which the asset shares data applies. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "This is a unique reference identifier to the asset share.",
+        "type": [
+          "string"
+        ]
+      },
+      "Share_Percent": {
+        "description": "The percent of the asset share.",
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

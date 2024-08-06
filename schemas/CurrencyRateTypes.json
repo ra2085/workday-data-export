@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CurrencyRateTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Currency Rate Type ID. This is the Currency Rate Type unique identifier",
+      "field": "Currency_Rate_Type_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for Currency Rate Type Description",
+      "field": "Currency_Rate_Type_Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean attribute indicating if this rate type is the default Currency Rate Type. Only one Currency Rate Type may be the default.",
+      "field": "Currency_Rate_Type_Default",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Currency_Rate_Type_Default": {
+        "description": "Boolean attribute indicating if this rate type is the default Currency Rate Type. Only one Currency Rate Type may be the default.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_Description": {
+        "description": "Free form text field for Currency Rate Type Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Currency_Rate_Type_ID": {
+        "description": "Currency Rate Type ID. This is the Currency Rate Type unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

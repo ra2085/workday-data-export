@@ -1,0 +1,458 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "PeriodSchedules",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Schedule_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Period_Schedule_Reference_Period_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Schedule ID",
+      "field": "Period_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of Period Schedule.",
+      "field": "Period_Schedule_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Frequency_Reference_Frequency_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Schedule Usage, valid values include Payroll, Absence and Timesheets",
+      "field": "Usage_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Regular_Pay_Day_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Regular_Pay_Day_Reference_Regular_Pay_Day",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter one digit number to automatically adjust the payment date if the payment date falls on weekend.",
+      "field": "Payment_Date_Auto-Adjust_Saturday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Enter one digit number to automatically adjust the payment date if the payment date falls on weekend.",
+      "field": "Payment_Date_Auto-Adjust_Sunday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "If you've configured the payment date auto-adjust on the period schedule, Workday uses the auto-adjust value and overrides the default payment date offset days entered.",
+      "field": "Payment_Date_Offset_Days_Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Updates the default Pay On-Demand Payment Date Offset for a Period Schedule",
+      "field": "Pay_On-Demand_Payment_Date_Default_Offset",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Updates Pay On-Demand Auto Adjust (Saturday) for a Period Schedule",
+      "field": "Pay_On-Demand_Payment_Date_Auto-Adjust_Saturday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Updates Pay On-Demand Auto Adjust (Sunday) for a Period Schedule",
+      "field": "Pay_On-Demand_Payment_Date_Auto-Adjust_Sunday",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Updates the default Days After Period Start Date to Allow Requests for a Period Schedule",
+      "field": "Pay_On-Demand_Days_After_Period_Start_Date_to_Open_Requests",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Updates the default Days From Period End Date to Stop Requests for a Period Schedule",
+      "field": "Pay_On-Demand_Days_From_Period_End_Date_to_Close_Requests",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "For the associated Period Schedule, when this field is set to true the user is allowed to change/edit the timesheet after it has been approved.",
+      "field": "Allow_Timesheet_Changes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Period_Schedule_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Payroll_Period_Schedule_Reference_Period_Schedule_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Time Tracking Eligibility Rule Reference is for Time Tracking.  It determines if a Worker is eligible to use the Period Schedule.",
+      "field": "Time_Tracking_Eligibility_Rule_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Period Content Data",
+      "field": "Period_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Runs initial full calc for each period when Continuous Calculation is enabled.",
+      "field": "Enable_Auto_Calc_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Sets Auto Calc of Initial Results to the same number of days after the period start date for all periods. Default Number of Days, Default Time to Process, and Period Start Date must all be included in the file.",
+      "field": "Default_Number_of_Days_After_Period_Start_Date_for_Auto_Calc",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Time_to_Process_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Time_to_Process_Reference_Twenty_Four_Hour_Time_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_Reference_Time_Zone_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Allows you to define when Continuous Calc stops processing new jobs each period.",
+      "field": "Enable_Automatic_Stop_Period",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Sets Automatic Stop to the same number of days before the payment date for all periods. Default Number of Days, Default Time, and Payment Date must all be included in the file.",
+      "field": "Default_Number_of_Days_Before_Period_Payment_Date_for_Auto_Stop",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Time_for_Auto_Stop_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Default_Time_for_Auto_Stop_Reference_Twenty_Four_Hour_Time_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_for_Auto_Stop_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Time_Zone_for_Auto_Stop_Reference_Time_Zone_ID",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Allow_Timesheet_Changes": {
+        "description": "For the associated Period Schedule, when this field is set to true the user is allowed to change/edit the timesheet after it has been approved.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Default_Number_of_Days_After_Period_Start_Date_for_Auto_Calc": {
+        "description": "Sets Auto Calc of Initial Results to the same number of days after the period start date for all periods. Default Number of Days, Default Time to Process, and Period Start Date must all be included in the file.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default_Number_of_Days_Before_Period_Payment_Date_for_Auto_Stop": {
+        "description": "Sets Automatic Stop to the same number of days before the payment date for all periods. Default Number of Days, Default Time, and Payment Date must all be included in the file.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Default_Time_for_Auto_Stop_Reference_Twenty_Four_Hour_Time_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Time_for_Auto_Stop_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Time_to_Process_Reference_Twenty_Four_Hour_Time_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Default_Time_to_Process_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Enable_Auto_Calc_Period": {
+        "description": "Runs initial full calc for each period when Continuous Calculation is enabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Automatic_Stop_Period": {
+        "description": "Allows you to define when Continuous Calc stops processing new jobs each period.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Frequency_Reference_Frequency_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Frequency_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Pay_On-Demand_Days_After_Period_Start_Date_to_Open_Requests": {
+        "description": "Updates the default Days After Period Start Date to Allow Requests for a Period Schedule",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_On-Demand_Days_From_Period_End_Date_to_Close_Requests": {
+        "description": "Updates the default Days From Period End Date to Stop Requests for a Period Schedule",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_On-Demand_Payment_Date_Auto-Adjust_Saturday": {
+        "description": "Updates Pay On-Demand Auto Adjust (Saturday) for a Period Schedule",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_On-Demand_Payment_Date_Auto-Adjust_Sunday": {
+        "description": "Updates Pay On-Demand Auto Adjust (Sunday) for a Period Schedule",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Pay_On-Demand_Payment_Date_Default_Offset": {
+        "description": "Updates the default Pay On-Demand Payment Date Offset for a Period Schedule",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Date_Auto-Adjust_Saturday": {
+        "description": "Enter one digit number to automatically adjust the payment date if the payment date falls on weekend.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Date_Auto-Adjust_Sunday": {
+        "description": "Enter one digit number to automatically adjust the payment date if the payment date falls on weekend.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payment_Date_Offset_Days_Default": {
+        "description": "If you've configured the payment date auto-adjust on the period schedule, Workday uses the auto-adjust value and overrides the default payment date offset days entered.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Payroll_Period_Schedule_Reference_Period_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Payroll_Period_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Data": {
+        "description": "Period Content Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Schedule_ID": {
+        "description": "Period Schedule ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Schedule_Name": {
+        "description": "Name of Period Schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Schedule_Reference_Period_Schedule_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Period_Schedule_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Regular_Pay_Day_Reference_Regular_Pay_Day": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Regular_Pay_Day_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Tracking_Eligibility_Rule_Reference": {
+        "description": "Time Tracking Eligibility Rule Reference is for Time Tracking.  It determines if a Worker is eligible to use the Period Schedule.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_Time_Zone_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_for_Auto_Stop_Reference_Time_Zone_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Time_Zone_for_Auto_Stop_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Reference": {
+        "description": "Period Schedule Usage, valid values include Payroll, Absence and Timesheets",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

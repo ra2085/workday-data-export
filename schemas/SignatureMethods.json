@@ -1,0 +1,56 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "SignatureMethods",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Signature Method unique identifier.",
+      "field": "Signature_Method_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the Signature Method in text.",
+      "field": "Signature_Method",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This is the description of the Signature Method.",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "This is the description of the Signature Method.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signature_Method": {
+        "description": "This is the Signature Method in text.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Signature_Method_ID": {
+        "description": "This is the Signature Method unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "FeedbackQuestions_Question_Multiple_Choice_Answer_With_Score_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "FeedbackQuestion_Feedback_Question_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Question Multiple Choice Answer ID.",
+      "field": "Question_Multiple_Choice_Answer_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Question Multiple Choice Answer Order is required when question type is multiple choice answer.",
+      "field": "Question_Multiple_Choice_Answer_Order",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Question Multiple Choice Answer Text is required when question type is multiple choice answer.",
+      "field": "Question_Multiple_Choice_Answer_Text",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Question Multiple Choice Answer Score is an optional integer when question type is multiple choice answer.",
+      "field": "Question_Multiple_Choice_Answer_Score",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "FeedbackQuestion_Feedback_Question_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_ID": {
+        "description": "Question Multiple Choice Answer ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_Order": {
+        "description": "Question Multiple Choice Answer Order is required when question type is multiple choice answer.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_Score": {
+        "description": "Question Multiple Choice Answer Score is an optional integer when question type is multiple choice answer.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Question_Multiple_Choice_Answer_Text": {
+        "description": "Question Multiple Choice Answer Text is required when question type is multiple choice answer.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

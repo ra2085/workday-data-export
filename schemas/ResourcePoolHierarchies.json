@@ -1,0 +1,147 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ResourcePoolHierarchies",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchy ID.",
+      "field": "Resource_Pool_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchy Name is Required.",
+      "field": "Resource_Pool_Hierarchy_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value indicating if the Resource Pool Hierarchy ID will be included in the display of Resource Pool Hierarchy Name.",
+      "field": "Include_Resource_Pool_Hierarchy_ID_in_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Indicates the resource pool hierarchy is inactive.  A resource pool hierarchy may also be inactivated by a parent resource pool hierarchy as indicated by the 'Inactivated By Hierarchy Reference'.  In which case, the current resource pool hierarchy is considered Inactive even though this Boolean returns False.  Changes to an inactive hierarchy are ignored.  Reactivating a resource pool hierarchy can only be done on the hierarchy if it was explicitly marked 'Inactive' or by reactivating the hierarchy that made the current hierarchy inactive.",
+      "field": "Inactive",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchy Description.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This information is for outbound purposes only. Workday doesn't process this information for inbound Web Service requests.",
+      "field": "Inactivated_By_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Parent_Reference_Resource_Pool_Hierarchy_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pools rolled up under Resource Pool Hierarchy.",
+      "field": "Included_Resource_Pools_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Resource Pool Hierarchy Name as Request Criteria for Get Resource Pool hierarchies web service task.",
+      "field": "Resource_Pool_Hierarchy_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Description": {
+        "description": "Resource Pool Hierarchy Description.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactivated_By_Reference": {
+        "description": "This information is for outbound purposes only. Workday doesn't process this information for inbound Web Service requests.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Indicates the resource pool hierarchy is inactive.  A resource pool hierarchy may also be inactivated by a parent resource pool hierarchy as indicated by the 'Inactivated By Hierarchy Reference'.  In which case, the current resource pool hierarchy is considered Inactive even though this Boolean returns False.  Changes to an inactive hierarchy are ignored.  Reactivating a resource pool hierarchy can only be done on the hierarchy if it was explicitly marked 'Inactive' or by reactivating the hierarchy that made the current hierarchy inactive.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Include_Resource_Pool_Hierarchy_ID_in_Name": {
+        "description": "Boolean value indicating if the Resource Pool Hierarchy ID will be included in the display of Resource Pool Hierarchy Name.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Included_Resource_Pools_Reference": {
+        "description": "Resource Pools rolled up under Resource Pool Hierarchy.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_Resource_Pool_Hierarchy_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parent_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_Hierarchy_ID": {
+        "description": "Resource Pool Hierarchy ID.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_Hierarchy_Name": {
+        "description": "Resource Pool Hierarchy Name is Required.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Pool_Hierarchy_Name_Prompt": {
+        "description": "Resource Pool Hierarchy Name as Request Criteria for Get Resource Pool hierarchies web service task.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Awards_Award_Personnel_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "Award_Award_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Award_Personnel_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "ID_Award_Personnel_Reference_Award_Personnel_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The Award Personnel Reference ID. This is the Award Personnel unique identifier.",
+      "field": "Award_Personnel_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Person_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Person_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Person_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Person_Reference_External_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Responsibility_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Award_Personnel_Responsibility_Reference_Award_Personnel_Responsibility_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean indicating Award Personnel Person as a Key Personnel member.",
+      "field": "Award_Personnel_Key_Personnel",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Award Personnel Line Amendment Data",
+      "field": "Award_Personnel_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_Sponsor_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+      "field": "Sponsor_Reference_Sponsor_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Name of the Award to return",
+      "field": "Award_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "ID of the Award to Return",
+      "field": "Award_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards that are for this Company will be returned.",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+      "field": "Award_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+      "field": "Award_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Awards with an Effective date on or after this date will be returned.",
+      "field": "Award_Effective_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Awards with an Effective Date on or before this date will be returned.",
+      "field": "Award_Effective_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Award_Award_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Effective_Date_On_or_After_Prompt": {
+        "description": "Awards with an Effective date on or after this date will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Effective_Date_On_or_Before_Prompt": {
+        "description": "Awards with an Effective Date on or before this date will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Name_Prompt": {
+        "description": "Name of the Award to return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Key_Personnel": {
+        "description": "Boolean indicating Award Personnel Person as a Key Personnel member.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Award_Personnel_Line_Data": {
+        "description": "Award Personnel Line Amendment Data",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Person_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Person_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Person_Reference_External_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Person_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Reference_ID": {
+        "description": "The Award Personnel Reference ID. This is the Award Personnel unique identifier.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Responsibility_Reference_Award_Personnel_Responsibility_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Personnel_Responsibility_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Reference_ID_Prompt": {
+        "description": "ID of the Award to Return",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Award_Status_Reference_WID_Prompt": {
+        "description": "Awards with one of the specified Statuses will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Awards that are for this Company will be returned.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Award_Personnel_Reference_Award_Personnel_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID_Award_Personnel_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_ID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_Sponsor_Reference_ID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Sponsor_Reference_WID_Prompt": {
+        "description": "Awards with a Sponsor in this set will be returned.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

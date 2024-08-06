@@ -1,0 +1,407 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ServiceCenterRepresentativeWorkdayAccounts_Workday_Account_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "ServiceCenterRepresentativeWorkdayAccount_Service_Center_Representative_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The user name the new user will use to sign on to Workday.",
+      "field": "User_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The number of minutes the user may be idle before the system requires them to re-enter their user name and password.",
+      "field": "Session_Timeout_Minutes",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user is prevented from signing on to the system.",
+      "field": "Account_Disabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The user will be prevented from signing on to the system after this date (Pacific Time).",
+      "field": "Account_Expiration_Date",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user is prevented from signing on to the system until their account is unlocked.",
+      "field": "Account_Locked",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user will be required to change their password upon initial sign on.",
+      "field": "Required_New_Password_At_Next_Login",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The web browser title will include the user name in parenthesis.",
+      "field": "Show_User_Name_in_Browser_Window",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user will be presented with an icon to view reports as an RSS feed.",
+      "field": "Display_XML_Icon_on_Reports",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user will have the Workbox tab available in the right-side slide-out.",
+      "field": "Enable_Workbox",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Locale_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Locale_Reference_Locale_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "User_Language_Reference_User_Language_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Search_Scope_Reference_IID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Preferred_Search_Scope_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delegated_Authentication_Integration_System_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Delegated_Authentication_Integration_System_Reference_Integration_System_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The user is allowed to view mixed language transactions.",
+      "field": "Allow_Mixed-Language_Transactions",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Notification Type Configurations for a particular user",
+      "field": "Notification_Sub_Type_Configurations",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The initial password the user will sign on with.",
+      "field": "Password",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "The system should generate a random password for the user.",
+      "field": "Generate_Random_Password",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True when the user is exempt from Delegated Authentication, False otherwise.  Set this element to true if you want the user to be exempt from delegated authentication.",
+      "field": "Exempt_from_Delegated_Authentication",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True when the user is exempt from One-Time Passcode Authentication, False otherwise.  Set this element to true if you want the user to be exempt from one-time passcode authentication.",
+      "field": "Passcode_Exempt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "True when the user's One-Time Passcode grace period is enabled, False otherwise.  Set this element to false if you want the user's one-time passcode grace period to be disabled.",
+      "field": "Passcode_Grace_Period_Enabled",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "The remaining number of times the user can login without providing a one-time passcode. This cannot be higher than the configured tenant maximum grace period login count.",
+      "field": "Passcode_Grace_Period_Login_Remaining_Count",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This field is used for OpenID based authentication and contains the email address associated with the OpenID account.  This value needs to be provided to enable OpenID authentication for this user.",
+      "field": "OpenID_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This field is used for OpenID based authentication and contains the OpenID GUID. It will be unpopulated until the user completes an initial successful OpenID authentication attempt.",
+      "field": "OpenID_Internal_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "This field is used for OpenID Connect based authentication and contains the OpenID Connect subject. It will be unpopulated until the user completes an initial successful OpenID Connect authentication attempt.",
+      "field": "OpenID_Connect_Internal_Identifier",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "To enable user preferences that simplify the overall user experience.",
+      "field": "Simplified_View",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Disabled": {
+        "description": "The user is prevented from signing on to the system.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Account_Expiration_Date": {
+        "description": "The user will be prevented from signing on to the system after this date (Pacific Time).",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Account_Locked": {
+        "description": "The user is prevented from signing on to the system until their account is unlocked.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Allow_Mixed-Language_Transactions": {
+        "description": "The user is allowed to view mixed language transactions.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Delegated_Authentication_Integration_System_Reference_Integration_System_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Delegated_Authentication_Integration_System_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Display_XML_Icon_on_Reports": {
+        "description": "The user will be presented with an icon to view reports as an RSS feed.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Enable_Workbox": {
+        "description": "The user will have the Workbox tab available in the right-side slide-out.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Exempt_from_Delegated_Authentication": {
+        "description": "True when the user is exempt from Delegated Authentication, False otherwise.  Set this element to true if you want the user to be exempt from delegated authentication.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Generate_Random_Password": {
+        "description": "The system should generate a random password for the user.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Locale_Reference_Locale_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Locale_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Notification_Sub_Type_Configurations": {
+        "description": "Notification Type Configurations for a particular user",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OpenID_Connect_Internal_Identifier": {
+        "description": "This field is used for OpenID Connect based authentication and contains the OpenID Connect subject. It will be unpopulated until the user completes an initial successful OpenID Connect authentication attempt.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OpenID_Identifier": {
+        "description": "This field is used for OpenID based authentication and contains the email address associated with the OpenID account.  This value needs to be provided to enable OpenID authentication for this user.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OpenID_Internal_Identifier": {
+        "description": "This field is used for OpenID based authentication and contains the OpenID GUID. It will be unpopulated until the user completes an initial successful OpenID authentication attempt.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Passcode_Exempt": {
+        "description": "True when the user is exempt from One-Time Passcode Authentication, False otherwise.  Set this element to true if you want the user to be exempt from one-time passcode authentication.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Passcode_Grace_Period_Enabled": {
+        "description": "True when the user's One-Time Passcode grace period is enabled, False otherwise.  Set this element to false if you want the user's one-time passcode grace period to be disabled.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Passcode_Grace_Period_Login_Remaining_Count": {
+        "description": "The remaining number of times the user can login without providing a one-time passcode. This cannot be higher than the configured tenant maximum grace period login count.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Password": {
+        "description": "The initial password the user will sign on with.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Search_Scope_Reference_IID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Preferred_Search_Scope_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Required_New_Password_At_Next_Login": {
+        "description": "The user will be required to change their password upon initial sign on.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "ServiceCenterRepresentativeWorkdayAccount_Service_Center_Representative_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Session_Timeout_Minutes": {
+        "description": "The number of minutes the user may be idle before the system requires them to re-enter their user name and password.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Show_User_Name_in_Browser_Window": {
+        "description": "The web browser title will include the user name in parenthesis.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Simplified_View": {
+        "description": "To enable user preferences that simplify the overall user experience.",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "User_Language_Reference_User_Language_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Language_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "User_Name": {
+        "description": "The user name the new user will use to sign on to Workday.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

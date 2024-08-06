@@ -1,0 +1,69 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "RevenueAdjustmentReasons",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Revenue Adjustment Reason ID",
+      "field": "Revenue_Adjustment_Reason_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Default Flag",
+      "field": "Default",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Reason Code",
+      "field": "Reason_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Description",
+      "field": "Description",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Default": {
+        "description": "Default Flag",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Reason_Code": {
+        "description": "Reason Code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Revenue_Adjustment_Reason_ID": {
+        "description": "Revenue Adjustment Reason ID",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

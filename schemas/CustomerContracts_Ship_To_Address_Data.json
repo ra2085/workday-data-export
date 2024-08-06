@@ -1,0 +1,524 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomerContracts_Ship_To_Address_Data",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+      "field": "CustomerContract_Customer_Contract_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Alpha-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Reference_ISO_3166-1_Numeric-3_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_TIMESTAMP",
+      "description": "The moment when the address was last modified.",
+      "field": "Last_Modified",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The address line for the address. This typically contains Street name, street number, apartment, suite number.",
+      "field": "Address_Line_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "City part of the address.",
+      "field": "Municipality",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_Country_Subregion_Code_In_Country",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_City_Reference_Country_Subregion_Internal_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The submunicipality of the address.",
+      "field": "Submunicipality_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_Country_Region_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Country_Region_Reference_ISO_3166-2_Country-Region_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The region part of the address. Typically this contains the state/province information.",
+      "field": "Country_Region_Descriptor",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The subregion part of the address.",
+      "field": "Subregion_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The postal code part of the address.",
+      "field": "Postal_Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Encapsulating element for all Communication Method Usage data.",
+      "field": "Usage_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DECIMAL",
+      "description": "Tracks the number of days an employee works from home per week.",
+      "field": "Number_of_Days",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "City in local script part of the address.",
+      "field": "Municipality_Local",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Address_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Address_Reference_Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "New ID value used in address updates. The ID cannot already be in use by another address.",
+      "field": "Address_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+      "field": "Customer_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+      "field": "Customer_Reference_Customer_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Name for Get Customer Contracts.",
+      "field": "Customer_Contract_Name_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Customer Contract ID as a search criteria.",
+      "field": "Customer_Contract_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Criteria for Get Customer Contracts",
+      "field": "Company_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Criteria for Get Customer Contracts",
+      "field": "Company_Reference_Company_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Company Criteria for Get Customer Contracts",
+      "field": "Company_Reference_Organization_Reference_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Type Criteria for Get Customer Contracts. Supports multiple values.",
+      "field": "Customer_Contract_Type_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Type Criteria for Get Customer Contracts. Supports multiple values.",
+      "field": "Customer_Contract_Type_Reference_Contract_Type_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Status Criteria for Get Customer Contracts. Supports multiple values.",
+      "field": "Contract_Status_Reference_WID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contract Status Criteria for Get Customer Contracts. Supports multiple values.",
+      "field": "Contract_Status_Reference_Document_Status_ID_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Contract Effective Date On or After Criteria for Get Customer Contracts",
+      "field": "Contract_Effective_Date_On_or_After_Prompt",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_DATE",
+      "description": "Contract Effective Date On or Before Criteria for Get Customer Contracts",
+      "field": "Contract_Effective_Date_On_or_Before_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Address_ID": {
+        "description": "New ID value used in address updates. The ID cannot already be in use by another address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Line_Data": {
+        "description": "The address line for the address. This typically contains Street name, street number, apartment, suite number.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Reference_Address_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Address_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Company_Reference_ID_Prompt": {
+        "description": "Company Criteria for Get Customer Contracts",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_Organization_Reference_ID_Prompt": {
+        "description": "Company Criteria for Get Customer Contracts",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Company_Reference_WID_Prompt": {
+        "description": "Company Criteria for Get Customer Contracts",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Effective_Date_On_or_After_Prompt": {
+        "description": "Contract Effective Date On or After Criteria for Get Customer Contracts",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Effective_Date_On_or_Before_Prompt": {
+        "description": "Contract Effective Date On or Before Criteria for Get Customer Contracts",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Status_Reference_Document_Status_ID_Prompt": {
+        "description": "Contract Status Criteria for Get Customer Contracts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Contract_Status_Reference_WID_Prompt": {
+        "description": "Contract Status Criteria for Get Customer Contracts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_Country_Subregion_Code_In_Country": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_Country_Subregion_Internal_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_City_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Alpha-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_ISO_3166-1_Numeric-3_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Descriptor": {
+        "description": "The region part of the address. Typically this contains the state/province information.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_Country_Region_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_ISO_3166-2_Country-Region_Code": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country_Region_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "CustomerContract_Customer_Contract_Reference_WID": {
+        "description": "The unique identifier type. Each \"ID\" for an instance of an object contains a type and a value. A single instance of an object can have multiple \"ID\" but only a single \"ID\" per \"type\".  Some \"types\" require a reference to a parent instance.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_ID_Prompt": {
+        "description": "Customer Contract ID as a search criteria.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Name_Prompt": {
+        "description": "Contract Name for Get Customer Contracts.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Type_Reference_Contract_Type_ID_Prompt": {
+        "description": "Contract Type Criteria for Get Customer Contracts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Contract_Type_Reference_WID_Prompt": {
+        "description": "Contract Type Criteria for Get Customer Contracts. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_ID_Prompt": {
+        "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_Customer_Reference_ID_Prompt": {
+        "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Customer_Reference_WID_Prompt": {
+        "description": "Customer Criteria for Get Customer Contracts.. Supports multiple values.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Last_Modified": {
+        "description": "The moment when the address was last modified.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Municipality": {
+        "description": "City part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Municipality_Local": {
+        "description": "City in local script part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Number_of_Days": {
+        "description": "Tracks the number of days an employee works from home per week.",
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "Postal_Code": {
+        "description": "The postal code part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Submunicipality_Data": {
+        "description": "The submunicipality of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Subregion_Data": {
+        "description": "The subregion part of the address.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Usage_Data": {
+        "description": "Encapsulating element for all Communication Method Usage data.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

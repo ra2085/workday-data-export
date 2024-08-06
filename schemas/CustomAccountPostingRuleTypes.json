@@ -1,0 +1,94 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "CustomAccountPostingRuleTypes",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Account_Posting_Rule_Type_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Custom_Account_Posting_Rule_Type_Reference_Custom_Account_Posting_Rule_Type_Reference_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "A unique identifier for the Custom Account Posting Rule Type.",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the Custom Account Posting Rule Type.",
+      "field": "Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The description of the Custom Account Posting Rule Type.",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Specifies the Account Posting Rule Dimensions for the Custom Account Posting Rule Type. These can either be Custom Account Posting Rule Dimensions or Workday delivered Account Posting Rule Dimensions.",
+      "field": "Account_Posting_Rule_Dimension_Reference",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Account_Posting_Rule_Dimension_Reference": {
+        "description": "Specifies the Account Posting Rule Dimensions for the Custom Account Posting Rule Type. These can either be Custom Account Posting Rule Dimensions or Workday delivered Account Posting Rule Dimensions.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Account_Posting_Rule_Type_Reference_Custom_Account_Posting_Rule_Type_Reference_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Custom_Account_Posting_Rule_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Description": {
+        "description": "The description of the Custom Account Posting Rule Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "A unique identifier for the Custom Account Posting Rule Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Name": {
+        "description": "The name of the Custom Account Posting Rule Type.",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

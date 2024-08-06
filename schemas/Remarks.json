@@ -1,0 +1,120 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "Remarks",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Remark_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Remark_Reference_Remark_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The user specified ID of the Remark reference",
+      "field": "ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Code for the Remark reference",
+      "field": "Code",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "OPM Explanation for the Remark reference",
+      "field": "Explanation",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "PAR Variable Data element",
+      "field": "Parameter_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Nature of Action Reference",
+      "field": "Nature_of_Action_Reference",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Inactive boolean for the Remark reference",
+      "field": "Inactive",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Code": {
+        "description": "Code for the Remark reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Explanation": {
+        "description": "OPM Explanation for the Remark reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ID": {
+        "description": "The user specified ID of the Remark reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Inactive": {
+        "description": "Inactive boolean for the Remark reference",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "Nature_of_Action_Reference": {
+        "description": "Nature of Action Reference",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Parameter_Data": {
+        "description": "PAR Variable Data element",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remark_Reference_Remark_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Remark_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "@type": "type.googleapis.com/google.cloud.connectors.v1.RuntimeEntitySchema",
+  "entity": "ResourcePlanTemplates",
+  "fields": [
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Plan_Template_Reference_WID",
+      "key": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Resource_Plan_Template_Reference_Project_Resource_Plan_Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Project Resource Plan Template ID.  This is the Project Resource Plan Template unique identifier",
+      "field": "Template_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field for a meaningful Resource Plan Template Name",
+      "field": "Template_Name",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Free form text field describing Project Resource Plan Template",
+      "field": "Description",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Reference_Contingent_Worker_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Owner_Reference_Employee_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_BOOLEAN",
+      "description": "Boolean value that says whether the appropriate dates should be offset by a specified Date Offset",
+      "field": "Use_Date_Offset",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Date_Offset_Type_Reference_WID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains a unique identifier for an instance of an object.",
+      "field": "Date_Offset_Type_Reference_Date_Offset_ID",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "Contains project resource plan detail template information, such as worker, percent allocation, currency, etc.",
+      "field": "Resource_Plan_Detail_for_Template_Data",
+      "nullable": true
+    },
+    {
+      "dataType": "DATA_TYPE_VARCHAR",
+      "description": "The name of the resource plan template.",
+      "field": "Resource_Plan_Template_Name_Prompt",
+      "nullable": true
+    }
+  ],
+  "jsonSchema": {
+    "properties": {
+      "Date_Offset_Type_Reference_Date_Offset_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Date_Offset_Type_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Description": {
+        "description": "Free form text field describing Project Resource Plan Template",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Reference_Contingent_Worker_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Reference_Employee_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Owner_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Plan_Detail_for_Template_Data": {
+        "description": "Contains project resource plan detail template information, such as worker, percent allocation, currency, etc.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Plan_Template_Name_Prompt": {
+        "description": "The name of the resource plan template.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Plan_Template_Reference_Project_Resource_Plan_Template_ID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Resource_Plan_Template_Reference_WID": {
+        "description": "Contains a unique identifier for an instance of an object.",
+        "type": [
+          "string"
+        ]
+      },
+      "Template_ID": {
+        "description": "Project Resource Plan Template ID.  This is the Project Resource Plan Template unique identifier",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Template_Name": {
+        "description": "Free form text field for a meaningful Resource Plan Template Name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Use_Date_Offset": {
+        "description": "Boolean value that says whether the appropriate dates should be offset by a specified Date Offset",
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "type": [
+      "object"
+    ]
+  },
+  "operations": [
+    "GET",
+    "LIST"
+  ]
+}
